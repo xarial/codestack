@@ -1,0 +1,7 @@
+<div class="snippet" lang="cs" src="swex/csharp/addin/CommandsManager/SubMenuAndSpacerAddIn.cs" regions="Spacer"><pre class="prettyprint lang-cs">public enum Commands_e
+{
+    Command1,
+
+    [CommandSpacer]
+    Command2
+}</pre></div>

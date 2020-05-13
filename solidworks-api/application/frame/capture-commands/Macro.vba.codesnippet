@@ -1,0 +1,3 @@
+<div class="snippet" lang="vb" src="solidworks-api/frame/capture-commands/Macro.vba"><pre class="prettyprint lang-vb">Sub main()
+    CommandsMonitorForm.Show vbModeless
+End Sub</pre></div>

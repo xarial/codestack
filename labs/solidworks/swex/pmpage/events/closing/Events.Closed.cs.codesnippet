@@ -1,0 +1,30 @@
+<div class="snippet" lang="cs" src="swex/csharp/pmpage/Events.cs" regions="Main" excl-regions="DataChanged Closing" params="no-regions"><pre class="prettyprint lang-cs">public class DataModel
+{
+    public string Text { get; set; }
+}
+
+private DataModel m_Data;
+
+private PropertyManagerPageEx&lt;MyPMPageHandler, DataModel&gt; m_Page;
+
+public override bool OnConnect()
+{
+    m_Data = new DataModel();
+    m_Page = new PropertyManagerPageEx&lt;MyPMPageHandler, DataModel&gt;(App);
+
+    m_Page.Handler.Closed += OnClosed;
+
+    return true;
+}
+
+private void OnClosed(swPropertyManagerPageCloseReasons_e reason)
+{
+    if (reason == swPropertyManagerPageCloseReasons_e.swPropertyManagerPageClose_Okay)
+    {
+        //TODO: do work
+    }
+    else
+    {
+        //TODO: release resources
+    }
+}</pre></div>

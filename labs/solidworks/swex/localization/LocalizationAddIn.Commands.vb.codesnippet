@@ -1,0 +1,13 @@
+<div class="snippet" lang="vb" src="swex/vbnet/common/LocalizationAddIn.vb" regions="Commands"><pre class="prettyprint lang-vb">&lt;Title(GetType(Resources), NameOf(Resources.ToolbarTitle))&gt;
+&lt;Summary(GetType(Resources), NameOf(Resources.ToolbarHint))&gt;
+Public Enum Commands_e
+
+    &lt;Title(GetType(Resources), NameOf(Resources.ShowPmpCommandTitle))&gt;
+    &lt;Summary(GetType(Resources), NameOf(Resources.ShowPmpCommandHint))&gt;
+    ShowPmp
+
+    &lt;Title(GetType(Resources), NameOf(Resources.CreateMacroFeatureCommandTitle))&gt;
+    &lt;Summary(GetType(Resources), NameOf(Resources.CreateMacroFeatureCommandHint))&gt;
+    CreateMacroFeature
+
+End Enum</pre></div>

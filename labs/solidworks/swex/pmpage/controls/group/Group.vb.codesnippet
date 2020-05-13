@@ -1,0 +1,10 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/Group.vb"><pre class="prettyprint lang-vb">Public Class GroupDataModel
+
+    Public Class DataGroup
+        Public Property Text As String
+    End Class
+
+    Public Property Group As DataGroup
+
+End Class
+</pre></div>

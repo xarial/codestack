@@ -1,0 +1,16 @@
+---
+layout: article
+title: Create temp solid body box using SOLIDWORKS API and IModeler interface
+caption: Create Box Body
+description: VBA example to create a temp body by center point, direction and size using SOLIDWORKS API and IModeler interface
+lang: en
+image: /solidworks-api/geometry/primitives/create-box-body/box-body.png
+labels: [primitive,box,temp body,modeler]
+---
+{% include img.html src="box-body.png" width=250 alt="Box body" align="center" %}
+
+This VBA example demonstrates how to create and display temp body by providing the coordinate of center of base face, direction, width, length and height using SOLIDWORKS API.
+
+Macro stops the execution and displays the body. Continue macro execution to destroy the temp body.
+
+{% include_relative Macro.vba.codesnippet %}

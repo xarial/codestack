@@ -1,0 +1,26 @@
+<div class="snippet" lang="vb" src="swex/vbnet/addin/CommandsManager/CommandsAttribution.vb"><pre class="prettyprint lang-vb">Imports CodeStack.SwEx.Common.Attributes
+Imports CodeStack.SwEx.My.Resources
+Imports System.ComponentModel
+
+&lt;Title(GetType(Resources), NameOf(Resources.ToolbarTitle))&gt;
+&lt;Description("Command Group Title")&gt;
+&lt;Icon(GetType(Resources), NameOf(Resources.commands))&gt;
+Public Enum CommandsB_e
+
+    &lt;Title("First Command")&gt;
+    &lt;Description("Hint text for first command")&gt;
+    &lt;Icon(GetType(Resources), NameOf(Resources.command1))&gt;
+    CommandB1
+
+    &lt;Title("Second Command")&gt;
+    &lt;Description("Hint text for second command")&gt;
+    &lt;Icon(GetType(Resources), NameOf(Resources.command2))&gt;
+    CommandB2
+
+    &lt;Title("Third Command")&gt;
+    &lt;Description("Hint text for third command")&gt;
+    &lt;Icon(GetType(Resources), NameOf(Resources.command3))&gt;
+    CommandB3
+
+End Enum
+</pre></div>

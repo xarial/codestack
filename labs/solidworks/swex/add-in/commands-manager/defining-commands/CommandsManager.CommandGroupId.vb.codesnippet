@@ -1,0 +1,8 @@
+<div class="snippet" lang="vb" src="swex/vbnet/addin/CommandsManager/CommandGroupId.vb"><pre class="prettyprint lang-vb">Imports CodeStack.SwEx.AddIn.Attributes
+
+&lt;CommandGroupInfo(2)&gt;
+Public Enum CommandsE_e
+    CommandE1
+    CommandE2
+End Enum
+</pre></div>

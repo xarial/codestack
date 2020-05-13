@@ -1,0 +1,4 @@
+<div class="snippet" lang="vb" src="swex/vbnet/addin/CommandsManager/DefiningCommands.vb"><pre class="prettyprint lang-vb">Public Enum CommandsA_e
+    CommandA1
+    CommandA2
+End Enum</pre></div>

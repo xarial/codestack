@@ -1,0 +1,7 @@
+<div class="snippet" lang="cs" src="swex/csharp/pmpage/Overview.cs" regions="Ignore"><pre class="prettyprint lang-cs">public class DataModelIgnore
+{
+    public string Text { get; set; }
+
+    [IgnoreBinding]
+    public int CalculatedField { get; set; } //control will not be generated for this field
+}</pre></div>

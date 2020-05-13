@@ -1,0 +1,10 @@
+---
+layout: null
+sitemap: false
+---
+{
+  "Version": "0.1.0.0",
+  "WhatsNewUrl": "{{ '/labs/solidworks/sketch-plus-plus/whats-new' | prepend: site.url }}",
+  "UpgradeUrl": "{{ '/labs/solidworks/sketch-plus-plus/installation' | prepend: site.url }}"
+}
+

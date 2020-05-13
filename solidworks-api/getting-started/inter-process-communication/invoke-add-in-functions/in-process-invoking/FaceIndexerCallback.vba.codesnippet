@@ -1,0 +1,5 @@
+<div class="snippet" lang="vb" src="solidworks-api/getting-started/inter-process-communication/in-process-invoking/FaceIndexerCallback.vba"><pre class="prettyprint lang-vb">Implements IFaceIndexerCallback
+
+Private Sub IFaceIndexerCallback_IndexFacesCompleted(ByVal assm As SldWorks.IAssemblyDoc, ByVal count As Long)
+    Debug.Print "Indexing completed for " &amp; count &amp; " face(s)"
+End Sub</pre></div>

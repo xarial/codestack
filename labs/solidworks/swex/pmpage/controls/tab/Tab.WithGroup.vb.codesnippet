@@ -1,0 +1,11 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/Tab.vb" regions="WithGroup" params="no-regions"><pre class="prettyprint lang-vb">Public Class TabControl2
+	Public Class Group1
+		Public Property Field2 As Integer
+	End Class
+
+	Public Property Group As Group1
+	Public Property Field3 As Boolean
+End Class
+
+&lt;Tab&gt;
+Public Property Tab2 As TabControl2</pre></div>

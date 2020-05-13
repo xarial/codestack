@@ -1,0 +1,9 @@
+<div class="snippet" lang="vb" src="solidworks-api/frame/capture-commands/CommandsMonitorForm.vba"><pre class="prettyprint lang-vb">Dim WithEvents swApp As SldWorks.SldWorks
+
+Private Sub UserForm_Initialize()
+    Set swApp = Application.SldWorks
+End Sub
+
+Private Function swApp_CommandOpenPreNotify(ByVal Command As Long, ByVal UserCommand As Long) As Long
+    lstLog.AddItem "Command: " &amp; Command &amp; "; User Command:" &amp; UserCommand
+End Function</pre></div>

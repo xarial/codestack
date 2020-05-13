@@ -1,0 +1,11 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/NumberBox.vb" excl-regions="Style" params="no-regions"><pre class="prettyprint lang-vb">Imports CodeStack.SwEx.PMPage.Attributes
+Imports SolidWorks.Interop.swconst
+
+Public Class NumberBoxDataModel
+
+    Public Property Number As Integer
+    Public Property FloatingNumber As Double
+
+
+End Class
+</pre></div>

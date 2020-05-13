@@ -1,0 +1,9 @@
+<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/NumberBox.cs" excl-regions="Style" params="no-regions"><pre class="prettyprint lang-cs">using CodeStack.SwEx.PMPage.Attributes;
+using SolidWorks.Interop.swconst;
+
+public class NumberBoxDataModel
+{
+    public int Number { get; set; }
+    public double FloatingNumber { get; set; }
+
+}</pre></div>

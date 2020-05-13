@@ -1,0 +1,10 @@
+---
+layout: null
+sitemap: false
+---
+{
+  "Version": "0.5.0.0",
+  "WhatsNewUrl": "{{ '/labs/solidworks/stock-fit-geometry/whats-new' | prepend: site.url }}",
+  "UpgradeUrl": "{{ '/labs/solidworks/stock-fit-geometry/installation' | prepend: site.url }}"
+}
+

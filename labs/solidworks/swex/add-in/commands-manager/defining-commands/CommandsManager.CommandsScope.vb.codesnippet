@@ -1,0 +1,13 @@
+<div class="snippet" lang="vb" src="swex/vbnet/addin/CommandsManager/CommandsScope.vb"><pre class="prettyprint lang-vb">Imports CodeStack.SwEx.AddIn.Attributes
+Imports CodeStack.SwEx.AddIn.Enums
+
+Public Enum CommandsD_e
+
+    &lt;CommandItemInfo(swWorkspaceTypes_e.Part)&gt;
+    CommandD1
+
+    &lt;CommandItemInfo(swWorkspaceTypes_e.Part Or swWorkspaceTypes_e.Assembly)&gt;
+    CommandD2
+
+End Enum
+</pre></div>

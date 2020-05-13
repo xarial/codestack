@@ -1,0 +1,6 @@
+<div class="snippet" lang="vb" src="solidworks-api/getting-started/inter-process-communication/in-process-invoking/Macro.vba"><pre class="prettyprint lang-vb">Sub main()
+
+    UserForm1.Show vbModeless
+    
+End Sub
+</pre></div>

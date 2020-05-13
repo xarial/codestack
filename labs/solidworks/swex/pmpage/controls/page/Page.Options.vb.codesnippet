@@ -1,0 +1,3 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/Page.vb" regions="Options"><pre class="prettyprint lang-vb">&lt;PageOptions(swPropertyManagerPageOptions_e.swPropertyManagerOptions_CancelButton Or swPropertyManagerPageOptions_e.swPropertyManagerOptions_OkayButton)&gt;
+Public Class DataModelPageOpts
+End Class</pre></div>

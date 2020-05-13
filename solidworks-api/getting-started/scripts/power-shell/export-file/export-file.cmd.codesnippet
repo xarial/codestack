@@ -1,0 +1,4 @@
+<div class="snippet" lang="bat" src="solidworks-api\getting-started\scripts\power-shell\export-file\export-file.cmd"><pre class="prettyprint lang-bat">SET inputFilePath=%1
+SET outFilePath=%2
+
+PowerShell -NoProfile -ExecutionPolicy Bypass -File "%~dp0export-file.ps1" %inputFilePath% %outFilePath%</pre></div>

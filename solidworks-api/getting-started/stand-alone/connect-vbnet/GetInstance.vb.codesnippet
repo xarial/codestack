@@ -1,0 +1,3 @@
+<div class="snippet" lang="vb" src="solidworks-api/getting-started/out-of-process/VB.NET/GetInstance.vb"><pre class="prettyprint lang-vb">Const PROG_ID As String = "SldWorks.Application"
+Dim app = TryCast(System.Runtime.InteropServices.Marshal.GetActiveObject(PROG_ID),
+	SolidWorks.Interop.sldworks.ISldWorks)</pre></div>

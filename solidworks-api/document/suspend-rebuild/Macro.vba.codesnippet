@@ -1,0 +1,5 @@
+<div class="snippet" lang="vb" src="solidworks-api/model/suspend-rebuild/Macro.vba"><pre class="prettyprint lang-vb">Sub main()
+
+    FreezeRebuildForm.Show vbModeless
+
+End Sub</pre></div>

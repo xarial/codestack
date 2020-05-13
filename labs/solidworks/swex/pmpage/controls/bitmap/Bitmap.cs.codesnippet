@@ -1,0 +1,10 @@
+<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/Bitmap.cs" excl-regions="Size" params="no-regions"><pre class="prettyprint lang-cs">using CodeStack.SwEx.PMPage.Attributes;
+using CodeStack.SwEx.Properties;
+using System.Drawing;
+
+public class BitmapDataModel
+{
+    public Image Bitmap { get; set; } = Resources.BitmapSample;
+
+}
+</pre></div>

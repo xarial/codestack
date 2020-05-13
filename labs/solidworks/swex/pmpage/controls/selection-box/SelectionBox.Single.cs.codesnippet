@@ -1,0 +1,8 @@
+<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/SelectionBox.cs" regions="Single"><pre class="prettyprint lang-cs">public class SelectionBoxDataModel
+{
+    [SelectionBox(swSelectType_e.swSelSOLIDBODIES)]
+    public IBody2 Body { get; set; }
+
+    [SelectionBox(swSelectType_e.swSelEDGES, swSelectType_e.swSelNOTES, swSelectType_e.swSelCOORDSYS)]
+    public object Dispatch { get; set; }
+}</pre></div>

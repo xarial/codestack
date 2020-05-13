@@ -1,0 +1,2 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/Bitmap.vb" regions="Size" params="no-regions"><pre class="prettyprint lang-vb">&lt;BitmapOptions(48, 48)&gt;
+Public Property BitmapLarge As Image = Resources.BitmapSample</pre></div>

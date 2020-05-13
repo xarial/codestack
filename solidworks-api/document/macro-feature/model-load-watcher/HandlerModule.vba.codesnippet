@@ -1,0 +1,4 @@
+<div class="snippet" lang="vb" src="solidworks-api/macro-feature/model-load-watcher/HandlerModule.vba"><pre class="prettyprint lang-vb">Sub main(model As SldWorks.ModelDoc2)
+    'TODO: add your routine here
+    MsgBox model.GetTitle()
+End Sub</pre></div>

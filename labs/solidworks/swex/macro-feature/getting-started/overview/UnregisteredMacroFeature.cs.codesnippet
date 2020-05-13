@@ -1,0 +1,13 @@
+<div class="snippet" lang="cs" src="swex/csharp/macro-feature/UnregisteredMacroFeature.cs"><pre class="prettyprint lang-cs">using CodeStack.SwEx.MacroFeature;
+using CodeStack.SwEx.MacroFeature.Attributes;
+using System.Runtime.InteropServices;
+
+namespace CodeStack.SwEx
+{
+    [ComVisible(true)]
+    [Options("SwExMacroFeature", "CodeStack. Download the add-in")]
+    public class UnregisteredMacroFeature : MacroFeatureEx
+    {
+    }
+}
+</pre></div>

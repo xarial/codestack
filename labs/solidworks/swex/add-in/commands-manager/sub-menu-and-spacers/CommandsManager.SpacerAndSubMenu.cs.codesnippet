@@ -1,0 +1,31 @@
+<div class="snippet" lang="cs" src="swex/csharp/addin/CommandsManager/SubMenuAndSpacerAddIn.cs" regions="SpacerAndSubMenu" params="no-regions"><pre class="prettyprint lang-cs">[Title("AddInEx Commands")]
+public enum Commands_e
+{
+    Command1,
+
+    [CommandSpacer]
+    Command2
+}
+
+[Title("Sub Menu Commands")]
+[CommandGroupInfo(typeof(Commands_e))]
+public enum SubCommands_e
+{
+    SubCommand1,
+    SubCommand2
+}
+
+public override bool OnConnect()
+{
+    AddCommandGroup&lt;Commands_e&gt;(OnButtonClick);
+    AddCommandGroup&lt;SubCommands_e&gt;(OnButtonClick);
+    return true;
+}
+
+private void OnButtonClick(Commands_e cmd)
+{
+}
+
+private void OnButtonClick(SubCommands_e cmd)
+{
+}</pre></div>

@@ -1,0 +1,4 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Overview.vb" regions="PMPageHandler"><pre class="prettyprint lang-vb">&lt;ComVisible(True)&gt;
+      Public Class MyPMPageHandler
+          Inherits PropertyManagerPageHandlerEx
+      End Class</pre></div>

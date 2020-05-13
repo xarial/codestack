@@ -1,0 +1,39 @@
+<div class="snippet" lang="vb" src="swex/vbnet/addin/ThirdPartyData.vb" excl-regions="Stream Storage StorageHandler" params="no-regions"><pre class="prettyprint lang-vb">Imports CodeStack.SwEx.AddIn
+Imports CodeStack.SwEx.AddIn.Attributes
+Imports CodeStack.SwEx.AddIn.Base
+Imports CodeStack.SwEx.AddIn.Core
+Imports CodeStack.SwEx.AddIn.Enums
+Imports SolidWorks.Interop.sldworks
+Imports System.Runtime.InteropServices
+Imports System.Text
+Imports System.Xml.Serialization
+
+Namespace CodeStack.SwEx
+    &lt;AutoRegister&gt;
+    &lt;ComVisible(True), Guid("0421C699-E1B1-4D64-A086-D686E88EC311")&gt;
+    Public Class ThirdPartyDataAddIn
+        Inherits SwAddInEx
+
+        Private m_StreamDocHandler As IDocumentsHandler(Of DocumentHandler)
+
+        Public Overrides Function OnConnect() As Boolean
+            m_StreamDocHandler = CreateDocumentsHandler()
+            AddHandler m_StreamDocHandler.HandlerCreated, AddressOf OnStreamHandlerCreated
+            Return True
+        End Function
+
+        Private Sub OnStreamHandlerCreated(ByVal doc As DocumentHandler)
+            AddHandler doc.Access3rdPartyData, AddressOf OnAccess3rdPartyStream
+        End Sub
+
+        Private Sub OnAccess3rdPartyStream(ByVal docHandler As DocumentHandler, ByVal state As Access3rdPartyDataState_e)
+            Select Case state
+                Case Access3rdPartyDataState_e.StreamRead
+                    LoadFromStream(docHandler.Model)
+                Case Access3rdPartyDataState_e.StreamWrite
+                    SaveToStream(docHandler.Model)
+            End Select
+        End Sub
+    End Class
+End Namespace
+</pre></div>

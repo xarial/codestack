@@ -1,0 +1,41 @@
+<div class="snippet" lang="vb" src="visual-basic/algorithms/data/write-array-declaration-to-file.vba"><pre class="prettyprint lang-vb">Sub WriteArrayDeclarationToFile(buffer As Variant, filePath As String, varName As String, typeName As String, Optional elemsPerRow As Integer = 10)
+    
+    Dim fileNo As Integer
+    fileNo = FreeFile
+    
+    Open filePath For Output As #fileNo
+    
+    Print #fileNo, "Dim " &amp; varName &amp; "(" &amp; UBound(buffer) &amp; ") As " &amp; typeName
+    
+    Dim i As Long
+    
+    For i = 0 To UBound(buffer) Step elemsPerRow
+        
+        Dim j As Long
+        Dim last As Long
+        
+        If i + elemsPerRow &gt; UBound(buffer) Then
+            last = UBound(buffer)
+        Else
+            last = i + elemsPerRow - 1
+        End If
+        
+        Dim line As String
+        line = ""
+        
+        For j = i To last
+            Dim val As String
+            val = buffer(j)
+            If LCase(typeName) = "string" Then
+                val = """" &amp; val &amp; """"
+            End If
+            line = IIf(line &lt;&gt; "", line &amp; ": ", "") + varName &amp; "(" &amp; j &amp; ")=" &amp; val
+        Next
+        
+        Print #fileNo, line
+        
+    Next
+    
+    Close #fileNo
+    
+End Sub</pre></div>

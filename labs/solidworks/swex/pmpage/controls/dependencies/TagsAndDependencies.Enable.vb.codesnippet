@@ -1,0 +1,18 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/TagsAndDependencies.vb" regions="Enable"><pre class="prettyprint lang-vb">Public Class DataModelEnable
+
+    &lt;ControlTag(NameOf(Enable))&gt;
+    Public Property Enable As Boolean
+
+    &lt;SelectionBox(swSelectType_e.swSelFACES)&gt;
+    &lt;DependentOn(GetType(EnableDepHandler), NameOf(Enable))&gt;
+    Public Property Selection As IEntity
+
+End Class
+
+Public Class EnableDepHandler
+    Inherits DependencyHandler
+
+    Protected Overrides Sub UpdateControlState(ByVal control As IPropertyManagerPageControlEx, ByVal parents As IPropertyManagerPageControlEx())
+        control.Enabled = CBool(parents.First().GetValue())
+    End Sub
+End Class</pre></div>

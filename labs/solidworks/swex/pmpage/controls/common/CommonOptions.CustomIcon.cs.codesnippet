@@ -1,0 +1,2 @@
+<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/CommonOptions.cs" regions="CustomIcon"><pre class="prettyprint lang-cs">[ControlAttribution(typeof(Resources), nameof(Resources.OffsetImage))]
+public double Offset { get; set; }</pre></div>

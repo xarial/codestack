@@ -1,0 +1,2 @@
+<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/CommonOptions.cs" regions="Style"><pre class="prettyprint lang-cs">[ControlOptions(backgroundColor: KnownColor.Green, textColor: KnownColor.Yellow)]
+public string TextField { get; set; } = "Sample Text";</pre></div>

@@ -1,0 +1,6 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Overview.vb" regions="Ignore"><pre class="prettyprint lang-vb">Public Class DataModelIgnore
+	Public Property Text As String
+
+	&lt;IgnoreBinding&gt;
+	Public Property CalculatedField As Integer 'control will not be generated for this field
+End Class</pre></div>

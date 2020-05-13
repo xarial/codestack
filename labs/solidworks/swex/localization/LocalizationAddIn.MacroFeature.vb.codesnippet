@@ -1,0 +1,13 @@
+<div class="snippet" lang="vb" src="swex/vbnet/common/LocalizationAddIn.vb" regions="MacroFeature"><pre class="prettyprint lang-vb">&lt;Title(GetType(Resources), NameOf(Resources.MacroFeatureBaseName))&gt;
+&lt;ComVisible(True)&gt;
+Public Class LocalizedMacroFeature
+    Inherits MacroFeatureEx
+
+    Protected Overrides Function OnRebuild(ByVal app As ISldWorks, ByVal model As IModelDoc2, ByVal feature As IFeature) As MacroFeatureRebuildResult
+        If Not String.IsNullOrEmpty(model.GetPathName) Then
+            Return MacroFeatureRebuildResult.FromStatus(True)
+        Else
+            Return MacroFeatureRebuildResult.FromStatus(False, Resources.MacroFeatureError)
+        End If
+    End Function
+End Class</pre></div>

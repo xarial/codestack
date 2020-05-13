@@ -1,0 +1,21 @@
+<div class="snippet" lang="cs" src="solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions-rot/rot-api-object/MainAddInProxyApiObject.cs"><pre class="prettyprint lang-cs">public override bool OnConnect()
+{
+	m_GeometryService = new GeometryHelperService(App);
+
+	var proxy = new GeometryHelperApiObjectProxy();
+	proxy.GetFacesCountRequested += OnGetFacesCountRequested;
+	m_ApiObject = proxy;
+	
+	RotHelper.Register(m_ApiObject, new GeometryHelperApiObjectFactory().GetName(App.GetProcessID()));
+
+	this.AddCommandGroup&lt;Commands_e&gt;(OnButtonClick);
+
+	return true;
+}
+
+private int OnGetFacesCountRequested(double minArea)
+{
+	return GetFacesCount(minArea);
+}
+
+</pre></div>

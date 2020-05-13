@@ -1,0 +1,4 @@
+<div class="snippet" lang="vb" src="solidworks-api/frame/run-macro-on-new-document/HandlerModule.vba"><pre class="prettyprint lang-vb">Sub main(model As SldWorks.ModelDoc2)
+    'TODO:implement the procedure
+    MsgBox "File create: " &amp; model.GetTitle()
+End Sub</pre></div>

@@ -1,0 +1,3 @@
+<div class="snippet" lang="cs" src="solidworks-api/getting-started/out-of-process/c-sharp/GetInstance.cs"><pre class="prettyprint lang-cs">var progId = "SldWorks.Application";
+
+var app = System.Runtime.InteropServices.Marshal.GetActiveObject(progId) as SolidWorks.Interop.sldworks.ISldWorks;</pre></div>

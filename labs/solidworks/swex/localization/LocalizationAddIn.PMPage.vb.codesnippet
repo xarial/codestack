@@ -1,0 +1,12 @@
+<div class="snippet" lang="vb" src="swex/vbnet/common/LocalizationAddIn.vb" regions="PMPage"><pre class="prettyprint lang-vb">&lt;Title(GetType(Resources), NameOf(Resources.LocalizedPmPageTitle))&gt;
+Public Class LocalizedPmPage
+
+    &lt;Title(GetType(Resources), NameOf(Resources.TextFieldTitle))&gt;
+    &lt;Summary(GetType(Resources), NameOf(Resources.TextFieldDescription))&gt;
+    Public Property TextField As String
+
+    &lt;Title(GetType(Resources), NameOf(Resources.NumericFieldTitle))&gt;
+    &lt;Summary(GetType(Resources), NameOf(Resources.NumericFieldDescription))&gt;
+    Public Property NumericField As Double
+
+End Class</pre></div>

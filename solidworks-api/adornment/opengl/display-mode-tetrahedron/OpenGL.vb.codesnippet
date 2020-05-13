@@ -1,0 +1,52 @@
+<div class="snippet" lang="vb" src="/solidworks-api/adornment/opengl/display-mode-tetrahedron/OpenGL.vb"><pre class="prettyprint lang-vb">Imports System.Runtime.InteropServices
+
+Public Class OpenGl
+
+	&lt;DllImport("opengl32")&gt;
+	Public Shared Sub glBegin(ByVal mode As UInteger)
+	End Sub
+
+	&lt;DllImport("opengl32")&gt;
+	Public Shared Sub glEnd()
+	End Sub
+
+	&lt;DllImport("opengl32")&gt;
+	Public Shared Sub glVertex3d(ByVal x As Double, ByVal y As Double, ByVal z As Double)
+	End Sub
+
+	&lt;DllImport("opengl32.dll")&gt;
+	Public Shared Sub glDisable(ByVal cap As UInteger)
+	End Sub
+
+	&lt;DllImport("opengl32.dll")&gt;
+	Public Shared Sub glColor4f(ByVal R As Single, ByVal G As Single, ByVal B As Single, ByVal A As Single)
+	End Sub
+
+	&lt;DllImport("opengl32.dll")&gt;
+	Public Shared Sub glEnable(ByVal cap As UInteger)
+	End Sub
+
+	&lt;DllImport("opengl32.dll")&gt;
+	Public Shared Sub glPolygonMode(ByVal face As UInteger, ByVal mode As UInteger)
+	End Sub
+
+	&lt;DllImport("opengl32.dll")&gt;
+	Public Shared Sub glLineWidth(ByVal width As Single)
+	End Sub
+
+	&lt;DllImport("opengl32.dll")&gt;
+	Public Shared Sub glLineStipple(ByVal factor As Integer, ByVal pattern As UShort)
+	End Sub
+
+	Public Const GL_FRONT_AND_BACK As Integer = &amp;H408
+	Public Const GL_LINE As UInteger = &amp;H1B01
+	Public Const GL_FILL As UInteger = &amp;H1B02
+
+	Public Const GL_TRIANGLES As UInteger = &amp;H4
+	Public Const GL_LINE_LOOP As UInteger = &amp;H2
+	Public Const GL_LIGHTING As UInteger = &amp;HB50
+	Public Const GL_LINE_SMOOTH As UInteger = &amp;HB20
+	Public Const GL_LINE_STIPPLE As UInteger = &amp;HB24
+
+End Class
+</pre></div>

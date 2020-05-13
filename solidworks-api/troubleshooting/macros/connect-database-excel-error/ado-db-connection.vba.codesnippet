@@ -1,0 +1,9 @@
+<div class="snippet" lang="vb" src="solidworks-api/troubleshooting/macro/common-issues-and-resolutions/ado-db-connection.vba"><pre class="prettyprint lang-vb">Set conn = CreateObject("ADODB.Connection")
+Set records = CreateObject("ADODB.Recordset")
+    
+Dim xlsFilePath As String
+xlsFilePath = swApp.GetCurrentMacroPathFolder() &amp; "\" &amp; EXCEL_FILE_NAME
+    
+conn.Open "Provider=Microsoft.ACE.OLEDB.12.0;" &amp; _
+        "Data Source=" &amp; xlsFilePath &amp; _
+            ";Extended Properties=""Excel 8.0;HDR=Yes;"";"</pre></div>

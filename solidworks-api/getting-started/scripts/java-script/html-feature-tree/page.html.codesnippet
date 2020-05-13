@@ -1,0 +1,50 @@
+<div class="snippet" lang="xml" src="solidworks-api\getting-started\scripts\java-script\html-feature-tree\page.html"><pre class="prettyprint lang-xml">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+	&lt;input type="text" placeholder="Part File Path" id="filePath"&gt;&lt;/input&gt;
+	&lt;button type="button" onclick="RenderFeatureTree()"&gt;Get Feature Tree&lt;/button&gt;
+
+	&lt;p id="featTree"&gt;Feature Tree&lt;/p&gt;
+
+	&lt;script&gt;
+		function RenderFeatureTree() {
+
+			var swApp = new ActiveXObject("SldWorks.Application");
+			var filePath = document.getElementById('filePath').value;
+
+			var docSpec = swApp.GetOpenDocSpec(filePath);
+			docSpec.ReadOnly = true;
+			docSpec.Silent = true;
+			var swModel = swApp.OpenDoc7(docSpec);
+
+			var swFeatMgr = swModel.FeatureManager;
+
+			var swRootFeatNode = swFeatMgr.GetFeatureTreeRootItem2(1);
+
+			var root = document.getElementById("featTree");
+
+			RenderFeatureNode(swRootFeatNode, root);
+
+			swApp.CloseDoc(swModel.GetTitle());
+		}
+
+		function RenderFeatureNode(featNode, parentElem) {
+
+			parentElem.innerText = featNode.Text
+
+			var ul = document.createElement("UL");
+			parentElem.appendChild(ul);
+
+			var swChildFeatNode = featNode.GetFirstChild()
+
+			while (swChildFeatNode !== null) {
+				var li = document.createElement("LI");
+				ul.appendChild(li);
+				RenderFeatureNode(swChildFeatNode, li);
+				swChildFeatNode = swChildFeatNode.GetNext();
+			}
+		}
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></div>

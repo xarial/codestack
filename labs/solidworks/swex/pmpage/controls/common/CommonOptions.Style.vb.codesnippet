@@ -1,0 +1,2 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/CommonOptions.vb" regions="Style"><pre class="prettyprint lang-vb">&lt;ControlOptions(,, KnownColor.Green, KnownColor.Yellow)&gt;
+Public Property TextField As String = "Sample Text"</pre></div>

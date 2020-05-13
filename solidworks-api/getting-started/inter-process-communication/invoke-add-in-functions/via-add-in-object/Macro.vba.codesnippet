@@ -1,0 +1,15 @@
+<div class="snippet" lang="vb" src="solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions/Macro.vba"><pre class="prettyprint lang-vb">Dim swApp As SldWorks.SldWorks
+
+Sub main()
+
+    Set swApp = Application.SldWorks
+    
+    Dim swGeomAddIn As CreateGeometryAddIn.IGeometryAddIn
+
+    Set swGeomAddIn = swApp.GetAddInObject("CodeStack.GeometryAddIn")
+    
+    Dim swFeat As SldWorks.Feature
+    Set swFeat = swGeomAddIn.CreateCylinder(0.2, 0.5)
+    swFeat.Name = "MyCylinder"
+    
+End Sub</pre></div>

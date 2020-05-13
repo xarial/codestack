@@ -1,0 +1,9 @@
+MaterialFolder,Material <not specified>
+OriginProfileFeature,Origin
+ProfileFeature,Sketch
+Extrusion,Extrude
+Boss,Extrude
+RefPlane,Plane
+_FrontPlane,Front Plane
+_TopPlane,Top Plane
+_RightPlane,Right Plane

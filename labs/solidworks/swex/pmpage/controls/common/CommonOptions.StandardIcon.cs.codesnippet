@@ -1,0 +1,3 @@
+<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/CommonOptions.cs" regions="StandardIcon"><pre class="prettyprint lang-cs">[Description("Depth Value")]
+[ControlAttribution(swControlBitmapLabelType_e.swBitmapLabel_Depth)]
+public string Depth { get; set; }</pre></div>

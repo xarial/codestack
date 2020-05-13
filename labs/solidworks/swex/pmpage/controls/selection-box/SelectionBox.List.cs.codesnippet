@@ -1,0 +1,8 @@
+<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/SelectionBox.cs" regions="List"><pre class="prettyprint lang-cs">public class SelectionBoxListDataModel
+{
+    [SelectionBox(swSelectType_e.swSelSOLIDBODIES)]
+    public List&lt;IBody2&gt; Bodies { get; set; } = new List&lt;IBody2&gt;();
+
+    [SelectionBox(swSelectType_e.swSelEDGES, swSelectType_e.swSelNOTES, swSelectType_e.swSelCOORDSYS)]
+    public List&lt;object&gt; Dispatches { get; set; } = new List&lt;object&gt;();
+}</pre></div>

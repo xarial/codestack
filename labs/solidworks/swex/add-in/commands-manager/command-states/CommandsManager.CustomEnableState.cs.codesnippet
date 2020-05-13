@@ -1,0 +1,23 @@
+<div class="snippet" lang="cs" src="swex/csharp/addin/CommandsManager/CustomEnableAddIn.cs" regions="CustomEnableState"><pre class="prettyprint lang-cs">public enum Commands_e
+{
+    Command1,
+    Command2
+}
+
+public override bool OnConnect()
+{
+    AddCommandGroup&lt;Commands_e&gt;(OnButtonClick, OnButtonEnable);
+    return true;
+}
+
+private void OnButtonEnable(Commands_e cmd, ref CommandItemEnableState_e state)
+{
+    switch (cmd)
+    {
+        case Commands_e.Command1:
+        case Commands_e.Command2:
+            //TODO: implement logic to identify the state of the button
+            state = CommandItemEnableState_e.DeselectDisable;
+            break;
+    }
+}</pre></div>

@@ -1,0 +1,3 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/Page.vb" regions="HelpLinks"><pre class="prettyprint lang-vb">&lt;Help("&lt;Help URL&gt;", "&lt;What's New URL&gt;")&gt;
+Public Class DataModelHelpLinks
+End Class</pre></div>

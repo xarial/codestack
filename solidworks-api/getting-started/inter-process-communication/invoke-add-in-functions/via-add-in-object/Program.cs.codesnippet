@@ -1,0 +1,18 @@
+<div class="snippet" lang="cs" src="solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions/Program.cs"><pre class="prettyprint lang-cs">using CodeStack.Examples.CreateGeometryAddIn;
+using SolidWorks.Interop.sldworks;
+using System;
+
+namespace ConsoleAddIn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var app = Activator.CreateInstance(Type.GetTypeFromProgID("SldWorks.Application")) as ISldWorks;
+            var geomAddIn = app.GetAddInObject("CodeStack.GeometryAddIn") as IGeometryAddIn;
+            var feat = geomAddIn.CreateCylinder(0.2, 0.2);
+            feat.Name = "MyCylinder";
+        }
+    }
+}
+</pre></div>

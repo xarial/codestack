@@ -1,0 +1,32 @@
+---
+layout: article
+title: Managing system options (application level) using SOLIDWORKS API
+caption: Application Options
+description: Collection of articles and examples which demonstrate how to control application (system) options (user preferences) using SOLIDWORKS API
+lang: en
+image: /images/codestack-snippet.png
+labels: [document, preferences, options]
+---
+System or application level options are settings available in the options dialog of SOLIDWORKS. Those values can be controlled with following SOLIDWORKS API:
+
+For extracting the values of current options:
+
+* [ISldWorks::GetUserPreferenceDoubleValue](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISldWorks~GetUserPreferenceDoubleValue.html)
+
+* [ISldWorks::GetUserPreferenceIntegerValue](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISldWorks~GetUserPreferenceIntegerValue.html) 
+
+* [ISldWorks::GetUserPreferenceStringValue](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISldWorks~GetUserPreferenceStringValue.html)
+
+* [ISldWorks::GetUserPreferenceToggle](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISldWorks~GetUserPreferenceToggle.html)
+
+For changing the options values:
+
+* [ISldWorks::SetUserPreferenceDoubleValue](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISldWorks~SetUserPreferenceDoubleValue.html)
+
+* [ISldWorks::SetUserPreferenceIntegerValue](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISldWorks~SetUserPreferenceIntegerValue.html) 
+
+* [ISldWorks::SetUserPreferenceStringValue](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISldWorks~SetUserPreferenceStringValue.html)
+
+* [ISldWorks::SetUserPreferenceToggle](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISldWorks~SetUserPreferenceToggle.html)
+
+This section contains macros and code examples for managing (reading, writing, copying) of various application level system options using SOLIDWORKS API.

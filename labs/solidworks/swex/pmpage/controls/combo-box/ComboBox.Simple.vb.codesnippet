@@ -1,0 +1,18 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/ComboBox.vb" excl-regions="ItemsText" params="no-regions"><pre class="prettyprint lang-vb">Imports CodeStack.SwEx.Common.Attributes
+Imports CodeStack.SwEx.My.Resources
+Imports CodeStack.SwEx.PMPage.Attributes
+Imports SolidWorks.Interop.swconst
+
+Public Class ComboBoxDataModel
+
+    Public Enum Options_e
+        Option1
+        Option2
+        Option3
+    End Enum
+
+    &lt;ComboBoxOptions(swPropMgrPageComboBoxStyle_e.swPropMgrPageComboBoxStyle_Sorted)&gt;
+    Public Property Options As Options_e
+
+End Class
+</pre></div>

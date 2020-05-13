@@ -1,0 +1,9 @@
+<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/SelectionBox.vb" regions="List"><pre class="prettyprint lang-vb">Public Class SelectionBoxListDataModel
+
+    &lt;SelectionBox(swSelectType_e.swSelSOLIDBODIES)&gt;
+    Public Property Bodies As List(Of IBody2) = New List(Of IBody2)()
+
+    &lt;SelectionBox(swSelectType_e.swSelEDGES, swSelectType_e.swSelNOTES, swSelectType_e.swSelCOORDSYS)&gt;
+    Public Property Dispatches As List(Of Object) = New List(Of Object)()
+
+End Class</pre></div>

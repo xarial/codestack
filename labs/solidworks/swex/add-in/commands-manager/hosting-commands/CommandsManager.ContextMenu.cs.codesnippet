@@ -1,0 +1,17 @@
+<div class="snippet" lang="cs" src="swex/csharp/addin/CommandsManager/CommandsAddIn.cs" regions="HostingCommands" excl-regions="CommandGroup" params="no-regions"><pre class="prettyprint lang-cs">public override bool OnConnect()
+{
+    AddContextMenu&lt;CommandsD_e&gt;(OnCommandsDContextMenuClick);
+    AddContextMenu&lt;CommandsE_e&gt;(OnCommandsEContextMenuClick, swSelectType_e.swSelFACES);
+
+    return true;
+}
+
+private void OnCommandsDContextMenuClick(CommandsD_e cmd)
+{
+    //TODO: handle the context menu click
+}
+
+private void OnCommandsEContextMenuClick(CommandsE_e cmd)
+{
+    //TODO: handle the context menu click
+}</pre></div>

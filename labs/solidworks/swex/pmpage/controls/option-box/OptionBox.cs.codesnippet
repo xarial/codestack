@@ -1,0 +1,16 @@
+<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/OptionBox.cs"><pre class="prettyprint lang-cs">using CodeStack.SwEx.Common.Attributes;
+using CodeStack.SwEx.PMPage.Attributes;
+
+public class OptionBoxDataModel
+{
+    public enum Options_e
+    {
+        Option1,
+        Option2,
+        [Title("Third Option")]
+        Option3
+    }
+
+    [OptionBox]
+    public Options_e Options { get; set; }
+}</pre></div>

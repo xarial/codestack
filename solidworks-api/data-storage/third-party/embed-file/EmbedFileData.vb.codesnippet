@@ -1,0 +1,5 @@
+<div class="snippet" lang="vb" src="/solidworks-api/data-storage/third-party/embed-file/EmbedFileData.vb"><pre class="prettyprint lang-vb">Public Class EmbedFileData
+    Public Property FileName As String
+    Public Property Content As Byte()
+End Class
+</pre></div>

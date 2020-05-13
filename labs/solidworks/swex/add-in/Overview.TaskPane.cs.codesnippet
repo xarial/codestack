@@ -1,0 +1,20 @@
+<div class="snippet" lang="cs" src="swex/csharp/addin/Overview.cs" regions="TaskPane"><pre class="prettyprint lang-cs">public class TaskPaneControl : UserControl
+{
+}
+public enum TaskPaneCommands_e
+{
+    Command1
+}
+    //...
+    TaskPaneControl ctrl;
+    var taskPaneView = CreateTaskPane&lt;TaskPaneControl, TaskPaneCommands_e&gt;(OnTaskPaneCommandClick, out ctrl);
+    //...
+private void OnTaskPaneCommandClick(TaskPaneCommands_e cmd)
+{
+    switch (cmd)
+    {
+        case TaskPaneCommands_e.Command1:
+            //TODO: handle command
+            break;
+    }
+}</pre></div>

@@ -1,0 +1,24 @@
+<div class="snippet" lang="cs" src="solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions-rot/rot-api-object/GeometryHelperApiObjectProxy.cs"><pre class="prettyprint lang-cs">using System;
+using System.Runtime.InteropServices;
+
+namespace CodeStack.GeometryHelper
+{
+    [ComVisible(true)]
+    public class GeometryHelperApiObjectProxy : IGeometryHelperApiObject
+    {
+        internal event Func&lt;double, int&gt; GetFacesCountRequested;
+
+        public int GetFacesCount(double minArea)
+        {
+            if (GetFacesCountRequested != null)
+            {
+                return GetFacesCountRequested.Invoke(minArea);
+            }
+            else
+            {
+                throw new Exception("API object not connected");
+            }
+        }
+    }
+}
+</pre></div>

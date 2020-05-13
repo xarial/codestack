@@ -1,0 +1,17 @@
+---
+layout: article
+title: Managing OLE Objects in models using SOLIDWORKS API
+caption: OLE Objects
+description: Collection of macros and examples which demonstrate how to work with different embedded OLE objects (design table, attachment etc.) using SOLIDWORKS API
+lang: en
+order: 2
+image: /images/codestack-snippet.png
+labels: [ole, embeding]
+---
+Object Linking and Embedding (OLE) is a Microsoft technology allowing to inserted 3rd party application objects into the documents. In SOLIDWORKS OLE objects are used to represent Design Tables, Attachment and any file dropped directly into the Document.
+
+OLE Objects are usually saved with SOLIDWORKS file and can be removed, resized or used directly in the graphics area.
+
+SOLIDWORKS API enables the access to OLE objects via [ISwOLEObject](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISwOLEObject.html) interface. Objects can be enumerated, created and deleted by using the API methods of [IModelDocExtension](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModelDocExtension.html) interface.
+
+This section contains macros and examples allowing to manipulate OLE objects in documents using the SOLIDWORKS API.

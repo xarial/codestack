@@ -1,0 +1,6 @@
+<div class="snippet" lang="vb" src="swex/vbnet/addin/CommandsManager/SubMenuAndSpacerAddIn.vb" regions="SubMenu"><pre class="prettyprint lang-vb">&lt;Title("Sub Menu Commands")&gt;
+&lt;CommandGroupInfo(GetType(Commands_e))&gt;
+Public Enum SubCommands_e
+    SubCommand1
+    SubCommand2
+End Enum</pre></div>

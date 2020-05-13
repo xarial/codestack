@@ -1,0 +1,9 @@
+<div class="snippet" lang="vb" src="solidworks-api/model/file-close-event/Macro.vba"><pre class="prettyprint lang-vb">Dim swApp As SldWorks.SldWorks
+
+Sub main()
+
+    Set swApp = Application.SldWorks
+    
+    UserForm1.Show vbModeless
+    
+End Sub</pre></div>
