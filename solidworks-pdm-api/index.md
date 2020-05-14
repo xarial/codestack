@@ -3,13 +3,10 @@ layout: article
 title: SOLIDWORKS PDM Professional API
 caption: PDM Professional (EPDM) API
 description: Overview of SOLIDWORKS PDM Professional (formerly SOLIDWORKS EPDM) API, examples, tutorials and code snippets
-lang: en
 image: /solidworks-pdm-api/solidworks-pdm-api.png
 labels: [epdm]
-menu: SOLIDWORKS
-order: 2
 ---
-{% include img.html src="solidworks-pdm-api.svg" width=250 alt="SOLIDWORKS PDM API" align="center" %}
+![SOLIDWORKS PDM API](solidworks-pdm-api.svg){ width=250 }
 
 SOLIDWORKS PDM Professional (formerly SOLIDWORKS EPDM) is Product Data Management system allowing to manage the life cycle of CAD documents.
 

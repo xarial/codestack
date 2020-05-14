@@ -2,13 +2,10 @@
 layout: article
 title: Programming in Visual Basic (VBA)
 caption: Visual Basic
-menu: PROGRAMMING
 description: Collection of tutorials and examples on using Visual Basic programming language
-lang: en
 image: /visual-basic/visual-basic.png
-order: 5
 ---
-{% include img.html src="visual-basic.png" width=300 alt="Visual Basic" align="center" %}
+![Visual Basic](visual-basic.png){ width=300 }
 
 This beginners friendly tutorial is designed to introduce the main features of Visual Basic programming language.
 
@@ -40,7 +37,7 @@ The main features of Visual Basic are
 
 ### Versions of Visual Basic
 
-[Visual Basic for Applications (VBA)]({{ "visual-basic/vba" | relative_url }}) - integrated environment for creating and executing macros used in a number of applications such as MS Office, SOLIDWORKS, AutoCAD, etc.
+[Visual Basic for Applications (VBA)](visual-basic/vba) - integrated environment for creating and executing macros used in a number of applications such as MS Office, SOLIDWORKS, AutoCAD, etc.
 
 VBScript - language of Active Server Pages which is used for Windows scripting and client side web page scripting.
 

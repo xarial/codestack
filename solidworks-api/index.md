@@ -2,15 +2,12 @@
 layout: article
 title: SOLIDWORKS API Code Examples for Macros and Add-ins
 caption: API & Macros
-menu: SOLIDWORKS
 description: Collection of tutorials and examples on automating SOLIDWORKS using the SOLIDWORKS API in VBA and VSTA macros, add-ins and stand-alone applications
-lang: en
 image: /solidworks-api/solidworks-api-automation.png
-order: 1
-redirect_from:
+redirect-from:
   - /p/solidworks-api.html
 ---
-{% include img.html src="solidworks-api-automation.png" alt="SOLIDWORKS API Automation" align="center" %}
+![SOLIDWORKS API Automation](solidworks-api-automation.png)
 
 SOLIDWORKS Application Programming Interface (API) is a set of libraries which are exposing the public functions to be used by 3rd party software for invoking the SOLIDWORKS native commands programmatically.
 

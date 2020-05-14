@@ -3,15 +3,12 @@ layout: article
 title: Introduction to SOLIDWORKS Document Manager API
 caption: Document Manager API
 description: Collection of examples and articles utilizing SOLIDWORKS Document Manager library
-lang: en
 image: /solidworks-document-manager-api/document-manager-api.png
-menu: SOLIDWORKS
-order: 3
 labels: [document manager]
-redirect_from:
+redirect-from:
   - /2018/04/document-manager-api-getting-started.html
 ---
-{% include img.html src="document-manager-api.svg" width=150 alt="SOLIDWORKS Document Manager API" align="center" %}
+![SOLIDWORKS Document Manager API](document-manager-api.svg){ width=150 }
 
 This section introduces you to SOLIDWORKS Document Manager - powerful stand-alone library supplied by SOLIDWORKS which exposes API and allows to read and write metadata directly from SOLIDWORKS files stream.
 
