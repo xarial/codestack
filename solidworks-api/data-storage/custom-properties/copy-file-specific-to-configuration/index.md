@@ -8,7 +8,6 @@ labels: [configuration, copy, custom properties, utility]
 categories: sw-tools
 group: Custom Properties
 redirect-from:
-
   - /2018/03/copy-file-specific-custom-properties-to.html
 ---
 This macro copies all the file specific properties into the properties of the active configuration using SOLIDWORKS API.

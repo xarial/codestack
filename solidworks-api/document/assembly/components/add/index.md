@@ -6,7 +6,6 @@ description: Example Demonstrates 2 different ways to add component into the ass
 image: /images/codestack-snippet.png
 labels: [add component, assembly, example, solidworks api]
 redirect-from:
-
   - /2018/03/solidworks-api-assembly-add-components.html
   - /solidworks-api/document/assembly/add-components
 ---

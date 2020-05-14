@@ -6,7 +6,6 @@ description: Fixing the macro which fails when run on old (not the latest) versi
 image: /solidworks-api/troubleshooting/macros/future-version-apis/object-doesnt-support-this-action.png
 labels: [macro, troubleshooting]
 redirect-from:
-
   - /2018/04/macro-troubleshooting-macro-using-future-version-apis.html
 ---
 ## Symptoms

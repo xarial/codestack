@@ -8,7 +8,6 @@ labels: [blank sketch, hide sketch, solidworks api, utils]
 categories: sw-tools
 group: Sketch
 redirect-from:
-
   - /2018/03/solidworks-api-sketch-hide-all-sketches.html
 ---
 This macro will hide (blank) or show (unblank) all sketches (2D and 3D) in the active document using SOLIDWORKS API.

@@ -6,7 +6,6 @@ description: Fixing the Compile error - Invalid outside procedure error when pla
 image: /solidworks-api/troubleshooting/macros/too-long-vba-macro-line/doc-mgr-key-too-long.gif
 labels: [macro, troubleshooting]
 redirect-from:
-
   - /2018/04/macro-troubleshooting-too-long-vba-macro-line.html
 ---
 ## Symptoms

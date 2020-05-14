@@ -6,7 +6,6 @@ description: Instructions on getting started with SwEx.PMPage framework for deve
 toc_group_name: labs-solidworks-swex
 order: 1
 redirect-from:
-
   - /labs/solidworks/swex/pmpage/getting-started/whats-new
 ---
 Framework is supported by .NET language (i.e. C# and VB.NET) targeting .NET Framework 4.0 or newer.

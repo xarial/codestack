@@ -6,7 +6,6 @@ description: Fixing the inconsistency of sketch segments (line, arcs, etc) or sk
 image: /images/codestack-snippet.png
 labels: [macro, troubleshooting]
 redirect-from:
-
   - /2018/04/macro-troubleshooting-failed-create-sketch-segments.html
 ---
 ## Symptoms

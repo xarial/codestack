@@ -9,7 +9,6 @@ labels: [delete folder, feature manager, folder, solidworks api, utility]
 categories: sw-tools
 group: Model
 redirect-from:
-
   - /2018/04/solidworks-api-feature-manager-delete-feature-folder-with-all-children.html
 ---
 When deleting the top folder in SOLIDWORKS features tree all sub features are not get deleted so it is required to select all of them one-by-one in order to delete folder content.

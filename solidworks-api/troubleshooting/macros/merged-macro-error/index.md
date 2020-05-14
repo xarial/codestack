@@ -6,7 +6,6 @@ description: Fixing Run-time error '424' - Object required for macros which work
 image: /solidworks-api/troubleshooting/macros/merged-macro-error/error-object-required.png
 labels: [macro, troubleshooting]
 redirect-from:
-
   - /2018/04/macro-troubleshooting-merged-macro-does-not-work.html
 ---
 ## Symptoms

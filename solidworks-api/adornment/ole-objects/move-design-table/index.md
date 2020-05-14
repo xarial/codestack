@@ -6,7 +6,6 @@ description: Example demonstrates how to resize and move the design table OLE ob
 image: /solidworks-api/adornment/ole-objects/move-design-table/design-table-ole-object.png
 labels: [adornment, boundary, design table, example, move, ole object, solidworks api]
 redirect-from:
-
   - /2018/03/move-design-table-ole-object.html
 ---
 This example demonstrates how to resize and move the design table OLE object in the graphics area using [ISwOLEObject::Boundaries](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iswoleobject~boundaries.html) SOLIDWORKS API method.

@@ -8,7 +8,6 @@ labels: [component, export, stl]
 categories: sw-tools
 group: Import/Export
 redirect-from:
-
   - /solidworks-api/import-export/export-component-stl/
 ---
 {% include img.html src="component-stl.png" width=250 alt="Selected component exported to STL" align="center" %}

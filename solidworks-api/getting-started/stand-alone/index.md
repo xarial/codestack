@@ -6,7 +6,6 @@ description: Two approaches to connect to SOLIDWORKS instance from the COM-compa
 image: /solidworks-api/getting-started/stand-alone/reg-edit-clsid_prog_id.png
 labels: [article, clsid, instance, out-of-process, progid, rot, sdk, solidworks api, stand-alone]
 redirect-from:
-
   - /2018/03/connect-to-solidworks-from-stand-alone.html
 order: 4
 ---

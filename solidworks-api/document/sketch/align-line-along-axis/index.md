@@ -6,7 +6,6 @@ description: Example demonstrates how to align all sketch lines in the active sk
 image: /solidworks-api/document/sketch/align-line-along-axis/sw-sketch-line-relation.png
 labels: [example, horizontal, relation, sketch, solidworks api, vertical]
 redirect-from:
-
   - /2018/03/solidworks-api-sketch-align-line-relations.html
 ---
 Example demonstrates how to align all sketch lines in the active sketch (add the sketch relation) with one of the selected options using SOLIDWORKS API:

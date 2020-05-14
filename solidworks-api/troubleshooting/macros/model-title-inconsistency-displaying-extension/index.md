@@ -6,7 +6,6 @@ description: Fixing the Run-time Error '5' - Invalid procedure call or argument 
 image: /solidworks-api/troubleshooting/macros/model-title-inconsistency-displaying-extension/invalid-procedure-or-call-error.png
 labels: [macro, troubleshooting]
 redirect-from:
-
   - /2018/04/macro-troubleshooting--model-title-inconsistency-displaying-extension.html
 ---
 ## Symptoms

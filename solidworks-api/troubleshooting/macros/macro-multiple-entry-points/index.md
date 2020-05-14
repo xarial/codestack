@@ -6,7 +6,6 @@ description: Fixing the macro which doesn't work if it is run from the Tools->Ma
 image: /solidworks-api/troubleshooting/macros/macro-multiple-entry-points/error-object-variable-or-with-block-variable-not-set.png
 labels: [macro, troubleshooting]
 redirect-from:
-
   - /2018/04/macro-troubleshooting-multiple-entry-points-in-macro.html
 ---
 ## Symptoms

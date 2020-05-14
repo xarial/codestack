@@ -6,7 +6,6 @@ description: Fixing the Cannot Open error when opening or running the macro stor
 image: /solidworks-api/troubleshooting/macros/too-long-macro-path/long-macro-path.png
 labels: [macro, troubleshooting]
 redirect-from:
-
   - /2018/04/macro-troubleshooting-too-long-macro-path.html
 ---
 ## Symptoms

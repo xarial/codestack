@@ -7,7 +7,6 @@ order: 3
 image: /solidworks-api/getting-started/stand-alone/connect-cpp/proj-templ.png
 labels: [c++, CoCreateInstance, create instance, example, getobject, rot, sdk, solidworks api, tlb, type library]
 redirect-from:
-
   - /2018/03/create-c-stand-alone-application-for_5.html
 ---
 In this tutorial I will demonstrate how to connect to SOLIDWORKS application from out-of-process (a.k.a Stand-Alone) application (e.g. MFC, Win32 Console Application) using C++ and Microsoft Visual Studio.

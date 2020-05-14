@@ -8,7 +8,6 @@ labels: [custom property, drawing, example, macro, properties, rename, sheet, so
 categories: sw-tools
 group: Drawing
 redirect-from:
-
   - /2018/03/document_8.html
 ---
 This macro will rename all drawings sheets using the value of the specified custom property using SOLIDWORKS API.

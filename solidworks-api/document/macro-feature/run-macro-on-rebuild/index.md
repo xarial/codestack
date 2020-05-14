@@ -8,7 +8,6 @@ labels: [auto run, macro, rebuild]
 categories: sw-tools
 group: Model
 redirect-from:
-
   - /solidworks-api/document/run-macro-on-rebuild/
 ---
 This macro allows to automatically run specified macro with every rebuild operation using SOLIDWORKS API.

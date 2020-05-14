@@ -6,7 +6,6 @@ description: Example demonstrates how to bring the document selected by path to 
 image: /images/codestack-snippet.png
 labels: [activate doc, assembly, example, foreground, open document]
 redirect-from:
-
   - /2018/03/bring-document-foreground-activate.html
 ---
 This example demonstrates how to bring the document selected by path to foreground (make active) using [ISldWorks::ActivateDoc3](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~activatedoc3.html) SOLIDWORKS API.

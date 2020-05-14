@@ -6,7 +6,6 @@ description: Example listens for feature added event of the active part document
 image: /images/codestack-snippet.png
 labels: [event, example, feature manager, new feature, solidworks api]
 redirect-from:
-
   - /2018/03/solidworks-api-features-manager-catch-adding-feat-event.html
 ---
 This example listens for feature added event of the active part document using SOLIDWORKS API.

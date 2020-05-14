@@ -6,7 +6,6 @@ description: Example extracts the component instance index from the component's 
 image: /solidworks-api/document/assembly/components/get-instance-id/sw-component-properties.png
 labels: [assembly, component, example, instance id, solidworks api]
 redirect-from:
-
   - /2018/03/solidworks-api-assembly-get-component-instance-id.html
   - /solidworks-api/document/assembly/get-component-instance-id
 ---

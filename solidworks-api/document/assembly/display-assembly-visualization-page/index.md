@@ -6,7 +6,6 @@ description: Example displays the page for Assembly Visualization page
 image: /solidworks-api/document/assembly/display-assembly-visualization-page/sw-assembly-visualization.png
 labels: [assembly, example, solidworks api, visualization]
 redirect-from:
-
   - /2018/03/solidworks-api-assembly-display-assm-visual-tool.html
 ---
 This example displays the feature tree page for Assembly Visualization using SOLIDWORKS API.

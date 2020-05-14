@@ -6,7 +6,6 @@ description: Fixing the error in the macro which connects to database (e.g. SQL,
 image: /solidworks-api/troubleshooting/macros/connect-database-excel-error/odbc-drivers.png
 labels: [macro, troubleshooting]
 redirect-from:
-
   - /2018/04/macro-troubleshooting-failed-to-connect-to-database-or-excel.html
 ---
 ## Symptoms

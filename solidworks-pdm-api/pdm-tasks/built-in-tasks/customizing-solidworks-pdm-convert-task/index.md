@@ -6,7 +6,6 @@ description: Guide of changing the script for the standard task. Custom utility 
 image: /solidworks-pdm-api/pdm-tasks/built-in-tasks/customizing-solidworks-pdm-convert-task/pdm-convert-task-script.png
 labels: [convert task, debugging.dpi, solidworks pd, task]
 redirect-from:
-
   - /2018/03/customizing-solidworks-pdm-convert-task.html
 ---
 SOLIDWORKS PDM Task is a powerful built-in feature which allows to run custom functionality directly from the context menu in PDM vault or from the workflow state change trigger. The actual work can be performed either on the local machine or on the delegated remote task server.  

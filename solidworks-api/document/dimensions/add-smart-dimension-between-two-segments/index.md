@@ -6,7 +6,6 @@ description: Example adds the dimension between 2 selected sketch segments
 image: /solidworks-api/document/dimensions/add-smart-dimension-between-two-segments/dimension-name.png
 labels: [dimension, example, solidworks api]
 redirect-from:
-
   - /2018/03/solidworks-api-dimensions-add-dimensions-to-sketch-segment.html
 ---
 This example adds the dimension between 2 selected sketch segments (e.g. sketch lines) using SOLIDWORKS API. The dimension will be placed in the middle of 2 selection points.  

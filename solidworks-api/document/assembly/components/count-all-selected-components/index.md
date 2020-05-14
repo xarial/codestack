@@ -8,7 +8,6 @@ labels: [assembly, count components, solidworks api, status bar, utility]
 categories: sw-tools
 group: Assembly
 redirect-from:
-
   - /2018/03/solidworks-api-assembly-count-selected-components.html
   - /solidworks-api/document/assembly/count-all-selected-components
 ---

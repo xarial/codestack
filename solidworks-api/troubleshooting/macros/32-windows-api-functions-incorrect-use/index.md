@@ -6,7 +6,6 @@ description: Fixing the Compile error - The code in this project must be updated
 image: /solidworks-api/troubleshooting/macros/32-windows-api-functions-incorrect-use/declare-function-win-api.png
 labels: [macro, troubleshooting]
 redirect-from:
-
   - /2018/04/macro-troubleshooting-incorrect-use-of-32-bit-versions-of-win-api.html
 ---
 ## Symptoms

@@ -6,7 +6,6 @@ description: Example demonstrates how to traverse components tree in the assembl
 image: /solidworks-api/document/assembly/components/traversing-tree/sw-components-tree.png
 labels: [assembly, components tree, solidworks api, traverse]
 redirect-from:
-
   - /2018/03/solidworks-api-assembly-traverse-comps-tree.html
   - /solidworks-api/document/assembly/traversing-components-tree
 ---

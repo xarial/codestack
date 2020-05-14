@@ -6,7 +6,6 @@ description: Utilities for advanced development of SOLIDWORKS Property Manager P
 toc_group_name: labs-solidworks-swex
 order: 3
 redirect-from:
-
   - /labs/solidworks/vpages
   - /labs/solidworks/vpages/
   - /labs/solidworks/swex/pmp

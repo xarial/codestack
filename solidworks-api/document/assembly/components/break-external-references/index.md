@@ -8,7 +8,6 @@ labels: [assembly, external references, solidworks api, utility]
 categories: sw-tools
 group: Assembly
 redirect-from:
-
   - /2018/03/solidworks-api-assembly-break-all-external-references-for-components.html
   - /solidworks-api/document/assembly/break-components-external-references
 ---

@@ -7,7 +7,6 @@ image: /labs/solidworks/swex/add-in/commands-manager/hosting-commands/commands-t
 toc_group_name: labs-solidworks-swex
 order: 2
 redirect-from:
-
   - /labs/solidworks/swex/add-in/commands-manager/adding-command-group/
   - /labs/solidworks/swex/add-in/commands-manager/tab-boxes/
   - /labs/solidworks/swex/add-in/commands-manager/adding-context-menu/

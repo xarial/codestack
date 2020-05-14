@@ -6,7 +6,6 @@ description: Fixing the Run-time Error '91' - Object variable or With block vari
 image: /solidworks-api/troubleshooting/macros/assembly-drawing-lightweight-components/lightweight-component.png
 labels: [macro, troubleshooting]
 redirect-from:
-
   - /2018/04/macro-troubleshooting-lightweight-components-in-assembly.html
 ---
 ## Symptoms

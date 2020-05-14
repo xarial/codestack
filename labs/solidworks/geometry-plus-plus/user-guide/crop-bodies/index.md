@@ -6,7 +6,6 @@ description: Feature allows trimming surface or solid or multiple surfaces or so
 image: /labs/solidworks/geometry-plus-plus/user-guide/crop-bodies/icon.png
 toc_group_name: labs-solidworks-geometry-plus-plus
 redirect-from:
-
   - /labs/solidworks/geometry-plus-plus/user-guide/region-trim-surface/
 ---
 This command allows trimming surface or solid (target bodies) using sketches or sketch regions (trimming tools).

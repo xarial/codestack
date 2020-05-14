@@ -7,7 +7,6 @@ image: /labs/solidworks/swex/add-in/logo.png
 toc_group_name: labs-solidworks-swex
 order: 2
 redirect-from:
-
   - /labs/solidworks/dev-tools-addin
   - /labs/solidworks/dev-tools-addin/
 ---

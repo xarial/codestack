@@ -6,7 +6,6 @@ description: Example demonstrates how to change the precision for the hole locat
 image: /solidworks-api/document/tables/modify-holes-table-holes-location-precision/sw-hole-table.png
 labels: [drawing, example, hole table, precision, solidworks api]
 redirect-from:
-
   - /2018/04/solidworks-api-drawing-hole-table-holes-location-precision.html
 ---
 This example demonstrates how to change the precision for the hole locations in the selected Hole Table using SOLIDWORKS API.

@@ -9,7 +9,6 @@ labels: [assembly, component, explorer, frame, macro, show in folder, solidworks
 categories: sw-tools
 group: Assembly
 redirect-from:
-
   - /2018/03/show-selected-assembly-component-in.html
   - /solidworks-api/document/assembly/show-selected-assembly-component-window-folder
 ---

@@ -6,7 +6,6 @@ description: Example finds the revision table and removes all revisions and then
 image: /solidworks-api/document/drawing/clear-revision-table-new-revision/sw-revision-table.png
 labels: [add revision, clear revisions, drawing.revision table, example, solidworks api]
 redirect-from:
-
   - /2018/03/solidworks-api-drawing-clear-rev-table-add-new-row.html
 ---
 This example finds the revision table and removes all revisions and then adds new row with custom data using SOLIDWORKS API.
