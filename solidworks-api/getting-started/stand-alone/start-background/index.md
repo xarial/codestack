@@ -6,7 +6,7 @@ description: Instructions of how to start SOLIDWORKS application to be used by s
 image: /solidworks-api/getting-started/stand-alone/start-background/invisible-app.png
 labels: [background,invisible]
 ---
-{% include img.html src="invisible-app.png" width=350 alt="Hidden SOLIDWORKS application" align="center" %}
+![Hidden SOLIDWORKS application](invisible-app.png){ width=350 }
 
 In some cases when using the stand-alone application it might be beneficial to start application in background (invisible). This approach provides better user experience and better performance.
 

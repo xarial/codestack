@@ -18,7 +18,7 @@ Let's start with the 'target' macro which will be called from the different 'mas
 
 In the example above argument value passed from the 'master' macro will be extracted and displayed to the user in the message box in the 'target' macro:
 
-{% include img.html src="msg-box-macro-argument.png" width=400 height=132 alt="Message box in macro displaying the passed argument value" align="center" %}
+![Message box in macro displaying the passed argument value](msg-box-macro-argument.png){ width=400 height=132 }
 
 The helper class reads the buffer value from the **__SwMacroArgs__** format. This is a custom name which is known to both 'master' macro (which will write the value of argument) and the 'target' macro (which will read the value). This can be renamed to any other custom name if needed.
 

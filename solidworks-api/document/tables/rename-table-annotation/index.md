@@ -6,7 +6,7 @@ description: Example demonstrates how to rename the selected table using SOLIDWO
 image: /solidworks-api/document/tables/rename-table-annotation/rename-table-annotation.png
 labels: [table, rename]
 ---
-{% include img.html src="rename-table-annotation.png" width=450 alt="Table annotation renamed to a custom name" align="center" %}
+![Table annotation renamed to a custom name](rename-table-annotation.png){ width=450 }
 
 This example demonstrates how to rename the selected table using SOLIDWORKS API via [ITableAnnotation](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ITableAnnotation.html) interface. Table should be selected in the graphics area (not in the feature tree)
 

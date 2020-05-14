@@ -8,7 +8,7 @@ labels: [comment]
 categories: sw-tools
 group: Model
 ---
-{% include img.html src="comments-features.png" alt="Comments in the Feature Manager Tree" align="center" %}
+![Comments in the Feature Manager Tree](comments-features.png)
 
 This VBA macro extracts the text from all comments of the active document and displays it in a single message box.
 

@@ -8,11 +8,11 @@ labels: [cut-list,sheet metal,weldment,rename]
 categories: sw-tools
 group: Part
 ---
-{% include img.html src="sheet-metal-cut-list.png" width=250 alt="Sheet metal cut list features" align="center" %}
+![Sheet metal cut list features](sheet-metal-cut-list.png){ width=250 }
 
 This VBA macro allows to rename all cut list features for weldment and sheet metal part based on the name template which can include values of custom properties and free text.
 
-{% include img.html src="cut-list-properties.png" width=550 alt="Cut list properties" align="center" %}
+![Cut list properties](cut-list-properties.png){ width=550 }
 
 To configure the macro modify the values of *NAME_TEMPLATE* and *PROPERTIES* variables
 

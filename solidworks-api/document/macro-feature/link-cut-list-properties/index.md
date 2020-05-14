@@ -8,11 +8,11 @@ labels: [macro feature,cut-list,link properties]
 categories: sw-tools
 group: Part
 ---
-{% include img.html src="linked-custom-properties.png" width=450 alt="Linked file custom properties" align="center" %}
+![Linked file custom properties](linked-custom-properties.png){ width=450 }
 
 This VBA macro inserts the macro feature using SOLIDWORKS API into the part file which allows to dynamically link specified cut-list custom properties to the file generic custom properties.
 
-{% include img.html src="cut-list-properties.png" width=250 alt="Cut-List custom properties" align="center" %}
+![Cut-List custom properties](cut-list-properties.png){ width=250 }
 
 Macro feature rebuilds automatically when the parent weldment feature (e.g. structural member feature) is changed. Regeneration method is handling the post update notification which allows to read the up-to-date values of cut-list custom properties.
 
@@ -22,7 +22,7 @@ Macro feature is inserted into the feature tree and can be suppressed or removed
 
 One of the benefits of this approach comparing to linking the properties directly with the equation is that it is not name dependent, i.e. properties will remain linked even if cut-list renamed (for example when structural member profile is changed).
 
-{% include img.html src="cut-list-link-macro-feature.png" width=250 alt="Macro feature in the feature manager tree" align="center" %}
+![Macro feature in the feature manager tree](cut-list-link-macro-feature.png){ width=250 }
 
 ## Instructions
 

@@ -8,11 +8,11 @@ labels: [curve,linked,xyz,free form curve]
 categories: sw-tools
 group: Model
 ---
-{% include img.html src="feature-manager-xyz-curve.png" width=450 alt="Free form curve in SOLIDWORKS feature manager tree" align="center" %}
+![Free form curve in SOLIDWORKS feature manager tree](feature-manager-xyz-curve.png){ width=450 }
 
 SOLIDWORKS allows to insert the free form curve through XYZ coordinates from the external text file. This file however is not linked to the feature itself and the curve is not updated when external file changes.
 
-{% include img.html src="curve-file.png" width=300 alt="Curve points loaded from file" align="center" %}
+![Curve points loaded from file](curve-file.png){ width=300 }
 
 This VBA macro allow to automatically link the external file with coordinates and update the selected curve with single click.
 

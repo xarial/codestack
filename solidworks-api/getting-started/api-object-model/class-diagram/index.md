@@ -13,11 +13,11 @@ Diagram below displays the relationship between interfaces in the SOLIDWORKS API
 
 Diagram is interactive, it is possible to zoom in and zoom out with mouse wheel as well as pan with right or left mouse button. Navigation control in the bottom right corner allows to zoom in and zoom out as well as zoom to fit
 
-{% include img.html src="control-box.png" alt="Control Box" align="center" %}
+![Control Box](control-box.png)
 
 All boxes and arrows are clickable and will redirect for the information page about particular method, property or interface.
 
-{% include img.html src="open-link.png" width=250 alt="Open Link" align="center" %}
+![Open Link](open-link.png){ width=250 }
 
 {% include_relative diagram.htmlsnippet %}
 

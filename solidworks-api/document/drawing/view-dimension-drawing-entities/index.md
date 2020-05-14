@@ -6,7 +6,7 @@ description: Find and dimension the longest visible entity in the drawing view u
 image: /solidworks-api/document/drawing/view-dimension-drawing-entities/longest-edge-dimension.png
 labels: [drawing,dimension,visible entities]
 ---
-{% include img.html src="longest-edge-dimension.png" width=250 alt="Longest edge dimensioned in the drawing view" align="center" %}
+![Longest edge dimensioned in the drawing view](longest-edge-dimension.png){ width=250 }
 
 This example demonstrates how to add a linear dimension to the longest edge in the selected drawing view using SOLIDWORKS API.
 

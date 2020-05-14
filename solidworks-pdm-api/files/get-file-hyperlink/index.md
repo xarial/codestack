@@ -39,8 +39,8 @@ get-url myvault "D:\myvault\part.sldprt" explore
 
 The hyperlink is output to console:
 
-{% include img.html src="conisio-url.png" width=450 alt="Conisio url is output to console window" align="center" %}
+![Conisio url is output to console window](conisio-url.png){ width=450 }
 
 This hyperlink can be used now to access the file.
 
-{% include img.html src="hyperlink-email.png" width=450 alt="Conisio url inserted to the link in e-mail" align="center" %}
+![Conisio url inserted to the link in e-mail](hyperlink-email.png){ width=450 }

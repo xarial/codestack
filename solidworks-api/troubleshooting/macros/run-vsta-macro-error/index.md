@@ -12,7 +12,7 @@ redirect-from:
 
 SOLIDWORKS VSTA macro (C# or VB.NET) cannot be run and the *Cannot Open* error is displayed  
 
-{% include img.html src="cannot-open-vsta-macro.png" width=320 height=129 alt="Error displayed when running VSTA macro" align="center" %}
+![Error displayed when running VSTA macro](cannot-open-vsta-macro.png){ width=320 height=129 }
 
 ## Cause
 
@@ -28,9 +28,9 @@ Which means that it is required to have interops copied locally to run the macro
 
 * Copy all files in the output (bin) directory as the deliverables. You may exclude .pdb and .xml files as those are used for debugging and documentation purposes
 
-{% include img.html src="vsta-macro-binaries.png" width=400 height=108 alt="List of binaries from the compiled VSTA macro" align="center" %}
+![List of binaries from the compiled VSTA macro](vsta-macro-binaries.png){ width=400 height=108 }
 
 * If the macro was supplied without this files try to create new VSTA macro and copy missing files
 * If macro (or zip archive) was downloaded from web. Make sure that files are not blocked as it might cause the issue.
 
-{% include img.html src="unblock-dll.png" width=217 height=320 alt="Option to unblock the dll file in Windows" align="center" %}
+![Option to unblock the dll file in Windows](unblock-dll.png){ width=217 height=320 }

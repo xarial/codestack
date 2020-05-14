@@ -10,11 +10,11 @@ This example demonstrates how to select a named entity (face, edge or vertex) in
 
 Named entity can be only defined in the part document by selecting corresponding face or edge:
 
-{% include img.html src="face-properties.png" width=250 alt="Face properties command in context menu" align="center" %}
+![Face properties command in context menu](face-properties.png){ width=250 }
 
 Name can be set in the displayed dialog and it is unique per part.
 
-{% include img.html src="face-name.png" width=250 alt="Face name dialog" align="center" %}
+![Face name dialog](face-name.png){ width=250 }
 
 Pointer to the entity can be retrieved via [IPartDoc::GetEntityByName](http://help.solidworks.com/2014/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IPartDoc~GetEntityByName.html) SOLIDWORKS API method.
 

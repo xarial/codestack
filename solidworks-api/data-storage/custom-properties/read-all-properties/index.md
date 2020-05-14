@@ -6,7 +6,7 @@ description: VBA example to extract all custom properties from various sources o
 image: /solidworks-api/data-storage/custom-properties/read-all-properties/custom-properties.png
 labels: [properties,cut-list,configuration]
 ---
-{% include img.html src="custom-properties.png" width=550 alt="Custom properties of the file" align="center" %}
+![Custom properties of the file](custom-properties.png){ width=550 }
 
 This VBA macro example demonstrates how to read all properties from all sources of custom properties using SOLIDWORKS API. This includes file (general), configuration specific and cut-list properties.
 

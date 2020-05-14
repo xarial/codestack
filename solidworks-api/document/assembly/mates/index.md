@@ -7,7 +7,7 @@ image: /solidworks-api/document/assembly/mates/assembly-mating.png
 labels: [assembly, mate]
 order: 1
 ---
-{% include img.html src="assembly-mating.png" height=300 alt="Mating assembly components via API" align="center" %}
+![Mating assembly components via API](assembly-mating.png){ height=300 }
 
 Assembly components can be mated programmatically via [IAssemblyDoc::AddMate3](http://help.solidworks.com/2012/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.IAssemblyDoc~AddMate3.html) SOLIDWORKS API method (or newer versions of this method).
 

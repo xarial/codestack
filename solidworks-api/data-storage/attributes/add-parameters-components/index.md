@@ -12,6 +12,6 @@ This example adds attributes with string values as the parameters to the selecte
 
 Attributes are lightweight features which can be attached to SOLIDWORKS entities and store the custom data.
 
-{% include img.html src="two-attributes-features-tree.png" width=301 height=320 alt="Two attributes features created in the Feature Manager Tree using SOLIDWORKS API" align="center" %}
+![Two attributes features created in the Feature Manager Tree using SOLIDWORKS API](two-attributes-features-tree.png){ width=301 height=320 }
 
 {% code-snippet { file-name: Macro.vba } %}

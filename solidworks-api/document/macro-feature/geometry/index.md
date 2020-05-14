@@ -34,18 +34,18 @@ Generated body type can be set by assigning the value to *BODY_TYPE* constant
 
 Creates a box as a solid body geometry.
 
-{% include img.html src="solid-body.png" width=350 alt="Macro feature generates solid body" align="center" %}
+![Macro feature generates solid body](solid-body.png){ width=350 }
 
 #### swBodyType_e.swSheetBody
 
 Creates a single surface body by sewing the faces of the box.
 
-{% include img.html src="surface-body.png" width=350 alt="Macro feature generates surface (sheet) body" align="center" %}
+![Macro feature generates surface (sheet) body](surface-body.png){ width=350 }
 
 #### swBodyType_e.swWireBody
 
 Creates wire bodies from all edges of the box geometry. Wire bodies are edges and not presented in the bodies folders. Example of wire bodies used in standard feature tree are curves (composite, through XYZ, projected etc.)
 
-{% include img.html src="wire-body.png" width=350 alt="Macro feature generates wire body" align="center" %}
+![Macro feature generates wire body](wire-body.png){ width=350 }
 
 {% code-snippet { file-name: Macro.vba } %}

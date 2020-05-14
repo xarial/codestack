@@ -13,7 +13,7 @@ Example for SOLIDWORKS VSTA macro (C# or VB.NET) is copied from the SOLIDWORKS A
 * MacroName.SolidWorksMacro doesn't contain a definition for 'SwApp'
 * The name 'Main' doesn't exist in the current context
 
-{% include img.html src="vsta-copy-example-compile-error.png" width=450 alt="Compile error when code is copied from the example into the VSTA macro" align="center" %}
+![Compile error when code is copied from the example into the VSTA macro](vsta-copy-example-compile-error.png){ width=450 }
 
 ## Cause
 
@@ -33,14 +33,14 @@ Change the namespace in the *SolidWorksMacro.cs* file to match the default names
 
 * Open the project properties page
 
-{% include img.html src="project-properties.png" width=250 alt="VSTA macro project properties" align="center" %}
+![VSTA macro project properties](project-properties.png){ width=250 }
 
 * Copy the value in the *Default Namespace* field of the *Application* tab
 
-{% include img.html src="project-default-namespace.png" width=350 alt="Default namespace of the VSTA project" align="center" %}
+![Default namespace of the VSTA project](project-default-namespace.png){ width=350 }
 
 * Rename the namespace to the copied value
 
-{% include img.html src="modified-namespace.png" width=500 alt="Renamed namespace to match the default namespace" align="center" %}
+![Renamed namespace to match the default namespace](modified-namespace.png){ width=500 }
 
 * Rebuild the macro

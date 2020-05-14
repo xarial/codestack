@@ -8,7 +8,7 @@ labels: [events,performance,notification,commands]
 categories: sw-tools
 group: Performance
 ---
-{% include img.html src="opening-file-progressbar.png" width=450 alt="Opening large assembly document in SOLIDWORKS" align="center" %}
+![Opening large assembly document in SOLIDWORKS](opening-file-progressbar.png){ width=450 }
 
 This VBA macro will listen for SOLIDWORKS commands (e.g. opening, rebuilding, suppressing, resolving etc.) using SOLIDWORKS API and identify the long running ones by matching the execution time to the user assigned delay period. If the command is running longer then this period, the beep signal is played notifying the user that the command is completed. If command is executed faster than no sound is played.
 

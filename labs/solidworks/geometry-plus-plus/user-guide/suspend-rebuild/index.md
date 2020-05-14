@@ -16,15 +16,15 @@ Command is available in menu, toolbar and command manager tab and acts as a togg
 
 When button is not toggled the suspend rebuild mode is disabled and rebuild operations are performed normally.
 
-{% include img.html src="not-suspended-buttons-state.png" alt="Suspend Rebuild commands in toolbar and command manager" align="center" %}
+![Suspend Rebuild commands in toolbar and command manager](not-suspended-buttons-state.png)
 
 When the button is toggled all rebuild operations are suspended.
 
-{% include img.html src="suspended-buttons-state.png" alt="Suspend rebuild enabled" align="center" %}
+![Suspend rebuild enabled](suspended-buttons-state.png)
 
 The status bar displays the information about the number of currently suspended rebuild operations.
 
-{% include img.html src="status-bar-message.png" alt="Number of suspended rebuilds in the status bar" align="center" %}
+![Number of suspended rebuilds in the status bar](status-bar-message.png)
 
 In suspend rebuild mode the changes are not resolved and model will remain unchanged. When editing the definitions of the features and closing the Property Manager Page all the features below the edited feature become disabled (not editable) until model is rebuild.
 

@@ -6,7 +6,7 @@ description: Macro identifies the type of the selected simple cylindrical face (
 image: /solidworks-api/geometry/cylindrical-face-type/cylindrical-faces-types.png
 labels: [geometry, face, hole, outer, inner]
 ---
-{% include img.html src="cylindrical-faces-types.png" height=250 alt="Types of cylindrical faces" align="center" %}
+![Types of cylindrical faces](cylindrical-faces-types.png){ height=250 }
 
 This macro identifies the type of the selected simple cylindrical face (through all hole, blind hole or external hole) based on the loops type using SOLIDWORKS API.
 

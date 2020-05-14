@@ -14,7 +14,7 @@ There are 3 types of faces in SOLIDWORKS bodies:
 * **Internal Shell**. Faces in solid bodies which belong to the cavities.
 * **External Shell**. Any other faces which do not belong to previous groups
 
-{% include img.html src="face-shell-types.png" width=400 height=243 alt="Shell types of face" align="center" %}
+![Shell types of face](face-shell-types.png){ width=400 height=243 }
 
 The example below identifies the type of the selected sheet body using SOLIDWORKS API. If the body is of open geometry (contains open shell faces) or closed geometry (no open shell faces). The closed geometry sheet body can be converted to a solid body.  
 

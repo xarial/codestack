@@ -25,13 +25,13 @@ There are 2 type of program identifiers for SOLIDWORKS: version independent and 
 
 Program identifiers are registered in the Windows Registry:  
 
-{% include img.html src="reg-edit-clsid.png" width=640 alt="Class Id in the Windows registry" align="center" %}
+![Class Id in the Windows registry](reg-edit-clsid.png){ width=640 }
 
 In the example above program identifier of the **SldWorks.Application.23** corresponds to the COM class identifier **{D66FBAAE-4150-402F-8581-75D1652D696A}**  
 
 More information about this object (like type library class identifier, COM server location [i.e. path to **sldworks.exe**]) can be found at the registry branch related to the class identifier (i.e. **HKEY_CLASSES_ROOT\CLSID\{D66FBAAE-4150-402F-8581-75D1652D696A}**)  
 
-{% include img.html src="reg-edit-clsid_prog_id.png" width=640 alt="Prog Id in the Windows registry" align="center" %}
+![Prog Id in the Windows registry](reg-edit-clsid_prog_id.png){ width=640 }
 
 Version independent program identifier will be identical for all versions of SOLIDWORKS and equal to **"SldWorks.Application"**.
 
@@ -71,7 +71,7 @@ There are few limitations when using this method:
 That means that session is started lightweight and no add-ins are loaded.
 This was designed to allow embedding OLE objects into the 3rd party applications (such as Microsoft Office).
 
-{% include img.html src="excel-ole-object.png" width=400 alt="SOLIDWORKS Part Document OLE object in Excel" align="center" %}
+![SOLIDWORKS Part Document OLE object in Excel](excel-ole-object.png){ width=400 }
 
 * It is not possible to create more than one active sessions of SOLIDWORKS
 

@@ -8,7 +8,7 @@ labels: [reflection, specific feature, feature definition]
 categories: sw-tools
 group: Developers
 ---
-{% include img.html src="specific-feature-types.png" width=450 alt="Type of specific feature and feature definition of selected feature output to the window" align="center" %}
+![Type of specific feature and feature definition of selected feature output to the window](specific-feature-types.png){ width=450 }
 
 [IFeature::GetSpecificFeature2](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IFeature~GetSpecificFeature2.html) and [IFeature::GetDefinition](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ifeature~getdefinition.html) SOLIDWORKS API methods return dispatch pointers which in some cases are not easy to identify and cast to specific types.
 

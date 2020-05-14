@@ -8,7 +8,7 @@ labels: [sketch,dimension,edge,bounding box]
 ---
 This code example demonstrates how to draw the model bounding box diagonal in the drawing view using SOLIDWORKS API.
 
-{% include img.html src="assembly-bounding-box.png" width=250 alt="Bounding box of the assembly" align="center" %}
+![Bounding box of the assembly](assembly-bounding-box.png){ width=250 }
 
 The bounding box coordinate system is extracted from the underlying model of the drawing view. The coordinates are relative to the global coordinate system of the part or the assembly drawing view created from.
 
@@ -18,7 +18,7 @@ In order to properly transform the coordinate into the drawing sheet space it is
 * Drawing sheet transformation.
 * Drawing sheet scale
 
-{% include img.html src="sheet-scale-property.png" width=350 alt="Drawing sheet scale property" align="center" %}
+![Drawing sheet scale property](sheet-scale-property.png){ width=350 }
 
 The combination of the above transformation will return the full transformation of the coordinate from the model space into the current sheet space.
 
@@ -32,6 +32,6 @@ The combination of the above transformation will return the full transformation 
 * Run the macro. As the result the diagonal is drawn in the sheet space representing the bounding box of the underlying model
 * Move the view. Note that the created line segment doesn't move with the view which means it was created in the drawing sheet space
 
-{% include img.html src="drawing-view-line.png" width=300 alt="Bounding box diagonal in the drawing" align="center" %}
+![Bounding box diagonal in the drawing](drawing-view-line.png){ width=300 }
 
 {% code-snippet { file-name: Macro.vba } %}

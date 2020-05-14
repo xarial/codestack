@@ -10,13 +10,13 @@ Persistent reference ids available in SOLIDWORKS API allow to retrieve the persi
 
 Persistent reference id is an array of bytes. This array may change for the same reference so it is not possible to compare two arrays to identify if the references are the same. Use [IModelDocExtension::IsSamePersistentID method](http://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~issamepersistentid.html) to identify if two persist references are the same.
 
-{% include img.html src="persist-id-array.png" width=350 alt="Array of bytes of persist reference displayed in the watch window of VBA Editor" align="center" %}
+![Array of bytes of persist reference displayed in the watch window of VBA Editor](persist-id-array.png){ width=350 }
 
 Even if array may change for the same entity it is still possible to retrieve the valid pointer to the entity via [IModelDocExtension::GetPersistReference3](http://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~getpersistreference3.html) SOLIDWORKS API method.
 
 The following example outputs the persist id of any selected entity into immediate window in the format of base64 string
 
-{% include img.html src="immediate-window-persist-id.png" alt="Persist reference id converted to base64 string displayed in the immediate window of VBA Editor" align="center" %}
+![Persist reference id converted to base64 string displayed in the immediate window of VBA Editor](immediate-window-persist-id.png)
 
 Use this example to read the id of the entity.
 

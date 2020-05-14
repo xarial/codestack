@@ -19,7 +19,7 @@ Full name of the component consists of
 * Context name for virtual component (specified after **^** symbol in the full name)
 * Parent assembly full name (specified before **/** symbol in the full name)
 
-{% include img.html src="component-name.png" alt="Components in the feature tree" align="center" %}
+![Components in the feature tree](component-name.png)
 
 The names of the components in the structure above will be returned as the following (the colors in the picture match the parts in names)
 

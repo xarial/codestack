@@ -14,7 +14,7 @@ SOLIDWORKS macro was recorded by [Macro Recording Tool](http://help.solidworks.c
 
 Usually macro recording is using the [IModelDocExtension::SelectByID2](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~selectbyid2.html) SOLIDWORKS API method to capture the selection. This method may use temporarily names (like sketch segment names) or coordinates for selection which might not be consistent across different models or view orientations.
 
-{% include img.html src="recorded-macro-extrude.png" width=500 alt="Recorded macro line to select arc in the sketch by name" align="center" %}
+![Recorded macro line to select arc in the sketch by name](recorded-macro-extrude.png){ width=500 }
 
 ## Resolution
 

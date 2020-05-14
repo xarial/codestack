@@ -14,15 +14,15 @@ Add-in can import the XAML files created from Part documents only (XAML files fr
 
 XAML file export format supported natively by SOLIDWORKS. Use *File->Save As* menu command to export file in the XAML format.
 
-{% include img.html src="save-as-xaml.png" width=550 alt="Save As XAML format in File Save As dialog" align="center" %}
+![Save As XAML format in File Save As dialog](save-as-xaml.png){ width=550 }
 
 However this format cannot be imported natively. Add-in adds the *Import XAML File* commands into the menu. Open new or existing file and import xaml using this command.
 
-{% include img.html src="import-xaml-menu.png" width=450 alt="Import XAML command in menu" align="center" %}
+![Import XAML command in menu](import-xaml-menu.png){ width=450 }
 
 Graphics is rendered using OpenGL. Model can be rotated, zoomed, panned. There are no feature elements or temp bodies created and graphics is rendered with high performance.
 
-{% include img.html src="vbo-opengl.png" width=350 alt="Geometry rendered using OpenGL" align="center" %}
+![Geometry rendered using OpenGL](vbo-opengl.png){ width=350 }
 
 By default graphics of OpenGL is not respected by zoom commands. I.g. *Zoom To fit* fill not fit the geometry properly and would ignore its bounding box. To specify the visible boundaries it is required to use the [IModelDocExtension::SetVisibleBox](http://help.solidworks.com/2017/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModelDocExtension~SetVisibleBox.html) SOLIDWORKS API method. Note, it is not required to union the existing visible box of native SOLIDWORKS geometry, SOLIDWORKS will perform this operation automatically.
 

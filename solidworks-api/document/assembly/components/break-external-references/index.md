@@ -13,6 +13,6 @@ redirect-from:
 ---
 This example will break all external references for all components in the active assembly using SOLIDWORKS API.
 
-{% include img.html src="break-all-external-references.png" width=640 alt="Command to break all external references" align="center" %}
+![Command to break all external references](break-all-external-references.png){ width=640 }
 
 {% code-snippet { file-name: Macro.vba } %}

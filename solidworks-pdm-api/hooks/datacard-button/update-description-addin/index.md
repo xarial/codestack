@@ -12,7 +12,7 @@ This example demonstrates how to handle the button click on data card using SOLI
 * Set the *Command type* option to *Run Add-in*
 * Specify the name of the add-in as shown on the picture below. This option allows to specify the unique tag which can be retrieved by the add-in when button is clicked to properly identify the button.
 
-{% include img.html src="data-card-button.png" width=500 alt="Data card setup options" align="center" %}
+![Data card setup options](data-card-button.png){ width=500 }
 
 This option should be equal to the value specified in the *BUTTON_TAG* constant in the add-in
 
@@ -24,6 +24,6 @@ private const string BUTTON_TAG = "_UpdateDesc_";
 
 When button clicked the *Description* variable is updated by concatenation of values in *Number* and *Revision* variables.
 
-{% include img.html src="button-update-variable.gif" width=450 alt="Description is updated when button is clicked" align="center" %}
+![Description is updated when button is clicked](button-update-variable.gif){ width=450 }
 
 {% code-snippet { file-name: add-in } %}

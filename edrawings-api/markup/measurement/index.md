@@ -6,7 +6,7 @@ description: Performing measurements capturing of the entities in the SOLIDWORKS
 image: /edrawings-api/markup/measurement/surveying-form.png
 labels: [edrawings,markup,mesurement]
 ---
-{% include img.html src="surveying-form.png" width=450 alt="Measurement captured in the text box" align="center" %}
+![Measurement captured in the text box](surveying-form.png){ width=450 }
 
 This example demonstrate how to use eDrawings markup API to capture the measurements of selected entities into a text box.
 

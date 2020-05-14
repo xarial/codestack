@@ -12,7 +12,7 @@ This article explains how to deploy and register SOLIDWORKS add-in manually.
 
 Once project is successfully compiled all required binaries and data files are placed into the output folder.
 
-{% include img.html src="bin-folder.png" width=350 alt="Folder with binary output" align="center" %}
+![Folder with binary output](bin-folder.png){ width=350 }
 
 When deploying the product (add-in or stand-alone application) all files must be deployed (including any 3rd party dlls or interops). You may exclude any supporting files such as pdb-files or xml documentation files.
 
@@ -26,7 +26,7 @@ To register .NET add-in (C# or VB.NET) it is required to call the [Assembly Regi
 
 Message similar to the following should be displayed if the registration successful:
 
-{% include img.html src="types-registered-successfully.png" width=500 alt="Successful registration of COM types" align="center" %}
+![Successful registration of COM types](types-registered-successfully.png){ width=500 }
 
 > It is required to use the correct version of the framework depending on the target framework add-in was compiled to.
 
@@ -67,7 +67,7 @@ To unregister the .NET add-in it is required to call the [Assembly Registration 
 
 When add-in is unregistered the following message is displayed in the console:
 
-{% include img.html src="types-unregistered-successfully.png" width=500 alt="Successful unregistration of COM types" align="center" %}
+![Successful unregistration of COM types](types-unregistered-successfully.png){ width=500 }
 
 To unregister the COM add-in it is required to call the [regsvr32](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/regsvr32) utility with /u flag.
 

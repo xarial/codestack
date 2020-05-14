@@ -6,7 +6,7 @@ description: This article explains the use of internal ids and the ways to read 
 image: /solidworks-api/document/tracking-objects/internal-ids/sketch-segments-ids.png
 labels: [id, track, internal id]
 ---
-{% include img.html src="sketch-segments-ids.png" width=350 alt="Internal ids assigned to sketch lines in the sketch" align="center" %}
+![Internal ids assigned to sketch lines in the sketch](sketch-segments-ids.png){ width=350 }
 
 Internal ids are usually Integer or Long values which uniquely identify the SOLIDWORKS object within the model. Ids are persistent and do not change across rebuild operations or sessions. Ids also updated when the object is changed (e.g. feature is renamed or sketch line changes the coordinates).
 

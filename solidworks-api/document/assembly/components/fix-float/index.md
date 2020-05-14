@@ -6,16 +6,16 @@ description: Example demonstrates a workaround for missing SOLIDWORKS API for fi
 image: /solidworks-api/document/assembly/components/fix-float/component-fix-options.png
 labels: [fix, float, component, workaround]
 ---
-{% include img.html src="component-fix-options.png" alt="Options to fix component" align="center" %}
+![Options to fix component](component-fix-options.png)
 
 This VBA example demonstrates a simple workaround for missing SOLIDWORKS API to fix or float the component in active configuration only. [IAssemblyDoc::FixComponent](http://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iassemblydoc~fixcomponent.html) only fixes the components in all configurations.
 
 Create an example assembly with 2 configurations and 4 instances of the component, where first 2 instances are floating in both configurations, while last 2 instances are fixed in both configuration.
 
-{% include img.html src="component-initial-state.png" alt="Initial state of example" align="center" %}
+![Initial state of example](component-initial-state.png)
 
 As the result of running this macro components will be changed to the following result:
 
-{% include img.html src="component-fix-result.png" alt="Result of running the macro" align="center" %}
+![Result of running the macro](component-fix-result.png)
 
 {% code-snippet { file-name: Macro.vba } %}

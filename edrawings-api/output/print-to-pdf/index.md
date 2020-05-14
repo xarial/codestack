@@ -9,7 +9,7 @@ labels: [export,pdf,batch,edrawings,print]
 categories: sw-tools
 group: Import/Export
 ---
-{% include img.html src="print-to-pdf.svg" width=200 alt="Exporting SOLIDWORKS files to PDF" align="center" %}
+![Exporting SOLIDWORKS files to PDF](print-to-pdf.svg){ width=200 }
 
 This console application developed in VB.NET allows to export SOLIDWORKS, DXF, DWG files to PDF using free version of SOLIDWORKS eDrawings via its API. It is not required to have SOLIDWORKS installed or use its license to use this tool. This tool is supported on Windows 8.1 onwards.
 
@@ -39,11 +39,11 @@ This application can be run from the command line and expects 2 mandatory and on
 
 Operation progress is displayed in the console window
 
-{% include img.html src="export-results-console.png" width=450 alt="Exporting process console output" align="center" %}
+![Exporting process console output](export-results-console.png){ width=450 }
 
 PDF files are created as per settings. PDF files are named after the source files they were generated from.
 
-{% include img.html src="exported-pdfs.png" width=450 alt="PDF files created from the input SOLIDWORKS drawing files" align="center" %}
+![PDF files created from the input SOLIDWORKS drawing files](exported-pdfs.png){ width=450 }
 
 ## EDrawingsHost.vb
 

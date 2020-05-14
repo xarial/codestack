@@ -13,15 +13,15 @@ redirect-from:
 * Legacy SOLIDWORKS macro downloaded from the internet or have been developed in-house some time ago failed to run.
 *Can't find project or library error* is displayed and of the SOLIDWORKS declarations are highlighted.
 
-{% include img.html src="error-cant-find-project-or-library.png" width=320 height=182 alt="Can't find project or library error when running the macro" align="center" %}
+![Can't find project or library error when running the macro](error-cant-find-project-or-library.png){ width=320 height=182 }
 
 Alternatively non-SOLIDWORKS declarations can be highlighted (such as Left or Mid functions)
 
-{% include img.html src="error-cant-find-project-or-library-left.png" width=320 height=185 alt="Can't find project or library error on Left function in VBA" align="center" %}
+![Can't find project or library error on Left function in VBA](error-cant-find-project-or-library-left.png){ width=320 height=185 }
 
 * If the libraries were never selected in the macro the *Compile error: user-defined type not defined* can be displayed.
 
-{% include img.html src="compile-error-user-defined-type-not-defined.png" height=200 alt="Compile error: user-defined type not defined" align="center" %}
+![Compile error: user-defined type not defined](compile-error-user-defined-type-not-defined.png){ height=200 }
 
 ## Cause
 
@@ -35,11 +35,11 @@ Alternatively non-SOLIDWORKS declarations can be highlighted (such as Left or Mi
 * Navigate to Tools->References menu in the VBA editor
 * Select the SOLIDWORKS type libraries as shown below. If libraries cannot be found in the *Available References* list use *Browse...* button and find the *sldworks.tlb*, *swconst.tlb*, *swcommands.tlb* in the installation folder of SOLIDWORKS.
 
-{% include img.html src="selected-sw-references.png" height=200 alt="Required SOLIDWORKS type libraries" align="center" %}
+![Required SOLIDWORKS type libraries](selected-sw-references.png){ height=200 }
 
 * If libraries are selected or **MISSING** keyword is present it is required to force update the references by following the steps below:
 
-{% include img.html src="fix-update-vba-references.png" width=320 height=269 alt="List of missing references in VBA macro" align="center" %}
+![List of missing references in VBA macro](fix-update-vba-references.png){ width=320 height=269 }
 
 * Uncheck all of the libraries which are referencing SOLIDWORKS. (including libraries with **MISSING** keyword next to them)
 * Click OK

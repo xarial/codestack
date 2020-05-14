@@ -10,11 +10,11 @@ group: Assembly
 ---
 This macro generates the assemblies for each combination of top level components configurations (permutation) using SOLIDWORKS API.
 
-{% include img.html src="component-configurations.png" width=450 alt="Component configurations" align="center" %}
+![Component configurations](component-configurations.png){ width=450 }
 
 Resulting combinations are saved to the external assemblies (one file per combination).
 
-{% include img.html src="generated-permutation-assemblies.png" width=350 alt="Generated assemblies for each combination of components configurations" align="center" %}
+![Generated assemblies for each combination of components configurations](generated-permutation-assemblies.png){ width=350 }
 
 ## Options
 * *OUT_FOLDER* - Full path to output folder where the resulting files need to be saved

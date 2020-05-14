@@ -10,7 +10,7 @@ labels: [pdm add-in, error]
 
 It takes very long time to register the add-in in SOLIDWORKS PDM vault using the SOLIDWORKS PDM administration utility. Sometimes the *This action cannot be completed because the '' program is not responding. Choose "Switch To" and correct the problem* message is displayed multiple times while adding the add-in.
 
-{% include img.html src="server-busy.png" alt="Program is not responding error" align="center" %}
+![Program is not responding error](server-busy.png)
 
 In some cases unexpected code is executed or random errors appear.
 
@@ -22,7 +22,7 @@ When add-in is added to the vault via SOLIDWORKS PDM Administration tool, all pu
 
 In most cases this issue is caused if **Make assembly COM-visible** option is checked in the project properties.
 
-{% include img.html src="assembly-com-visible.png" width=450 alt="COM Visible assembly" align="center" %}
+![COM Visible assembly](assembly-com-visible.png){ width=450 }
 
 This will make all the public classes automatically visible for COM.
 
@@ -50,7 +50,7 @@ public class PdmAddIn : IEdmAddIn5
 
 As the result it would take more time and the following message will be shown which indicates that an instance of **MyComClass** was created while adding the add-in to the vault.
 
-{% include img.html src="message-box.png" width=450 alt="Message box in the COM visible class displayed while registering the add-in" align="center" %}
+![Message box in the COM visible class displayed while registering the add-in](message-box.png){ width=450 }
 
 ## Resolution
 

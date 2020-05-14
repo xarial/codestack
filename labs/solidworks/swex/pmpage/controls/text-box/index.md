@@ -7,7 +7,7 @@ image: /labs/solidworks/swex/pmpage/controls/text-box/text-box.png
 toc_group_name: labs-solidworks-swex
 order: 4
 ---
-{% include img.html src="text-box.png" alt="Text Box control" align="center" %}
+![Text Box control](text-box.png)
 
 Text box control will be automatically generated for all properties of type *string*.
 

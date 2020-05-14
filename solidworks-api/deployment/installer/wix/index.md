@@ -16,11 +16,11 @@ Download the WiX installer from the [WiX Toolset](http://wixtoolset.org/) websit
 
 Run the installation process
 
-{% include img.html src="wix-installation-dialog.png" width=250 alt="WiX installation dialog" align="center" %}
+![WiX installation dialog](wix-installation-dialog.png){ width=250 }
 
 Once installation is complete click the button to install the Visual Studio extension
 
-{% include img.html src="wix-visual-studio-extension.png" width=250 alt="Installing the Visual Studio extension" align="center" %}
+![Installing the Visual Studio extension](wix-visual-studio-extension.png){ width=250 }
 
 > Alternatively extensions can be downloaded directly from the [Releases Page](http://wixtoolset.org/releases/) or from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=RobMensching.WiXToolset)
 
@@ -30,7 +30,7 @@ Once WiX framework and Visual Studio extension are installed setup project can b
 
 Add new project and select *Setup Project for WiX vX* under the *WiX Toolset* category
 
-{% include img.html src="new-wix-setup-project.png" width=350 alt="Creating new setup project" align="center" %}
+![Creating new setup project](new-wix-setup-project.png){ width=350 }
 
 Visual Studio will generate the default project.
 
@@ -42,7 +42,7 @@ Follow the steps below to configure the project
 
 Add the reference for WiX extension to use standard pages in installer dialog by clicking the *Add Reference...* command from the context menu
 
-{% include img.html src="add-wix-references.png" alt="Add Reference... context menu command" align="center" %}
+![Add Reference... context menu command](add-wix-references.png)
 
 Browse to *WixUIExtension.dll* and *WixUtilExtension.dll* files located at %wix%\bin
 
@@ -52,7 +52,7 @@ By default WiX project is created for x86 deployment. Majority of SOLIDWORKS ver
 
 Unload the Setup project in Visual Studio and click *Edit Project* or open the *.wixproj file in any text editor. Modify property group to support x64 environment as shown on the picture below:
 
-{% include img.html src="setting-x64-wix-configuration.png" alt="Setting the x64 configuration for setup project" align="center" %}
+![Setting the x64 configuration for setup project](setting-x64-wix-configuration.png)
 
 ### Setting the build folder as a preprocessor variable
 
@@ -60,7 +60,7 @@ For the purpose of simplification of linking of files into the setup project it 
 
 > SourceOutDir=..\Build
 
-{% include img.html src="wix-preprocessor-variable.png" width=350 alt="Defining the preprocessor variable in WiX project" align="center" %}
+![Defining the preprocessor variable in WiX project](wix-preprocessor-variable.png){ width=350 }
 
 > It is allowed and recommended to use relative path to point to the build location
 
@@ -84,11 +84,11 @@ It is possible to customize the dialog to include icons and banner images
 
 Banner is an image displayed in the header of the installer. This should be a .bmp file with size of 493x58 pixels.
 
-{% include img.html src="wix-installer-banner.png" alt="Banner image in installer" align="center" %}
+![Banner image in installer](wix-installer-banner.png)
 
 Dialog background is an image displayed in the background of the installer. This should be a .bmp file with size of 493x312 pixels.
 
-{% include img.html src="wix-installer-background.png" width=350 alt="Background image in installer" align="center" %}
+![Background image in installer](wix-installer-background.png){ width=350 }
 
 Icon can be added as an .ico file and will be assigned to the product in the *Programs and Features* group in *Control Panel*.
 
@@ -238,17 +238,17 @@ By default installer project is not dependent on other projects in solution. It 
 
 Select the installer project and click *Project Dependencies...*
 
-{% include img.html src="project-dependencies-context-menu.png" width=250 alt="Project dependencies context menu" align="center" %}
+![Project dependencies context menu](project-dependencies-context-menu.png){ width=250 }
 
 Make sure that the installer project is selected in the drop-down and check add-in project as a *depends on* reference
 
-{% include img.html src="project-dependencies.png" width=250 alt="Setting the setup project to depend on add-in project" align="center" %}
+![Setting the setup project to depend on add-in project](project-dependencies.png){ width=250 }
 
 Compile the installer project. This will generate an .msi package in the output folder.
 
 Once installed add-in is added to the Programs and Features in Control Panel. The installation can be repaired or add-in can be uninstalled from this page.
 
-{% include img.html src="programs-and-features-add-in.png" width=350 alt="Product icon is shown in the Programs and Features" align="center" %}
+![Product icon is shown in the Programs and Features](programs-and-features-add-in.png){ width=350 }
 
 ## Releasing new version of the product
 

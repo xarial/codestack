@@ -6,7 +6,7 @@ description: C# VSTA macro example to create move-copy body feature and add coin
 image: /solidworks-api/document/features-manager/move-copy-body-mate/move-copy-body-mate-pmp.png
 labels: [move-copy body,mates]
 ---
-{% include img.html src="move-copy-body-mate-pmp.png" height=350 alt="Move-Copy Body Property Manager Page with mates added" align="center" %}
+![Move-Copy Body Property Manager Page with mates added](move-copy-body-mate-pmp.png){ height=350 }
 
 C# VSTA macro example which finds the largest planar face of the selected body and inserts move-copy body feature in part and adds coincident mate with Front Plane using SOLIDWORKS API.
 

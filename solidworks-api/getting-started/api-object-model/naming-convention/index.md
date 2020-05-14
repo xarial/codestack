@@ -16,7 +16,7 @@ Main reasons for that are:
 
 * Obsolete methods (or any remarks and descriptions) might not be available in the API Documentation. So it might be required to maintain the previous versions of the API help documentation.
 
-{% include img.html src="obsolete-api-interface.png" width=250 alt="Obsolete IModelDoc API Interface" align="center" %}
+![Obsolete IModelDoc API Interface](obsolete-api-interface.png){ width=250 }
 
 * It is not always known what was the reason for adding the replacement method. This might happened due to certain bug (or behavior) present in the older version of the method which might introduce unknown side effects for your program if this method is used.
 

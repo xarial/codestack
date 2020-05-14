@@ -8,7 +8,7 @@ labels: [export,csv,excel,origin]
 categories: sw-tools
 group: Assembly
 ---
-{% include img.html src="components-positions-table.png" width=350 alt="Exported positions of components in Excel" align="center" %}
+![Exported positions of components in Excel](components-positions-table.png){ width=350 }
 
 This macro exports the positions of components (X, Y, Z) from the active assembly to the comma separated values (CSV) file using SOLIDWORKS API. The file can be opened in Excel or any text editor.
 

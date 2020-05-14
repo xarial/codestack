@@ -16,14 +16,14 @@ Multiple target bodies and trimming tools are supported.
 * Select sketches or sketch regions (requires setting of solid works filter) to trim the surface. Tool will keep the surface geometry which resides within the sketch region.
 Feature will trim the surface perpendicular to the corresponding trim tool sketches normals.
 
-{% include img.html src="crop-bodies-page.png" width=500 alt="Crop bodies property manager page" align="center" %}
+![Crop bodies property manager page](crop-bodies-page.png){ width=500 }
 
 Once selection completed and green tick is clicked new feature is added to the feature manager tree.
 
-{% include img.html src="cropped-bodies.png" width=500 alt="Original bodies and resulted cropped geometry" align="center" %}
+![Original bodies and resulted cropped geometry](cropped-bodies.png){ width=500 }
 
 Original bodies are acquired by new feature. The bodies outside of the region will be removed by macro feature.
 
-{% include img.html src="crop-body-feature.png" height=450 alt="Crop bodies feature in the feature manager tree" align="center" %}
+![Crop bodies feature in the feature manager tree](crop-body-feature.png){ height=450 }
 
 Feature can be edited, removed and rollbacked as any other feature.

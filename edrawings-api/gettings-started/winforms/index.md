@@ -13,7 +13,7 @@ This tutorial is a step-by-step guide of hosting the eDrawings control in the Wi
 * Open Visual Studio
 * Create new project and select *Windows Forms Application* in the *Visual C#* templates section
 
-{% include img.html src="visualstudio-new-project.png" width=550 alt="New Windows Forms project" align="center" %}
+![New Windows Forms project](visualstudio-new-project.png){ width=550 }
 
 ## Adding eDrawings interop
 
@@ -24,7 +24,7 @@ Locate the eDrawings interop library by searching for *eDrawings.Interop.EModelV
 
 I would recommend to disable the embedding of the interop to avoid potential cast errors:
 
-{% include img.html src="embed-edrawings-interops.png" width=350 alt="Disable the embedding of interop files" align="center" %}
+![Disable the embedding of interop files](embed-edrawings-interops.png){ width=350 }
 
 ## Creating eDrawings control wrapper
 
@@ -42,11 +42,11 @@ Add new form to the project and name it *MainForm*.
 
 The solution tree will look similar to the one below:
 
-{% include img.html src="solution-explorer.png" width=350 alt="Project solution tree" align="center" %}
+![Project solution tree](solution-explorer.png){ width=350 }
 
 Add the following code to the form code behind. Set the path to the SOLIDWORKS file as the *FILE_PATH* constant. The code will wait until eDrawings control is fully loaded and open the specified file automatically.
 
-{% include img.html src="edrawings-winform.png" width=350 alt="File opened in the eDrawing control hosted in Windows Form" align="center" %}
+![File opened in the eDrawing control hosted in Windows Form](edrawings-winform.png){ width=350 }
 
 ### MainForm.cs
 

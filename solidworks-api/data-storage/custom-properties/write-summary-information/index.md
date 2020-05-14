@@ -6,7 +6,7 @@ description: VBA macro to fill the summary information (author, keywords, commen
 image: /solidworks-api/data-storage/custom-properties/write-summary-information/summary.png
 labels: [summary info,write summary]
 ---
-{% include img.html src="summary.png" alt="Summary Information of SOLIDWORKS file" align="center" %}
+![Summary Information of SOLIDWORKS file](summary.png)
 
 This VBA macro fills the *Summary Information* tab (author, keywords, comments, title and subject) of custom properties of active model using SOLIDWORKS API.
 

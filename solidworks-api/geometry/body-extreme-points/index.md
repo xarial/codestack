@@ -19,10 +19,10 @@ Unlike bounding box returned via [IBody2::GetBodyBox]( http://help.solidworks.co
 
 Image below demonstrates typical extreme points in multiple directions of the model.
 
-{% include img.html src="extereme-points.png" width=400 alt="Extreme points of the body in +X,-X,+Y and -Y directions" align="center" %}
+![Extreme points of the body in +X,-X,+Y and -Y directions](extereme-points.png){ width=400 }
 
 The following code example will find the extreme points of the selected body in XYZ directions and create a sketch points.
 
-{% include img.html src="body-extreme-sketch-points.png" width=320 height=217 alt="Sketch points created in the extreme directions of the body" align="center" %}
+![Sketch points created in the extreme directions of the body](body-extreme-sketch-points.png){ width=320 height=217 }
 
 {% code-snippet { file-name: Macro.vba } %}

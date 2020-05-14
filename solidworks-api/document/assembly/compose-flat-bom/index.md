@@ -6,7 +6,7 @@ description: Example demonstrates how to compose bill of materials from the asse
 image: /solidworks-api/document/assembly/compose-flat-bom/bill-of-materials.png
 labels: [bom, flat, top level]
 ---
-{% include img.html src="bill-of-materials.png" width=250 alt="Bill Of Materials" align="center" %}
+![Bill Of Materials](bill-of-materials.png){ width=250 }
 
 This example demonstrates how to compose flat (top level only) Bill Of Materials table from the assembly tree using SOLIDWORKS API.
 
@@ -20,7 +20,7 @@ Bill Of Materials position includes the following columns:
 
 The composed BOM is output to the immediate window of VBA editor:
 
-{% include img.html src="flat-bom-print.png" width=250 alt="BOM Table printed in the immediate window" align="center" %}
+![BOM Table printed in the immediate window](flat-bom-print.png){ width=250 }
 
 It is not required to have a BOM Table inserted for this macro to work.
 

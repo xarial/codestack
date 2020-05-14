@@ -12,7 +12,7 @@ Once add-in is compiled, tetrahedron will be rendered in each newly opened or cr
 
 Change display modes in the heads up menu of SOLIDWORKS model view to see the graphics updated.
 
-{% include img.html src="display-style.png" width=350 alt="Display modes in SOLIDWORKS model view" align="center" %}
+![Display modes in SOLIDWORKS model view](display-style.png){ width=350 }
 
 ## Display Modes
 
@@ -20,31 +20,31 @@ Change display modes in the heads up menu of SOLIDWORKS model view to see the gr
 
 Achieved by rendering two layers of graphics: filled triangles and not filled lines on top of the triangles.
 
-{% include img.html src="shaded-with-edges.png" width=200 alt="Shaded with edges display mode" align="center" %}
+![Shaded with edges display mode](shaded-with-edges.png){ width=200 }
 
 ### Shaded
 
 Achieved by rendering the triangles
 
-{% include img.html src="shaded.png" width=200 alt="Shaded" align="center" %}
+![Shaded](shaded.png){ width=200 }
 
 ### Hidden lines removed
 
 Achieved by rendering triangles with polygon mode set to lines.
 
-{% include img.html src="hidden-lines-removed.png" width=200 alt="Hidden lines removed display mode" align="center" %}
+![Hidden lines removed display mode](hidden-lines-removed.png){ width=200 }
 
 ### Hidden lines visible
 
 Achieved by rendering dashed line in lines mode
 
-{% include img.html src="hidden-lines-visible.png" width=200 alt="Hidden lines visible display mode" align="center" %}
+![Hidden lines visible display mode](hidden-lines-visible.png){ width=200 }
 
 ### Wireframe
 
 Achieved by rendering graphics in lines mode
 
-{% include img.html src="wireframe.png" width=200 alt="Wireframe display mode" align="center" %}
+![Wireframe display mode](wireframe.png){ width=200 }
 
 Source code can be downloaded from [GitHub](https://github.com/codestackdev/solidworks-api-examples/tree/master/swex/add-in/opengl/OglTetrahedron)
 

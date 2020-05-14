@@ -14,7 +14,7 @@ SOLIDWORKS macro doesn't work if it is [run](http://help.solidworks.com/2016/eng
 
 This may produce error like *Run-time Error '91': Object variable or With block variable not set*.
 
-{% include img.html src="error-object-variable-or-with-block-variable-not-set.png" width=320 height=194 alt="'Run-time Error '91': Object variable or With block variable not set when running the macro" align="center" %}
+!['Run-time Error '91': Object variable or With block variable not set when running the macro](error-object-variable-or-with-block-variable-not-set.png){ width=320 height=194 }
 
 Alternatively macro can misbehave or just do not execute any steps.
 Macro runs correctly if opened in the VBA editor and executed via F5 or by clicking green arrow (run) button from the VBA editor

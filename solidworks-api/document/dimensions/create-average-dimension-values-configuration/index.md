@@ -12,6 +12,6 @@ redirect-from:
 ---
 This macro will create child configuration where all the dimension will be set to average value based on the minimum and maximum values of the tolerance using SOLIDWORKS API.
 
-{% include img.html src="sw-dimension-tolerance.png" width=400 alt="Dimension Tolerance/Precision group in property manager page" align="center" %}
+![Dimension Tolerance/Precision group in property manager page](sw-dimension-tolerance.png){ width=400 }
 
 {% code-snippet { file-name: Macro.vba } %}

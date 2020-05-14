@@ -30,7 +30,7 @@ AddWatermark.exe C:\MyFile.sldprt -list
 AddWatermark.exe C:\MyFile.sldprt -read Comment3
 ~~~
 
-{% include img.html src="add-comment-console-output.png" width=450 alt="Output result in the console" align="center" %}
+![Output result in the console](add-comment-console-output.png){ width=450 }
 
 ### Program.cs
 

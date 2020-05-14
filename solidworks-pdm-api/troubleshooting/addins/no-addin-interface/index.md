@@ -10,7 +10,7 @@ labels: [pdm add-in, error]
 
 The following error is shown when adding the add-in with SOLIDWORKS PDM administration tool: *Please select at least one DLL implementing the IEdmAddIn5 interface*
 
-{% include img.html src="no-addin-dll.png" width=450 alt="Error when adding the add-in" align="center" %}
+![Error when adding the add-in](no-addin-dll.png){ width=450 }
 
 ## Cause
 

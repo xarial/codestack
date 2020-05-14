@@ -12,7 +12,7 @@ This VBA macro reads the type names of the selected features in the feature mana
 <Feature Name>: <Type Name 1>, <Type Name 2>
 ~~~
 
-{% include img.html src="type-names-msg-box.png" width=350 alt="Type names of selected features shown in the message box" align="center" %}
+![Type names of selected features shown in the message box](type-names-msg-box.png){ width=350 }
 
 Where *Type Name 1* is an older version of feature type name retrieved via [IFeature::GetTypeName](http://help.solidworks.com/2016/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ifeature~gettypename.html) SOLIDWORKS API method, while *Type Name 2* is a newer version retrieved via [IFeature::GetTypeName2](http://help.solidworks.com/2016/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ifeature~gettypename2.html)
 
@@ -20,6 +20,6 @@ Where *Type Name 1* is an older version of feature type name retrieved via [IFea
 
 If it is required to copy the result into the text format, simply click on message box and press *Ctrl+C* to copy the value and paste it into any text editor, like Notepad via *Ctrl+V*:
 
-{% include img.html src="type-name-msg-clipboard.png" width=250 alt="Feature type names copied to Notepad" align="center" %}
+![Feature type names copied to Notepad](type-name-msg-clipboard.png){ width=250 }
 
 {% code-snippet { file-name: Macro.vba } %}

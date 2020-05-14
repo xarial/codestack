@@ -23,26 +23,26 @@ It is required to provide the void handler function with a parameter of enumerat
 
 ### Menu
 
-{% include img.html src="commands-menu.png" width=350 alt="Commands displayed in the SOLIDWORKS menu" align="center" %}
+![Commands displayed in the SOLIDWORKS menu](commands-menu.png){ width=350 }
 
 By default command will be added to menu and [toolbar](#toolbar). This behaviour can be changed by assigning the *hasMenu* boolean parameter of the [CommandItemInfoAttribute](https://docs.codestack.net/swex/add-in/html/T_CodeStack_SwEx_AddIn_Attributes_CommandItemInfoAttribute.htm) attribute.
 
 ### Toolbar
 
-{% include img.html src="commands-toolbar.png" width=350 alt="Commands displayed in the SOLIDWORKS toolbar" align="center" %}
+![Commands displayed in the SOLIDWORKS toolbar](commands-toolbar.png){ width=350 }
 
 By default command will be added to [menu](#menu) and toolbar. This behaviour can be changed by assigning the *hasToolbar* boolean parameter of the [CommandItemInfoAttribute](https://docs.codestack.net/swex/add-in/html/T_CodeStack_SwEx_AddIn_Attributes_CommandItemInfoAttribute.htm) attribute.
 
 ### Command Tab Box
 
-{% include img.html src="command-tab.png" width=450 alt="Commands added to command tab box" align="center" %}
+![Commands added to command tab box](command-tab.png){ width=450 }
 
 Command item can be added to tab box by setting the *showInCmdTabBox* parameter of 
 [CommandItemInfoAttribute](https://docs.codestack.net/swex/add-in/html/T_CodeStack_SwEx_AddIn_Attributes_CommandItemInfoAttribute.htm) to *true* for the specific command defined in the enumeration.
 
 *textStyle* parameter allows to specify the alignment of the hint text relative to the icon.
 
-{% include img.html src="command-tab-box-text-display.png" width=250 alt="Text display styles in command tab box" align="center" %}
+![Text display styles in command tab box](command-tab-box-text-display.png){ width=250 }
 
 * Icon only (without text) (swCommandTabButton_NoText)
 * Text below icon (swCommandTabButton_TextBelow)
@@ -52,7 +52,7 @@ Command item can be added to tab box by setting the *showInCmdTabBox* parameter 
 
 ## Context Menu
 
-{% include img.html src="commands-context-menu.png" width=250 alt="Commands displayed in the context menu" align="center" %}
+![Commands displayed in the context menu](commands-context-menu.png){ width=250 }
 
 In order to add context menu it is required to call the [AddContextMenu](https://docs.codestack.net/swex/add-in/html/M_CodeStack_SwEx_AddIn_SwAddInEx_AddContextMenu__1.htm) method and pass the enumeration as a template parameter.
 

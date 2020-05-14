@@ -9,7 +9,7 @@ labels: [remove color, appearance, material property]
 categories: sw-tools
 group: Part
 ---
-{% include img.html src="material-properties-levels.png" width=250 alt="Appearance layers in Part document" align="center" %}
+![Appearance layers in Part document](material-properties-levels.png){ width=250 }
 
 This macro removes all colors from the part document on all levels (face, feature, body) using SOLIDWORKS API.
 

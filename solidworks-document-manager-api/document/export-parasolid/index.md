@@ -44,4 +44,4 @@ $Assem = (
 
 As the result all bodies from all configurations of the file are exported to the specified directory (directory is automatically created if not exist). Output files are named as following: *[original file name]_[configuration name].xmp_bin* The process log is displayed directly in the console:
 
-{% include img.html src="export-parasolid-console-output.png" alt="Parasolid export console output" align="center" %}
+![Parasolid export console output](export-parasolid-console-output.png)

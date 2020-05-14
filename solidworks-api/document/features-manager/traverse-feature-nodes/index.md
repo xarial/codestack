@@ -6,7 +6,7 @@ description: Example demonstrates how to traverse nodes in the Feature Manager T
 image: /solidworks-api/document/features-manager/traverse-feature-nodes/feature-manager-tree.png
 labels: [traverse, feature, node]
 ---
-{% include img.html src="feature-manager-tree.png" height=350 alt="Feature Manager Tree" align="center" %}
+![Feature Manager Tree](feature-manager-tree.png){ height=350 }
 
 This example demonstrates how to traverse nodes in the Feature Manager Tree using SOLIDWORKS API. Nodes traversed in the exact order they are rendered in the tree and the exact text is extracted.
 

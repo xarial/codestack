@@ -15,7 +15,7 @@ It is recommended to use similar technique and implement fallback APIs if your a
 
 Availability of certain method can be found by exploring the corresponding section in the SOLIDWORKS API help documentation (both web and local version)
 
-{% include img.html src="get6-api-availability.png" alt="SOLIDWORKS API availability section" align="center" %}
+![SOLIDWORKS API availability section](get6-api-availability.png)
 
 Use the [ISldWorks::IsVersionNewerOrEqual](https://docs.codestack.net/swex/common/html/M_SolidWorks_Interop_sldworks_SldWorksCommonEx_IsVersionNewerOrEqual.htm) extension method provided by framework to decide which API to use. For example the [ICustomPropertyManager::Get6](http://help.solidworks.com/2019/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ICustomPropertyManager~Get6.html) method is only available in SOLIDWORKS 2018 SP0, while [ICustomPropertyManager::Get5](http://help.solidworks.com/2019/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ICustomPropertyManager~Get5.html) is available in SOLIDWORKS 2014 SP0, and older [ICustomPropertyManager::Get4](http://help.solidworks.com/2019/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ICustomPropertyManager~Get4.html) method is available from SOLIDWORKS 2011 SP4.
 

@@ -68,7 +68,7 @@ Standard icon can be set by using the [TaskPaneStandardButtonAttribute](https://
 
 Please see the image below for the diagram of elements of Task Pane.
 
-{% include img.html src="task-pane.png" alt="Task Pane control" align="center" %}
+![Task Pane control](task-pane.png)
 
 1. WinForms User Control hosted in the Task Pane
 1. Task Pane button with the custom icon

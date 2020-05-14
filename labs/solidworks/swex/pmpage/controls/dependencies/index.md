@@ -20,7 +20,7 @@ Please see below couple of examples for using this technique to develop responsi
 
 Below is a code example demonstrating how to disable/enable selection box control based on the value of the check-box.
 
-{% include img.html src="enable-control.gif" alt="Changing the control enable state based on the check box" align="center" %}
+![Changing the control enable state based on the check box](enable-control.gif)
 
 {% include code-tabs.html src="TagsAndDependencies.Enable" %}
 
@@ -28,7 +28,7 @@ Below is a code example demonstrating how to disable/enable selection box contro
 
 Below code example demonstrates how to implement cascading list.
 
-{% include img.html src="cascading-controls.gif" alt="Cascading controls visibility in Property Manager Page" align="center" %}
+![Cascading controls visibility in Property Manager Page](cascading-controls.gif)
 
 Each value in the dropdown (defined via Enum) has its own nested list of options (also defined by another Enums). Once the value of the drp-down changed the visibility of option groups is changed as well.
 

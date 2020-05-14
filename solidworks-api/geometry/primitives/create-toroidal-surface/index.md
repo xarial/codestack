@@ -6,7 +6,7 @@ description: Example demonstrates how to create temp body of a toroidal sheet
 image: /solidworks-api/geometry/primitives/create-toroidal-surface/toroidal-surface.png
 labels: [topology, geometry, sheet, modeler, cylinder]
 ---
-{% include img.html src="toroidal-surface.png" alt="Toroidal sheet body" align="center" %}
+![Toroidal sheet body](toroidal-surface.png)
 
 This example demonstrates how to create a sheet body from the toroidal surface using SOLIDWORKS API.
 

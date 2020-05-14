@@ -6,7 +6,7 @@ description: Find all tables (BOM, general, revision) from drawing sheets using 
 image: /solidworks-api/document/tables/find-tables-by-type/drawing-view-tables.png
 labels: [table,drawing]
 ---
-{% include img.html src="drawing-view-tables.png" width=250 alt="Tables in the drawing document" align="center" %}
+![Tables in the drawing document](drawing-view-tables.png){ width=250 }
 
 This examples allows to find all tables by specified type from the active drawing document using SOLIDWORKS API.
 

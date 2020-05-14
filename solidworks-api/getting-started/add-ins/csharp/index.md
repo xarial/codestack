@@ -9,14 +9,14 @@ labels: [add-in, c#]
 * Create new project in Microsoft Visual Studio
 * Select *Class Library* template under the *Visual C#* templates. Specify the location and the name of the project
 
-{% include img.html src="new-project-class-library.png" width=450 alt="Creating new type library project in Visual Studio" align="center" %}
+![Creating new type library project in Visual Studio](new-project-class-library.png){ width=450 }
 
 * Add reference to SolidWorks Interop libraries: SolidWorks.Interop.sldworks.dll, SolidWorks.Interop.swconst.dll, SolidWorks.Interop.swpublished.dll. Interop libraries are located at **SOLIDWORKS Installation Folder**\api\redist for projects targeting Framework 4.0 onwards and **SOLIDWORKS Installation Folder**\api\redist\CLR2 for projects targeting Framework 2.0 and 3.5.
 
 For projects targeting Framework 4.0 I recommend to set the **[Embed Interop Types](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)** option to false.
 Otherwise it is possible to have unpredictable behaviour of the application when calling the SOLIDWORKS API due to a type cast issue.  
 
-{% include img.html src="embed-interops-false.png" width=350 alt="Embedding SOLIDWORKS interops" align="center" %}
+![Embedding SOLIDWORKS interops](embed-interops-false.png){ width=350 }
 
 > In some tutorials reference to solidworkstools.dll library is added. This library is optional and it won't be used in this tutorial
 
@@ -33,7 +33,7 @@ public class MySampleAddin : ISwAddin
 
 I would recommend to not select *Make assembly COM-Visible* option in the project settings but only mark required classes as COM visible as described above.
 
-{% include img.html src="make-assembly-com-visible.png" width=400 alt="Make assembly com visible flag" align="center" %}
+![Make assembly com visible flag](make-assembly-com-visible.png){ width=400 }
 
 * Add-in dll must be registered with /codebase flag. *Register for COM interop* options available in the project setting doesn't use this option while registering and not suitable in this case. Instead add the post build action as follows:
 
@@ -41,13 +41,13 @@ I would recommend to not select *Make assembly COM-Visible* option in the projec
 "%windir%\Microsoft.NET\Framework64\v4.0.30319\regasm" /codebase "$(TargetPath)"
 ~~~
 
-{% include img.html src="post-build-event.png" width=400 alt="Post build event to register dll as a COM object" align="center" %}
+![Post build event to register dll as a COM object](post-build-event.png){ width=400 }
 
 This would ensure the proper registration on each build of the add-in project.
 
 * For the enhanced debugging experience I would recommend to setup the full path to SOLIDWORKS as an external application in project settings.
 
-{% include img.html src="start-external-program.png" width=400 alt="Starting SOLIDWORKS as an external program while debugging the add-in" align="center" %}
+![Starting SOLIDWORKS as an external program while debugging the add-in](start-external-program.png){ width=400 }
 
 This would allow to start SOLIDWORKS and automatically attach the debugger from the Visual Studio by pressing green run button or F5 key.
 
@@ -59,7 +59,7 @@ This would allow to start SOLIDWORKS and automatically attach the debugger from 
 
 * When compiled the following warning can be displayed.
 
-{% include img.html src="compile-warning-unsigned.png" width=450 alt="Unsigned assembly compile warning" align="center" %}
+![Unsigned assembly compile warning](compile-warning-unsigned.png){ width=450 }
 
 This warning can be ignored.
 

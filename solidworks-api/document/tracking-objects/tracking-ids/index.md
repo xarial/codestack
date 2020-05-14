@@ -20,7 +20,7 @@ Following example demonstrates the use of tracking ids from SOLIDWORKS API to tr
 * Select at least one face. It is recommended to select at least two faces from the different bodies which are overlapping each other. This would allow to demonstrate the benefit of tracking ids as body will be merged.
 * Run the macro.
 
-{% include img.html src="select-bodies-faces.png" width=300 alt="Two faces of two solid bodies selected in the graphics view" align="center" %}
+![Two faces of two solid bodies selected in the graphics view](select-bodies-faces.png){ width=300 }
 
 Macro will perform the following steps
 
@@ -34,6 +34,6 @@ Macro will perform the following steps
 * Find the faces which correspond to originally selected faces
 * Select those corresponding faces in the merged body
 
-{% include img.html src="merged-body.png" width=250 alt="Copy of the single body created as the result of a merge operation with two faces selected" align="center" %}
+![Copy of the single body created as the result of a merge operation with two faces selected](merged-body.png){ width=250 }
 
 {% code-snippet { file-name: Macro.vba } %}

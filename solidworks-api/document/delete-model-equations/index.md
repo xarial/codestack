@@ -13,11 +13,11 @@ redirect-from:
 ---
 This macro removes all of the equations (or optionally only broken equations) in the active model (part or assembly) using SOLIDWORKS API.
 
-{% include img.html src="equations-manager.png" width=640 alt="Equations Manager dialog" align="center" %}
+![Equations Manager dialog](equations-manager.png){ width=640 }
 
 If active model is assembly, macro optionally allows to remove all equations from each component of the assembly. The following message will be displayed. Click **Yes** to remove equations from all components on all levels and **No** to only process equations of the top level assembly.
 
-{% include img.html src="delete-comps.png" width=320 height=120 alt="Macro option to delete equations in the assembly components" align="center" %}
+![Macro option to delete equations in the assembly components](delete-comps.png){ width=320 height=120 }
 
 Set the *DELETE_BROKEN_ONLY* option to *True* in order to only remove the broken (dangling) equations.
 

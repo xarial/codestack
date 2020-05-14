@@ -11,7 +11,7 @@ redirect-from:
   - /labs/solidworks/swex/pmp
   - /labs/solidworks/swex/pmp/
 ---
-{% include img.html src="logo.png" alt="SwEx.PMPage framework for SOLIDWORKS" align="center" %}
+![SwEx.PMPage framework for SOLIDWORKS](logo.png)
 
 Inspired by [PropertyGrid Control](https://msdn.microsoft.com/en-us/library/aa302326.aspx) in .NET Framework, SwEx.PMPage brings the flexibility of data model driven User Interface into SOLIDWORKS API.
 

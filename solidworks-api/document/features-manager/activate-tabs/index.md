@@ -6,7 +6,7 @@ description: Example demonstrates how to activate standard tabs (feature manager
 image: /solidworks-api/document/features-manager/activate-tabs/feature-manager-tabs.png
 labels: [feature manager, tab]
 ---
-{% include img.html src="feature-manager-tabs.png" alt="Feature Manager Tabs" align="center" %}
+![Feature Manager Tabs](feature-manager-tabs.png)
 
 This example demonstrates how to activate standard tabs (feature manager tree, property manager, configuration manager, DimXpert manager, display manager) in the feature manager view using SOLIDWORKS API.
 

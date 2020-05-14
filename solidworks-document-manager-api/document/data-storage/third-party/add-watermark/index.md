@@ -33,7 +33,7 @@ AddWatermark.exe C:\MyPart.sldprt -r MyCompanyName
 
 As the result the stored watermark is displayed in the console application
 
-{% include img.html src="add-watermark-console-output.png" width=450 alt="Output results in the console" align="center" %}
+![Output results in the console](add-watermark-console-output.png){ width=450 }
 
 ### Program.cs
 

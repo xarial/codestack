@@ -6,7 +6,7 @@ description: Example demonstrates how to load the transformation matrix for the 
 image: /solidworks-api/document/assembly/components/apply-presentation-transform-from-csv/original-component-position.png
 labels: [assembly, transform, csv]
 ---
-{% include img.html src="original-component-position.png" width=250 alt="Components in the original positions" align="center" %}
+![Components in the original positions](original-component-position.png){ width=250 }
 
 This example demonstrates how to load the transformation matrix for the components from the CSV file and apply it as a presentation transform using SOLIDWORKS API
 
@@ -15,7 +15,7 @@ This example demonstrates how to load the transformation matrix for the componen
 * Modify the path to the CSV file in the macro constant
 * Run the macro. Macro stops the execution and the components are transformed as shown below
 
-{% include img.html src="trasnsformed-component-position.png" width=250 alt="Components in the transformed position" align="center" %}
+![Components in the transformed position](trasnsformed-component-position.png){ width=250 }
 
 Red component is translated in XYZ space and green component is rotated 90 degrees around global Y axis (Axis 1).
 

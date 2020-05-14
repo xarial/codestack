@@ -19,7 +19,7 @@ If File System is taken as analogue the Storage would correspond to file while S
 
 The following diagram explains the structure of the SOLIDWORKS model storages. Red elements represent the containers managed directly by SOLIDWORKS while other elements represent the containers managed by 3rd parties.
 
-{% include img.html src="store-diagram.svg" width=550 alt="Document Store Diagram" align="center" %}
+![Document Store Diagram](store-diagram.svg){ width=550 }
 
 ## 3rd Party Storage
 

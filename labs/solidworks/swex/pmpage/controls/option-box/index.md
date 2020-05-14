@@ -8,7 +8,7 @@ toc_group_name: labs-solidworks-swex
 labels: [option,pmpage]
 order: 9
 ---
-{% include img.html src="options-box.png" alt="Option box control" align="center" %}
+![Option box control](options-box.png)
 
 Options group can be defined by decorating the property of type Enum with [OptionBoxAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_OptionBoxAttribute.htm).
 

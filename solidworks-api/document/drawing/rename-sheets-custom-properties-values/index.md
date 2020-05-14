@@ -12,18 +12,18 @@ redirect-from:
 ---
 This macro will rename all drawings sheets using the value of the specified custom property using SOLIDWORKS API.
 
-{% include img.html src="drw-sheets.png" width=320 alt="List of sheets in the drawing" align="center" %}
+![List of sheets in the drawing](drw-sheets.png){ width=320 }
 
 * Open the drawing and run the macro
 * Specify the property to read the value from
 
-{% include img.html src="get-prp-name.png" width=320 alt="Popup form for property name input" align="center" %}
+![Popup form for property name input](get-prp-name.png){ width=320 }
 
 * All sheets are renamed based on the value of this property. Macro will get the value from the model view specified in the Sheet Properties.
 The 'Same as sheet specified in Document Properties'  option is not supported.
 If this option is selected then the property from the first view will be used.
 Macro will try to read the configuration specific property and if the property is not specified then model level property is read.
 
-{% include img.html src="use-custom-prps-from-view-sheet-property.png" width=400 alt="Use custom properties value from model option in the sheet properties" align="center" %}
+![Use custom properties value from model option in the sheet properties](use-custom-prps-from-view-sheet-property.png){ width=400 }
 
 {% code-snippet { file-name: Macro.vba } %}

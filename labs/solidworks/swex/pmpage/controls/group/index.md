@@ -7,7 +7,7 @@ image: /labs/solidworks/swex/pmpage/controls/group/group-box.png
 toc_group_name: labs-solidworks-swex
 order: 3
 ---
-{% include img.html src="group-box.png" alt="Group box created from the complex type" align="center" %}
+![Group box created from the complex type](group-box.png)
 
 Group box will be automatically created for all complex types in the data model
 

@@ -6,7 +6,7 @@ description: Saving custom properties revisions (snapshots) into document 3rd pa
 image: /solidworks-api/data-storage/third-party/custom-properties-revisions/properties-snapshots-data.png
 labels: [storage,3rd party,custom properties]
 ---
-{% include img.html src="custom-properties.png" width=450 alt="Custom Properties" align="center" %}
+![Custom Properties](custom-properties.png){ width=450 }
 
 This example demonstrates how to utilize 3rd party storage store to save file custom properties revisions using SOLIDWORKS API.
 
@@ -27,7 +27,7 @@ The snapshot of each revision is stored within the storages (streams) in 3rd par
 * Modify properties and click *TakeCustomPropertiesSnapshot* again. Repeat if needed
 * You can close and reopen the model and SOLIDWORKS. Click *LoadSnapshots* command. All properties revisions are displayed in the message box
 
-{% include img.html src="properties-snapshots-data.png" width=450 alt="All properties revisions displayed in the message box" align="center" %}
+![All properties revisions displayed in the message box](properties-snapshots-data.png){ width=450 }
 
 ### PropertiesSnapshot.cs
 

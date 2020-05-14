@@ -7,7 +7,7 @@ image: /edrawings-api/gettings-started/edrawings.png
 labels: [edrawings,getting started]
 order: 1
 ---
-{% include img.html src="edrawings.png" width=350 alt="eDrawings application" align="center" %}
+![eDrawings application](edrawings.png){ width=350 }
 
 eDrawings API can be utilized by hosting the eDrawings ActiveX control and calling its methods. 
 
@@ -35,14 +35,14 @@ The guid of the control can be located in the registry.
 
 Version independent guid can be found at *HKEY_CLASSES_ROOT\EModelView.EModelNonVersionSpecificViewControl\CLSID* registry key and equal to *{22945A69-1191-4DCF-9E6F-409BDE94D101}*
 
-{% include img.html src="non-version-specific-guid.png" alt="Version independent GUID of eDrawings control" align="center" %}
+![Version independent GUID of eDrawings control](non-version-specific-guid.png)
 
 If multiple versions of the eDrawings control installed the version independent GUID would correspond the to current version which is set in the *HKEY_CLASSES_ROOT\EModelView.EModelViewControl\CurVer* registry key:
 
-{% include img.html src="edrawings-control-current-version.png" alt="Current version of eDrawings control" align="center" %}
+![Current version of eDrawings control](edrawings-control-current-version.png)
 
 In order to enable specific version of eDrawings it is required to use the specific guid. For example for the eDrawings 2018 guid can be found at *HKEY_CLASSES_ROOT\EModelView.EModelViewControl.18\CLSID* registry key and equal to *{a338ddd7-0c6c-43c9-8d1c-c2825ca9ac7c}*.
 
-{% include img.html src="edrawings-2018-specific-version.png" alt="Version specific guid of eDrawings control" align="center" %}
+![Version specific guid of eDrawings control](edrawings-2018-specific-version.png)
 
 eDrawings interfaces from the *eDrawings.Interop.EModelViewControl.dll* are neither backwards nor forward compatible. It means OCX control can only be cast to the corresponding interop version as all interfaces have different GUIDs in different versions. As a workaround it is possible to use late binding and [ComEventsHelper](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.comeventshelper?view=netcore-3.1) to access eDrawings API. See [this implementation](https://github.com/xarial/cad-plus/blob/master/src/SwEDrawingsHost/EDrawingsControl.cs).

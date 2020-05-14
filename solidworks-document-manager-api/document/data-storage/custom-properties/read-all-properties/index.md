@@ -6,7 +6,7 @@ description: VBA macro which reads all custom properties from all sources (file,
 image: /solidworks-document-manager-api/document/data-storage/custom-properties/read-all-properties/properties-list.png
 labels: [read properties,custom properties]
 ---
-{% include img.html src="properties-list.png" width=550 alt="SOLIDWORKS custom properties" align="center" %}
+![SOLIDWORKS custom properties](properties-list.png){ width=550 }
 
 This VBA macro demonstrates how to read all custom properties from all sources (general file properties, configuration specific and cut-list item properties) using SOLIDWORKS Document Manager API.
 

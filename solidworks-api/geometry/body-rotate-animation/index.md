@@ -6,7 +6,7 @@ description: VBA example to create a rotation animation of a selected body aroun
 image: /solidworks-api/geometry/body-rotate-animation/body-rotate.gif
 labels: [animation,rotate,temp body]
 ---
-{% include img.html src="body-rotate.gif" alt="Body rotation animation" align="center" %}
+![Body rotation animation](body-rotate.gif)
 
 This VBA example demonstrates how to create a rotation animation of a selected body in part document using SOLIDWORKS API.
 
@@ -14,7 +14,7 @@ There will be no additional features created in the Feature Manager tree. This m
 
 Select body from the Feature Manager tree and run the macro.
 
-{% include img.html src="feature-tree-body-selected.png" width=250 alt="Body selected in the feature manager tree" align="center" %}
+![Body selected in the feature manager tree](feature-tree-body-selected.png){ width=250 }
 
 Preview of the body is created and rotated until selection is cleared. When macro stops the original body is reverted to the original state.
 

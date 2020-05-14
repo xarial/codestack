@@ -6,7 +6,7 @@ description: Example demonstrates how to run SOLIDWORKS commands synchronously (
 image: /solidworks-api/document/features-manager/run-command-sync/command_open.png
 labels: [sync, command, close]
 ---
-{% include img.html src="command_open.png" width=250 alt="Opened Command (Property Manager Page)" align="center" %}
+![Opened Command (Property Manager Page)](command_open.png){ width=250 }
 
 [ISldWorks::RunCommand](http://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~runcommand.html) SOLIDWORKS API method allows running any command. Usually it is used to open property manager page.
 

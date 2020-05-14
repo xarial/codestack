@@ -8,7 +8,7 @@ labels: [component, replace, selection]
 categories: sw-tools
 group: Assembly
 ---
-{% include img.html src="replace_components.png" width=350 alt="Components replaced in the tree" align="center" %}
+![Components replaced in the tree](replace_components.png){ width=350 }
 
 This macro allows to replace the selected components in the tree with the components from the nominated folder (optionally with additional suffix in name) using SOLIDWORKS API.
 

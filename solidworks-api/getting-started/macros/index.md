@@ -17,7 +17,7 @@ There are thousands of macros available for download from various resources such
 
 There are 2 main categories of macros supported by SOLIDWORKS: VSTA and VBA macros. Please refer the [Macro Types](/solidworks-api/getting-started/macros/types) article for more details.
 
-{% include img.html src="macro-toolbar.png" alt="Macro toolbar" align="center" %}
+![Macro toolbar](macro-toolbar.png)
 
 Macro toolbar provides commands for
 
@@ -29,6 +29,6 @@ Macro toolbar provides commands for
 
 The above commands are also available from the menu.
 
-{% include img.html src="tools-macro-menu.png" width=300 alt="Macro menu" align="center" %}
+![Macro menu](tools-macro-menu.png){ width=300 }
 
 As macros are usually used in the production environment it is vital to be able to debug and troubleshoot the macro to ensure the quality. Please refer the [Macros Troubleshooting](/solidworks-api/troubleshooting/macros/) for the explanations and resolutions for the most common errors in macros.

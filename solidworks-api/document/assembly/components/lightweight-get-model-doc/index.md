@@ -6,7 +6,7 @@ description: Example demonstrates how to get the pointer to IModelDoc2 from the 
 image: /solidworks-api/document/assembly/components/lightweight-get-model-doc/lightweight-component.png
 labels: [assembly, component, example, lightweight, modeldoc, memory, solidworks api]
 ---
-{% include img.html src="lightweight-component.png" alt="Lightweight component in the assembly tree" align="center" %}
+![Lightweight component in the assembly tree](lightweight-component.png)
 
 [IComponent2::GetModelDoc2](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IComponent2~GetModelDoc2.html) SOLIDWORKS API method returns the pointer to [IModelDoc2](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModelDoc2.html) interface.
 

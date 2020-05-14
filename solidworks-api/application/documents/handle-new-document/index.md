@@ -8,7 +8,7 @@ labels: [new document]
 categories: sw-tools
 group: Model
 ---
-{% include img.html src="new-document.png" width=350 alt="Creating new document in SOLIDWORKS" align="center" %}
+![Creating new document in SOLIDWORKS](new-document.png){ width=350 }
 
 This VBA macro handles the creation of new document in SOLIDWORKS (part, assembly or drawing) using SOLIDWORKS API and allows to automatically run custom code or another macro when this event happens. This macro will also handle creation of new virtual document in SOLIDWORKS assembly.
 
@@ -17,7 +17,7 @@ This VBA macro handles the creation of new document in SOLIDWORKS (part, assembl
 * Create new macro (e.g. *RunOnNewDocCreated.swp*)
 * Copy the code into corresponding modules of the macro. The VBA macro tree should look similar to the image below:
 
-{% include img.html src="macro-tree.png" width=250 alt="Macro files tree" align="center" %}
+![Macro files tree](macro-tree.png){ width=250 }
 
 * Place your code into the *main* sub of the *HandlerModule* module. The pointer to [IModelDoc2](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModelDoc2.html) document is passed as the parameter. Use this pointer instead of [ISldWorks::ActiveDoc](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~activedoc.html) as new document might not be set to active when this event arrives.
 

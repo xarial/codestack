@@ -6,7 +6,7 @@ description: Guides and examples of deploying add-ins, macros and stand-alone ap
 image: /solidworks-api/deployment/solidworks-application-deployment.png
 order: 9
 ---
-{% include img.html src="solidworks-application-deployment.png" height=250 alt="Deployment of application for SOLIDWORKS" align="center" %}
+![Deployment of application for SOLIDWORKS](solidworks-application-deployment.png){ height=250 }
 
 This section contains guides and examples of deploying add-ins, macros and stand-alone applications for SOLIDWORKS to the user machines.
 

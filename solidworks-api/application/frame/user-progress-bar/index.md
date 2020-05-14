@@ -12,11 +12,11 @@ SOLIDWORKS API provides a built-in method to display the progress while main thr
 
 Message and progress is displayed in the standard SOLIDWORKS progress bar in the bottom left corner of the application.
 
-{% include img.html src="user-progress-bar.png" alt="Progress and message displayed in the progress bar" align="center" %}
+![Progress and message displayed in the progress bar](user-progress-bar.png)
 
 Progress is also reflected in the SOLIDWORKS icon in the task bar.
 
-{% include img.html src="taskbar-progress.png" alt="Progress is displayed in the SOLIDWORKS icon in the task bar" align="center" %}
+![Progress is displayed in the SOLIDWORKS icon in the task bar](taskbar-progress.png)
 
 ## Notes and limitations
 

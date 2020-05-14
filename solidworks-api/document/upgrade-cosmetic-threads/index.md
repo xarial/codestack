@@ -8,7 +8,7 @@ labels: [api, upgrade, performance, cosmetic thread]
 categories: sw-tools
 group: Model
 ---
-{% include img.html src="upgrade-cosmetic-thread.png" width=500 alt="Upgrade cosmetic threads command" align="center" %}
+![Upgrade cosmetic threads command](upgrade-cosmetic-thread.png){ width=500 }
 
 This macro invokes the *Upgrade cosmetic thread features* command in SOLIDWORKS part and assembly which may improve the performance of the document.
 

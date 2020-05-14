@@ -18,4 +18,4 @@ This example demonstrates how to extract mass properties from the specified file
 * Specify the full path to a SOLIDWORKS file (part or assembly) in the displayed input box
 * As the result the following message box is displayed with mass property values
 
-{% include img.html src="msgbox-mass-properties.png" width=250 alt="Mass properties of the specified model are displayed in the message box" align="center" %}
+![Mass properties of the specified model are displayed in the message box](msgbox-mass-properties.png){ width=250 }

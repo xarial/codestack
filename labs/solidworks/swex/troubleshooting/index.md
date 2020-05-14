@@ -11,7 +11,7 @@ SwEx framework outputs the trace messages which simpifies the troubleshooting pr
 
 If add-in is debugged from Visual studio than the messages are output to Visual studio Output tab as shown below:
 
-{% include img.html src="visual-studio-output.png" width=450 alt="Trace messages in the output window of Visual Studio" align="center" %}
+![Trace messages in the output window of Visual Studio](visual-studio-output.png){ width=450 }
 
 Otherwise messages can be traced via [DebugView](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview) utility by Microsoft
 
@@ -21,19 +21,19 @@ Otherwise messages can be traced via [DebugView](https://docs.microsoft.com/en-u
 
 Enable *Capture Win32* and *Capture Events* options from the toolbar (marked in red) 
     
-{% include img.html src="debug-view-settings.png" width=450 alt="Trace settings in the DebugView utility toolbar" align="center" %}
+![Trace settings in the DebugView utility toolbar](debug-view-settings.png){ width=450 }
 
 Alternatively set the capture options via menu as shown below:
 
-{% include img.html src="debug-view-settings-menu.png" width=350 alt="Trace settings in the DebugView utility menu" align="center" %}
+![Trace settings in the DebugView utility menu](debug-view-settings-menu.png){ width=350 }
 
 Set the filter to filter SwEx messages by clicking the filter button (marked in green)
 
-{% include img.html src="debug-view-filter.png" width=350 alt="Trace settings filter in the DebugView utility" align="center" %}
+![Trace settings filter in the DebugView utility](debug-view-filter.png){ width=350 }
 
 Messages will be output to trace window
 
-{% include img.html src="debug-view-output.png" width=450 alt="Trace messages in the debug view" align="center" %}
+![Trace messages in the debug view](debug-view-output.png){ width=450 }
 
 Use *eraser* button to clean messages (marked in blue)
 

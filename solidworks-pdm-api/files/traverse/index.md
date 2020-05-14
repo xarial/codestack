@@ -10,11 +10,11 @@ This VBA example demonstrates how to traverse files and folders in the SOLIDWORK
 
 Macro displays the built-in folder browse dialog for the folder to traverse:
 
-{% include img.html src="browse-folder.png" width=250 alt="Built-in PDM Folder Browse dialog" align="center" %}
+![Built-in PDM Folder Browse dialog](browse-folder.png){ width=250 }
 
 Macro recursively traverses files and sub folders and outputs the file or folder name, id, level to the VBA Editor immediate window.
 
-{% include img.html src="pdm-folder-structure-output.png" width=350 alt="Folders and files structure output to immediate window of VBA Editor" align="center" %}
+![Folders and files structure output to immediate window of VBA Editor](pdm-folder-structure-output.png){ width=350 }
 
 This macro can traverse the tree even if it is not [cached locally](/solidworks-pdm-api/files/local-cache/)
 

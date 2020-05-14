@@ -8,7 +8,7 @@ labels: [sketch,arc,circle,equal]
 categories: sw-tools
 group: Sketch
 ---
-{% include img.html src="selected-equal-arcs.png" width=350 alt="Equal arcs selected in the sketch" align="center" %}
+![Equal arcs selected in the sketch](selected-equal-arcs.png){ width=350 }
 
 This VBA macro selects equal size sketch arcs to the pre-selected input sketch arc. Only arcs in the sketch of the original input arc are selected. Macro works both for active and inactive sketch.
 

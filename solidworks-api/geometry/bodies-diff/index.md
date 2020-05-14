@@ -23,17 +23,17 @@ This macro allows to compare two parts by its geometry.
 
 Original part to be compared:
 
-{% include img.html src="original-part.png" width=250 alt="Original part" align="center" %}
+![Original part](original-part.png){ width=250 }
 
 Part to compare
 
-{% include img.html src="part-to-compare.png" width=250 alt="Part to compare" align="center" %}
+![Part to compare](part-to-compare.png){ width=250 }
 
 Second part has a modified geometry and was reoriented in space. Some of the bodies have been deleted from the second part.
 
 The following result is calculated by the macro:
 
-{% include img.html src="part-bodies-diff.png" width=250 alt="Resulting Difference file" align="center" %}
+![Resulting Difference file](part-bodies-diff.png){ width=250 }
 
 ### Instructions
 

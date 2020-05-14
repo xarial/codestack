@@ -8,7 +8,7 @@ labels: [bonding box, extreme points]
 categories: sw-tools
 group: Part
 ---
-{% include img.html src="precise-bounding-box.png" width=250 alt="Precise bounding box in the part document" align="center" %}
+![Precise bounding box in the part document](precise-bounding-box.png){ width=250 }
 
 As per *Remarks* section of [IPartDoc::GetPartBox](http://help.solidworks.com/2016/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ipartdoc~getpartbox.html) method (or other BoundingBox APIs) in SOLIDWORKS API Help Documentation
 
@@ -24,11 +24,11 @@ As the result 3D Sketch with bounding box is created.
 
 Bounding boxes calculated approximately might be more than 10% inaccurate. For the following [example part](bbox-precision.SLDPRT) the difference between the bounding boxes volumes equal to 14%. The following images show the differences (green box is a precise calculation and red box is an approximate calculation):
 
-{% include img.html src="bbox-front-view.png" width=250 alt="Front View" align="center" %}
+![Front View](bbox-front-view.png){ width=250 }
 
-{% include img.html src="bbox-top-view.png" width=250 alt="Top View" align="center" %}
+![Top View](bbox-top-view.png){ width=250 }
 
-{% include img.html src="bbox-right-view.png" width=250 alt="Right View" align="center" %}
+![Right View](bbox-right-view.png){ width=250 }
 
 > The precise bounding box calculated by extreme points is exactly equal to the bounding box created by [bounding box feature](http://help.solidworks.com/2018/English/WhatsNew/t_bounding_box_for_part_assem.htm) added in SOLIDWORKS 2018
 

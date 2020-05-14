@@ -18,7 +18,7 @@ Error *Run-time Error '91': Object variable or With block variable not set* is d
 Components can be loaded lightweight which means that their underlying model is not loaded into the memory.
 In this case all APIs of the component's model are not available
 
-{% include img.html src="lightweight-component.png" alt="Lightweight component in the Feature Manager Tree" align="center" %}
+![Lightweight component in the Feature Manager Tree](lightweight-component.png)
 
 ## Resolutions
 

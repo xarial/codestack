@@ -9,11 +9,11 @@ labels: [quick view,large design review,performance,shell,context menu]
 categories: sw-tools
 group: Performance
 ---
-{% include img.html src="large-design-review-open.png" width=450 alt="Opening large design review form SOLIDWORKS" align="center" %}
+![Opening large design review form SOLIDWORKS](large-design-review-open.png){ width=450 }
 
 SOLIDWORKS enables an option to open large assemblies or drawing in [Large Design Review](https://help.solidworks.com/2018/English/SolidWorks/sldworks/HIDD_DIALOG_LDR_WARNING.htm) mode (aka Quick View). This allows to only load visual information of assembly and drawing and significantly improves the performance (large assembly usually opens in just few seconds instead minutes or even hours). Individual components can be later loaded on demand.
 
-{% include img.html src="large-design-review.png" width=650 alt="Assembly opened in large design review mode" align="center" %}
+![Assembly opened in large design review mode](large-design-review.png){ width=650 }
 
 However this mode is not supported when opening documents from Windows File Explorer. 
 
@@ -40,10 +40,10 @@ reg add "HKCR\SldDraw.Document\shell\Quick View\command" /ve /d "wscript.exe """
 
 * Save both files. It is important to keep those files in the same folder
 
-{% include img.html src="quick-view-files.png" width=250 alt="Files for enabling the quick mode from the Windows Explorer" align="center" %}
+![Files for enabling the quick mode from the Windows Explorer](quick-view-files.png){ width=250 }
 
 * Run *install.cmd*. You might need to run this as an administrator
 
 As the result the *Quick View* context menu command is added to the Windows File Explorer. Select any assembly and click right mouse button. Click Quick View and the file will be opened in the quick view mode in SOLIDWORKS:
 
-{% include img.html src="quick-view-context-menu.png" width=450 alt="Quick View context menu when assembly is selected" align="center" %}
+![Quick View context menu when assembly is selected](quick-view-context-menu.png){ width=450 }

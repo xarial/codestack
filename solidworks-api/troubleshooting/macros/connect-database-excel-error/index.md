@@ -28,6 +28,6 @@ The drivers are also OS-architecture specific (x32/x64)
 * Make sure that the appropriate driver is installed. For SOLIDWORKS 2013 onwards (check the drivers for x64 system).
 For older SOLIDWORKS version check x32 versions). Usually the drivers can be downloaded for free from the database supplier web-site or database installation package.
 
-{% include img.html src="odbc-drivers.png" width=320 height=245 alt="List of ODBC drivers" align="center" %}
+![List of ODBC drivers](odbc-drivers.png){ width=320 height=245 }
 
 * Modify the connection string as required

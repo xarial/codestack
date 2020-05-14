@@ -8,7 +8,7 @@ labels: [components, move to folder]
 categories: sw-tools
 group: Assembly
 ---
-{% include img.html src="new-folder.png" width=250 alt="Components added to new folder" align="center" %}
+![Components added to new folder](new-folder.png){ width=250 }
 
 This macro allows moving the selected components into the new folder in the feature manager tree using SOLIDWORKS API.
 

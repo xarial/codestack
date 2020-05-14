@@ -6,7 +6,7 @@ description: Changing system level (application) page setup options (printer pap
 image: /solidworks-api/options/application/system-page-setup/page-setup.png
 labels: [print,page setup,preferences]
 ---
-{% include img.html src="page-setup.png" width=350 alt="Page Setup" align="center" %}
+![Page Setup](page-setup.png){ width=350 }
 
 This example demonstrates how to change the system page setup option (paper size and scale) and set the current document options to use the system settings using SOLIDWORKS API.
 

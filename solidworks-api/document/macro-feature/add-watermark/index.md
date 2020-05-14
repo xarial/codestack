@@ -70,13 +70,13 @@ Assign the password to the watermark macro so it cannot be changed by users.
 
 * Select *Properties* command from the context menu of Watermark macro
 
-{% include img.html src="vba-macro-properties.png" width=200 alt="Properties command in the context menu of VBA macro" align="center" %}
+![Properties command in the context menu of VBA macro](vba-macro-properties.png){ width=200 }
 
 * Select the *Protection* tab
 * Check the *Lock project for viewing* option
 * Specify the password in the password boxes
 
-{% include img.html src="vba-macro-protection.png" width=250 alt="VBA macro protection tab" align="center" %}
+![VBA macro protection tab](vba-macro-protection.png){ width=250 }
 
 * Save the macro and close
 
@@ -90,18 +90,18 @@ Assign the password to the watermark macro so it cannot be changed by users.
 * Watermark feature will always be moved to the bottom of the feature tree
 * When definition of the watermark feature is edited 
 
-{% include img.html src="vba-edit-watermark-feature.png" width=250 alt="Calling the Edit definition of Watermark feature" align="center" %}
+![Calling the Edit definition of Watermark feature](vba-edit-watermark-feature.png){ width=250 }
 
 the custom message is displayed
 
-{% include img.html src="watermark-messagebox.png" width=250 alt="Custom message box displayed while editing of Watermark feature" align="center" %}
+![Custom message box displayed while editing of Watermark feature](watermark-messagebox.png){ width=250 }
 
 * The following message is displayed on attempt to delete the feature
 
-{% include img.html src="watermark-cannot-be-deleted.png" width=250 alt="Deletion of Watermark is impossible" align="center" %}
+![Deletion of Watermark is impossible](watermark-cannot-be-deleted.png){ width=250 }
 
 * Non editable security note is added in the model at the origin
 
-{% include img.html src="watermark-security-note.png" width=250 alt="Not editable security watermark note" align="center" %}
+![Not editable security watermark note](watermark-security-note.png){ width=250 }
 
 * Feature name cannot be changed. It is possible to rename it, but the name will be reverted while state update (e.g. select, rebuild, open model, etc.)

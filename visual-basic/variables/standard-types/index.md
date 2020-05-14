@@ -14,7 +14,7 @@ Numeric type variables are used to hold positive and negative integer values (wi
 
 If the assigned value doesn't fit the range Run-time error '6' overflow will be displayed at the compile time.
 
-{% include img.html src="vba-integer-overflow.png" width=350 alt="Run-time error '6' overflow when assigned integer value out of the accepted range" align="center" %}
+![Run-time error '6' overflow when assigned integer value out of the accepted range](vba-integer-overflow.png){ width=350 }
 
 #### Byte
 Allocates 1 byte of storage. Value ranges from 0 through 255. The function of converting to Byte is *CByte*.

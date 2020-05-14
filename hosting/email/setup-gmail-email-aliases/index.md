@@ -16,42 +16,42 @@ The first step for enabling the alias is setting up the 2-step verification and 
 
 Navigate to Google Accounts.
 
-{% include img.html src="google-account.png" width=250 alt="Opening Google account settings" align="center" %}
+![Opening Google account settings](google-account.png){ width=250 }
 
 Select the security tab and enable *2-Step Verification* option. Follow the guide to setup the settings.
 
-{% include img.html src="google-account-security.png" alt="Google account security tab" align="center" %}
+![Google account security tab](google-account-security.png)
 
 Once finished select the *App passwords* option to create new application. Select *Other (custom name)* option from the *select app* drop-down box.
 
-{% include img.html src="create-google-app.png" width=350 alt="Creating new Google App" align="center" %}
+![Creating new Google App](create-google-app.png){ width=350 }
 
 Click *Generate* button. As the result the password is generated for the app. Copy this password as it will be used in the next step.
 
-{% include img.html src="generated-app-password.png" width=350 alt="Generated password for the application" align="center" %}
+![Generated password for the application](generated-app-password.png){ width=350 }
 
 ## Setting up e-mail alias
 
 Open the [e-mail page](https://mail.google.com) and select the *Settings* command from the drop-down.
 
-{% include img.html src="google-email-settings.png" height=350 alt="Opening Gmail settings page" align="center" %}
+![Opening Gmail settings page](google-email-settings.png){ height=350 }
 
 Activate *Accounts and import* tab.
 
 Locate *Send mail as* section and click *Add another e-mail address* link.
 
-{% include img.html src="add-another-email-address.png" alt="Adding another e-mail alias" align="center" %}
+![Adding another e-mail alias](add-another-email-address.png)
 
 Specify the information about the other e-mail (i.e. the one you are creating alias for).
 
-{% include img.html src="email-address-details.png" width=450 alt="Setting up alias details" align="center" %}
+![Setting up alias details](email-address-details.png){ width=450 }
 
 Configure the smtp server. Set the value of *SMTP server* to *smtp.gmail.com*. User name is your gmail user name (not the custom domain name, i.e. the currently logged in user to gmail). Password is an app password generated in the previous step (not the gmail password).
 
-{% include img.html src="smtp-server-details.png" width=450 alt="Specifying SMTP settings" align="center" %}
+![Specifying SMTP settings](smtp-server-details.png){ width=450 }
 
 As an optional step set the created alias as default option so e-mails will be sent using the alias by default.
 
-{% include img.html src="send-mail-as-default.png" alt="Setting the default option for send as" align="center" %}
+![Setting the default option for send as](send-mail-as-default.png)
 
 Now you can send e-mails with an alias and it will appear as e-mail with custom domain to the receiver instead of the @gmail.com e-mail.

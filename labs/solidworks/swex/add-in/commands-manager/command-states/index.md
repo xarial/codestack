@@ -13,7 +13,7 @@ There are 4 command states supported by SOLIDWORKS:
 1. Selected and disabled. This represents the disabled checked button
 1. Selected and enabled. This represents checked button
 
-{% include img.html src="command-states.png" alt="Supported command states" align="center" %}
+![Supported command states](command-states.png)
 
 SwEx framework will assign the appropriate state (enabled or disabled) for the commands based on their supported workspaces if defined in the [CommandItemInfoAttribute](https://docs.codestack.net/swex/add-in/html/T_CodeStack_SwEx_AddIn_Attributes_CommandItemInfoAttribute.htm). However user can alter the state to provide more advanced management (for example it might be required to enable command if certain object is selected or if any bodies or components are present in the model). To do this it is required to specify the enable method handler as the last parameter of [AddCommandGroup](https://docs.codestack.net/swex/add-in/html/M_CodeStack_SwEx_AddIn_SwAddInEx_AddCommandGroup__1.htm) or [AddContextMenu](https://docs.codestack.net/swex/add-in/html/M_CodeStack_SwEx_AddIn_SwAddInEx_AddContextMenu__1.htm) methods.
 

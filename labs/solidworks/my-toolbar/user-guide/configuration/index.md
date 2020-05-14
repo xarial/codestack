@@ -12,7 +12,7 @@ order: 1
 
 Macro buttons can be configured by clicking on 'Configure...' command in MyToolbar menu in SOLIDWORKS
 
-{% include img.html src="my-toolbar-menu.png" width=350 alt="MyToolbar add-in menu in SOLIDWORKS" align="center" %}
+![MyToolbar add-in menu in SOLIDWORKS](my-toolbar-menu.png){ width=350 }
 
 1. MyToolbar sub-menu in SOLIDWORKS Tools menu
 1. Button to configure toolbar
@@ -26,7 +26,7 @@ Configure the parameters as shown below:
 
 ### Configuring Macro Buttons In Toolbar
 
-{% include img.html src="edit-macro.png" width=650 alt="Editing macro button in MyToolbar" align="center" %}
+![Editing macro button in MyToolbar](edit-macro.png){ width=650 }
 
 1. Path to toolbar file. This setting is stored locally to the user. UNC path is supported if required to configure a [shared toolbar](/labs/solidworks/my-toolbar/user-guide/multi-user/)
 1. Add new toolbar
@@ -39,7 +39,7 @@ Configure the parameters as shown below:
 
 ### Configuring Toolbar
 
-{% include img.html src="edit-toolbar.png" width=650 alt="Editing toolbar in MyToolbar" align="center" %}
+![Editing toolbar in MyToolbar](edit-toolbar.png){ width=650 }
 
 1. Toolbar title to be displayed in the SOLIDWORKS toolbars manager
 1. Toolbar tooltip
@@ -50,7 +50,7 @@ Configure the parameters as shown below:
 
 Select macro buttons and toolbars to load and edit the parameters. Use context menu or commands box to reorganize the commands as shown below.
 
-{% include img.html src="modifying-commands.png" width=350 alt="Caption" align="center" %}
+![Caption](modifying-commands.png){ width=350 }
 
 1. Move selected macro button to the left or move toolbar up
 1. Move selected macro button to the right or move toolbar down
@@ -64,18 +64,18 @@ Select macro buttons and toolbars to load and edit the parameters. Use context m
 
 If toolbar configuration changed the following message is displayed and SOLIDWORKS needs to be restarted for settings to take effect (unless toolbar is read-only in multi-user environment).
 
-{% include img.html src="toolbar-spec-changed.png" width=350 alt="MyToolbar specification changed notification" align="center" %}
+![MyToolbar specification changed notification](toolbar-spec-changed.png){ width=350 }
 
 ## Accessing Macro Buttons
 
 Toolbars are available in the SOLIDWORKS toolbars list:
 
-{% include img.html src="solidworks-toolbars.png" width=250 alt="SOLIDWORKS toolbars list" align="center" %}
+![SOLIDWORKS toolbars list](solidworks-toolbars.png){ width=250 }
 
 and in the SOLIDWORKS menu.
 
-{% include img.html src="my-toolbar-commands-menu.png" width=450 alt="Macro buttons in SOLIDWORKS menu" align="center" %}
+![Macro buttons in SOLIDWORKS menu](my-toolbar-commands-menu.png){ width=450 }
 
 Toolbars can be reorganized and placed into the SOLIDWORKS command manager area. Visit [Customization](/solidworks/my-toolbar/user-guide/customization/) page for additional customization options for the toolbars and commands.
 
-{% include img.html src="my-toolbar-commands.png" width=350 alt="Macro buttons in SOLIDWORKS toolbar" align="center" %}
+![Macro buttons in SOLIDWORKS toolbar](my-toolbar-commands.png){ width=350 }

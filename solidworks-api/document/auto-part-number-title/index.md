@@ -8,13 +8,13 @@ labels: [part number,title]
 categories: sw-tools
 group: Model
 ---
-{% include img.html src="automatic-model-title.png" width=450 alt="Model title set to part number" align="center" %}
+![Model title set to part number](automatic-model-title.png){ width=450 }
 
 This VBA macro automatically increments the part number and sets this as a title for newly created file using SOLIDWORKS API.
 
 Part number is incremented and stored in the external text file which can be shared across different users if needed.
 
-{% include img.html src="part-number-storage-file.png" width=350 alt="Current part number value in the text file" align="center" %}
+![Current part number value in the text file](part-number-storage-file.png){ width=350 }
 
 Macro provides several options to format the title which can be modified by changes in the values of the constants in the macro.
 

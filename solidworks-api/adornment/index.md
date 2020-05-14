@@ -6,7 +6,7 @@ description: Collection of articles and code examples which explain the differen
 image: /solidworks-api/adornment/adornment-api.png
 order: 6
 ---
-{% include img.html src="adornment-api.png" alt="SOLIDWORKS API for adornment of models and application" align="center" %}
+![SOLIDWORKS API for adornment of models and application](adornment-api.png)
 
 This section contains the articles and code examples which explain the different ways of customizing the view of the SOLIDWORKS model and application frame using API.
 

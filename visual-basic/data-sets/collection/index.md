@@ -69,7 +69,7 @@ coll.Add "B", "key2"
 
 Unlike elements keys must be unique in the collection otherwise the error will be displayed
 
-{% include img.html src="collection-key-already-associated.png" width=350 alt="Run-time error '457': The key is already associated with an element of this collection" align="center" %}
+![Run-time error '457': The key is already associated with an element of this collection](collection-key-already-associated.png){ width=350 }
 
 Elements in the collection can be accessed by key (similar to the way they accessed by index)
 

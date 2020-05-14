@@ -6,7 +6,7 @@ description: Example demonstrates how to create temp body of a spherical sheet
 image: /solidworks-api/geometry/primitives/create-spherical-surface/spherical-surface.png
 labels: [topology, geometry, sheet, modeler, sphere]
 ---
-{% include img.html src="spherical-surface.png" alt="Spherical sheet body" align="center" %}
+![Spherical sheet body](spherical-surface.png)
 
 This example demonstrates how to create a sheet body from the spherical surface using SOLIDWORKS API.
 

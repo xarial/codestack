@@ -10,7 +10,7 @@ redirect-from:
 ---
 Macro finds all straight lines (bends) of the sheet metal *Sketched Bend* feature and selects all segments using SOLIDWORKS API.
 
-{% include img.html src="sheet-metal-sketched-bend.png" width=400 alt="Sketch of the sheet metal sketched bend feature" align="center" %}
+![Sketch of the sheet metal sketched bend feature](sheet-metal-sketched-bend.png){ width=400 }
 
 There is no direct SOLIDWORKS API method of getting the bends, however bends are represented as sketch segments in the sketch owned by sheet metal feature. So in order to find bends it is required to find this sketch and parse its content.
 

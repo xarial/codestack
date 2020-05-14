@@ -7,7 +7,7 @@ image: /labs/solidworks/swex/pmpage/controls/tab/pmpage-tab.png
 toc_group_name: labs-solidworks-swex
 order: 3
 ---
-{% include img.html src="pmpage-tab.png" alt="Controls grouped in Property Manager Page tabs" align="center" %}
+![Controls grouped in Property Manager Page tabs](pmpage-tab.png)
 
 Tab containers are created for the complex types decorated with [TabAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_TabAttribute.htm).
 

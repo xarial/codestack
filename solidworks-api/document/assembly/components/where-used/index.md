@@ -10,7 +10,7 @@ group: Assembly
 ---
 This VBA macro finds all parent components of the selected component instances (Where Used) in the active assembly using SOLIDWORKS API and displays the list for review.
 
-{% include img.html src="where-used-form.png" width=350 alt="Where used form with the list of parent components" align="center" %}
+![Where used form with the list of parent components](where-used-form.png){ width=350 }
 
 All references can be selected in the form and corresponding component will be highlighted in the Feature Manager Tree.
 
@@ -31,7 +31,7 @@ Const INCLUDE_SUPPRESSED As Boolean = False 'True to include suppressed componen
 * Drag-n-drop ListBox control onto the form
 * Name the ListBox control as *ReferencesList*
 
-{% include img.html src="where-used-form-designer.png" width=550 alt="Form designer" align="center" %}
+![Form designer](where-used-form-designer.png){ width=550 }
 
 Place the code into corresponding modules
 

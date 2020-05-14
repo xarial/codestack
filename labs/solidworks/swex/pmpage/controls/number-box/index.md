@@ -7,7 +7,7 @@ image: /labs/solidworks/swex/pmpage/controls/number-box/number-box-units-wheel.p
 toc_group_name: labs-solidworks-swex
 order: 6
 ---
-{% include img.html src="number-box.png" alt="Simple number box" align="center" %}
+![Simple number box](number-box.png)
 
 Number box will be automatically created for the properties of *int* and *double* types.
 
@@ -15,6 +15,6 @@ Number box will be automatically created for the properties of *int* and *double
 
 Style of the number box can be customized via the [NumberBoxOptionsAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_NumberBoxOptionsAttribute.htm)
 
-{% include img.html src="number-box-units-wheel.png" alt="Number boxes with additional styles allowing specifying the units and displaying thumbwheel for changing the value" align="center" %}
+![Number boxes with additional styles allowing specifying the units and displaying thumbwheel for changing the value](number-box-units-wheel.png)
 
 {% include code-tabs.html src="NumberBox.Style" %}

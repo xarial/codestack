@@ -8,7 +8,7 @@ categories: sw-labs
 group: Geometry
 toc_group_name: labs-solidworks-stock-master
 ---
-{% include img.html src="round-stock-feature-property-page.png" height=350 alt="Property page for Round Stock feature" align="center" %}
+![Property page for Round Stock feature](round-stock-feature-property-page.png){ height=350 }
 
 This add-in allows generating round stock feature around the selected solid body.
 

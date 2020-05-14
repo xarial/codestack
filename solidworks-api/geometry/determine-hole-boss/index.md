@@ -6,7 +6,7 @@ description: Example demonstrates how to identify if the selected cylindrical fa
 image: /solidworks-api/geometry/determine-hole-boss/boss-hole.png
 labels: [geometry, hole, boss]
 ---
-{% include img.html src="boss-hole.png" width=250 alt="Holes and bosses in the body" align="center" %}
+![Holes and bosses in the body](boss-hole.png){ width=250 }
 
 This example demonstrates how to identify if the selected cylindrical face is internal (i.e. hole) or external (i.e. boss) using SOLIDWORKS API.
 
@@ -20,6 +20,6 @@ Macro finds random point on the face (in this example this is a middle between U
 
 Please see image below:
 
-{% include img.html src="inner-face-outer-face.png" width=400 alt="Normals for the hole and boss" align="center" %}
+![Normals for the hole and boss](inner-face-outer-face.png){ width=400 }
 
 {% code-snippet { file-name: Macro.vba } %}

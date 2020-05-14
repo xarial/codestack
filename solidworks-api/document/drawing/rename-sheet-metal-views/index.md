@@ -8,10 +8,10 @@ labels: [rename view,cut list,flat pattern]
 categories: sw-tools
 group: Drawing
 ---
-{% include img.html src="cut-list-name.png" width=250 alt="Cut-list for sheet metal body" align="center" %}
+![Cut-list for sheet metal body](cut-list-name.png){ width=250 }
 
 Cut list names for sheet metal bodies can be used to store important information, such as part number. This VBA macro allows to rename all flat pattern views of sheet metal in the active drawing sheet with the name of the respective cut-list item using SOLIDWORKS API.
 
-{% include img.html src="renamed-flat-pattern-drawing-view.png" width=250 alt="Drawing view renamed after the cut-list" align="center" %}
+![Drawing view renamed after the cut-list](renamed-flat-pattern-drawing-view.png){ width=250 }
 
 {% code-snippet { file-name: Macro.vba } %}

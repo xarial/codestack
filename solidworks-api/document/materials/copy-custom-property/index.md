@@ -8,7 +8,7 @@ labels: [material, xml, custom property]
 categories: sw-tools
 group: Materials
 ---
-{% include img.html src="material-custom-property.png" width=450 alt="Custom property in the material" align="center" %}
+![Custom property in the material](material-custom-property.png){ width=450 }
 
 This macro demonstrates how to copy the specified custom property from the material database to the model custom property using SOLIDWORKS API and XML parsers.
 

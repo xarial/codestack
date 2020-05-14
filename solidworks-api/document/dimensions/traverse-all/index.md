@@ -6,7 +6,7 @@ description: VBA macro which traverses all dimensions of all features in the sel
 image: /solidworks-api/document/dimensions/traverse-all/dimensions.png
 labels: [dimension,display dimension,traverse]
 ---
-{% include img.html src="dimensions.png" alt="Dimensions in the sketch of weldment feature" align="center" %}
+![Dimensions in the sketch of weldment feature](dimensions.png)
 
 This VBA macro demonstrates how to traverse all dimensions of the features from active SOLIDWORKS document or component (if selected) in the assembly using SOLIDWORKS API.
 

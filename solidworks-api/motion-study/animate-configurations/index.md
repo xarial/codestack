@@ -17,11 +17,11 @@ This could be useful when it is required to create an animation to represents mo
 * Open part or assembly
 * Select configurations in the order they should be animated
 
-{% include img.html src="sheet-metal-bending-animation.png" width=350 alt="Multiple configurations selected in the configurations tab" align="center" %}
+![Multiple configurations selected in the configurations tab](sheet-metal-bending-animation.png){ width=350 }
 
 * Run the macro. New assembly created with configurations set as animation steps.
 
-{% include img.html src="motion-study-configuration-animation.png" width=450 alt="Sheet metal bending animation" align="center" %}
+![Sheet metal bending animation](motion-study-configuration-animation.png){ width=450 }
 
 Macro parameters (time of the bend transition and pause between folding operations) can be changed by modifying the constants at the top of the macro
 

@@ -14,7 +14,7 @@ SOLIDWORKS macro is stored in the PDM vault under the long projects structure or
 
 When macro runs or edits the *Cannot Open* error is displayed. The macro runs normally from another location.  
 
-{% include img.html src="long-macro-path.png" width=400 height=141 alt="Error when running the macro" align="center" %}
+![Error when running the macro](long-macro-path.png){ width=400 height=141 }
 
 ## Cause
 

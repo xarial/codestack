@@ -17,7 +17,7 @@ This application can be run from the command line and with the following paramet
 
 * **-input** list of input directories or file paths to process. These are files which can be opened by eDrawings (e.g. SOLIDWORKS files, CATIA, STEP, DXF/DWG, etc.). Please see the complete list below:
 
-{% include img.html src="supported-formats.png" width=250 alt="Supported input files" align="center" %}
+![Supported input files](supported-formats.png){ width=250 }
 
 * **-filter** filter to extract input files, if **-input** parameter contains directories
 * **-outdir** - path to the directory to export results to. Tool will automatically create directory if it doesn't exist. If this parameter is not specified, files will be exported to the same folder as the input file.
@@ -55,7 +55,7 @@ Please see below example of parameters
 
 Operation progress is displayed in the console window
 
-{% include img.html src="console-output.png" alt="Exporting process console output" align="center" %}
+![Exporting process console output](console-output.png)
 
 Output files are created as per settings.
 

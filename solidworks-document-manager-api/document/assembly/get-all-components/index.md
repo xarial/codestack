@@ -5,7 +5,7 @@ caption: Get All Components
 description: Example demonstrates how to get all components on all levels from the document using the Document Manager API
 image: /solidworks-document-manager-api/document/assembly/get-all-components/components-tree.png
 ---
-{% include img.html src="components-tree.png" height=200 alt="SOLIDWORKS assembly tree" align="center" %}
+![SOLIDWORKS assembly tree](components-tree.png){ height=200 }
 
 This example demonstrates how to get all components on all levels from the document using the Document Manager API.
 

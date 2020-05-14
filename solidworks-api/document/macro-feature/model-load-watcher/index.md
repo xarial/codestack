@@ -16,7 +16,7 @@ This can be useful when certain code needs to be run on every model load (e.g. u
 
 Feature is visible in the tree and can be embedded into the document template if required.
 
-{% include img.html src="load-watcher-macro-feature.png" width=250 alt="Macro feature inserted into the feature manager tree" align="center" %}
+![Macro feature inserted into the feature manager tree](load-watcher-macro-feature.png){ width=250 }
 
 ## Configuration
 

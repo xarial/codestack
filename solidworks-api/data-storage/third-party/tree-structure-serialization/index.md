@@ -15,7 +15,7 @@ Add-in adds two buttons in the menu and toolbar and provides two handlers corres
 * SaveTree - asynchronous method to store the data in the stream. This method bumps the revision of the structure after each save.
 * LoadTree - loads the data from the stream and displays the name of the root element and the version
 
-{% include img.html src="read-data-result.png" width=250 alt="Result displayed from the data read from the stream" align="center" %}
+![Result displayed from the data read from the stream](read-data-result.png){ width=250 }
 
 ## Usage Instructions
 
@@ -27,7 +27,7 @@ Add-in adds two buttons in the menu and toolbar and provides two handlers corres
 
 It is required to set the 'Allow unsafe code' option in the Visual Studio Project settings:
 
-{% include img.html src="vs-setting-allow-unsafe-code.png" width=450 alt="Allow unsafe code option in C# project" align="center" %}
+![Allow unsafe code option in C# project](vs-setting-allow-unsafe-code.png){ width=450 }
 
 **TreeSerializerAddIn.cs**
 

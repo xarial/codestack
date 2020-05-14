@@ -8,7 +8,7 @@ labels: [split,body,faces]
 categories: sw-tools
 group: Geometry
 ---
-{% include img.html src="feature-manager-tree-split-faces.png" width=250 alt="Feature Manager Tree with sheet bodies for each face" align="center" %}
+![Feature Manager Tree with sheet bodies for each face](feature-manager-tree-split-faces.png){ width=250 }
 
 This macro creates individual surface (sheet) body for each face of the selected solid or surface body using the [IModeler::CreateSheetFromFaces](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeler~createsheetfromfaces.html) SOLIDWORKS API method.
 

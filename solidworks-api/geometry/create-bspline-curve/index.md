@@ -6,7 +6,7 @@ description: VBA example demonstrates how to create and preview b-spline curve f
 image: /solidworks-api/geometry/create-bspline-curve/bspline-curve-preview.png
 labels: [curve, bspline, modeler]
 ---
-{% include img.html src="bspline-curve-preview.png" width=250 alt="Preview of b-spline curve" align="center" %}
+![Preview of b-spline curve](bspline-curve-preview.png){ width=250 }
 
 This VBA example demonstrates the use of [IModeler::CreateBsplineCurve](https://help.solidworks.com/2012/English/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModeler~CreateBsplineCurve.html) method to create and preview b-spline curve using sample data.
 

@@ -22,7 +22,7 @@ Dim WithEvents myObj As CustomObjectWithEvents
 
 Visual Basic Editor will show all available events in the drop-down as shown below, and it is possible to select the required event from the list to subscribe to the notification.
 
-{% include img.html src="events-list.png" width=450 alt="List of available events of the object" align="center" %}
+![List of available events of the object](events-list.png){ width=450 }
 
 Event handler function should be named as *{Variable Name}_{Event Name}* and match the signature of the event
 
@@ -40,7 +40,7 @@ The following example demonstrates how to raise and handle the event.
 
 The project tree looks the following:
 
-{% include img.html src="events-project-tree.png" alt="VBA classes tree" align="center" %}
+![VBA classes tree](events-project-tree.png)
 
 ### EventsRaiser Class Module
 

@@ -6,7 +6,7 @@ description: Example demonstrates how to select component by full name at any le
 image: /solidworks-api/document/selection/select-component-by-name/components-tree.png
 labels: [select, component]
 ---
-{% include img.html src="components-tree.png" width=200 alt="Multi-level tree of components" align="center" %}
+![Multi-level tree of components](components-tree.png){ width=200 }
 
 This example demonstrates the most performance efficient way to select a component on any level of the assembly by its full name using SOLIDWORKS API.
 
@@ -14,7 +14,7 @@ Name of the component is defined as a path where each level is separated by / sy
 
 Component name can be found in the following dialog:
 
-{% include img.html src="component-name.png" width=250 alt="Component name in properties dialog" align="center" %}
+![Component name in properties dialog](component-name.png){ width=250 }
 
 Refer [Get Component By Name](/solidworks-api/document/assembly/components/get-by-name) example for macro to retrieve the pointer to the component without the selection.
 

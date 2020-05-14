@@ -8,7 +8,7 @@ labels: [dxf,dwg,cleanup,flat pattern,export]
 ---
 [IPartDoc::ExportToDwg2](https://help.solidworks.com/2014/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IPartDoc~ExportToDWG2.html) SOLIDWORKS API method allows to export selected flat pattern to DXF/DWG format. But this API doesn't allow to show the built in Cleanup dialog to modify the DXF/DWG before exporting.
 
-{% include img.html src="cleanup-page.png" width=350 alt="DXF/DWG Cleanup" align="center" %}
+![DXF/DWG Cleanup](cleanup-page.png){ width=350 }
 
 The code below provides a workaround for this issue.
 

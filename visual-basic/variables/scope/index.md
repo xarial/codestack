@@ -26,7 +26,7 @@ End Sub
 
 Private variables cannot be accessed from outside of the module or class. Compile error: method or data member not found occurs when attempting to access the private member from outside class or module.
 
-{% include img.html src="not-found-member-on-private-variable.png" width=500 alt="Compile error: method or data member not found when calling the privately declared variable from outside class" align="center" %}
+![Compile error: method or data member not found when calling the privately declared variable from outside class](not-found-member-on-private-variable.png){ width=500 }
 
 #### Public
 
@@ -94,7 +94,7 @@ End Sub
 This example demonstrates the behaviour of variables declared in the different scopes:
 
 *Module1*
-{% include img.html src="custom-module-named-module1.png" alt="Module1 module in the Visual Basic Project" align="center" %}
+![Module1 module in the Visual Basic Project](custom-module-named-module1.png)
 
 {% code-snippet { file-name: different-scopes-example-module1.vba } %}
 
@@ -104,4 +104,4 @@ This example demonstrates the behaviour of variables declared in the different s
 
 Output to [Immediate Window](visual-basic/vba/vba-editor/windows#immediate-window)
 
-{% include img.html src="immediate-window-output.png" width=350 alt="Output of variable values" align="center" %}
+![Output of variable values](immediate-window-output.png){ width=350 }

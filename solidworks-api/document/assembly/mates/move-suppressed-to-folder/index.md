@@ -8,7 +8,7 @@ labels: [mates,suppressed,move,folder]
 categories: sw-tools
 group: Assembly
 ---
-{% include img.html src="suppressed-solidworks-mates.png" width=250 alt="Suppressed mates moved to the folder" align="center" %}
+![Suppressed mates moved to the folder](suppressed-solidworks-mates.png){ width=250 }
 
 This VBA macro allows to move all suppressed mates to a nominated feature manager folder using SOLIDWORKS API. Macro will create folder if it doesn't exist or move to already existing one.
 

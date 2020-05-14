@@ -16,10 +16,10 @@ To setup the macro:
 
 * Run the macro
 * Specify the full path to the macro to run
-{% include img.html src="input-macro-file-path.png" width=250 alt="Select path to the macro for running" align="center" %}
+![Select path to the macro for running](input-macro-file-path.png){ width=250 }
 
 This macro will be added to the model as a design binder attachment
-{% include img.html src="design-binder-macro-attachment.png" width=250 alt="Macro added as a design binder attachment" align="center" %}
+![Macro added as a design binder attachment](design-binder-macro-attachment.png){ width=250 }
 * Macro feature is inserted to the macro as the last feature in the tree.
 
 When model is rebuilt (either on demand or automatically) macro will be automatically run.
@@ -37,7 +37,7 @@ Const BASE_NAME As String = "[Name of Feature]"
 
 By default the macro is embedded into the model. In order to edit the macro code use the *Edit* command in the design binder attachment
 
-{% include img.html src="edit-embeded-macro.png" width=250 alt="Edit embedded macro in the design binder" align="center" %}
+![Edit embedded macro in the design binder](edit-embeded-macro.png){ width=250 }
 
 In order to avoid embedding of the macro change the following constant to *False*
 

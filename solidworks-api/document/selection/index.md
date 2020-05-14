@@ -6,7 +6,7 @@ description: Articles and examples explaining the selection techniques in SOLIDW
 order: 5
 image: /solidworks-api/document/selection/solidworks-selection.png
 ---
-{% include img.html src="solidworks-selection.png" width=300 alt="Selections in SOLIDWORKS API" align="center" %}
+![Selections in SOLIDWORKS API](solidworks-selection.png){ width=300 }
 
 Selection is a vital part of SOLIDWORKS API development process. In this article different selection methods and selection options will be discussed.
 
@@ -22,7 +22,7 @@ Mainly selections are used for
 
 ### Selection Marks
 
-{% include img.html src="selection-marks-for-extrude-feature.png" width=500 alt="Selection marks for Extrude feature" align="center" %}
+![Selection marks for Extrude feature](selection-marks-for-extrude-feature.png){ width=500 }
 
 Selection marks are integer attributes which can be associated with the selected entity in order to differentiate different group of objects by purpose. For example selection used in different selection boxes in the property manager page will have different selection marks. Selection marks can be assigned while selection of new objects via [IModelDocExtension::SelectByID2](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~selectbyid2.html) method, or direct *Select* methods such as [IFeature::Select2](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ifeature~select2.html) where the mark is passed as an *Mark* parameter.
 
@@ -46,7 +46,7 @@ Selection data is an optional parameter. Pass *NULL* to methods if it is not use
 
 Refer the [ISelectData](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISelectData_members.html) SOLIDWORKS API interface members for more information.
 
-{% include img.html src="select-data-interface-members.png" width=500 alt="ISelectData Interface Members" align="center" %}
+![ISelectData Interface Members](select-data-interface-members.png){ width=500 }
 
 ### Selection Methods
 
@@ -56,7 +56,7 @@ There are multiple ways of selecting entities in SOLIDWORKS. The following list 
 
 * By direct *SelectX* method. Majority of selectable objects in SOLIDWORKS provide direct *SelectX* method which allows to select the element from its pointer:
 
-{% include img.html src="objects-select-method-api-help.png" height=300 alt="Direct SelectX methods for SOLIDWORKS objects" align="center" %}
+![Direct SelectX methods for SOLIDWORKS objects](objects-select-method-api-help.png){ height=300 }
 
 This is a preferable method of selection as it provides the consistency and it is not dependent on the view's orientation. Refer the [Select All Sketch Elements](select-all-sketch-elements) example which shows how different sketch elements can be selected.
 

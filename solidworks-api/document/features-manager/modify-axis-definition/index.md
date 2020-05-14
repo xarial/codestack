@@ -6,7 +6,7 @@ description: VBA macro example to change the selection of the axis feature using
 image: /solidworks-api/document/features-manager/modify-axis-definition/axis-definition.png
 labels: [axis,definition]
 ---
-{% include img.html src="axis-definition.png" width=250 alt="Axis property manager page" align="center" %}
+![Axis property manager page](axis-definition.png){ width=250 }
 
 This VBA example demonstrates how to modify the definition and change the selection for the axis feature using SOLIDWORKS API.
 

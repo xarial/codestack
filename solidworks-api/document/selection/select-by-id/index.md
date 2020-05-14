@@ -10,7 +10,7 @@ In this articles the [IModelDocExtension::SelectByID2](http://help.solidworks.co
 
 This is a primary method used to represent user selections when [recording the macro](http://help.solidworks.com/2016/english/solidworks/sldworks/t_record_pause_macro.htm).
 
-{% include img.html src="recorded-macro-for-extrude-feature.png" width=500 alt="Recorded macro for Extrude feature" align="center" %}
+![Recorded macro for Extrude feature](recorded-macro-for-extrude-feature.png){ width=500 }
 
 It is not recommended to use this method for the selection because of the following limitations:
 

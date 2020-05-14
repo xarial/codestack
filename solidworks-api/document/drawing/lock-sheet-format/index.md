@@ -8,7 +8,7 @@ labels: [lock,sheet format,protect]
 categories: sw-tools
 group: Drawing
 ---
-{% include img.html src="edit-sheet-format-command.png" width=250 alt="Edit sheet format context menu command" align="center" %}
+![Edit sheet format context menu command](edit-sheet-format-command.png){ width=250 }
 
 This VBA macro allows to disable (or password protect) the editing of the sheet format in SOLIDWORKS drawing using SOLIDWORKS API.
 
@@ -27,7 +27,7 @@ Set the value of *LOCK_WITH_PASSWORD* to *False*.
 
 The following message is displayed every time the *Edit Sheet Format* command is called and command is cancelled:
 
-{% include img.html src="locked-message.png" alt="Message indicating that the sheet is locked for editing" align="center" %}
+![Message indicating that the sheet is locked for editing](locked-message.png)
 
 ## Password protecting the editing
 
@@ -37,7 +37,7 @@ It is recommended to password protect the VBA macro, so the password cannot be s
 
 The following prompt is displayed every time the *Edit Sheet Format* command is called
 
-{% include img.html src="password-prompt.png" alt="Prompt to enter password to unlock spreadsheet" align="center" %}
+![Prompt to enter password to unlock spreadsheet](password-prompt.png)
 
 If password matches, the sheet format can be edited, otherwise the command is cancelled and error message is displayed.
 
@@ -48,15 +48,15 @@ If password matches, the sheet format can be edited, otherwise the command is ca
 * Add new [user form](/visual-basic/user-forms/) and name it *PasswordBox*. Paste the [code below](#passwordbox-user-form) into the user form code
 * Add the controls to the form as shown below and specify the name of each control as marked on the image
 
-{% include img.html src="password-box-controls.png" alt="Controls in password box user form" align="center" %}
+![Controls in password box user form](password-box-controls.png)
 
 * Set the value of *PasswordChar* property of Text Box control to \* to hide the password from user interface while typing
 
-{% include img.html src="text-box-password-char.png" alt="Password char in text box control" align="center" %}
+![Password char in text box control](text-box-password-char.png)
 
 The files tree should look similar to below image.
 
-{% include img.html src="macro-files-tree.png" alt="Macro files tree" align="center" %}
+![Macro files tree](macro-files-tree.png)
 
 Follow the [Run Macro On SOLIDWORKS Start](/solidworks-api/getting-started/macros/run-macro-on-solidworks-start/) for the instruction of setting up the automatic run of the macro on SOLIDWORKS startup.
 

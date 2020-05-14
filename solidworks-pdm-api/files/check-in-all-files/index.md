@@ -18,6 +18,6 @@ Utility expects 3 arguments to be specified:
 
 The list of files, ids and the locked by user information is displayed in the command line. Once script finishes execution, all files are checked-in. Any errors occurred during the execution are printed into the console window.
 
-{% include img.html src="console-output.png" width=450 alt="Output of command line" align="center" %}
+![Output of command line](console-output.png){ width=450 }
 
 {% code-snippet { file-name: Module1.vb } %}

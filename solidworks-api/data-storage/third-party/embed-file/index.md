@@ -12,12 +12,12 @@ Example SOLIDWORKS add-in is built using the [SwEx.AddIn](/labs/solidworks/swex/
 
 Add-in adds two buttons in the menu and toolbar and provides two handlers correspondingly: 
 
-{% include img.html src="embed-file-menu.png" width=400 alt="Add-in menu" align="center" %}
+![Add-in menu](embed-file-menu.png){ width=400 }
 
 * AddFile - asynchronous method to store the embed file data in the stream. This method asks user to select the file, reads its content and serializes it into a file stream.
 * LoadFile - loads the embedded file from the stream and prompts user to select the file path to store the content. The file name is prepopulated based on the embedded file name
 
-{% include img.html src="select-save-path.png" width=550 alt="Browse for save file path" align="center" %}
+![Browse for save file path](select-save-path.png){ width=550 }
 
 ## Usage Instructions
 

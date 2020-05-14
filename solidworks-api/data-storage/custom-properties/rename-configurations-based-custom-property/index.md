@@ -12,7 +12,7 @@ redirect-from:
 ---
 This macro renames all configurations of assembly or part into the value of the specified configuration specific custom property using SOLIDWORKS API.
 
-{% include img.html src="sw-configuration-name.png" height=200 alt="Configuration name in the configuration properties manager page" align="center" %}
+![Configuration name in the configuration properties manager page](sw-configuration-name.png){ height=200 }
 
 * Run the macro and enter the name of the custom property to read the value from
 * Macro will traverse all configurations and rename them based on the corresponding value of the configuration specific custom property

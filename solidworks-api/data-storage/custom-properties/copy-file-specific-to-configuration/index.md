@@ -12,6 +12,6 @@ redirect-from:
 ---
 This macro copies all the file specific properties into the properties of the active configuration using SOLIDWORKS API.
 
-{% include img.html src="file-specific-custom-properties.png" width=640 alt="Properties in the Custom tab of the file" align="center" %}
+![Properties in the Custom tab of the file](file-specific-custom-properties.png){ width=640 }
 
 {% code-snippet { file-name: Macro.vba } %}

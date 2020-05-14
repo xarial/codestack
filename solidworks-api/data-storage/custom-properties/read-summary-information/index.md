@@ -6,7 +6,7 @@ description: VBA macro to extract the summary information (e.g. author, keywords
 image: /solidworks-api/data-storage/custom-properties/read-summary-information/summary.png
 labels: [summary info,author,comments,title]
 ---
-{% include img.html src="summary.png" alt="Summary Information of SOLIDWORKS file" align="center" %}
+![Summary Information of SOLIDWORKS file](summary.png)
 
 This VBA macro extracts the data from the *Summary Information* tab from custom properties of the active SOLIDWORKS document using SOLIDWORKS API. This information includes author, keywords, comments, title, creation info, last saved info.
 

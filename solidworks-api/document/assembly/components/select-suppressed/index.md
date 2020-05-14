@@ -10,7 +10,7 @@ This VBA macro allows to select all suppressed components in the active SOLIDWOR
 
 This executes the *Select Suppressed* command of *Component Selection* menu
 
-{% include img.html src="select-suppressed-components.png" width=500 alt="Select Suppressed command for components" align="center" %}
+![Select Suppressed command for components](select-suppressed-components.png){ width=500 }
 
 This is preferable option of selecting all suppressed components over the [traversing components](/solidworks-api/document/assembly/components/traversing-tree) one-by-one due to the performance benefits.
 

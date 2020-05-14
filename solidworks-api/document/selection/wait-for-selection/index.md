@@ -21,11 +21,11 @@ This approach loops the selected objects and blocks the current thread until the
 * Run the macro
 * Select edge (or the object specified in the filter)
 
-{% include img.html src="selected-edge.png" width=250 alt="Selected edge" align="center" %}
+![Selected edge](selected-edge.png){ width=250 }
 
 * Macro stops execution and the reference of *swObject* is set to the selected element
 
-{% include img.html src="selection-stop-execution.png" width=550 alt="VBA macro stops once specified object is selected" align="center" %}
+![VBA macro stops once specified object is selected](selection-stop-execution.png){ width=550 }
 
 {% code-snippet { file-name: MacroBlocking.vba } %}
 
@@ -35,12 +35,12 @@ This approach uses the SOLIDWORKS notifications to handle the selection. This is
 
 * Create macro module and class module as shown below
 
-{% include img.html src="macro-solution-tree.png" alt="Macro solution tree" align="center" %}
+![Macro solution tree](macro-solution-tree.png)
 
 * Run macro and select edge (or the object specified in the filter)
 * Similar to the previous approach code stops after the selection and the reference of *swObject* is set to the selected element
 
-{% include img.html src="selection-event-stop-execution.png" width=550 alt="VBA macro stops once specified object is selected via notification" align="center" %}
+![VBA macro stops once specified object is selected via notification](selection-event-stop-execution.png){ width=550 }
 
 ### Macro Module
 

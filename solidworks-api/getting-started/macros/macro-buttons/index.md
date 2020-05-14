@@ -16,25 +16,25 @@ Macro can be assigned to the custom buttons and placed onto existing toolbars or
 
 In order to associate the macro with the button call the *Customize...* command either from the context menu
 
-{% include img.html src="customize-menu.png" width=250 alt="Customize command available from the context menu" align="center" %}
+![Customize command available from the context menu](customize-menu.png){ width=250 }
 
 or from the Tools menu
 
-{% include img.html src="tools-customize.png" width=250 alt="Customize command available from the Tools menu" align="center" %}
+![Customize command available from the Tools menu](tools-customize.png){ width=250 }
 
 > Note. This command is disabled if no document are opened in SOLIDWORKS
 
 Navigate to *Commands* tab and select the *Macro* group. Last button in this group is *New Macro Button* template.
 
-{% include img.html src="macro-commands-toolbar.png" width=350 alt="Macro commands toolbar customization" align="center" %}
+![Macro commands toolbar customization](macro-commands-toolbar.png){ width=350 }
 
 Drag-n-drop this button and place it to any existing toolbar or command tab box in the commands manager
 
-{% include img.html src="drop-command.png" alt="Dropping the macro button onto the existing toolbar" align="center" %}
+![Dropping the macro button onto the existing toolbar](drop-command.png)
 
 Once dropped the following dialog is popped up:
 
-{% include img.html src="customize-macro-button.png" width=250 alt="Specifying the options for the macro button" align="center" %}
+![Specifying the options for the macro button](customize-macro-button.png){ width=250 }
 
 Fill the form with the corresponding data
 
@@ -49,7 +49,7 @@ Macro buttons are performing in the same way as any other standard buttons. It i
 
 Find the required command in the *Macros* category on the *Keyboard* tab of the *Customize...* dialog and assign the shortcut.
 
-{% include img.html src="macro-buttons-keyboard-shortcuts.png" width=350 alt="Adding the keyboard shortcuts to the macro buttons" align="center" %}
+![Adding the keyboard shortcuts to the macro buttons](macro-buttons-keyboard-shortcuts.png){ width=350 }
 
 In order to edit the properties of macro buttons as well as reorder the buttons or delete it is required to activate the *Customize...* menu command.
 
@@ -61,6 +61,6 @@ In order to remove the button drag it away from the toolbar until red button wit
 
 If macro button was placed on the command tab box use the following context menu to change the properties or remove the button:
 
-{% include img.html src="command-tab-macro-button-properties.png" width=250 alt="Properties of the macro button in the commands tab box" align="center" %}
+![Properties of the macro button in the commands tab box](command-tab-macro-button-properties.png){ width=250 }
 
 If you want to place the macro button to the custom toolbar you can use the free [MyToolbar](/labs/solidworks/my-toolbar) add-in.

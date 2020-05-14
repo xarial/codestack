@@ -9,7 +9,7 @@ labels: [feature, rename]
 categories: sw-tools
 group: Model
 ---
-{% include img.html src="rename-features-sequentially.png" alt="Features renamed sequentially" align="center" %}
+![Features renamed sequentially](rename-features-sequentially.png)
 
 This macro renames all the features in active model in the sequential order using SOLIDWORKS API, preserving the base names .
 

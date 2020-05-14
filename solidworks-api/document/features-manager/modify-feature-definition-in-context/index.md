@@ -6,7 +6,7 @@ description: Example demonstrates how to modify feature definition in the contex
 image: /solidworks-api/document/features-manager/modify-feature-definition-in-context/edit-extrude-feature-in-context.png
 labels: [edit, feature, context]
 ---
-{% include img.html src="edit-extrude-feature-in-context.png" width=450 alt="Boss-Extrude feature is editing in the context of the assembly" align="center" %}
+![Boss-Extrude feature is editing in the context of the assembly](edit-extrude-feature-in-context.png){ width=450 }
 
 This example demonstrates how to modify feature definition in the context of the assembly using SOLIDWORKS API.
 

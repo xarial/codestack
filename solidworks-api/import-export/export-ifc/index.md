@@ -10,7 +10,7 @@ group: Model
 ---
 This example demonstrates how to export active assembly or part document into IFC format using SOLIDWORKS API.
 
-{% include img.html src="save-as-dialog-ifc.png" width=450 alt="Save As Dialog with 2 ifc format options" align="center" %}
+![Save As Dialog with 2 ifc format options](save-as-dialog-ifc.png){ width=450 }
 
 Currently SOLIDWORKS supports 2 schemas for IFC format
 
@@ -19,7 +19,7 @@ Currently SOLIDWORKS supports 2 schemas for IFC format
 
 The schema can be validated in the output IFC file when opened in text editor.
 
-{% include img.html src="ifc-file.png" width=450 alt="IFC schema" align="center" %}
+![IFC schema](ifc-file.png){ width=450 }
 
 This VBA macro demonstrates how to export file to both IFC schemas. Change the value of the *IfcFormat_e* enumeration to change the format:
 

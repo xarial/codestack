@@ -9,7 +9,7 @@ labels: [configuration,sheet,review,iterate]
 categories: sw-tools
 group: Model
 ---
-{% include img.html src="configurations.png" alt="Configurations in SOLIDWORKS model" align="center" %}
+![Configurations in SOLIDWORKS model](configurations.png)
 
 This VBA macro allows to review all configurations in part or assembly and all sheets in the drawing document of SOLIDWORKS.
 

@@ -10,7 +10,7 @@ group: Import/Export
 redirect-from:
   - /solidworks-api/import-export/export-component-stl/
 ---
-{% include img.html src="component-stl.png" width=250 alt="Selected component exported to STL" align="center" %}
+![Selected component exported to STL](component-stl.png){ width=250 }
 
 This C# VSTA macro exports active part or selected component in assembly to STL format using SOLIDWORKS API. Macro will also work with the components loaded lightweight.
 

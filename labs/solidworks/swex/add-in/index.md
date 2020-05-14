@@ -10,7 +10,7 @@ redirect-from:
   - /labs/solidworks/dev-tools-addin
   - /labs/solidworks/dev-tools-addin/
 ---
-{% include img.html src="logo.png" alt="SwEx.AddIn framework for SOLIDWORKS" align="center" %}
+![SwEx.AddIn framework for SOLIDWORKS](logo.png)
 
 SwEx.AddIn provides utilities for simplified development of SOLIDWORKS add-ins.
 

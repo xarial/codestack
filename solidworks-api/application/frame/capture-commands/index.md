@@ -22,11 +22,11 @@ This macro helps to capture the id of command directly from SOLIDWORKS by clicki
 * Perform the required action (i.e. click button or menu item)
 * Command id is recorded and displayed in the list
 
-{% include img.html src="capturing-hide-command-id.png" width=350 alt="Capturing sketch hide command id" align="center" %}
+![Capturing sketch hide command id](capturing-hide-command-id.png){ width=350 }
 
 The command id can be looked up in the the [commands list]((http://help.solidworks.com/2012/english/api/swcommands/solidworks.interop.swcommands~solidworks.interop.swcommands.swcommands_e.html))
 
-{% include img.html src="sw-commands-id.png" width=350 alt="Hide sketch command id in swCommands_e enumeration" align="center" %}
+![Hide sketch command id in swCommands_e enumeration](sw-commands-id.png){ width=350 }
 
 > It is not required to explicitly use [swCommands_e](http://help.solidworks.com/2012/english/api/swcommands/solidworks.interop.swcommands~solidworks.interop.swcommands.swcommands_e.html) enumeration as it is defined in another interop (*solidworks.interop.swcommands.dll*). Instead command id can be defined as an integer or custom enumeration.
 
@@ -36,21 +36,21 @@ For the standard SOLIDWORKS commands, User Command argument will be equal to 0. 
 
 If this command is clicked, the command id would be equal to one of the following:
 
-{% include img.html src="user-commands.png" width=450 alt="User specific command ids" align="center" %}
+![User specific command ids](user-commands.png){ width=450 }
 
 Command would indicate the type of the button (minimized toolbar, menu, macro button etc.), and the User Command Id will be equal to the user id of a custom button. This is a command user id which can be retrieved via [ICommandGroup::CommandId](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ICommandGroup~CommandID.html) property while creating the custom commands manager in the SOLIDWORKS add-in.
 
-{% include img.html src="capturing-user-command-id.png" width=250 alt="Capturing the commands from the custom add-in" align="center" %}
+![Capturing the commands from the custom add-in](capturing-user-command-id.png){ width=250 }
 
 ### Creating macro
 
 * Add User Form module to the macro and name it *CommandsMonitorForm*
 
-{% include img.html src="vba-macro-project.png" width=450 alt="VBA project structure" align="center" %}
+![VBA project structure](vba-macro-project.png){ width=450 }
 
 * Drag-n-drop the List Box control onto the form and name it *lstLog*
 
-{% include img.html src="add-list-box-control.png" width=450 alt="Adding list box control to the form" align="center" %}
+![Adding list box control to the form](add-list-box-control.png){ width=450 }
 
 * Add the code to corresponding modules
 

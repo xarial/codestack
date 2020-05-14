@@ -6,7 +6,7 @@ description: Detailed guides of getting started with developing applications for
 image: /solidworks-api/getting-started/solidworks-api-getting-started.png
 order: 1
 ---
-{% include img.html src="solidworks-api-getting-started.png" width=400 alt="Getting started with SOLIDWORKS API" align="center" %}
+![Getting started with SOLIDWORKS API](solidworks-api-getting-started.png){ width=400 }
 
 SOLIDWORKS API can be used in any COM-compatible language (i.e. C++, C#, VB.NET and Visual Basic). There are different types of applications which can be developed using the SOLIDWORKS API. Please refer the comparison table below for selecting the right type of the application which suits the requirements.
 
@@ -35,7 +35,7 @@ There are 2 general ways of generating the the required type libraries
 
 By adding the reference to Type Library (*.tlb) files directly to the .NET project (sldworks.tlb, swconst.tlb, swpublished.tlb). This can be done either by browsing the corresponding type library file or by finding the registered reference in the COM tab. These steps are equivalent of using the [tlbimp](https://docs.microsoft.com/en-us/dotnet/framework/tools/tlbimp-exe-type-library-importer) utility as Visual Studio will convert type library to interop in the background.
 
-{% include img.html src="com-tab-references.png" alt="Adding the references from COM tab" align="center" %}
+![Adding the references from COM tab](com-tab-references.png)
 
 As the result, the converted .NET interop equivalent is used in the project
 
@@ -54,11 +54,11 @@ But there is another major difference.
 
 Interops, generated from COM type libraries are not [strong named](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-use-strong-named).
 
-{% include img.html src="com-strong-name-false.png" alt="No strong names for interops generated from type libraries" align="center" %}
+![No strong names for interops generated from type libraries](com-strong-name-false.png)
 
 While interops shipped with SOLIDWORKS installation (PIA) are [strong named](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-use-strong-named).
 
-{% include img.html src="net-strong-name-true.png" alt="Strong names of assembly interops" align="center" %}
+![Strong names of assembly interops](net-strong-name-true.png)
 
 There will be almost no difference if you are building [out-of-process stand-alone](stand-alone) applications (unless your *.exe supports plugins mechanism and can load libraries which reference SOLIDWORKS interops), but it can cause major issues for [in-process add-in](add-ins) applications if multiple add-ins refer different versions of unsigned (not strong named) interops. Similar issue is demonstrated in [this YouTube video](https://www.youtube.com/watch?v=ZeWDoJ5TC7o)
 

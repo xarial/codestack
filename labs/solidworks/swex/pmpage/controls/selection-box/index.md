@@ -7,7 +7,7 @@ image: /labs/solidworks/swex/pmpage/controls/selection-box/selection-box.png
 toc_group_name: labs-solidworks-swex
 order: 8
 ---
-{% include img.html src="selection-box.png" alt="Selection box control" align="center" %}
+![Selection box control](selection-box.png)
 
 Selection box will be generated for the public properties decorated with [SelectionBoxAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_SelectionBoxAttribute.htm).
 
@@ -20,7 +20,7 @@ This attribute is applicable to the property of type object or any specific sele
 
 This attribute is also applicable to lists. In this case multiple selections will be enabled for the selection box:
 
-{% include img.html src="selection-box-multiple.png" alt="Multiple entities selected in the selection box" align="center" %}
+![Multiple entities selected in the selection box](selection-box-multiple.png)
 
 {% include code-tabs.html src="SelectionBox.List" %}
 

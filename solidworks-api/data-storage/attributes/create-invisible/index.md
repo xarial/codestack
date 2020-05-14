@@ -12,7 +12,7 @@ This example creates an invisible attribute and attaches to the selected object 
 
 Attribute ca be hidden by setting the corresponding flag in the [IAttributeDef::CreateInstance5](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iattributedef~createinstance5.html) SOLIDWORKS API method.
 
-{% include img.html src="sw-attribute-features-tree.png" width=272 height=320 alt="Attribute feature inserted to the Feature Manager Tree" align="center" %}
+![Attribute feature inserted to the Feature Manager Tree](sw-attribute-features-tree.png){ width=272 height=320 }
 
 Macro stops the execution once the attribute is created. At this stage the attribute feature is invisible.
 When execution of macro continues (F5 or run is clicked) the feature is set to visible.

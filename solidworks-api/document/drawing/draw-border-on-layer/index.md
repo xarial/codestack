@@ -6,7 +6,7 @@ description: VBA macro example demonstrates how to draw a border on the active d
 image: /solidworks-api/document/drawing/draw-border-on-layer/sheet-border.png
 labels: [border,layer,scale]
 ---
-{% include img.html src="sheet-border.png" width=350 alt="Sheet border drawn on the layer" align="center" %}
+![Sheet border drawn on the layer](sheet-border.png){ width=350 }
 
 This VBA macro draws a border around the active sheet on the specified layer.
 

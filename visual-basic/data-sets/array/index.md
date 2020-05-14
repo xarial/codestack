@@ -53,7 +53,7 @@ In order to retrieve the upper and lower boundaries of the array **UBound** and 
 
 > UBound function cannot be used to identify if the array is initialized as it will throw an exception when used on not initialized array. Use the **IsArrayInitialized** function from the example below to safely identify the state of the array.
 
-{% include img.html src="subscript-out-of-range.png" width=350 alt="Run-time error 9: subscript out of range while reading the upper boundary of uninitialized array" align="center" %}
+![Run-time error 9: subscript out of range while reading the upper boundary of uninitialized array](subscript-out-of-range.png){ width=350 }
 
 {% code-snippet { file-name: initialize.vba } %}
 
@@ -80,7 +80,7 @@ Dim arrCannotResize(3) As Integer 'size of this array cannot be resized
 
 Attempt of resizing the already dimensioned array will result in the compile error:
 
-{% include img.html src="array-already-dimensioned.png" width=350 alt="Compile error: Array already dimensioned" align="center" %}
+![Compile error: Array already dimensioned](array-already-dimensioned.png){ width=350 }
 
 #### Clearing the existing values
 
@@ -106,4 +106,4 @@ Dim table(<ROWS COUNT>, <COLUMNS COUNT>) As String
 
 {% code-snippet { file-name: two-dimensional.vba } %}
 
-{% include img.html src="two-dimensional-array.png" Height=400 alt="Values of two-dimensional array (matrixArr) in the Watch window from the code above" align="center" %}
+![Values of two-dimensional array (matrixArr) in the Watch window from the code above](two-dimensional-array.png)

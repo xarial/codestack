@@ -13,7 +13,7 @@ Latest version of the add-in can be downloaded from this link: [Version 2.2 (Bet
 
 Download the *my-toolbar.msi* installer file.
 
-{% include img.html src="my-toolbar-installer.png" width=450 alt="Download page for the MyToolbar installer" align="center" %}
+![Download page for the MyToolbar installer](my-toolbar-installer.png){ width=450 }
 
 ### Installation
 
@@ -21,13 +21,13 @@ Download the *my-toolbar.msi* installer file.
 * Follow the installation wizard
 * Start SOLIDWORKS
 
-{% include img.html src="my-toolbar-setup.png" width=350 alt="MyToolbar installation wizard" align="center" %}
+![MyToolbar installation wizard](my-toolbar-setup.png){ width=350 }
 
 ### Updates
 
 Every time add-in starts it checks if there any updates available on the server. If new version is available the following message is displayed:
 
-{% include img.html src="my-toolbar-upgrade.png" alt="New version available message" align="center" %}
+![New version available message](my-toolbar-upgrade.png)
 
 It is possible to see what's new features have been added or download new version by following the corresponding links.
 
@@ -36,4 +36,4 @@ It is possible to see what's new features have been added or download new versio
 * Close SOLIDWORKS
 * Navigate to Windows Control Panel (*Control Panel\Programs\Programs and Features*) and locate *MyToolbar* application. Click uninstall
 
-{% include img.html src="control-panel-uninstall.png" width=550 alt="Uninstalling sotware from Control Panel" align="center" %}
+![Uninstalling sotware from Control Panel](control-panel-uninstall.png){ width=550 }

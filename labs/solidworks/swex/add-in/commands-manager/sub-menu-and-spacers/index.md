@@ -29,13 +29,13 @@ Sub menus are rendered in separate tab boxes in the command tab.
 
 The above commands configuration would result in the following menu and command tab boxes created:
 
-{% include img.html src="sub-menu-and-spacer.png" alt="Sub-menus and spacer" align="center" %}
+![Sub-menus and spacer](sub-menu-and-spacer.png)
 
 * Command1 and Command2 are commands of the top level menu defined in Commands_e enumeration
 * Spacer is added between Command1 and Command2
 * SubCommand1 and SubCommand2 are commands of SubCommands_e enumeration which is a sub menu of Commands_e enumeration
 
-{% include img.html src="command-tab.png" alt="Command tab boxes" align="center" %}
+![Command tab boxes](command-tab.png)
 
 * All commands (including sub menu commands) are added on the same command tab
 * Command1 and Command2 are placed in a separate command tab boxes of SubCommand1 and SubCommand2

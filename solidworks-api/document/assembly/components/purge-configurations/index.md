@@ -16,7 +16,7 @@ This macro allows to create a copy of all selected components, purge their confi
 
 You can either select components manually or use [advanced component selection tool](https://help.solidworks.com/2016/English/SolidWorks/sldworks/c_Advanced_Component_Selection_SWassy.htm) to select components based on the criteria (e.g. or fasteners or toolbars):
 
-{% include img.html src="advanced-component-selection.png" alt="Selecting all fasteners and toolbox parts in the assembly via Advanced Components Selection tool" align="center" %}
+![Selecting all fasteners and toolbox parts in the assembly via Advanced Components Selection tool](advanced-component-selection.png)
 
 For additional criteria use the [extended advanced selection macro](/solidworks-api/document/assembly/components/advanced-selection/).
 
@@ -44,7 +44,7 @@ Specify the name of the replacement file by changing the *REPLACEMENT_NAME* cons
 
 ### Examples
 
-{% include img.html src="components-configurations.png" alt="Unused configurations of components" align="center" %}
+![Unused configurations of components](components-configurations.png)
 
 There are 2 files with multiple configuration
 
@@ -64,7 +64,7 @@ Const REPLACEMENT_NAME As String = "[title]_[conf]"
 
 As the result 3 new files will be generated with a single configuration: Part1_Default.sldprt, Part1_4.sldprt, Part2_A.sldprt (design table is removed) and all selected component will be replaced. The 4th component will not be changed as it was not selected initially.
 
-{% include img.html src="purged-components-result1.png" alt="Results of components purge" align="center" %}
+![Results of components purge](purged-components-result1.png)
 
 ### Option 2
 
@@ -75,6 +75,6 @@ Const REPLACEMENT_NAME As String = "[title]_[conf]_replacement"
 
 As the result 2 new files will be generated: Part1_Default_4_replacement.sldprt (with 2 configurations), Part2_A_replacement.sldprt (design table is removed) and all selected component will be replaced. The 4th component will not be changed as it was not selected initially.
 
-{% include img.html src="purged-components-result2.png" alt="Second results of components purge" align="center" %}
+![Second results of components purge](purged-components-result2.png)
 
 {% code-snippet { file-name: Macro.vba } %}

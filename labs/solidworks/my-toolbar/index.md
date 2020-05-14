@@ -8,7 +8,7 @@ categories: sw-labs
 group: Application
 toc_group_name: labs-solidworks-my-toolbar
 ---
-{% include img.html src="my-toolbar-logo.png" alt="MyToolbar Logo" align="center" %}
+![MyToolbar Logo](my-toolbar-logo.png)
 
 MyToolbar is a SOLIDWORKS add-in which allows creating new toolbars within SOLIDWORKS for hosting custom commands (either macro buttons or any existing SOLIDWORKS commands).
 

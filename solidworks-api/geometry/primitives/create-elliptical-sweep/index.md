@@ -6,7 +6,7 @@ description: Example demonstrates how to sweep the circular profile along ellipt
 image: /solidworks-api/geometry/primitives/create-elliptical-sweep/elliptical-sweep.png
 labels: [topology, geometry, sheet, modeler, sphere]
 ---
-{% include img.html src="elliptical-sweep.png" width=250 alt="Circular profile swept along elliptical path" align="center" %}
+![Circular profile swept along elliptical path](elliptical-sweep.png){ width=250 }
 
 This example demonstrates how to sweep the circular profile along elliptical path to create a temp body using SOLIDWORKS API.
 

@@ -7,7 +7,7 @@ image: /labs/solidworks/swex/pmpage/controls/combo-box/combobox.png
 toc_group_name: labs-solidworks-swex
 order: 7
 ---
-{% include img.html src="combobox.png" alt="Combo Box control with 3 options" align="center" %}
+![Combo Box control with 3 options](combobox.png)
 
 Combo box control will be automatically generated for all the properties of enumerator types. All values of enumerators will be considered as the items in the combo box:
 

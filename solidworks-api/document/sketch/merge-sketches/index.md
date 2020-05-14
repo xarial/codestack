@@ -9,7 +9,7 @@ labels: [sketch,convert entities,merge]
 categories: sw-tools
 group: Sketch
 ---
-{% include img.html src="merged-3dsketch.png" alt="Sketches merged into the 3D sketch" align="center" %}
+![Sketches merged into the 3D sketch](merged-3dsketch.png)
 
 This VBA macro merges the selected sketches (3D and 3D) into a single 3D sketch using SOLIDWORKS API. This macro is using convert entities API to copy the entities from the source sketches to a target sketch.
 

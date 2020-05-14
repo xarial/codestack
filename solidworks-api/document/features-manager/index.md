@@ -6,7 +6,7 @@ description: Collection of guides for automating features creation via SOLIDWORK
 order: 4
 image: /solidworks-api/document/features-manager/feature-manager-api.png
 ---
-{% include img.html src="feature-manager-api.png" alt="Automating features creation via API" align="center" %}
+![Automating features creation via API](feature-manager-api.png)
 
 SOLIDWORKS API enables creation of features and automation of Feature Manager Tree via [IFeatureManager](http://help.solidworks.com/2013/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IFeatureManager.html) interface which can be accessed via [IModelDoc2::FeatureManager](http://help.solidworks.com/2013/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldoc2~featuremanager.html) property.
 

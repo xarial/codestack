@@ -9,7 +9,7 @@ order: 1
 ---
 All generated controls have common properties which can be customized
 
-{% include img.html src="property-manager-page-control.png" alt="Control common properties" align="center" %}
+![Control common properties](property-manager-page-control.png)
 
 1. Control icon selected from the standard library of icons
 1. Custom control icon loaded from the image
@@ -23,7 +23,7 @@ This attribute allows to define the alignment, position, size as well as backgro
 
 {% include code-tabs.html src="CommonOptions.Style" %}
 
-{% include img.html src="textbox-foreground-background.png" alt="Custom background and foreground colours applied to textbox" align="center" %}
+![Custom background and foreground colours applied to textbox](textbox-foreground-background.png)
 
 ### Attribution
 
@@ -33,7 +33,7 @@ Tooltip for controls can be set by applying the [DescriptionAttribute](https://d
 
 #### Standard Icon
 
-{% include img.html src="standard-icon-textbox.png" alt="Standard icon added to text box control" align="center" %}
+![Standard icon added to text box control](standard-icon-textbox.png)
 
 Standard icon defined in [swControlBitmapLabelType_e](http://help.solidworks.com/2017/english/api/swconst/SolidWorks.Interop.swconst~SolidWorks.Interop.swconst.swControlBitmapLabelType_e.html?id=aff2422a1ecf4632aae3e41abe59c6fc) enumeration can be set to control via [ControlAttributionAttribute](https://docs.codestack.net/swex/pmpage/html/M_CodeStack_SwEx_PMPage_Attributes_ControlAttributionAttribute__ctor.htm) attribute.
 
@@ -41,7 +41,7 @@ Standard icon defined in [swControlBitmapLabelType_e](http://help.solidworks.com
 
 Use the below map of all available standard icons:
 
-{% include img.html src="property-page-controls-standard-icons.png" alt="Standard bitmap icons for Property Manager Page controls" align="center" %}
+![Standard bitmap icons for Property Manager Page controls](property-page-controls-standard-icons.png)
 
 1. swBitmapLabel_LinearDistance
 1. swBitmapLabel_AngularDistance

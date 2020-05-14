@@ -6,7 +6,7 @@ description: Example demonstrates how to create surface loft feature from the co
 image: /solidworks-api/document/features-manager/contrours-surface-loft/lofted-surface-sketch-contours.png
 labels: [surface, loft, contour]
 ---
-{% include img.html src="lofted-surface-sketch-contours.png" width=500 alt="Lofted surface feature using sketch contours as the profiles" align="center" %}
+![Lofted surface feature using sketch contours as the profiles](lofted-surface-sketch-contours.png){ width=500 }
 
 This example demonstrates how to create surface loft feature from the contours as the profiles using SOLIDWORKS API.
 
@@ -14,7 +14,7 @@ Sketch segments are not accepted entities for the profiles in the surface loft f
 
 Sketch segments are not supported from the User Interface as well. When segment is selected the following selection manager is displayed allowing to select the open or closed loop.
 
-{% include img.html src="selection-manager.png" width=250 alt="Selection manager while selecting the profile" align="center" %}
+![Selection manager while selecting the profile](selection-manager.png){ width=250 }
 
 * Open part and select sketch segments for profile. Any types of sketch segments are supported (spline, line, arc etc.). There might be multiple sketch segments in the sketch and only several can be selected for the profile. Segments can be in different sketches as well.
 * Macro will find the corresponding sketch contour for each sketch segment

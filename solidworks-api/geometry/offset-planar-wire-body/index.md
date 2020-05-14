@@ -12,7 +12,7 @@ Wire bodies are type of bodies which correspond to edges and curves.
 
 Wire bodies are used in the features such as composite curve, curve through XYZ, etc. Those bodies are also used to generate some types of previews, e.g. preview of the fillet feature
 
-{% include img.html src="fillet-preview.png" width=350 alt="Fillet preview" align="center" %}
+![Fillet preview](fillet-preview.png){ width=350 }
 
 To run this example
 
@@ -20,6 +20,6 @@ To run this example
 * Run the macro. Macro extracts the body from the selected curve. This body would be a wire body. Macro offsets this body by 10 mm and displays the preview of the offset.
 * Macro stops execution. Once continued the temp body is destroyed
 
-{% include img.html src="offset-wire-body.png" width=450 alt="Offset wire body" align="center" %}
+![Offset wire body](offset-wire-body.png){ width=450 }
 
 {% code-snippet { file-name: Macro.vba } %}

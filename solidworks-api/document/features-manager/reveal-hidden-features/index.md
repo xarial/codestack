@@ -9,7 +9,7 @@ labels: [defeature,parasolid]
 categories: sw-tools
 group: Performance
 ---
-{% include img.html src="hidden-feature.svg" width=250 alt="Hidden feature" align="center" %}
+![Hidden feature](hidden-feature.svg){ width=250 }
 
 This VBA macro helps to reveal all features in the active SOLIDWORKS model which are hidden in the feature manager tree.
 
@@ -18,7 +18,7 @@ There are may be various reasons for the features to be hidden in the SOLIDWORKS
 * Create a new macro and paste the [module code](#macro-module) into the macro
 * Add new [user form](/visual-basic/user-forms/) into the macro and name it *FeaturesForm* and paste the [code](#featuresform-user-form). The macro structure should look similar to the image below
 
-{% include img.html src="project-tree.png" alt="Macro project tree" align="center" %}
+![Macro project tree](project-tree.png)
 
 * Add controls to the form and name according the to image below. Optionally specify more attributes to controls such as caption.
 
@@ -26,11 +26,11 @@ There are may be various reasons for the features to be hidden in the SOLIDWORKS
     * Button named *btnShow*
     * Button named *btnDelete*
 
-{% include img.html src="hidden-features-form.png" alt="Form with controls" align="center" %}
+![Form with controls](hidden-features-form.png)
 
 As the result of running the macro all hidden features will be populated in the list. Select (or multi select) features in the list and click *Show* or *Delete* button to either show or remove features from the model.
 
-{% include img.html src="displayed-hidden-feature.png" alt="Hidden features displayed in the Feature Manager Tree" align="center" %}
+![Hidden features displayed in the Feature Manager Tree](displayed-hidden-feature.png)
 
 > !IMPORTANT: use delete option on your own risk. In some cases the hidden feature is a valid feature created by SOLIDWORKS or 3rd party applications. For example [attributes](/solidworks-api/data-storage/attributes/) can be created as a hidden features and can contain important information. Removing this can have unexpected results.
 

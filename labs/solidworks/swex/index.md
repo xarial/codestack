@@ -8,7 +8,7 @@ categories: sw-labs
 group: For Developers
 toc_group_name: labs-solidworks-swex
 ---
-{% include img.html src="logo.png" alt="SwEx Framework" align="center" %}
+![SwEx Framework](logo.png)
 
 SwEx (SOLIDWORKS Extra or SOLIDWORKS Extended) is a framework which is designed to simplify development of software for SOLIDWORKS in .NET (C# and VB.NET).
 

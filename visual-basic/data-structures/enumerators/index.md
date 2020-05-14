@@ -5,7 +5,7 @@ caption: Enumerations
 description: Introduction to enumeration data types (collection of predefined long constants) in Visual Basic
 image: /visual-basic/data-structures/enumerators/enum-icon-intellisense.png
 ---
-{% include img.html src="enum-icon-intellisense.png" width=350 alt="Enumerator type in intelli-sense" align="center" %}
+![Enumerator type in intelli-sense](enum-icon-intellisense.png){ width=350 }
 
 Enumerator is a grouped structure of named constants of type [Long](visual-basic/variables/standard-types#long)
 
@@ -45,7 +45,7 @@ As enumerators are Long constants it is possible to traverse all the items by kn
 
 Visual basic allows to declare the special enumerators which are not visible in intelli-sense but still valid values. In order to make the item invisible it is required to use underscore _ symbol at the beginning of the name. For example adding [_First] and [_Last] elements at the beginning and the end of the enumerator would allow defining the boundaries of enumerator values for traversing.
 
-{% include img.html src="enum-invisible-elements.png" width=250 alt="Only visible enumerator values displayed in intelli-sense" align="center" %}
+![Only visible enumerator values displayed in intelli-sense](enum-invisible-elements.png){ width=250 }
 
 {% code-snippet { file-name: traversing.vba } %}
 

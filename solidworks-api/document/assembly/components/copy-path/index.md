@@ -8,7 +8,7 @@ labels: [path, clipboard, component]
 categories: sw-tools
 group: Assembly
 ---
-{% include img.html src="selected-component.png" width=250 alt="Component selected in the feature tree" align="center" %}
+![Component selected in the feature tree](selected-component.png){ width=250 }
 
 This macro copies the full path to the selected component into the clipboard using SOLIDWORKS API.
 

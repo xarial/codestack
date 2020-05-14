@@ -12,7 +12,7 @@ redirect-from:
 
 SOLIDWORKS macros work correctly independently but failed to work when merged to one. Possibly, the error is displayed: *Run-time error '424': Object required*
 
-{% include img.html src="error-object-required.png" width=320 height=193 alt="Run-time error '424': Object required when running the macro" align="center" %}
+![Run-time error '424': Object required when running the macro](error-object-required.png){ width=320 height=193 }
 
 ## Cause
 
@@ -20,7 +20,7 @@ SOLIDWORKS macros work correctly independently but failed to work when merged to
 * There might be required initialization from the source macro which was not copied to the destination macro
 * Variable naming might be different between source and target macros  
 
-{% include img.html src="zoom-to-fit-error.png" width=320 height=221 alt="Code block inserted from recorded macro" align="center" %}
+![Code block inserted from recorded macro](zoom-to-fit-error.png){ width=320 height=221 }
 
 ## Resolution
 

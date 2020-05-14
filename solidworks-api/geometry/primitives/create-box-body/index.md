@@ -6,7 +6,7 @@ description: VBA example to create a temp body by center point, direction and si
 image: /solidworks-api/geometry/primitives/create-box-body/box-body.png
 labels: [primitive,box,temp body,modeler]
 ---
-{% include img.html src="box-body.png" width=250 alt="Box body" align="center" %}
+![Box body](box-body.png){ width=250 }
 
 This VBA example demonstrates how to create and display temp body by providing the coordinate of center of base face, direction, width, length and height using SOLIDWORKS API.
 

@@ -12,7 +12,7 @@ redirect-from:
 ---
 This macro finds and replaces the text in the dimension names of the selected feature or features (similar to Find-Replace feature in text editors) using SOLIDWORKS API:
 
-{% include img.html src="rename-dims.png" width=320 alt="Input box for the text to find in the dimension names" align="center" %}
+![Input box for the text to find in the dimension names](rename-dims.png){ width=320 }
 
 1. Open SOLIDWORKS assembly or part
 1. Select features to lookup dimensions in

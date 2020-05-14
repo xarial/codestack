@@ -6,7 +6,7 @@ description: VBA example demonstrates how to batch insert and position component
 image: /solidworks-api/document/assembly/components/insert-position/positioned-components.png
 labels: [components,positions]
 ---
-{% include img.html src="positioned-components.png" width=250 alt="Components inserted into 2 x 2 x 2 grid" align="center" %}
+![Components inserted into 2 x 2 x 2 grid](positioned-components.png){ width=250 }
 
 This example demonstrates the performance efficient way of inserting a batch of components into assembly and automatic positioning of them in 3D grid using SOLIDWORKS API.
 

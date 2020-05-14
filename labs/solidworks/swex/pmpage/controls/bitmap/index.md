@@ -7,7 +7,7 @@ image: /labs/solidworks/swex/pmpage/controls/bitmap/bitmap.png
 toc_group_name: labs-solidworks-swex
 order: 11
 ---
-{% include img.html src="bitmap.png" alt="Bitmap control" align="center" %}
+![Bitmap control](bitmap.png)
 
 Static bitmap will be created in the property manager page for the properties of [Image](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image?view=netframework-4.8) type or other types assignable from this type, e.g. [Bitmap](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.bitmap?view=netframework-4.8)
 

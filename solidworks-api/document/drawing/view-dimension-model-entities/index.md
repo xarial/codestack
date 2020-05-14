@@ -12,11 +12,11 @@ When entities from the underlying model context (i.e. from part or assembly) nee
 
 This example demonstrates how to add the linear dimension between two named edges (Edge1 and Edge2) from the underlying part model using SOLIDWORKS API. The entities can be named via the following property dialog:
 
-{% include img.html src="entity-property-name.png" width=350 alt="Edge property name" align="center" %}
+![Edge property name](entity-property-name.png){ width=350 }
 
 As the result the dimension is added between the edges.
 
-{% include img.html src="drawing-view-dimension.png" width=250 alt="Dimension between 2 named edges" align="center" %}
+![Dimension between 2 named edges](drawing-view-dimension.png){ width=250 }
 
 Location of the dimension is found as a middle point of the line drawn between two middle points of the dimensioned edges. Unlike [drawing in sheet context](/solidworks-api/document/drawing/sheet-context-sketch/), drawing sheet scale is not required to be multiplied to the view transformation matrix when positioning the dimensions.
 

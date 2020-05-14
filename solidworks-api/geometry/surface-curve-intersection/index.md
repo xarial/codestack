@@ -6,7 +6,7 @@ description: Example demonstrates how to find the intersection points between se
 image: /solidworks-api/geometry/surface-curve-intersection.png/surface-curve-intersection.png.png
 labels: [curve, evaluate, geometry, macro, points, solidworks api, spline, intersection, trimmed curve, vba]
 ---
-{% include img.html src="surface-curve-intersection.png" height=300 alt="Intersection point between plane and sketch spline" align="center" %}
+![Intersection point between plane and sketch spline](surface-curve-intersection.png){ height=300 }
 
 This example demonstrates how to find the intersection points between selected surface (plane or face) with curve (edge or sketch segment) using SOLIDWORKS API.
 

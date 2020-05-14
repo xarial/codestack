@@ -12,12 +12,12 @@ This command is similar to the *Untrim Surface* feature in the Feature Manager, 
 
 Copied surface used in operations is infinite and needs to be trimmed in order to form a face. Required boundary is calculated by evaluating the maximum and minimum values of the UV of the input face.
 
-{% include img.html src="face-uv.svg" width=450 alt="UV bounds of face" align="center" %}
+![UV bounds of face](face-uv.svg){ width=450 }
 
 Iso curves are used to extract the curve at the specified boundary UV of the face. The calculated curve is infinite and needs to be trimmed in the corners to form the closed loop before the surface can be trimmed and converted into the body.
 
 Select any face and run the macro. The resulting surface is displayed in the graphics area and macro stops execution. Once continued - the preview is hidden.
 
-{% include img.html src="untrimmed-surface.png" width=450 alt="Input surface and untrimmed result" align="center" %}
+![Input surface and untrimmed result](untrimmed-surface.png){ width=450 }
 
 {% code-snippet { file-name: Macro.vba } %}

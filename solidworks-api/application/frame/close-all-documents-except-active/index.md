@@ -9,7 +9,7 @@ labels: [close, window]
 categories: sw-tools
 group: Frame
 ---
-{% include img.html src="opened-documents.png" width=250 alt="Documents opened in SOLIDWORKS" align="center" %}
+![Documents opened in SOLIDWORKS](opened-documents.png){ width=250 }
 
 This macro utilizes SOLIDWORKS API and closes all opened documents except of an active one.
 

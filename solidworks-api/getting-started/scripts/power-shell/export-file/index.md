@@ -22,7 +22,7 @@ This PowerShell script allows exporting the SOLIDWORKS file into the specified f
 
 * Copy the *SolidWorks.Interop.sldworks.dll* into the folder where the above scripts are created. PowerShell script is based on .NET Framework 2.0 so the SOLIDWORKS interop must target this framework. The dll can be found at: **SOLIDWORKS Installation Folder**\api\redist\CLR2\SolidWorks.Interop.sldworks.dll
 
-{% include img.html src="script-folder.png" width=450 alt="Script data files in the folder" align="center" %}
+![Script data files in the folder](script-folder.png){ width=450 }
 
 Alternatively full path to SOLIDWORKS interop can be specified as shown below. In this case it is not required to copy this dll into the folder with script files.
 
@@ -40,4 +40,4 @@ $Assem = (
 
 As the result the file is exported and the process log is displayed directly in the console:
 
-{% include img.html src="export-file-result-console.png" width=450 alt="Messages in console reporting the progress and the result of exporting" align="center" %}
+![Messages in console reporting the progress and the result of exporting](export-file-result-console.png){ width=450 }

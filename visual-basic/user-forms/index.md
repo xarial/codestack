@@ -10,7 +10,7 @@ User forms allow to defined the custom Graphics User Interface (GUI) to collect 
 
 User form can be added by calling the *Insert UserForm* command
 
-{% include img.html src="insert-user-form.png" width=350 alt="Insert User Form" align="center" %}
+![Insert User Form](insert-user-form.png){ width=350 }
 
 By default forms will be named as *UserForm1*, *UserForm2*, etc., but it is recommended to give forms meaningful names.
 
@@ -18,7 +18,7 @@ By default forms will be named as *UserForm1*, *UserForm2*, etc., but it is reco
 
 Form can be customized and additional controls can be placed onto the form.
 
-{% include img.html src="user-form-layout.png" width=450 alt="Layout of the user form" align="center" %}
+![Layout of the user form](user-form-layout.png){ width=450 }
 
 1. User Form design layout
 1. Toolbox with controls
@@ -33,11 +33,11 @@ Form and its controls are exposing different [events](/visual-basic/events/), su
 
 Event handlers are defined in the code behind of the form.
 
-{% include img.html src="view-code-menu-command.png" height=400 alt="View Code command of User Form" align="center" %}
+![View Code command of User Form](view-code-menu-command.png){ height=400 }
 
 Available control events can be selected from the drop-down list.
 
-{% include img.html src="windows-form-code-behind.png" width=600 alt="Control events" align="center" %}
+![Control events](windows-form-code-behind.png){ width=600 }
 
 ~~~vb
 Private Sub CommandButton1_Click()
@@ -49,7 +49,7 @@ End Sub
 
 Form can be displayed by calling the *Show* method. This method should be called on the variable which equals to the form name. Note, it is not required to declare or instantiate the form variable explicitly (as it is required with the classes). This is done automatically when form is added to the project.
 
-{% include img.html src="user-form-shown.png" alt="User Form" align="center" %}
+![User Form](user-form-shown.png)
 
 For can be displayed in 2 modes
 

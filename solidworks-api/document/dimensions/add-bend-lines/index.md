@@ -10,7 +10,7 @@ redirect-from:
 ---
 This example demonstrates how to add dimensions to bend lines in the drawing view of sheet metal flat pattern using SOLIDWORKS API.
 
-{% include img.html src="sw-bend-lines.png" width=400 height=150 alt="Dimension between bend lines in the sheet metal flat pattern drawing" align="center" %}
+![Dimension between bend lines in the sheet metal flat pattern drawing](sw-bend-lines.png){ width=400 height=150 }
 
 It is required to select the sketch lines using the select data object with the view assigned, otherwise the dimensions creating will fail.
 

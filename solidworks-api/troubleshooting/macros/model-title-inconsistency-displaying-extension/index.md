@@ -15,7 +15,7 @@ As the result macro misbehaves (inserting extension twice) or displays the error
 
 The extension is extracted from the document title via [IModelDoc2::GetTitle](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldoc2~gettitle.html) SOLIDWORKS API method.
 
-{% include img.html src="invalid-procedure-or-call-error.png" width=640 height=211 alt="Run-time Error '5': Invalid procedure call or argument error when running a macro" align="center" %}
+![Run-time Error '5': Invalid procedure call or argument error when running a macro](invalid-procedure-or-call-error.png){ width=640 height=211 }
 
 ## Cause
 
@@ -24,7 +24,7 @@ There are several factors which affect the way title is displayed to the user:
 * Extension visibility in the model's title is displayed based on the windows setting *'Hide extension for known file types'*.
 Depending on this setting title of the model can either include or exclude extension (e.g. *Part1 *or *Part1.sldprt*)  
 
-{% include img.html src="hide-extensions-for-known-file-types.png" width=277 height=320 alt="Hide extensions for known file types option in Windows explorer" align="center" %}
+![Hide extensions for known file types option in Windows explorer](hide-extensions-for-known-file-types.png){ width=277 height=320 }
 
 * For the newly created files (i.e. files which were never saved) extension is never displayed
 * For drawings the title is a composition of a name and the active sheet. The extension is never displayed for drawings

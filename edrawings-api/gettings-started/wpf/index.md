@@ -12,7 +12,7 @@ eDrawings API doesn't provide a native WPF control to be used in WPF. It is howe
 
 * Start Visual Studio
 * Create new project and select *WPF Application* in the *Visual C#* templates section
-{% include img.html src="visual-studio-new-wpf-project.png" width=550 alt="Creating WPF application" align="center" %}
+![Creating WPF application](visual-studio-new-wpf-project.png){ width=550 }
 * Follow the [Hosting eDrawings control in Windows Forms](/edrawings-api/gettings-started/winforms/) guide for steps of adding eDrawings interop
 * Add reference to *WindowsFormsIntegration*
 
@@ -28,7 +28,7 @@ Create new WPF User Control which will host eDrawings and can be placed on other
 
 The solution tree will be similar to the one below.
 
-{% include img.html src="visual-studio-solution-tree.png" width=350 alt="eDrawings WPF solution tree" align="center" %}
+![eDrawings WPF solution tree](visual-studio-solution-tree.png){ width=350 }
 
 ### eDrawingsHostControl.xaml
 
@@ -50,6 +50,6 @@ Add the following markup to the MainWindow. It defines the text box control whos
 
 Change the path to file in the text box to see the file loaded into the WPF form.
 
-{% include img.html src="edrawings-wpf-window.png" width=350 alt="SOLIDWORKS file is loaded into the WPF eDrawings control" align="center" %}
+![SOLIDWORKS file is loaded into the WPF eDrawings control](edrawings-wpf-window.png){ width=350 }
 
 Source code is available on [GitHub](https://github.com/codestackdev/solidworks-api-examples/tree/master/edrawings-api/eDrawingsWpfHost)

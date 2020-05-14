@@ -20,17 +20,17 @@ Select the *Manage All* link under the *Workspace Email* section in the GoDaddy 
 
 > You might need to activate this server by clicking *Redeem* button under the *Additional Products* section on the same page.
 
-{% include img.html src="godaddy-100pack-email-forwarding.png" width=550 alt="Free 100 Pack Email Forwarding" align="center" %}
+![Free 100 Pack Email Forwarding](godaddy-100pack-email-forwarding.png){ width=550 }
 
 Click *Create Forward* link in the opened page.
 
-{% include img.html src="create-email-forwarding.png" width=550 alt="Create Forward E-Mail" align="center" %}
+![Create Forward E-Mail](create-email-forwarding.png){ width=550 }
 
 Fill the *Forward Email* form. Specify the e-mail you want to forward from (i.e. e-mail with your custom domain). And e-mail you want to forward to (e.g. Gmail).
 
 Specify other options if needed, such as capturing all e-mails sent to your domain.
 
-{% include img.html src="create-forwarding-address.png" width=450 alt="Forward E-Mail details" align="center" %}
+![Forward E-Mail details](create-forwarding-address.png){ width=450 }
 
 ## Configure DNS Records
 
@@ -38,7 +38,7 @@ Now it is required to configure the DNS record to enable forwarding.
 
 Click on *DNS* button under the domain.
 
-{% include img.html src="manage-domain-dns.png" alt="Manage domain DNS" align="center" %}
+![Manage domain DNS](manage-domain-dns.png)
 
 Add DNS records from the following table:
 
@@ -50,20 +50,20 @@ Add DNS records from the following table:
 | CNAME | imap | imap.secureserver.net       | N/A      | 1 Hour |
 | CNAME | smtp | smtpout.secureserver.net    | N/A      | 1 Hour |
 
-{% include img.html src="add-dns-record.png" alt="Add new DNS record" align="center" %}
+![Add new DNS record](add-dns-record.png)
 
 Validate that records are added correctly by activating the *Tools->Server Settings* menu command. The following dialog should be displayed.
 
-{% include img.html src="dns-records.png" width=350 alt="Validated MX records" align="center" %}
+![Validated MX records](dns-records.png){ width=350 }
 
 ## Receiving E-Mails
 
 Now you can send e-mails from any e-mail address to your newly created e-mail (e.g. info@domain.com). The e-mail will be redirected to the specified e-mail box, while the *to* box will display the e-mail with custom domain.
 
-{% include img.html src="received-email.png" alt="E-mail received via alias" align="center" %}
+![E-mail received via alias](received-email.png)
 
 There is however a limitation with GoDaddy e-mail forwarding as encryption is not supported and the *secureserver.net did not encrypt this message* warning is displayed for all forwarded e-mails:
 
-{% include img.html src="unsecure-email.png" alt="Security warning" align="center" %}
+![Security warning](unsecure-email.png)
 
 Follow the [Setup Google Domains e-mail forwarding from custom domain for free](/hosting/email/googledomains-email-forwarding/) to setup similar free service with Google Domains which supports e-mails encryption and overcomes this limitation. You will need to [Transfer domain host from GoDaddy to Google Domains](/hosting/domain/transfer-godaddy-domain-to-googledomains/) to use this service.

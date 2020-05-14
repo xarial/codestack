@@ -17,11 +17,11 @@ Both of these alternatives correspond to the same object or method. The main dif
 
 The following snapshot of the available members of the variable declared as *SldWorks*. Events are available
 
-{% include img.html src="intellisense-events.png" width=250 alt="List of events available in the variable declared as ISldWorks" align="center" %}
+![List of events available in the variable declared as ISldWorks](intellisense-events.png){ width=250 }
 
 The following snapshot of the available members of the variable declared as *ISldWorks*. No events are available
 
-{% include img.html src="intellisense-no-events.png" width=250 alt="No events available in the variable declared as SldWorks" align="center" %}
+![No events available in the variable declared as SldWorks](intellisense-no-events.png){ width=250 }
 
 * IVersions of the methods usually return type safe version of the interface instead of object or IDispatch. This means that explicit cast is not required for the languages which enforce type safety at compile time (like C#):
 

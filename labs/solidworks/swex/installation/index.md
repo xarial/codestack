@@ -11,11 +11,11 @@ order: 1
 
 Select *Manage NuGet Packages...* command from the context menu of the project in Visual Studio
 
-{% include img.html src="manage-nuget-packages.png" height=250 alt="Manage NuGet Packages... command in the project context menu" align="center" %}
+![Manage NuGet Packages... command in the project context menu](manage-nuget-packages.png){ height=250 }
 
 Search for *CodeStack.SwEx* in the search box. Once found click *Install* button for the required framework.
 
-{% include img.html src="swex-nuget-package.png" alt="CodeStack.SwEx.AddIn NuGet package" align="center" %}
+![CodeStack.SwEx.AddIn NuGet package](swex-nuget-package.png)
 
 This will install all required libraries to the project.
 
@@ -23,17 +23,17 @@ This will install all required libraries to the project.
 
 Set the *Embed Interop Types* to *False* for the SOLIDWORKS Interop libraries as shown below.
 
-{% include img.html src="sw-interops-embed-inteop-types-false.png" height=300 alt="Disabling the option to embed interop types for SOLIDWORKS interops" align="center" %}
+![Disabling the option to embed interop types for SOLIDWORKS interops](sw-interops-embed-inteop-types-false.png){ height=300 }
 
 Check the *Register for COM Interop* option in project properties:
 
 For C# project this option can be found in *Build* tab:
 
-{% include img.html src="register-for-com-interops-csharp.png" height=300 alt="Register for COM Interop option in C# project" align="center" %}
+![Register for COM Interop option in C# project](register-for-com-interops-csharp.png){ height=300 }
 
 For VB.NET project this option can be found in *Compile* tab:
 
-{% include img.html src="register-for-com-interops-vbnet.png" height=300 alt="Register for COM Interop option in VB.NET project" align="center" %}
+![Register for COM Interop option in VB.NET project](register-for-com-interops-vbnet.png){ height=300 }
 
 ## Updates
 
@@ -41,7 +41,7 @@ SwEx framework is actively developing and new features and bug fixes released ve
 
 Nuget provides very simple way of upgrading the library versions. Simply navigate to Nuget Package manager and check for updates:
 
-{% include img.html src="update-nuget-packages.png" alt="Updating nuget packages" align="center" %}
+![Updating nuget packages](update-nuget-packages.png)
 
 In order to see the release notes, follow the links below for the corresponding library.
 
@@ -51,7 +51,7 @@ In order to see the release notes, follow the links below for the corresponding 
 
 In some cases updating the libraries may reset the *Embed Interop Types* option to *True* for SOLIDWORKS interop assemblies.
 
-{% include img.html src="embed-interop-true.png" width=350 alt="SOLIDWORKS interop option is reset to True after the update" align="center" %}
+![SOLIDWORKS interop option is reset to True after the update](embed-interop-true.png){ width=350 }
 
 It is recommended to set it back to *False*.
 

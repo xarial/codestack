@@ -20,20 +20,20 @@ I will be using Microsoft Visual Studio development environment. You can use any
 * Open Visual Studio
 * Start new project:
 
-{% include img.html src="new-project.png" width=400 alt="Creating new VB.NET project in Visual Studio" align="center" %}
+![Creating new VB.NET project in Visual Studio](new-project.png){ width=400 }
 
 * Select the project template. I would recommend to start with Console Application project template as it contains the minimum pregenerated code:
 
-{% include img.html src="proj-template.png" width=400 alt="Selecting VB.NET Console Application project template" align="center" %}
+![Selecting VB.NET Console Application project template](proj-template.png){ width=400 }
 
 * Add reference to SolidWorks Interop library. Interop libraries are located at **SOLIDWORKS Installation Folder**\api\redist\SolidWorks.Interop.sldworks.dll* for projects targeting Framework 4.0 onwards and **SOLIDWORKS Installation Folder**\api\redist\**CLR2**\**SolidWorks.Interop.sldworks.dll* for projects targeting Framework 2.0 and 3.5.
 
-{% include img.html src="add-ref.png" width=320 alt="Adding assembly references to the project" align="center" %}
+![Adding assembly references to the project](add-ref.png){ width=320 }
 
 For projects targeting Framework 4.0 I recommend to set the **[Embed Interop Types](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)** option to false.
 Otherwise it is possible to have unpredictable behavior of the application when calling the SOLIDWORKS API due to a type cast issue.  
 
-{% include img.html src="embed-interops.png" width=400 height=385 alt="Option to embed interop assemblies" align="center" %}
+![Option to embed interop assemblies](embed-interops.png){ width=400 height=385 }
 
 Now we can add the code to connect to SOLIDWORKS instance.  
 

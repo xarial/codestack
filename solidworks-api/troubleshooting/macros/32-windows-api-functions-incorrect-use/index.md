@@ -15,7 +15,7 @@ Or some legacy macro is run.
 Macro is utilizing Windows API functions (e.g. has browse file/folder dialog, connects to registry, uses windows handles) via *Declare Function* statement.
 When started the *Compile error: The code in this project must be updated for use on 64-bit systems* is displayed.
 
-{% include img.html src="declare-function-win-api.png" width=640 height=185 alt="Windows API Declare function incompatibility error" align="center" %}
+![Windows API Declare function incompatibility error](declare-function-win-api.png){ width=640 height=185 }
 
 ## Cause
 

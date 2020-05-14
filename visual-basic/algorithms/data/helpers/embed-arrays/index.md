@@ -22,13 +22,13 @@ WriteArrayDeclarationToFile buff, "D:\arr.txt", "arr", "Byte", 2
 
 Just copy the content of the generated file and paste into the macro module to embed the data.
 
-{% include img.html src="array-text-declaration.png" alt="Array declared as text" align="center" %}
+![Array declared as text](array-text-declaration.png)
 
 {% code-snippet { file-name: write-array-declaration-to-file.vba } %}
 
 This approach however has a limitation as the size of the file would be much bigger than the size of the array (e.g. array of size 500 KB would generate the file of about 10 MB). This results into the *'Out of memory'* error in Visual Basic
 
-{% include img.html src="vba-out-of-memory-error.png" alt="Out of memory error in VBA" align="center" %}
+![Out of memory error in VBA](vba-out-of-memory-error.png)
 
 ## Writing the base64 encoded array
 
@@ -42,13 +42,13 @@ WriteByteArrayDeclarationToFileAsBase64 buff, "D:\arr1.txt"
 
 This would result in the following file to be created:
 
-{% include img.html src="array-base64-encoded.png" width=350 alt="Base64 encoded array" align="center" %}
+![Base64 encoded array](array-base64-encoded.png){ width=350 }
 
 Declare the string constant and paste the value from this file. [Decode](/visual-basic/algorithms/data/encoding/base64#decode) this string to get the byte array.
 
 This solution can also run into the limitation of the maximum symbols per line.
 
-{% include img.html src="vba-line-length-limitation.png" alt="Line length limitation in VBA" align="center" %}
+![Line length limitation in VBA](vba-line-length-limitation.png)
 
 To overcome this use the 3rd parameter of *WriteByteArrayDeclarationToFileAsBase64* method which allows to set the maximum number of symbols and automatically split the line with line continuation symbol:
 
@@ -58,11 +58,11 @@ WriteByteArrayDeclarationToFileAsBase64 buff, "D:\arr1.txt", 100
 
 The function provides the workaround for the limitation of maximum numbers of continuations which is equal to 24 (*'Too many line continuations'*) and splits the data in different functions.
 
-{% include img.html src="too-many-line-continuations.png" alt="Too many line continuations error in VBA" align="center" %}
+![Too many line continuations error in VBA](too-many-line-continuations.png)
 
 As the result the data is written to the file in the following format:
 
-{% include img.html src="vba-array-split-by-functions.png" width=350 alt="Base64 encoded string split by functions" align="center" %}
+![Base64 encoded string split by functions](vba-array-split-by-functions.png){ width=350 }
 
 To use this, copy the content into the module and call the *GetBase64Buffer* function from the code which will return the base 64 encoded array which can be [decoded](/visual-basic/algorithms/data/encoding/base64#decode).
 

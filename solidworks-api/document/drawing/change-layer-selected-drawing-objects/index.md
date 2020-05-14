@@ -12,7 +12,7 @@ redirect-from:
 ---
 This macro will move all selected objects in the drawing sheet to specified layer using SOLIDWORKS API.
 
-{% include img.html src="sw-drawing-layers.png" width=400 alt="Drawing layers" align="center" %}
+![Drawing layers](sw-drawing-layers.png){ width=400 }
 
 There is no common ::Layer SOLIDWORKS API property to change the layer for any entity, rather this property is added to each interface which supports it (e.g. [ISketchSegment::Layer](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isketchsegment~layer.html) property). This macro checks the type of the entity and calls corresponding SOLIDWORKS API property to change the layer.
 

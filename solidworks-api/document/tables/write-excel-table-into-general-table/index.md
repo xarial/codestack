@@ -17,6 +17,6 @@ In order order to update existing general table instead of creating new one, sel
 
 This macro can be embedded into the [Macro Feature](solidworks-api/document/macro-feature) which will allow automatic update of the table. Follow the [Link And Auto Update General Table To Excel](solidworks-api/document/macro-feature/general-table-link-excel/) for more information about this option.
 
-{% include img.html src="excel-table-to-sw-general-table.png" width=500 alt="Excel table with purchase order data imported into SOLIDWORKS General Table" align="center" %}
+![Excel table with purchase order data imported into SOLIDWORKS General Table](excel-table-to-sw-general-table.png){ width=500 }
 
 {% code-snippet { file-name: Macro.vba } %}

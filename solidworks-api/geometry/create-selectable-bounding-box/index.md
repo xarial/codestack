@@ -9,7 +9,7 @@ labels: [bounding box]
 categories: sw-tools
 group: Geometry
 ---
-{% include img.html src="bounding-box-sketch.png" width=450 alt="Bonding box sketch" align="center" %}
+![Bonding box sketch](bounding-box-sketch.png){ width=450 }
 
 SOLIDWORKS enables the functionality to insert 3D bounding box into the part document. However the edges (segments) of this bonding box cannot be selected and used for the modelling purposes.
 

@@ -8,7 +8,7 @@ labels: [macro, run group]
 categories: sw-tools
 group: Frame
 ---
-{% include img.html src="macros-library.png" alt="Library of macros in the Windows folder" align="center" %}
+![Library of macros in the Windows folder](macros-library.png)
 
 Macro can be run from another macro using the [ISldWorks::RunMacro2](http://help.solidworks.com/2010/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~runmacro2.html) SOLIDWORKS API function.
 
@@ -26,7 +26,7 @@ RunMacro "Full Path To Macro", "Module Name", "Entry Function Name"
 
 Where
 
-{% include img.html src="macro-entry-point.png" width=350 alt="Macro entry point" align="center" %}
+![Macro entry point](macro-entry-point.png){ width=350 }
 
 * **Full Path To Macro** - full path to .swp or .dll for [VBA or VSTA macro](/solidworks-api/getting-started/macros/types)
 * <span style="color:blue">**Module Name**</span> - name of the module where the main entry function is defined. This is usually the macro name followed by 1.
@@ -42,11 +42,11 @@ This macro also handles the errors:
 
 * When the specified macro path is not found:
 
-{% include img.html src="macro-not-found-error.png" width=250 alt="Macro not found error" align="center" %}
+![Macro not found error](macro-not-found-error.png){ width=250 }
 
 * When macro cannot be run (e.g. macro is corrupted)
 
-{% include img.html src="failed-to-run-macro-error.png" width=250 alt="Failed to run macro error" align="center" %}
+![Failed to run macro error](failed-to-run-macro-error.png){ width=250 }
 
 In order to configure the macro it is required to modify the value of the **MACROS_PATH** variable:
 

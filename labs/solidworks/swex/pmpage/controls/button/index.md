@@ -7,7 +7,7 @@ image: /labs/solidworks/swex/pmpage/controls/button/button.png
 toc_group_name: labs-solidworks-swex
 order: 10
 ---
-{% include img.html src="button.png" alt="Button control" align="center" %}
+![Button control](button.png)
 
 In order to create a button in the property manager page, it is required to declare the property of delegate type [Action](https://docs.microsoft.com/en-us/dotnet/api/system.action?view=netframework-4.8).
 

@@ -13,7 +13,7 @@ This VBA macro handles active document (part, assembly or drawing) save events (
 
 Macro operates in the background and needs to be run once a session to start monitoring.
 
-{% include img.html src="save-command.png" alt="File save command" align="center" %}
+![File save command](save-command.png)
 
 ## Configuration
 

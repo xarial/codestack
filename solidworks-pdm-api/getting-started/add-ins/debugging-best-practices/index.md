@@ -14,11 +14,11 @@ The main complexity comes from the fact that SOLIDWORKS PDM is a server-client s
 
 SOLIDWORKS PDM provides a handy framework for developers which greatly simplify the development process. You can find the *Debug Add-ins* menu under the Add-ins node in the vault tree of the *SOLIDWORKS PDM Administration* console.
 
-{% include img.html src="debug-addin.png" width=320 height=297 alt="Debug add-in command in the Administration Panel" align="center" %}
+![Debug add-in command in the Administration Panel](debug-addin.png){ width=320 height=297 }
 
 You need to select single dll with your add-in to load it into the debugger.
 
-{% include img.html src="debug-addins-register.png" width=640 height=246 alt="GUID of the add-in" align="center" %}
+![GUID of the add-in](debug-addins-register.png){ width=640 height=246 }
 
 Once selected the entry of your add-in appears in the list and will remain there until removed. So it is not required to open this console every time the project is rebuilt.
 
@@ -26,7 +26,7 @@ As I have previously pointed SOLIDWORKS PDM is a client-server architecture syst
 
 Traditionally SOLIDWORKS PDM add-ins are debugged via Notepad process by selecting the path to notepad.exe in the *Start external program* action in the Debug settings of the project:
 
-{% include img.html src="start-ext-prg-notepad.png" width=640 height=344 alt="Start debugging in the external Notepad application" align="center" %}
+![Start debugging in the external Notepad application](start-ext-prg-notepad.png){ width=640 height=344 }
 
 This allows to start the debugging process by simply running the solution (F5) and this will bring Notepad. In order to start actual debugging it is required to:
 
@@ -34,7 +34,7 @@ This allows to start the debugging process by simply running the solution (F5) a
 1. Navigate to the local vault folder
 1. Change the filter to *All Files (*.*)* to see all files in the vault
 
-{% include img.html src="debug-notepad.gif" width=400 height=271 alt="Debugging add-in in the Notepad" align="center" %}
+![Debugging add-in in the Notepad](debug-notepad.gif){ width=400 height=271 }
 
 The benefit of this approach - stopping the Visual Studio debugging session (by clicking Stop button in Visual Studio or by closing the Notepad) will release the dlls from the memory so it is not required to restart explorer.exe process to compile new version of the add-in.  
 
@@ -49,7 +49,7 @@ Much better approach is to use the [PDM Vault Browser ](https://github.com/codes
 
 This tool is a simple File Browse Dialog with multi-selection option enabled. The tool also takes a command line argument with the full path to the folder in the PDM vault. So when started it will automatically browse to the specified folder:
 
-{% include img.html src="debug-with-pdm-vault-browser.png" width=640 height=328 alt="Debugging the add-in with PDM Vault Browser" align="center" %}
+![Debugging the add-in with PDM Vault Browser](debug-with-pdm-vault-browser.png){ width=640 height=328 }
 
 Now when starting the debugger it will automatically bring you to the specified folder in the vault without the need to specify the filter.  
 

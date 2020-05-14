@@ -6,7 +6,7 @@ description: Example demonstrates how to create spherical surface from the selec
 image: /solidworks-api/geometry/reconstruct-spherical-surface/reconstructed-sphere.png
 labels: [curve, sphere, c#]
 ---
-{% include img.html src="reconstructed-sphere.png" alt="Reconstructed spherical surface from the half-sphere" align="center" %}
+![Reconstructed spherical surface from the half-sphere](reconstructed-sphere.png)
 
 This example demonstrates how to create spherical surface (360 degress) from the selected spherical face (could be less than 360 degrees) using SOLIDWORKS API.
 

@@ -15,7 +15,7 @@ This macro will display the callouts with the diameter values of all selected ci
 
 This can be useful while inspecting the model and it is required to see multiple diameters at the same time.
 
-{% include img.html src="hole-diams.png" width=400 height=290 alt="Diameters displayed in the callout for selected holes" align="center" %}
+![Diameters displayed in the callout for selected holes](hole-diams.png){ width=400 height=290 }
 
 The callout is a visual element in SOLIDWORKS which displays data organized in key-value pairs (single or multiple rows). The callout elements are used in some standard SOLIDWORKS tools such as [Measure tool](http://help.solidworks.com/2017/english/solidworks/sldworks/t_using_the_measure_tool.htm). Usually callouts are attached to the selection and destroyed once the object is deselected.
 
@@ -27,13 +27,13 @@ To run the macro:
 
 Create new macro and copy the following code into the macro's module:
 
-{% include img.html src="macro-module.png" width=640 height=230 alt="Macro module in VBA editor" align="center" %}
+![Macro module in VBA editor](macro-module.png){ width=640 height=230 }
 
 {% code-snippet { file-name: Macro.vba } %}
 
 Create new class module and name it *HoleDiamCalloutHandler.*  
 
-{% include img.html src="insert-class-module.png" width=320 height=220 alt="Adding class module to VBA macro" align="center" %}
+![Adding class module to VBA macro](insert-class-module.png){ width=320 height=220 }
 
 Copy the following code in there:
 

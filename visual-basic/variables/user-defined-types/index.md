@@ -30,7 +30,7 @@ Refer [Custom User Defined Types](visual-basic/data-structures/types) article fo
 ### Class
 Unlike enumerations and types classes can only be created in separate Visual Basic class modules.
 
-{% include img.html src="class-module-class-declaration.png" width=500 alt="MyClass class module is added to the Visual Basic project" align="center" %}
+![MyClass class module is added to the Visual Basic project](class-module-class-declaration.png){ width=500 }
 
 Classes are reference types and must be initiated with *new* keyword and reference must be assigned using *Set* keyword.
 

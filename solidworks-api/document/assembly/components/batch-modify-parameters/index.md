@@ -6,7 +6,7 @@ description: Example demonstrates how to modify parameters of multiple component
 image: /solidworks-api/document/assembly/components/batch-modify-parameters/modify-configurations.png
 labels: [parameters, design table, components, configuration]
 ---
-{% include img.html src="modify-configurations.png" width=350 alt="Modify component parameters in configurations" align="center" %}
+![Modify component parameters in configurations](modify-configurations.png){ width=350 }
 
 This example demonstrates how to use parameters (similar to design table parameters) to suppress all components in every configuration except of the active one using SOLIDWORKS API. It is not required to activate configuration or select any components to use the macro.
 

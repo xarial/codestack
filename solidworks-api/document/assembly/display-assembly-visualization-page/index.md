@@ -10,6 +10,6 @@ redirect-from:
 ---
 This example displays the feature tree page for Assembly Visualization using SOLIDWORKS API.
 
-{% include img.html src="sw-assembly-visualization.png" width=320 height=291 alt="Assembly Visualization Feature Manager Tab" align="center" %}
+![Assembly Visualization Feature Manager Tab](sw-assembly-visualization.png){ width=320 height=291 }
 
 {% code-snippet { file-name: Macro.vba } %}

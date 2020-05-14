@@ -32,7 +32,7 @@ Check if you already have Node JS on your machine, by running the following comm
 
 If you see the following "not recognized" message, you have to install [NodeJS](https://nodejs.org/en/) first:
 
-{% include img.html src="not-installed-node-console.png" alt="'node' is not recognized" align="center" %}
+!['node' is not recognized](not-installed-node-console.png)
 
 In other case you will see the Node JS version. You can also check npm (Node JS package manager) version by running the command:
 
@@ -40,7 +40,7 @@ In other case you will see the Node JS version. You can also check npm (Node JS 
 > npm -v
 ~~~
 
-{% include img.html src="node-js-version-console.png" alt="Node JS Version" align="center" %}
+![Node JS Version](node-js-version-console.png)
 
 ### Install Angular CLI
 
@@ -52,7 +52,7 @@ To install Angular CLI run the following command in cmd:
 
 Where **i** is short for install and **-g** is flag for global installation. Global means that angular-cli package will be available for all Angular applications on your machine.
 
-{% include img.html src="angular-cli.png" alt="Install Angular CLI" align="center" %}
+![Install Angular CLI](angular-cli.png)
 
 The 8th version of Angular CLI was installed.
 
@@ -88,11 +88,11 @@ Where **s** is short for serve and **--o** is short for open flag.
 
 The application will be built and run.
 
-{% include img.html src="run-angular-project-console.png" alt="Building and running angular project" align="center" %}
+![Building and running angular project](run-angular-project-console.png)
 
 Take a look at your first Angular application in browser: 
 
-{% include img.html src="angular-start-page.png" alt="First angular application in the browser" align="center" %}
+![First angular application in the browser](angular-start-page.png)
 
 ## Finish
 
@@ -100,6 +100,6 @@ It's not enough to close the browser to stop the application. You should stop it
 
 Click ctrl+c to stop the server and answer y for "Terminate batch job (Y/N)?" question:
 
-{% include img.html src="stop-angular-project.png" alt="Stopping the angular project" align="center" %}
+![Stopping the angular project](stop-angular-project.png)
 
 *It's not necessary to stop and run the application for every change. You can make the changes in the code and see them immediately in browser.*

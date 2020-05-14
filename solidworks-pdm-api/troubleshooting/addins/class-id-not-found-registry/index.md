@@ -10,7 +10,7 @@ labels: [pdm add-in, error]
 
 The following error is displayed when .NET add-in is added to the vault via PDM Administration tool: *Error creating the add-in COM object from the dll 'name.dll'. Cause: the add-in registration succeeded but the add-in's class ID could not be found in the registry*
 
-{% include img.html src="class-id-not-found-in-registry.png" width=450 alt="Error when adding add-in to the PDM vault" align="center" %}
+![Error when adding add-in to the PDM vault](class-id-not-found-in-registry.png){ width=450 }
 
 Add-in works correctly while [debugging](/solidworks-pdm-api/getting-started/add-ins/debugging-best-practices/)
 
@@ -18,7 +18,7 @@ Add-in works correctly while [debugging](/solidworks-pdm-api/getting-started/add
 
 This error happens if project is using the libraries which are not compatible with SOLIDWORKS PDM. For example the [System.Threading.Tasks.Extensions](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/) will cause this issue. The issue will be reproducible even if dll is not used in the project but just present in the folder.
 
-{% include img.html src="tasks-extension-reference.png" width=450 alt="References tree of the add-in project" align="center" %}
+![References tree of the add-in project](tasks-extension-reference.png){ width=450 }
 
 ## Resolution
 

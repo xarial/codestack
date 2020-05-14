@@ -8,7 +8,7 @@ labels: [select,feature type,multi select,batch select]
 categories: sw-tools
 group: Model
 ---
-{% include img.html src="selected-3dsketches.png" width=250 alt="All 3D sketches selected in the assembly documents" align="center" %}
+![All 3D sketches selected in the assembly documents](selected-3dsketches.png){ width=250 }
 
 This VBA macro selects all features in the active model (part, assembly or drawing) using SOLIDWORKS API. For drawings and assemblies features in the children components are also selected.
 

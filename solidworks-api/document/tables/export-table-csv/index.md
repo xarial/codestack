@@ -11,15 +11,15 @@ group: Model
 ---
 This macro exports the selected table to the CSV (Comma Separated Values) file using SOLIDWORKS API. This functionality is similar to built-in 'Save As' option for table:
 
-{% include img.html src="bom-save-as.png" width=350 alt="Save As option for tables" align="center" %}
+![Save As option for tables](bom-save-as.png){ width=350 }
 
 However macro preserves the special symbols like commas, quotes or new line symbols and properly escapes them according to the CSV specification:
 
-{% include img.html src="bom-table.png" width=350 alt="Bill Of Materials with special symbols (comma and new line)" align="center" %}
+![Bill Of Materials with special symbols (comma and new line)](bom-table.png){ width=350 }
 
 So the file can be later properly read using the CSV readers like MS Excel;
 
-{% include img.html src="bom-table-csv-excel.png" width=350 alt="CSV file imported to Excel" align="center" %}
+![CSV file imported to Excel](bom-table-csv-excel.png){ width=350 }
 
 For the above example BOM table the macro will generate the following output:
 

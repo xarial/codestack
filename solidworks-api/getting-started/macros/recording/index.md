@@ -13,7 +13,7 @@ This is a very handy feature for learning the SOLIDWORKS API and finding require
 
 Recording can be started by clicking the **Record** button on the macro toolbar:
 
-{% include img.html src="macro-toolbar.png" alt="Macro recording commands in toolbar" align="center" %}
+![Macro recording commands in toolbar](macro-toolbar.png)
 
 In the recording mode majority of user actions will be recorded
 
@@ -25,20 +25,20 @@ Use **Pause** button to skip recording of unnecessarily manipulations.
 
 Once recording is finished click **Stop** button and select the file to save the recorded macro.
 
-{% include img.html src="macros-save-filter.png" width=400 alt="Saving recorded macro" align="center" %}
+![Saving recorded macro](macros-save-filter.png){ width=400 }
 
 Note that it is possible to save the macro as VBA and VSTA. Refer the [Macros Types](/solidworks-api/getting-started/macros/types) article for the explanation of differences between these macro types.
 
 If you record the macros often it is suggested to enable the *Automatically edit macro after recording* option.
 
-{% include img.html src="option-edit-macro-after-recording.png" width=350 alt="Option to automatically edit macro after recording" align="center" %}
+![Option to automatically edit macro after recording](option-edit-macro-after-recording.png){ width=350 }
 
 This would open the editor automatically after macro is finished recording so it is not necessarily to call the *Tools->Macro->Edit* menu command explicitly to edit the source code.
 
 Below are example macros recorded in VBA, C# and VB.NET languages
 
-{% include img.html src="sample-vba-recorded-macro.png" width=350 alt="Example of macro recorded in VBA" align="center" %}
+![Example of macro recorded in VBA](sample-vba-recorded-macro.png){ width=350 }
 
-{% include img.html src="sample-vsta-csharp-recorded-macro.png" width=350 alt="Example of macro recorded in C# VSTA" align="center" %}
+![Example of macro recorded in C# VSTA](sample-vsta-csharp-recorded-macro.png){ width=350 }
 
-{% include img.html src="sample-vsta-vb.net-recorded-macro.png" width=350 alt="Example of macro recorded in VB.NET VSTA" align="center" %}
+![Example of macro recorded in VB.NET VSTA](sample-vsta-vb.net-recorded-macro.png){ width=350 }

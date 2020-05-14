@@ -14,7 +14,7 @@ redirect-from:
 Running the SOLIDWORKS macro which processes the active model or selection produces *Run-time Error '91': Object variable or With block variable not set* error
 or *Run-time error '13': Type mismatch* error or misbehaves in any other way.  
 
-{% include img.html src="vba-error-type-mismatch.png" width=320 height=191 alt="'Run-time error '13': Type mismatch' error when running the macro" align="center" %}
+!['Run-time error '13': Type mismatch' error when running the macro](vba-error-type-mismatch.png){ width=320 height=191 }
 
 ## Cause
 
@@ -29,4 +29,4 @@ If the errors are not handling properly in the macro and user friendly message i
 For example if *swModel *or *Part *variable is *Nothing *then it is required for the model to be open.
 If object assigned from *GetSelectedObjectX *method is *Nothing *then incorrect or no selection was made prior of running the macro
 
-{% include img.html src="sw-body-is-nothing.png" width=400 height=175 alt="Run-time tooltip displaying that the pointer is Nothing" align="center" %}
+![Run-time tooltip displaying that the pointer is Nothing](sw-body-is-nothing.png){ width=400 height=175 }

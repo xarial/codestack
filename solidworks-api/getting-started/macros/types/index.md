@@ -7,7 +7,7 @@ image: /solidworks-api/getting-started/macros/types/macro-edit-run-filters.png
 labels: [macros, vsta, vba, swmacro, swb, swp]
 order: 1
 ---
-{% include img.html src="macro-edit-run-filters.png" width=200 alt="Macros filter when running the macro" align="center" %}
+![Macros filter when running the macro](macro-edit-run-filters.png){ width=200 }
 
 Macros can be edited directly in the built-in VBA Editor and can be executed in SOLIDWORKS using out-of-the-box engine. It is not required to install any additional software to run macros (the only exception are VSTA 3.0 macros which require the stand-alone installation of Visual Studio)
 
@@ -35,7 +35,7 @@ VSTA macros are in-process applications and can be either automatically released
 
 This behaviour controlled by the following option:
 
-{% include img.html src="option-stop-vsta-debugger-on-macro-exit.png" width=350 alt="Stop VSTA debugger on macro exit option" align="center" %}
+![Stop VSTA debugger on macro exit option](option-stop-vsta-debugger-on-macro-exit.png){ width=350 }
 
 If this option is unchecked macro will remain loaded into memory until **Stop** button is clicked. This is useful option when macro performs any asynchronous operations such as handling events or displaying property manager page.
 
@@ -43,6 +43,6 @@ VSTA macros are based on .NET Framework 2.0 and can be edited and debugged using
 
 In SOLIDWORKS 2018 new VSTA Version 3.0 is introduced however older VSTA version is still supported. The target version can be controlled by the following options:
 
-{% include img.html src="option-enable-vsta-version-3.png" width=350 alt="Enable VSTA VERSION 3.0 option" align="center" %}
+![Enable VSTA VERSION 3.0 option](option-enable-vsta-version-3.png){ width=350 }
 
 VSTA 3.0 required the stand alone installation of Visual Studio (either Professional or Community edition). The main benefit of VSTA 3.0 is an ability to use newer version of .NET Framework.

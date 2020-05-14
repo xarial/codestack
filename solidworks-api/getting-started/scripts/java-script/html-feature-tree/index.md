@@ -13,11 +13,11 @@ This example demonstrates how to load feature tree content of the SOLIDWORKS par
 {% code-snippet { file-name: page.html } %}
 
 * Save the file and open in in MS Internet Explorer
-{% include img.html src="input-html-page.png" alt="HTML page with input fields" align="center" %}
+![HTML page with input fields](input-html-page.png)
 
 This page is using ActiveX so the following message can be displayed:
 
-{% include img.html src="ie-activex-run-restriction.png" alt="ActiveX restrictions warning in Internet Explorer" align="center" %}
+![ActiveX restrictions warning in Internet Explorer](ie-activex-run-restriction.png)
 
 Click *Allow blocked content* button
 
@@ -27,8 +27,8 @@ Click *Allow blocked content* button
 
 * Click *Yes* on the following popup
 
-{% include img.html src="ie-allow-activex.png" width=350 alt="Warning message regarding the ActiveX content" align="center" %}
+![Warning message regarding the ActiveX content](ie-allow-activex.png){ width=350 }
 
 As the result the feature tree of the part is rendered on the page
 
-{% include img.html src="html-feature-tree-rendered.png" width=250 alt="SOLIDWORKS part feature tree rendered in HTML" align="center" %}
+![SOLIDWORKS part feature tree rendered in HTML](html-feature-tree-rendered.png){ width=250 }

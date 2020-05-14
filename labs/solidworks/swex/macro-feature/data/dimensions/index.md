@@ -19,7 +19,7 @@ It is required to arrange the dimensions after rebuild by overriding the [OnSetD
 For linear dimensions *orientation* represents the vector along the direction of the dimension (i.e. the direction of measured entity)
 For radial dimensions *orientation* represents the normal of the dimension (i.e. the vector of rotation of the dimension)
 
-{% include img.html src="dimensions-orientation.png" width=350 alt="Orientation of dimensions" align="center" %}
+![Orientation of dimensions](dimensions-orientation.png){ width=350 }
 
 ### Passing data from regeneration
 

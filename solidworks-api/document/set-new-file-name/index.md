@@ -12,7 +12,7 @@ This VBA macro allows to automatically set the name for the new file based on th
 
 This macro will only run for the files which were never saved before.
 
-{% include img.html src="save-as-dialog.png" width=350 alt="File Save As dialog" align="center" %}
+![File Save As dialog](save-as-dialog.png){ width=350 }
 
 ## Configuration
 

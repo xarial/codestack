@@ -8,7 +8,7 @@ labels: [selection,boss-extrude]
 ---
 This C# VSTA macro extracts the information about the selection entities specified in the From Entity, End Condition and Direction selection boxes in the Boss-Extrude feature definition using SOLIDWORKS API.
 
-{% include img.html src="boss-extrude-property-page.png" alt="Boss-Extrude feature property manager page" align="center" %}
+![Boss-Extrude feature property manager page](boss-extrude-property-page.png)
 
 Extracted data is output to the Output Window of VSTA Editor in the following format.
 

@@ -10,7 +10,7 @@ redirect-from:
 ---
 This SOLIDWORKS API example reads the transform of the selected circular pattern and creates a temp preview of the pattern of the specified seed body by applying the same transform as in the circular pattern.
 
-{% include img.html src="circ-pattern-emulator.png" width=640 height=304 alt="Copy of the body created emulating the circular pattern feature" align="center" %}
+![Copy of the body created emulating the circular pattern feature](circ-pattern-emulator.png){ width=640 height=304 }
 
 * Select circular pattern feature as a first selected object
   * It must use reference axis as the directionSelect any solid body which is not a part of the circular pattern feature

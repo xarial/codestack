@@ -6,7 +6,7 @@ description: VBA macro example to write different types of properties (general, 
 image: /solidworks-api/data-storage/custom-properties/write-all-properties/approved-date-custom-property.png
 labels: [set property,add property,write property,date]
 ---
-{% include img.html src="approved-date-custom-property.png" width=550 alt="Date custom property" align="center" %}
+![Date custom property](approved-date-custom-property.png){ width=550 }
 
 This VBA macro example demonstrates how to add (create new or change existing) custom properties to various custom properties sources using SOLIDWORKS API. This includes file (general) custom properties, configuration specific custom properties and cut-list items (weldment or sheet metal) custom properties.
 

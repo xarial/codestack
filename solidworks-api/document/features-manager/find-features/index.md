@@ -6,7 +6,7 @@ description: VBA macro to find all or first feature in the Feature Manager tree 
 image: /solidworks-api/document/features-manager/find-features/feature-manager-tree.png
 labels: [traverse features,name pattern,type name]
 ---
-{% include img.html src="feature-manager-tree.png" width=250 alt="Feature Manager Tree" align="center" %}
+![Feature Manager Tree](feature-manager-tree.png){ width=250 }
 
 This VBA macro allows to find features in the Feature Manager tree using SOLIDWORKS API.
 

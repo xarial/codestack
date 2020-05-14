@@ -9,13 +9,13 @@ labels: [add-in, vb.net]
 * Create new project in Microsoft Visual Studio
 * Select *Class Library* template under the *Visual Basic* templates. Specify the location and the name of the project
 
-{% include img.html src="new-vbnet-class-library.png" width=550 alt="Creating new type library in VB.NET project in Visual Studio" align="center" %}
+![Creating new type library in VB.NET project in Visual Studio](new-vbnet-class-library.png){ width=550 }
 
 * Add reference to SolidWorks Interop libraries: SolidWorks.Interop.sldworks.dll, SolidWorks.Interop.swconst.dll, SolidWorks.Interop.swpublished.dll. Interop libraries are located at **SOLIDWORKS Installation Folder**\api\redist for projects targeting Framework 4.0 onwards and **SOLIDWORKS Installation Folder**\api\redist\CLR2 for projects targeting Framework 2.0 and 3.5.
 
 If project targeting Framework 4.0 I would recommend setting the **[Embed Interop Types](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)** option for all SOLIDWORKS interop dlls to false. In some cases embedded interop libraries causing type casting issues which affects functionality and can result to crash.
 
-{% include img.html src="embed-interop-types-option.png" width=350 alt="Embedding SOLIDWORKS interops" align="center" %}
+![Embedding SOLIDWORKS interops](embed-interop-types-option.png){ width=350 }
 
 * Add a public class with a user friendly name which will represent the add-in. This class must be public and COM-visible. I would recommend to decorate the class with [ComVisibleAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.comvisibleattribute?view=netframework-4.7.2) and [GuidAttribute](https://docs.microsoft.com/en-gb/dotnet/api/system.runtime.interopservices.guidattribute?view=netframework-4.7.2) to expose the type to COM and assign the permanent Global Unique Identifier (GUID):
 
@@ -36,13 +36,13 @@ Avoid selecting *Make assembly COM-Visible* option in the project settings to ex
 "%windir%\Microsoft.NET\Framework64\v4.0.30319\regasm" /codebase "$(TargetPath)"
 ~~~
 
-{% include img.html src="post-build-events.png" alt="Post build event to register dll as a COM object" align="center" %}
+![Post build event to register dll as a COM object](post-build-events.png)
 
 This would ensure the proper registration after each compilation of the add-in project.
 
 * For the enhanced debugging experience I would recommend to specify the full path to SOLIDWORKS as an external application in project settings.
 
-{% include img.html src="start-external-program.png" alt="Starting SOLIDWORKS as an external program while debugging the add-in" align="center" %}
+![Starting SOLIDWORKS as an external program while debugging the add-in](start-external-program.png)
 
 This would automatically start SOLIDWORKS by pressing green run button or F5 key and attach the debugger from the Visual Studio.
 
@@ -54,7 +54,7 @@ This would automatically start SOLIDWORKS by pressing green run button or F5 key
 
 * You can ignore the following warning displayed in the Visual Studio window while compilation.
 
-{% include img.html src="unsigned-assembly-warning.png" width=450 alt="Unsigned assembly compile warning" align="center" %}
+![Unsigned assembly compile warning](unsigned-assembly-warning.png){ width=450 }
 
 * Run SOLIDWORKS and the *Hello World* message box is displayed on start.
 

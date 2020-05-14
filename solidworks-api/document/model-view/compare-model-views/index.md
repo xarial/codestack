@@ -5,7 +5,7 @@ caption: Compare Model Views
 description: Example demonstrates how to compare 2 model views (by orientation, translation and scale)
 image: /solidworks-api/document/model-view/compare-model-views/view-orientation.png
 ---
-{% include img.html src="view-orientation.png" width=250 alt="Model View Orientation" align="center" %}
+![Model View Orientation](view-orientation.png){ width=250 }
 
 This example demonstrates how to compare two model views in part or assembly using SOLIDWORKS API.
 

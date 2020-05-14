@@ -13,11 +13,11 @@ This approach allows to connect to API Object by extracting it from the Running 
 
 In this example SOLIDWORKS add-in allows to count faces of the selected body. It provides a menu for user to click.
 
-{% include img.html src="add-in-menu-command.png" width=350 alt="Add-in menu with commands" align="center" %}
+![Add-in menu with commands](add-in-menu-command.png){ width=350 }
 
 The result is displayed in the message box.
 
-{% include img.html src="add-in-command-result-message.png" width=450 alt="Add-in command result displayed in the message box" align="center" %}
+![Add-in command result displayed in the message box](add-in-command-result-message.png){ width=450 }
 
 Add-in also provides an API object for 3rd parties to call. API extends the functionality of the UI and allows to pass the parameter to filter the minimum area of the faces.
 
@@ -25,7 +25,7 @@ Both API method and User Interface command handler are calling the same function
 
 This is a solution tree of the add-in and API object. The GeometryHelperApiObject compiles to dll and contains the definitions of add-in interfaces. It doesn't contain any implementation and is not referencing any SOLIDWORKS interops. This dll is referenced in the SOLIDWORKS add-in project which implements the API object and will be also referenced by all third party applications to access the API. So none of the third party applications need to reference the main add-in dll which enables the level of abstractions.
 
-{% include img.html src="solution-tree.png" width=450 alt="Visual Studio Solution tree for project" align="center" %}
+![Visual Studio Solution tree for project](solution-tree.png){ width=450 }
 
 Explore the source code and explanation below for more details of how to implement this framework.
 
@@ -99,11 +99,11 @@ Now the add-in API can be called form any COM-compatible programming language.
 
 Example of calling the API from the Excel VBA macro.
 
-{% include img.html src="excel-vba-macro.png" width=450 alt="Macro to call SOLIDWORKS add-in API from Excel" align="center" %}
+![Macro to call SOLIDWORKS add-in API from Excel](excel-vba-macro.png){ width=450 }
 
 Add the reference to Type Library to enable [early binding](/visual-basic/variables/declaration#early-binding-and-late-binding) for the calls.
 
-{% include img.html src="macro-browse-type-library.png" width=450 alt="Browsing type library for COM applications" align="center" %}
+![Browsing type library for COM applications](macro-browse-type-library.png){ width=450 }
 
 Macro creates and instance of Factory object by its prog id and retrieves the instance of the API object by process id.
 
@@ -115,11 +115,11 @@ Example of calling the API from the C# Console application.
 
 As shown below it is only required to add the reference to the API Object dll which contain the definitions of interfaces. There is no need to add any other references (including add-in dll or any SOLIDWORKS interops)
 
-{% include img.html src="stand-alone-references.png" width=450 alt="References to stand-alone application" align="center" %}
+![References to stand-alone application](stand-alone-references.png){ width=450 }
 
 The result of the API call is printed into the console window.
 
-{% include img.html src="command-line-result.png" width=450 alt="Command result displayed in the console" align="center" %}
+![Command result displayed in the console](command-line-result.png){ width=450 }
 
 {% code-snippet { file-name: stand-alone/Program.cs } %}
 

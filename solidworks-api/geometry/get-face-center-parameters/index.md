@@ -6,7 +6,7 @@ description: Example demonstrates how to find the face parameters (coordinate an
 image: /solidworks-api/geometry/get-face-center-parameters/face-center.png
 labels: [center, uv, normal]
 ---
-{% include img.html src="face-center.png" width=250 alt="Point created at the center of the face" align="center" %}
+![Point created at the center of the face](face-center.png){ width=250 }
 
 This example demonstrate how to find the parameters (point coordinate and normal) at the center of the face using SOLIDWORKS API. This macro will work with any type of face (planar, cylindrical, toroidal, b-surface etc.)
 

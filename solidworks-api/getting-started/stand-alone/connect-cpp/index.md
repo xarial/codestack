@@ -21,20 +21,20 @@ The same code will work in Professional, Express or Community editions. Follow t
 * Open Visual Studio
 * Start new project:
 
-{% include img.html src="new-project.png" width=400 alt="Creating new project in Visual Studio" align="center" %}
+![Creating new project in Visual Studio](new-project.png){ width=400 }
 
 * Select the project template. I would recommend to start with Win32 Console Application project template as it contains the minimum pregenerated code:
 
-{% include img.html src="proj-templ.png" width=640 alt="Selecting the Win32 Console Application C++ project template" align="center" %}
+![Selecting the Win32 Console Application C++ project template](proj-templ.png){ width=640 }
 
 * Check the ATL option in the project wizard
 
-{% include img.html src="apps-settings.png" width=640 alt="Win32 Console Application template settings" align="center" %}
+![Win32 Console Application template settings](apps-settings.png){ width=640 }
 
 * Link directory where SOLIDWORKS type libraries are located.
 This is an installation directory of SOLIDWORKS (Go to Project Properties, select C/C++ and browse the path in the *Additional Include Directories* field):
 
-{% include img.html src="add-incl-dir.png" width=640 alt="Additional Include Directories option in C++ project" align="center" %}
+![Additional Include Directories option in C++ project](add-incl-dir.png){ width=640 }
 
 Now we can add the code to connect to SOLIDWORKS instance.  
 

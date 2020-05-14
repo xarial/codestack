@@ -23,7 +23,7 @@ This macro will produce similar results to the following manual steps:
 1. Select the file from the Open Recent
 1. Select "Show In Folder" option
 
-{% include img.html src="open-recent.png" width=320 height=69 alt="Open Recent file menu command" align="center" %}
+![Open Recent file menu command](open-recent.png){ width=320 height=69 }
 
 If none of the components selected then the path of active model will be opened.
 

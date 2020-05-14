@@ -12,19 +12,19 @@ SOLIDWORKS PDM Task is a powerful built-in feature which allows to run custom fu
 
 There are several out-of-the-box tasks provided by SOLIDWORKS PDM
 
-{% include img.html src="standard-sw-pdm-tasks.png" width=203 height=320 alt="List of standard tasks in the Administration Panel" align="center" %}
+![List of standard tasks in the Administration Panel](standard-sw-pdm-tasks.png){ width=203 height=320 }
 
 Those tasks are highly customizable via task settings. For example it is possible to change the conversion settings for [Convert task](http://help.solidworks.com/2017/english/enterprisepdm/admin/t_configure_convert.htm) from the Settings Page.
 
-{% include img.html src="convert-task-conversion-settings.png" width=320 height=308 alt="Convert task conversion settings" align="center" %}
+![Convert task conversion settings](convert-task-conversion-settings.png){ width=320 height=308 }
 
 As well as specify output name and folder with an ability to use placeholders (such as file name, file folder, variable value, configuration name etc.)
 
-{% include img.html src="convert-task-output-settings.png" width=320 height=168 alt="Convert task output settings" align="center" %}
+![Convert task output settings](convert-task-output-settings.png){ width=320 height=168 }
 
 Tasks provide open source editable scripts which enable API developers and PDM administrators to further customize the logic of the task.
 
-{% include img.html src="pdm-convert-task-script.png" width=320 height=241 alt="Convert task advanced scripting options" align="center" %}
+![Convert task advanced scripting options](pdm-convert-task-script.png){ width=320 height=241 }
 
 Script is utilizing SOLIDWORKS APIs and is written in Visual Basic (the same language which is used in .swp macros). The main responsibilities of the script are:
 
@@ -41,13 +41,13 @@ As an example, in order to set the DPI settings for the PDF output is it require
 
 {% code-snippet { file-name: change-pdf-dpi.vba } %}
 
-{% include img.html src="set-dpi-output.png" width=640 height=210 alt="Code block to set DPI for the output file" align="center" %}
+![Code block to set DPI for the output file](set-dpi-output.png){ width=640 height=210 }
 
 Please note that starting and closing of SOLIDWORKS as well as check-in of the output file and [paste-as-reference](http://help.solidworks.com/2012/english/enterprisepdm/fileexplorer/t_Creating_a_Topic_Reference.htm) (if specified) are performed outside of the script scope.
 
 In order to intercept the task execution for debug purposes it is required to add the *Debug.Assert False* statement anywhere in the code and make sure that the dedicated task host is set to the local machine.
 
-{% include img.html src="pdm-task-host.png" width=320 height=113 alt="Selection of the host to run the task" align="center" %}
+![Selection of the host to run the task](pdm-task-host.png){ width=320 height=113 }
 
 The macro will then be available for debugging in the VBA editor once the task is launched. There are several limitations with this approach:
 

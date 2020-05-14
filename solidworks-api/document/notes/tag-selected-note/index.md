@@ -6,7 +6,7 @@ description: Example demonstrates how to add text tag to the selected note in SO
 image: /solidworks-api/document/notes/tag-selected-note/drawing-note-revision.png
 labels: [note, annotation. tag, attribute]
 ---
-{% include img.html src="drawing-note-revision.png" width=300 alt="Note with revision number in SOLIDWORKS drawing" align="center" %}
+![Note with revision number in SOLIDWORKS drawing](drawing-note-revision.png){ width=300 }
 
 This example demonstrates how to add text tag (attribute) to the selected note in SOLIDWORKS model (part, assembly or drawing) using SOLIDWORKS API.
 

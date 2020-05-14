@@ -8,7 +8,7 @@ labels: [sort, custom properties, bubble]
 categories: sw-tools
 group: Custom Properties
 ---
-{% include img.html src="sorted-custom-properties.png" width=350 alt="Sorted custom properties" align="center" %}
+![Sorted custom properties](sorted-custom-properties.png){ width=350 }
 
 This VBA macro sorts the custom properties in a file and all configurations using the logical order with SOLIDWORKS API. Both ascending and descending order can be specified.
 

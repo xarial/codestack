@@ -8,7 +8,7 @@ labels: [export, excel, csv, options]
 categories: sw-tools
 group: Options
 ---
-{% include img.html src="document-properties.png" width=350 alt="Document Properties dialog" align="center" %}
+![Document Properties dialog](document-properties.png){ width=350 }
 
 This macro exports all document properties (available under the Tools->Options->Document) menu
 
@@ -23,11 +23,11 @@ Macro outputs the properties into the CSV file which can be opened in Excel. The
 
 Refer [System Options and Document Properties](http://help.solidworks.com/2016/english/api/sldworksapiprogguide/overview/system_options_and_document_properties.htm) article for a list of options to match the specific preference ID and value.
 
-{% include img.html src="user-preferences-excel.png" width=350 alt="Extracted user preferences opened in Excel" align="center" %}
+![Extracted user preferences opened in Excel](user-preferences-excel.png){ width=350 }
 
 This macro can be useful if it is required to compare the preferences between different files. Any diff tool can be used to simplify the comparison and identify the differences, such as [WinMerge](http://winmerge.org/)
 
-{% include img.html src="diff-user-preferences.png" width=550 alt="Differences between user preferences of two models" align="center" %}
+![Differences between user preferences of two models](diff-user-preferences.png){ width=550 }
 
 File output location be customized by modifying the *OUT_FILE_PATH* constant at the beginning of the macro.
 

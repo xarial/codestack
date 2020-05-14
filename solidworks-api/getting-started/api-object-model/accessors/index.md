@@ -10,7 +10,7 @@ Accessibility of certain interface can be found in the *Accessors* section of sp
 
 For example, the snapshot below is an *Accessors* section of the [IAnnotation Interface](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IAnnotation.html)
 
-{% include img.html src="accessors.png" width=250 alt="Accessors section in API Help documentation" align="center" %}
+![Accessors section in API Help documentation](accessors.png){ width=250 }
 
 Which means that the pointer to [IAnnotation Interface](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IAnnotation.html) could be retrieved either via [IAnnotation::GetNext2 Method](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.IAnnotation~GetNext3.html) or [IAnnotationView::Annotations](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IAnnotationView~Annotations.html) property or other properties or methods in this list.
 

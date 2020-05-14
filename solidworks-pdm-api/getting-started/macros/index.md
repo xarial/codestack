@@ -18,7 +18,7 @@ To enable early binding to SOLIDWORKS PDM API (recommended approach), it is requ
 
 Search for *PDMWorks Enterprise [Year] Type Library*. If this reference is not available in the list use the *Browse* button to lookup the file in the installation directory as shown on the image below:
 
-{% include img.html src="edm-type-library.png" width=450 alt="Adding SOLIDWORKS PDM Type Library to the macro references" align="center" %}
+![Adding SOLIDWORKS PDM Type Library to the macro references](edm-type-library.png){ width=450 }
 
 Below is a typical initialization routine to connect to the vault. This example will display the standard PDM Login Window if login is required.
 

@@ -7,7 +7,7 @@ image: /labs/solidworks/swex/pmpage/controls/page/property-manager-page.png
 toc_group_name: labs-solidworks-swex
 order: 2
 ---
-{% include img.html src="property-manager-page.png" alt="Property Manager Page style" align="center" %}
+![Property Manager Page style](property-manager-page.png)
 
 1. Icon of the property manager page
 1. Title of the property manager page
@@ -18,7 +18,7 @@ order: 2
 
 Property manager page style can be customized by applying the [PageOptionsAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_PageOptionsAttribute.htm) onto the main class of the data model.
 
-{% include img.html src="pmpage-options.png" alt="Property page with OK and Cancel button options" align="center" %}
+![Property page with OK and Cancel button options](pmpage-options.png)
 
 {% include code-tabs.html src="Page.Options" %}
 
@@ -26,7 +26,7 @@ Attributes allow to customize the buttons and behaviour of the page
 
 ### Attribution
 
-{% include img.html src="pmpage-attributes.png" alt="Property page with custom title, icon and message" align="center" %}
+![Property page with custom title, icon and message](pmpage-attributes.png)
 
 Page title can be assigned via [DisplayNameAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.displaynameattribute?view=netframework-4.7.2)
 
@@ -38,7 +38,7 @@ Custom user message to provide additional information can be set via [MessageAtt
 
 ### Help Links
 
-{% include img.html src="pmpage-help.png" alt="Property page with help and what's new links" align="center" %}
+![Property page with help and what's new links](pmpage-help.png)
 
 [HelpAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_HelpAttribute.htm) allows providing links to help resources for your add-in. Framework will automatically open the specified url when user clicks corresponding help buttons in the property manager page:
 

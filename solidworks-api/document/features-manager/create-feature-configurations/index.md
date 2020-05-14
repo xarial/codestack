@@ -28,13 +28,13 @@ This macro can be used to represent the steps of bending of the sheet metal. In 
 * Set the sheet metal part to the flattened state
 * Select flatten bends in the order under the *Flat-Pattern* feature
 
-{% include img.html src="sheet-metal-bends-selection.png" width=350 alt="Sheet metal flatten bends" align="center" %}
+![Sheet metal flatten bends](sheet-metal-bends-selection.png){ width=350 }
 
 * Run the macro
 
 As the result sub configurations for each bend are created representing the bending step:
 
-{% include img.html src="sheet-metal-bending.gif" alt="Sheet metal bending steps in the configurations" align="center" %}
+![Sheet metal bending steps in the configurations](sheet-metal-bending.gif)
 
 Refer the [Animate Configurations](solidworks-api/motion-study/animate-configurations/) for example macro to animate the configurations using SOLIDWORKS API.
 

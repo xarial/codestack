@@ -6,7 +6,7 @@ description: Macro allows to link and automatically update the general table to 
 image: /solidworks-api/document/macro-feature/general-table-link-excel/linked-excel-table.png
 labels: [general table, excel, link, macro feature]
 ---
-{% include img.html src="linked-excel-table.png" width=350 alt="Linked table macro feature in the feature tree" align="center" %}
+![Linked table macro feature in the feature tree](linked-excel-table.png){ width=350 }
 
 This macro allows to create General Table in part, assembly and drawing and link it to external Excel or text/csv file using SOLIDWORKS API. This macro implemented as embedded macro feature which means that table will be automatically updated once the model is rebuilt.
 

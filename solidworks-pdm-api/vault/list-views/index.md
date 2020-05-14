@@ -6,7 +6,7 @@ description: Example demonstrates how to list all available vault views and thei
 image: /solidworks-pdm-api/vault/list-views/pdm-vaults-list.png
 labels: [vault, view]
 ---
-{% include img.html src="pdm-vaults-list.png" width=250 alt="Vault views info printed to Console window" align="center" %}
+![Vault views info printed to Console window](pdm-vaults-list.png){ width=250 }
 
 This example demonstrates how to list all available vault views and their paths and prints the information to the console window.
 

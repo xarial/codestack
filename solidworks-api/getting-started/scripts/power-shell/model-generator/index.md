@@ -20,7 +20,7 @@ Download [Template Model](template.SLDPRT) and save it to the same folder where 
 
 This is template model which has 3 driving parameters: width, height and length.
 
-{% include img.html src="model-parameters.png" width=350 alt="Model with parameters" align="center" %}
+![Model with parameters](model-parameters.png){ width=350 }
 
 This will be modified by the script and saved to a new file.
 
@@ -32,8 +32,8 @@ This will be modified by the script and saved to a new file.
 
 As the result the file is generated and the process log is displayed directly in the console:
 
-{% include img.html src="console-output.png" width=450 alt="Messages in console reporting the progress and the result of model generation" align="center" %}
+![Messages in console reporting the progress and the result of model generation](console-output.png){ width=450 }
 
 Template file is not modified and the resulting model is saved with the parameters updated.
 
-{% include img.html src="model-result.png" width=350 alt="Generated model with applied parameters" align="center" %}
+![Generated model with applied parameters](model-result.png){ width=350 }

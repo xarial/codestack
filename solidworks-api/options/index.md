@@ -7,7 +7,7 @@ image: /solidworks-api/options/solidworks-options.png
 labels: [preferences, options]
 order: 8
 ---
-{% include img.html src="solidworks-options.svg" height=250 alt="SOLIDWORKS options API automation" align="center" %}
+![SOLIDWORKS options API automation](solidworks-options.svg){ height=250 }
 
 Most of options in SOLIDWORKS are controlled via SetUserPreference SOLIDWORKS API method. There versions of methods to control text, integer, toggle, numeric properties, etc. properties.
 

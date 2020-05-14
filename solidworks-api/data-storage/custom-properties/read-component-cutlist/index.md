@@ -6,7 +6,7 @@ description: VBA macro to read all properties from the cut-list of the selected 
 image: /solidworks-api/data-storage/custom-properties/read-component-cutlist/cut-list-properties.png
 labels: [cut-list property,component]
 ---
-{% include img.html src="cut-list-properties.png" width=550 alt="Cut list properties" align="center" %}
+![Cut list properties](cut-list-properties.png){ width=550 }
 
 This VBA macro example demonstrates how to read and print all custom properties from all cut-list elements of the selected component in assembly using SOLIDWORKS API.
 

@@ -11,7 +11,7 @@ Visual Basic dictionary object is a collection of unique keys and associated val
 
 Unlike collections dictionaries are COM objects and require reference to *Microsoft Scripting Runtime* library in order to use early binding.
 
-{% include img.html src="microsoft-scripting-runtime-library.png" width=350 alt="Microsoft Scripting Runtime reference" align="center" %}
+![Microsoft Scripting Runtime reference](microsoft-scripting-runtime-library.png){ width=350 }
 
 ~~~ vb
 Dim dict As Dictionary 'early binding
@@ -37,7 +37,7 @@ dic.Add <Key>, <Value>
 
 Keys must be unique otherwise the error will be displayed.
 
-{% include img.html src="dictionary-key-already-associated.png" width=350 alt="Run-time error '457' the key is already associated with an element of this collection when adding the duplicate key" align="center" %}
+![Run-time error '457' the key is already associated with an element of this collection when adding the duplicate key](dictionary-key-already-associated.png){ width=350 }
 
 Elements of the dictionary can be accessed by key or 0-based index either by using () symbol directly on the variable or via **Item** property
 
@@ -65,7 +65,7 @@ By default the compare mode for keys is set to **Binary** comparison. This means
 
 Mode can only be changed for an empty dictionary (without values), otherwise the error will be displayed.
 
-{% include img.html src="change-compare-mode-invalid-procedure.png" width=400 alt="Run-time error '5': Invalid procedure call or argument when changing the compare mode of dictionary objects with elements" align="center" %}
+![Run-time error '5': Invalid procedure call or argument when changing the compare mode of dictionary objects with elements](change-compare-mode-invalid-procedure.png){ width=400 }
 
 {% code-snippet { file-name: exists-compare.vba } %}
 
@@ -75,7 +75,7 @@ Any element can be removed from the dictionary either by key or by 0-based index
 
 >Attempt on removing the item which is not present in the dictionary will throw an exception
 
-{% include img.html src="dictionary-remove-object-error.png" width=250 alt="Run-time error '32811': Method Remove of object 'IDictionary' failed when removing non-existent element" align="center" %}
+![Run-time error '32811': Method Remove of object 'IDictionary' failed when removing non-existent element](dictionary-remove-object-error.png){ width=250 }
 
 **RemoveAll** method allows to clear the dictionary and remove all items.
 

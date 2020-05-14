@@ -12,13 +12,13 @@ redirect-from:
 ---
 This macro will update the referenced configurations for all Bill of Materials (BOM) tables on the active drawing document using SOLIDWORKS API.
 
-{% include img.html src="bom-configurations-property.png" width=168 height=320 alt="List of configurations to use in the BOM table" align="center" %}
+![List of configurations to use in the BOM table](bom-configurations-property.png){ width=168 height=320 }
 
 Bill of Materials tables are not associated with the drawing views and will exist even in case view is deleted.
 BOMs are not linked to the referenced configuration of the view. So if the view's referenced configuration is changed - the BOM won't update.
 
 This macro will find all BOM tables and update their referenced configurations based on the default view of the sheet.
 
-{% include img.html src="use-custom-prps-from-view-sheet-property.png" width=400 height=165 alt="Use custom properties value from model option in the sheet properties" align="center" %}
+![Use custom properties value from model option in the sheet properties](use-custom-prps-from-view-sheet-property.png){ width=400 height=165 }
 
 {% code-snippet { file-name: Macro.vba } %}

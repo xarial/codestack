@@ -6,7 +6,7 @@ description: Example demonstrates how to call the Show With Dependents command f
 image: /solidworks-api/document/assembly/components/show-with-dependents/assembly-show-with-dependents.png
 labels: [assembly, components, show]
 ---
-{% include img.html src="assembly-show-with-dependents.png" width=250 alt="Show With Dependents command in assembly" align="center" %}
+![Show With Dependents command in assembly](assembly-show-with-dependents.png){ width=250 }
 
 This example demonstrates how to call the 'Show With Dependents' command for components or assembly to show all components at once using SOLIDWORKS API and Windows API.
 

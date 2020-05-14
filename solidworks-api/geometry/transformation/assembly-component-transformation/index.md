@@ -16,7 +16,7 @@ To get the transformation of the component use the [IComponent2::Transform2](htt
 
 In the example below the component is moved in space Along X, Y and Z coordinates. The following example will calculate the new positions of the component's origin:
 
-{% include img.html src="comp-translation.png" width=640 alt="Component translational transform" align="center" %}
+![Component translational transform](comp-translation.png){ width=640 }
 
 {% code-snippet { file-name: translation.vba } %}
 
@@ -28,7 +28,7 @@ The following line will be output to the Watch window as the result of running t
 
 Now let's rotate the component and try to find the rotation angles. This component is rotated in all directions. **<span style="color: red;">Red line</span>** below - is the X axis of the assembly, **<span style="color: lime;">Green line</span>** - Y axis, **<span style="color: blue;">Blue line</span>** - Z axis. New X, New Y and New Z - are orientation of the corresponding axes in the component and dimensions indicate the angles between those axes.
 
-{% include img.html src="comp-rotation.png" width=640 alt="Component rotational transform" align="center" %}
+![Component rotational transform](comp-rotation.png){ width=640 }
 
 {% code-snippet { file-name: rotation.vba } %}
 
@@ -52,7 +52,7 @@ To demonstrate the issue consider the following scenario:
   * Configuration **B** has a floating component without any mates in the random position
 * Run the following macro. Macro will align the corner of the component with the origin of the assembly in the Configuration B
 
-{% include img.html src="aligned-component.png" alt="Component's corner aligned with the origin of the assembly" align="center" %}
+![Component's corner aligned with the origin of the assembly](aligned-component.png)
 
 * Macro will stop at several points. Read the comment indicating the state
 * On the last step the transformation assigned to the floating component was overridden by the transformation in the Configuration A driven by mates.

@@ -6,7 +6,7 @@ description: Vb.NET Power Shell script to set permissions to specified folder fo
 image: /solidworks-pdm-api/permissions/set-folder-permissions/folder-permissions.png
 labels: [permissions,folder]
 ---
-{% include img.html src="folder-permissions.png" width=450 alt="Folder permissions in SOLIDWORKS PDM Administration panel" align="center" %}
+![Folder permissions in SOLIDWORKS PDM Administration panel](folder-permissions.png){ width=450 }
 
 This Power shell script allows to set the specified folder permissions for the specified user using SOLIDWORKS PDM API.
 

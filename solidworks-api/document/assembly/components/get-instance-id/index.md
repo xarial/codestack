@@ -11,6 +11,6 @@ redirect-from:
 ---
 This example extracts the component instance index from the component's name using SOLIDWORKS API.
 
-{% include img.html src="sw-component-properties.png" width=400 alt="Component instance id option in the component properties dialog" align="center" %}
+![Component instance id option in the component properties dialog](sw-component-properties.png){ width=400 }
 
 {% code-snippet { file-name: Macro.vba } %}

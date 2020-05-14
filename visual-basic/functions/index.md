@@ -36,7 +36,7 @@ End Sub
 
 Functions and procedures must have unique name within module or class. Functions are not overloadable in Visual Basic. Even if functions have different parameters they cannot have the same names otherwise *Ambiguous name detected* compile error is thrown.
 
-{% include img.html src="ambiguous-name-detected.png" width=300 alt="Compile error: Ambiguous name detected" align="center" %}
+![Compile error: Ambiguous name detected](ambiguous-name-detected.png){ width=300 }
 
 ### Calling functions and subroutines
 
@@ -82,7 +82,7 @@ Func par1, par2, "value2" 'calling function Func with 3 parameters
 
 *Argument not optional* compile error is thrown when calling function without passing the required parameters.
 
-{% include img.html src="argument-not-optional.png" width=300 alt="Compile error: Argument not optional" align="center" %}
+![Compile error: Argument not optional](argument-not-optional.png){ width=300 }
 
 #### Reference parameters
 

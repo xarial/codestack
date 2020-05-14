@@ -13,6 +13,6 @@ This VBA macro opens all selected components in the active assembly in their own
 
 This macro emulates the *Open Part In Position* command in SOLIDWORKS toolbar, but allows to open multiple selected components at the same time.
 
-{% include img.html src="open-part-in-position-command.png" width=250 alt="Open part in position command" align="center" %}
+![Open part in position command](open-part-in-position-command.png){ width=250 }
 
 {% code-snippet { file-name: Macro.vba } %}

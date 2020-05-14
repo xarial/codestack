@@ -6,7 +6,7 @@ description: Example demonstrates how to slice body by sections and extract the 
 image: /solidworks-api/geometry/slice-body/sliced-sections.png
 labels: [slice, projection, intersection, modeler, temp body]
 ---
-{% include img.html src="sliced-sections.png" width=350 alt="Section slices of the body" align="center" %}
+![Section slices of the body](sliced-sections.png){ width=350 }
 
 This example demonstrates how to slice the selected body and find the section properties of the resulting section slices using SOLIDWORKS API.
 

@@ -6,7 +6,7 @@ description: Example demonstrates how to copy documents (assembly or drawing) tr
 image: /solidworks-document-manager-api/application/copy-tree/copy-tree.png
 labels: [copy tree, copy documents]
 ---
-{% include img.html src="copy-tree.png" width=350 alt="SOLIDWORKS Assembly tree copied and suffix is added for each file" align="center" %}
+![SOLIDWORKS Assembly tree copied and suffix is added for each file](copy-tree.png){ width=350 }
 
 This example demonstrates how to copy the assembly or drawing tree to a new location using SOLIDWORKS Document Manager API. Macro allows to add suffix to each file in the tree. Macro will preserve and replace all the required references on all levels of the assembly.
 

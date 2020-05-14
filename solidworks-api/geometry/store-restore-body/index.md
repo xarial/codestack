@@ -13,7 +13,7 @@ Body is serialized and deserialized from the [3rd party storage](/solidworks-api
 * Create new macro and add new form. Name it *UserForm1* (default name)
 * Add the button. Specify the caption *Store Body* and name *cmdStoreBody* as shown below
 
-{% include img.html src="macro-solution-tree.png" width=450 alt="Macro tree and user form controls" align="center" %}
+![Macro tree and user form controls](macro-solution-tree.png){ width=450 }
 
 * Paste the following into the user form's code behind:
 
@@ -33,6 +33,6 @@ Body is serialized and deserialized from the [3rd party storage](/solidworks-api
 * Once completed, the following message is displayed: *Body is stored to the model stream. Close and reopen the model to restore the body*
 * Now, close all documents and reopen the last saved file. The body is deserialized and displayed. Note, that there is no feature tree in the model.
 
-{% include img.html src="restored-body.png" width=350 alt="Restored body" align="center" %}
+![Restored body](restored-body.png){ width=350 }
 
 * You can close SOLIDWORKS session and reopen the model. The body will still be loaded. Note, you need to run the macro before opening the model.

@@ -17,13 +17,13 @@ In order to develop the add-in it is required to:
 
 * Register the dll as a COM server using [Regasm](https://docs.microsoft.com/en-us/dotnet/framework/tools/regasm-exe-assembly-registration-tool) for .NET based add-ins (C# or VB.NET) and [RegSvr32](https://en.wikipedia.org/wiki/Regsvr32) for C++ and VB6 based add-ins. It is required to add a *codebase* of the dll while registering the COM object.
 
-{% include img.html src="add-in-clsid-registry.png" width=550 alt="Add-in dll com registration info in the registry" align="center" %}
+![Add-in dll com registration info in the registry](add-in-clsid-registry.png){ width=550 }
 
 * Add the information about the add-in to SOLIDWORKS registry so it can be recognized on loading. Add-in information needs to be added to *SOFTWARE\SolidWorks\Addins\\{AddInGuid}* and *Software\SolidWorks\AddInsStartup\\{AddInGuid}*. First key defines the name and description of the add-in and is mandatory. Second key is optional and allows to specify if add-in needs to be loaded on start-up when SOLIDWORKS started.
 
-{% include img.html src="add-in-hklm-registry.png" width=450 alt="Add-in details in the SOLIDWORKS registry" align="center" %}
+![Add-in details in the SOLIDWORKS registry](add-in-hklm-registry.png){ width=450 }
 
-{% include img.html src="add-in-hkcu-registry.png" width=450 alt="Add-in start-up details in the SOLIDWORKS registry" align="center" %}
+![Add-in start-up details in the SOLIDWORKS registry](add-in-hkcu-registry.png){ width=450 }
 
 ## Implementing add-in
 
@@ -55,11 +55,11 @@ Links below provide the detailed guides for creating the simple 'Hello World' ad
 
 Add-in loads on startup and displays the 'Hello World' message box when loaded
 
-{% include img.html src="add-in-load-msgbox.png" width=350 alt="Message box displayed when add-in loading" align="center" %}
+![Message box displayed when add-in loading](add-in-load-msgbox.png){ width=350 }
 
 Add-in is available from the 'Add-Ins...' dialog in SOLIDWORKS Tools menu.
 
-{% include img.html src="add-ins-dialog.png" width=450 alt="Add-in shown in the add-ins dialog" align="center" %}
+![Add-in shown in the add-ins dialog](add-ins-dialog.png){ width=450 }
 
 ## Development Framework
 

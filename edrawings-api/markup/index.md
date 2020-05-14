@@ -16,7 +16,7 @@ It is possible to pass both version specific and version independent GUID or Pro
 
 Version independent guid can be located in the registry *HKEY_CLASSES_ROOT\EModelViewMarkup.EModelNonVersionSpecificMarkupControl\CLSID*
 
-{% include img.html src="non-version-specific-markup-guid.png" alt="Version independent eDrawings Markup control GUID" align="center" %}
+![Version independent eDrawings Markup control GUID](non-version-specific-markup-guid.png)
 
 Version specific guids can be located under the corresponding version of the markup control (e.g. *EModelViewMarkup.EModelViewMarkupControl.18* for *eDrawings 2018* or *EModelViewMarkup.EModelViewMarkupControl.19* for *eDrawings 2019*)
 

@@ -17,14 +17,14 @@ Macro operates in the background and needs to be run once a session to start mon
 
 Both visible (opened in its own window) and invisible (opened as assembly or drawing component) documents are handled.
 
-{% include img.html src="file-open-dialog.png" width=350 alt="SOLIDWORKS file open dialog" align="center" %}
+![SOLIDWORKS file open dialog](file-open-dialog.png){ width=350 }
 
 ## Configuration
 
 * Create new macro
 * Copy the code into corresponding modules of the macro. The VBA macro tree should look similar to the image below:
 
-{% include img.html src="vba-macro-tree.png" width=250 alt="VBA macro tree" align="center" %}
+![VBA macro tree](vba-macro-tree.png){ width=250 }
 
 * Place your code into the *main* sub of the *HandlerModule* module. The pointer to [IModelDoc2](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModelDoc2.html) document is passed as the parameter. Use this pointer instead of [ISldWorks::ActiveDoc](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~activedoc.html) to properly handle invisible documents.
 

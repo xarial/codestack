@@ -14,7 +14,7 @@ redirect-from:
 When generated license is placed into the macro some text highlighted red and *Compile error: Invalid outside procedure error* is displayed
 * Macro is inserting static text into the note or custom properties. Text is replaced with new long text. Inserted string is highlighted and macro doesn't run
 
-{% include img.html src="doc-mgr-key-too-long.gif" alt="Copy-pasting the Document Manager license key into the macro constant" align="center" %}
+![Copy-pasting the Document Manager license key into the macro constant](doc-mgr-key-too-long.gif)
 
 ## Cause
 

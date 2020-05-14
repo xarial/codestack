@@ -18,7 +18,7 @@ In this article I will be creating the add-in in .NET (C# and VB.NET) in Microso
 1. It is required to add the reference to PDM Interop Library (*EdmInterface.dll* for projects targeting Framework 3.5 and 2.0 and *EPDM.Interop.epdm.dll* for projects targeting Framework 4.0 or higher). Library can be found at the SOLIDWORKS PDM installation folder (usually *C:\Program Files\SOLIDWORKS PDM\EPDM.Interop.epdm.dll* for Framework 4.0 and newer and *C:\Program Files\SOLIDWORKS PDM\EdmInterface.dll* for older versions)
 1. If your project is targeting .NET Framework 4.0 onwards it is required to set the *Embed Interop Types* option to *False* otherwise the add-in may misbehave.
 
-{% include img.html src="embed-interops.png" width=320 height=291 alt="Option to embed interop assemblies" align="center" %}
+![Option to embed interop assemblies](embed-interops.png){ width=320 height=291 }
 
 It is required to do 3 mandatory steps to make the class for PDM add-in:
 
@@ -32,7 +32,7 @@ It is required to do 3 mandatory steps to make the class for PDM add-in:
 
 * It is recommended **not to check** the 'Make assembly COM-Visible' option rather use [ComVisible ](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.comvisibleattribute(v=vs.110).aspx)attribute for all classes which are required to be COM visible (e.g. add-in main class). Otherwise this may significantly increase the loading time of your add-in.
 
-{% include img.html src="make-assm-com-vis.png" width=320 height=269 alt="Make assembly COM Visible option in project settings" align="center" %}
+![Make assembly COM Visible option in project settings](make-assm-com-vis.png){ width=320 height=269 }
 
 * Unlike registering SOLIDWORKS add-in it is **not required** to actually register the PDM add-in DLL as COM object (i.e. run RegAsm utility or check the 'Register Assembly for COM Interops' option in Project Properties).
 * It is recommended to decorate the add-in's class with [Guid](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.guidattribute(v=vs.110).aspx) attribute as this will allow to better track the add-in on client machines (e.g. debug or clear the add-ins cache).
@@ -43,26 +43,26 @@ In order to load the PDM add-in into the vault please follow the steps below:
 * Navigate to the PDM vault
 * Select *Add-Ins* node and select *New Add-In...* command
 
-{% include img.html src="new-addin.png" width=320 height=250 alt="Adding new add-in in the Administration panel" align="center" %}
+![Adding new add-in in the Administration panel](new-addin.png){ width=320 height=250 }
     
 * Select all files from the *bin* directory of the project. You do not need to add temp files like (*.pdb* or *.xml*)
 * Once add-in is loaded its summary is displayed
 
-{% include img.html src="addin-summary.png" width=320 height=263 alt="Add-in summary page" align="center" %}
+![Add-in summary page](addin-summary.png){ width=320 height=263 }
 
 Navigate to vault view and select the *Test Menu Command* from the context menu.  
 
-{% include img.html src="menu-cmd.png" width=320 height=318 alt="Add-in command in the context menu in the vault explorer" align="center" %}
+![Add-in command in the context menu in the vault explorer](menu-cmd.png){ width=320 height=318 }
 
 Message box is displayed:  
 
-{% include img.html src="hello-world.png" width=198 height=200 alt="Hello World message box" align="center" %}
+![Hello World message box](hello-world.png){ width=198 height=200 }
 
 SOLIDWORKS PDM is a client-server architecture system which means that whenever add-in is loaded into the vault it will be distributed to all clients. When client logins to vault PDM will download add-in dlls locally to *%localappdata%\SolidWorks\SOLIDWORKS PDM\Plugins\**VaultName**\**AddIn Guid**Index* folder.
 
 Add-in dlls will be loaded into several processes (including *explorer.exe*) on first login to PDM vault. Due to the limitation of .NET Framework, .NET libraries cannot be unloaded from the app domain. That's why PDM displayed the *'You have chosen to load a .NET add-in. SOLIDWORKS PDM cannot force a reload of .NET add-ins' when adding the add-in to the vault.
 
-{% include img.html src="net-addin-replace-warning.png" width=320 height=169 alt="Warning displayed when adding .NET add-in" align="center" %}
+![Warning displayed when adding .NET add-in](net-addin-replace-warning.png){ width=320 height=169 }
 
 This message means that cached (previous) version of PDM add-in will be in use until the dlls are unlocked. Instead of restarting the machine it is possible to kill all processes which are locking the dlls. You can use the following command line script to release add-in with a single command:
 

@@ -8,7 +8,7 @@ labels: [selection, fixed, envelope]
 categories: sw-tools
 group: Assembly
 ---
-{% include img.html src="filtered-components-selection.png" width=250 alt="Envelope components selected in the feature manager tree" align="center" %}
+![Envelope components selected in the feature manager tree](filtered-components-selection.png){ width=250 }
 
 This macro is using SOLIDWORKS API to extend the available list of selection criteria in the *Advanced Selection* tool in SOLIDWORKS assembly.
 

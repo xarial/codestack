@@ -6,7 +6,7 @@ description: Creating sketch points and sketch segments directly in the drawing 
 image: /solidworks-api/document/drawing/drawing-view-sketch/point-in-drawing-view-sketch.png
 labels: [drawing,transform,sketch]
 ---
-{% include img.html src="point-in-drawing-view-sketch.png" width=350 alt="Point created in the center of the drawing view" align="center" %}
+![Point created in the center of the drawing view](point-in-drawing-view-sketch.png){ width=350 }
 
 All drawing views in the drawing document have their own sketches which can be retrieved via [IView::GetSketch](http://help.solidworks.com/2019/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iview~getsketch.html) SOLIDWORKS API method.
 

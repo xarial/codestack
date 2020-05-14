@@ -6,7 +6,7 @@ description: Example demonstrates how to run a smooth animation of components ro
 image: /solidworks-api/document/assembly/components/run-rotation-animation/component-rotation.gif
 labels: [assembly, transform, rotation, animation]
 ---
-{% include img.html src="component-rotation.gif" alt="Component rotation animation around Y axis" align="center" %}
+![Component rotation animation around Y axis](component-rotation.gif)
 
 This macro demonstrates how to run a smooth animation of components rotation around Y axis of the component using the presentation transforms via [IComponent2::PresentationTransform](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~presentationtransform.html) SOLIDWORKS API method.
 

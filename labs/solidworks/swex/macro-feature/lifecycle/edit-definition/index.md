@@ -8,7 +8,7 @@ order: 2
 ---
 Edit definition allows to modify the parameters of an existing feature. Edit definition is called when *Edit Feature* command is clicked form the feature manager tree.
 
-{% include img.html src="menu-edit-feature.png" width=250 alt="Edit Feature Command" align="center" %}
+![Edit Feature Command](menu-edit-feature.png){ width=250 }
 
 The typical workflow which should be followed when feature is edited
 

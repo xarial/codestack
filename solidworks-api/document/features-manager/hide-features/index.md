@@ -10,7 +10,7 @@ This VBA macro allows to make invisible selected features in the tree. The featu
 
 Even default features (such as planes) can be made invisible.
 
-{% include img.html src="hidden-features.png" alt="Sketch, Right and Top planes hidden in the feature manager tree" align="center" %}
+![Sketch, Right and Top planes hidden in the feature manager tree](hidden-features.png)
 
 To show the hidden features use the [Reveal Hidden Features](/solidworks-api/document/features-manager/reveal-hidden-features/) macro.
 

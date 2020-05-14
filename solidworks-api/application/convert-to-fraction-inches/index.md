@@ -19,6 +19,6 @@ Const ROUND_TO_NEAREST_FRACTION As Boolean = True 'True to round to nearest frac
 
 The result and available options are equal to the dimension property manager page in SOLIDWORKS
 
-{% include img.html src="dimension-fractions.png" alt="Override units option in the Dimension proeprty manager page" align="center" %}
+![Override units option in the Dimension proeprty manager page](dimension-fractions.png)
 
 {% code-snippet { file-name: Macro.vba } %}

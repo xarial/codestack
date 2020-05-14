@@ -15,11 +15,11 @@ When deleting the top folder in SOLIDWORKS features tree all sub features are no
 
 This is not always possible to do in one step due to the features relations:  
 
-{% include img.html src="delete-features-manually.gif" width=400 alt="Manually deleting the folder feature" align="center" %}
+![Manually deleting the folder feature](delete-features-manually.gif){ width=400 }
 
 The macro below allows to delete all of the features in the selected folder in one click using SOLIDWORKS API. Nested folders are also supported.
 
-{% include img.html src="delete-folder-with-features.png" width=400 alt="Deleting the folder with all children features" align="center" %}
+![Deleting the folder with all children features](delete-folder-with-features.png){ width=400 }
 
 Macro can optionally display the confirmation dialog with the list of features about to be deleted
 

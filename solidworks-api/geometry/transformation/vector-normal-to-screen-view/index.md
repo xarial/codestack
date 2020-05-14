@@ -14,6 +14,6 @@ The line will start at the point at the middle of the screen and will be perpend
 
 [IModelView::Transform](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodelview~transform.html) SOLIDWORKS API property is used to extract the transformation matrix of current orientation of the view.
 
-{% include img.html src="sw-view-screen-transformation.png" width=320 height=208 alt="Line created perpendicular to the current graphics view" align="center" %}
+![Line created perpendicular to the current graphics view](sw-view-screen-transformation.png){ width=320 height=208 }
 
 {% code-snippet { file-name: Macro.vba } %}

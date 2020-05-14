@@ -15,19 +15,19 @@ Follow the steps below:
 * Login to customer portal
 * Click *API Support* link under *My Support* section
 
-{% include img.html src="custom-portal-dashboard.png" width=400 height=207 alt="Customer Portal Dashboard" align="center" %}
+![Customer Portal Dashboard](custom-portal-dashboard.png){ width=400 height=207 }
 
 * Select *Document Manager Key Request* link
 
-{% include img.html src="doc-mgr-key-request.png" width=400 height=243 alt="Document Manager Key Request link" align="center" %}
+![Document Manager Key Request link](doc-mgr-key-request.png){ width=400 height=243 }
 
 * Select the option either to resend existing key or generate new one
 
-{% include img.html src="doc-mgr-key-options.png" width=320 height=95 alt="Options for Document Manager Key" align="center" %}
+![Options for Document Manager Key](doc-mgr-key-options.png){ width=320 height=95 }
 
 * Fill the request form and select the functionality required for your software (refer [Supported Functionality]({{ 'solidworks-document-manager-api/#supported-functionality' | relative_url }}) section to select the right functions)
 
-{% include img.html src="dm-functionality.png" width=320 height=246 alt="Document Manager supported functionality" align="center" %}
+![Document Manager supported functionality](dm-functionality.png){ width=320 height=246 }
 
 It usually takes several business days for key to be generated. Once generated it will be sent via e-mail.
 The key is generated in the following format:

@@ -16,11 +16,11 @@ This macro creates specified number of sketch points on the selected edge in the
 1. *(Optionally)* Open 3D Sketch to insert points to the existing sketch, otherwise new sketch will be created
 1. Run the macro. Enter the number of points to generate
 
-{% include img.html src="selected-edge.png" width=320 height=239 alt="Selected edge to create points on" align="center" %}
+![Selected edge to create points on](selected-edge.png){ width=320 height=239 }
 
 As the result specified number of sketch points is generated in the 3D sketch:
 
-{% include img.html src="sketch-points-edge.png" width=320 height=204 alt="Sketch points created on the edge" align="center" %}
+![Sketch points created on the edge](sketch-points-edge.png){ width=320 height=204 }
 
 {% code-snippet { file-name: Macro.vba } %}
 

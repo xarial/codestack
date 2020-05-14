@@ -12,7 +12,7 @@ This example will modify the value of the selected dimension and sets its value 
 
 > sin(0.5) * 2 + (10 - 5)
 
-{% include img.html src="sw-dimension-equation.png" width=320 height=200 alt="Equation in dimension" align="center" %}
+![Equation in dimension](sw-dimension-equation.png){ width=320 height=200 }
 
 [IEquationMgr](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IEquationMgr.html) SOLIDWORKS API interface should be used to manage equations in SOLIDWORKS document.
 

@@ -36,6 +36,6 @@ User can specify the custom message to be displayed in the *What's Wrong* dialog
 
 {% code-snippet { file-name: UnregisteredMacroFeature.cs } %}
 
-{% include img.html src="unregistered-macro-feature.png" width=650 alt="Rebuild error message for unregistered macro feature" align="center" %}
+![Rebuild error message for unregistered macro feature](unregistered-macro-feature.png){ width=650 }
 
 To insert the macro feature use the extension method: [IFeatureManager::InsertComFeature](https://docs.codestack.net/swex/macro-feature/html/M_SolidWorks_Interop_sldworks_FeatureManagerEx_InsertComFeature__2.htm).

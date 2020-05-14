@@ -18,6 +18,6 @@ This example will work with both 2D and 3D sketch.
 
 [ISketchRelationManager](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isketchrelationmanager.html) SOLIDWORKS API interface is used to manage the relations of the sketch entities.
 
-{% include img.html src="sw-sketch-line-relation.png" width=320 height=229 alt="Relations in sketch line" align="center" %}
+![Relations in sketch line](sw-sketch-line-relation.png){ width=320 height=229 }
 
 {% code-snippet { file-name: Macro.vba } %}

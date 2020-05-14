@@ -6,7 +6,7 @@ description: VBA macro to list all variable names and ids in the specified vault
 image: /solidworks-pdm-api/data-card/list-all-variables/pdm-variables.png
 labels: [variable,list]
 ---
-{% include img.html src="pdm-variables.png" alt="PDM variables list SOLIDWORKS PDM Administration panel" align="center" %}
+![PDM variables list SOLIDWORKS PDM Administration panel](pdm-variables.png)
 
 This VBA macro lists all the variables of the specified vault using SOLIDWORKS PDM API. The variable name and ID is output to the immediate window of VBA Editor in the following format:
 

@@ -12,11 +12,11 @@ redirect-from:
 
 Recently developed SOLIDWORKS macro is run on old (not the latest) version of SOLIDWORKS. When run, *Run-time error '438': object doesn't support this property or method* is displayed.
 
-{% include img.html src="object-doesnt-support-this-property-or-method.png" width=400 height=151 alt="Run-time error '438': object doesn't support this property or method displayed when running the macro" align="center" %}
+![Run-time error '438': object doesn't support this property or method displayed when running the macro](object-doesnt-support-this-property-or-method.png){ width=400 height=151 }
 
 Alternatively *Run-time error '445': object doesn't support this action* can be displayed.
 
-{% include img.html src="object-doesnt-support-this-action.png" width=400 height=171 alt="Run-time error '445': object doesn't support this action is displayed when running the macro" align="center" %}
+![Run-time error '445': object doesn't support this action is displayed when running the macro](object-doesnt-support-this-action.png){ width=400 height=171 }
 
 ## Cause
 
@@ -26,13 +26,13 @@ SOLIDWORKS is [backward compatible](https://en.wikipedia.org/wiki/Backward_compa
 
 * Check SOLIDWORKS API help for the method accessibility which is highlighted by the error
 
-{% include img.html src="comp-config-properties-availability.png" width=400 height=216 alt="Availability option in SOLIDWORKS API Help Documentation" align="center" %}
+![Availability option in SOLIDWORKS API Help Documentation](comp-config-properties-availability.png){ width=400 height=216 }
 
 * If the earliest available version is newer than it is required to replace the method with an alternative one
 
 Usually SOLIDWORKS names the method with an index, e.g. OpenDoc4, OpenDoc5, OpenDoc6 which indicates the superseded version. If this is the case try to see if there is an older version of this method available. If so this can be used. Please note that older version might have different sets of parameters so it is not always enough just to change the version number
 
-{% include img.html src="comp-config-prps-vers-diff.png" width=400 height=122 alt="Difference between versions of the CompConfigProperties API method" align="center" %}
+![Difference between versions of the CompConfigProperties API method](comp-config-prps-vers-diff.png){ width=400 height=122 }
 
 * If no older methods available it will be required to overwrite the logic of the macro using alternative methods.
 * Upgrade SOLIDWORKS software to the never minimum supported version

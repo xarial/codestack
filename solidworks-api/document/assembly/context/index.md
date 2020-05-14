@@ -6,7 +6,7 @@ description: Explanation of assembly contexts and the ways to transform the poin
 image: /solidworks-api/document/assembly/context/assembly-model-context.png
 labels: [context, corresponding, assembly]
 ---
-{% include img.html src="assembly-model-context.png" width=450 alt="Assembly and Model contexts" align="center" %}
+![Assembly and Model contexts](assembly-model-context.png){ width=450 }
 
 All SOLIDWORKS entities in 3D models (parts and assemblies) can be presented in 2 different contexts:
 
@@ -19,7 +19,7 @@ It is important to use the correct contexts when working with elements from SOLI
 
 It is required to always use the pointer to active assembly document ([ISldWorks::ActiveDoc](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~activedoc.html)) while editing or adding new features in the feature tree even if component is in editing state.
 
-{% include img.html src="in-context-editing.png" width=250 alt="Editing the component in the context" align="center" %}
+![Editing the component in the context](in-context-editing.png){ width=250 }
 
 For example to insert the extruded feature into the part document from the image above which is edited in the context the [IFeatureManager::FeatureExtrusion2](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IFeatureManager~FeatureExtrusion2.html) must be called on the [IModelDoc2](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldoc2_methods.html) which is an active assembly but not the model of the component being edited.
 
@@ -34,7 +34,7 @@ SOLIDWORKS API provides the method to convert the pointers between contexts:
 
 ## Model operations in the context of the assembly
 
-{% include img.html src="component-3dsketch.png" width=350 alt="3D Sketch with a sketch point within the component" align="center" %}
+![3D Sketch with a sketch point within the component](component-3dsketch.png){ width=350 }
 
 The following test cases will demonstrate different approaches and results while working with context in assembly. [Download Sample Assembly](SketchAssm.SLDASM). This assembly consists of a single virtual component (this can be an external components as well). There is a 3D Sketch (*3DSketch1*) with a point in the component's model. For simplicity another sketch called *Reference* is added to the assembly which displays current point coordinate.
 
@@ -59,7 +59,7 @@ These pointers are safe to work with within the context of this assembly. For ex
 
 As the result sketch point is moved by 10 mm in XYZ directions.
 
-{% include img.html src="sketch-points-moved.png" width=250 alt="Sketch point updated its location" align="center" %}
+![Sketch point updated its location](sketch-points-moved.png){ width=250 }
 
 ### Test Case 2: Accessing the objects from the underlying model context in the context of the assembly
 
@@ -75,17 +75,17 @@ Follow the steps from previous test case and run the following macro
 
 As the result sketch points are not moved despite the output window displays the success
 
-{% include img.html src="invalid-result-incontext-sketch.png" width=250 alt="Sketch point is not moved despite no errors displayed" align="center" %}
+![Sketch point is not moved despite no errors displayed](invalid-result-incontext-sketch.png){ width=250 }
 
 The reason of this behaviour caused by the fact that sketch cannot be edited if the model is not opened in its own window.
 
 Now, open the component in its own window
 
-{% include img.html src="open-part-from-component.png" width=250 alt="Open part in its own window from the component" align="center" %}
+![Open part in its own window from the component](open-part-from-component.png){ width=250 }
 
 Activate the assembly and rerun the macro. Now slightly different result is displayed. Component is marked as modified and needs rebuilding. If model rebuilt sketch is updated accordingly.
 
-{% include img.html src="needs-rebuild-component.png" width=200 alt="Component needs rebuilding after out of the context modification" align="center" %}
+![Component needs rebuilding after out of the context modification](needs-rebuild-component.png){ width=200 }
 
 ### Test Case 3: Converting the context of objects
 
@@ -94,7 +94,7 @@ In many cases the initial pointer is available in the context of the underlying 
 * Close all models and reopen sample assembly
 * Open the part component in its own window.
 
-{% include img.html src="open-part-from-component.png" width=250 alt="Open part in its own window from the component" align="center" %}
+![Open part in its own window from the component](open-part-from-component.png){ width=250 }
 
 * Select the *3DSketch1* in the active part document
 * Run the following macro

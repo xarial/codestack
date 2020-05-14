@@ -6,7 +6,7 @@ description: Example demonstrate how to modify the value of the global variable 
 image: /solidworks-api/document/change-global-variable-value/equation-manager-global-variable.png
 labels: [equation, variable]
 ---
-{% include img.html src="equation-manager-global-variable.png" alt="Equation Manager with Global Variable" align="center" %}
+![Equation Manager with Global Variable](equation-manager-global-variable.png)
 
 This example demonstrates how to modify the value of the named global variable in the equation manager using SOLIDWORKS API.
 

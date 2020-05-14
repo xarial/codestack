@@ -6,7 +6,7 @@ description: Get parameters of b-spline curve (dimension, order, periodicity, co
 image: /solidworks-api/geometry/get-bspline-parameters/selected-bspline-edge.png
 labels: [bspline, parameters, modeler, edge]
 ---
-{% include img.html src="selected-bspline-edge.png" width=250 alt="Selected b-spline edge" align="center" %}
+![Selected b-spline edge](selected-bspline-edge.png){ width=250 }
 
 This VBA example extracts the parameters (dimension, order, periodicity, control and knot points) from the selected edge of b-spline type (e.g. edge derived from the spline segment). The extracted data can be used in the [IModeler::CreateBsplineCurve](https://help.solidworks.com/2012/English/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModeler~CreateBsplineCurve.html) SOLIDWORKS API method to build the curve of the same geometry.
 

@@ -8,7 +8,7 @@ labels: [drawing,view,custom properties]
 categories: sw-tools
 group: Drawing
 ---
-{% include img.html src="drawing-custom-properties.png" width=500 alt="Custom properties in SOLIDWORKS drawing" align="center" %}
+![Custom properties in SOLIDWORKS drawing](drawing-custom-properties.png){ width=500 }
 
 This macro copies the specified custom properties from the SOLIDWORKS part or assembly referenced in the drawing view to the drawing view itself.
 
@@ -26,13 +26,13 @@ Const PRP_NAMES As String = ""
 
 In this case the following input box will be displayed.
 
-{% include img.html src="properties-input-box.png" alt="Input box for properties to be copied to drawing" align="center" %}
+![Input box for properties to be copied to drawing](properties-input-box.png)
 
 User can specify either single property or multiple properties, separated by comma.
 
 If drawing view is selected when running the macro, properties will be copied from this drawing view. Otherwise, the default properties view will be used as specified in the sheet properties (this is usually the first view in the drawing):
 
-{% include img.html src="properties-view.png" width=500 alt="Drawing View for custom properties" align="center" %}
+![Drawing View for custom properties](properties-view.png){ width=500 }
 
 At first, custom property value will be extracted from the configuration of the model which corresponds to the referenced configuration of the drawing view. If the property doesn't exist or empty, file specific custom property will be extracted.
 

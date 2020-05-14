@@ -6,7 +6,7 @@ description: VBA macro to get all visible components in the drawing view (includ
 image: /solidworks-api/document/drawing/get-all-visible-components/drawing-view-feature-tree.png
 labels: [visible components,drawing view]
 ---
-{% include img.html src="drawing-view-feature-tree.png" width=350 alt="Drawing view feature manager tree" align="center" %}
+![Drawing view feature manager tree](drawing-view-feature-tree.png){ width=350 }
 
 This VBA macro extracts all visible components from the selected drawing view using SOLIDWORKS API. Macro will extract all types of components (part components and assembly components).
 

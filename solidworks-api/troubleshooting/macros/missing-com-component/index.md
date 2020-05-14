@@ -15,7 +15,7 @@ Dim obj as Object
 Set obj = CreateObject("ComComponentProgId")
 ~~~
 
-{% include img.html src="runtime-error-429.png" width=350 alt="Run-time error '429': ActiveX component can't create object" align="center" %}
+![Run-time error '429': ActiveX component can't create object](runtime-error-429.png){ width=350 }
 
 ## Cause
 

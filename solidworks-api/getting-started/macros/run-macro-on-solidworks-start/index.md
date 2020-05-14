@@ -20,14 +20,14 @@ The most common option to utilize this functionality would be to specify the pat
 
 * Windows OS allows to specify command line arguments in the *Target* field of the shortcut options. The default shortcut has this option disabled and it cannot be changed.
 
-{% include img.html src="default-shortcut-options.png" width=350 alt="Default options of SOLIDWORKS shortcut" align="center" %}
+![Default options of SOLIDWORKS shortcut](default-shortcut-options.png){ width=350 }
 
 * Remove the default SOLIDWORKS shortcut
 * Navigate to SOLIDWORKS installation folder (usually *C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS*).
 * Find the *SLDWORKS.EXE* file.
 * Select the file and click Right Mouse Button. Select *Send To*->*Desktop (create shortcut)*
 
-{% include img.html src="sldworks-exe-location.png" width=550 alt="SOLIDWORKS.exe file location" align="center" %}
+![SOLIDWORKS.exe file location](sldworks-exe-location.png){ width=550 }
 
 * Shortcut is added to desktop. Rename as required (pin to task bar if needed).
 * Select the shortcut icon, click Right Mouse Button and select *Options* command
@@ -45,6 +45,6 @@ For example:
 "C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\SLDWORKS.EXE" /m "C:\My Macros\Macro1.swb"
 ~~~
 
-{% include img.html src="shortcut-with-macro-run.png" width=450 alt="Shortcut with macro path" align="center" %}
+![Shortcut with macro path](shortcut-with-macro-run.png){ width=450 }
 
 Use this shortcut to start SOLIDWORKS. Specified macro will be run automatically.

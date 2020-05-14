@@ -5,7 +5,7 @@ caption: Get Body Bounding Cylinder
 description: This example demonstrates how to get the bounding cylinder of the solid body using SOLIDWORKS API
 image: /solidworks-api/geometry/get-bounding-cylinder/cylindrical-bounding-box.png
 ---
-{% include img.html src="cylindrical-bounding-box.png" height=400 alt="Cylindrical bounding box is created around the body" align="center" %}
+![Cylindrical bounding box is created around the body](cylindrical-bounding-box.png){ height=400 }
 
 This example demonstrates how to find the bounding cylinder of the solid body using SOLIDWORKS API.
 
@@ -17,7 +17,7 @@ As the result new feature is created representing the cylindrical boundary of th
 
 Macro can be downloaded at [this link](GetBoundingCylinderBin.zip). Unzip the macro and run it from Tools->Macro->Run menu command. Specify the correct filter as shown below:
 
-{% include img.html src="run-vsta-macro.png" width=500 alt="Running the VSTA macro from SOLIDWORKS" align="center" %}
+![Running the VSTA macro from SOLIDWORKS](run-vsta-macro.png){ width=500 }
 
 ### SolidWorksMacro.cs
 This is an entry point of VSTA macro. In this module the input parameters are processed and the output body is created

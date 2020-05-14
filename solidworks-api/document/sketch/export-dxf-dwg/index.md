@@ -9,7 +9,7 @@ labels: [sketch,export,dxf,dwg]
 categories: sw-tools
 group: Import/Export
 ---
-{% include img.html src="sketch-dwf-dwg.png" width=350 alt="DXF/DWG file created from the sketch" align="center" %}
+![DXF/DWG file created from the sketch](sketch-dwf-dwg.png){ width=350 }
 
 This VBA macro exports the selected 2D sketch in part or assembly to DXF or DWG file.
 

@@ -5,7 +5,7 @@ caption: Selecting Entities In Drawing View
 description: Example demonstrates different approaches of selecting entities (e.g. edge, face, vertex) in the drawing views
 image: /solidworks-api/document/selection/drawing-view-entities/circular-edge-selected-in-views.png
 ---
-{% include img.html src="circular-edge-selected-in-views.png" width=300 alt="Named edge is selected in 3 drawing views" align="center" %}
+![Named edge is selected in 3 drawing views](circular-edge-selected-in-views.png){ width=300 }
 
 This example demonstrates different approaches of selecting entities (e.g. edge, face, vertex) in the drawing views using SOLIDWORKS API
 
@@ -16,7 +16,7 @@ This example demonstrates different approaches of selecting entities (e.g. edge,
 * To run the macro download the [sample model and the drawing](plate-with-hole.zip).
 * Circular edge was named *Hole* in the part document
 
-{% include img.html src="named-edge.png" width=300 alt="Named edge in SOLIDWORKS part" align="center" %}
+![Named edge in SOLIDWORKS part](named-edge.png){ width=300 }
 
 * Run the macro and this edge is selected in all 3 views with 3 different approaches described above.
 

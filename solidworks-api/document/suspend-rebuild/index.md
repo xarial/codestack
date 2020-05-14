@@ -10,7 +10,7 @@ group: Performance
 ---
 This macro us using SOLIDWORKS API to suspend rebuild operation for parts, assemblies and drawings to enhance the performance.
 
-{% include img.html src="rebuild-suspended.gif" alt="Demonstration of suspended rebuild while changing the dimensions" align="center" %}
+![Demonstration of suspended rebuild while changing the dimensions](rebuild-suspended.gif)
 
 When macro started form is displayed. While form is open all rebuild operations (regenerations) will be suspended.
 For example dimension changes or mates will not resolve until **Exit Suspend Rebuild Mode** button is clicked.

@@ -12,7 +12,7 @@ redirect-from:
 ---
 This macro will hide (blank) or show (unblank) all sketches (2D and 3D) in the active document using SOLIDWORKS API.
 
-{% include img.html src="sw-hide-all-sketches.png" width=320 alt="Hide sketch option in context menu" align="center" %}
+![Hide sketch option in context menu](sw-hide-all-sketches.png){ width=320 }
 
 Change *HIDE_ALL_SKETCHES* option to specify if sketches need to be hidden or shown.  
 

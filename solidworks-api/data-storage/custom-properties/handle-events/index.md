@@ -14,7 +14,7 @@ The code example below provides a workaround for this issue and enables handling
 * Run the console
 * Modify custom properties. The modification results are output to the console window:
 
-{% include img.html src="custom-properties-events-console.png" alt="Properties modification information output to the console" align="center" %}
+![Properties modification information output to the console](custom-properties-events-console.png)
 
 ## Program.cs
 

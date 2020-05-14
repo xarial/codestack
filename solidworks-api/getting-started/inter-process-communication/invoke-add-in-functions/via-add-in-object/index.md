@@ -43,7 +43,7 @@ public class MyAddIn : ISwAddIn
 
 If *Register for COM Interop* option is selected in Visual Studio this will automatically add all com-visible functions, classes and interfaces to the tlb file.
 
-{% include img.html src="add-in-type-library.png" width=550 alt="Type library generated for the add-in" align="center" %}
+![Type library generated for the add-in](add-in-type-library.png){ width=550 }
 
 ## Example add-in with API
 
@@ -51,11 +51,11 @@ The following add-in examples is built using the [SwEx.AddIn Framework](/labs/so
 
 Add-in adds the menu command under the *Tools* menu allowing to create cylindrical feature
 
-{% include img.html src="create-geometry-add-in-menu.png" width=350 alt="Add-in menu" align="center" %}
+![Add-in menu](create-geometry-add-in-menu.png){ width=350 }
 
 When invoked from the menu, cylinder will have hard-coded parameter values.
 
-{% include img.html src="cylinder-geometry-feature.png" width=350 alt="Cylinder geometry created from the add-in menu" align="center" %}
+![Cylinder geometry created from the add-in menu](cylinder-geometry-feature.png){ width=350 }
 
 At the same time add-in exposes the public API *CreateCylinder* which allows to create cylinder. API has two parameters:
 
@@ -101,11 +101,11 @@ public class AddIn : ISwAddIn
 * Create new VBA macro
 * Add the reference to add-in Type Library from the *Tools->References* menu in the VBA Editor
 
-{% include img.html src="tlb-reference.png" width=450 alt="Add-in type library added to the macro" align="center" %}
+![Add-in type library added to the macro](tlb-reference.png){ width=450 }
 
 Note that the interface will be visible in the object browser:
 
-{% include img.html src="object-browser-interface.png" width=350 alt="Add-in API functions visible in the object browser" align="center" %}
+![Add-in API functions visible in the object browser](object-browser-interface.png){ width=350 }
 
 #### VBA macro invoking add-in function
 
@@ -113,11 +113,11 @@ Note that the interface will be visible in the object browser:
 
 This macro will create the cylinder with custom parameters and use the returned pointer to feature to rename it.
 
-{% include img.html src="my-cylinder-renamed-feature.png" width=350 alt="Cylinder geometry created from the macro" align="center" %}
+![Cylinder geometry created from the macro](my-cylinder-renamed-feature.png){ width=350 }
 
 Note that the add-in errors are correctly thrown from the macro. For example the following exception is generated when invalid input is supplied:
 
-{% include img.html src="add-in-com-error.png" width=500 alt="Exception with the description thrown in the macro" align="center" %}
+![Exception with the description thrown in the macro](add-in-com-error.png){ width=500 }
 
 ### Calling add-in from stand-alone applications
 
@@ -133,7 +133,7 @@ Similarly to VBA macro, add-in can be automated from the [Stand-Alone Applicatio
 
 Exception can also be handled from the stand-alone application
 
-{% include img.html src="add-in-exception-net.png" width=550 alt=".NET exception thrown in the .NET application" align="center" %}
+![.NET exception thrown in the .NET application](add-in-exception-net.png){ width=550 }
 
 > The above approach to connect to SOLIDWORKS instance (Activator::CreateInstance or GetObject methods) in some cases might create new invisible instance of SOLIDWORKS instead of connecting to an existing session. These instances would be created as background applications and no add-ins loaded so the code will fail. To force connect to the active session of SOLIDWORKS follow [Connecting by querying the COM instance from the Running Object Table (ROT)](/solidworks-api/getting-started/stand-alone/#method-b-connecting-by-querying-the-com-instance-from-the-running-object-table-rot) article.
 

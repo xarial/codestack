@@ -25,11 +25,11 @@ It traverses all components, all bodies and all faces and outputs some informati
 
 Add-in has a menu command allowing to invoke its function in-process.
 
-{% include img.html src="face-indexer-menu.png" width=350 alt="Add-in menu to index faces" align="center" %}
+![Add-in menu to index faces](face-indexer-menu.png){ width=350 }
 
 Once completed the message box with the result is displayed.
 
-{% include img.html src="add-in-result.png" width=300 alt="Result from calling the add-in command" align="center" %}
+![Result from calling the add-in command](add-in-result.png){ width=300 }
 
 ## FaceIndexer Add-In
 This is a main project which implements SOLIDWORKS add-in and API object interface.
@@ -55,7 +55,7 @@ Console.WriteLine($"Indexed {count} face(s)");
 
 As the result the performance dropped in almost hundred times:
 
-{% include img.html src="stand-alone-result.png" width=300 alt="Result from calling the add-in API from stand-alone application" align="center" %}
+![Result from calling the add-in API from stand-alone application](stand-alone-result.png){ width=300 }
 
 Using [ISldWorks::CommandInProgress](http://help.solidworks.com/2016/English/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISldWorks~CommandInProgress.html) SOLIDWORKS API property improves things a little bit, but still performance is dropped more than 10 times compared to the baseline results.
 
@@ -105,7 +105,7 @@ It can also be invoked from the macro or any other type of applications.
 
 VBA macro to call the add-in API. In this example User Form is used to keep macro running until the callback function is called.
 
-{% include img.html src="macro-solution-tree.png" width=250 alt="Project tree in VBA macro" align="center" %}
+![Project tree in VBA macro](macro-solution-tree.png){ width=250 }
 
 ### Macro Module
 

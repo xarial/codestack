@@ -6,7 +6,7 @@ description: Collection of examples and articles related to SOLIDWORKS model geo
 image: /solidworks-api/geometry/solidworks-geometry-api.png
 order: 5
 ---
-{% include img.html src="solidworks-geometry-api.png" width=250 alt="SOLIDWORKS models geometry API" align="center" %}
+![SOLIDWORKS models geometry API](solidworks-geometry-api.png){ width=250 }
 
 SOLIDWORKS API provides a low level access to geometry generation and processing via [IModeler](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModeler.html) interface.
 

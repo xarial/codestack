@@ -6,7 +6,7 @@ description: Collection of articles and code examples for automating models dime
 order: 7
 image: /solidworks-api/document/dimensions/solidworks-dimensions-api.png
 ---
-{% include img.html src="solidworks-dimensions-api.png" width=300 alt="Automating dimensions via SOLIDWORKS API" align="center" %}
+![Automating dimensions via SOLIDWORKS API](solidworks-dimensions-api.png){ width=300 }
 
 Dimensions can be added to the selected sketch segments via [IModelDocExtension::AddDimension](http://help.solidworks.com/2015/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~adddimension.html) SOLIDWORKS API method.
 

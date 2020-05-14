@@ -7,7 +7,7 @@ image: /labs/solidworks/swex/pmpage/getting-started/overview/data-model-pmpage.p
 toc_group_name: labs-solidworks-swex
 order: 3
 ---
-{% include img.html src="data-model-pmpage.png" width=250 alt="Property Manager Page driven by data model" align="center" %}
+![Property Manager Page driven by data model](data-model-pmpage.png){ width=250 }
 
 ### Data model
 

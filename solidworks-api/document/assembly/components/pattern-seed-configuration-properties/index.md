@@ -6,7 +6,7 @@ description: Example demonstrates how to change the configuration specific prope
 image: /solidworks-api/document/assembly/components/pattern-seed-configuration-properties/component-config-specific-properties.png
 labels: [assembly, spattern, configuration, seed]
 ---
-{% include img.html src="component-config-specific-properties.png" alt="Configuration specific properties for the seed component of the sketch driven pattern" align="center" %}
+![Configuration specific properties for the seed component of the sketch driven pattern](component-config-specific-properties.png)
 
 This macro example demonstrates how to change the following configuration specific properties using SOLIDWORKS API.
 

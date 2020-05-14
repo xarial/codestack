@@ -8,7 +8,7 @@ labels: [name,virtual,component reference]
 categories: sw-tools
 group: Assembly
 ---
-{% include img.html src="component-reference.png" width=350 alt="Component reference" align="center" %}
+![Component reference](component-reference.png){ width=350 }
 
 This VBA macro allows to copy the name of the components in the active assembly to the component's reference using SOLIDWORKS API.
 
@@ -20,6 +20,6 @@ Const VIRTUAL_ONLY As Boolean = True
 
 This macro can be useful if component names are used to store the project attributes (e.g. Part Number) as component name cannot be added to the Bill Of Materials while Component Reference can be.
 
-{% include img.html src="bill-of-materials.png" width=350 alt="Bill Of Materials with component references" align="center" %}
+![Bill Of Materials with component references](bill-of-materials.png){ width=350 }
 
 {% code-snippet { file-name: Macro.vba } %}

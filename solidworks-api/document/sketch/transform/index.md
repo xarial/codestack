@@ -12,24 +12,24 @@ Those values will match for 3D Sketches or 2D sketches created on Front plane (i
 
 As shown on the following picture the value of the point is displayed as { -50, 10, 0 } for the local sketch coordinate system (in the sketch point property manager page) and as the { -50, 0, -10 } for the global coordinate system (in the SOLIDWORKS status bar). This difference is caused by the fact that 2D sketch is created on the Top Plane.
 
-{% include img.html src="global-local-coordinates.png" width=450 alt="Different values for the local and global coordinate systems." align="center" %}
+![Different values for the local and global coordinate systems.](global-local-coordinates.png){ width=450 }
 
 Local coordinate system of 2D sketch is displayed with red X and Y arrows when activating the sketch. And global coordinate system is represented with red, green and blue triad in the bottom right corner of SOLIDWORKS model window.
 
-{% include img.html src="sketch-coordinate-systems.png" width=350 alt="Local sketch coordinate system and global coordinate system" align="center" %}
+![Local sketch coordinate system and global coordinate system](sketch-coordinate-systems.png){ width=350 }
 
 ## Reading the local coordinates from sketch point
 
 The following macro reads the selected sketch point coordinate relative to the local sketch coordinate system and outputs it to the immediate Window of SOLIDWORKS.
 
-{% include img.html src="coordinate-output.png" width=350 alt="Extracted coordinate of sketch point" align="center" %}
+![Extracted coordinate of sketch point](coordinate-output.png){ width=350 }
 
 * Create a sketch on the Front Plane and create a sketch point
 * Select this point
 * Run the macro and compare with the global coordinate value (result is printed in meters)
 * Values will match
 
-{% include img.html src="sketch-point-coordinate.png" width=350 alt="Sketch point global coordinate" align="center" %}
+![Sketch point global coordinate](sketch-point-coordinate.png){ width=350 }
 
 * Create new sketch on any plane but Front Plane (e.g. Top Plane)
 * Repeat the steps above

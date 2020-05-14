@@ -7,7 +7,7 @@ image: /angular/getting-started/package/angular-package.png
 labels: [angular,package,json,dependencies,devDependencies,scripts]
 order: 2
 ---
-{% include img.html src="angular-package.png" width=400 alt="Angular package file" align="center" %}
+![Angular package file](angular-package.png){ width=400 }
 
 Once you create new Angular application, you will see package.json file among the newly created files and folders. package.json file locates in project root and contains information about your web application. The main purpose of the file comes from its name *package*, so it'll contain the information about npm packages installed for the project.<br>
 

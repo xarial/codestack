@@ -10,6 +10,6 @@ redirect-from:
 ---
 This example demonstrates how to change the precision for the hole locations in the selected Hole Table using SOLIDWORKS API.
 
-{% include img.html src="sw-hole-table.png" width=320 height=95 alt="Holes Table" align="center" %}
+![Holes Table](sw-hole-table.png){ width=320 height=95 }
 
 {% code-snippet { file-name: Macro.vba } %}

@@ -8,7 +8,7 @@ labels: [csv, points cloud, sketch, import]
 categories: sw-tools
 group: Sketch
 ---
-{% include img.html src="points_cloud.png" alt="Points cloud in the sketch" align="center" %}
+![Points cloud in the sketch](points_cloud.png)
 
 This macro imports the points read from the specified CSV (comma separated values) file into the active sketch using SOLIDWORKS API. Both 2D and 3D Sketches are supported.
 

@@ -32,7 +32,7 @@ This is not recommended approach as it may introduce the ambiguity and potential
 
 > In order to force explicit variable declaration in Visual Basic it is required to use *Option Explicit* statement. In this case compile error will occur if implicit variable is identified.
 
-{% include img.html src="option-explicit-variable-not-defined.png" width=300 alt="Compile error when Explicit option is enabled and implicit variable assignment is used" align="center" %}
+![Compile error when Explicit option is enabled and implicit variable assignment is used](option-explicit-variable-not-defined.png){ width=300 }
 
 #### Declaring group of variables of the same type
 
@@ -95,7 +95,7 @@ Same as variable declaration constant type can be defined explicitly (using *As*
 
 Once declared value of the constant cannot be changed. Otherwise the compile error will occur.
 
-{% include img.html src="error-changing-constant.png" width=300 alt="Compile error assignment to constant not permitted when changing the value of constant variable" align="center" %}
+![Compile error assignment to constant not permitted when changing the value of constant variable](error-changing-constant.png){ width=300 }
 
 This code example demonstrates different ways of declaring and assigning constants and value variables.
 
@@ -105,15 +105,15 @@ This code example demonstrates different ways of declaring and assigning constan
 
 Unlike value types, [references types](visual-basic/variables/user-defined-types#class) must follow several additional rules when assigning the value.
 
-{% include img.html src="user-type-declaration.png" width=200 alt="Custom User Defined Type" align="center" %}
+![Custom User Defined Type](user-type-declaration.png){ width=200 }
 
 * It is required to use *new* keyword to create new instance of the referenced type. Otherwise Run-time error '91' will be displayed
 
-{% include img.html src="error-91-when-calling-member-non-initialized-class.png" width=350 alt="Run-time error '91': Object variable or With block variable not set when calling the member of uninitialized reference" align="center" %}
+![Run-time error '91': Object variable or With block variable not set when calling the member of uninitialized reference](error-91-when-calling-member-non-initialized-class.png){ width=350 }
 
 * It is required to use *Set* keyword to assign the value, otherwise the Run-time error '91' will be displayed
 
-{% include img.html src="error-when-not-using-set-keyword.png" width=350 alt="Run-time error '91': Object variable or With block variable not set when Set keyword is not used to assign the reference to the variable" align="center" %}
+![Run-time error '91': Object variable or With block variable not set when Set keyword is not used to assign the reference to the variable](error-when-not-using-set-keyword.png){ width=350 }
 
 See code below for the correct assignment of reference type variable.
 

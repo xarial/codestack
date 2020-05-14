@@ -83,14 +83,14 @@ namespace CodeStack.SwEx.MacroFeature.Features
 
 When user rebuilds the feature it will be rebuilt with the following error:
 
-{% include img.html src="obsolete-macro-feature-rebuild-error.png" width=550 alt="Obsolete macro feature rebuild error" align="center" %}
+![Obsolete macro feature rebuild error](obsolete-macro-feature-rebuild-error.png){ width=550 }
 
 When user clicks *Edit Feature*
 
-{% include img.html src="replace-obsolete-macro-feature.png" width=250 alt="Editing the obsolete feature" align="center" %}
+![Editing the obsolete feature](replace-obsolete-macro-feature.png){ width=250 }
 
 The following message is displayed
 
-{% include img.html src="replace-obsolete-feature-message.png" width=250 alt="Replacing obsolete feature" align="center" %}
+![Replacing obsolete feature](replace-obsolete-feature-message.png){ width=250 }
 
 If *Yes* is clicked the framework will automatically replace the obsolete feature with new one and copy all of the parameters (if applicable).

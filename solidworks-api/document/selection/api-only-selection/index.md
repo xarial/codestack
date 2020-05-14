@@ -6,7 +6,7 @@ description: Example shows how to select the object for API purpose only (withou
 image: /solidworks-api/document/selection/api-only-selection/extrude-direction-up-to-surface.png
 labels: [selection, extrude]
 ---
-{% include img.html src="extrude-direction-up-to-surface.png" width=500 alt="Extruded sketch arc up to the planar surface following the line direction" align="center" %}
+![Extruded sketch arc up to the planar surface following the line direction](extrude-direction-up-to-surface.png){ width=500 }
 
 This example shows how to create extrude feature in SOLIDWORKS part by selecting the inputs for API purpose only (without graphics selection) preserving current user selections.
 

@@ -14,11 +14,11 @@ This macro can be used as a translator macro to rename feature tree form one lan
 
 For example this feature tree is in Russian language:
 
-{% include img.html src="feature-tree-rus.png" height=350 alt="Feature tree in Russian language" align="center" %}
+![Feature tree in Russian language](feature-tree-rus.png){ height=350 }
 
 It can be renamed to English language equivalent:
 
-{% include img.html src="feature-tree-eng.png" height=350 alt="Feature tree in English version" align="center" %}
+![Feature tree in English version](feature-tree-eng.png){ height=350 }
 
 ## Configuration
 

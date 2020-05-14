@@ -21,11 +21,11 @@ Const ADD_IN_GUID As String = "{1730410d-85ad-4be8-aa2d-ed977b93fe5d}"
 
 Locate the guid of the required SOLIDWORKS add-in in the registry at *HKLM\SOFTWARE\SolidWorks\AddIns*. Each sub-key of this registry key represents the add-in. Select each key to see the title and description of the add-in. Copy the name of the key which represents the add-in guid.
 
-{% include img.html src="addins-registry.png" width=450 alt="Available add-ins presented in the registry" align="center" %}
+![Available add-ins presented in the registry](addins-registry.png){ width=450 }
 
 It is optionally required to specify the path to the add-in in the *ADD_IN_PATH* variable. In some cases macro cannot retrieve the path to the add-in from its guid and can fail. You can find the path to the add-in in the SOLIDWORKS add-ins dialog:
 
-{% include img.html src="addins-list.png" width=450 alt="Add-ins list in SOLIWORKS menu" align="center" %}
+![Add-ins list in SOLIWORKS menu](addins-list.png){ width=450 }
 
 ~~~ vb
 Const ADD_IN_PATH As String = "C:\Program Files\CodeStack\MyToolbar\CodeStack.Sw.MyToolbar.dll"
