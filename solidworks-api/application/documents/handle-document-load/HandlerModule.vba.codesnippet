@@ -1,4 +1,0 @@
-<div class="snippet" lang="vb" src="solidworks-api/frame/handle-document-load/HandlerModule.vba"><pre class="prettyprint lang-vb">Sub main(model As SldWorks.ModelDoc2)
-    'TODO:implement the procedure
-    MsgBox "File Loaded: " &amp; model.GetTitle()
-End Sub</pre></div>

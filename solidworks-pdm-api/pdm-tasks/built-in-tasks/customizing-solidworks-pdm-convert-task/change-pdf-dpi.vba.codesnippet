@@ -1,2 +1,0 @@
-<div class="snippet" lang="vb" src="solidworks-pdm-api/getting-started/customizing-pdm-convert-task/change-pdf-dpi.vba"><pre class="prettyprint lang-vb">swApp.SetUserPreferenceIntegerValue swUserPreferenceIntegerValue_e.swPDFExportShadedDraftDPI, 600
-swApp.SetUserPreferenceIntegerValue swUserPreferenceIntegerValue_e.swPDFExportOleDPI, 600</pre></div>

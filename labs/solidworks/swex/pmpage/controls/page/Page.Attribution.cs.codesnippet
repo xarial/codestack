@@ -1,7 +1,0 @@
-<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/Page.cs" regions="Attribution"><pre class="prettyprint lang-cs">[PageOptions(typeof(Resources), nameof(Resources.PageIcon),
-    swPropertyManagerPageOptions_e.swPropertyManagerOptions_OkayButton)]
-[Message("Sample message for property page", "Sample Page")]
-[DisplayName("Sample Page")]
-public class DataModelPageAtts
-{
-}</pre></div>

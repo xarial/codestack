@@ -1,9 +1,0 @@
-<div class="snippet" lang="vb" src="solidworks-api/adornment/create-multirow-callout/CalloutHandler.vba"><pre class="prettyprint lang-vb">Implements swCalloutHandler
-
-Private Function SwCalloutHandler_OnStringValueChanged(ByVal pManipulator As Object, ByVal RowID As Long, ByVal Text As String) As Boolean
-
-        MsgBox "Text changed at row " &amp; RowID &amp; ": " &amp; Text
-                
-        SwCalloutHandler_OnStringValueChanged = True
-
-End Function</pre></div>

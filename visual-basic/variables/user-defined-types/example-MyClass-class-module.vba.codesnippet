@@ -1,5 +1,0 @@
-<div class="snippet" lang="vb" src="visual-basic/variables/user-defined-types/example-MyClass-class-module.vba"><pre class="prettyprint lang-vb">Public Member As String
-
-Private Sub Class_Initialize()
-
-End Sub</pre></div>

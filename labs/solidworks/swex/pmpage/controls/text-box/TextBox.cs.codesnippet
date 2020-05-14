@@ -1,4 +1,0 @@
-<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/TextBox.cs"><pre class="prettyprint lang-cs">public class TextBoxDataModel
-{
-    public string Text { get; set; }
-}</pre></div>

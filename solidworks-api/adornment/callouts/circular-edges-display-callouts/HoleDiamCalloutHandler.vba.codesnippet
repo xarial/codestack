@@ -1,6 +1,0 @@
-<div class="snippet" lang="vb" src="solidworks-api/adornment/display-hole-diams-callouts/HoleDiamCalloutHandler.vba"><pre class="prettyprint lang-vb">Implements swCalloutHandler
-
-Private Function swCalloutHandler_OnStringValueChanged(ByVal pManipulator As Object, ByVal RowID As Long, ByVal Text As String) As Boolean
-
-End Function
-</pre></div>

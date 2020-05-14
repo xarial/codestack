@@ -1,9 +1,0 @@
-<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/SelectionBox.vb" regions="Single"><pre class="prettyprint lang-vb">Public Class SelectionBoxDataModel
-
-    &lt;SelectionBox(swSelectType_e.swSelSOLIDBODIES)&gt;
-    Public Property Body As IBody2
-
-    &lt;SelectionBox(swSelectType_e.swSelEDGES, swSelectType_e.swSelNOTES, swSelectType_e.swSelCOORDSYS)&gt;
-    Public Property Dispatch As Object
-
-End Class</pre></div>

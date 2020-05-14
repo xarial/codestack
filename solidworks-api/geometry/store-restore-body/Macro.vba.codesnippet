@@ -1,5 +1,0 @@
-<div class="snippet" lang="vb" src="solidworks-api/geometry/store-restore-body/Macro.vba"><pre class="prettyprint lang-vb">Sub main()
-
-    UserForm1.Show vbModeless
-    
-End Sub</pre></div>

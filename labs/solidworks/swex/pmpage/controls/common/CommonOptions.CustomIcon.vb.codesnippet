@@ -1,2 +1,0 @@
-<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/CommonOptions.vb" regions="CustomIcon"><pre class="prettyprint lang-vb">&lt;ControlAttribution(GetType(Resources), NameOf(Resources.OffsetImage))&gt;
-Public Property Offset As Double</pre></div>

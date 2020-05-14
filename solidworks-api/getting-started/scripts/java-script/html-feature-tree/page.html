@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<input type="text" placeholder="Part File Path" id="filePath"></input>
+	<button type="button" onclick="RenderFeatureTree()">Get Feature Tree</button>
+
+	<p id="featTree">Feature Tree</p>
+
+	<script>
+		function RenderFeatureTree() {
+
+			var swApp = new ActiveXObject("SldWorks.Application");
+			var filePath = document.getElementById('filePath').value;
+
+			var docSpec = swApp.GetOpenDocSpec(filePath);
+			docSpec.ReadOnly = true;
+			docSpec.Silent = true;
+			var swModel = swApp.OpenDoc7(docSpec);
+
+			var swFeatMgr = swModel.FeatureManager;
+
+			var swRootFeatNode = swFeatMgr.GetFeatureTreeRootItem2(1);
+
+			var root = document.getElementById("featTree");
+
+			RenderFeatureNode(swRootFeatNode, root);
+
+			swApp.CloseDoc(swModel.GetTitle());
+		}
+
+		function RenderFeatureNode(featNode, parentElem) {
+
+			parentElem.innerText = featNode.Text
+
+			var ul = document.createElement("UL");
+			parentElem.appendChild(ul);
+
+			var swChildFeatNode = featNode.GetFirstChild()
+
+			while (swChildFeatNode !== null) {
+				var li = document.createElement("LI");
+				ul.appendChild(li);
+				RenderFeatureNode(swChildFeatNode, li);
+				swChildFeatNode = swChildFeatNode.GetNext();
+			}
+		}
+	</script>
+</body>
+</html>

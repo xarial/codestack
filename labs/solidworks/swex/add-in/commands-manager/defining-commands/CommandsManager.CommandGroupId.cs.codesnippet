@@ -1,8 +1,0 @@
-<div class="snippet" lang="cs" src="swex/csharp/addin/CommandsManager/CommandGroupId.cs"><pre class="prettyprint lang-cs">using CodeStack.SwEx.AddIn.Attributes;
-
-[CommandGroupInfo(2)]
-public enum CommandsE_e
-{
-    CommandE1,
-    CommandE2
-}</pre></div>

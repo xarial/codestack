@@ -1,9 +1,0 @@
-<div class="snippet" lang="vb" src="swex/vbnet/addin/CommandsManager/SubMenuAndSpacerAddIn.vb" regions="Spacer"><pre class="prettyprint lang-vb">&lt;Title("AddInEx Commands")&gt;
-Public Enum Commands_e
-
-    Command1
-
-    &lt;CommandSpacer&gt;
-    Command2
-
-End Enum</pre></div>

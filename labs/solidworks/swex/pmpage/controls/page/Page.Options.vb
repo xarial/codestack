@@ -1,0 +1,3 @@
+<PageOptions(swPropertyManagerPageOptions_e.swPropertyManagerOptions_CancelButton Or swPropertyManagerPageOptions_e.swPropertyManagerOptions_OkayButton)>
+Public Class DataModelPageOpts
+End Class

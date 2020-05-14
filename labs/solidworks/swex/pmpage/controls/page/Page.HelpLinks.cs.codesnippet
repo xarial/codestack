@@ -1,4 +1,0 @@
-<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/Page.cs" regions="HelpLinks"><pre class="prettyprint lang-cs">[Help("&lt;Help URL&gt;", "&lt;What's New URL&gt;")]
-public class DataModelHelpLinks
-{
-}</pre></div>

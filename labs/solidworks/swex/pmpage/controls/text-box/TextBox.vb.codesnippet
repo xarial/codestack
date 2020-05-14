@@ -1,4 +1,0 @@
-<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/TextBox.vb"><pre class="prettyprint lang-vb">Public Class TextBoxDataModel
-    Public Property Text As String
-End Class
-</pre></div>

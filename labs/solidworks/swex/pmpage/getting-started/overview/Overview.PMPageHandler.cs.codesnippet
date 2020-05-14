@@ -1,4 +1,0 @@
-<div class="snippet" lang="cs" src="swex/csharp/pmpage/Overview.cs" regions="PMPageHandler"><pre class="prettyprint lang-cs">[ComVisible(true)]
-public class MyPMPageHandler : PropertyManagerPageHandlerEx
-{
-}</pre></div>

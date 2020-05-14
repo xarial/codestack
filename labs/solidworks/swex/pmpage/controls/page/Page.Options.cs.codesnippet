@@ -1,5 +1,0 @@
-<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/Page.cs" regions="Options"><pre class="prettyprint lang-cs">[PageOptions(swPropertyManagerPageOptions_e.swPropertyManagerOptions_CancelButton
-| swPropertyManagerPageOptions_e.swPropertyManagerOptions_OkayButton)]
-public class DataModelPageOpts
-{
-}</pre></div>

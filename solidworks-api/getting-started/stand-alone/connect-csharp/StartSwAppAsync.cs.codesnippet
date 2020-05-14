@@ -1,8 +1,0 @@
-<div class="snippet" lang="cs" src="solidworks-api/getting-started/out-of-process/c-sharp/StartSwAppAsync.cs"><pre class="prettyprint lang-cs">static async System.Threading.Tasks.Task&lt;SolidWorks.Interop.sldworks.ISldWorks&gt; StartSwAppAsync(
-    string appPath, int timeoutSec = 10)
-{
-    return await System.Threading.Tasks.Task.Run(() =&gt;
-    {
-        return StartSwApp(appPath, timeoutSec);
-    });
-}</pre></div>

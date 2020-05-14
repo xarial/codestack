@@ -1,2 +1,0 @@
-<div class="snippet" lang="cs" src="swex/csharp/pmpage/Controls/Bitmap.cs" regions="Size" params="no-regions"><pre class="prettyprint lang-cs">[BitmapOptions(48, 48)]
-public Image BitmapLarge { get; set; } = Resources.BitmapSample;</pre></div>

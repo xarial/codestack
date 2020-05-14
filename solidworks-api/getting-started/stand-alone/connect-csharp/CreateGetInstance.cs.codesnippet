@@ -1,6 +1,0 @@
-<div class="snippet" lang="cs" src="solidworks-api/getting-started/out-of-process/c-sharp/CreateGetInstance.cs"><pre class="prettyprint lang-cs">var progId = "SldWorks.Application";
-
-var progType = System.Type.GetTypeFromProgID(progId);
-
-var app = System.Activator.CreateInstance(progType) as SolidWorks.Interop.sldworks.ISldWorks;
-app.Visible = true;</pre></div>

@@ -1,3 +1,0 @@
-<div class="snippet" lang="vb" src="swex/vbnet/pmpage/Controls/CommonOptions.vb" regions="StandardIcon"><pre class="prettyprint lang-vb">&lt;Description("Depth Value")&gt;
-   &lt;ControlAttribution(swControlBitmapLabelType_e.swBitmapLabel_Depth)&gt;
-   Public Property Depth As String</pre></div>

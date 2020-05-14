@@ -1,5 +1,0 @@
-<div class="snippet" lang="cs" src="swex/csharp/addin/CommandsManager/DefiningCommands.cs"><pre class="prettyprint lang-cs">public enum CommandsA_e
-{
-    CommandA1,
-    CommandA2
-}</pre></div>
