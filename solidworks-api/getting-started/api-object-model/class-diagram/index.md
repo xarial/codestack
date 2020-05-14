@@ -6,7 +6,7 @@ description: Detailed explanation of relationships (class diagram) between class
 image: /solidworks-api/getting-started/api-object-model/class-diagram/class-diagram.png
 labels: [hierarchy, classes, model]
 order: 1
-javascripts:
+scripts:
     - "scripts/svg-pan-zoom.min.js"
 ---
 Diagram below displays the relationship between interfaces in the SOLIDWORKS API Object model. This is not a complete class hierarchy rather the representation of the mostly commonly used methods and interfaces.
@@ -19,7 +19,21 @@ All boxes and arrows are clickable and will redirect for the information page ab
 
 ![Open Link](open-link.png){ width=250 }
 
-{% include_relative diagram.htmlsnippet %}
+<div id="container" style="width: 100%; height: 800px; border:1px solid black; ">
+    {% embed file-name: solidworks-api-class-diagram.svg %}
+</div>
+
+<script>
+var panZoom = svgPanZoom(document.getElementById('solidworks-api-class-diagram'), {
+        zoomEnabled: true,
+        controlIconsEnabled: true,
+        fit: true,
+        center: true,
+    });
+window.addEventListener("resize", function(){
+        panZoom.resize();
+    });
+</script>
 
 ## Legend
 

@@ -31,6 +31,6 @@ In order to enable presentation mode it is required to set the [IAssemblyDoc::En
 
 It is required to set this property to False after the animation is finished otherwise all SOLIDWORKS menues will be locked:
 
-{% include img.html src="locked-menu.png" alt="Locked menu in the assembly presentation mode" width=300 align="center" %}
+![Locked menu in the assembly presentation mode](locked-menu.png){ width=300 }
 
 {% code-snippet { file-name: Macro.vba } %}

@@ -26,4 +26,4 @@ When button clicked the *Description* variable is updated by concatenation of va
 
 ![Description is updated when button is clicked](button-update-variable.gif){ width=450 }
 
-{% code-snippet { file-name: add-in } %}
+{% code-snippet { file-name: add-in.cs } %}

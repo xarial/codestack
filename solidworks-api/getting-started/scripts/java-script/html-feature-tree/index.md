@@ -10,7 +10,7 @@ This example demonstrates how to load feature tree content of the SOLIDWORKS par
 
 * Create new html file
 * Copy paste the following code into the file
-{% code-snippet { file-name: page.html } %}
+{% code-snippet { file-name: page.html_, lang: html } %}
 
 * Save the file and open in in MS Internet Explorer
 ![HTML page with input fields](input-html-page.png)

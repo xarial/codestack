@@ -10,6 +10,6 @@ This section covers the most common symptoms of the errors in the SOLIDWORKS add
 
 Follow the corresponding link to get the detailed description of the issues, its cause and the steps to resolve the problem.
 
-{% assign pages = site.pages | where_exp: "p", "p.url contains page.url" | where_exp: "p", "p.url != page.url" %}
+{#% assign pages = site.pages | where_exp: "p", "p.url contains page.url" | where_exp: "p", "p.url != page.url" %}
 
-{% include catalogue.html pages=pages %}
+{#% include catalogue.html pages=pages %}

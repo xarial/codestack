@@ -8,6 +8,6 @@ labels: [add-in registration]
 ---
 This section contains the list of descriptions of symptoms, explanation of causes and suggestions for resolutions for the most common errors while registering or debugging add-ins for SOLIDWORKS PDM Professional.
 
-{% assign pages = site.pages | where_exp: "p", "p.url contains page.url" | where_exp: "p", "p.url != page.url" %}
+{#% assign pages = site.pages | where_exp: "p", "p.url contains page.url" | where_exp: "p", "p.url != page.url" %}
 
-{% include catalogue.html pages=pages %}
+{#% include catalogue.html pages=pages %}

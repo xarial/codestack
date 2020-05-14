@@ -68,6 +68,6 @@ Click link to get the detailed description of the issues, its cause and the step
 * Cannot open (for VSTA macros)
   * [Solution 1](/solidworks-api/troubleshooting/macros/run-vsta-macro-error/)
 
-{% assign pages = site.pages | where_exp: "p", "p.url contains page.url" | where_exp: "p", "p.url != page.url" %}
+{#% assign pages = site.pages | where_exp: "p", "p.url contains page.url" | where_exp: "p", "p.url != page.url" %}
 
-{% include catalogue.html pages=pages %}
+{#% include catalogue.html pages=pages %}

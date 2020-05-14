@@ -15,6 +15,6 @@ Most of the products are free and open source, driven by requests coming from th
 
 Add-ins are grouped by sections. Each add-in has an online documentation available.
 
-{% assign pages = site.pages | where_exp: "p", "p.categories contains 'sw-labs'" %}
+{#% assign pages = site.pages | where_exp: "p", "p.categories contains 'sw-labs'" %}
 
-{% include catalogue.html pages=pages %}
+{#% include catalogue.html pages=pages %}
