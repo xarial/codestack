@@ -6,7 +6,8 @@ description: Section contains examples and code snippets for rendering 3D graphi
 order: 3
 image: /images/codestack-snippet.png
 labels: [graphics, opengl, render]
-redirect_from:
+redirect-from:
+
   - /solidworks-api/adornment/open-gl/
 ---
 SOLIDWORKS model is utilizing 3D rendering engines (such as DirectX and OpenGL) to draw the geometry in the graphics area.

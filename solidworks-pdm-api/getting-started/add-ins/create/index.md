@@ -5,7 +5,8 @@ caption: How To Create SOLIDWORKS PDM Professional Add-In
 description: Detailed guide for creating add-in to SOLIDWORKS PDM Professional (formerly EPDM)
 image: /solidworks-pdm-api/getting-started/add-ins/create/new-addin.png
 labels: [article, com, epdm, example, IEdmAddIn5, pdm add-in, solidworks pdm api]
-redirect_from:
+redirect-from:
+
   - /2018/03/how-to-create-solidworks-pdm.html
 ---
 SOLIDWORKS PDM Professional (formerly SOLIDWORKS Enterprise PDM) exposes rich API libraries which enable 3rd parties to develop custom extensions for the system. The maximum level of integration can be achieved by developing the application as SOLIDWORKS PDM add-in. The detailed step-by-step instruction below will guide you through the process of creation an add-in from scratch.  

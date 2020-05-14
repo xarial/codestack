@@ -5,7 +5,8 @@ caption: Add Equation To Dimension
 description: Example will modify the value of the selected dimension and sets its value to be equal to the equation
 image: /solidworks-api/document/dimensions/add-equation/sw-dimension-equation.png
 labels: [dimension, solidworks api, equation, example]
-redirect_from:
+redirect-from:
+
   - /2018/03/solidworks-api-dimensions-add-equation-to-dim.html
 ---
 This example will modify the value of the selected dimension and sets its value to be equal to the equation using SOLIDWORKS API:

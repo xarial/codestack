@@ -7,7 +7,8 @@ image: /solidworks-api/data-storage/custom-properties/rename-configurations-base
 labels: [configuration, custom property, rename, solidworks api, utility]
 categories: sw-tools
 group: Custom Properties
-redirect_from:
+redirect-from:
+
   - /2018/04/solidworks-api-model-rename-configurations-based-on-custom-prp.html
 ---
 This macro renames all configurations of assembly or part into the value of the specified configuration specific custom property using SOLIDWORKS API.

@@ -6,7 +6,8 @@ description: Hosting options for SOLIDWORKS commands using SwEx.AddIn (command g
 image: /labs/solidworks/swex/add-in/commands-manager/hosting-commands/commands-toolbar.png
 toc_group_name: labs-solidworks-swex
 order: 2
-redirect_from:
+redirect-from:
+
   - /labs/solidworks/swex/add-in/commands-manager/adding-command-group/
   - /labs/solidworks/swex/add-in/commands-manager/tab-boxes/
   - /labs/solidworks/swex/add-in/commands-manager/adding-context-menu/

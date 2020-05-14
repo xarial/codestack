@@ -5,7 +5,8 @@ caption: 'Macros Troubleshooting: Issues And Resolutions'
 description: Overview and solutions for the most common errors of running the macros in SOLIDWORKS
 image: /images/codestack-snippet.png
 labels: [macro, not working, problem, solidworks api, troubleshooting, vba]
-redirect_from:
+redirect-from:
+
   - /2018/04/macros-troubleshooting-issues-and-resolutions.html
 ---
 SOLIDWORKS macro is the most common way to automate and extended the functionality of SOLIDWORKS via its API.

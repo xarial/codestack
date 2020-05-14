@@ -5,7 +5,8 @@ caption: Too Long VBA Macro Line
 description: Fixing the Compile error - Invalid outside procedure error when placing the long text into the VBA macro variable
 image: /solidworks-api/troubleshooting/macros/too-long-vba-macro-line/doc-mgr-key-too-long.gif
 labels: [macro, troubleshooting]
-redirect_from:
+redirect-from:
+
   - /2018/04/macro-troubleshooting-too-long-vba-macro-line.html
 ---
 ## Symptoms

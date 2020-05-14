@@ -5,7 +5,8 @@ caption: Crop Bodies
 description: Feature allows trimming surface or solid or multiple surfaces or solids using sketch or sketch contour in SOLIDWORKS part document
 image: /labs/solidworks/geometry-plus-plus/user-guide/crop-bodies/icon.png
 toc_group_name: labs-solidworks-geometry-plus-plus
-redirect_from:
+redirect-from:
+
   - /labs/solidworks/geometry-plus-plus/user-guide/region-trim-surface/
 ---
 This command allows trimming surface or solid (target bodies) using sketches or sketch regions (trimming tools).

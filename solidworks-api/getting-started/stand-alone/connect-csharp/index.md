@@ -6,7 +6,8 @@ description: Guide of how to connect to SOLIDWORKS application from out-of-proce
 order: 1
 image: /solidworks-api/getting-started/stand-alone/connect-csharp/proj-template.png
 labels: [activator, c#, create instance, example, getobject, rot, sdk, solidworks api]
-redirect_from:
+redirect-from:
+
   - /2018/03/create-c-stand-alone-application-for.html
 ---
 In this tutorial I will demonstrate how to connect to SOLIDWORKS application from out-of-process (a.k.a Stand-Alone) application (e.g. Windows Forms, Windows Console) using C# and Microsoft Visual Studio.  

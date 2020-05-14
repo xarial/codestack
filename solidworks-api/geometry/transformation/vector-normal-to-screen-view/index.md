@@ -5,7 +5,8 @@ caption: Create Vector Normal To Screen View
 description: Example demonstrates how to draw a sketch line which is perpendicular (normal) to the current view orientation relative to the screen
 image: /solidworks-api/geometry/transformation/vector-normal-to-screen-view/sw-view-screen-transformation.png
 labels: [example, normal, screen, solidworks api, transformation, view]
-redirect_from:
+redirect-from:
+
   - /2018/04/solidworks-api-transformation-create-vector-normal-to-screen-view.html
 ---
 This example demonstrates how to draw a sketch line which is perpendicular (normal) to the current view orientation relative to the screen using SOLIDWORKS API.

@@ -8,7 +8,8 @@ logo: /solidworks-api/document/assembly/components/show-selected-assembly-compon
 labels: [assembly, component, explorer, frame, macro, show in folder, solidworks, solidworks api, utility, vba]
 categories: sw-tools
 group: Assembly
-redirect_from:
+redirect-from:
+
   - /2018/03/show-selected-assembly-component-in.html
   - /solidworks-api/document/assembly/show-selected-assembly-component-window-folder
 ---

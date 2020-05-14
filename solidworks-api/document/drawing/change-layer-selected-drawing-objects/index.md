@@ -7,7 +7,8 @@ image: /solidworks-api/document/drawing/change-layer-selected-drawing-objects/sw
 labels: [drawing, layer, solidworks api, utility]
 categories: sw-tools
 group: Drawing
-redirect_from:
+redirect-from:
+
   - /2018/03/solidworks-api-drawing-change-layer-for-selected-objects.html
 ---
 This macro will move all selected objects in the drawing sheet to specified layer using SOLIDWORKS API.

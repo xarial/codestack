@@ -5,7 +5,8 @@ caption: Failed to Create Sketch Segments
 description: Fixing the inconsistency of sketch segments (line, arcs, etc) or sketch points creation in the macro
 image: /images/codestack-snippet.png
 labels: [macro, troubleshooting]
-redirect_from:
+redirect-from:
+
   - /2018/04/macro-troubleshooting-failed-create-sketch-segments.html
 ---
 ## Symptoms

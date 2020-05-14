@@ -8,7 +8,8 @@ logo: /solidworks-api/adornment/callouts/circular-edges-display-callouts/edge-ca
 labels: [adornment, callout, diameter, edge, example, macro, solidworks api, unit conversion]
 categories: sw-tools
 group: Model
-redirect_from:
+redirect-from:
+
   - /2018/03/display-callouts-with-diameters-for-all.html
 ---
 This macro will display the callouts with the diameter values of all selected circular edges in the 3D model using [ISelectionMgr::CreateCallout2](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iselectionmgr~createcallout2.html) SOLIDWORKS API method.

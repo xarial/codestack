@@ -5,7 +5,8 @@ caption: Component Transformation In The Assembly
 description: Example explains transformation of rotation and translation for components in the assembly
 image: /solidworks-api/geometry/transformation/assembly-component-transformation/comp-translation.png
 labels: [acos, angle, component, example, orientation, point, position, rotation, solidworks api, transform, translation, vector]
-redirect_from:
+redirect-from:
+
   - /2018/03/component-transformation-in-assembly.html
 ---
 SOLIDWORKS components are instances of models (parts or assemblies) in the another parent assembly. Component's position in its space is driven by its transformation (regardless if the component is constrained by mates or moved in the space by free drag-n-drop operation). Transformation consists of 3 components: translation, rotation and scale.

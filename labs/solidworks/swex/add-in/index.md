@@ -6,7 +6,8 @@ description: Advanced utilities for the development of powerful SOLIDWORKS add-i
 image: /labs/solidworks/swex/add-in/logo.png
 toc_group_name: labs-solidworks-swex
 order: 2
-redirect_from:
+redirect-from:
+
   - /labs/solidworks/dev-tools-addin
   - /labs/solidworks/dev-tools-addin/
 ---

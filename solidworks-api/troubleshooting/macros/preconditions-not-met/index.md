@@ -5,7 +5,8 @@ caption: Macro Preconditions Are Not Met
 description: Fixing the Run-time Error '91' or Run-time error '13' when running the macro
 image: /solidworks-api/troubleshooting/macros/preconditions-not-met/vba-error-type-mismatch.png
 labels: [macro, troubleshooting]
-redirect_from:
+redirect-from:
+
   - /2018/04/macro-troubleshooting-macros-precondition-are-not-met.html
 ---
 

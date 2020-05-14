@@ -7,7 +7,8 @@ image: /solidworks-api/document/drawing/bom-tables-update-referenced-configurati
 labels: [bom, default view, referenced configuration, solidworks api, utility, view]
 categories: sw-tools
 group: Drawing
-redirect_from:
+redirect-from:
+
   - /2018/03/update-referenced-configuration-from.html
 ---
 This macro will update the referenced configurations for all Bill of Materials (BOM) tables on the active drawing document using SOLIDWORKS API.

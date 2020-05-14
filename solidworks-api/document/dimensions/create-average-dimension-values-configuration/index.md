@@ -7,7 +7,8 @@ image: /solidworks-api/document/dimensions/create-average-dimension-values-confi
 labels: [average, configuration, dimension, solidworks api, tolerance, utility]
 categories: sw-tools
 group: Model
-redirect_from:
+redirect-from:
+
   - /2018/03/solidworks-api-dimensions-average-dims.html
 ---
 This macro will create child configuration where all the dimension will be set to average value based on the minimum and maximum values of the tolerance using SOLIDWORKS API.

@@ -5,7 +5,8 @@ caption: Via Clipboard
 description: Passing the custom string parameters to VBA macro from .NET application or another macro via clipboard
 image: /solidworks-api/getting-started/inter-process-communication/pass-parameters-to-vba-macro/via-clipboard/msg-box-macro-argument.png
 labels: [argument, clipboard, example, parameter, solidworks api]
-redirect_from:
+redirect-from:
+
   - /2018/04/pass-arguments-to-vba-macro-via-clipboard.html
 ---
 System clipboard allows to store different types of data (that includes but not limited to text, image, html etc.). As the simplest way, the custom argument may be written to the text buffer, but this will clear all the data already in the buffer (if any). This may introduce confusion and result in bad user experience as running the macro may overwrite the text already copied into the clipboard.  

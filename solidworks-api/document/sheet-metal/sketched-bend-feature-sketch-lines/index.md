@@ -5,7 +5,8 @@ caption: Get Sketch Lines For Sheet Metal Sketched Bend Feature
 description: Finds all straight lines (bends) of the sheet metal Sketched Bend feature and selects all segments
 image: /solidworks-api/document/sheet-metal/sketched-bend-feature-sketch-lines/sheet-metal-sketched-bend.png
 labels: [example, sheet metal, sketched bend, solidworks api]
-redirect_from:
+redirect-from:
+
   - /2018/03/solidworks-api-sheet-metal-get-sketched-bends.html
 ---
 Macro finds all straight lines (bends) of the sheet metal *Sketched Bend* feature and selects all segments using SOLIDWORKS API.

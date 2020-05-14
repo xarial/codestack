@@ -5,7 +5,8 @@ caption: Getting Started
 description: Instructions on getting started with SwEx.PMPage framework for developing data model driven SOLIDWORKS property manager pages (PMP) in C# and VB.NET
 toc_group_name: labs-solidworks-swex
 order: 1
-redirect_from:
+redirect-from:
+
   - /labs/solidworks/swex/pmpage/getting-started/whats-new
 ---
 Framework is supported by .NET language (i.e. C# and VB.NET) targeting .NET Framework 4.0 or newer.

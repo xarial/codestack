@@ -5,7 +5,8 @@ caption: Create A Rotational Transformation Based On Circular Pattern Data
 description: Example reads the transform of the selected circular pattern and creates a temp preview of the pattern of the specified seed body by applying the same transform as in the circular pattern
 image: /solidworks-api/geometry/transformation/circular-pattern-data-rotational-transformation/circ-pattern-emulator.png
 labels: [angle, axis, circular pattern, example, geometry, instances, rotation, transform]
-redirect_from:
+redirect-from:
+
   - /2018/03/create-rotational-transformation-based.html
 ---
 This SOLIDWORKS API example reads the transform of the selected circular pattern and creates a temp preview of the pattern of the specified seed body by applying the same transform as in the circular pattern.

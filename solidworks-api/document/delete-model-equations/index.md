@@ -8,7 +8,8 @@ logo: /solidworks-api/document/delete-model-equations/deleted-equations.svg
 labels: [api, clean, delete equations, equation, macro, utility, vba]
 categories: sw-tools
 group: Model
-redirect_from:
+redirect-from:
+
   - /2018/03/delete-all-equations-from-solidworks.html
 ---
 This macro removes all of the equations (or optionally only broken equations) in the active model (part or assembly) using SOLIDWORKS API.

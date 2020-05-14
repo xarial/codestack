@@ -5,7 +5,8 @@ caption: Merged Macro Does Not Work
 description: Fixing Run-time error '424' - Object required for macros which work correctly independently but failed to work when merged to one
 image: /solidworks-api/troubleshooting/macros/merged-macro-error/error-object-required.png
 labels: [macro, troubleshooting]
-redirect_from:
+redirect-from:
+
   - /2018/04/macro-troubleshooting-merged-macro-does-not-work.html
 ---
 ## Symptoms

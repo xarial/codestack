@@ -7,7 +7,8 @@ image: /solidworks-api/geometry/selected-edge-create-sketch-points/sketch-points
 labels: [curve, evaluate, geometry, macro, points, solidworks api, spline, utility, vba]
 categories: sw-tools
 group: Sketch
-redirect_from:
+redirect-from:
+
   - /2018/03/this-macro-creates-specified-number-of.html
 ---
 This macro creates specified number of sketch points on the selected edge in the 3D sketch using SOLIDWORKS API.
