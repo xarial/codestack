@@ -14,4 +14,4 @@ Attributes are lightweight features which can be attached to SOLIDWORKS entities
 
 {% include img.html src="two-attributes-features-tree.png" width=301 height=320 alt="Two attributes features created in the Feature Manager Tree using SOLIDWORKS API" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

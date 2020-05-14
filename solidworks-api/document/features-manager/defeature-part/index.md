@@ -19,4 +19,4 @@ Macro copies all visible solid and surface bodies, deletes all user features and
 **After:**
 {% include img.html src="part-feature-tree-defeatured.png" width=350 alt="Part with defeatured tree" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

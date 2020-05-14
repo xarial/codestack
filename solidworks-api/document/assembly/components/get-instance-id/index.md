@@ -13,4 +13,4 @@ This example extracts the component instance index from the component's name usi
 
 {% include img.html src="sw-component-properties.png" width=400 alt="Component instance id option in the component properties dialog" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

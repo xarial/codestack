@@ -22,4 +22,4 @@ Using the [Selecting Objects For API Only]({{ "/solidworks-api/document/selectio
 * Macro stops the execution
 * Continue the macro to hide the preview
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

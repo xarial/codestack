@@ -14,4 +14,4 @@ vFiles = GetFiles("D:\MyFolder", False) 'get only top level files from the MyFol
 vFiles = GetFiles("D:\MyFolder", True, "txt") 'get all files in .txt format from the MyFolder directory in the D drive
 ~~~
 
-{% include_relative GetFilesFromFolder.vba.codesnippet %}
+{% code-snippet { file-name: GetFilesFromFolder.vba } %}

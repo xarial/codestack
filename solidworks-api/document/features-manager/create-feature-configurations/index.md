@@ -38,4 +38,4 @@ As the result sub configurations for each bend are created representing the bend
 
 Refer the [Animate Configurations]({{ "solidworks-api/motion-study/animate-configurations/" | relative_url }}) for example macro to animate the configurations using SOLIDWORKS API.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

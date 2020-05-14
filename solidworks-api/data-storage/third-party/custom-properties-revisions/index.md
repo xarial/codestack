@@ -33,28 +33,28 @@ The snapshot of each revision is stored within the storages (streams) in 3rd par
 
 Structures to serialize properties and info
 
-{% include_relative PropertiesSnapshot.cs.codesnippet %}
+{% code-snippet { file-name: PropertiesSnapshot.cs } %}
 
 ### CustomPropertiesRevisionsAddIn.cs
 
 Add-in class which is handling the menu commands and reads and outputs the data
 
-{% include_relative CustomPropertiesRevisionsAddIn.cs.codesnippet %}
+{% code-snippet { file-name: CustomPropertiesRevisionsAddIn.cs } %}
 
 ### CustomPropertiesRevisions.cs
 
 Functions to access storage and store to serialize and deserialize the data
 
-{% include_relative CustomPropertiesRevisions.cs.codesnippet %}
+{% code-snippet { file-name: CustomPropertiesRevisions.cs } %}
 
 ### ComStorage.cs
 
 Wrapper around [IStorage](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istorage) interface which simplifies the access from .NET language
 
-{% include_relative ComStorage.cs.codesnippet %}
+{% code-snippet { file-name: ComStorage.cs } %}
 
 ### ComStream.cs
 
 Wrapper around [IStream](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istream) interface which simplifies the access from .NET language
 
-{% include_relative ComStream.cs.codesnippet %}
+{% code-snippet { file-name: ComStream.cs } %}

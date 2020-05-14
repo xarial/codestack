@@ -12,4 +12,4 @@ This example demonstrates how to modify the value of the named global variable i
 
 Change the name of the variable and the value constants in the head of the macro.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

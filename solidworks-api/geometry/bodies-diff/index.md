@@ -43,4 +43,4 @@ The following result is calculated by the macro:
 * As the result second part is displayed within the original part
 * Continue the macro (F5) to clear the preview
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -8,11 +8,11 @@ order: 4
 ---
 Dimensions is an additional source of input for macro feature. Dimensions can be defined in the following way:
 
-{% include_relative DimensionsParameters.cs.codesnippet %}
+{% code-snippet { file-name: DimensionsParameters.cs } %}
 
 It is required to arrange the dimensions after rebuild by overriding the [OnSetDimensions](https://docs.codestack.net/swex/macro-feature/html/M_CodeStack_SwEx_MacroFeature_MacroFeatureEx_1_OnSetDimensions.htm) method. Use [DimensionData::SetOrientation](https://docs.codestack.net/swex/macro-feature/html/M_CodeStack_SwEx_MacroFeature_Data_DimensionDataExtension_SetOrientation.htm) helper method to align the dimension.
 
-{% include_relative SetDimensions.cs.codesnippet %}
+{% code-snippet { file-name: SetDimensions.cs } %}
 
 *Origin* is a starting point of the dimension.
 
@@ -27,4 +27,4 @@ In some cases it might be required to pass the data from [OnRebuild](https://doc
 
 This could be possible by creating custom rebuild result and returning from the regeneration function.
 
-{% include_relative DimensionRegenerationData.cs.codesnippet %}
+{% code-snippet { file-name: DimensionRegenerationData.cs } %}

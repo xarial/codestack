@@ -37,7 +37,7 @@ enumVal = Val1
 
 >It is recommended to explicitly use the name of the enumerator. It makes the code more readable and resolves the potential ambiguity if another enumerator or variable has the same name.
 
-{% include_relative declaration.vba.codesnippet %}
+{% code-snippet { file-name: declaration.vba } %}
 
 ### Traversing enumerator values
 
@@ -47,7 +47,7 @@ Visual basic allows to declare the special enumerators which are not visible in 
 
 {% include img.html src="enum-invisible-elements.png" width=250 alt="Only visible enumerator values displayed in intelli-sense" align="center" %}
 
-{% include_relative traversing.vba.codesnippet %}
+{% code-snippet { file-name: traversing.vba } %}
 
 ### Flag enumerator (multiple options)
 
@@ -55,4 +55,4 @@ Enumerators can be useful to hold multiple options using bitmasks.
 
 This technique allows combining multiple options within one variable using plus + symbol. it is possible to identify if the specific option was set using **And** bitwise operator.
 
-{% include_relative flag.vba.codesnippet %}
+{% code-snippet { file-name: flag.vba } %}

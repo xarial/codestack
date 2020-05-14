@@ -63,4 +63,4 @@ There are several special types of feature which can be used for renaming
 * _RightPlane
 * _TopPlane
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

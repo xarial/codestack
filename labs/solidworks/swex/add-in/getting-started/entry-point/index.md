@@ -16,11 +16,11 @@ In order to register the SOLIDWORKS add-in with SwEx framework it is required:
 
 ### C\#
 
-{% include_relative EntryPoint.cs.codesnippet %}
+{% code-snippet { file-name: EntryPoint.cs } %}
 
 ### VB.NET
 
-{% include_relative EntryPoint.vb.codesnippet %}
+{% code-snippet { file-name: EntryPoint.vb } %}
 
 ## OnConnect
 

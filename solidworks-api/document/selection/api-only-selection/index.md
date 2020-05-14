@@ -18,4 +18,4 @@ To run the macro
 
 As the result the extrude is created with the specified direction up to specified surface and all the original user selections are preserved.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

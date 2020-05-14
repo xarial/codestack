@@ -30,4 +30,4 @@ Sub Init(Optional dummy As Variant = Empty)
 End Sub
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

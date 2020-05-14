@@ -22,4 +22,4 @@ To run this example
 
 {% include img.html src="offset-wire-body.png" width=450 alt="Offset wire body" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

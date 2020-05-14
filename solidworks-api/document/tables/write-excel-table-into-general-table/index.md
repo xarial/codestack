@@ -19,4 +19,4 @@ This macro can be embedded into the [Macro Feature]({{ "solidworks-api/document/
 
 {% include img.html src="excel-table-to-sw-general-table.png" width=500 alt="Excel table with purchase order data imported into SOLIDWORKS General Table" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -21,4 +21,4 @@ By default all entities inserted using the [ISketchManager](http://help.solidwor
 Set [ISketchManager::AddToDB](http://help.solidworks.com/2016/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isketchmanager~addtodb.html) property to *True* before the entities creation and restore the original value once the job is finished.
 Setting this option to true will bypass the creation of entities via User Interface rather add the data directly to the model storage. This may also improve performance while creating the entities.
   
-{% include_relative add-to-db.vba.codesnippet %}
+{% code-snippet { file-name: add-to-db.vba } %}

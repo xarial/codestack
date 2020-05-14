@@ -23,4 +23,4 @@ Const PRP_NAME As String = "MyProperty"
 * Run the macro. Macro will find the material of active part and read the property value from the material database file
 * Macro will create/update the generic custom property of the file to the corresponding value of the custom property from material
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

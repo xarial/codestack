@@ -28,4 +28,4 @@ File wil be saved in the same directory as original part or assembly document.
 Const EXPORT_NAME_TEMPLATE As String = "ExportFile_[title]_[sketch].dxf"
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

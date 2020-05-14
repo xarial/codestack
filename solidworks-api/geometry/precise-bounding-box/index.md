@@ -40,8 +40,8 @@ As a summary on avarage it would be possible to calculate more than 60000 approx
 
 ### Calculating precise bounding box via extreme points
 
-{% include_relative GetPreciseBoundingBox.vba.codesnippet %}
+{% code-snippet { file-name: GetPreciseBoundingBox.vba } %}
 
 ### Calculating approximate bounding box
 
-{% include_relative GetBoundingBox.vba.codesnippet %}
+{% code-snippet { file-name: GetBoundingBox.vba } %}

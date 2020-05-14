@@ -20,4 +20,4 @@ The list of files, ids and the locked by user information is displayed in the co
 
 {% include img.html src="console-output.png" width=450 alt="Output of command line" align="center" %}
 
-{% include_relative Module1.vb.codesnippet %}
+{% code-snippet { file-name: Module1.vb } %}

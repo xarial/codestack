@@ -16,4 +16,4 @@ This VBA macro finds all bodies of the selected drawing view (including sheet me
 
 Macro below extracts bodies and finds the materials assigned to them in both cases (for regular parts and for sheet metal patterns). The result is output to Immediate window of VBA editor.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

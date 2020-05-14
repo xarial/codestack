@@ -21,4 +21,4 @@ The result and available options are equal to the dimension property manager pag
 
 {% include img.html src="dimension-fractions.png" alt="Override units option in the Dimension proeprty manager page" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -25,4 +25,4 @@ The following code example will find the extreme points of the selected body in 
 
 {% include img.html src="body-extreme-sketch-points.png" width=320 height=217 alt="Sketch points created in the extreme directions of the body" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

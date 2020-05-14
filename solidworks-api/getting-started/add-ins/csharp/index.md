@@ -55,7 +55,7 @@ This would allow to start SOLIDWORKS and automatically attach the debugger from 
 
 * Copy paste the code for the add-in as shown below and compile the project
 
-{% include_relative add-in.cs.codesnippet %}
+{% code-snippet { file-name: add-in.cs } %}
 
 * When compiled the following warning can be displayed.
 

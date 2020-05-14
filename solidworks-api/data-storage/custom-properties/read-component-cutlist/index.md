@@ -36,4 +36,4 @@ CS-02-1 (A)
         QUANTITY: 1
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -16,4 +16,4 @@ Const PRP_NAME As String = "MyProperty" 'Property name to add
 Const PRP_VAL As String = "MyValue" 'Property value to assign
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

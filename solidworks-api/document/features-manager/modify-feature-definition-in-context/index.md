@@ -32,4 +32,4 @@ const string EXTRUDE_FEAT_NAME = "Boss-Extrude1";
 const double EXTRUDE_DEPTH = 0.02;
 ~~~
 
-{% include_relative Macro.cs.codesnippet %}
+{% code-snippet { file-name: Macro.cs } %}

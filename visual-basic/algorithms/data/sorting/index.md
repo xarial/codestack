@@ -22,4 +22,4 @@ Dim vInputArr as Variant 'array of strings
 vSortedArr = BubbleSort(vInputArr, False) 'sorting in descending order
 ~~~
 
-{% include_relative logical-bubble-sort.vba.codesnippet %}
+{% code-snippet { file-name: logical-bubble-sort.vba } %}

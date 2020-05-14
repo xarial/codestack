@@ -25,7 +25,7 @@ When macro starts SOLIDWORKS tries to find the entry point (the subroutine (sub)
 
 If the macro contains multiple such subs this will provide the ambiguity and any sub can be an entry point.
 
-{% include_relative get-features-count.vba.codesnippet %}
+{% code-snippet { file-name: get-features-count.vba } %}
 
 The entry sub is critical as it usually contains initialisation routines and if this is not executed in the correct order the macro logic is compromised.
 
@@ -40,6 +40,6 @@ Sub AnotherProc(dummy) 'dummy parameter not in use
 End Sub
 ~~~
 
-{% include_relative get-features-count-fix.vba.codesnippet %}
+{% code-snippet { file-name: get-features-count-fix.vba } %}
 
 * [Assign the macro to the button]({{ "/solidworks-api/getting-started/macros/macro-buttons" | relative_url }}). In this case it will be required to forcibly select the entry point sub so no ambiguity in case of multiple parameterless subs exist in the macro

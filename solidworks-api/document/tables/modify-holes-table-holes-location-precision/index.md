@@ -12,4 +12,4 @@ This example demonstrates how to change the precision for the hole locations in 
 
 {% include img.html src="sw-hole-table.png" width=320 height=95 alt="Holes Table" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

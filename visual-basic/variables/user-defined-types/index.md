@@ -39,7 +39,7 @@ Refer [Classes]({{ "visual-basic/classes" | relative_url }}) article for more in
 Code example below shows how to declare and assign enumerator, type and class.
 
 *Class declaration*
-{% include_relative example-MyClass-class-module.vba.codesnippet %}
+{% code-snippet { file-name: example-MyClass-class-module.vba } %}
 
 *Module*
-{% include_relative example.vba.codesnippet %}
+{% code-snippet { file-name: example.vba } %}

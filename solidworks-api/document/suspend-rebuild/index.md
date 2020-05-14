@@ -19,8 +19,8 @@ For example dimension changes or mates will not resolve until **Exit Suspend Reb
 
 **Main Module**
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 **User Form**
 
-{% include_relative FreezeRebuildForm.vba.codesnippet %}
+{% code-snippet { file-name: FreezeRebuildForm.vba } %}

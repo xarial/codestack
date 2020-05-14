@@ -38,8 +38,8 @@ To hide the feature use the [following macro](/solidworks-api/document/features-
 
 ## Macro Module
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 ## FeaturesForm User Form
 
-{% include_relative FeaturesForm.vba.codesnippet %}
+{% code-snippet { file-name: FeaturesForm.vba } %}

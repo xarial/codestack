@@ -26,4 +26,4 @@ Const SUFFIX As String = "_new"
 * Select components
 * Run macro. All components are replaced
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

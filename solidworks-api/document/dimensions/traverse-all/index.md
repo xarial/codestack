@@ -20,4 +20,4 @@ RI@Sketch11=0.008
 
 > The macro will exclude all duplicate dimensions as in some cases (e.g. weldment features) the same dimension may be present in the sketch and in the structural member feature as the same time
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

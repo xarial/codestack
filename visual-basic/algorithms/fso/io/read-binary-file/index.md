@@ -15,4 +15,4 @@ content = ReadByteArrFromFile("C:\MyFolder\MyFile.dat")
 
 Code will generate an exception if file doesn't exist or cannot be read.
 
-{% include_relative ReadBinary.vba.codesnippet %}
+{% code-snippet { file-name: ReadBinary.vba } %}

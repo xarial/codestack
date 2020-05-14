@@ -10,4 +10,4 @@ labels: [edit material]
 
 This VBA macro opens the 'Edit Material' dialog to assign or change the material of active SOLIDWORKS part document using the combination of SOLIDWORKS API and Windows API.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

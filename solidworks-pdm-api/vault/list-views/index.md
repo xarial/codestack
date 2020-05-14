@@ -12,4 +12,4 @@ This example demonstrates how to list all available vault views and their paths 
 
 [IEdmVault8::GetVaultViews](http://help.solidworks.com/2018/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmvault8~getvaultviews.html) SOLIDWORKS PDM API is used to list the information about all available PDM vaults. Alternatively this information can be retrieved from the Registry.
 
-{% include_relative Console.cs.codesnippet %}
+{% code-snippet { file-name: Console.cs } %}

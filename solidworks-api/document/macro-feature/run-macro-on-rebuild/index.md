@@ -45,4 +45,4 @@ In order to avoid embedding of the macro change the following constant to *False
 Const EMBED_MACRO As Boolean = False
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

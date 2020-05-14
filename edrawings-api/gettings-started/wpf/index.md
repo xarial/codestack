@@ -22,7 +22,7 @@ Create a wrapper for the eDrawings host Windows Forms control
 
 ### eDrawingHost.cs
 
-{% include_relative eDrawingHost.cs.codesnippet %}
+{% code-snippet { file-name: eDrawingHost.cs } %}
 
 Create new WPF User Control which will host eDrawings and can be placed on other WPF controls or WPF windows
 
@@ -34,11 +34,11 @@ The solution tree will be similar to the one below.
 
 There will be no logic or additional markup in the XAML of the control and all will be implemented in the code behind
 
-{% include_relative eDrawingsHostControl.xaml.codesnippet %}
+{% code-snippet { file-name: eDrawingsHostControl.xaml } %}
 
 ### eDrawingsHostControl.xaml.cs
 
-{% include_relative eDrawingsHostControl.xaml.cs.codesnippet %}
+{% code-snippet { file-name: eDrawingsHostControl.xaml.cs } %}
 
 In this example the control defines the dependency property *FilePath* which can be bound and represent the path to the SOLIDWORKS file to be opened in the eDrawings
 
@@ -46,7 +46,7 @@ In this example the control defines the dependency property *FilePath* which can
 
 Add the following markup to the MainWindow. It defines the text box control whose *Text* property is bound to *FilePath* dependency property of WPF eDrawing control. Which means that the file will be loaded immediately once the value in the text box is changed.
 
-{% include_relative MainWindow.xaml.codesnippet %}
+{% code-snippet { file-name: MainWindow.xaml } %}
 
 Change the path to file in the text box to see the file loaded into the WPF form.
 

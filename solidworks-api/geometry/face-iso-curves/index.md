@@ -33,4 +33,4 @@ Const CREATE_SKETCH As Boolean = True
 
 **Macro:**
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

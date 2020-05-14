@@ -47,10 +47,10 @@ PDF files are created as per settings. PDF files are named after the source file
 
 ## EDrawingsHost.vb
 
-{% include_relative EDrawingsHost.vb.codesnippet %}
+{% code-snippet { file-name: EDrawingsHost.vb } %}
 
 ## Module1.vb
 
-{% include_relative Module1.vb.codesnippet %}
+{% code-snippet { file-name: Module1.vb } %}
 
 Source code is available on [GitHub](https://github.com/codestackdev/solidworks-api-examples/tree/master/edrawings-api/BatchExportPdf)

@@ -14,4 +14,4 @@ group: Developers
 
 The following code example allows to output all assignable interfaces for the selected feature's definition and specific feature. The result is output to the *Output* window of VSTA editor.
 
-{% include_relative Macro.cs.codesnippet %}
+{% code-snippet { file-name: Macro.cs } %}

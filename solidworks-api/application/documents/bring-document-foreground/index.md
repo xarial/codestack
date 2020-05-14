@@ -17,4 +17,4 @@ Document can be opened in 2 states (visible or hidden). Hidden document are usua
 
 [Download sample files](SimpleBox.zip)
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -14,4 +14,4 @@ This example demonstrates how to traverse nodes in the Feature Manager Tree usin
 
 This macro can be useful if it is required to get the exact features hierarchy and order or get the nodes of the system features (like history, design journal etc.)
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

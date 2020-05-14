@@ -29,7 +29,7 @@ The solution consists of 2 parts:
 * Specify the name to save this file
 * Copy the following code into the macro
 
-{% include_relative InsertWatermark.vba.codesnippet %}
+{% code-snippet { file-name: InsertWatermark.vba } %}
 
 ## Setting up watermark macro
 
@@ -50,7 +50,7 @@ Const SECURITY_NOTE = "www.codestack.net"
 
 * Copy the following code into the macro
 
-{% include_relative Watermark.vba.codesnippet %}
+{% code-snippet { file-name: Watermark.vba } %}
 
 ### Modifying the parameters
 

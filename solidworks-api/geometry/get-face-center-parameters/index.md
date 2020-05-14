@@ -12,4 +12,4 @@ This example demonstrate how to find the parameters (point coordinate and normal
 
 Center is found as the average of minimum and maximum values of U and V parameters using the [ISurface::Evaluate](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isurface~evaluate.html) SOLIDWORKS API method.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

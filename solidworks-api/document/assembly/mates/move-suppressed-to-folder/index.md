@@ -20,4 +20,4 @@ To configure the folder name, change the value of the *FOLDER_NAME* variable:
 Const FOLDER_NAME As String = "<Folder Name>"
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

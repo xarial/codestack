@@ -14,4 +14,4 @@ This example demonstrates how to resize and move the design table OLE object in 
 
 In this example an existing design table element will be moved to the right on the distance equals to object's width
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

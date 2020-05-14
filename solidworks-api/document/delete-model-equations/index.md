@@ -23,4 +23,4 @@ Set the *DELETE_BROKEN_ONLY* option to *True* in order to only remove the broken
 
 **IMPORTANT: Use this macro on your own risk. This macro modifies your data (deletes all equations) please backup your file before running this macro**
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

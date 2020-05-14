@@ -14,4 +14,4 @@ This executes the *Select Suppressed* command of *Component Selection* menu
 
 This is preferable option of selecting all suppressed components over the [traversing components](/solidworks-api/document/assembly/components/traversing-tree) one-by-one due to the performance benefits.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

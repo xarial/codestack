@@ -20,4 +20,4 @@ This example will work with both 2D and 3D sketch.
 
 {% include img.html src="sw-sketch-line-relation.png" width=320 height=229 alt="Relations in sketch line" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

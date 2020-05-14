@@ -11,7 +11,7 @@ This example demonstrates how to extract mass properties from the specified file
 * Create a text file and name it as *get-mass-prps.vbs*
 * Copy-paste the following code into the file
 
-{% include_relative script.vbs.codesnippet %}
+{% code-snippet { file-name: script.vbs } %}
 
 * Save the file
 * Double click to run the script

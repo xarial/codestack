@@ -18,4 +18,4 @@ This macro increments the numeric value of the notes using SOLIDWORKS API. This 
 * It is required to add the text tag to the note in order to increment its value. Follow [Add Tag To Selected Note]({{ "solidworks-api/document/notes/tag-selected-note" | relative_url}}) example of instructions for adding the tag to the note.
 * By default the numeric value is incremented by 1, but this can be changed by modifying the value of *increment* parameter of the *IncrementNoteValue* function.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

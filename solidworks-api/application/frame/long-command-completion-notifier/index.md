@@ -18,10 +18,10 @@ This can be useful when working with large models as it is possible to switch th
 
 * Create new macro and add the following code
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 * Specify the command minimum delay in seconds by changing the value of *MIN_DELAY* constant
 * Create new class module and name it *CommandsListener*. Paste the following code into the class module:
 * Start the macro. To automatically start the macro with every SOLIDWORKS session follow the [Run SOLIDWORKS macro automatically on application start]({{ "/solidworks-api/getting-started/macros/run-macro-on-solidworks-start/" | relative_url }}) article.
 
-{% include_relative CommandsListener.vba.codesnippet %}
+{% code-snippet { file-name: CommandsListener.vba } %}

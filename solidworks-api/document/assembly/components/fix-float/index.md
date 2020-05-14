@@ -18,4 +18,4 @@ As the result of running this macro components will be changed to the following 
 
 {% include img.html src="component-fix-result.png" alt="Result of running the macro" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -29,8 +29,8 @@ Scrip arguments:
 
 ## set-permissions.ps1
 
-{% include_relative set-permissions.ps1.codesnippet %}
+{% code-snippet { file-name: set-permissions.ps1 } %}
 
 ## set-permissions.cmd
 
-{% include_relative set-permissions.cmd.codesnippet %}
+{% code-snippet { file-name: set-permissions.cmd } %}

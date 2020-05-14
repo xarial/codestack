@@ -15,10 +15,10 @@ This PowerShell script allows exporting the SOLIDWORKS file into the specified f
 * Create two files and paste the code from the below snippets
 
 ### export-file.ps1
-{% include_relative export-file.ps1.codesnippet %}
+{% code-snippet { file-name: export-file.ps1 } %}
 
 ### export-file.cmd
-{% include_relative export-file.cmd.codesnippet %}
+{% code-snippet { file-name: export-file.cmd } %}
 
 * Copy the *SolidWorks.Interop.sldworks.dll* into the folder where the above scripts are created. PowerShell script is based on .NET Framework 2.0 so the SOLIDWORKS interop must target this framework. The dll can be found at: **SOLIDWORKS Installation Folder**\api\redist\CLR2\SolidWorks.Interop.sldworks.dll
 

@@ -17,4 +17,4 @@ Attribute ca be hidden by setting the corresponding flag in the [IAttributeDef::
 Macro stops the execution once the attribute is created. At this stage the attribute feature is invisible.
 When execution of macro continues (F5 or run is clicked) the feature is set to visible.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

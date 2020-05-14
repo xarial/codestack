@@ -14,4 +14,4 @@ Cut list names for sheet metal bodies can be used to store important information
 
 {% include img.html src="renamed-flat-pattern-drawing-view.png" width=250 alt="Drawing view renamed after the cut-list" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

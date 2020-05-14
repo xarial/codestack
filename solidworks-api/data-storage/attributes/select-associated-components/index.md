@@ -16,8 +16,8 @@ Macro will stop once the active assembly is closed.
 
 *Macro module*
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 *EventsListener class*
 
-{% include_relative EventsListenerClass.vba.codesnippet %}
+{% code-snippet { file-name: EventsListenerClass.vba } %}

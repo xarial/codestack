@@ -28,4 +28,4 @@ It is not possible to set the access modifiers or add any functions or procedure
 
 {% include img.html src="statement-invalid-type-block.png" width=350 alt="Compile Error: Statement invalid inside Type block" align="center" %}
 
-{% include_relative declaration-usage.vba.codesnippet %}
+{% code-snippet { file-name: declaration-usage.vba } %}

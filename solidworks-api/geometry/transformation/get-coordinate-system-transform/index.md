@@ -14,4 +14,4 @@ The comma separated results are output to the immediate (ctrl+G) window of VBA e
 
 {% include img.html src="maxtrix-output-immediate.png" width=350 alt="Matrix output to the immediate window of VBA editor" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

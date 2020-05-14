@@ -15,4 +15,4 @@ This macro utilizes SOLIDWORKS API and closes all opened documents except of an 
 
 If document is dirty (i.e. has any unsaved changes) the macro will prompt user to specify the action (save, do not save or cancel) for the closing documents. Otherwise the document will be closed silently.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

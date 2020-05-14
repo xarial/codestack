@@ -32,7 +32,7 @@ By default eDrawings API doesn't provide the .NET control to be hosted on the Wi
 
 ### eDrawingHost.cs
 
-{% include_relative eDrawingHost.cs.codesnippet %}
+{% code-snippet { file-name: eDrawingHost.cs } %}
 
 > eDrawings control is not loaded immediately and calling the [AxHost::GetOcx](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.axhost.getocx) directly after the constructor will result in null reference. Calling this method when control is not fully loaded might result into the deadlock.
 
@@ -50,6 +50,6 @@ Add the following code to the form code behind. Set the path to the SOLIDWORKS f
 
 ### MainForm.cs
 
-{% include_relative MainForm.cs.codesnippet %}
+{% code-snippet { file-name: MainForm.cs } %}
 
 Source code is available on [GitHub](https://github.com/codestackdev/solidworks-api-examples/tree/master/edrawings-api/eDrawingsWinFormsHost)

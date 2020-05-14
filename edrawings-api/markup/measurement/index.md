@@ -17,6 +17,6 @@ This example is based on [Hosting eDrawings control in Windows Forms](/edrawings
 * Measurement is automatically enabled
 * Select any entity or entities and click *Capture Measurement*. The measurement value is appended into a text box
 
-{% include_relative MainForm.cs.codesnippet %}
+{% code-snippet { file-name: MainForm.cs } %}
 
 Source code is available on [GitHub](https://github.com/codestackdev/solidworks-api-examples/tree/master/edrawings-api/MeasurementSurveying).

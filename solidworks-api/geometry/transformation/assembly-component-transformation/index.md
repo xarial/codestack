@@ -18,7 +18,7 @@ In the example below the component is moved in space Along X, Y and Z coordinate
 
 {% include img.html src="comp-translation.png" width=640 alt="Component translational transform" align="center" %}
 
-{% include_relative translation.vba.codesnippet %}
+{% code-snippet { file-name: translation.vba } %}
 
 The following line will be output to the Watch window as the result of running the macro on [this sample model](transform-translation.SLDASM):
 
@@ -30,7 +30,7 @@ Now let's rotate the component and try to find the rotation angles. This compone
 
 {% include img.html src="comp-rotation.png" width=640 alt="Component rotational transform" align="center" %}
 
-{% include_relative rotation.vba.codesnippet %}
+{% code-snippet { file-name: rotation.vba } %}
 
 Running the code above will output the following results for [this sample model](transform-rotation.SLDASM):
 
@@ -57,7 +57,7 @@ To demonstrate the issue consider the following scenario:
 * Macro will stop at several points. Read the comment indicating the state
 * On the last step the transformation assigned to the floating component was overridden by the transformation in the Configuration A driven by mates.
 
-{% include_relative preserve.vba.codesnippet %}
+{% code-snippet { file-name: preserve.vba } %}
 
 In order to preserve the transformation it is required to [fix](/solidworks-api/document/assembly/components/fix-float/) the component in the Configuration B.
 

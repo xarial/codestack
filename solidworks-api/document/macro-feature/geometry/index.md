@@ -48,4 +48,4 @@ Creates wire bodies from all edges of the box geometry. Wire bodies are edges an
 
 {% include img.html src="wire-body.png" width=350 alt="Macro feature generates wire body" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

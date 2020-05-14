@@ -77,4 +77,4 @@ As the result 2 new files will be generated: Part1_Default_4_replacement.sldprt 
 
 {% include img.html src="purged-components-result2.png" alt="Second results of components purge" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

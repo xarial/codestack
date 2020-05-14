@@ -26,4 +26,4 @@ Example of curve file:
 
 Curve text file must be saved in the same folder where the SOLIDWORKS file is saved and must be named as [Model Title]_[Feature Name].sldcrv. For example if curve feature is named *Curve1* and resides in the SOLIDWORKS file named Part1.sldprt, the curve text file must be named *Part1_Curve1.sldcrv*.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -38,10 +38,10 @@ End Sub
 
 Entry point which starts events monitoring and handles the code which needs to be run once the save event arrives.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 ## SaveEventsHandler Class Module
 
 Class which handles SOLIDWORKS API save notifications
 
-{% include_relative SaveEventsHandler.vba.codesnippet %}
+{% code-snippet { file-name: SaveEventsHandler.vba } %}

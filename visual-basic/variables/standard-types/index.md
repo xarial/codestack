@@ -80,4 +80,4 @@ Allocates 16 bytes of storage. The function of converting to Variant is *CVar*
 
 The code example below demonstrates declaration and conversion of various standard data types.
 
-{% include_relative example.vba.codesnippet %}
+{% code-snippet { file-name: example.vba } %}

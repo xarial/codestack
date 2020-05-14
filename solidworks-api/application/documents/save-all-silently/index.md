@@ -24,4 +24,4 @@ The result of the operation is displayed in the status bar.
 
 This macro can be used as a part of background integration where modal dialogs should not be displayed.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

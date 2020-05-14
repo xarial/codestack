@@ -21,4 +21,4 @@ This VBA macro creates a bounding box sketch based on SOLIDWORKS 3D bounding box
 * Generated bounding box is automatically updated when original bounding box changes (after the rebuild)
     * It is required for the original bounding box to be visible to update the derived bounding box
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

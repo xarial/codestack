@@ -10,4 +10,4 @@ labels: [frame, xpress, driveworks, dfm, flo, simulation]
 
 This example demonstrates how to run the xpress products (DriveWorks, DFM, Simulation, Flo) using SOLIDWORKS API. This is equivalent to clicking the menu command.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

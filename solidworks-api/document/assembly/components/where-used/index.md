@@ -37,8 +37,8 @@ Place the code into corresponding modules
 
 ### Macro
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 ### WhereUsedForm
 
-{% include_relative WhereUsedForm.vba.codesnippet %}
+{% code-snippet { file-name: WhereUsedForm.vba } %}

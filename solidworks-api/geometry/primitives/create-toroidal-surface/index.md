@@ -14,4 +14,4 @@ Geometry is created using the [IModeler::CreateToroidalSurface](http://help.soli
 
 Run the macro and temp body is displayed. Body can be rotated and selected but it is not presented in the feature tree. Continue the macro execution to destroy the body.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

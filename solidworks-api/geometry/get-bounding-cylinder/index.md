@@ -21,18 +21,18 @@ Macro can be downloaded at [this link](GetBoundingCylinderBin.zip). Unzip the ma
 
 ### SolidWorksMacro.cs
 This is an entry point of VSTA macro. In this module the input parameters are processed and the output body is created
-{% include_relative SolidWorksMacro.cs.codesnippet %}
+{% code-snippet { file-name: SolidWorksMacro.cs } %}
 
 ### CylinderParams.cs
 This structure represents the details of the bounding cylinder
-{% include_relative CylinderParams.cs.codesnippet %}
+{% code-snippet { file-name: CylinderParams.cs } %}
 
 ### BodyHelper.cs
 This utility class allows to find the orientation of the body and fit it into the cylinder
-{% include_relative BodyHelper.cs.codesnippet %}
+{% code-snippet { file-name: BodyHelper.cs } %}
 
 ### BodyHelper.cs
 This module provides utility functions for working with vectors, transformations and points
-{% include_relative MathHelper.cs.codesnippet %}
+{% code-snippet { file-name: MathHelper.cs } %}
 
 This macro requires a reference to the [Smallest enclosing circle - Library (C#)](https://www.nayuki.io/page/smallest-enclosing-circle) by Project Nayuki.

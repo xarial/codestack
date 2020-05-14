@@ -23,10 +23,10 @@ The following example provides similar functionality to SOLIDWORKS [Create Selec
 
 <details open>
 <summary>VBA Example</summary>
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 </details>
 
 <details open>
 <summary>C# Example</summary>
-{% include_relative vsta-macro.cs.codesnippet %}
+{% code-snippet { file-name: vsta-macro.cs } %}
 </details>

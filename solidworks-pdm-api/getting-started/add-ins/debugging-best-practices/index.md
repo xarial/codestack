@@ -45,7 +45,7 @@ The limitations are:
 
 Much better approach is to use the [PDM Vault Browser ](https://github.com/codestackdev/pdm-vault-browser/releases/tag/initial)tool. Source code is available on [GitHub](https://github.com/codestackdev/pdm-vault-browser). Source code is provided below (must be compiled in .NET Framework 4.0 otherwise the debug symbols will not be loaded):
 
-{% include_relative SwPdmVaultBrowser.cs.codesnippet %}
+{% code-snippet { file-name: SwPdmVaultBrowser.cs } %}
 
 This tool is a simple File Browse Dialog with multi-selection option enabled. The tool also takes a command line argument with the full path to the folder in the PDM vault. So when started it will automatically browse to the specified folder:
 
@@ -62,13 +62,13 @@ Examples of PDM add-ins. Please read the [How To Create SOLIDWORKS PDM Professio
 <details>
 <summary>C# Example</summary>
 
-{% include_relative PdmHelperSampleAddIn.cs.codesnippet %}
+{% code-snippet { file-name: PdmHelperSampleAddIn.cs } %}
 
 </details>
 
 <details>
 <summary>VB.NET Example</summary>
 
-{% include_relative PdmHelperSampleAddIn.vb.codesnippet %}
+{% code-snippet { file-name: PdmHelperSampleAddIn.vb } %}
 
 </details>

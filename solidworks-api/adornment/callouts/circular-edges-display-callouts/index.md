@@ -29,7 +29,7 @@ Create new macro and copy the following code into the macro's module:
 
 {% include img.html src="macro-module.png" width=640 height=230 alt="Macro module in VBA editor" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 Create new class module and name it *HoleDiamCalloutHandler.*  
 
@@ -37,4 +37,4 @@ Create new class module and name it *HoleDiamCalloutHandler.*
 
 Copy the following code in there:
 
-{% include_relative HoleDiamCalloutHandler.vba.codesnippet %}
+{% code-snippet { file-name: HoleDiamCalloutHandler.vba } %}

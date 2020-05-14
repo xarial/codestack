@@ -20,8 +20,8 @@ The code example below provides a workaround for this issue and enables handling
 
 Entry point of the program
 
-{% include_relative Program.cs.codesnippet %}
+{% code-snippet { file-name: Program.cs } %}
 
 ## CustomPropertiesEventsHandler.cs
 
-{% include_relative CustomPropertiesEventsHandler.cs.codesnippet %}
+{% code-snippet { file-name: CustomPropertiesEventsHandler.cs } %}

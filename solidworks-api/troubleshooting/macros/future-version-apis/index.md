@@ -39,8 +39,8 @@ Usually SOLIDWORKS names the method with an index, e.g. OpenDoc4, OpenDoc5, Open
 
 Example macro which is using the API added to SOLIDWORKS 2017
 
-{% include_relative suppress-component-sw2017.vba.codesnippet %}
+{% code-snippet { file-name: suppress-component-sw2017.vba } %}
 
 Modified macro which enables compatibility with SOLIDWORKS 2005 onwards
 
-{% include_relative suppress-component-sw2005.vba.codesnippet %}
+{% code-snippet { file-name: suppress-component-sw2005.vba } %}

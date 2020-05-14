@@ -14,7 +14,7 @@ Alternative way is to write the data into the custom buffer with unique name so 
 
 Let's start with the 'target' macro which will be called from the different 'master' macro.  
 
-{% include_relative read-argument-from-vba.vba.codesnippet %}
+{% code-snippet { file-name: read-argument-from-vba.vba } %}
 
 In the example above argument value passed from the 'master' macro will be extracted and displayed to the user in the message box in the 'target' macro:
 
@@ -22,7 +22,7 @@ In the example above argument value passed from the 'master' macro will be extra
 
 The helper class reads the buffer value from the **__SwMacroArgs__** format. This is a custom name which is known to both 'master' macro (which will write the value of argument) and the 'target' macro (which will read the value). This can be renamed to any other custom name if needed.
 
-{% include_relative argument-helper-get-argument.vba.codesnippet %}
+{% code-snippet { file-name: argument-helper-get-argument.vba } %}
 
 In order to call the macro and pass the argument it is required to set the buffer value for **__SwMacroArgs__** format as the unicode string. Below are examples which demonstrate how to do this in different programming languages
 
@@ -31,25 +31,25 @@ In order to call the macro and pass the argument it is required to set the buffe
 
 Argument Helper Module
 
-{% include_relative argument-helper-set-argument.vba.codesnippet %}
+{% code-snippet { file-name: argument-helper-set-argument.vba } %}
 
 Macro
 
-{% include_relative call-macro-with-argument-vba.vba.codesnippet %}
+{% code-snippet { file-name: call-macro-with-argument-vba.vba } %}
 
 </details>
 
 <details>
 <summary>C#</summary>
 
-{% include_relative call-macro-with-arguments-csharp.cs.codesnippet %}
+{% code-snippet { file-name: call-macro-with-arguments-csharp.cs } %}
 
 </details>
 
 <details>
 <summary>VB.NET</summary>
 
-{% include_relative call-macro-with-arguments-vb.net.vb.codesnippet %}
+{% code-snippet { file-name: call-macro-with-arguments-vb.net.vb } %}
 
 </details>
 

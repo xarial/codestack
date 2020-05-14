@@ -34,4 +34,4 @@ Dim vFeats As Variant
 vFeats = GetAllFeatures(swModel, "", "Sk*")'return all features whose names starts with Sk
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

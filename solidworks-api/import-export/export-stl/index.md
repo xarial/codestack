@@ -49,4 +49,4 @@ or
 * Browse the location of the output STL file
 * File is exported
 
-{% include_relative Macro.cs.codesnippet %}
+{% code-snippet { file-name: Macro.cs } %}

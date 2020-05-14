@@ -18,4 +18,4 @@ This SOLIDWORKS API example reads the transform of the selected circular pattern
 The preview will be displayed using temporarily bodies which will be destroyed immediately when macro resumes execution (i.e. F5 or run).
 * There won't be any temp features created or removed during the run of this macro
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

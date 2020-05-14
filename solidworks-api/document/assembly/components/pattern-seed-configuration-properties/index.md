@@ -17,4 +17,4 @@ This macro example demonstrates how to change the following configuration specif
 
 In the instance component of the pattern (e.g. Sketch Driven Pattern)
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

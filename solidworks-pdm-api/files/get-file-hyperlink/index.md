@@ -13,10 +13,10 @@ SOLIDWORKS PDM API is used to extract the data required to form the conisio url:
 Create 2 script files and paste the code below:
 
 ### get-url.ps1
-{% include_relative get-url.ps1.codesnippet %}
+{% code-snippet { file-name: get-url.ps1 } %}
 
 ### get-url.cmd
-{% include_relative get-url.cmd.codesnippet %}
+{% code-snippet { file-name: get-url.cmd } %}
 
 Call the command line with the following parameters
 

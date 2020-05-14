@@ -16,4 +16,4 @@ Specify the name of the table by modifying the constant at the beginning of the 
 Const TABLE_NAME As String = "MyTable"
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

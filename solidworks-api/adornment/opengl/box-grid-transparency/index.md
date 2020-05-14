@@ -33,16 +33,16 @@ Source code can be downloaded from [GitHub](https://github.com/codestackdev/soli
 
 This the add-in entry point. [SwEx.AddIn](/labs/solidworks/swex/add-in/) framework is used to manage documents lifecycle by providing the wrapper class.
 
-{% include_relative AddIn.cs.codesnippet %}
+{% code-snippet { file-name: AddIn.cs } %}
 
 ## OpenGlDocumentHandler.cs
 
 This is a handler class for each model document which subscribes to the OpenGL Buffer Swap notification provided by SOLIDWORKS and performs the calculation of coordinates of cubes based on the input parameters and renders in the model's graphics view.
 
-{% include_relative OpenGlDocumentHandler.cs.codesnippet %}
+{% code-snippet { file-name: OpenGlDocumentHandler.cs } %}
 
 ## OpenGL.cs
 
 List of imports for OpenGL functions.
 
-{% include_relative OpenGL.cs.codesnippet %}
+{% code-snippet { file-name: OpenGL.cs } %}

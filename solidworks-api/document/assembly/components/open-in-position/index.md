@@ -15,4 +15,4 @@ This macro emulates the *Open Part In Position* command in SOLIDWORKS toolbar, b
 
 {% include img.html src="open-part-in-position-command.png" width=250 alt="Open part in position command" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

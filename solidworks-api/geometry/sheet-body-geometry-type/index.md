@@ -18,4 +18,4 @@ There are 3 types of faces in SOLIDWORKS bodies:
 
 The example below identifies the type of the selected sheet body using SOLIDWORKS API. If the body is of open geometry (contains open shell faces) or closed geometry (no open shell faces). The closed geometry sheet body can be converted to a solid body.  
 
-{% include_relative SolidWorksMacro.cs.codesnippet %}
+{% code-snippet { file-name: SolidWorksMacro.cs } %}

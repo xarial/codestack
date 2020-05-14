@@ -20,4 +20,4 @@ This macro finds and replaces the text in the dimension names of the selected fe
 1. Specify the text to find and the text to replace. Only include short dimension name.
 For example the dimension D1 in Sketch1 will have a short name *D1* and full name *D1@Sketch1.* Specifying *D* in find field and *B* in replace field will result in dimension to be renamed to *B1@Sketch1*.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

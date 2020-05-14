@@ -14,4 +14,4 @@ Open part document and run the macro. Curve will be previewed and macro stops. C
 
 Follow the [Get B-Spline Curve Parameters](/solidworks-api/geometry/get-bspline-parameters/) example for a guide of extracting the required data from the selected edge.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

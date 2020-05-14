@@ -20,4 +20,4 @@ Select any face and run the macro. The resulting surface is displayed in the gra
 
 {% include img.html src="untrimmed-surface.png" width=450 alt="Input surface and untrimmed result" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

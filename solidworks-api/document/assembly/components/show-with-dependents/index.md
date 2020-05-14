@@ -12,4 +12,4 @@ This example demonstrates how to call the 'Show With Dependents' command for com
 
 Macro will call the command for the selected component or for the assembly (if no components selected).
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

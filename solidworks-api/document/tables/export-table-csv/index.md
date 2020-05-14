@@ -49,4 +49,4 @@ Const OUT_FILE_PATH As String = ""
 ~~~
 
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

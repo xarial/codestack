@@ -14,4 +14,4 @@ This macro copies all the file specific properties into the properties of the ac
 
 {% include img.html src="file-specific-custom-properties.png" width=640 alt="Properties in the Custom tab of the file" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

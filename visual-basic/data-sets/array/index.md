@@ -55,7 +55,7 @@ In order to retrieve the upper and lower boundaries of the array **UBound** and 
 
 {% include img.html src="subscript-out-of-range.png" width=350 alt="Run-time error 9: subscript out of range while reading the upper boundary of uninitialized array" align="center" %}
 
-{% include_relative initialize.vba.codesnippet %}
+{% code-snippet { file-name: initialize.vba } %}
 
 ### Filling array with data
 
@@ -67,7 +67,7 @@ arr(<INDEX>) = 10 'changing the value of the variable at <INDEX>
 Debug.Pring arr(<INDEX>) 'reading the value of the variable at <INDEX>
 ~~~
 
-{% include_relative fill.vba.codesnippet %}
+{% code-snippet { file-name: fill.vba } %}
 
 ### Resizing array
 
@@ -86,13 +86,13 @@ Attempt of resizing the already dimensioned array will result in the compile err
 
 **ReDim** keyword allows to resize the array. In this case all existing values will be cleared.
 
-{% include_relative resize-clear.vba.codesnippet %}
+{% code-snippet { file-name: resize-clear.vba } %}
 
 #### Preserving existing values
 
 In order to keep the existing values of the array it is required to use **ReDim Preserve** keyword.
 
-{% include_relative resize-preserve.vba.codesnippet %}
+{% code-snippet { file-name: resize-preserve.vba } %}
 
 ### Two dimensional array
 
@@ -104,6 +104,6 @@ Dim table(<ROWS COUNT>, <COLUMNS COUNT>) As String
 
 > 2-dimensional array can be resized, but if it is required to preserve the values only second (column) dimension can be resized.
 
-{% include_relative two-dimensional.vba.codesnippet %}
+{% code-snippet { file-name: two-dimensional.vba } %}
 
 {% include img.html src="two-dimensional-array.png" Height=400 alt="Values of two-dimensional array (matrixArr) in the Watch window from the code above" align="center" %}

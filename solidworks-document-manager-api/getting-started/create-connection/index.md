@@ -72,27 +72,27 @@ Run Windows Command line with administrative right with the following command
 
 Add the reference to swdocumentmgr.dll. The dll can be usually found at C:\Program Files\Common Files\SOLIDWORKS Shared. Document manager license key might be too long so VBA editor will not be able to compile the macro. Refer the [Too Long VBA Macro Line](/solidworks-api/troubleshooting/macros/too-long-vba-macro-line/) troubleshooting article for the solution of this issue.
 
-{% include_relative init-doc-mgr.vba.codesnippet %}
+{% code-snippet { file-name: init-doc-mgr.vba } %}
 
 ### C#
 
 Add the reference to SolidWorks.Interop.swdocumentmgr.dll. The dll can be usually found at C:\Program Files\Common Files\SOLIDWORKS Shared.
 Uncheck the Embed Interop Types option in the reference properties.
 
-{% include_relative init-doc-mgr.cs.codesnippet %}
+{% code-snippet { file-name: init-doc-mgr.cs } %}
 
 ### VB.NET
 
 Add the reference to SolidWorks.Interop.swdocumentmgr.dll. The dll can be usually found at C:\Program Files\Common Files\SOLIDWORKS Shared.
 Uncheck the Embed Interop Types option in the reference properties.
 
-{% include_relative init-doc-mgr.vb.codesnippet %}
+{% code-snippet { file-name: init-doc-mgr.vb } %}
 
 ### C++
 
 Add the path to swdocumentmgr.dll (usually C:\Program Files\Common Files\SOLIDWORKS Shared) into the Project Properties->C/C++->General->Additional Include Directories
 
-{% include_relative init-doc-mgr.cpp.codesnippet %}
+{% code-snippet { file-name: init-doc-mgr.cpp } %}
 
 ## References
 

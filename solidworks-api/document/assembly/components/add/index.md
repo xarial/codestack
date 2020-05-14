@@ -16,4 +16,4 @@ This example Demonstrates 2 different ways to add component into the assembly tr
 
 [Download Example Files](parts.zip)
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

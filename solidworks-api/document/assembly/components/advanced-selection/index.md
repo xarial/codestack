@@ -46,4 +46,4 @@ Const CRITERIA As Integer = Criteria_e.Envelope 'Only envelope components will b
 
 Modify the filter in the macro as required.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

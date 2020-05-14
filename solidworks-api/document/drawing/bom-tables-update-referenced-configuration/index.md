@@ -21,4 +21,4 @@ This macro will find all BOM tables and update their referenced configurations b
 
 {% include img.html src="use-custom-prps-from-view-sheet-property.png" width=400 height=165 alt="Use custom properties value from model option in the sheet properties" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -15,4 +15,4 @@ This example will break all external references for all components in the active
 
 {% include img.html src="break-all-external-references.png" width=640 alt="Command to break all external references" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

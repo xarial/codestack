@@ -16,8 +16,8 @@ The listener is detached as soon as active part is closed.
 
 *Macro Module*
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 *EventListener Class*
 
-{% include_relative EventListenerClass.vba.codesnippet %}
+{% code-snippet { file-name: EventListenerClass.vba } %}

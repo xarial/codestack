@@ -162,7 +162,7 @@ Alternatively files can be added automatically using the harvest tool so it is n
 
 *Transforms* property allows to define the xslt transformation to exclude any files (e.g. pdb or xml) which are not required to be a part of the installer:
 
-{% include_relative DirectoryHeatTransform.xslt.codesnippet %}
+{% code-snippet { file-name: DirectoryHeatTransform.xslt } %}
 
 ## Registering COM components
 
@@ -258,7 +258,7 @@ When new version of binaries are ready it is required to change the **Version** 
 
 ## Template example of Product.wxs file
 
-{% include_relative Product.wxs.codesnippet %}
+{% code-snippet { file-name: Product.wxs } %}
 
 ## Example projects
 

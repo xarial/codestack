@@ -32,4 +32,4 @@ Const PAUSE_TIME As Double = 2
 
 Refer the [Suppress Features In New Configurations]({{ "solidworks-api/document/features-manager/create-feature-configurations/" | relative_url }}) for a macro to create configurations from features.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

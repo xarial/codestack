@@ -39,10 +39,10 @@ As the result the stored watermark is displayed in the console application
 
 Console application containing the routing for reading and adding watermark
 
-{% include_relative Program.cs.codesnippet %}
+{% code-snippet { file-name: Program.cs } %}
 
 ### ComStream.cs
 
 Wrapper around [IStream](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istream) interface which simplifies the access from .NET language
 
-{% include_relative ComStream.cs.codesnippet %}
+{% code-snippet { file-name: ComStream.cs } %}

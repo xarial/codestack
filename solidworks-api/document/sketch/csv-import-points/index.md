@@ -27,4 +27,4 @@ Coordinate of points are specified in meters.
 * Run the macro. Specify the full path to CSV file in the displayed prompt window
 * Click OK. Points are created in the active sketch
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

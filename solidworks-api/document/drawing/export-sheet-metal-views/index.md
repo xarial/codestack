@@ -32,4 +32,4 @@ Const OUT_EXT As String = ".dxf"
 * Export to the specified file
 
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

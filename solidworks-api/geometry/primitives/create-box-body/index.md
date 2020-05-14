@@ -12,4 +12,4 @@ This VBA example demonstrates how to create and display temp body by providing t
 
 Macro stops the execution and displays the body. Continue macro execution to destroy the temp body.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -42,7 +42,7 @@ Now we can add the code to connect to SOLIDWORKS instance.
 Probably the most common and quick way to connect to COM server is using the [CreateObject](https://msdn.microsoft.com/en-us/library/microsoft.visualbasic.interaction.createobject(v=vs.110).aspx) method.
 Alternative methods are: [Activator::CreateInstance](https://msdn.microsoft.com/en-us/library/system.activator.createinstance(v=vs.110).aspx) and [GetObject](https://msdn.microsoft.com/en-us/library/microsoft.visualbasic.interaction.getobject(v=vs.110).aspx). Note, that [GetObject](https://msdn.microsoft.com/en-us/library/microsoft.visualbasic.interaction.getobject(v=vs.110).aspx) will create new instance if it cannot connect to the active session.  
 
-{% include_relative CreateGetInstance.vb.codesnippet %}
+{% code-snippet { file-name: CreateGetInstance.vb } %}
   
 I would recommend to use [Activator::CreateInstance](https://msdn.microsoft.com/en-us/library/system.activator.createinstance(v=vs.110).aspx) as this allows to connect to the session in 2 steps:  
 
@@ -54,14 +54,14 @@ Please read the [Connect To SOLIDWORKS From Stand-Alone Application](/solidworks
 
 Alternatively you can connect to active (already started) session of SOLIDWORKS using the [Marshal::GetActiveObject](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.marshal.getactiveobject(v=vs.110).aspx) method. Unlike calling the [GetObject](https://msdn.microsoft.com/en-us/library/microsoft.visualbasic.interaction.getobject(v=vs.110).aspx), this approach will ensure that  there will be no new instances of SOLIDWORKS created and will throw an exception if there is no running SOLIDWORKS session to connect to.
 
-{% include_relative GetInstance.vb.codesnippet %}
+{% code-snippet { file-name: GetInstance.vb } %}
 
 ## Getting the running instance via ROT
 
 In order to connect to already running specific session of SOLIDWORKS or to be able to create multiple sessions you can use Running Object Table APIs.
 Please read the [Connect To SOLIDWORKS From Stand-Alone Application](/solidworks-api/getting-started/stand-alone#method-b---running-object-table-rot) article for more details about this approach.
 
-{% include_relative CreateInstance.vb.codesnippet %}
+{% code-snippet { file-name: CreateInstance.vb } %}
 
 In the above example new session of SOLIDWORKS is launched by starting new process from SOLIDWORKS application installation path.
 *StartSwApp* function requires the full path to **sldworks.exe** as first parameter and optional timeout in seconds as second parameter.
@@ -69,4 +69,4 @@ Timeout will ensure that the application won't be locked in case process failed 
 
 You can also make this call asynchronous and display some progress indication in your application while SOLIDWORKS process is starting:
 
-{% include_relative StartSwAppAsync.vb.codesnippet %}
+{% code-snippet { file-name: StartSwAppAsync.vb } %}

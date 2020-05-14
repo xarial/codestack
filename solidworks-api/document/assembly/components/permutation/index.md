@@ -34,5 +34,5 @@ Const PERMUTE_ASSEMBLY_CONF As Boolean = True 'True to include assembly configur
 * Original states of the components will not be restored as the result of running the macro. It is recommended to open the assembly as read only
 * Total number of files equals to {number of configuration of component 1}x{number of configuration of component 2}x...x{number of configuration of component n}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 

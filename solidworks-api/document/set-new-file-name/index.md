@@ -44,4 +44,4 @@ There are 2 modes for the macro which can be set via *AUTO_SAVE* constant
 Const AUTO_SAVE As Boolean = True
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

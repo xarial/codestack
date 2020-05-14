@@ -20,4 +20,4 @@ Macro can be configured by changing the values of the constant at the beginning 
 Const EPS As Double = 0.0000000001 'arcs radius comparison tolerance
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

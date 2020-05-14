@@ -25,4 +25,4 @@ To test this scenario
 * Run the macro. Notice that pointer to *swModel* is null and file open call failed
 * Uncomment the *GetLocalCopyFromVault* and run macro again. Now the model is successfully opened as the file has been cached locally.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

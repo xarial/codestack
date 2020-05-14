@@ -20,11 +20,11 @@ This script doesn't require SOLIDWORKS to be installed and doesn't consume SOLID
 
 ### export-parasolid.ps1
 
-{% include_relative export-parasolid.ps1.codesnippet %}
+{% code-snippet { file-name: export-parasolid.ps1 } %}
 
 ### export-parasolid.cmd
 
-{% include_relative export-parasolid.cmd.codesnippet %}
+{% code-snippet { file-name: export-parasolid.cmd } %}
 
 * Copy the *SolidWorks.Interop.swdocumentmgr.dll* into the folder where the above scripts are created. PowerShell script is based on .NET Framework 2.0 so the SOLIDWORKS Document Manager interop must target this framework. The dll can be found at: **SOLIDWORKS Installation Folder**\api\redist\CLR2\SolidWorks.Interop.swdocumentmgr.dll
 

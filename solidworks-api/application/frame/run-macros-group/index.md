@@ -16,7 +16,7 @@ This enables the possibility to run multiple macros from within one macro. This 
 
 The following example allows to run several SOLIDWORKS macros within one macro.
 
-{% include_relative Macro-simple.vba.codesnippet %}
+{% code-snippet { file-name: Macro-simple.vba } %}
 
 Change the arguments of **RunMacro** call to call your own group of macros.
 
@@ -61,4 +61,4 @@ Const MACROS_PATH As String = " "
 
 All macros of the folder where this master macro is placed will be run. This option is useful as it is only required to copy the master macro to the location of the macro library to run without the need to modify it.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

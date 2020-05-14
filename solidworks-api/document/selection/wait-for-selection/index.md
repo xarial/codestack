@@ -27,7 +27,7 @@ This approach loops the selected objects and blocks the current thread until the
 
 {% include img.html src="selection-stop-execution.png" width=550 alt="VBA macro stops once specified object is selected" align="center" %}
 
-{% include_relative MacroBlocking.vba.codesnippet %}
+{% code-snippet { file-name: MacroBlocking.vba } %}
 
 ## Handling the selection event
 
@@ -44,8 +44,8 @@ This approach uses the SOLIDWORKS notifications to handle the selection. This is
 
 ### Macro Module
 
-{% include_relative MacroEvent.vba.codesnippet %}
+{% code-snippet { file-name: MacroEvent.vba } %}
 
 ### EventsListener Class Module
 
-{% include_relative EventsListener.vba.codesnippet %}
+{% code-snippet { file-name: EventsListener.vba } %}

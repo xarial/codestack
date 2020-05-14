@@ -14,4 +14,4 @@ Macro finds all straight lines (bends) of the sheet metal *Sketched Bend* featur
 
 There is no direct SOLIDWORKS API method of getting the bends, however bends are represented as sketch segments in the sketch owned by sheet metal feature. So in order to find bends it is required to find this sketch and parse its content.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

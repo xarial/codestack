@@ -24,7 +24,7 @@ Just copy the content of the generated file and paste into the macro module to e
 
 {% include img.html src="array-text-declaration.png" alt="Array declared as text" align="center" %}
 
-{% include_relative write-array-declaration-to-file.vba.codesnippet %}
+{% code-snippet { file-name: write-array-declaration-to-file.vba } %}
 
 This approach however has a limitation as the size of the file would be much bigger than the size of the array (e.g. array of size 500 KB would generate the file of about 10 MB). This results into the *'Out of memory'* error in Visual Basic
 
@@ -66,4 +66,4 @@ As the result the data is written to the file in the following format:
 
 To use this, copy the content into the module and call the *GetBase64Buffer* function from the code which will return the base 64 encoded array which can be [decoded](/visual-basic/algorithms/data/encoding/base64#decode).
 
-{% include_relative write-array-declaration-to-file-base64.vba.codesnippet %}
+{% code-snippet { file-name: write-array-declaration-to-file-base64.vba } %}

@@ -115,7 +115,7 @@ End Function
 
 Example below demonstrates cases where the optional parameters can be used.
 
-{% include_relative optional-parameters.vba.codesnippet %}
+{% code-snippet { file-name: optional-parameters.vba } %}
 
 ### Terminating function and subroutine
 
@@ -123,4 +123,4 @@ Function and subroutine can be terminated and control returned to the caller at 
 
 Example below demonstrates different cases of using functions and subroutines.
 
-{% include_relative declaration-calling.vba.codesnippet %}
+{% code-snippet { file-name: declaration-calling.vba } %}

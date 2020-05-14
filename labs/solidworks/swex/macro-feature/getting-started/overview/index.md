@@ -20,7 +20,7 @@ Macro feature class must be com visible.
 
 It is recommended to explicitly assign guid and prog id for the macro feature.
 
-{% include_relative DefiningMacroFeature.cs.codesnippet %}
+{% code-snippet { file-name: DefiningMacroFeature.cs } %}
 
 ## Icon
 
@@ -34,7 +34,7 @@ Macro feature is a COM object which means it needs to be registered in order for
 
 User can specify the custom message to be displayed in the *What's Wrong* dialog via *provider* parameter of [OptionsAttribute](https://docs.codestack.net/swex/macro-feature/html/T_CodeStack_SwEx_MacroFeature_Attributes_OptionsAttribute.htm). Specified message will be displayedafter the predefined *Add-in not found. Please contact*
 
-{% include_relative UnregisteredMacroFeature.cs.codesnippet %}
+{% code-snippet { file-name: UnregisteredMacroFeature.cs } %}
 
 {% include img.html src="unregistered-macro-feature.png" width=650 alt="Rebuild error message for unregistered macro feature" align="center" %}
 

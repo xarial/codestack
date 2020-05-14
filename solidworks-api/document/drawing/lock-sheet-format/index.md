@@ -82,12 +82,12 @@ If Command = 859 Or Command = 342 Or Command = 589 Then
 
 ### Macro Module
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 ### SheetFormatEditorHandler Class
 
-{% include_relative SheetFormatEditorHandler.vba.codesnippet %}
+{% code-snippet { file-name: SheetFormatEditorHandler.vba } %}
 
 ### PasswordBox User Form
 
-{% include_relative PasswordBox.vba.codesnippet %}
+{% code-snippet { file-name: PasswordBox.vba } %}

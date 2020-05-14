@@ -16,4 +16,4 @@ Slot profile is built in the *GetSlotProfileBody* function as per the parameters
 
 {% include img.html src="slot-parameters.png" height=250 alt="Parameters of the slot" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

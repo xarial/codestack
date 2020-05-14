@@ -10,4 +10,4 @@ labels: [selection, sketch segment, sketch point]
 
 This example demonstrates how to select all sketch segments and sketch points in the active sketch using the direct ::Select method in SOLIDWORKS API.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

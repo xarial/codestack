@@ -26,4 +26,4 @@ When button clicked the *Description* variable is updated by concatenation of va
 
 {% include img.html src="button-update-variable.gif" width=450 alt="Description is updated when button is clicked" align="center" %}
 
-{% include_relative add-in.codesnippet %}
+{% code-snippet { file-name: add-in } %}

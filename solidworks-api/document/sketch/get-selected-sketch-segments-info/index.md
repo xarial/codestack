@@ -16,4 +16,4 @@ Information is output to the immediate window of VBA editor.
 
 {% include img.html src="printed-sketch-segments-info.png" width=350 alt="Sketch segments specific information is printed to Immediate window of VBA editor" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

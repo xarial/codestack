@@ -18,4 +18,4 @@ Macro recursively traverses files and sub folders and outputs the file or folder
 
 This macro can traverse the tree even if it is not [cached locally]({{ "/solidworks-pdm-api/files/local-cache/" | relative_url }})
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

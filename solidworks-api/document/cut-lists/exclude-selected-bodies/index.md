@@ -21,4 +21,4 @@ It is also possible to select face, edge or vertex of the body to be excluded.
 
 {% include img.html src="filter-bodies-selection.png" width=500 alt="Bodies to exclude from cut list selected using selection filters" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

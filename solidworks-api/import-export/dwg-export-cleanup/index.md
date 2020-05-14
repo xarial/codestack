@@ -25,10 +25,10 @@ Const OUT_FILE_NAME As String = "D:\sample.dxf" 'output file name for the export
 
 ## Macro Module
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 ## ExportEventsListener Class module
 
 Create new [class module](/visual-basic/classes/) with name **ExportEventsListener** and add the code below
 
-{% include_relative ExportEventsListener.vba.codesnippet %}
+{% code-snippet { file-name: ExportEventsListener.vba } %}

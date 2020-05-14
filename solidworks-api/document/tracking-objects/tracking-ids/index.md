@@ -36,4 +36,4 @@ Macro will perform the following steps
 
 {% include img.html src="merged-body.png" width=250 alt="Copy of the single body created as the result of a merge operation with two faces selected" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

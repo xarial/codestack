@@ -26,4 +26,4 @@ Pasting the line longer than the limit from the buffer will cause compilation er
 
 Split the line into multiple lines (no longer than 1023 symbols in single line) and use "string1" & _ "string2" to concatenate the lines.  
 
-{% include_relative connect-to-dm-long-key.vba.codesnippet %}
+{% code-snippet { file-name: connect-to-dm-long-key.vba } %}

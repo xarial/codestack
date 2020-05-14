@@ -50,7 +50,7 @@ All keys from the dictionary can be retrieved using the **Keys** property.
 
 All values from the dictionary can be retrieved using the **Values** property.
 
-{% include_relative add-edit-traverse.vba.codesnippet %}
+{% code-snippet { file-name: add-edit-traverse.vba } %}
 
 ### Key compare mode
 
@@ -67,7 +67,7 @@ Mode can only be changed for an empty dictionary (without values), otherwise the
 
 {% include img.html src="change-compare-mode-invalid-procedure.png" width=400 alt="Run-time error '5': Invalid procedure call or argument when changing the compare mode of dictionary objects with elements" align="center" %}
 
-{% include_relative exists-compare.vba.codesnippet %}
+{% code-snippet { file-name: exists-compare.vba } %}
 
 ### Remove elements
 
@@ -79,4 +79,4 @@ Any element can be removed from the dictionary either by key or by 0-based index
 
 **RemoveAll** method allows to clear the dictionary and remove all items.
 
-{% include_relative remove.vba.codesnippet %}
+{% code-snippet { file-name: remove.vba } %}

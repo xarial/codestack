@@ -56,8 +56,8 @@ Command would indicate the type of the button (minimized toolbar, menu, macro bu
 
 **Macro**
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 **CommandsMonitorForm**
 
-{% include_relative CommandsMonitorForm.vba.codesnippet %}
+{% code-snippet { file-name: CommandsMonitorForm.vba } %}

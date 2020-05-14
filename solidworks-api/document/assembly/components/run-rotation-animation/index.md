@@ -33,4 +33,4 @@ It is required to set this property to False after the animation is finished oth
 
 {% include img.html src="locked-menu.png" alt="Locked menu in the assembly presentation mode" width=300 align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

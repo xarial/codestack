@@ -50,4 +50,4 @@ Cut List Properties
 
 Specify the full path of the file in the *FILE_PATH* constant.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

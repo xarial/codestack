@@ -14,4 +14,4 @@ Macro adds the *ApprovedDate* custom property of type *Date* and sets the value 
 
 > By some reasons custom property field type is ignored and defaulted to Text when assigned to cut-list item
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

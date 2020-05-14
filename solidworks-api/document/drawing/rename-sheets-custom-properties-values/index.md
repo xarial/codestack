@@ -26,4 +26,4 @@ Macro will try to read the configuration specific property and if the property i
 
 {% include img.html src="use-custom-prps-from-view-sheet-property.png" width=400 alt="Use custom properties value from model option in the sheet properties" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

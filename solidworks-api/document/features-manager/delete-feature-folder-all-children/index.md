@@ -23,4 +23,4 @@ The macro below allows to delete all of the features in the selected folder in o
 
 Macro can optionally display the confirmation dialog with the list of features about to be deleted
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -61,10 +61,10 @@ Output files are created as per settings.
 
 ## EDrawingsHost.cs
 
-{% include_relative EDrawingsHost.cs.codesnippet %}
+{% code-snippet { file-name: EDrawingsHost.cs } %}
 
 ## Program.cs
 
-{% include_relative Program.cs.codesnippet %}
+{% code-snippet { file-name: Program.cs } %}
 
 Source code is available on [GitHub](https://github.com/codestackdev/solidworks-api-examples/tree/master/edrawings-api/Export)

@@ -18,4 +18,4 @@ This macro renames all configurations of assembly or part into the value of the 
 * Macro will traverse all configurations and rename them based on the corresponding value of the configuration specific custom property
 * If property doesn't exist in configuration or value is empty - configuration is not renamed  
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

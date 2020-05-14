@@ -42,4 +42,4 @@ Entity name can be changed from the **Entity Property** dialog. Refer [Displayin
 
 The following example allows to rename the selected object with the specified name using SOLIDWORKS API.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

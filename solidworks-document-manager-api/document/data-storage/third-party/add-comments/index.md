@@ -36,16 +36,16 @@ AddWatermark.exe C:\MyFile.sldprt -read Comment3
 
 Routine to handle the command line parameters and perform corresponding operations.
 
-{% include_relative Program.cs.codesnippet %}
+{% code-snippet { file-name: Program.cs } %}
 
 ### ComStorage.cs
 
 Wrapper around [IStorage](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istorage) interface which simplifies the access from .NET language
 
-{% include_relative ComStorage.cs.codesnippet %}
+{% code-snippet { file-name: ComStorage.cs } %}
 
 ### ComStream.cs
 
 Wrapper around [IStream](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istream) interface which simplifies the access from .NET language
 
-{% include_relative ComStream.cs.codesnippet %}
+{% code-snippet { file-name: ComStream.cs } %}

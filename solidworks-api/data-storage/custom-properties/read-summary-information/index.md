@@ -24,4 +24,4 @@ Last Saved By: artem.taturevych
 Last Saved With: SOLIDWORKS 2019
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

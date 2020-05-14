@@ -20,5 +20,5 @@ As the result the dimension is added between the edges.
 
 Location of the dimension is found as a middle point of the line drawn between two middle points of the dimensioned edges. Unlike [drawing in sheet context]({{ "/solidworks-api/document/drawing/sheet-context-sketch/" | relative_url }}), drawing sheet scale is not required to be multiplied to the view transformation matrix when positioning the dimensions.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 

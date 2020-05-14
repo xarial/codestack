@@ -12,7 +12,7 @@ Use [MacroFeatureRebuildResult](https://docs.codestack.net/swex/macro-feature/ht
 
 Feature can generate the following output
 
-{% include_relative RegenerationResults.cs.codesnippet %}
+{% code-snippet { file-name: RegenerationResults.cs } %}
 
 Use [IModeler](http://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeler.html) interface if feature needs to create new bodies. Only temp bodies can be returned from the regeneration method.
 

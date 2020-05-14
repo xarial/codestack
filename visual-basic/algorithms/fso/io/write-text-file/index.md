@@ -24,4 +24,4 @@ Code will automatically create new file if it doesn't exist.
 
 Exception will be thrown in case of any error (for example file cannot be accessed for writing).
 
-{% include_relative WriteText.vba.codesnippet %}
+{% code-snippet { file-name: WriteText.vba } %}

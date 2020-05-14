@@ -40,16 +40,16 @@ End Sub
 
 Entry point which starts events monitoring
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 ## FileLoadWatcher Class Module
 
 Class which handles SOLIDWORKS API notifications
 
-{% include_relative FileLoadWatcher.vba.codesnippet %}
+{% code-snippet { file-name: FileLoadWatcher.vba } %}
 
 ## HandlerModule Module
 
 Custom VBA code which needs to be run for each opened document
 
-{% include_relative HandlerModule.vba.codesnippet %}
+{% code-snippet { file-name: HandlerModule.vba } %}

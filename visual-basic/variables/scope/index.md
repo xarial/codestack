@@ -96,11 +96,11 @@ This example demonstrates the behaviour of variables declared in the different s
 *Module1*
 {% include img.html src="custom-module-named-module1.png" alt="Module1 module in the Visual Basic Project" align="center" %}
 
-{% include_relative different-scopes-example-module1.vba.codesnippet %}
+{% code-snippet { file-name: different-scopes-example-module1.vba } %}
 
 *Main Module*
 
-{% include_relative different-scopes-example.vba.codesnippet %}
+{% code-snippet { file-name: different-scopes-example.vba } %}
 
 Output to [Immediate Window]({{ "visual-basic/vba/vba-editor/windows#immediate-window" | relative_url }})
 

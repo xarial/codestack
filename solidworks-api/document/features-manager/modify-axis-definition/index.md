@@ -15,4 +15,4 @@ This VBA example demonstrates how to modify the definition and change the select
 
 As the result the selected objects (second to the last) will be assigned to the axis (first selection).
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

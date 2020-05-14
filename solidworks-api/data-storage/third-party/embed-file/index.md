@@ -28,22 +28,22 @@ Add-in adds two buttons in the menu and toolbar and provides two handlers corres
 
 **EmbedFileAddIn.vb**
 
-{% include_relative EmbedFileAddIn.vb.codesnippet %}
+{% code-snippet { file-name: EmbedFileAddIn.vb } %}
 
 Structure used for serialization contains the content of the file and file name
 
 **EmbedFileData.vb**
 
-{% include_relative EmbedFileData.vb.codesnippet %}
+{% code-snippet { file-name: EmbedFileData.vb } %}
 
 For simplicity [IStream](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istream) com stream is wrapped into the [System.IO.Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=netframework-4.7.2) type.
 
 **ComStream.vb**
 
-{% include_relative ComStream.vb.codesnippet %}
+{% code-snippet { file-name: ComStream.vb } %}
 
 Serialization and deserialization routine utilizing the [XmlSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlserializer?view=netframework-4.7.2) class, but any other serialization methods could be used.
 
 **EmbedFile.vb**
 
-{% include_relative EmbedFile.vb.codesnippet %}
+{% code-snippet { file-name: EmbedFile.vb } %}

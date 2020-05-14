@@ -34,4 +34,4 @@ Change the value of *OUT_FILE_PATH* constant to specify the output file location
 Const OUT_FILE_PATH As String = "C:\Output\Building.ifc"
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

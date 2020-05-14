@@ -12,4 +12,4 @@ This example displays the feature tree page for Assembly Visualization using SOL
 
 {% include img.html src="sw-assembly-visualization.png" width=320 height=291 alt="Assembly Visualization Feature Manager Tab" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

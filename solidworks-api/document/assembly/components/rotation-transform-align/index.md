@@ -22,4 +22,4 @@ Finally point of rotation is an origin of the component transformed to the assem
 
 {% include img.html src="rotation-transform.png" alt="Rotation transformation parameters" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

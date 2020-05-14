@@ -27,12 +27,12 @@ This example demonstrates how to run command synchronously using SOLIDWORKS API,
 
 * Create a class module and name it *CommandRunManager*. Copy the code below:
 
-{% include_relative CommandRunManager.vba.codesnippet %}
+{% code-snippet { file-name: CommandRunManager.vba } %}
 
 * Copy the following code into the main module (where the *main* function is)
 * Modify the *RunCommand* to pass any other command id if needed. Method returns True if the command is closed with OK button, False is returned when command is cancelled.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 ### C&#35;
 
@@ -42,8 +42,8 @@ Example below demonstrates an implementation of async version of RunCommand whic
 
 **SldWorksExtension.cs**
 
-{% include_relative SldWorksExtension.cs.codesnippet %}
+{% code-snippet { file-name: SldWorksExtension.cs } %}
 
 The extension can be called from any async method. For example
 
-{% include_relative Console.cs.codesnippet %}
+{% code-snippet { file-name: Console.cs } %}

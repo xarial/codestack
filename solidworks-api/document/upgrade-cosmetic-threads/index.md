@@ -14,4 +14,4 @@ This macro invokes the *Upgrade cosmetic thread features* command in SOLIDWORKS 
 
 This macro will be beneficial to use along with task automation software such as [SOLIDWORKS Task Scheduler](https://help.solidworks.com/2019/English/SolidWorks/sldworks/c_SOLIDWORKS_Task_Scheduler_Overview.htm) or [#TASK](https://centralinnovation.com/solidworks/extensions/task-by-central-innovation).
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

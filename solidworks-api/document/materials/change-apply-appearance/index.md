@@ -10,4 +10,4 @@ labels: [part, solidworks api, material, appearance, example]
 
 This example demonstrates how to change the *Apply Appearance* option in the material options using SOLIDWORKS API.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

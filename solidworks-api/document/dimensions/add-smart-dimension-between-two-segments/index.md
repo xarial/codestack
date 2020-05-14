@@ -18,4 +18,4 @@ The example below temporarily removes this option and restores the original valu
 
 {% include img.html src="input-dimension-value-option.png" width=640 height=198 alt="Option to input dimension value on creation" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

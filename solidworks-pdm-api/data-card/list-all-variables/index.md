@@ -24,4 +24,4 @@ Checked by(58)
 Checked Date(62)
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

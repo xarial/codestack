@@ -21,4 +21,4 @@ Only indices are renamed and the base name is preserved. For example *Sketch21* 
 * Case is ignored (case insensitive search)
 * Only modelling features are renamed (the ones created after the Origin feature)
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

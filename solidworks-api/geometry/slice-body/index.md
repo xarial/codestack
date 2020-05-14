@@ -47,4 +47,4 @@ It is only required to find big enough radius to cover the body. This radius wil
     * It might be required to hide or change the transparency of the original body to see the sections displayed
 * Continue macro execution. This will clear the preview
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

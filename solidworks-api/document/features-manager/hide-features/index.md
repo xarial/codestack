@@ -14,4 +14,4 @@ Even default features (such as planes) can be made invisible.
 
 To show the hidden features use the [Reveal Hidden Features](/solidworks-api/document/features-manager/reveal-hidden-features/) macro.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

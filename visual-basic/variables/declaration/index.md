@@ -99,7 +99,7 @@ Once declared value of the constant cannot be changed. Otherwise the compile err
 
 This code example demonstrates different ways of declaring and assigning constants and value variables.
 
-{% include_relative assigning-value-variables.vba.codesnippet %}
+{% code-snippet { file-name: assigning-value-variables.vba } %}
 
 ### Assigning reference variables
 
@@ -117,7 +117,7 @@ Unlike value types, [references types]({{ "visual-basic/variables/user-defined-t
 
 See code below for the correct assignment of reference type variable.
 
-{% include_relative assigning-reference-variables.vba.codesnippet %}
+{% code-snippet { file-name: assigning-reference-variables.vba } %}
 
 > References variables are only holding the pointer to the actual value, i.e. Set keyword assigns the reference (not the actual value like in value types). That means if reference of one variable is assigned to another variables, both of them now refer the same data.
 

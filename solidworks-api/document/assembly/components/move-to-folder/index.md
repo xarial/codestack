@@ -14,4 +14,4 @@ This macro allows moving the selected components into the new folder in the feat
 
 Components (or any of their entities) can be selected in the graphics area. For example only face or edge of the component(s) can be selected for macro to work.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

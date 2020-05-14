@@ -16,4 +16,4 @@ This macro will hide (blank) or show (unblank) all sketches (2D and 3D) in the a
 
 Change *HIDE_ALL_SKETCHES* option to specify if sketches need to be hidden or shown.  
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

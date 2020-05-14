@@ -24,4 +24,4 @@ The composed BOM is output to the immediate window of VBA editor:
 
 It is not required to have a BOM Table inserted for this macro to work.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

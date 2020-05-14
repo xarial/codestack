@@ -18,4 +18,4 @@ Component name can be found in the following dialog in SOLIDWORKS User Interface
 
 Refer [Select Component By Name]({{ "/solidworks-api/document/selection/select-component-by-name" | relative_url }}) example for an alternative way of selecting the component by name.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

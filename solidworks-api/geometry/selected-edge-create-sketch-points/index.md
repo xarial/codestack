@@ -22,12 +22,12 @@ As the result specified number of sketch points is generated in the 3D sketch:
 
 {% include img.html src="sketch-points-edge.png" width=320 height=204 alt="Sketch points created on the edge" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 Alternatively, it is possible to create points based on the curve length. The following example will create points by calculating the approximate length from curve tessellation points:
 
-{% include_relative SplitCurveByLength.vba.codesnippet %}
+{% code-snippet { file-name: SplitCurveByLength.vba } %}
 
 or by calculating the distance based on the total curve length:
 
-{% include_relative SplitCurveByChord.vba.codesnippet %}
+{% code-snippet { file-name: SplitCurveByChord.vba } %}

@@ -14,4 +14,4 @@ This macro will create child configuration where all the dimension will be set t
 
 {% include img.html src="sw-dimension-tolerance.png" width=400 alt="Dimension Tolerance/Precision group in property manager page" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

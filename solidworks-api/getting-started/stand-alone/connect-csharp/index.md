@@ -41,7 +41,7 @@ Now we can add the code to connect to SOLIDWORKS instance.
 
 Probably the most common and quick way to connect to COM server is using the [Activator::CreateInstance](https://msdn.microsoft.com/en-us/library/system.activator.createinstance(v=vs.110).aspx) method.  
 
-{% include_relative CreateGetInstance.cs.codesnippet %}
+{% code-snippet { file-name: CreateGetInstance.cs } %}
 
 This method will construct the instance of the type from the type definition. As SOLIDWORKS application is registered as COM server we can create the type from its program identifier via [Type::GetTypeFromProgID](https://msdn.microsoft.com/en-us/library/system.type.gettypefromprogid(v=vs.110).aspx) method.
 Please read the [Connect To SOLIDWORKS From Stand-Alone Application](/solidworks-api/getting-started/stand-alone#method-a---activator-and-progid) article for explanations of limitation of this approach.  
@@ -49,14 +49,14 @@ Please read the [Connect To SOLIDWORKS From Stand-Alone Application](/solidworks
 Alternatively you can connect to active (already started) session of SOLIDWORKS using the [Marshal::GetActiveObject](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.marshal.getactiveobject(v=vs.110).aspx) method.
 This approach will ensure that  there will be no new instances of SOLIDWORKS created and will throw an exception if there is no running SOLIDWORKS session to connect to.
 
-{% include_relative GetInstance.cs.codesnippet %}
+{% code-snippet { file-name: GetInstance.cs } %}
 
 ## Getting the running instance via ROT
 
 In order to connect to already running specific session of SOLIDWORKS or to be able to create multiple sessions you can use Running Object Table APIs.
 Please read the [Connect To SOLIDWORKS From Stand-Alone Application](/solidworks-api/getting-started/stand-alone#method-b---running-object-table-rot) article for more details about this approach.
 
-{% include_relative CreateInstance.cs.codesnippet %}
+{% code-snippet { file-name: CreateInstance.cs } %}
 
 In the above example new session of SOLIDWORKS is launched by starting new process from SOLIDWORKS application installation path.
 *StartSwApp* function requires the full path to **sldworks.exe** as first parameter and optional timeout in seconds as second parameter.
@@ -64,4 +64,4 @@ Timeout will ensure that the application won't be locked in case process failed 
 
 You can also make this call asynchronous and display some progress indication in your application while SOLIDWORKS process is starting:
 
-{% include_relative StartSwAppAsync.cs.codesnippet %}
+{% code-snippet { file-name: StartSwAppAsync.cs } %}

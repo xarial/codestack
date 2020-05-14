@@ -15,4 +15,4 @@ content = ReadText("C:\MyFolder\MyFile.txt")
 
 Code will generate an exception if file doesn't exist or cannot be read.
 
-{% include_relative ReadText.vba.codesnippet %}
+{% code-snippet { file-name: ReadText.vba } %}

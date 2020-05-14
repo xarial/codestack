@@ -35,7 +35,7 @@ The following macro reads the selected sketch point coordinate relative to the l
 * Repeat the steps above
 * Now coordinates do not match.
 
-{% include_relative NoTransformsMacro.vba.codesnippet %}
+{% code-snippet { file-name: NoTransformsMacro.vba } %}
 
 ## Retrieving the global coordinates from sketch point
 
@@ -43,10 +43,10 @@ In order to find the value of the coordinate relative to the global coordinate s
 
 Below macro can be used to perform the steps from the previous paragraph, but now the extracted coordinates will match the values in the global coordinate system.
 
-{% include_relative TransformSketchCoordinateMacro.vba.codesnippet %}
+{% code-snippet { file-name: TransformSketchCoordinateMacro.vba } %}
 
 ## Creating point in sketch from global coordinates
 
 Inversed transformation should be used when it is required to create a sketch point in the 2D sketch based on the global coordinate value. The following example inserts a sketch point into an active sketch based on a XYZ value.
 
-{% include_relative CreateSketchPointFromGlobalCoordinate.vba.codesnippet %}
+{% code-snippet { file-name: CreateSketchPointFromGlobalCoordinate.vba } %}

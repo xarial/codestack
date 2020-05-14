@@ -16,4 +16,4 @@ This example demonstrate different ways of disabling the model editing from SOLI
 
 It is required to debug macro step-by-step to see the different SOLIDWORKS API functions in action.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -42,7 +42,7 @@ Information about the add-in needs to be added to the registry so SOLIDWORKS can
 
 The keys added to HKEY_LOCAL_MACHINE are mandatory and identify the add-in to be available in the add-ins list. The keys added to HKEY_CURRENT_USER are optional and represent the start-up state of the add-in. Set value to 1 to load add-in at start-up, set to 0 to not load on start-up.
 
-{% include_relative add-registry.reg.codesnippet %}
+{% code-snippet { file-name: add-registry.reg } %}
 
 The GUID used in the example above is an add-in guid set via [GuidAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.guidattribute?view=netframework-4.0) at the add-in class:
 
@@ -57,7 +57,7 @@ public class MyAddIn : ISwAddin
 
 As an alternative option required registry keys can be added directly from the dll when it is registered as a COM object via [ComRegisterFunctionAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.comregisterfunctionattribute?view=netframework-4.0). In this case the above step is not required:
 
-{% include_relative addin-registration.cs.codesnippet %}
+{% code-snippet { file-name: addin-registration.cs } %}
 
 ### Unregistering the add-in
 
@@ -73,16 +73,16 @@ To unregister the COM add-in it is required to call the [regsvr32](https://docs.
 
 To clear the registry values (unless it is done via the [ComUnregisterFunctionAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.comunregisterfunctionattribute?view=netframework-4.0)) call the following registry file:
 
-{% include_relative remove-registry.reg.codesnippet %}
+{% code-snippet { file-name: remove-registry.reg } %}
 
 ### Best practices
 
 Registration and unregistration commands can be placed into a single bat file to simplify the registration and unregistration process:
 
 *Register.bat*
-{% include_relative register.cmd.codesnippet %}
+{% code-snippet { file-name: register.cmd } %}
 
 *Unregister.bat*
-{% include_relative unregister.cmd.codesnippet %}
+{% code-snippet { file-name: unregister.cmd } %}
 
 Change the name of the add-in and place these files into the bin folder and it will be only required to run this bat file on client machine.

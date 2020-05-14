@@ -14,4 +14,4 @@ This VBA macro extracts all visible components from the selected drawing view us
 
 The below code addresses this limitations and returns all components in the context of their assembly document.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

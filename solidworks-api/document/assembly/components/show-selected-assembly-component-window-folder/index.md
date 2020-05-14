@@ -27,4 +27,4 @@ This macro will produce similar results to the following manual steps:
 
 If none of the components selected then the path of active model will be opened.
 
-{% include_relative macro.vba.codesnippet %}
+{% code-snippet { file-name: macro.vba } %}

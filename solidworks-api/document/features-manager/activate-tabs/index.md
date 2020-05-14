@@ -16,7 +16,7 @@ This example demonstrates how to activate standard tabs (feature manager tree, p
 * Specified tab is activated
 
 **ModelDocExtension.cs**
-{% include_relative ModelDocExtension.cs.codesnippet %}
+{% code-snippet { file-name: ModelDocExtension.cs } %}
 
 **SolidWorksMacro.cs**
-{% include_relative SolidWorksMacro.cs.codesnippet %}
+{% code-snippet { file-name: SolidWorksMacro.cs } %}

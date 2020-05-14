@@ -12,4 +12,4 @@ group: Model
 
 This VBA macro extracts the text from all comments of the active document and displays it in a single message box.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -22,7 +22,7 @@ Use this example to read the id of the entity.
 
 > The id output to immediate Window might contain line break. It should be removed from the id and should be considered as single line string
 
-{% include_relative get-id.vba.codesnippet %}
+{% code-snippet { file-name: get-id.vba } %}
 
 The following example allows to select the object by retrieving its pointer from persist id.
 
@@ -32,4 +32,4 @@ The following example allows to select the object by retrieving its pointer from
 * Enter the copied id into the box
 * The entities selected in previous example is re-selected
 
-{% include_relative get-object.vba.codesnippet %}
+{% code-snippet { file-name: get-object.vba } %}

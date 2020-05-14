@@ -22,4 +22,4 @@ This macro can be useful if component names are used to store the project attrib
 
 {% include img.html src="bill-of-materials.png" width=350 alt="Bill Of Materials with component references" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

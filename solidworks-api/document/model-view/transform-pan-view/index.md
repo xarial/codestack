@@ -9,4 +9,4 @@ image: /solidworks-api/document/model-view/transform-pan-view/pan-view.png.png
 
 This example demonstrates how to move the view (pan) by specifying the offset in X and Y coordinates of the screen (pixels). Macro transforms the offset into the model view 3D space and updates the view positions.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -52,16 +52,16 @@ Source code can be downloaded from [GitHub](https://github.com/codestackdev/soli
 
 This the add-in entry point. [SwEx.AddIn](/labs/solidworks/swex/add-in/) framework is used to manage documents lifecycle by providing the wrapper class.
 
-{% include_relative AddIn.vb.codesnippet %}
+{% code-snippet { file-name: AddIn.vb } %}
 
 ## OpenGlDocumentHandler.vb
 
 This is a handler class for each model document which subscribes to the OpenGL Buffer Swap notification provided by SOLIDWORKS and performs the calculation of tetrahedron triangle coordinates and renders the geometry. 
 
-{% include_relative OpenGlDocumentHandler.vb.codesnippet %}
+{% code-snippet { file-name: OpenGlDocumentHandler.vb } %}
 
 ## OpenGL.vb
 
 List of imports for OpenGL functions.
 
-{% include_relative OpenGL.vb.codesnippet %}
+{% code-snippet { file-name: OpenGL.vb } %}

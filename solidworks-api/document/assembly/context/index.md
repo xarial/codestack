@@ -23,7 +23,7 @@ It is required to always use the pointer to active assembly document ([ISldWorks
 
 For example to insert the extruded feature into the part document from the image above which is edited in the context the [IFeatureManager::FeatureExtrusion2](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IFeatureManager~FeatureExtrusion2.html) must be called on the [IModelDoc2](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldoc2_methods.html) which is an active assembly but not the model of the component being edited.
 
-{% include_relative CreateExtrudeFeatureInAssemblyContext.vba.codesnippet %}
+{% code-snippet { file-name: CreateExtrudeFeatureInAssemblyContext.vba } %}
 
 ## Converting the pointers
 
@@ -55,7 +55,7 @@ These pointers are safe to work with within the context of this assembly. For ex
 * Select the *3DSketch1* feature in the tree
 * Run the following macro
 
-{% include_relative AssemblyContext.vba.codesnippet %}
+{% code-snippet { file-name: AssemblyContext.vba } %}
 
 As the result sketch point is moved by 10 mm in XYZ directions.
 
@@ -71,7 +71,7 @@ The following example demonstrates the result of using out of context pointers b
 
 Follow the steps from previous test case and run the following macro
 
-{% include_relative ComponentModelContext.vba.codesnippet %}
+{% code-snippet { file-name: ComponentModelContext.vba } %}
 
 As the result sketch points are not moved despite the output window displays the success
 
@@ -99,7 +99,7 @@ In many cases the initial pointer is available in the context of the underlying 
 * Select the *3DSketch1* in the active part document
 * Run the following macro
 
-{% include_relative ComponentModelToAssemblyContext.vba.codesnippet %}
+{% code-snippet { file-name: ComponentModelToAssemblyContext.vba } %}
 
 * Macro stops execution
 * Activate the assembly (you can just close the part document)

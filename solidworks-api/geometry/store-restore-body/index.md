@@ -17,11 +17,11 @@ Body is serialized and deserialized from the [3rd party storage](/solidworks-api
 
 * Paste the following into the user form's code behind:
 
-{% include_relative UserForm1.vba.codesnippet %}
+{% code-snippet { file-name: UserForm1.vba } %}
 
 * Insert the following code into the macro's main module:
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 ## Running Macro
 

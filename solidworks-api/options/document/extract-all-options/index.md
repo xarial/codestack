@@ -41,4 +41,4 @@ Refer [Create And Run VSTA Macro]({{ "solidworks-api/getting-started/macros/crea
 
 ### C# VSTA Macro
 
-{% include_relative Macro.cs.codesnippet %}
+{% code-snippet { file-name: Macro.cs } %}

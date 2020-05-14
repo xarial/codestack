@@ -35,10 +35,10 @@ To create a macro add 2 more modules into your VBA Editor:
 Paste the codes into the corresponding modules as follows:
 
 **FileWatcher Class Module**
-{% include_relative FileWatcher.vba.codesnippet %}
+{% code-snippet { file-name: FileWatcher.vba } %}
 
 **UserForm1 Form**
-{% include_relative UserForm1.vba.codesnippet %}
+{% code-snippet { file-name: UserForm1.vba } %}
 
 **Macro Module**
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

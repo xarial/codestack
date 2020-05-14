@@ -18,4 +18,4 @@ Component name can be found in the following dialog:
 
 Refer [Get Component By Name]({{ "/solidworks-api/document/assembly/components/get-by-name" | relative_url }}) example for macro to retrieve the pointer to the component without the selection.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

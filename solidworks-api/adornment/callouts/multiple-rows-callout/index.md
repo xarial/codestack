@@ -16,8 +16,8 @@ First row of the displayed callout is not editable (read only). Value of second 
 
 *Macro*
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 *CalloutHandler class*
 
-{% include_relative CalloutHandler.vba.codesnippet %}
+{% code-snippet { file-name: CalloutHandler.vba } %}

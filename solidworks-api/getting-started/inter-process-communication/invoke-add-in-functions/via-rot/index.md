@@ -37,13 +37,13 @@ This project contains the definitions (signatures) of API methods and interfaces
 
 This is a helper COM object which will simplify the access to the instance of the add-in API object. It is responsible for retrieving the instance of API object from the process by its ID.
 
-{% include_relative api-object-interface/GeometryHelperApiObjectFactory.cs.codesnippet %}
+{% code-snippet { file-name: api-object-interface/GeometryHelperApiObjectFactory.cs } %}
 
 ### IGeometryHelperApiObject.cs
 
 This is an interface of the API exposed to 3rd party applications. In this example the function will return the number of faces based on the area filter.
 
-{% include_relative api-object-interface/IGeometryHelperApiObject.cs.codesnippet %}
+{% code-snippet { file-name: api-object-interface/IGeometryHelperApiObject.cs } %}
 
 ## GeometryHelperAddIn Project
 
@@ -53,7 +53,7 @@ This project is a SOLIDWORKS add-in. In this example it is developed using the [
 
 Helper class within add-in which is invoking SOLIDWORKS API for calculating the number of faces from the selected body based on the minimum area.
 
-{% include_relative rot-api-object/GeometryHelperService.cs.codesnippet %}
+{% code-snippet { file-name: rot-api-object/GeometryHelperService.cs } %}
 
 Add-in must implement the functionality of API object. There are 2 general approaches for this.
 
@@ -63,13 +63,13 @@ Add-in must implement the functionality of API object. There are 2 general appro
 
 API object implementation is using the SOLIDWORKS API directly within its class to handle the request and provide response to API call.
 
-{% include_relative rot-api-object/GeometryHelperApiObject.cs.codesnippet %}
+{% code-snippet { file-name: rot-api-object/GeometryHelperApiObject.cs } %}
 
 ### MainAddIn.cs
 
 This is the implementation of main SOLIDWORKS add-in class. The service to handle the functionality is passed directly to API object implementation and called from there to handle the API call.
 
-{% include_relative rot-api-object/MainAddIn.cs.codesnippet %}
+{% code-snippet { file-name: rot-api-object/MainAddIn.cs } %}
 
 * By implementing the proxy API object. This approach may be considered more beneficial and secure as it doesn't expose any internal objects in its structure. All of the requests are handled outside of the proxy class.
 
@@ -77,19 +77,19 @@ This is the implementation of main SOLIDWORKS add-in class. The service to handl
 
 Proxy object doesn't contain any references to any objects of the add-in. Instead it will generate the request event, handled and processed by the add-in.
 
-{% include_relative rot-api-object/GeometryHelperApiObjectProxy.cs.codesnippet %}
+{% code-snippet { file-name: rot-api-object/GeometryHelperApiObjectProxy.cs } %}
 
 ### MainAddIn.cs with proxy API object
 
 Handling of the event in the add-in and providing results.
 
-{% include_relative rot-api-object/MainAddInProxyApiObject.cs.codesnippet %}
+{% code-snippet { file-name: rot-api-object/MainAddInProxyApiObject.cs } %}
 
 ### RotHelper.cs
 
 In order for the API object to be available it is required to register it in the Running Objects Table (ROT). This helper class allows to register the object by name.
 
-{% include_relative rot-api-object/RotHelper.cs.codesnippet %}
+{% code-snippet { file-name: rot-api-object/RotHelper.cs } %}
 
 ## Calling the API from stand-alone applications
 
@@ -107,7 +107,7 @@ Add the reference to Type Library to enable [early binding]({{ "/visual-basic/va
 
 Macro creates and instance of Factory object by its prog id and retrieves the instance of the API object by process id.
 
-{% include_relative excel-macro.vba.codesnippet %}
+{% code-snippet { file-name: excel-macro.vba } %}
 
 ### C# Console Application
 
@@ -121,7 +121,7 @@ The result of the API call is printed into the console window.
 
 {% include img.html src="command-line-result.png" width=450 alt="Command result displayed in the console" align="center" %}
 
-{% include_relative stand-alone/Program.cs.codesnippet %}
+{% code-snippet { file-name: stand-alone/Program.cs } %}
 
 > The most common reason of object cannot be retrieved from the Running Object Table (i.e. null is returned) is difference in accounts levels running SOLIDWORKS and the stand-alone application. For example SOLIDWORKS is run as administrator while the stand-alone is not or vice-versa. This is a Windows limitation and it is required to run both applications on the same permissions level to enable the communication.
 

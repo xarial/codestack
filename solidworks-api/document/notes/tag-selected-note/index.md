@@ -17,4 +17,4 @@ Specify the name of the tag as the *TAG* constant in the macro.
 * Tag is preserved if note moves (including moving from sheet space to sheet format)
 * Tag is not visible/changeable from the User Interface (it can only be accessed via SOLIDWORKS API)
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

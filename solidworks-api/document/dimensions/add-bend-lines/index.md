@@ -16,4 +16,4 @@ It is required to select the sketch lines using the select data object with the 
 
 [IModelDoc2::AddDimension2](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldoc~adddimension2.html) SOLIDWORKS API is used to add the dimension. Dimension is positioned at (0, 0, 0) coordinate. Refer the [Dimension Visible Entities]({{ "/solidworks-api/document/drawing/view-dimension-drawing-entities/" | relative_url }}) example for code snippet for calculating the optimal dimension position.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

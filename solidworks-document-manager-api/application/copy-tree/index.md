@@ -20,4 +20,4 @@ Const SUFFIX As String = "_CodeStack" 'Suffix to add to each file in the tree
 
 [ISwDMApplication::CopyDocument](http://help.solidworks.com/2018/english/api/swdocmgrapi/solidworks.interop.swdocumentmgr~solidworks.interop.swdocumentmgr.iswdmapplication~copydocument.html) Document Manager API is used to perform copying of files and all references.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

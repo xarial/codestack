@@ -29,4 +29,4 @@ The content of the clipboard can be pasted into any text or table editor, like N
 * Drawings are searched by reference, rather than by name, so drawing can have any name
 * Drawing paths are separated with a new line symbol
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -18,4 +18,4 @@ Select body from the Feature Manager tree and run the macro.
 
 Preview of the body is created and rotated until selection is cleared. When macro stops the original body is reverted to the original state.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

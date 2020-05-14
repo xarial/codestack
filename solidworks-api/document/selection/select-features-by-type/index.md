@@ -25,4 +25,4 @@ Const TYPE_NAME As String = "" 'Refer 'Get Features Type Name' macro to get the 
 
 This macro can be useful with other macros which require features to be preselected. It can be also used with SOLIDWORKS batch operations (such as delete or suppress).
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

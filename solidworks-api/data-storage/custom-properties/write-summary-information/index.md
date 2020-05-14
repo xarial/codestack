@@ -20,4 +20,4 @@ Const TITLE As String = "Summary API Example"
 Const SUBJECT As String = "CodeStack API Examples"
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

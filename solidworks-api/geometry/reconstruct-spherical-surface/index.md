@@ -16,4 +16,4 @@ This example demonstrates how to create spherical surface (360 degress) from the
 
 Spherical surface is created using the [IModeler::CreateSphericalSurface2](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeler~createsphericalsurface2.html) SOLIDWORKS API method which is trimmed using the [ISurface::CreateTrimmedSheet4](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isurface~createtrimmedsheet4.html)
 
-{% include_relative Macro.cs.codesnippet %}
+{% code-snippet { file-name: Macro.cs } %}

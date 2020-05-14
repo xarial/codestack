@@ -20,4 +20,4 @@ Direction (Direction 1): Yes [swSelSKETCHSEGS]
 Direction (Direction 2): No
 ~~~
 
-{% include_relative Macro.cs.codesnippet %}
+{% code-snippet { file-name: Macro.cs } %}

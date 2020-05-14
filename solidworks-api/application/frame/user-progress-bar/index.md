@@ -30,4 +30,4 @@ Progress is also reflected in the SOLIDWORKS icon in the task bar.
 * Progress bar is displayed
 * Press ESC to have an option to cancel the operation
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

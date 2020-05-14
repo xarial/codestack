@@ -34,4 +34,4 @@ The combination of the above transformation will return the full transformation 
 
 {% include img.html src="drawing-view-line.png" width=300 alt="Bounding box diagonal in the drawing" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

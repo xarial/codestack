@@ -28,11 +28,11 @@ One of the benefits of this approach comparing to linking the properties directl
 
 * Create new macro and copy the code below
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 * Add new class module to the macro and name it *PostRegenerateListener*. Place the code below into the class module
 
-{% include_relative PostRegenerateListener.vba.codesnippet %}
+{% code-snippet { file-name: PostRegenerateListener.vba } %}
 
 * Configure the properties which needs to be linked in the *Class_Initialize* function in *PostRegenerateListener*
 

@@ -31,22 +31,22 @@ It is required to set the 'Allow unsafe code' option in the Visual Studio Projec
 
 **TreeSerializerAddIn.cs**
 
-{% include_relative TreeSerializerAddIn.cs.codesnippet %}
+{% code-snippet { file-name: TreeSerializerAddIn.cs } %}
 
 Structure used in this example represents the simple hierarchical data
 
 **ElementsTree.cs**
 
-{% include_relative ElementsTree.cs.codesnippet %}
+{% code-snippet { file-name: ElementsTree.cs } %}
 
 For simplicity [IStream](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istream) com stream is wrapped into the [System.IO.Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=netframework-4.7.2) type.
 
 **ComStream.cs**
 
-{% include_relative ComStream.cs.codesnippet %}
+{% code-snippet { file-name: ComStream.cs } %}
 
 Serialization and deserialization routine utilizing the [XmlSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlserializer?view=netframework-4.7.2) class, but any other serialization methods could be used.
 
 **TreeSerializer.cs**
 
-{% include_relative TreeSerializer.cs.codesnippet %}
+{% code-snippet { file-name: TreeSerializer.cs } %}

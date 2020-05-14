@@ -20,4 +20,4 @@ However pointers to bodies extracted at the drawing context are not applicable f
 
 Below code of C# VSTA macro retrieves the mass of all bodies in the selected drawing view using SOLIDWORKS API and displays the result in the message box.
 
-{% include_relative SolidWorksMacro.cs.codesnippet %}
+{% code-snippet { file-name: SolidWorksMacro.cs } %}

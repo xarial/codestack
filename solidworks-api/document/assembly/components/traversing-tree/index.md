@@ -13,4 +13,4 @@ This example demonstrates how to traverse components tree in the assembly using 
 
 {% include img.html src="sw-components-tree.png" height=320 alt="Components Tree" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

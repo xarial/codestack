@@ -34,4 +34,4 @@ Depending on this setting title of the model can either include or exclude exten
 * Change the setting based on the macro requirement
 * Modify the macro code to consider both options. The example below provides two functions to get the title with or without extension regardless of the conditions.
 
-{% include_relative get-title-extension.vba.codesnippet %}
+{% code-snippet { file-name: get-title-extension.vba } %}

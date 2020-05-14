@@ -28,4 +28,4 @@ Control Points:
  Val N
 ~~~
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

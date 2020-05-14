@@ -68,7 +68,7 @@ And returns the pointer to [IFeature](http://help.solidworks.com/2018/english/ap
 
 ### C# Add-in source code
 
-{% include_relative AddIn.cs.codesnippet %}
+{% code-snippet { file-name: AddIn.cs } %}
 
 ## Accessing the add-in
 
@@ -109,7 +109,7 @@ Note that the interface will be visible in the object browser:
 
 #### VBA macro invoking add-in function
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 This macro will create the cylinder with custom parameters and use the returned pointer to feature to rename it.
 
@@ -125,11 +125,11 @@ Similarly to VBA macro, add-in can be automated from the [Stand-Alone Applicatio
 
 #### VB.NET Stand-Alone application
 
-{% include_relative Module.vb.codesnippet %}
+{% code-snippet { file-name: Module.vb } %}
 
 #### C# Stand-Alone application
 
-{% include_relative Program.cs.codesnippet %}
+{% code-snippet { file-name: Program.cs } %}
 
 Exception can also be handled from the stand-alone application
 

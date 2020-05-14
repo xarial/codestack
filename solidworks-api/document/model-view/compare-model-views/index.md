@@ -25,4 +25,4 @@ Result of the **CompareViewData** function is defined as *CompareViewResult_e* [
 * Change the view and continue the execution of the macro.
 * Result is displayed in the message box.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

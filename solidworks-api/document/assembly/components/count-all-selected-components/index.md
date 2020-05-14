@@ -17,4 +17,4 @@ Macro will also count component if only entity of the component is selected (e.g
 
 {% include img.html src="status-bar-selected-comps.png" height=320 alt="Quantity of selected components displayed in the status bar" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

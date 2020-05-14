@@ -28,4 +28,4 @@ Due to the difference in variables size in 32/64 it is required to use PtrSafe k
 * Modify all of the declaration and include PtrSafe keyword and LongPtr as the variable declarations for Long types
 * If it is required to support older versions of SOLIDWORKS (prior to 2012) it is possible to use pre-compile conditional statements #IF-#Else
 
-{% include_relative browse-for-folder.vba.codesnippet %}
+{% code-snippet { file-name: browse-for-folder.vba } %}

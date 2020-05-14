@@ -15,4 +15,4 @@ Adds coincident mate between 2 coordinate systems of 2 selected components using
 
 [IAssemblyDoc::AddMate3](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iassemblydoc~addmate3.html) SOLIDWORKS API is used to insert mate feature.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -16,4 +16,4 @@ This macro copies the full path to the selected component into the clipboard usi
 * Component can be selected in the feature tree or in the graphics area
     * It is also possible to select a component entity (i.e. face or edge) to get the path to the component
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

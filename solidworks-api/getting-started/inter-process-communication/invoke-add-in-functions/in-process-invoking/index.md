@@ -38,13 +38,13 @@ This is a main project which implements SOLIDWORKS add-in and API object interfa
 
 Add-in class
 
-{% include_relative face-indexer/FaceIndexerAddIn.cs.codesnippet %}
+{% code-snippet { file-name: face-indexer/FaceIndexerAddIn.cs } %}
 
 ### FaceIndexerAddInApi.cs
 
 API object definition.
 
-{% include_relative face-indexer/FaceIndexerAddInApi.cs.codesnippet %}
+{% code-snippet { file-name: face-indexer/FaceIndexerAddInApi.cs } %}
 
 This add-in exposes the API for 3rd parties. *IndexFaces* method is an out-of-process API call and can be used with the following snippet:
 
@@ -91,13 +91,13 @@ C# application calling the add-in function.
 
 Callback function which notifies the stand-alone application when in-process call is completed. This must be registered as COM object.
 
-{% include_relative stand-alone/FaceIndexerCallback.cs.codesnippet %}
+{% code-snippet { file-name: stand-alone/FaceIndexerCallback.cs } %}
 
 ### Program.cs
 
 Console application invoking the in-process call to add-in API and awaiting result in the callback.
 
-{% include_relative stand-alone/Program.cs.codesnippet %}
+{% code-snippet { file-name: stand-alone/Program.cs } %}
 
 It can also be invoked from the macro or any other type of applications.
 
@@ -111,18 +111,18 @@ VBA macro to call the add-in API. In this example User Form is used to keep macr
 
 Main module which is starting the user form
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 ### FaceIndexerCallback Class Module
 
 Implementation of callback class to receive the notification of completion
 
-{% include_relative FaceIndexerCallback.vba.codesnippet %}
+{% code-snippet { file-name: FaceIndexerCallback.vba } %}
 
 ### Form1 Form
 
 User form to connect to add-in and call its API
 
-{% include_relative Form1.vba.codesnippet %}
+{% code-snippet { file-name: Form1.vba } %}
 
 Source code can be downloaded from [GitHub](https://github.com/codestackdev/solidworks-api-examples/tree/master/swex/add-in/face-indexer)

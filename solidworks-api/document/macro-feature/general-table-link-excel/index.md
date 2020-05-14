@@ -27,4 +27,4 @@ Macro inserts the table and macro feature in the feature tree with the data from
 * Currently it is not possible to change the path to external Excel file. Delete the macro feature instead and reinsert it by selecting the general table (see previous point)
 * Macro feature is embedded into the model which means that the table will be updated on any other workstations even if this macro is not available.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

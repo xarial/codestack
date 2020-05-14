@@ -25,4 +25,4 @@ MyProperty: MyValue [Text]
 
 Specify the file to read properties from in *FILE_PATH* constant.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

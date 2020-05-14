@@ -34,16 +34,16 @@ End Sub
 
 Entry point which starts new document creation events monitoring
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 ## FileNewWatcher Class module
 
 Class which handles SOLIDWORKS new document API notifications
 
-{% include_relative FileNewWatcher.vba.codesnippet %}
+{% code-snippet { file-name: FileNewWatcher.vba } %}
 
 ## HandlerModule module
 
 Custom VBA code which needs to be run for each newly created document
 
-{% include_relative HandlerModule.vba.codesnippet %}
+{% code-snippet { file-name: HandlerModule.vba } %}

@@ -16,4 +16,4 @@ The line will start at the point at the middle of the screen and will be perpend
 
 {% include img.html src="sw-view-screen-transformation.png" width=320 height=208 alt="Line created perpendicular to the current graphics view" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

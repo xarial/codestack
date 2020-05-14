@@ -33,4 +33,4 @@ Macro performs the following steps
 
 If *SUPPRESS_UPDATES* option is set to true all of the operations will be hidden and only active state of the model will be shown on screen (i.e. model opening, feature insertion etc. will be invisible)
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

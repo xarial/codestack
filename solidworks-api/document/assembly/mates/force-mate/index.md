@@ -9,4 +9,4 @@ image: /solidworks-api/document/assembly/mates/force-mate/force-mate.png
 
 This example demonstrates how to run 'Force Mate' command for the mate with rebuild errors in order to solve the constraint. This macro is based on combination of Windows and SOLIDWORKS API.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

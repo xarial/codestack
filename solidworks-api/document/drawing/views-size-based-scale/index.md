@@ -51,4 +51,4 @@ Array("0-0.1;*;1:1", "0.1-0.2;0.05-0.1;1:2")
 * All drawing views with width up to 100 mm and any height will be set to 1:1 scale
 * All drawing views with width between 100 mm to 200 mm and height between 50 mm to 100 mm will be set to 1:2 scale
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

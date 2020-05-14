@@ -42,14 +42,14 @@ Now we can add the code to connect to SOLIDWORKS instance.
 
 Probably the most common and quick way to connect to COM server is using the [CoCreateInstance](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686615(v=vs.85).aspx) function.  
 
-{% include_relative CreateGetInstance.cpp.codesnippet %}
+{% code-snippet { file-name: CreateGetInstance.cpp } %}
 
 ## Getting the running instance via ROT
 
 In order to connect to already running specific session of SOLIDWORKS or to be able to create multiple sessions you can use Running Object Table APIs.
 Please read the [Connect To SOLIDWORKS From Stand-Alone Application](/solidworks-api/getting-started/stand-alone#method-b---running-object-table-rot) article for more details about this approach.
 
-{% include_relative CreateInstance.cpp.codesnippet %}
+{% code-snippet { file-name: CreateInstance.cpp } %}
 
 In the above example new session of SOLIDWORKS is launched by starting new process from SOLIDWORKS application installation path.
 *ConnectToSwApp* function requires the full path to **sldworks.exe** as first parameter and timeout in seconds as second parameter.

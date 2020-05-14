@@ -19,7 +19,7 @@ Dim base64Str As String
 base64Str = ConvertToBase64String(arr) 'AQUCFWUz
 ~~~
 
-{% include_relative encode-base64.vba.codesnippet %}
+{% code-snippet { file-name: encode-base64.vba } %}
 
 ## Decode
 
@@ -31,4 +31,4 @@ dim vArr As Variant
 vArr = Base64ToArray(base64Str) 'Byte array: 1, 5, 2, 21, 101, 51
 ~~~
 
-{% include_relative decode-base64.vba.codesnippet %}
+{% code-snippet { file-name: decode-base64.vba } %}

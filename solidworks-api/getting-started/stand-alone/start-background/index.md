@@ -31,4 +31,4 @@ Function below considers all points above and starts new session of SOLIDWORKS h
 
 > Some of the API method might not execute or behave incorrectly with SOLIDWORKS application being invisible.
 
-{% include_relative Program.cs.codesnippet %}
+{% code-snippet { file-name: Program.cs } %}

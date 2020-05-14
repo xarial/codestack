@@ -20,4 +20,4 @@ This example demonstrates different approaches of selecting entities (e.g. edge,
 
 * Run the macro and this edge is selected in all 3 views with 3 different approaches described above.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

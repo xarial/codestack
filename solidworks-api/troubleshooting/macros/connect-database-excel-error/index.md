@@ -23,7 +23,7 @@ The drivers are also OS-architecture specific (x32/x64)
 
 * Find what abstraction layer is used. Usually there will be lines of code similar to the following.
 
-{% include_relative ado-db-connection.vba.codesnippet %}
+{% code-snippet { file-name: ado-db-connection.vba } %}
 
 * Make sure that the appropriate driver is installed. For SOLIDWORKS 2013 onwards (check the drivers for x64 system).
 For older SOLIDWORKS version check x32 versions). Usually the drivers can be downloaded for free from the database supplier web-site or database installation package.

@@ -36,4 +36,4 @@ As the result the CSV file is created which contains
 * Component name
 * X, Y, Z coordinate of the origin in the specified units
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -22,4 +22,4 @@ If it is required to copy the result into the text format, simply click on messa
 
 {% include img.html src="type-name-msg-clipboard.png" width=250 alt="Feature type names copied to Notepad" align="center" %}
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

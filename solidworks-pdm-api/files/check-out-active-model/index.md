@@ -26,4 +26,4 @@ The following macro will demonstrate this technique and will check-out currently
 
 Modify the value of the *VAULT_NAME* variable to the corresponding vault name where the active model has been opened from.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

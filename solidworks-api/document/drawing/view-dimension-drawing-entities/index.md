@@ -16,4 +16,4 @@ The entities returned from [IView::GetVisibleEntities](http://help.solidworks.co
 
 Location of the dimension is calculated by offsetting the middle point of the dimensioned edge in the normal curve direction (cross product of the tangent direction and the sheet Z axis) by 20% of the edge length. Unlike [drawing in sheet context]({{ "/solidworks-api/document/drawing/sheet-context-sketch/" | relative_url }}), drawing sheet scale is not required to be multiplied to the view transformation matrix when positioning the dimensions.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

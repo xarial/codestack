@@ -33,4 +33,4 @@ Const NEW_SKETCH_NAME As String = "MergedSketch" 'new merged sketch to be named 
 
 Use this macro in conjunction with [Select Features By Type]({{ "/solidworks-api/document/selection/select-features-by-type/" | relative_url }}) to select all sketches to be merged.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

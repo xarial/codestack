@@ -50,7 +50,7 @@ This would automatically start SOLIDWORKS by pressing green run button or F5 key
 
 * Copy paste the code for the add-in as shown below and compile the project
 
-{% include_relative add-in.vb.codesnippet %}
+{% code-snippet { file-name: add-in.vb } %}
 
 * You can ignore the following warning displayed in the Visual Studio window while compilation.
 

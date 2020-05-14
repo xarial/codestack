@@ -44,10 +44,10 @@ End Sub
 
 Main macro routine to insert feature and define event handles
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}
 
 ## HandlerModule Module
 
 Module to insert required code to be run every time model loads. Must be named *HandlerModule*
 
-{% include_relative HandlerModule.vba.codesnippet %}
+{% code-snippet { file-name: HandlerModule.vba } %}

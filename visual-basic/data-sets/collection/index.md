@@ -55,7 +55,7 @@ Debug.Print coll.Item(<Index Of Element>)
 Debug.Print coll(<Index Of Element>)
 ~~~
 
-{% include_relative add-insert-items.vba.codesnippet %}
+{% code-snippet { file-name: add-insert-items.vba } %}
 
 ### Indexing items by keys
 
@@ -77,7 +77,7 @@ Elements in the collection can be accessed by key (similar to the way they acces
 Debug.Print coll.Item("<Key Name>")
 ~~~
 
-{% include_relative add-items-with-keys.vba.codesnippet %}
+{% code-snippet { file-name: add-items-with-keys.vba } %}
 
 ### Removing items
 
@@ -88,4 +88,4 @@ coll.Remove(<Index of Element>)
 coll.Remove("<Key of Element>")
 ~~~
 
-{% include_relative remove-items.vba.codesnippet %}
+{% code-snippet { file-name: remove-items.vba } %}

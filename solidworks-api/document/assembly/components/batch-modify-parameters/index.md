@@ -12,4 +12,4 @@ This example demonstrates how to use parameters (similar to design table paramet
 
 Multiple components can be modified in a batch mode to improve performance.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

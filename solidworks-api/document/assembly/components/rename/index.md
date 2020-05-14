@@ -31,4 +31,4 @@ The names of the components in the structure above will be returned as the follo
 
 Example below renames any selected component (root level, component in sub-assembly and virtual) using SOLIDWORKS API by adding the suffix to its name.
 
-{% include_relative Macro.vba.codesnippet %}
+{% code-snippet { file-name: Macro.vba } %}

@@ -32,10 +32,10 @@ Source code can be downloaded from [GitHub](https://github.com/codestackdev/soli
 
 This the add-in entry point. [SwEx.AddIn](/labs/solidworks/swex/add-in/) framework is used to manage documents lifecycle by providing the wrapper class. Import command is handled in the add-in and [Model3DGroup](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.media3d.model3dgroup) object of Microsoft WPF framework is extracted from the specified XAML file.
 
-{% include_relative AddIn.cs.codesnippet %}
+{% code-snippet { file-name: AddIn.cs } %}
 
 ## MeshRendererModel.cs
 
 This is a handler class for each model document which subscribes to the OpenGL Buffer Swap notification provided by SOLIDWORKS and performs the binding and rendering of VBO based on the provided mesh data.
 
-{% include_relative MeshRendererModel.cs.codesnippet %}
+{% code-snippet { file-name: MeshRendererModel.cs } %}
