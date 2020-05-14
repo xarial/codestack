@@ -39,7 +39,7 @@ The following macro reads the selected sketch point coordinate relative to the l
 
 ## Retrieving the global coordinates from sketch point
 
-In order to find the value of the coordinate relative to the global coordinate system it is required to find the sketch to model [transformation matrix]({{ "/solidworks-api/geometry/transformation/" | relative_url }}) via [ISketch::ModelToSketchTransform](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISketch~ModelToSketchTransform.html) SOLIDWORKS API property and apply this to the point coordinate.
+In order to find the value of the coordinate relative to the global coordinate system it is required to find the sketch to model [transformation matrix](/solidworks-api/geometry/transformation/) via [ISketch::ModelToSketchTransform](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISketch~ModelToSketchTransform.html) SOLIDWORKS API property and apply this to the point coordinate.
 
 Below macro can be used to perform the steps from the previous paragraph, but now the extracted coordinates will match the values in the global coordinate system.
 

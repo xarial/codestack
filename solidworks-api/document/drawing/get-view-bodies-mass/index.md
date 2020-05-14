@@ -8,7 +8,7 @@ labels: [view,mass,flat pattern]
 ---
 It is possible to find the mass of the specific body by using the [IBody2::GetMassProperties](http://help.solidworks.com/2016/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ibody2~getmassproperties.html) SOLIDWORKS API method, but it is required to specify the density in order to calculate mass which might not be easy to extract.
 
-If it is required to find the mass of bodies in the drawing view, this method might not be applicable. The density is not available for the body if the material was applied to the body itself. It is possible to extract density form the material properties, but it will be required to [parse material XML file]({{ "http://localhost:4000/solidworks-api/document/materials/copy-custom-property/" | relative_url }}) to find the value of the node.
+If it is required to find the mass of bodies in the drawing view, this method might not be applicable. The density is not available for the body if the material was applied to the body itself. It is possible to extract density form the material properties, but it will be required to [parse material XML file](http://localhost:4000/solidworks-api/document/materials/copy-custom-property/) to find the value of the node.
 
 {% include img.html src="flat-pattern-drawing.png" width=250 alt="Drawing view of flat pattern" align="center" %}
 

@@ -14,7 +14,7 @@ Selection is a vital part of SOLIDWORKS API development process. In this article
 
 Mainly selections are used for
 
-* [Features creation]({{ "/solidworks-api/document/features-manager" | relative_url }}) (e.g. Extrude feature requires selection of the sketch and optional selection of direction)
+* [Features creation](/solidworks-api/document/features-manager) (e.g. Extrude feature requires selection of the sketch and optional selection of direction)
 * [Mating]({{ "/solidworks-api/document/assembly/mates" | relative_url}})
 * Evaluation (i.e. surface area or perimeter calculation)
 * [Dimensioning]({{ "/solidworks-api/document/dimensions" | relative_url}})
@@ -52,7 +52,7 @@ Refer the [ISelectData](http://help.solidworks.com/2012/english/api/sldworksapi/
 
 There are multiple ways of selecting entities in SOLIDWORKS. The following list is the most common ways of selecting elements:
 
-* By name or by coordinate. This method is usually used in macro recording and selects the object 'as is' (i.e. as it would be selected from the User Interface). This approach introduces potential issues and usually a reason for macro [instability and inconsistency]({{ "solidworks-api/troubleshooting/macros/selection-inconsistency" | relative_url }}) and should be avoided. Refer the [Selecting Objects By Name And Coordinates](select-by-id) article for pros and cons of this approach.
+* By name or by coordinate. This method is usually used in macro recording and selects the object 'as is' (i.e. as it would be selected from the User Interface). This approach introduces potential issues and usually a reason for macro [instability and inconsistency](solidworks-api/troubleshooting/macros/selection-inconsistency) and should be avoided. Refer the [Selecting Objects By Name And Coordinates](select-by-id) article for pros and cons of this approach.
 
 * By direct *SelectX* method. Majority of selectable objects in SOLIDWORKS provide direct *SelectX* method which allows to select the element from its pointer:
 

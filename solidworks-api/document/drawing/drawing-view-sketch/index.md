@@ -12,7 +12,7 @@ All drawing views in the drawing document have their own sketches which can be r
 
 This is a sketch where sketch entities and points can be drawn using the [ISketchManager](http://help.solidworks.com/2019/english/api/draftsightapi/Interop.dsAutomation~Interop.dsAutomation.ISketchManager.html) interface.
 
-Unlike [creating sketch segment in the sheet space]({{ "/solidworks-api/document/drawing/sheet-context-sketch/" | relative_url }}), segments added to a view sketch will move together with the view and will be scaled and rotated in case of 3D rotation of the view.
+Unlike [creating sketch segment in the sheet space](/solidworks-api/document/drawing/sheet-context-sketch/), segments added to a view sketch will move together with the view and will be scaled and rotated in case of 3D rotation of the view.
 
 Similar to the sketches in the assembly or part it is required to transform the coordinates from the model space into the sketch space in order to properly position the segments.
 

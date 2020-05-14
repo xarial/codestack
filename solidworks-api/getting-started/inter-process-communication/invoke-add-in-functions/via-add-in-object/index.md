@@ -47,7 +47,7 @@ If *Register for COM Interop* option is selected in Visual Studio this will auto
 
 ## Example add-in with API
 
-The following add-in examples is built using the [SwEx.AddIn Framework]({{ "/labs/solidworks/swex/add-in/" | relative_url }}), but the same technique can apply to add-in built with different methods.
+The following add-in examples is built using the [SwEx.AddIn Framework](/labs/solidworks/swex/add-in/), but the same technique can apply to add-in built with different methods.
 
 Add-in adds the menu command under the *Tools* menu allowing to create cylindrical feature
 
@@ -121,7 +121,7 @@ Note that the add-in errors are correctly thrown from the macro. For example the
 
 ### Calling add-in from stand-alone applications
 
-Similarly to VBA macro, add-in can be automated from the [Stand-Alone Applications]({{ "/solidworks-api/getting-started/stand-alone/" | relative_url }}). To enable type safety it is required to add the reference to add-in dll. Note if add-in is a .NET add-in you won't be able to add .tlb file as the reference, instead it is required to add the actual add-in dll.
+Similarly to VBA macro, add-in can be automated from the [Stand-Alone Applications](/solidworks-api/getting-started/stand-alone/). To enable type safety it is required to add the reference to add-in dll. Note if add-in is a .NET add-in you won't be able to add .tlb file as the reference, instead it is required to add the actual add-in dll.
 
 #### VB.NET Stand-Alone application
 
@@ -135,7 +135,7 @@ Exception can also be handled from the stand-alone application
 
 {% include img.html src="add-in-exception-net.png" width=550 alt=".NET exception thrown in the .NET application" align="center" %}
 
-> The above approach to connect to SOLIDWORKS instance (Activator::CreateInstance or GetObject methods) in some cases might create new invisible instance of SOLIDWORKS instead of connecting to an existing session. These instances would be created as background applications and no add-ins loaded so the code will fail. To force connect to the active session of SOLIDWORKS follow [Connecting by querying the COM instance from the Running Object Table (ROT)]({{ "/solidworks-api/getting-started/stand-alone/#method-b-connecting-by-querying-the-com-instance-from-the-running-object-table-rot" | relative_url }}) article.
+> The above approach to connect to SOLIDWORKS instance (Activator::CreateInstance or GetObject methods) in some cases might create new invisible instance of SOLIDWORKS instead of connecting to an existing session. These instances would be created as background applications and no add-ins loaded so the code will fail. To force connect to the active session of SOLIDWORKS follow [Connecting by querying the COM instance from the Running Object Table (ROT)](/solidworks-api/getting-started/stand-alone/#method-b-connecting-by-querying-the-com-instance-from-the-running-object-table-rot) article.
 
 #### Notes
 

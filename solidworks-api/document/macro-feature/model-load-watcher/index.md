@@ -24,7 +24,7 @@ Feature is visible in the tree and can be embedded into the document template if
 * Copy the code into corresponding modules of the macro
 * To configure the macro modify the options defined in the constants:
 
-    * EMBED_MACRO_FEATURE - true to embed this macro directly into the document. With this option model can be shared and will work on each computer (macro doesn't meed to be shared). Refer the [Macro Based Macro Feature]({{ "/solidworks-api/document/macro-feature/#macro-based-macro-feature" | relative_url }}) section for benefits and limitation of this approach.
+    * EMBED_MACRO_FEATURE - true to embed this macro directly into the document. With this option model can be shared and will work on each computer (macro doesn't meed to be shared). Refer the [Macro Based Macro Feature](/solidworks-api/document/macro-feature/#macro-based-macro-feature) section for benefits and limitation of this approach.
     * BASE_NAME - default naming convention for the feature
 
 ~~~ vb

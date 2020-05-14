@@ -38,7 +38,7 @@ Entity name can be changed from the **Entity Property** dialog. Refer [Displayin
 * Names displayed in the selection boxes are not the real names of entities. These are just temporarily assigned names for differentiation the selection in the currently opened property manager page. Those names should not be used as the reference.
 {% include img.html src="temp-face-name.png" alt="Temporarily name of face used in the property manager page" align="center" %}
 
-* While changing the name of the component it is required to consider several factors. Refer [Renaming Components]({{ "solidworks-api/document/assembly/components/rename/" | relative_url }}) for more information
+* While changing the name of the component it is required to consider several factors. Refer [Renaming Components](solidworks-api/document/assembly/components/rename/) for more information
 
 The following example allows to rename the selected object with the specified name using SOLIDWORKS API.
 

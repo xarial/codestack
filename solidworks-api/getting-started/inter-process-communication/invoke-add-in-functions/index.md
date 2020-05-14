@@ -6,7 +6,7 @@ description: Calling function of SOLIDWORKS add-in from stand-alone application 
 image: /images/codestack-snippet.png
 labels: [add-in api,invoke]
 ---
-This section contains examples and explains how to create an API for SOLIDWORKS add-in so its functions can be called from [Macros]({{ "/solidworks-api/getting-started/macros/" | relative_url }}), [Stand-Alone Applications]({{ "/solidworks-api/getting-started/stand-alone/" | relative_url }}), [Scripts]({{ "/solidworks-api/getting-started/scripts/" | relative_url }}) or other [Add-Ins]({{ "/solidworks-api/getting-started/add-ins/" | relative_url }})
+This section contains examples and explains how to create an API for SOLIDWORKS add-in so its functions can be called from [Macros](/solidworks-api/getting-started/macros/), [Stand-Alone Applications](/solidworks-api/getting-started/stand-alone/), [Scripts](/solidworks-api/getting-started/scripts/) or other [Add-Ins](/solidworks-api/getting-started/add-ins/)
 
 Enabling API functions in your add-in might be required when add-in itself needs to be automated. This approach can also help to improve performance. As add-ins are in-process applications, they provide the best performance. In this case add-in can act as an engine for the functionality which gets triggered from the macro or another add-in so the performance is optimal.
 

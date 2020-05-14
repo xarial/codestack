@@ -63,4 +63,4 @@ If macro button was placed on the command tab box use the following context menu
 
 {% include img.html src="command-tab-macro-button-properties.png" width=250 alt="Properties of the macro button in the commands tab box" align="center" %}
 
-If you want to place the macro button to the custom toolbar you can use the free [MyToolbar]({{ "/labs/solidworks/my-toolbar" | relative_url }}) add-in.
+If you want to place the macro button to the custom toolbar you can use the free [MyToolbar](/labs/solidworks/my-toolbar) add-in.

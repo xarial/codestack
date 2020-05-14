@@ -16,6 +16,6 @@ Macro recursively traverses files and sub folders and outputs the file or folder
 
 {% include img.html src="pdm-folder-structure-output.png" width=350 alt="Folders and files structure output to immediate window of VBA Editor" align="center" %}
 
-This macro can traverse the tree even if it is not [cached locally]({{ "/solidworks-pdm-api/files/local-cache/" | relative_url }})
+This macro can traverse the tree even if it is not [cached locally](/solidworks-pdm-api/files/local-cache/)
 
 {% code-snippet { file-name: Macro.vba } %}

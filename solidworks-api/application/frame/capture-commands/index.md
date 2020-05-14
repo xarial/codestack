@@ -32,7 +32,7 @@ The command id can be looked up in the the [commands list]((http://help.solidwor
 
 ### Capturing commands from the custom add-ins
 
-For the standard SOLIDWORKS commands, User Command argument will be equal to 0. However commands cannot be defined for any custom add-in or [Macro Buttons]({{ "solidworks-api/getting-started/macros/macro-buttons/" | relative_url }})
+For the standard SOLIDWORKS commands, User Command argument will be equal to 0. However commands cannot be defined for any custom add-in or [Macro Buttons](solidworks-api/getting-started/macros/macro-buttons/)
 
 If this command is clicked, the command id would be equal to one of the following:
 

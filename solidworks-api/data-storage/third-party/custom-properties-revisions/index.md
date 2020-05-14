@@ -10,7 +10,7 @@ labels: [storage,3rd party,custom properties]
 
 This example demonstrates how to utilize 3rd party storage store to save file custom properties revisions using SOLIDWORKS API.
 
-This add-in is built using the [SwEx.AddIn]({{ "/labs/solidworks/swex/add-in/" | relative_url }}) framework but it could work with any other methods of creating the add-ins.
+This add-in is built using the [SwEx.AddIn](/labs/solidworks/swex/add-in/) framework but it could work with any other methods of creating the add-ins.
 
 Add-in adds two buttons in the menu and toolbar and provides two handlers correspondingly: 
 

@@ -24,7 +24,7 @@ For more information about the STL specification follow [this link](https://en.w
 
 In order to configure the orientation of the output file it is required to change the values of 4x4 orientation matrix defined in the *m_Transform* at the beginning of the macro.
 
-Use the [Get Coordinate System Transform]({{ "/solidworks-api/geometry/transformation/get-coordinate-system-transform/" | relative_url }}) macro to retrieve the transformation from any selected coordinate system.
+Use the [Get Coordinate System Transform](/solidworks-api/geometry/transformation/get-coordinate-system-transform/) macro to retrieve the transformation from any selected coordinate system.
 
 For example to set the 90 degrees rotation around X axis in clockwise direction it is required to change the values of the *m_Transform* array to the ones below:
 

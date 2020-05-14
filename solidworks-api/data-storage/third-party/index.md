@@ -70,4 +70,4 @@ When 3rd party data is modified (e.g. user added new node in the 3rd party tree)
 
 Storages and stores accessed by the corresponding names. It might be the cases when different developers might use the same name for storage or store. In this case conflict occurs. When using 3rd party containers it is recommended to register the storage or store name via SOLIDWORKS API Support and in this case this name will be reserved.
 
-Refer [Storing 3rd party data in SOLIDWORKS models using SwEx.AddIn framework]({{ "/labs/solidworks/swex/add-in/third-party-data-storage/" | relative_url }}) article for the information of how to access 3rd party containers using SwEx.AddIn framework.
+Refer [Storing 3rd party data in SOLIDWORKS models using SwEx.AddIn framework](/labs/solidworks/swex/add-in/third-party-data-storage/) article for the information of how to access 3rd party containers using SwEx.AddIn framework.

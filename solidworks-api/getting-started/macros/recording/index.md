@@ -27,7 +27,7 @@ Once recording is finished click **Stop** button and select the file to save the
 
 {% include img.html src="macros-save-filter.png" width=400 alt="Saving recorded macro" align="center" %}
 
-Note that it is possible to save the macro as VBA and VSTA. Refer the [Macros Types]({{ "/solidworks-api/getting-started/macros/types" | relative_url }}) article for the explanation of differences between these macro types.
+Note that it is possible to save the macro as VBA and VSTA. Refer the [Macros Types](/solidworks-api/getting-started/macros/types) article for the explanation of differences between these macro types.
 
 If you record the macros often it is suggested to enable the *Automatically edit macro after recording* option.
 

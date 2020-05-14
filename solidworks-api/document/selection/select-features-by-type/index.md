@@ -12,7 +12,7 @@ group: Model
 
 This VBA macro selects all features in the active model (part, assembly or drawing) using SOLIDWORKS API. For drawings and assemblies features in the children components are also selected.
 
-Use this macro in conjunction with [Get Features Type Name]({{ "/solidworks-api/document/features-manager/get-feature-type-name/" | relative_url }}) to get the required feature type name for filtering.
+Use this macro in conjunction with [Get Features Type Name](/solidworks-api/document/features-manager/get-feature-type-name/) to get the required feature type name for filtering.
 
 ## Configuration
 

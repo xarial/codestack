@@ -21,4 +21,4 @@ Additional options can be specified by decorating the module class via [LoggerOp
 
 Specified logger name will be appended to the SwEx module name (e.g. SwEx.AddIn.MyAddInLog or SwEx.MacroFeature.MyAddInLog or SwEx.PMPage.MyAddInLog).
 
-Log messages are output into the output as setup via [LoggerOptionsAttribute](https://docs.codestack.net/swex/common/html/M_CodeStack_SwEx_Common_Attributes_LoggerOptionsAttribute__ctor.htm) attribute. Currently only debug trace logger is supported. Refer [Troubleshooting]({{ "/labs/solidworks/swex/troubleshooting/" | relative_url }}) article for the instructions of how to capture debug trace messages.
+Log messages are output into the output as setup via [LoggerOptionsAttribute](https://docs.codestack.net/swex/common/html/M_CodeStack_SwEx_Common_Attributes_LoggerOptionsAttribute__ctor.htm) attribute. Currently only debug trace logger is supported. Refer [Troubleshooting](/labs/solidworks/swex/troubleshooting/) article for the instructions of how to capture debug trace messages.

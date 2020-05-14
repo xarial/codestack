@@ -36,6 +36,6 @@ As the result sub configurations for each bend are created representing the bend
 
 {% include img.html src="sheet-metal-bending.gif" alt="Sheet metal bending steps in the configurations" align="center" %}
 
-Refer the [Animate Configurations]({{ "solidworks-api/motion-study/animate-configurations/" | relative_url }}) for example macro to animate the configurations using SOLIDWORKS API.
+Refer the [Animate Configurations](solidworks-api/motion-study/animate-configurations/) for example macro to animate the configurations using SOLIDWORKS API.
 
 {% code-snippet { file-name: Macro.vba } %}

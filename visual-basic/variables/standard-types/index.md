@@ -31,7 +31,7 @@ Allocates 8 bytes of storage. Value ranges from -9,223,372,036,854,775,808 throu
 #### LongPtr
 Represents [Long](#long) type (4 bytes) on 32-bit systems and [LongLong](longlong) type (8 bytes) on 64-bit systems.
 
-LongPtr usually used for writing portable code that can run in both 32-bit and 64-bit environments. In particular this is used in [Windows 32 APIs]({{ "visual-basic/windows-api" | relative_url }}) for pointers and handles.
+LongPtr usually used for writing portable code that can run in both 32-bit and 64-bit environments. In particular this is used in [Windows 32 APIs](visual-basic/windows-api) for pointers and handles.
 
 ### Numeric with decimal point
 These types of variables are used to hold positive and negative numeric values with decimal points, i.e. 20.5, -152.89 etc. Different type of variables allow to store different value ranges with different precisions. The most commonly used type is [Double](double). For high precision numbers either [Currency](currency) or [Decimal](decimal) types can be used.
@@ -46,10 +46,10 @@ Allocates 8 bytes of storage. Value ranges from –1.79769313486232E308 through 
 Allocates 8 bytes of storage. Value ranges from –922,337,203,477.5808 through 922,337,203,685,477.5807. The type declaration character for integer is @. The function of converting to Currency is *CCur*
 
 #### Decimal
-Allocates 14 bytes of storage. Value ranges from -79,228,162,514,264,337,593,543,950,335 through 79,228,162,514,264,337,593,543,950,335 or –7.2998162514264337593543950335 through 7.9228162514264337593543950335.  The function of converting to Decimal is *CDec*. Note that variable of type Decimal must be declared as [Variant]({{ "visual-basic/variables/standard-types#variant" | relative_url }}) and assigned using *CDec* function.
+Allocates 14 bytes of storage. Value ranges from -79,228,162,514,264,337,593,543,950,335 through 79,228,162,514,264,337,593,543,950,335 or –7.2998162514264337593543950335 through 7.9228162514264337593543950335.  The function of converting to Decimal is *CDec*. Note that variable of type Decimal must be declared as [Variant](visual-basic/variables/standard-types#variant) and assigned using *CDec* function.
 
 ### Logical
-Logical variables are used in [conditions]({{ "visual-basic/conditions" | relative_url }}) and presented as 1 (True) or 0 (False)
+Logical variables are used in [conditions](visual-basic/conditions) and presented as 1 (True) or 0 (False)
 
 #### Boolean
 Allocates 2 bytes of storage. Either True or False. The function of converting to Boolean is *CBool*
@@ -70,7 +70,7 @@ Allocates 8 bytes of storage. Value ranges from January 1, 100 to December 31, 9
 These variables are any reference types which might hold complex data and structures.
 
 #### Object
-Allocates 4 bytes of storage. Used in [Late Binding]({{ "visual-basic/variables/declaration#early-binding-and-late- binding" | relative_url }})
+Allocates 4 bytes of storage. Used in [Late Binding](visual-basic/variables/declaration#early-binding-and-late- binding)
 
 ### Any
 These variable types can hold any data object (either value type, reference type or arrays)

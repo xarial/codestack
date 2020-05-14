@@ -21,7 +21,7 @@ This article explains how to create a VSTA macro (C# or VB.NET) from the existin
 
 * Modify the namespace to the original one
 
-> If namespace is not modified the following issue will appear: [Invalid Namespace In VSTA (C# or VB.NET) Macro]({{ "solidworks-api/troubleshooting/macros/vsta-invalid-namespace/" | relative_url }})
+> If namespace is not modified the following issue will appear: [Invalid Namespace In VSTA (C# or VB.NET) Macro](solidworks-api/troubleshooting/macros/vsta-invalid-namespace/)
 
 Unlike VBA macros, VSTA macro must be compiled to the dll. Call *Build->Compile* command in the code editor menu. You can also run the macro directly by clicking the green arrow button. Once compiled the dll will be generated in the *bin\Release* folder of the macro and the full path will be printed to the *Output* window as shown below.
 
@@ -31,7 +31,7 @@ Unlike VBA macros, VSTA macro must be compiled to the dll. Call *Build->Compile*
 
 {% include img.html src="run-vsta-macro.png" width=550 alt="Setting the filter for VSTA macro when running" align="center" %}
 
-> To run the macro only binaries are required. So the content of the *bin\Release* folder can be copied to a new location or shared with another user. It is required to copy the full content of the *bin\Release* folder (not just macro dll) to avoid the following error: [Failed to Run VSTA (C# or VB.NET) Macro]({{ "solidworks-api/troubleshooting/macros/run-vsta-macro-error/" | relative_url }})
+> To run the macro only binaries are required. So the content of the *bin\Release* folder can be copied to a new location or shared with another user. It is required to copy the full content of the *bin\Release* folder (not just macro dll) to avoid the following error: [Failed to Run VSTA (C# or VB.NET) Macro](solidworks-api/troubleshooting/macros/run-vsta-macro-error/)
 
 ### Keeping VSTA macro running
 

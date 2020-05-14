@@ -18,7 +18,7 @@ Module must have an unique name which can be defined by the developer.
 
 {% include img.html src="module-properties.png" alt="Module properties" align="center" %}
 
-Functions defined in module are public. Members (variables) declared with **Dim** keyword are only visible within this module scope and not visible for another modules, while members declared with **Public** keyword are visible for this and other modules. Refer [Variables Scope]({{ "visual-basic/variables/scope" | relative_url }}) article for more information.
+Functions defined in module are public. Members (variables) declared with **Dim** keyword are only visible within this module scope and not visible for another modules, while members declared with **Public** keyword are visible for this and other modules. Refer [Variables Scope](visual-basic/variables/scope) article for more information.
 
 {% include img.html src="module-members.png" alt="Module members" align="center" %}
 

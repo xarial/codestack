@@ -13,7 +13,7 @@ Macros can be edited directly in the built-in VBA Editor and can be executed in 
 
 ### VBA Macros (*.swp)
 
-These probably the most popular macros. The macros are based on VBA7 (for SOLIDWORKS 2015 and newer) and VBA6 for older versions. VBA6 and VBA7 are derived languages from Visual Basic 6. So all the syntax is the same. Refer [Visual Basic Tutorials]({{ "/visual-basic" | relative_url }}) for more documentation about this language.
+These probably the most popular macros. The macros are based on VBA7 (for SOLIDWORKS 2015 and newer) and VBA6 for older versions. VBA6 and VBA7 are derived languages from Visual Basic 6. So all the syntax is the same. Refer [Visual Basic Tutorials](/visual-basic) for more documentation about this language.
 
 Macros are saved in the binary format with *.swb extension and can be viewed and edited by SOLIDWORKS VBA Editor only.
 
@@ -23,7 +23,7 @@ Similar to *.swp macros these types of macros are based on VBA6 and VBA7 languag
 
 Which makes it readable and editable outside of SOLIDWORKS environment with any text editors (such as Notepad). This is in particular useful when macro code is maintained within the control version services such as SVN or GIT.
 
-These macros cannot reference any 3rd party type libraries (such as Excel, File System Object, etc.) and will only include references to SOLIDWORKS type libraries. If it is required to use any 3rd party type library it is possible to do so via [Late binding]({{ "/visual-basic/variables/declaration/#early-binding-and-late-binding" | relative_url }}).
+These macros cannot reference any 3rd party type libraries (such as Excel, File System Object, etc.) and will only include references to SOLIDWORKS type libraries. If it is required to use any 3rd party type library it is possible to do so via [Late binding](/visual-basic/variables/declaration/#early-binding-and-late-binding).
 
 ### C# and VB.NET VSTA Macros
 

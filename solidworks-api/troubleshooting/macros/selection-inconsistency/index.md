@@ -18,4 +18,4 @@ Usually macro recording is using the [IModelDocExtension::SelectByID2](http://he
 
 ## Resolution
 
-Update the selection method. Refer the [Selection]({{ "solidworks-api/document/selection" | relative_url }}) article for detailed guide.
+Update the selection method. Refer the [Selection](solidworks-api/document/selection) article for detailed guide.

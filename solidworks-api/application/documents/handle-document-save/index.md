@@ -32,7 +32,7 @@ End Sub
 
 * Add new Class Module and name it *SaveEventsHandler*. Paste the code from the [SaveEventsHandler Class Module](#saveeventshandler-class-module)
 
-* It might be useful to automatically run this macro with each session of SOLIDWORKS. Follow the [Run SOLIDWORKS macro automatically on application start]({{ "solidworks-api/getting-started/macros/run-macro-on-solidworks-start/" | relative_url }}) link for more information.
+* It might be useful to automatically run this macro with each session of SOLIDWORKS. Follow the [Run SOLIDWORKS macro automatically on application start](solidworks-api/getting-started/macros/run-macro-on-solidworks-start/) link for more information.
 
 ## Macro Module
 

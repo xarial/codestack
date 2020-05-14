@@ -12,7 +12,7 @@ Internal ids are usually Integer or Long values which uniquely identify the SOLI
 
 > Sketch elements (points, segments, hatches) consist of 2 Integer or Long ids
 
-Same as [Persistent Reference IDs]({{ "solidworks-api/document/tracking-objects/persist-references" | relative_url }}) internal ids cannot be changed or assigned and not visible from the GUI (e.g. only available within the APIs). But unlike persistent reference ids, object cannot be looked up by internal id, i.e. it is required to traverse all objects in order to find required one by id.
+Same as [Persistent Reference IDs](solidworks-api/document/tracking-objects/persist-references) internal ids cannot be changed or assigned and not visible from the GUI (e.g. only available within the APIs). But unlike persistent reference ids, object cannot be looked up by internal id, i.e. it is required to traverse all objects in order to find required one by id.
 
 Internal ids should be used if it is required to index all elements (e.g. sketch segments or features) and minimize the size of the indexed data (for example if it is required to store the data within the 3rd party storage or send via network).
 

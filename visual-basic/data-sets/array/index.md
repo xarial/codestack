@@ -59,7 +59,7 @@ In order to retrieve the upper and lower boundaries of the array **UBound** and 
 
 ### Filling array with data
 
-Array elements can be treated as individual variables and the same rules of reading and editing the data applies to array elements as any other variable. Refer [Variables]({{ "visual-basic/variables" | relative_url }}) article for more information.
+Array elements can be treated as individual variables and the same rules of reading and editing the data applies to array elements as any other variable. Refer [Variables](visual-basic/variables) article for more information.
 
 ~~~ vb
 Dim arr(2) As Double

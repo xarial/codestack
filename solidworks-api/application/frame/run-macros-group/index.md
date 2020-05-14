@@ -12,7 +12,7 @@ group: Frame
 
 Macro can be run from another macro using the [ISldWorks::RunMacro2](http://help.solidworks.com/2010/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~runmacro2.html) SOLIDWORKS API function.
 
-This enables the possibility to run multiple macros from within one macro. This can be useful when [adding the custom macro buttons on the macro toolbar]({{ "/solidworks-api/getting-started/macros/macro-buttons/" | relative_url }}) so multiple commands can be executed by one button click.
+This enables the possibility to run multiple macros from within one macro. This can be useful when [adding the custom macro buttons on the macro toolbar](/solidworks-api/getting-started/macros/macro-buttons/) so multiple commands can be executed by one button click.
 
 The following example allows to run several SOLIDWORKS macros within one macro.
 
@@ -28,7 +28,7 @@ Where
 
 {% include img.html src="macro-entry-point.png" width=350 alt="Macro entry point" align="center" %}
 
-* **Full Path To Macro** - full path to .swp or .dll for [VBA or VSTA macro]({{ "/solidworks-api/getting-started/macros/types" | relative_url }})
+* **Full Path To Macro** - full path to .swp or .dll for [VBA or VSTA macro](/solidworks-api/getting-started/macros/types)
 * <span style="color:blue">**Module Name**</span> - name of the module where the main entry function is defined. This is usually the macro name followed by 1.
 * <span style="color:green">**Entry Function Name**</span> - name of the entry function. This function cannot have parameters. Usually named **main**
 

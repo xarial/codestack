@@ -53,7 +53,7 @@ This is a 2 column CSV file
 
 ## Feature Types
 
-Feature types are language independent identifers of feature kind. Use [Get Features Type Name]({{ "/solidworks-api/document/features-manager/get-feature-type-name/" | relative_url }}) VBA macro to extract type names. Use *Type Name 2* unless it is equal to *ICE* (in this case use *Type Name 1*)
+Feature types are language independent identifers of feature kind. Use [Get Features Type Name](/solidworks-api/document/features-manager/get-feature-type-name/) VBA macro to extract type names. Use *Type Name 2* unless it is equal to *ICE* (in this case use *Type Name 1*)
 
 ### Special Feature Types
 

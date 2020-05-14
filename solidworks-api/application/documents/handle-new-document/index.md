@@ -27,7 +27,7 @@ Sub main(model As SldWorks.ModelDoc2)
 End Sub
 ~~~
 
-* It might be useful to automatically run this macro with each session of SOLIDWORKS. Follow the [Run SOLIDWORKS macro automatically on application start]({{ "solidworks-api/getting-started/macros/run-macro-on-solidworks-start/" | relative_url }}) link for more information.
+* It might be useful to automatically run this macro with each session of SOLIDWORKS. Follow the [Run SOLIDWORKS macro automatically on application start](solidworks-api/getting-started/macros/run-macro-on-solidworks-start/) link for more information.
 * To learn how to run another macro or group of macros refer [Run Group Of Macros](/solidworks-api/application/frame/run-macros-group/) article
 
 ## Macro Module

@@ -102,6 +102,6 @@ This example demonstrates the behaviour of variables declared in the different s
 
 {% code-snippet { file-name: different-scopes-example.vba } %}
 
-Output to [Immediate Window]({{ "visual-basic/vba/vba-editor/windows#immediate-window" | relative_url }})
+Output to [Immediate Window](visual-basic/vba/vba-editor/windows#immediate-window)
 
 {% include img.html src="immediate-window-output.png" width=350 alt="Output of variable values" align="center" %}

@@ -16,6 +16,6 @@ Component name can be found in the following dialog in SOLIDWORKS User Interface
 
 {% include img.html src="component-name.png" width=250 alt="Component name in properties dialog" align="center" %}
 
-Refer [Select Component By Name]({{ "/solidworks-api/document/selection/select-component-by-name" | relative_url }}) example for an alternative way of selecting the component by name.
+Refer [Select Component By Name](/solidworks-api/document/selection/select-component-by-name) example for an alternative way of selecting the component by name.
 
 {% code-snippet { file-name: Macro.vba } %}

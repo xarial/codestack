@@ -8,7 +8,7 @@ labels: [transform,coordinate system]
 ---
 {% include img.html src="coordinate-system.png" width=450 alt="Coordinate system in the feature manager tree" align="center" %}
 
-This VBA macro extract the 4x4 [transformation matrix]({{ "/solidworks-api/geometry/transformation/" | relative_url }}) from the selected coordinate system in the feature manager tree.
+This VBA macro extract the 4x4 [transformation matrix](/solidworks-api/geometry/transformation/) from the selected coordinate system in the feature manager tree.
 
 The comma separated results are output to the immediate (ctrl+G) window of VBA editor.
 

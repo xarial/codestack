@@ -7,7 +7,7 @@ image: /visual-basic/data-structures/enumerators/enum-icon-intellisense.png
 ---
 {% include img.html src="enum-icon-intellisense.png" width=350 alt="Enumerator type in intelli-sense" align="center" %}
 
-Enumerator is a grouped structure of named constants of type [Long]({{ "visual-basic/variables/standard-types#long" | relative_url }})
+Enumerator is a grouped structure of named constants of type [Long](visual-basic/variables/standard-types#long)
 
 The main benefit of enumerator vs constant is an ability to group the constant under single data type and allow an automatic incrementing of values.
 

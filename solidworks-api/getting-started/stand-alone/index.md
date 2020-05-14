@@ -14,9 +14,9 @@ In this article I will discuss 2 generic approaches connecting to SOLIDWORKS ins
 This is optional detailed explanation of these approaches.
 Please follow the links below to access articles which demonstrate how to create a sample project and connect to SOLIDWORKS instance:  
 
-* [Using C#]({{ "/solidworks-api/getting-started/stand-alone/connect-csharp" | relative_url }})
-* [Using VB.NET]({{ "/solidworks-api/getting-started/stand-alone/connect-vbnet" | relative_url }})
-* [Using C++]({{ "/solidworks-api/getting-started/stand-alone/connect-cpp" | relative_url }})
+* [Using C#](/solidworks-api/getting-started/stand-alone/connect-csharp)
+* [Using VB.NET](/solidworks-api/getting-started/stand-alone/connect-vbnet)
+* [Using C++](/solidworks-api/getting-started/stand-alone/connect-cpp)
 
 ## Method A - Activator and ProgId
 ### Connecting by creating an instance via **Prog**ram **Id**entified (progid) or Global Unique COM **Cl**a**s**s **Id**entifier (CLSID)

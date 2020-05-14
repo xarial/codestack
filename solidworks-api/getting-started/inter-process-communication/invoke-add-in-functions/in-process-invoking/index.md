@@ -11,7 +11,7 @@ One of the main limitations of the stand-alone automation of COM based applicati
 
 When hundreds of API calls need to be called from out-of-process applications, the performance may be dropped in hundreds or even thousands of times compared to in-process invocation.
 
-The exact same limitation would apply when invoking add-in API in any of the following approaches: [via add-in object]({{ "/solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions/via-add-in-object/" | relative_url }}), [via Running Object Table]({{ "/solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions/via-rot/" | relative_url }}), etc.
+The exact same limitation would apply when invoking add-in API in any of the following approaches: [via add-in object](/solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions/via-add-in-object/), [via Running Object Table](/solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions/via-rot/), etc.
 
 It can be mistakenly assumed that all of the SOLIDWORKS API calls inside the add-in are invoked in-process as only single API function is called form stand-alone. But in fact all of the SOLIDWORKS API calls within the SOLIDWORKS add-in are invoked as out-of-process calls. This means that calling the add-in API would result in the same performance loses as calling the stand-alone application.
 
@@ -19,7 +19,7 @@ There is however a way to maximize this performance and gain the same results as
 
 The following add-in example implements a function to index all faces of the active assembly documents.
 
-Add-in is developed using the [SwEx.AddIn Framework]({{ "/labs/solidworks/swex/add-in/" | relative_url }}), but the same technique can apply to add-in built with different methods.
+Add-in is developed using the [SwEx.AddIn Framework](/labs/solidworks/swex/add-in/), but the same technique can apply to add-in built with different methods.
 
 It traverses all components, all bodies and all faces and outputs some information about the face in the trace window.
 

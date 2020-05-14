@@ -28,7 +28,7 @@ Configure the parameters as shown below:
 
 {% include img.html src="edit-macro.png" width=650 alt="Editing macro button in MyToolbar" align="center" %}
 
-1. Path to toolbar file. This setting is stored locally to the user. UNC path is supported if required to configure a [shared toolbar]({{ "/labs/solidworks/my-toolbar/user-guide/multi-user/" | relative_url }})
+1. Path to toolbar file. This setting is stored locally to the user. UNC path is supported if required to configure a [shared toolbar](/labs/solidworks/my-toolbar/user-guide/multi-user/)
 1. Add new toolbar
 1. Add new macro button in toolbar
 1. Title of the macro button. It displayed as a bold header in the tooltip when mouse hovers a button in SOLIDWORKS toolbar
@@ -76,6 +76,6 @@ and in the SOLIDWORKS menu.
 
 {% include img.html src="my-toolbar-commands-menu.png" width=450 alt="Macro buttons in SOLIDWORKS menu" align="center" %}
 
-Toolbars can be reorganized and placed into the SOLIDWORKS command manager area. Visit [Customization]({{ "/solidworks/my-toolbar/user-guide/customization/" | relative_url }}) page for additional customization options for the toolbars and commands.
+Toolbars can be reorganized and placed into the SOLIDWORKS command manager area. Visit [Customization](/solidworks/my-toolbar/user-guide/customization/) page for additional customization options for the toolbars and commands.
 
 {% include img.html src="my-toolbar-commands.png" width=350 alt="Macro buttons in SOLIDWORKS toolbar" align="center" %}

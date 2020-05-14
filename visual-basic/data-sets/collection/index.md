@@ -6,7 +6,7 @@ description: Article describing the benefits of collections (dynamic lists) to s
 image: /visual-basic/data-sets/collection/collection-key-already-associated.png
 order: 2
 ---
-Visual Basic collection is a data sets similar to [Array]({{ "visual-basic/data-sets/array" | relative_url }}) designed to hold dynamically changing data. Unlike arrays collection doesn't need to be resized to add or remove values.
+Visual Basic collection is a data sets similar to [Array](visual-basic/data-sets/array) designed to hold dynamically changing data. Unlike arrays collection doesn't need to be resized to add or remove values.
 
 Collection is a reference type and it is required to use **new** keyword to initiate the collection
 

@@ -14,10 +14,10 @@ MyToolbar is a SOLIDWORKS add-in which allows creating new toolbars within SOLID
 
 MyToolbar is an open-source project hosted on [GitHub](https://github.com/codestackdev/my-toolbar).
 
-Follow the [Installation Guide]({{ "/labs/solidworks/my-toolbar/installation" | relative_url }}) for the download link and the setup instructions.
+Follow the [Installation Guide](/labs/solidworks/my-toolbar/installation) for the download link and the setup instructions.
 
-Follow the [User Guide]({{ "/labs/solidworks/my-toolbar/user-guide" | relative_url }}) for technical documentation of the product.
+Follow the [User Guide](/labs/solidworks/my-toolbar/user-guide) for technical documentation of the product.
 
-You can report bugs or request enhancements on the [Issues]({{ "/labs/solidworks/my-toolbar/issues" | relative_url }}) page
+You can report bugs or request enhancements on the [Issues](/labs/solidworks/my-toolbar/issues) page
 
 {% include youtube.html id="e89IMizat8o" width=560 height=315 %}

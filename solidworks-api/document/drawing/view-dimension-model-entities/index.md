@@ -6,7 +6,7 @@ description: Add dimension between two named entities of the part drawing retrie
 image: /solidworks-api/document/drawing/view-dimension-model-entities/drawing-view-dimension.png
 labels: [view,dimension,named]
 ---
-Similar to [Assembly Context]({{ "/solidworks-api/document/assembly/context/" | relative_url }}) there is drawing context. Pointer to the entity may exist in underlying model context and in the drawing view context.
+Similar to [Assembly Context](/solidworks-api/document/assembly/context/) there is drawing context. Pointer to the entity may exist in underlying model context and in the drawing view context.
 
 When entities from the underlying model context (i.e. from part or assembly) need to be selected in the drawing view (for example for the dimensioning purposes), [IView::SelectEntity](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iview~selectentity.html) SOLIDWORKS API method could be called. SOLIDWORKS will automatically find the corresponding entity pointer in the drawing view and select it.
 
@@ -18,7 +18,7 @@ As the result the dimension is added between the edges.
 
 {% include img.html src="drawing-view-dimension.png" width=250 alt="Dimension between 2 named edges" align="center" %}
 
-Location of the dimension is found as a middle point of the line drawn between two middle points of the dimensioned edges. Unlike [drawing in sheet context]({{ "/solidworks-api/document/drawing/sheet-context-sketch/" | relative_url }}), drawing sheet scale is not required to be multiplied to the view transformation matrix when positioning the dimensions.
+Location of the dimension is found as a middle point of the line drawn between two middle points of the dimensioned edges. Unlike [drawing in sheet context](/solidworks-api/document/drawing/sheet-context-sketch/), drawing sheet scale is not required to be multiplied to the view transformation matrix when positioning the dimensions.
 
 {% code-snippet { file-name: Macro.vba } %}
 

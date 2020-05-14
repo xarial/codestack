@@ -31,6 +31,6 @@ Const NEW_SKETCH_NAME As String = "MergedSketch" 'new merged sketch to be named 
 * Relations and dimensions from the source sketch are not copied to a target sketch
 * Sketches are merged to an active 3D sketch, or new 3D sketch is created automatically
 
-Use this macro in conjunction with [Select Features By Type]({{ "/solidworks-api/document/selection/select-features-by-type/" | relative_url }}) to select all sketches to be merged.
+Use this macro in conjunction with [Select Features By Type](/solidworks-api/document/selection/select-features-by-type/) to select all sketches to be merged.
 
 {% code-snippet { file-name: Macro.vba } %}

@@ -42,4 +42,4 @@ End Sub
 
 {% code-snippet { file-name: get-features-count-fix.vba } %}
 
-* [Assign the macro to the button]({{ "/solidworks-api/getting-started/macros/macro-buttons" | relative_url }}). In this case it will be required to forcibly select the entry point sub so no ambiguity in case of multiple parameterless subs exist in the macro
+* [Assign the macro to the button](/solidworks-api/getting-started/macros/macro-buttons). In this case it will be required to forcibly select the entry point sub so no ambiguity in case of multiple parameterless subs exist in the macro

@@ -30,6 +30,6 @@ Const TRANSITION_TIME As Double = 0.5
 Const PAUSE_TIME As Double = 2
 ~~~
 
-Refer the [Suppress Features In New Configurations]({{ "solidworks-api/document/features-manager/create-feature-configurations/" | relative_url }}) for a macro to create configurations from features.
+Refer the [Suppress Features In New Configurations](solidworks-api/document/features-manager/create-feature-configurations/) for a macro to create configurations from features.
 
 {% code-snippet { file-name: Macro.vba } %}

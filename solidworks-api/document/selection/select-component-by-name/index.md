@@ -16,6 +16,6 @@ Component name can be found in the following dialog:
 
 {% include img.html src="component-name.png" width=250 alt="Component name in properties dialog" align="center" %}
 
-Refer [Get Component By Name]({{ "/solidworks-api/document/assembly/components/get-by-name" | relative_url }}) example for macro to retrieve the pointer to the component without the selection.
+Refer [Get Component By Name](/solidworks-api/document/assembly/components/get-by-name) example for macro to retrieve the pointer to the component without the selection.
 
 {% code-snippet { file-name: Macro.vba } %}

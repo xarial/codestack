@@ -7,7 +7,7 @@ image: /visual-basic/data-sets/dictionary/dictionary-key-already-associated.png
 order: 3
 ---
 Visual Basic dictionary object is a collection of unique keys and associated values. It is also possible to
-[index items with keys in collection]({{ "visual-basic/data-sets/collection#indexing-items-by-keys" | relative_url }}), but in this case it is only possible to have keys of String types. While it is possible to create keys of any type in Dictionary.
+[index items with keys in collection](visual-basic/data-sets/collection#indexing-items-by-keys), but in this case it is only possible to have keys of String types. While it is possible to create keys of any type in Dictionary.
 
 Unlike collections dictionaries are COM objects and require reference to *Microsoft Scripting Runtime* library in order to use early binding.
 
@@ -25,7 +25,7 @@ Dim dict As Object 'late binding
 Set dict = CreateObject("Scripting.Dictionary")
 ~~~
 
-Refer [Early Binding and Late Binding]({{ "visual-basic/variables/declaration#early-binding-and-late-binding" | relative_url }}) article for more information about these approaches.
+Refer [Early Binding and Late Binding](visual-basic/variables/declaration#early-binding-and-late-binding) article for more information about these approaches.
 
 ### Add, edit and traverse elements
 

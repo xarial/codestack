@@ -24,7 +24,7 @@ Function <Name>(<Optional Parameters>) As <Type>
 End Function
 ~~~
 
-Type of the function should be defined after the **As** keyword. If type is not explicitly specified than it is considered to be [Variant]({{ "visual-basic/variables/standard-types#variant" | relative_url }})
+Type of the function should be defined after the **As** keyword. If type is not explicitly specified than it is considered to be [Variant](visual-basic/variables/standard-types#variant)
 
 Subroutine is declared within the **Sub**-**End Sub** block
 
@@ -58,7 +58,7 @@ Call Func1()  'using () while calling using Call operator
 
 ### Returning values
 
-In order to return the value from function is is required to consider its name as variable and follow the same rules as while [assigning the variables values]({{ "visual-basic/variables/" | relative_url }})
+In order to return the value from function is is required to consider its name as variable and follow the same rules as while [assigning the variables values](visual-basic/variables/)
 
 ~~~ vb
 Function GetDouble() As Double

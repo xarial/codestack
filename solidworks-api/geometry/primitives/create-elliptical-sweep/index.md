@@ -14,7 +14,7 @@ The [IModeler::CreateSweptBody](http://help.solidworks.com/2012/english/api/sldw
 
 However macro demonstrates how to create edges from the curves in the temp wire bodies.
 
-Using the [Selecting Objects For API Only]({{ "/solidworks-api/document/selection/api-only-selection/" | relative_url }}) technique allows to create sweep body without displaying any wire bodies and without any visible selection in the graphics area. All the user selections will be also preserved.
+Using the [Selecting Objects For API Only](/solidworks-api/document/selection/api-only-selection/) technique allows to create sweep body without displaying any wire bodies and without any visible selection in the graphics area. All the user selections will be also preserved.
 
 * Open part document
 * Optionally select any object (this will not affect the sweep operation).

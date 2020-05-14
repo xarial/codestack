@@ -6,14 +6,14 @@ description: Detailed guide on hosting SOLIDWORKS eDrawings control as WPF User 
 image: /edrawings-api/gettings-started/wpf/edrawings-wpf-window.png
 labels: [edrawings,host,wpf]
 ---
-eDrawings API doesn't provide a native WPF control to be used in WPF. It is however possible to use the [WindowsFormsIntegration](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.integration) framework to host Windows Forms Control in the Windows Presentation Foundation (WPF) environment. Follow [Hosting eDrawings control in Windows Forms]({{ "/edrawings-api/gettings-started/winforms/" | relative_url }}) guide of creating the eDrawings control for Windows Forms.
+eDrawings API doesn't provide a native WPF control to be used in WPF. It is however possible to use the [WindowsFormsIntegration](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.integration) framework to host Windows Forms Control in the Windows Presentation Foundation (WPF) environment. Follow [Hosting eDrawings control in Windows Forms](/edrawings-api/gettings-started/winforms/) guide of creating the eDrawings control for Windows Forms.
 
 ## Creating new project
 
 * Start Visual Studio
 * Create new project and select *WPF Application* in the *Visual C#* templates section
 {% include img.html src="visual-studio-new-wpf-project.png" width=550 alt="Creating WPF application" align="center" %}
-* Follow the [Hosting eDrawings control in Windows Forms]({{ "/edrawings-api/gettings-started/winforms/" | relative_url }}) guide for steps of adding eDrawings interop
+* Follow the [Hosting eDrawings control in Windows Forms](/edrawings-api/gettings-started/winforms/) guide for steps of adding eDrawings interop
 * Add reference to *WindowsFormsIntegration*
 
 ## Creating the eDrawings WPF control

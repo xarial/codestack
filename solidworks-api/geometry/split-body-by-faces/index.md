@@ -14,4 +14,4 @@ This macro creates individual surface (sheet) body for each face of the selected
 
 {% code-snippet { file-name: Macro.vba } %}
 
-For more advanced functionality (supporting parametric approach) refer the [Geomtery++ Split Body By Faces feature]({{ "/labs/solidworks/geometry-plus-plus/user-guide/split-body-by-faces/" | relative_url }})
+For more advanced functionality (supporting parametric approach) refer the [Geomtery++ Split Body By Faces feature](/labs/solidworks/geometry-plus-plus/user-guide/split-body-by-faces/)

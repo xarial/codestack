@@ -19,7 +19,7 @@ The steps performed in the macro are equivalent of the following steps in SOLIDW
 * Click green tick
 * Exit the edit part mode
 
-When editing feature in the assembly it is important to follow the correct [Assembly Context]({{ "/solidworks-api/document/assembly/context/" | relative_url }}).
+When editing feature in the assembly it is important to follow the correct [Assembly Context](/solidworks-api/document/assembly/context/).
 
 * Example below is implemented as VSTA3 macro
 * Select component of the part in the assembly

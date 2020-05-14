@@ -47,7 +47,7 @@ This is an interface of the API exposed to 3rd party applications. In this examp
 
 ## GeometryHelperAddIn Project
 
-This project is a SOLIDWORKS add-in. In this example it is developed using the [SwEx.AddIn Framework]({{ "/labs/solidworks/swex/add-in/" | relative_url }}), but any other frameworks or SDK would be supported.
+This project is a SOLIDWORKS add-in. In this example it is developed using the [SwEx.AddIn Framework](/labs/solidworks/swex/add-in/), but any other frameworks or SDK would be supported.
 
 ### GeometryHelperService.cs
 
@@ -101,7 +101,7 @@ Example of calling the API from the Excel VBA macro.
 
 {% include img.html src="excel-vba-macro.png" width=450 alt="Macro to call SOLIDWORKS add-in API from Excel" align="center" %}
 
-Add the reference to Type Library to enable [early binding]({{ "/visual-basic/variables/declaration#early-binding-and-late-binding" | relative_url }}) for the calls.
+Add the reference to Type Library to enable [early binding](/visual-basic/variables/declaration#early-binding-and-late-binding) for the calls.
 
 {% include img.html src="macro-browse-type-library.png" width=450 alt="Browsing type library for COM applications" align="center" %}
 

@@ -37,7 +37,7 @@ const string OUT_FILE_PATH = @"Options.csv"; //Output file will be created at th
 const string OUT_FILE_PATH = @"D:\Output\prefs.csv"; //File will be output to D:\Output\prefs.csv
 ~~~
 
-Refer [Create And Run VSTA Macro]({{ "solidworks-api/getting-started/macros/create-vsta/" | relative_url }}) for information about creating and adding code to VSTA macro.
+Refer [Create And Run VSTA Macro](solidworks-api/getting-started/macros/create-vsta/) for information about creating and adding code to VSTA macro.
 
 ### C# VSTA Macro
 

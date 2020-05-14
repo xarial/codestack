@@ -24,6 +24,6 @@ Const NMB_FORMAT As String = "000" 'padding for the number, e.g. 001, 002, inste
 Const BASE_NAME As String = "PRT-" 'Base prefix for file naming
 ~~~
 
-Follow the video tutorial in the [Run Macro On Document Load]({{ "solidworks-api/application/documents/handle-document-load/" | relative_url }}) article for the guide of running this macro automatically for each newly created model.
+Follow the video tutorial in the [Run Macro On Document Load](solidworks-api/application/documents/handle-document-load/) article for the guide of running this macro automatically for each newly created model.
 
 {% code-snippet { file-name: Macro.vba } %}

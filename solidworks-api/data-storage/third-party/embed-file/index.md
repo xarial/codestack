@@ -8,7 +8,7 @@ labels: [serialization,third party store,file]
 ---
 This example demonstrates how to use 3rd Party Storage in SOLIDWORKS API to embed and extract the file content directly into the model stream.
 
-Example SOLIDWORKS add-in is built using the [SwEx.AddIn]({{ "/labs/solidworks/swex/add-in/" | relative_url }}) framework but it could work with any other methods of creating the add-ins.
+Example SOLIDWORKS add-in is built using the [SwEx.AddIn](/labs/solidworks/swex/add-in/) framework but it could work with any other methods of creating the add-ins.
 
 Add-in adds two buttons in the menu and toolbar and provides two handlers correspondingly: 
 
