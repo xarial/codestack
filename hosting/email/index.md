@@ -16,7 +16,7 @@ However most of the registrars provide free e-mail forwarding service for dozens
 
 Below video demonstrates how to setup the e-mail forwarding and alias using Gmail and domain name hosted on GoDaddy.
 
-{% include youtube.html id="rqOOnlTUuAw" width=560 height=315 %}
+{% youtube { id: rqOOnlTUuAw } %}
 
 1. [Setup GoDaddy E-Mail Forwarding](godaddy-email-forwarding). As described in the video e-mails forwarded by GoDaddy from *secureserver.net* (Step 1) are not encrypted which results in the warning and vulnerability. To overcome this limitation, skip this step and go to step 2, otherwise proceed to step 4.
 1. [Transfer GoDaddy Domain To Google Domains](transfer-godaddy-domain-to-googledomains)

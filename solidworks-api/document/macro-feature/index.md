@@ -6,7 +6,7 @@ description: Explanation and examples of using macro feature (custom feature) us
 order: 14
 image: /images/codestack-snippet.png
 ---
-{% include youtube.html id="tE_OVE9YTMs" width=560 height=315 %}
+{% youtube { id: tE_OVE9YTMs } %}
 
 Macro feature is a type of feature which can be configured via SOLIDWORKS API and can provides same level of functionality as any native SOLIDWORKS feature.
 

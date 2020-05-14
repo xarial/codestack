@@ -11,7 +11,7 @@ This article explains how to call function of SOLIDWORKS add-in from stand-alone
 
 This is based on the same technique to enable COM communication as shown in this video tutorial to reuse .NET functions from the VBA macros:
 
-{% include youtube.html id="lTEONui2H0s" width=716 height=480 %}
+{% youtube { id: lTEONui2H0s } %}
 
 ## Enabling API in the add-in
 

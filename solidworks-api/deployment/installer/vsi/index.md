@@ -6,7 +6,7 @@ description: Article explains the steps required to create an installer package 
 image: /solidworks-api/deployment/installer/vsi/installation-process.png
 labels: [installer, setup, deployment, msi, vsi]
 ---
-{% include youtube.html id="JRc1vx1snv4" width=560 height=315 %}
+{% youtube { id: JRc1vx1snv4 } %}
 
 ### Installing the VSI Extension
 

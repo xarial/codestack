@@ -6,7 +6,7 @@ description: Creating the installer package for SOLIDWORKS add-in using the Wind
 image: /solidworks-api/deployment/installer/wix/wix-installation-dialog.png
 labels: [installer, wix, deployment]
 ---
-{% include youtube.html id="HdG3vFaS_y4" width=560 height=315 %}
+{% youtube { id: HdG3vFaS_y4 } %}
 
 ## Downloading and installing WiX framework
 

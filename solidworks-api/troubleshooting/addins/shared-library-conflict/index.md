@@ -54,7 +54,7 @@ This will be printed as
 
 Video Demonstration: 
 
-{% include youtube.html id="ZeWDoJ5TC7o" width=560 height=315 %}
+{% youtube { id: ZeWDoJ5TC7o } %}
 
 Be aware of backward compatibility when using binding redirect, i.e. redirecting from version 1 to 2 requires backward compatibility, otherwise this solution will not work.
 

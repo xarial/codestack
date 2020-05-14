@@ -6,7 +6,7 @@ description: Suspend SOLIDWORKS rebuild operations in part, assembly and drawing
 image: /labs/solidworks/geometry-plus-plus/user-guide/suspend-rebuild/icon.png
 toc_group_name: labs-solidworks-geometry-plus-plus
 ---
-{% include youtube.html id="QW3tYaNAfo0" width=560 height=315 %}
+{% youtube { id: QW3tYaNAfo0 } %}
 
 This command allows to temporary suspend rebuild operation while still allowing to modify the dimensions, sketches and feature definitions.
 

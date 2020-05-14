@@ -73,4 +73,4 @@ Please read the following article: [Debugging SOLIDWORKS PDM Add-In - Best Pract
 
 Below is a video demonstration of creating SOLIDWORKS PDM Add-in from scratch:
 
-{% include youtube.html id="GsTWneNoIW4" width=560 height=315 %}
+{% youtube { id: GsTWneNoIW4 } %}

@@ -10,7 +10,7 @@ order: 4
 
 SwEx.MacroFeature provides utilities for simplified development of SOLIDWORKS macro features based on the data model.
 
-{% include youtube.html id="3qLUvlFZIek" width=560 height=315 %}
+{% youtube { id: 3qLUvlFZIek } %}
 
 Source code is available on [GitHub](https://github.com/codestackdev/swex-macrofeature)
 

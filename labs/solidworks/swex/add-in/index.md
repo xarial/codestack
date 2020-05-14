@@ -61,8 +61,8 @@ Just specify User Control to host and framework will do the rest:
 
 ### Introduction
 
-{% include youtube.html id="8BXQZcPe4bA" width=560 height=315 %}
+{% youtube { id: 8BXQZcPe4bA } %}
 
 ### Detailed Guide
 
-{% include youtube.html id="EAm-3-Njkfw" width=560 height=315 %}
+{% youtube { id: EAm-3-Njkfw } %}

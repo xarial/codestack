@@ -14,4 +14,4 @@ It is recommended to use this functionality in conjunction with [Documents Manag
 
 See the short video demonstration of usage 3rd party storage using SwEx.AddIn framework:
 
-{% include youtube.html id="9Y_OsoauvuQ" width=560 height=315 %}
+{% youtube { id: 9Y_OsoauvuQ } %}

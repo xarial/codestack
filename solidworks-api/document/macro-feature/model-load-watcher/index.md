@@ -8,7 +8,7 @@ labels: [macro feature,load event,auto run]
 categories: sw-tools
 group: Model
 ---
-{% include youtube.html id="BTM5NZNdON8" width=560 height=315 %}
+{% youtube { id: BTM5NZNdON8 } %}
 
 This VBA macro inserts the macro feature into the model using SOLIDWORKS API and allows to run custom code every time the model with this feature is loaded.
 

@@ -20,4 +20,4 @@ Follow the [User Guide](/labs/solidworks/my-toolbar/user-guide) for technical do
 
 You can report bugs or request enhancements on the [Issues](/labs/solidworks/my-toolbar/issues) page
 
-{% include youtube.html id="e89IMizat8o" width=560 height=315 %}
+{% youtube { id: e89IMizat8o } %}

@@ -9,7 +9,7 @@ labels: [auto run,model load event]
 categories: sw-tools
 group: Model
 ---
-{% include youtube.html id="tgRB8YtB4v4" width=560 height=315 %}
+{% youtube { id: tgRB8YtB4v4 } %}
 
 This VBA macro handles document load events using SOLIDWORKS API and runs a custom code for each of the documents.
 

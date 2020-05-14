@@ -8,7 +8,7 @@ labels: [motion, animation, sheet metal, bending]
 categories: sw-tools
 group: Motion Study
 ---
-{% include youtube.html id="t35Kjjq509w" width=560 height=315 %}
+{% youtube { id: t35Kjjq509w } %}
 
 Macro demonstrates how to create an animation from configurations using SOLIDWORKS API.
 

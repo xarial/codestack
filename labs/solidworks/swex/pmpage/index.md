@@ -23,8 +23,8 @@ This will greatly reduce the implementation time as well as make the property pa
 
 ### Introduction
 
-{% include youtube.html id="V6mBpvp_J9U" width=560 height=315 %}
+{% youtube { id: V6mBpvp_J9U } %}
 
 ### Detailed Guide
 
-{% include youtube.html id="wFAHCo1_gD0" width=560 height=315 %}
+{% youtube { id: wFAHCo1_gD0 } %}

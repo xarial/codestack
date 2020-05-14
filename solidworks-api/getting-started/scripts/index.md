@@ -8,7 +8,7 @@ order: 5
 ---
 This section provides examples and explains the ways of calling SOLIDWORKS APIs from different scripts, including vbScript, PowerShell, JavaScript
 
-{% include youtube.html id="9akSYcyjQQc" width=560 height=315 %}
+{% youtube { id: 9akSYcyjQQc } %}
 
 Main benefits of using scripts in SOLIDWORKS automation is an simplified deployment and maintenance process. Scripts are open source and do not required special IDE and can be easily integrated into the automation workflow.
 

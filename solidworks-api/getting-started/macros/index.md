@@ -7,7 +7,7 @@ image: /solidworks-api/getting-started/macros/macro-toolbar.png
 labels: [macro, vba]
 order: 2
 ---
-{% include youtube.html id="JwFHVSpesVI" width=560 height=315 %}
+{% youtube { id: JwFHVSpesVI } %}
 
 Macros are script-like applications which can be executed and edited directly within SOLIDWORKS environment.
 

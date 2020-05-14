@@ -8,7 +8,7 @@ labels: [secutiry, macro feature, lock]
 categories: sw-tools
 group: Security
 ---
-{% include youtube.html id="v-S2idKXWDY" width=560 height=315 %}
+{% youtube { id: v-S2idKXWDY } %}
 
 This article will explain how to embed a watermark feature in any model using SOLIDWORKS API to protect intellectual property or indicate that the model is to be used under the special conditions. This can be useful if license needs to be embedded into the model which cannot be edited by 3rd parties.
 
