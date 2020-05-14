@@ -1,5 +1,5 @@
 ---
-layout: issue-fix
+layout: sw-macro-fix
 title: Fix the inconsistent model title extension in SOLIDWORKS API
 caption: Model Title Inconsistency Displaying Extension
 description: Fixing the Run-time Error '5' - Invalid procedure call or argument error when running a macro which is using the title of the model (e.g. inserting the note, linking the custom property value, generating new file name for exporting)

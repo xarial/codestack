@@ -1,5 +1,5 @@
 ---
-layout: issue-fix
+layout: sw-macro-fix
 title: Fix errors when creating sketch segments using SOLIDWORKS API
 caption: Failed to Create Sketch Segments
 description: Fixing the inconsistency of sketch segments (line, arcs, etc) or sketch points creation in the macro

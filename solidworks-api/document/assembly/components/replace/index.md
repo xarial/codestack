@@ -5,7 +5,6 @@ caption: Replace Components
 description: Macro demonstrates how to replace selected components in the batch preserving original selections using SOLIDWORKS API
 image: /solidworks-api/document/assembly/components/replace/replace_components.png
 labels: [component, replace, selection]
-categories: sw-tools
 group: Assembly
 ---
 ![Components replaced in the tree](replace_components.png){ width=350 }

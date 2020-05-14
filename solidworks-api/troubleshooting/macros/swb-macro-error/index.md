@@ -1,5 +1,5 @@
 ---
-layout: issue-fix
+layout: sw-macro-fix
 title: Fixing the error when running legacy SWBasic (*.swb) SOLIDWORKS macro
 caption: SWBasic (*.swb) macro error
 description: Fixing the error when running or editing the legacy macro in swb format

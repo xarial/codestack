@@ -7,6 +7,7 @@ image: /labs/solidworks/geometry-plus-plus/logo.png
 categories: sw-labs
 group: Geometry
 toc_group_name: labs-solidworks-geometry-plus-plus
+type: sw-lab
 ---
 ![Geometry++](logo.png)
 

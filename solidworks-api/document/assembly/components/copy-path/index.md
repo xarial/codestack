@@ -5,7 +5,6 @@ caption: Copy Component Path
 description: Macro copies the path of the selected component in assembly or drawing into the clipboard using SOLIDWORKS API
 image: /solidworks-api/document/assembly/components/copy-path/copy-component-path.png
 labels: [path, clipboard, component]
-categories: sw-tools
 group: Assembly
 ---
 ![Component selected in the feature tree](selected-component.png){ width=250 }

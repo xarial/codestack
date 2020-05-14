@@ -5,7 +5,6 @@ caption: Move To Folder
 description: Macro move the components selected in the graphics area into a new folder in the feature manager tree
 image: /solidworks-api/document/assembly/components/move-to-folder/move-components-to-folder.png
 labels: [components, move to folder]
-categories: sw-tools
 group: Assembly
 ---
 ![Components added to new folder](new-folder.png){ width=250 }

@@ -6,7 +6,6 @@ description: VBA macro to open each selected component in the assembly in the se
 image: /solidworks-api/document/assembly/components/open-in-position/open-in-position.png
 logo: /solidworks-api/document/assembly/components/open-in-position/open-in-position.svg
 labels: [position,component]
-categories: sw-tools
 group: Assembly
 ---
 This VBA macro opens all selected components in the active assembly in their own windows in the same position as they appear in the original SOLIDWORKS assembly.

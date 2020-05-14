@@ -1,12 +1,11 @@
 ---
-layout: article
+layout: sw-tool
 title: Reveal (display or delete) all feature hidden in the SOLIDWORKS Feature Manager tree
 caption: Reveal Hidden Features
 description: Macro finds all features which are hidden in the SOLIDWORKS model and either displays or removes them
 image: /solidworks-api/document/features-manager/reveal-hidden-features/hidden-feature.png
 logo: /solidworks-api/document/features-manager/reveal-hidden-features/hidden-feature.svg
 labels: [defeature,parasolid]
-categories: sw-tools
 group: Performance
 ---
 ![Hidden feature](hidden-feature.svg){ width=250 }

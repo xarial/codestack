@@ -5,7 +5,6 @@ caption: Run Group Of Macros
 description: Macro demonstrates how to run the group of macros within one macro using SOLIDWORKS API
 image: /solidworks-api/application/frame/run-macros-group/macros-library.png
 labels: [macro, run group]
-categories: sw-tools
 group: Frame
 ---
 ![Library of macros in the Windows folder](macros-library.png)

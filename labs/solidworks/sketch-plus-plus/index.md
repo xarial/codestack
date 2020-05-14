@@ -6,6 +6,7 @@ description: Utilities for complimenting sketch functionality in SOLIDWORKS
 categories: sw-labs
 group: Model
 toc_group_name: labs-solidworks-sketch-plus-plus
+type: sw-lab
 ---
 Download the latest version 0.1.0 from [this link](https://github.com/codestackdev/sketch-plus-plus/releases/tag/v0.1.0-swpuc)
 

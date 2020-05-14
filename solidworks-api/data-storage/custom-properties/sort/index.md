@@ -5,7 +5,6 @@ caption: Sort Custom Properties
 description: VBA macro to sort file and configuration specific custom properties (in ascending and descending order) using logical order via SOLIDWORKS API
 image: /solidworks-api/data-storage/custom-properties/sort/sorted-custom-properties.png
 labels: [sort, custom properties, bubble]
-categories: sw-tools
 group: Custom Properties
 ---
 ![Sorted custom properties](sorted-custom-properties.png){ width=350 }

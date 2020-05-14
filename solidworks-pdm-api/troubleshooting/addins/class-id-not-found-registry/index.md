@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: sw-pdm-addin-fix
 title: Fix 'Class ID could not be found in the registry' PDM add-in error
 caption: Class ID could not be fond in the registry
 description: Troubleshooting the '...the add-in registration succeeded but the add-in's class ID could not be found in the registry' error when registering SOLIDWORKS PDM add-in

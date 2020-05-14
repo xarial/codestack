@@ -6,7 +6,6 @@ description: VBA macro which iterates all sheets and configurations of SOLIDWORK
 image: /solidworks-api/document/configuration-reviewer/configurations-reviewer.png
 logo: /solidworks-api/document/configuration-reviewer/configurations-reviewer.svg
 labels: [configuration,sheet,review,iterate]
-categories: sw-tools
 group: Model
 ---
 ![Configurations in SOLIDWORKS model](configurations.png)

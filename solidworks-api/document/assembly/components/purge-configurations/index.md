@@ -5,7 +5,6 @@ caption: Purge Components Configurations
 description: VBA macro to create copies of all selected components in the assembly and purge configurations in each of them
 image: /solidworks-api/document/assembly/components/purge-configurations/purged-components-result1.png
 labels: [component, replace, purge]
-categories: sw-tools
 group: Assembly
 ---
 In some cases it might be required to remove (purge) all unused configurations from the components in the assembly. It is in particular useful for the fastener or toolbox components as file can contains thousands of configurations but only few are used in the assembly.

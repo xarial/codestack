@@ -1,5 +1,5 @@
 ---
-layout: issue-fix
+layout: sw-macro-fix
 title: How to fix merged SOLIDWORKS macro errors
 caption: Merged Macro Does Not Work
 description: Fixing Run-time error '424' - Object required for macros which work correctly independently but failed to work when merged to one

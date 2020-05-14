@@ -5,7 +5,6 @@ caption: Advanced Selections
 description: Macro adds additional selection criteria to the advanced selection tool allowing to select components which are excluded from bom, envelope, float etc.
 image: /solidworks-api/document/assembly/components/advanced-selection/filtered-components-selection.png
 labels: [selection, fixed, envelope]
-categories: sw-tools
 group: Assembly
 ---
 ![Envelope components selected in the feature manager tree](filtered-components-selection.png){ width=250 }

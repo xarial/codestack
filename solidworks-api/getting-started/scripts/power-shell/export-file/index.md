@@ -5,7 +5,6 @@ caption: Export Files
 description: Script allows exporting of the SOLIDWORKS file into the foreign format using command line
 image: /solidworks-api/getting-started/scripts/power-shell/export-file/export-file-result-console.png
 labels: [export, script]
-categories: sw-tools
 group: Import/Export
 ---
 This PowerShell script allows exporting the SOLIDWORKS file into the specified foreign format from the command line using SOLIDWORKS API

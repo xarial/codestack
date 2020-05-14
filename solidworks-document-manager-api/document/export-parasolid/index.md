@@ -5,7 +5,6 @@ caption: Export Part File To Parasolid
 description: Power Shell script to export part file to parasolid format (.xmp_bin) from command line via Document Manager API (without SOLIDWORKS)
 image: /solidworks-document-manager-api/document/export-parasolid/export-parasolid.png
 labels: [export,parasolid]
-categories: sw-tools
 group: Import/Export
 ---
 This PowerShell script allows exporting the SOLIDWORKS part file into the parasolid format (.xmp_bin) from the command line using SOLIDWORKS Document Manager API

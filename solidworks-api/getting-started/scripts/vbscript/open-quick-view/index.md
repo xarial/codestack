@@ -6,7 +6,6 @@ description: Tool to open SOLIDWORKS assembly or drawing in quick view (large de
 image: /solidworks-api/getting-started/scripts/vbscript/open-quick-view/open-in-quick-view.png
 logo: /solidworks-api/getting-started/scripts/vbscript/open-quick-view/open-in-quick-view.svg
 labels: [quick view,large design review,performance,shell,context menu]
-categories: sw-tools
 group: Performance
 ---
 ![Opening large design review form SOLIDWORKS](large-design-review-open.png){ width=450 }

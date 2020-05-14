@@ -5,7 +5,6 @@ caption: Find Where Used
 description: VBA macro to find the assemblies within active assembly which are using the selected component using SOLIDWORKS API
 image: /solidworks-api/document/assembly/components/where-used/where-used-form.png
 labels: [where used,parent,component]
-categories: sw-tools
 group: Assembly
 ---
 This VBA macro finds all parent components of the selected component instances (Where Used) in the active assembly using SOLIDWORKS API and displays the list for review.

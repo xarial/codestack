@@ -6,7 +6,6 @@ description: Macro exports selected table (BOM, General Table, Revision etc.) in
 image: /solidworks-api/document/tables/export-table-csv/export-table-csv.png
 logo: /solidworks-api/document/tables/export-table-csv/export-table-csv.svg
 labels: [table,csv,export]
-categories: sw-tools
 group: Model
 ---
 This macro exports the selected table to the CSV (Comma Separated Values) file using SOLIDWORKS API. This functionality is similar to built-in 'Save As' option for table:

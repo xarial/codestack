@@ -5,7 +5,6 @@ caption: Copy Custom Property From Material To Model
 description: Macro demonstrates how to copy the specified custom property from the material database to the model custom property using SOLIDWORKS API and XML parsers
 image: /solidworks-api/document/materials/copy-custom-property/material-custom-property.png
 labels: [material, xml, custom property]
-categories: sw-tools
 group: Materials
 ---
 ![Custom property in the material](material-custom-property.png){ width=450 }

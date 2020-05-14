@@ -1,5 +1,5 @@
 ---
-layout: issue-fix
+layout: sw-macro-fix
 title: How to fix Missing SOLIDWORKS Type Library References error
 caption: Missing SOLIDWORKS Type Library References
 description: Fixing Can't find project or library error in legacy macro

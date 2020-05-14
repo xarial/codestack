@@ -6,7 +6,6 @@ description: Macro runs VBA code (or another macro) automatically on file save u
 image: /solidworks-api/application/documents/handle-document-save/run-macro-on-save.png
 logo: /solidworks-api/application/documents/handle-document-save/run-macro-on-save.svg
 labels: [auto run,model save event]
-categories: sw-tools
 group: Model
 ---
 This VBA macro handles active document (part, assembly or drawing) save events (including save all and save as) using SOLIDWORKS API and runs a custom code.

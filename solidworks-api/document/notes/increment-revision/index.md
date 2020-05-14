@@ -5,7 +5,6 @@ caption: Increment The Numeric Value In The Note
 description: This macro increments the numeric value of the notes by matching regular expression (e.g. incrementing the revision) using SOLIDWORKS API
 image: /solidworks-api/document/notes/increment-revision/drawing-revision-incremented.png
 labels: [note, revision, increment, regular expression, regex, tag]
-categories: sw-tools
 group: Drawing
 ---
 ![Revision number in the title block is incremented](drawing-revision-incremented.png){ width=300 }

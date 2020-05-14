@@ -7,6 +7,7 @@ image: /labs/solidworks/my-toolbar/my-toolbar-logo.png
 categories: sw-labs
 group: Application
 toc_group_name: labs-solidworks-my-toolbar
+type: sw-lab
 ---
 ![MyToolbar Logo](my-toolbar-logo.png)
 

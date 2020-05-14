@@ -6,7 +6,6 @@ description: Macro excludes the solid bodies selected from the graphics area or 
 logo: /solidworks-api/document/cut-lists/exclude-selected-bodies/excluded-cut-list-item.svg
 image: /solidworks-api/document/cut-lists/exclude-selected-bodies/excluded-cut-list-item.png
 labels: [api, cut-list, exclude, utility, vba]
-categories: sw-tools
 group: Part
 ---
 ![Exclude from cut-list](exclude-from-cut-list.png){ height=300 }

@@ -1,5 +1,5 @@
 ---
-layout: issue-fix
+layout: sw-macro-fix
 title: Fix SOLIDWORKS macro issues with lightweight components in assembly or drawing
 caption: Lightweight Components In Assembly Or Drawing
 description: Fixing the Run-time Error '91' - Object variable or With block variable not set when macro is working with the components in the assembly

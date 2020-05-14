@@ -6,7 +6,6 @@ description: VBA macro to export the selected 2D sketch in SOLIDWORKS part or as
 image: /solidworks-api/document/sketch/export-dxf-dwg/sketch-dwf-dwg.png
 logo: /solidworks-api/document/sketch/export-dxf-dwg/dxf-sketch.svg
 labels: [sketch,export,dxf,dwg]
-categories: sw-tools
 group: Import/Export
 ---
 ![DXF/DWG file created from the sketch](sketch-dwf-dwg.png){ width=350 }

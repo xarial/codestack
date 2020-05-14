@@ -6,7 +6,6 @@ description: VBA macro which creates 3D bounding box sketch based on the SOLIDWO
 image: /solidworks-api/geometry/create-selectable-bounding-box/bounding-box-sketch.png
 logo: /solidworks-api/geometry/create-selectable-bounding-box/bounding-box.svg
 labels: [bounding box]
-categories: sw-tools
 group: Geometry
 ---
 ![Bonding box sketch](bounding-box-sketch.png){ width=450 }

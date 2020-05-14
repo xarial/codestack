@@ -5,11 +5,13 @@ caption: 'Macros Troubleshooting: Issues And Resolutions'
 description: Overview and solutions for the most common errors of running the macros in SOLIDWORKS
 image: /images/codestack-snippet.png
 labels: [macro, not working, problem, solidworks api, troubleshooting, vba]
+styles:
+  - /assets/styles/catalogue.css
 redirect-from:
   - /2018/04/macros-troubleshooting-issues-and-resolutions.html
 ---
 SOLIDWORKS macro is the most common way to automate and extended the functionality of SOLIDWORKS via its API.
-Macros can be developed in-house or downloaded from the different web-sites including SOLIDWORKS forum, 3D Content Central, [Code Stack](/solidworks-tools) etc. or even recorded from SOLIDWORKS.
+Macros can be developed in-house or downloaded from the different web-sites including SOLIDWORKS forum, 3D Content Central, [CodeStack](/solidworks-tools) etc. or even recorded from SOLIDWORKS.
 
 But in some cases the macro doesn't work as expected. This is usually one of the following scenarios:
 
@@ -68,6 +70,4 @@ Click link to get the detailed description of the issues, its cause and the step
 * Cannot open (for VSTA macros)
   * [Solution 1](/solidworks-api/troubleshooting/macros/run-vsta-macro-error/)
 
-{#% assign pages = site.pages | where_exp: "p", "p.url contains page.url" | where_exp: "p", "p.url != page.url" %}
-
-{#% include catalogue.html pages=pages %}
+{% catalogue { type: sw-macro-fix } %}

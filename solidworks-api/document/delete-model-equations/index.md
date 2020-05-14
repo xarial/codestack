@@ -6,7 +6,6 @@ description: Macro removes all of the equations (or optionally only broken equat
 image: /solidworks-api/document/delete-model-equations/equations-manager.png
 logo: /solidworks-api/document/delete-model-equations/deleted-equations.svg
 labels: [api, clean, delete equations, equation, macro, utility, vba]
-categories: sw-tools
 group: Model
 redirect-from:
   - /2018/03/delete-all-equations-from-solidworks.html

@@ -5,7 +5,6 @@ caption: Export Part Or Component To STL
 description: Macro exports selected assembly component or part to stl format without the need of activating the document. Macro can optionally apply transformation to the exported STL to reorient the output
 image: /solidworks-api/import-export/export-stl/component-stl.png
 labels: [component, export, stl]
-categories: sw-tools
 group: Import/Export
 redirect-from:
   - /solidworks-api/import-export/export-component-stl/

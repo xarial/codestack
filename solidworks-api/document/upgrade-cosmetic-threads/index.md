@@ -5,7 +5,6 @@ caption: Upgrade Cosmetic Threads
 description: VBA macro upgrades cosmetic threads to a new (SOLIDWORKS 2020) version which allows to improve performance of the document
 image: /solidworks-api/document/upgrade-cosmetic-threads/upgrade-cosmetic-thread.png
 labels: [api, upgrade, performance, cosmetic thread]
-categories: sw-tools
 group: Model
 ---
 ![Upgrade cosmetic threads command](upgrade-cosmetic-thread.png){ width=500 }

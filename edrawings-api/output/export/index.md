@@ -6,7 +6,7 @@ description: Console application which exports all files from the specified fold
 image: /edrawings-api/output/export/export-edrawings.png
 logo: /edrawings-api/output/export/export-edrawings.svg
 labels: [export,batch,edrawings]
-categories: sw-tools
+
 group: Import/Export
 ---
 This console application developed in C# allows to export SOLIDWORKS, DXF, DWG, eDrawings files to foreign format (.jpg, .tif, .bmp, .stl, .exe, .htm, .zip, .edrw, .eprt, and .easm) using free version of SOLIDWORKS eDrawings via its API. It is not required to have SOLIDWORKS installed or use its license to use this tool.

@@ -6,7 +6,6 @@ description: Macro will display the callouts with the diameter values of all sel
 image: /solidworks-api/adornment/callouts/circular-edges-display-callouts/edge-callout.png
 logo: /solidworks-api/adornment/callouts/circular-edges-display-callouts/edge-callout.svg
 labels: [adornment, callout, diameter, edge, example, macro, solidworks api, unit conversion]
-categories: sw-tools
 group: Model
 redirect-from:
   - /2018/03/display-callouts-with-diameters-for-all.html

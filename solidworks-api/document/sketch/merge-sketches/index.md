@@ -6,7 +6,6 @@ description: VBA macro to merge selected sketches into a single 3D sketch using 
 image: /solidworks-api/document/sketch/merge-sketches/merged-3dsketch.png
 logo: /solidworks-api/document/sketch/merge-sketches/merged-sketches.svg
 labels: [sketch,convert entities,merge]
-categories: sw-tools
 group: Sketch
 ---
 ![Sketches merged into the 3D sketch](merged-3dsketch.png)

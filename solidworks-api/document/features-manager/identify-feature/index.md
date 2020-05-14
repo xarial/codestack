@@ -5,7 +5,6 @@ caption: Identify Feature Definition And Specific Type
 description: Helper methods allowing to identify the definition and specific type of the selected feature via SOLIDWORKS API and reflection
 image: /solidworks-api/document/features-manager/identify-feature/specific-feature-types.png
 labels: [reflection, specific feature, feature definition]
-categories: sw-tools
 group: Developers
 ---
 ![Type of specific feature and feature definition of selected feature output to the window](specific-feature-types.png){ width=450 }

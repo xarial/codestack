@@ -5,7 +5,6 @@ caption: Lock Sheet Format
 description: VBA macro which locks (or password protects) the sheet format editing using SOLIDWORKS API
 image: /solidworks-api/document/drawing/lock-sheet-format/locked-sheet-format.png
 labels: [lock,sheet format,protect]
-categories: sw-tools
 group: Drawing
 ---
 ![Edit sheet format context menu command](edit-sheet-format-command.png){ width=250 }

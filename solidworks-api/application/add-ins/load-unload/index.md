@@ -6,7 +6,6 @@ description: Macro to trigger (load/unload) the specified add-in using SOLIDWORK
 image: /solidworks-api/application/add-ins/load-unload/toggle-addins.png
 logo: /solidworks-api/application/add-ins/load-unload/toggle-addins.svg
 labels: [add-in, load]
-categories: sw-tools
 group: Frame
 ---
 This macro allows to trigger the load state of the specified add-in using the [ISldWorks::LoadAddIn](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~loadaddin.html) and [ISldWorks::UnloadAddIn](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~unloadaddin.html) SOLIDWORKS API.

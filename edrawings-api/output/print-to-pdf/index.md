@@ -6,7 +6,6 @@ description: Console application which exports all files from the specified fold
 image: /edrawings-api/output/print-to-pdf/print-to-pdf.png
 logo: /edrawings-api/output/print-to-pdf/print-to-pdf.svg
 labels: [export,pdf,batch,edrawings,print]
-categories: sw-tools
 group: Import/Export
 ---
 ![Exporting SOLIDWORKS files to PDF](print-to-pdf.svg){ width=200 }

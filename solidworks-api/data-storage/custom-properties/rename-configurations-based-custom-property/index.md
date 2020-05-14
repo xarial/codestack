@@ -5,7 +5,6 @@ caption: Rename Configurations Based On Custom Property
 description: Macro renames all configurations of assembly or part into the value of the specified configuration specific custom property
 image: /solidworks-api/data-storage/custom-properties/rename-configurations-based-custom-property/sw-configuration-name.png
 labels: [configuration, custom property, rename, solidworks api, utility]
-categories: sw-tools
 group: Custom Properties
 redirect-from:
   - /2018/04/solidworks-api-model-rename-configurations-based-on-custom-prp.html

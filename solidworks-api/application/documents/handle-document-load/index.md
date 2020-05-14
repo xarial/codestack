@@ -6,7 +6,6 @@ description: Macro runs VBA code (or another macro) automatically on file load u
 image: /solidworks-api/application/documents/handle-document-load/run-macro-on-load.png
 logo: /solidworks-api/application/documents/handle-document-load/run-macro-on-load.svg
 labels: [auto run,model load event]
-categories: sw-tools
 group: Model
 ---
 {% youtube { id: tgRB8YtB4v4 } %}

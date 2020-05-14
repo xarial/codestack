@@ -5,7 +5,6 @@ caption: Create Precise Bounding Box
 description: Macro creates a precise bounding box in the part document using SOLIDWORKS API
 image: /solidworks-api/geometry/precise-bounding-box/precise-bounding-box.png
 labels: [bonding box, extreme points]
-categories: sw-tools
 group: Part
 ---
 ![Precise bounding box in the part document](precise-bounding-box.png){ width=250 }

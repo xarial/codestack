@@ -5,7 +5,6 @@ caption: Assign New File Name
 description: VBA macro to automatically assign new file name for the document based on the referenced drawing view or custom property using SOLIDWORKS API
 image: /solidworks-api/document/set-new-file-name/save-as-dialog.png
 labels: [new file name,auto name]
-categories: sw-tools
 group: Model
 ---
 This VBA macro allows to automatically set the name for the new file based on the custom property value or drawing view referenced model using SOLIDWORKS API.

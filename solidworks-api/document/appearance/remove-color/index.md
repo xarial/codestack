@@ -6,7 +6,6 @@ description: Macro demonstrates how to remove all colors from the part document 
 image: /solidworks-api/document/appearance/remove-color/material-properties-levels.png
 logo: /solidworks-api/document/appearance/remove-color/remove-colors.svg
 labels: [remove color, appearance, material property]
-categories: sw-tools
 group: Part
 ---
 ![Appearance layers in Part document](material-properties-levels.png){ width=250 }

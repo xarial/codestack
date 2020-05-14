@@ -5,7 +5,6 @@ caption: Copy File Path Of All Assembly Component Drawings
 description: VBA macro which copies all the referencing drawings paths of the components of the active assembly using SOLIDWORKS API
 image: /solidworks-api/document/drawing/copy-drawing-paths/assembly-drawings.png
 labels: [drawing,copy path,references]
-categories: sw-tools
 group: Drawing
 ---
 This VBA macro finds all the drawings which were created for all components of the active assembly using SOLIDWORKS API and puts the paths to the clipboard.

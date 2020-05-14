@@ -5,7 +5,6 @@ caption: Capture SOLIDWORKS Commands
 description: Macro allows capturing SOLIDWORKS and user commands into the list box
 image: /solidworks-api/application/frame/capture-commands/capturing-hide-command-id.png
 labels: [command, event]
-categories: sw-tools
 group: Developers
 ---
 This macro allows capturing of SOLIDWORKS command ids (e.g. toolbar, page button or context menu clicks). Commands are defined in the [swCommands_e](http://help.solidworks.com/2012/english/api/swcommands/solidworks.interop.swcommands~solidworks.interop.swcommands.swcommands_e.html) enumeration and can be called using the [ISldWorks::RunCommand](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~runcommand.html) SOLIDWORKS API method.

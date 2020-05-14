@@ -6,7 +6,6 @@ description: Macro will read all the data from the Excel table and import it int
 image: /solidworks-api/document/tables/write-excel-table-into-general-table/excel-to-table.png
 logo: /solidworks-api/document/tables/write-excel-table-into-general-table/excel-to-table.svg
 labels: [table annotation, excel, general table, 2 dimensional array]
-categories: sw-tools
 group: Model
 ---
 This macro will write the data into the newly created general table of the active document from the specified Excel spreadsheet using SOLIDWORKS API.

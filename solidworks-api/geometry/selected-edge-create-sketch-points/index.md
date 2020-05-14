@@ -5,7 +5,6 @@ caption: Create Sketch Points On Selected Edge
 description: Macro creates specified number of sketch points on the selected edge in the 3D sketch
 image: /solidworks-api/geometry/selected-edge-create-sketch-points/sketch-points-edge.png
 labels: [curve, evaluate, geometry, macro, points, solidworks api, spline, utility, vba]
-categories: sw-tools
 group: Sketch
 redirect-from:
   - /2018/03/this-macro-creates-specified-number-of.html

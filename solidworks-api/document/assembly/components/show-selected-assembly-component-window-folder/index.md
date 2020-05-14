@@ -6,7 +6,6 @@ description: Example demonstrates how to open the folder of the selected compone
 image: /solidworks-api/document/assembly/components/show-selected-assembly-component-window-folder/windows-folder-selected-component.png
 logo: /solidworks-api/document/assembly/components/show-selected-assembly-component-window-folder/windows-folder-selected-component.svg
 labels: [assembly, component, explorer, frame, macro, show in folder, solidworks, solidworks api, utility, vba]
-categories: sw-tools
 group: Assembly
 redirect-from:
   - /2018/03/show-selected-assembly-component-in.html

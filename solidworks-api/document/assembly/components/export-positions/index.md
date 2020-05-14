@@ -5,7 +5,6 @@ caption: Export Components Positions
 description: This macro exports positions of components to an external CSV text file using SOLIDWORKS API
 image: /solidworks-api/document/assembly/components/export-positions/components-positions-table.png
 labels: [export,csv,excel,origin]
-categories: sw-tools
 group: Assembly
 ---
 ![Exported positions of components in Excel](components-positions-table.png){ width=350 }

@@ -5,7 +5,6 @@ caption: Rename Flat Pattern Views With Cut-List Names
 description: VBA macro to rename all flat pattern views in the the active sheet after the respective cut-list names using SOLIDWORKS API
 image: /solidworks-api/document/drawing/rename-sheet-metal-views/renamed-flat-pattern-drawing-view.png
 labels: [rename view,cut list,flat pattern]
-categories: sw-tools
 group: Drawing
 ---
 ![Cut-list for sheet metal body](cut-list-name.png){ width=250 }

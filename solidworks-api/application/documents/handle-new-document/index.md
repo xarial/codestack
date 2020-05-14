@@ -5,7 +5,6 @@ caption: Run Macro On New Document Creation
 description: VBA macro to run other macros or code on every new document creation using SOLIDWORKS API
 image: /solidworks-api/application/documents/handle-new-document/new-document.png
 labels: [new document]
-categories: sw-tools
 group: Model
 ---
 ![Creating new document in SOLIDWORKS](new-document.png){ width=350 }

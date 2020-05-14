@@ -5,7 +5,6 @@ caption: Find-Replace Text In Dimension Names
 description: Macro replaces the text in the dimension names of the selected feature or features
 image: /solidworks-api/document/dimensions/names-find-replace-text/rename-dims.png
 labels: [dimension, example, find, model, rename, replace, solidworks, solidworks api]
-categories: sw-tools
 group: Model
 redirect-from:
   - /2018/03/find-replace-text-in-dimension-names.html

@@ -6,7 +6,6 @@ description: Macro renames all the features in the order preserving the base nam
 image: /solidworks-api/document/features-manager/rename-features-sequentially/rename-features-sequentially.png
 logo: /solidworks-api/document/features-manager/rename-features-sequentially/sequntial-features.svg
 labels: [feature, rename]
-categories: sw-tools
 group: Model
 ---
 ![Features renamed sequentially](rename-features-sequentially.png)

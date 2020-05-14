@@ -5,7 +5,6 @@ caption: Set Title To Next Part Number
 description: VBA Macro to set title with automatically incremented number from the shared file using SOLIDWORKS API for new files
 image: /solidworks-api/document/auto-part-number-title/automatic-model-title.png
 labels: [part number,title]
-categories: sw-tools
 group: Model
 ---
 ![Model title set to part number](automatic-model-title.png){ width=450 }

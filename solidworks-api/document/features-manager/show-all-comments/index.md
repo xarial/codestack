@@ -5,7 +5,6 @@ caption: Show All Comments Text
 description: VBA macro to text from comments in the active document using SOLIDWORKS API
 image: /solidworks-api/document/features-manager/show-all-comments/comments.png
 labels: [comment]
-categories: sw-tools
 group: Model
 ---
 ![Comments in the Feature Manager Tree](comments-features.png)

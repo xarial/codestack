@@ -1,5 +1,5 @@
 ---
-layout: issue-fix
+layout: sw-macro-fix
 title: How to fix Missing COM (ActiveX) Component error
 caption: Missing COM Component
 description: How to fix Runtime error 429 in VBA macros

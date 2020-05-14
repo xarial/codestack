@@ -6,7 +6,6 @@ description: Closes all opened documents except of an active one using SOLIDWORK
 image: /solidworks-api/application/frame/close-all-documents-except-active/close-all-but-active.png
 logo: /solidworks-api/application/frame/close-all-documents-except-active/close-all-but-active.svg
 labels: [close, window]
-categories: sw-tools
 group: Frame
 ---
 ![Documents opened in SOLIDWORKS](opened-documents.png){ width=250 }
