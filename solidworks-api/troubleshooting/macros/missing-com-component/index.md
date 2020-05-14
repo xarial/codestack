@@ -3,7 +3,6 @@ layout: issue-fix
 title: How to fix Missing COM (ActiveX) Component error
 caption: Missing COM Component
 description: How to fix Runtime error 429 in VBA macros
-lang: en
 image: /solidworks-api/troubleshooting/macros/missing-com-component/runtime-error-429.png
 labels: [macro, troubleshooting]
 ---

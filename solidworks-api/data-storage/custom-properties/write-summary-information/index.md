@@ -3,7 +3,6 @@ layout: article
 title: Write summary information to the active file using SOLIDWORKS API
 caption: Write Summary Information
 description: VBA macro to fill the summary information (author, keywords, comments, title, subject) for active SOLIDWORKS file using SOLIDWORKS API
-lang: en
 image: /solidworks-api/data-storage/custom-properties/write-summary-information/summary.png
 labels: [summary info,write summary]
 ---

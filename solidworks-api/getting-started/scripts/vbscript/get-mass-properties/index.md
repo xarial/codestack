@@ -3,7 +3,6 @@ layout: article
 title: Script extract mass properties of file using SOLIDWORKS API
 caption: Get Mass Properties
 description: Example demonstrates how to extract mass properties form the specified file using vbScript and SOLIDWORKS API
-lang: en
 image: /solidworks-api/getting-started/scripts/vbscript/get-mass-properties/msgbox-mass-properties.png
 labels: [mass properties, vbscript]
 ---

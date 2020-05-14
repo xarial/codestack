@@ -3,7 +3,6 @@ layout: article
 title: SwEx.AddIn Framework enables easy and robust development of add-ins with SOLIDWORKS API
 caption: SwEx.AddIn
 description: Advanced utilities for the development of powerful SOLIDWORKS add-ins using SOLIDWORKS API in .NET (C# and VB.NET). Framework simplifies the creation and maintaining of commands and UI elements.
-lang: en
 image: /labs/solidworks/swex/add-in/logo.png
 toc_group_name: labs-solidworks-swex
 order: 2

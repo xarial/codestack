@@ -3,7 +3,6 @@ layout: article
 title: Handling dynamic values updated in the controls
 caption: Dynamic Values
 description: Handling dynamic values updated in the controls of the Property Manager Page using SwEx.PMPage framework
-lang: en
 image: /labs/solidworks/swex/pmpage/controls/dynamic-values/controls-dynamic-values.gif
 toc_group_name: labs-solidworks-swex
 order: 13

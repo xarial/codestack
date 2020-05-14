@@ -3,7 +3,6 @@ layout: article
 title: Debugging SOLIDWORKS PDM Add-In - Best Practices
 caption: Debugging SOLIDWORKS PDM Add-In - Best Practices
 description: Detailed guide for debugging the SOLIDWORKS PDM Add-In. Simplified debugging using the Vault Browser tool
-lang: en
 image: /solidworks-pdm-api/getting-started/add-ins/debugging-best-practices/debug-addin.png
 labels: [add-in, api, attach to process, debugging, epdm, example, notepad, pdm, solidworks pdm, visual studio]
 redirect_from:

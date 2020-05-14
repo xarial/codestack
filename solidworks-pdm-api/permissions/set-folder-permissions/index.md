@@ -3,7 +3,6 @@ layout: article
 title: Power Shell script to set folder permissions using SOLIDWORKS PDM API
 caption: Set Folder Permissions
 description: Vb.NET Power Shell script to set permissions to specified folder for specified user using SOLIDWORKS PDM API
-lang: en
 image: /solidworks-pdm-api/permissions/set-folder-permissions/folder-permissions.png
 labels: [permissions,folder]
 ---

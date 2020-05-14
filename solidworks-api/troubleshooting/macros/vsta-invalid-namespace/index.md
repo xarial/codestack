@@ -3,7 +3,6 @@ layout: issue-fix
 title: Fix invalid namespace in VSTA (C# or VB.NET) SOLIDWORKS macro
 caption: Invalid Namespace In VSTA (C# or VB.NET) Macro
 description: Fixing the compile error of VSTA macro when the code is copied from the example
-lang: en
 image: /solidworks-api/troubleshooting/macros/vsta-invalid-namespace/vsta-copy-example-compile-error.png
 labels: [macro, troubleshooting, vsta]
 ---

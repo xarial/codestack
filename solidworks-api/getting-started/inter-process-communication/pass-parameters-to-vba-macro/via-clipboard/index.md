@@ -3,7 +3,6 @@ layout: article
 title: Passing the parameters to SOLIDWORKS VBA Macro via clipboard
 caption: Via Clipboard
 description: Passing the custom string parameters to VBA macro from .NET application or another macro via clipboard
-lang: en
 image: /solidworks-api/getting-started/inter-process-communication/pass-parameters-to-vba-macro/via-clipboard/msg-box-macro-argument.png
 labels: [argument, clipboard, example, parameter, solidworks api]
 redirect_from:

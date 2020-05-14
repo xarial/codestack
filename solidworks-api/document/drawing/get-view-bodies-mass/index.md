@@ -3,7 +3,6 @@ layout: article
 title: Get mass of bodies in drawing view using SOLIDWORKS API
 caption: Get Mass From Drawing View
 description: C# VSTA macro example to find the total mass of all bodies in the selected drawing view using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/drawing/get-view-bodies-mass/multi-body-sheet-metal-mass-property.png
 labels: [view,mass,flat pattern]
 ---

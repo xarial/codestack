@@ -4,7 +4,6 @@ title: Examples of using ISwDMDocument object for document in Document Manager A
 caption: Document
 order: 2
 description: Examples related of usage of ISwDMDocument interface in document manager API
-lang: en
 image: /images/codestack-snippet.png
 labels: [document manager, document]
 ---

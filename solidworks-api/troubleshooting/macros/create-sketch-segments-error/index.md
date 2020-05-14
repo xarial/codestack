@@ -3,7 +3,6 @@ layout: issue-fix
 title: Fix errors when creating sketch segments using SOLIDWORKS API
 caption: Failed to Create Sketch Segments
 description: Fixing the inconsistency of sketch segments (line, arcs, etc) or sketch points creation in the macro
-lang: en
 image: /images/codestack-snippet.png
 labels: [macro, troubleshooting]
 redirect_from:

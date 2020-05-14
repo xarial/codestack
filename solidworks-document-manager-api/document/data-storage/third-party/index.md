@@ -3,7 +3,6 @@ layout: article
 title: Saving the data into 3rd party storage using SOLIDWORKS Document Manager API
 caption: 3rd Party Storage And Store
 description: Serializing and deserializing data into 3rd party storage and store using SOLIDWORKS Document Manager API
-lang: en
 image: /images/codestack-snippet.png
 labels: [data,store,storage]
 ---

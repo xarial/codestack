@@ -3,7 +3,6 @@ layout: article
 title: Add dimensions to bend lines using SOLIDWORKS API
 caption: Add Dimensions To Bend Lines
 description: Example demonstrates how to add dimensions to bend lines in the drawing view of sheet metal flat pattern
-lang: en
 image: /solidworks-api/document/dimensions/add-bend-lines/sw-bend-lines.png
 labels: [bend lines, dimension, example, solidworks api]
 redirect_from:

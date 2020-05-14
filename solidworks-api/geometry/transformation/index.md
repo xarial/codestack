@@ -3,7 +3,6 @@ layout: article
 title: Using transformations in SOLIDWORKS API
 caption: Transformation
 description: Applying and reading transformation (components, bodies, sketches etc.) using SOLIDWORKS API
-lang: en
 order: 2
 image: /images/codestack-snippet.png
 labels: [transform,math]

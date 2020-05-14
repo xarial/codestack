@@ -3,7 +3,6 @@ layout: article
 title: Enumerations in Visual Basic (VBA)
 caption: Enumerations
 description: Introduction to enumeration data types (collection of predefined long constants) in Visual Basic
-lang: en
 image: /visual-basic/data-structures/enumerators/enum-icon-intellisense.png
 ---
 {% include img.html src="enum-icon-intellisense.png" width=350 alt="Enumerator type in intelli-sense" align="center" %}

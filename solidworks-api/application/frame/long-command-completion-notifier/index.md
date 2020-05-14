@@ -3,7 +3,6 @@ layout: sw-tool
 title: Notify the completion of long running SOLIDWORKS command using SOLIDWORKS API
 caption: Notify Long Running Command Completion
 description: VBA macro to handle the long running commands in SOLIDWORKS (open, rebuild, suppress etc.) and beep to notify its completion
-lang: en
 image: /solidworks-api/application/frame/long-command-completion-notifier/opening-file-progressbar.png
 labels: [events,performance,notification,commands]
 categories: sw-tools

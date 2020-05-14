@@ -3,7 +3,6 @@ layout: article
 title: Installing the SOLIDWORKS add-in by creating the msi-installer
 caption: Installer
 description: Creating the installer .msi package for deploying applications for SOLIDWORKS
-lang: en
 image: /images/codestack-snippet.png
 ---
 Installer package (.msi) is the most robust way to deliver the best user experience when deploying the application. Installers can provide friendly step-by-step wizard with ability to specify options while installing the products. There are multiple installer options available

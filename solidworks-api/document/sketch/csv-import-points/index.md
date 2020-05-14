@@ -3,7 +3,6 @@ layout: sw-tool
 title: Import points cloud from CSV file into sketch via SOLIDWORKS API
 caption: Import Points Cloud From CSV File Into Sketch
 description: Macro imports the points cloud from the specified CSV file into the active 2D or 3D Sketch using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/sketch/csv-import-points/points_cloud.png
 labels: [csv, points cloud, sketch, import]
 categories: sw-tools

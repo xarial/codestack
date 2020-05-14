@@ -3,7 +3,6 @@ layout: article
 title: Storing and restoring temp body in 3rd party storage using SOLIDWORKS API
 caption: Store And Restore Body
 description: Storing the temp body in the SOLIDWORKS document stream via 3rd party storage and restoring it on opening using SOLIDWORKS API
-lang: en
 image: /solidworks-api/geometry/store-restore-body/restored-body.png
 labels: [3rd party storage,store body,restore body]
 ---

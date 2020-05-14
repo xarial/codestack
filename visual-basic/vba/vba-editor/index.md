@@ -2,7 +2,6 @@
 layout: article
 title: VBA Editor
 description: Walkthrough of user interface and functionality for VBA Editor
-lang: en
 image: /images/codestack-snippet.png
 sitemap: false
 ---

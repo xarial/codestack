@@ -3,7 +3,6 @@ layout: issue-fix
 title: Fix issues with failed to connect to database or Excel in SOLIDWORKS macro
 caption: Failed to Connect To Database or Excel
 description: Fixing the error in the macro which connects to database (e.g. SQL, MySql, Oracle, MS Access etc.) or any other data source and doesn't read/write values or displays error
-lang: en
 image: /solidworks-api/troubleshooting/macros/connect-database-excel-error/odbc-drivers.png
 labels: [macro, troubleshooting]
 redirect_from:

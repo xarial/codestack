@@ -3,7 +3,6 @@ layout: sw-tool
 title: Upgrade cosmetic threads in active SOLIDWORKS part or assembly using SOLIDWORKS API
 caption: Upgrade Cosmetic Threads
 description: VBA macro upgrades cosmetic threads to a new (SOLIDWORKS 2020) version which allows to improve performance of the document
-lang: en
 image: /solidworks-api/document/upgrade-cosmetic-threads/upgrade-cosmetic-thread.png
 labels: [api, upgrade, performance, cosmetic thread]
 categories: sw-tools

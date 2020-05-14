@@ -3,7 +3,6 @@ layout: article
 title: Storing 3rd party data in SOLIDWORKS models using SwEx.AddIn framework
 caption: 3rd Party Data Storage
 description: Storing 3rd party data (structures and storages) in SOLIDWORKS model stream using SwEx.AddIn framework
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 5
 ---

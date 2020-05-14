@@ -3,7 +3,6 @@ layout: article
 title: Get all external references of document using SOLIDWORKS Document Manager API
 caption: Get All External References
 description: Macro demonstrates how to extract all external references (including nested references) for specified SOLIDWORKS file using Document Manager API
-lang: en
 image: /images/codestack-snippet.png
 labels: [document manager, external references, components]
 ---

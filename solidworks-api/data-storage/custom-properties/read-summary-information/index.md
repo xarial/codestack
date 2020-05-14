@@ -3,7 +3,6 @@ layout: article
 title: Read summary information from file using SOLIDWORKS API
 caption: Read Summary Information
 description: VBA macro to extract the summary information (e.g. author, keywords, comments, title, creation info etc.) for active SOLIDWORKS file using SOLIDWORKS API
-lang: en
 image: /solidworks-api/data-storage/custom-properties/read-summary-information/summary.png
 labels: [summary info,author,comments,title]
 ---

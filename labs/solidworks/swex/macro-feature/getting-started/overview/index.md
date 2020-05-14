@@ -3,7 +3,6 @@ layout: article
 title: Overview of SwEx.MacroFeature framework for SOLIDWORKS add-ins
 caption: Overview
 description: Generic overview of macro feature and SwEx.MacroFeature framework
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 2
 ---

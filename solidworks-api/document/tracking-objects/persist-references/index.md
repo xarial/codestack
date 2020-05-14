@@ -3,7 +3,6 @@ layout: article
 title: Using persistent reference id in SOLIDWORKS API to track objects
 caption: Persistent Reference Id
 description: This article explains the use of persistent reference ids to track any selectable entity across SOLIDWORKS sessions
-lang: en
 image: /solidworks-api/document/tracking-objects/persist-references/persist-id-array.png
 labels: [persistent, reference, tracking]
 ---

@@ -4,7 +4,6 @@ title: Productivity tools and add-ins for SOLIDWORKS
 caption: SOLIDWORKS
 menu: LABS
 description: Collection of tools and add-ins for SOLIDWORKS
-lang: en
 image: /labs/solidworks/solidworks-labs.png
 order: 5
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Select standard plane (e.g. Front) by type using SOLIDWORKS API
 caption: Select Standard Plane By Type
 description: Example demonstrates how to select standard plane (Top, Front or Right) by specifying its type
-lang: en
 image: /solidworks-api/document/selection/select-standard-plane/selected-right-plane.png
 labels: [selection, plane]
 ---

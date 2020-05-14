@@ -3,7 +3,6 @@ layout: article
 title: Modify configuration parameters for components using SOLIDWORKS API
 caption: Modify Configuration Parameters For Multiple Components
 description: Example demonstrates how to modify parameters of multiple components in the specified configurations (e.g. suppression state) using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/assembly/components/batch-modify-parameters/modify-configurations.png
 labels: [parameters, design table, components, configuration]
 ---

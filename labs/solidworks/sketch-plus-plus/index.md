@@ -3,7 +3,6 @@ layout: article
 title: Sketch++ - SOLIDWORKS add-in which enables advanced sketch functionality
 caption: Sketch++
 description: Utilities for complimenting sketch functionality in SOLIDWORKS
-lang: en
 categories: sw-labs
 group: Model
 toc_group_name: labs-solidworks-sketch-plus-plus

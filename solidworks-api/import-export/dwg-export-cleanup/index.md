@@ -3,7 +3,6 @@ layout: article
 title: Export Flat Pattern to DXF/DWG with Cleanup page using SOLIDWORKS API
 caption: Export Flat Pattern With Cleanup
 description: VBA example which demonstrates how to export specified flat pattern to DXF/DWG with Cleanup dialog
-lang: en
 image: /solidworks-api/import-export/dwg-export-cleanup/cleanup-page.png
 labels: [dxf,dwg,cleanup,flat pattern,export]
 ---

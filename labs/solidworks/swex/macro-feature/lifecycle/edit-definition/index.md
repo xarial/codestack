@@ -3,7 +3,6 @@ layout: article
 title: Edit SOLIDWORKS macro feature definition
 caption: Edit Definition
 description: Edit definition of SOLIDWORKS macro feature using SwEx.MacroFeature framework
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 2
 ---

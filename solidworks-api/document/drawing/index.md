@@ -3,7 +3,6 @@ layout: article
 title: Automating drawings using SOLIDWORKS API
 caption: Drawing
 description: Automating drawing document with IDrawingDoc interface in SOLIDWORKS API
-lang: en
 order: 2
 image: /images/codestack-snippet.png
 labels: [drawing]

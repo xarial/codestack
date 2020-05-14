@@ -3,7 +3,6 @@ layout: article
 title: Get hyperlink to a file in SOLIDWORKS PDM vault (conisio url)
 caption: Get File Hyperlink
 description: PowerShell scripts which allows to get the consistent hyperlink (conisio url) to a specified file using PDM Professional API
-lang: en
 image: /solidworks-pdm-api/files/get-file-hyperlink/hyperlink-email.png
 labels: [conisio, hyperlink]
 ---

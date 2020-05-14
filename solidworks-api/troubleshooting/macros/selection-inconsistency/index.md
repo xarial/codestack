@@ -3,7 +3,6 @@ layout: issue-fix
 title: Fixing the inconsistent selections in the SOLIDWORKS macro
 caption: Selections are inconsistent in the macro
 description: Fixing the error when selections in the macro are not consistent
-lang: en
 image: /solidworks-api/troubleshooting/macros/selection-inconsistency/recorded-macro-extrude.png
 labels: [macro, troubleshooting]
 ---

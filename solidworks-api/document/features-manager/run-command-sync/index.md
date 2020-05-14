@@ -3,7 +3,6 @@ layout: article
 title: How to run commands synchronously using SOLIDWORKS API
 caption: Run Command Synchronously
 description: Example demonstrates how to run SOLIDWORKS commands synchronously (i.e. return the execution once command closed)
-lang: en
 image: /solidworks-api/document/features-manager/run-command-sync/command_open.png
 labels: [sync, command, close]
 ---

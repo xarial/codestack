@@ -3,7 +3,6 @@ layout: article
 title: Add move-copy body feature with coincident mate using SOLIDWORKS API
 caption: Add Move-Copy Body Feature With Mate
 description: C# VSTA macro example to create move-copy body feature and add coincident mate between the largest face of the body and front plane using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/features-manager/move-copy-body-mate/move-copy-body-mate-pmp.png
 labels: [move-copy body,mates]
 ---

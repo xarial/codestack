@@ -3,7 +3,6 @@ layout: article
 title: Handling the SOLIDWORKS macro feature state update in SwEx.MacroFeature framework
 caption: State
 description: Updating state of the macro feature on the environment change (selection, rebuild, suppress etc.) 
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 3
 ---

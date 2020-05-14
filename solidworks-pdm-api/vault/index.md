@@ -3,7 +3,6 @@ layout: article
 title: Usage of IEdmVault5 interface in SOLIDWORKS PDM API
 caption: Vault
 description: Collection of code examples and tutorials for usage of IEdmVault5 interface in SOLIDWORKS PDM API
-lang: en
 image: /images/codestack-snippet.png
 order: 2
 ---

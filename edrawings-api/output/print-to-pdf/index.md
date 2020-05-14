@@ -3,7 +3,6 @@ layout: sw-tool
 title: Batch export SOLIDWORKS files to PDF via eDrawings API (without SOLIDWORKS)
 caption: Batch Export To Pdf
 description: Console application which exports all files from the specified folder to PDF format using eDrawings API, without the need to have SOLIDWORKS installed or SOLIDWORKS license
-lang: en
 image: /edrawings-api/output/print-to-pdf/print-to-pdf.png
 logo: /edrawings-api/output/print-to-pdf/print-to-pdf.svg
 labels: [export,pdf,batch,edrawings,print]

@@ -3,7 +3,6 @@ layout: article
 title: Managing Custom Properties using SOLIDWORKS API
 caption: Custom Properties
 description: Managing model, configuration and feature specific custom properties using SOLIDWORKS API
-lang: en
 image: /images/codestack-snippet.png
 labels: [custom properties, configuration properties]
 ---

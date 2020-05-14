@@ -3,7 +3,6 @@ layout: article
 title: Text Box control in SOLIDWORKS Property Manager Page
 caption: Text Box
 description: Overview of options applied to Text Box control
-lang: en
 image: /labs/solidworks/swex/pmpage/controls/text-box/text-box.png
 toc_group_name: labs-solidworks-swex
 order: 4

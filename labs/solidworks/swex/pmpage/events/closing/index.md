@@ -3,7 +3,6 @@ layout: article
 title: SOLIDWORKS Property Manager Page closing events handling
 caption: Closing
 description: Overview of events associated with closing of SOLIDWORKS property manager page handled in SwEx.PMPage framework
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 1
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Adding graphical elements to model graphics view using SOLIDWORKS API
 caption: Adornment
 description: Collection of articles and code examples which explain the different ways of customizing the view of the model and application (callouts, open GL graphics, etc.)
-lang: en
 image: /solidworks-api/adornment/adornment-api.png
 order: 6
 ---

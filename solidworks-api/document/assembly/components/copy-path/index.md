@@ -3,7 +3,6 @@ layout: sw-tool
 title: Macro to copy path of SOLIDWORKS component to clipboard
 caption: Copy Component Path
 description: Macro copies the path of the selected component in assembly or drawing into the clipboard using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/assembly/components/copy-path/copy-component-path.png
 labels: [path, clipboard, component]
 categories: sw-tools

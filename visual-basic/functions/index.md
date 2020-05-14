@@ -3,7 +3,6 @@ layout: article
 title: Functions, subroutines and parameters in Visual Basic
 caption: Functions and Subroutines
 description: Articles about using functions and subroutines (procedures) in Visual Basic as well as parameters
-lang: en
 image: /visual-basic/functions/argument-not-optional.png
 order: 4
 ---

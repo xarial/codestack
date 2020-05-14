@@ -3,7 +3,6 @@ layout: article
 title: SOLIDWORKS PDM API example for handling the data card button click
 caption: DataCard Button Click
 description: Collection of examples and articles explaining how to handle the button click on data card using SOLIDWORKS PDM Professional API
-lang: en
 image: /images/codestack-snippet.png
 labels: [hooks, button click, datacard]
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Convert meters to fraction inches using SOLIDWORKS API
 caption: Convert Meters To Fraction Inches
 description: VBA macro to convert value in system units (meters) to the fraction inches using SOLIDWORKS API
-lang: en
 image: /solidworks-api/application/convert-to-fraction-inches/dimension-fractions.png
 labels: [inches,fraction,conversion,unit]
 ---

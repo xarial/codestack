@@ -3,7 +3,6 @@ layout: article
 title: Setup Google Domains e-mail forwarding from custom domain for free 
 caption: Setup Google Domains E-Mail Forwarding
 description: Setup of up to 100 of free e-mail forwarding from custom domain using Google Domains
-lang: en
 image: /images/codestack-snippet.png
 labels: [google domains,e-mail forwarding]
 ---

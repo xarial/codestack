@@ -3,7 +3,6 @@ layout: article
 title: Select Named Entity (face, edge or vertex) using SOLIDWORKS API
 caption: Select Named Entity
 description: Select named entity (face, edge or vertex) in part, assembly (from component) or drawing (from view) using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/selection/select-named-entity/face-name.png
 labels: [face,edge,vertex,name,selection]
 ---

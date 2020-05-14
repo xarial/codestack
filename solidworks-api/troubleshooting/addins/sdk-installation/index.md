@@ -3,7 +3,6 @@ layout: article
 title: Fix missing Visual Studio SOLIDWORKS API SDK project templates
 caption: Project templates are not shown in Visual Studio after the installation of SDK
 description: Fixing the installation of SOLIDWORKS API SDK when add-in templates are not shown in Visual Studio C# and VB.NET projects
-lang: en
 image: /solidworks-api/troubleshooting/addins/sdk-installation/solidworks-api-sdk-installation.png
 labels: [add-in, troubleshooting]
 ---

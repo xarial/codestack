@@ -3,7 +3,6 @@ layout: sw-tool
 title: Open all selected components in positions in new windows
 caption: Open Components In Positions
 description: VBA macro to open each selected component in the assembly in the separate window in the same position they appear in the current assembly view
-lang: en
 image: /solidworks-api/document/assembly/components/open-in-position/open-in-position.png
 logo: /solidworks-api/document/assembly/components/open-in-position/open-in-position.svg
 labels: [position,component]

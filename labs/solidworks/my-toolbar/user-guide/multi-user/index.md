@@ -3,7 +3,6 @@ layout: article
 title: Sharing the SOLIDWORKS toolbars using MyToolbar in multi-user environment
 caption: Multi-User
 description: Sharing the SOLIDWORKS toolbars and macro buttons using MyToolbar with multiple users
-lang: en
 image: /images/codestack-snippet.png
 labels: [shared toolbar,unc,multi-user]
 toc_group_name: labs-solidworks-my-toolbar

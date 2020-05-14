@@ -3,7 +3,6 @@ layout: article
 title: 'SOLIDWORKS Add-Ins Troubleshooting: Issues And Resolutions'
 caption: 'Add-Ins Troubleshooting: Issues And Resolutions'
 description: Overview and solutions for the most common errors of SOLIDWORKS add-ins and SDK
-lang: en
 image: /images/codestack-snippet.png
 labels: [add-in, sdk, not working, problem, solidworks api, troubleshooting]
 ---

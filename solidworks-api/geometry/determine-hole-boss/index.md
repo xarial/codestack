@@ -3,7 +3,6 @@ layout: article
 title: Determine if selected face is hole or boss using SOLIDWORKS API
 caption: Determine If The Selected Face Is Hole Or Boss
 description: Example demonstrates how to identify if the selected cylindrical face in SOLIDWORKS part or assembly is internal (i.e. hole) or external (i.e. boss) using SOLIDWORKS API based on the normals of the face.
-lang: en
 image: /solidworks-api/geometry/determine-hole-boss/boss-hole.png
 labels: [geometry, hole, boss]
 ---

@@ -3,7 +3,6 @@ layout: sw-tool
 title: Link Cut-List Custom Properties To File With SOLIDWORKS Macro Feature API
 caption: Link Cut-List Custom Properties To File Custom Properties
 description: Macro feature to link specified custom properties from weldment cut-lists to SOLIDWORKS file custom properties
-lang: en
 image: /solidworks-api/document/macro-feature/link-cut-list-properties/cut-list-link-macro-feature.png
 labels: [macro feature,cut-list,link properties]
 categories: sw-tools

@@ -3,7 +3,6 @@ layout: sw-tool
 title: Export part to Parasolid via Document Manager API (without SOLIDWORKS)
 caption: Export Part File To Parasolid
 description: Power Shell script to export part file to parasolid format (.xmp_bin) from command line via Document Manager API (without SOLIDWORKS)
-lang: en
 image: /solidworks-document-manager-api/document/export-parasolid/export-parasolid.png
 labels: [export,parasolid]
 categories: sw-tools

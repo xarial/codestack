@@ -3,7 +3,6 @@ layout: article
 title: Macro slices body by sections using SOLIDWORKS API
 caption: Slice Body By Sections
 description: Example demonstrates how to slice body by sections and extract the section data from the slices using SOLIDWORKS API
-lang: en
 image: /solidworks-api/geometry/slice-body/sliced-sections.png
 labels: [slice, projection, intersection, modeler, temp body]
 ---

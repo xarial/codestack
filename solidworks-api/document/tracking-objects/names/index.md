@@ -3,7 +3,6 @@ layout: article
 title: Reading and changing names of SOLIDWORKS objects (features, components, views) using API
 caption: Object Names
 description: This article explains the use of object names and the ways to read and change the names
-lang: en
 image: /solidworks-api/document/tracking-objects/names/face-name.png
 labels: [id, track, name]
 ---

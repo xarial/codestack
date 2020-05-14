@@ -3,7 +3,6 @@ layout: article
 title: Run rotation animation for the component using SOLIDWORKS API
 caption: Run Rotation Animation For The Component
 description: Example demonstrates how to run a smooth animation of components rotation around axis using the presentation transforms in SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/assembly/components/run-rotation-animation/component-rotation.gif
 labels: [assembly, transform, rotation, animation]
 ---

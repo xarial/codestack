@@ -3,7 +3,6 @@ layout: article
 title: Issues report page for MyToolbar SOLIDWORKS add-in
 caption: Issues
 description: Reporting and reviewing the status of issues of MyToolbar add-in for SOLIDWORKS
-lang: en
 image: /images/codestack-snippet.png
 toc_group_name: labs-solidworks-my-toolbar
 order: 4

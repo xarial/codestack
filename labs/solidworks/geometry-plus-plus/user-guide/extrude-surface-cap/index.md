@@ -3,7 +3,6 @@ layout: article
 title: Extrude Surface With Caps feature in Geometry++
 caption: Extrude Surface With Caps
 description: Feature allows extrude sketch or sketch region and add caps at the end preserving the surface body in SOLIDWORKS model
-lang: en
 image: /labs/solidworks/geometry-plus-plus/user-guide/extrude-surface-cap/icon.png
 toc_group_name: labs-solidworks-geometry-plus-plus
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Dictionary in Visual Basic
 caption: Dictionary
 description: Explanation of using Dictionary object to store key-value pairs in Visual Basic
-lang: en
 image: /visual-basic/data-sets/dictionary/dictionary-key-already-associated.png
 order: 3
 ---

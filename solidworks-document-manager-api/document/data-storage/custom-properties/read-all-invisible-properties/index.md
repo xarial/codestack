@@ -3,7 +3,6 @@ layout: article
 title: Read all invisible custom properties using SOLIDWORKS Document Manager API
 caption: Read All Invisible Custom Properties
 description: VBA example to read and output all invisible custom properties from the specific model using SOLIDWORKS Document Manager API
-lang: en
 image: /images/codestack-snippet.png
 labels: [invisible, custom property]
 ---

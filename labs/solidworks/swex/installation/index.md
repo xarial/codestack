@@ -3,7 +3,6 @@ layout: article
 title: Installation and updates of SwEx.AddIn Framework for SOLIDWORKS add-ins
 caption: Installation And Updates
 description: Instructions on installing and updating the SwEx.AddIn framework for developing SOLIDWORKS add-ins in C# and VB.NET
-lang: en
 image: /labs/solidworks/swex/installation/swex-nuget-package.png
 toc_group_name: labs-solidworks-swex
 order: 1

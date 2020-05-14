@@ -3,7 +3,6 @@ layout: article
 title: Working with dimensions using SOLIDWORKS API
 caption: Dimensions
 description: Collection of articles and code examples for automating models dimensions via SOLIDWORKS API
-lang: en
 order: 7
 image: /solidworks-api/document/dimensions/solidworks-dimensions-api.png
 ---

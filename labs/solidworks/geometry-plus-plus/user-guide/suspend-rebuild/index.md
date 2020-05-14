@@ -3,7 +3,6 @@ layout: article
 title: Suspend SOLIDWORKS rebuild operation using Geometry++
 caption: Suspend Rebuild
 description: Suspend SOLIDWORKS rebuild operations in part, assembly and drawing to rebuild in batch to improve performance using Geometry++ add-in
-lang: en
 image: /labs/solidworks/geometry-plus-plus/user-guide/suspend-rebuild/icon.png
 toc_group_name: labs-solidworks-geometry-plus-plus
 ---

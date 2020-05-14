@@ -3,7 +3,6 @@ layout: article
 title: Working with Notes using SOLIDWORKS API
 caption: Notes
 description: Collection of articles and code examples about automation of SOLIDWORKS notes annotations
-lang: en
 order: 9
 image: /images/codestack-snippet.png
 ---

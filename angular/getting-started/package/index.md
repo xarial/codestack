@@ -3,7 +3,6 @@ layout: article
 title: Angular package.json file overview
 caption: Package File Overview
 description: Overview of a package.json file to manage Angular project
-lang: en
 image: /angular/getting-started/package/angular-package.png
 labels: [angular,package,json,dependencies,devDependencies,scripts]
 order: 2

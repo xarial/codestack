@@ -2,7 +2,6 @@
 layout: article
 title: Conditions
 description: Articles explaining logical conditions, if-else, select case statements and boolean operations
-lang: en
 image: /images/codestack-snippet.png
 order: 5
 sitemap: false

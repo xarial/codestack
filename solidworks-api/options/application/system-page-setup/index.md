@@ -3,7 +3,6 @@ layout: article
 title: Change system page setup options in SOLIDWORKS using API in macro
 caption: Change System Page Setup Options
 description: Changing system level (application) page setup options (printer paper size, scale, etc.) for printing using SOLIDWORKS API
-lang: en
 image: /solidworks-api/options/application/system-page-setup/page-setup.png
 labels: [print,page setup,preferences]
 ---

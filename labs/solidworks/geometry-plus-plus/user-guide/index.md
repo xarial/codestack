@@ -3,7 +3,6 @@ layout: article
 title: 'User Guide: Geometry++ add-in for SOLIDWORKS'
 caption: User Guide
 description: Geometry++ add-in for additional geometry commands for SOLIDWORKS usage instructions
-lang: en
 image: /images/codestack-snippet.png
 toc_group_name: labs-solidworks-geometry-plus-plus
 order: 3

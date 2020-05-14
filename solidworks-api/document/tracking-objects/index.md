@@ -3,7 +3,6 @@ layout: article
 title: Tracking objects by temp and persistent ids in SOLIDWORKS API
 caption: Tracking Objects
 description: This collection of articles explaining how to track different objects while geometry manipulation or across sessions
-lang: en
 order: 13
 image: /images/codestack-snippet.png
 labels: [track, id, persist, reference]

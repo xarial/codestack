@@ -3,7 +3,6 @@ layout: issue-fix
 title: Fixing the error when running legacy SWBasic (*.swb) SOLIDWORKS macro
 caption: SWBasic (*.swb) macro error
 description: Fixing the error when running or editing the legacy macro in swb format
-lang: en
 image: /solidworks-api/troubleshooting/macros/swb-macro-error/swbasic-swb-macro-filter.png
 labels: [macro, troubleshooting]
 ---

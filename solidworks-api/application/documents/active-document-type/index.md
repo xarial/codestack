@@ -3,7 +3,6 @@ layout: article
 title: Determine the type Of active document using SOLIDWORKS API
 caption: Determine The Type Of Active Document
 description: Example displays the message box of the type of the document currently active in SOLIDWORKS
-lang: en
 image: /images/codestack-snippet.png
 labels: [assembly, document, drawing, example, part, type]
 redirect_from:

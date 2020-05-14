@@ -3,7 +3,6 @@ layout: article
 title: Variables and Constants in Visual Basic
 caption: Variables and Constants Declaration and Assignment
 description: Overview of declaration of variables and constants and assignment of values in Visual Basic
-lang: en
 image: /visual-basic/variables/declaration/option-explicit-variable-not-defined.png
 order: 3
 ---

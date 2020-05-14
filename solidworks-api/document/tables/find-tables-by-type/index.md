@@ -3,7 +3,6 @@ layout: article
 title: Find tables from drawing by type using SOLIDWORKS API
 caption: Find Tables By Type
 description: Find all tables (BOM, general, revision) from drawing sheets using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/tables/find-tables-by-type/drawing-view-tables.png
 labels: [table,drawing]
 ---

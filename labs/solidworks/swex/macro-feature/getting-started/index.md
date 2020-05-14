@@ -3,7 +3,6 @@ layout: article
 title: Getting Started with SwEx.MacroFeature framework for SOLIDWORKS macro features
 caption: Getting Started
 description: Instructions on getting started with SwEx.MacroFeature framework for developing SOLIDWORKS macro features in add-ins in C# and VB.NET
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 1
 redirect_from:

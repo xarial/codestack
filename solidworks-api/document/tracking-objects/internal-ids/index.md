@@ -3,7 +3,6 @@ layout: article
 title: Using internal IDs of SOLIDWORKS objects from API
 caption: Internal IDs
 description: This article explains the use of internal ids and the ways to read the ids from the objects
-lang: en
 image: /solidworks-api/document/tracking-objects/internal-ids/sketch-segments-ids.png
 labels: [id, track, internal id]
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Get all visible components in the drawing view using SOLIDWORKS API
 caption: Get All Visible Components
 description: VBA macro to get all visible components in the drawing view (including sub-assemblies) using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/drawing/get-all-visible-components/drawing-view-feature-tree.png
 labels: [visible components,drawing view]
 ---

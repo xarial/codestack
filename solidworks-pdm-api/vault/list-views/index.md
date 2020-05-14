@@ -3,7 +3,6 @@ layout: article
 title: List all vault views using SOLIDWORKS PDM API
 caption: List All Views
 description: Example demonstrates how to list all available vault views and their paths using SOLIDWORKS PDM API
-lang: en
 image: /solidworks-pdm-api/vault/list-views/pdm-vaults-list.png
 labels: [vault, view]
 ---

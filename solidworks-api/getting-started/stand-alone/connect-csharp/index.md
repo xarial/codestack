@@ -3,7 +3,6 @@ layout: article
 title: Create C# stand-alone application for SOLIDWORKS API automation
 caption: Create C# Stand-Alone Application for SOLIDWORKS
 description: Guide of how to connect to SOLIDWORKS application from out-of-process (a.k.a Stand-Alone) application (e.g. Windows Forms, Windows Console) using C# and Microsoft Visual Studio
-lang: en
 order: 1
 image: /solidworks-api/getting-started/stand-alone/connect-csharp/proj-template.png
 labels: [activator, c#, create instance, example, getobject, rot, sdk, solidworks api]

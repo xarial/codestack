@@ -3,7 +3,6 @@ layout: article
 title: Macro renames table annotation using SOLIDWORKS API
 caption: Rename Table Annotation
 description: Example demonstrates how to rename the selected table using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/tables/rename-table-annotation/rename-table-annotation.png
 labels: [table, rename]
 ---

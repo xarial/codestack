@@ -3,7 +3,6 @@ layout: article
 title: Managing dimensions in the SOLIDWORKS macro feature using SwEx.MacroFeature framework
 caption: Dimensions
 description: Adding dimensions (linear and radial) to the SOLIDWORKS macro feature using SwEx.MacroFeature framework
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 4
 ---

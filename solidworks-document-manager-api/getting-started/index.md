@@ -4,7 +4,6 @@ title: Getting Started with SOLIDWORKS Document Manager API
 caption: Getting Started
 order: 1
 description: Generic overview of SOLIDWORKS Document Manager API library
-lang: en
 image: /images/codestack-snippet.png
 labels: [document manager, getting started]
 ---

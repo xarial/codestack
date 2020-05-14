@@ -3,7 +3,6 @@ layout: article
 title: Storing parameters in SOLIDWORKS macro feature
 caption: Parameters
 description: Storing the parameters structure in SOLIDWORKS macro feature using SwEx.MacroFeature framework
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 1
 ---

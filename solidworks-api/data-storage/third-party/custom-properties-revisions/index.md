@@ -3,7 +3,6 @@ layout: article
 title: Save custom properties revisions into 3rd party storage store using SOLIDWORKS API
 caption: Save Custom Properties Revisions
 description: Saving custom properties revisions (snapshots) into document 3rd party storage store using SOLIDWORKS API
-lang: en
 image: /solidworks-api/data-storage/third-party/custom-properties-revisions/properties-snapshots-data.png
 labels: [storage,3rd party,custom properties]
 ---

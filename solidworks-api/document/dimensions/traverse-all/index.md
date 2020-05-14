@@ -3,7 +3,6 @@ layout: article
 title: Traverse all dimensions of component or model using SOLIDWORKS API
 caption: Traverse All Dimensions
 description: VBA macro which traverses all dimensions of all features in the selected component or active document using SOLIDWORKS API and outputs the dimension name and value to the output Window
-lang: en
 image: /solidworks-api/document/dimensions/traverse-all/dimensions.png
 labels: [dimension,display dimension,traverse]
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Managing of Edit Bodies in SOLIDWORKS macro feature
 caption: Edit Bodies
 description: Managing of Edit Bodies in SOLIDWORKS macro feature using SwEx.MacroFeature framework
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 3
 ---

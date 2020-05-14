@@ -3,7 +3,6 @@ layout: article
 title: Understanding transforms in sketches while using SOLIDWORKS API
 caption: Understanding Sketch Transforms
 description: Explanation of model to sketch and sketch to model transformations in SOLIDWORKS API to properly calculate the coordinates of sketch segments
-lang: en
 image: /solidworks-api/document/sketch/transform/sketch-coordinate-systems.png
 labels: [transform,sketch]
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Read configuration specific cut-list property from the selected component using SOLIDWORKS API
 caption: Read Component Cut-List Properties
 description: VBA macro to read all properties from the cut-list of the selected component in the assembly with respect to the component configuration using SOLIDWORKS API
-lang: en
 image: /solidworks-api/data-storage/custom-properties/read-component-cutlist/cut-list-properties.png
 labels: [cut-list property,component]
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Creating C# add-in for SOLIDWORKS automation using API
 caption: Creating C# Add-In For SOLIDWORKS
 description: Detailed guide of creating SOLIDWORKS add-in from scratch using C#
-lang: en
 image: /solidworks-api/getting-started/add-ins/csharp/new-project-class-library.png
 labels: [add-in, c#]
 ---

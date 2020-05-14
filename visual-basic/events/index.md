@@ -3,7 +3,6 @@ layout: article
 title: Handling and declaring events in Visual Basic 6 (VBA)
 description: Introduction of events handling and declaration in Visual Basic 6 (VBA)
 caption: Events
-lang: en
 image: /visual-basic/events/events-list.png
 order: 15
 ---

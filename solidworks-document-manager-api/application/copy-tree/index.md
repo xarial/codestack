@@ -3,7 +3,6 @@ layout: article
 title: Copy documents tree using SOLIDWORKS Document Manager API
 caption: Copy Documents Tree
 description: Example demonstrates how to copy documents (assembly or drawing) tree to a new location by adding the suffix to each file preserving the references using SOLIDWORKS Document Manager API
-lang: en
 image: /solidworks-document-manager-api/application/copy-tree/copy-tree.png
 labels: [copy tree, copy documents]
 ---

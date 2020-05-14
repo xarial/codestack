@@ -3,7 +3,6 @@ layout: article
 title: Explanation of SOLIDWORKS API Object Model and object relations
 caption: API Object Model
 description: Collection of articles for detailed explanation of SOLIDWORKS API Object Model, class hierarchy, naming convention and objects relations
-lang: en
 image: /images/codestack-snippet.png
 labels: [object model, api]
 order: 1

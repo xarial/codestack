@@ -3,7 +3,6 @@ layout: article
 title: Handling the life cycle of SOLIDWORKS macro feature
 caption: Feature Handler
 description: Using SOLIDWORKS macro feature handler to manage the life cycle of the macro feature in SwEx.MacroFeature framework
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 4
 ---

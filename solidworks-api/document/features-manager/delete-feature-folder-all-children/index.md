@@ -3,7 +3,6 @@ layout: sw-tool
 title: SOLIDWORKS Macro to delete feature folder with all children features
 caption: Delete Feature Folder With All Children Features
 description: Macro allows to delete all of the features in the selected folder in one click using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/features-manager/delete-feature-folder-all-children/deleted-folder-features.png
 logo: /solidworks-api/document/features-manager/delete-feature-folder-all-children/deleted-folder-features.svg
 labels: [delete folder, feature manager, folder, solidworks api, utility]

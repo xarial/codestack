@@ -3,7 +3,6 @@ layout: article
 title: Registering add-in using SOLIDWORKS PDM Administration takes long time
 caption: Registering the add-in is too slow
 description: Troubleshooting the performance issue while registering add-in in SOLIDWORKS PDM administration utility.
-lang: en
 image: /solidworks-pdm-api/troubleshooting/addins/slow-addin-registering/server-busy.png
 labels: [pdm add-in, error]
 ---

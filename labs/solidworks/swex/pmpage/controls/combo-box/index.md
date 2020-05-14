@@ -3,7 +3,6 @@ layout: article
 title: Combo Box control in SOLIDWORKS property Manager Page
 caption: Combo Box
 description: Overview of options applied to Combo Box control
-lang: en
 image: /labs/solidworks/swex/pmpage/controls/combo-box/combobox.png
 toc_group_name: labs-solidworks-swex
 order: 7

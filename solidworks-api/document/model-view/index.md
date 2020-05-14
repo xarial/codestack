@@ -3,7 +3,6 @@ layout: article
 title: Manipulating model views using SOLIDWORKS API
 caption: Model Views
 description: Collection of articles and code examples for working with 3D model views using SOLIDWORKS API
-lang: en
 order: 3
 image: /images/codestack-snippet.png
 ---

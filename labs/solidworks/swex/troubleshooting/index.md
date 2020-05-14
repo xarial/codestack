@@ -3,7 +3,6 @@ layout: article
 title: Troubleshoot SOLIDWORKS add-in developed with SwEx framework
 caption: Troubleshooting
 description: Troubleshooting techniques for the applications built on SwEx framework
-lang: en
 image: /labs/solidworks/swex/troubleshooting/debug-view-output.png
 toc_group_name: labs-solidworks-swex
 order: 7

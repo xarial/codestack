@@ -3,7 +3,6 @@ layout: article
 title: Issues report page for SwEx.PMPage for SOLIDWORKS
 caption: Issues
 description: Reporting the issues and requesting features for the SwEx.PMPage framework for advanced development of SOLIDWORKS Property Manager Pages
-lang: en
 image: /images/codestack-snippet.png
 toc_group_name: labs-solidworks-swex
 order: 6

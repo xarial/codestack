@@ -3,7 +3,6 @@ layout: article
 title: Pass Parameters To SOLIDWORKS VBA Macro
 caption: Pass Parameters To VBA Macro
 description: Workarounds for passing parameters to SOLIDWORKS VBA macro from external applications
-lang: en
 image: /images/codestack-snippet.png
 labels: [arguments,parameters,interoperability]
 ---

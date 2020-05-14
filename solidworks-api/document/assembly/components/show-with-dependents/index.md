@@ -3,7 +3,6 @@ layout: article
 title: VBA Macro calls Show All Components command from SOLIDWORKS API
 caption: Show All Components (Show With Dependents)
 description: Example demonstrates how to call the Show With Dependents command for components or assembly using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/assembly/components/show-with-dependents/assembly-show-with-dependents.png
 labels: [assembly, components, show]
 ---

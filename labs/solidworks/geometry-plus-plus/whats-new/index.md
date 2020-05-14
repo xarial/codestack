@@ -3,7 +3,6 @@ layout: article
 title: 'Whats New: new features and bug fixes in Geometry++'
 caption: Whats New
 description: Version history for Geometry++ add-in for SOLIDWORKS
-lang: en
 image: /images/codestack-snippet.png
 toc_group_name: labs-solidworks-geometry-plus-plus
 order: 1

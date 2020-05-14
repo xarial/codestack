@@ -3,7 +3,6 @@ layout: article
 title: Script generates model from input parameters using SOLIDWORKS API
 caption: Model Generator
 description: Script generating model based on the template with specified parameters using SOLIDWORKS API
-lang: en
 image: /solidworks-api/getting-started/scripts/power-shell/model-generator/model-parameters.png
 labels: [dimension, parameters, script]
 ---

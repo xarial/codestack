@@ -3,7 +3,6 @@ layout: sw-tool
 title: Macro feature which adds watermark into SOLIDWORKS model
 caption: Add Watermark Feature
 description: Adds the watermark feature (license) with custom message and name which cannot be deleted or edited
-lang: en
 image: /solidworks-api/document/macro-feature/add-watermark/model-watermark.png
 labels: [secutiry, macro feature, lock]
 categories: sw-tools

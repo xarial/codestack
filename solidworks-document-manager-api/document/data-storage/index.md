@@ -3,7 +3,6 @@ layout: article
 title: Storing and data in model using SOLIDWORKS Document Manager API
 caption: Data Storage
 description: Overview of the options to store and read the data in the model using SOLIDWORKS Document Manager API
-lang: en
 image: /images/codestack-snippet.png
 labels: [data,storage,3rd party]
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Check-in all checked-out files in SOLIDWORKS PDM vault
 caption: Check-In All Checked-Out Files
 description: Command line utility to check-in all checked-out files in SOLIDWORKS PDM vault
-lang: en
 image: /solidworks-pdm-api/files/check-in-all-files/console-output.png
 labels: [check-in,check-out,pdm]
 ---

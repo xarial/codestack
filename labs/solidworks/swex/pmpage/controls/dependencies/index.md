@@ -3,7 +3,6 @@ layout: article
 title: Assigning tags and managing Property Manager Page control dependencies
 caption: Tags And Dependencies
 description: Assigning custom tags and managing SOLIDWORKS Property Manager Page control dependencies (visibility, enable state, etc.) using SwEx.PMPage framework
-lang: en
 image: /labs/solidworks/swex/pmpage/controls/dependencies/cascading-controls.gif
 labels: [cascading,dependencies,tags]
 toc_group_name: labs-solidworks-swex

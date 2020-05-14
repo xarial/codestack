@@ -3,7 +3,6 @@ layout: sw-tool
 title: Macro to save all opened documents silently using SOLIDWORKS API
 caption: Save All Documents Silently
 description: VBA macro to save all currently opened modified documents silently (without the popup messages) using SOLIDWORKS API
-lang: en
 image: /solidworks-api/application/documents/save-all-silently/save-all-documents.png
 labels: [save all,silent]
 categories: sw-tools

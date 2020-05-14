@@ -3,7 +3,6 @@ layout: article
 title: Create invisible attribute using SOLIDWORKS API
 caption: Create Invisible Attribute
 description: Example creates an invisible attribute and attaches to the selected object (entity or component)
-lang: en
 image: /solidworks-api/data-storage/attributes/create-invisible/sw-attribute-features-tree.png
 labels: [attribute, data, example]
 redirect_from:

@@ -3,7 +3,6 @@ layout: article
 title: Developing add-ins using SOLIDWORKS PDM API
 caption: Developing Add-Ins
 description: Instructions and code examples for developing add-ins for SOLIDWORKS PDM
-lang: en
 image: /images/codestack-snippet.png
 labels: [add-in,pdm]
 ---

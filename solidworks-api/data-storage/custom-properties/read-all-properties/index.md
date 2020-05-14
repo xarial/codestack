@@ -3,7 +3,6 @@ layout: article
 title: Read custom properties from file, configuration and cut-list elements using SOLIDWORKS API
 caption: Read All Properties
 description: VBA example to extract all custom properties from various sources of the active document (general, configuration specific and cut-list) using SOLIDWORKS API
-lang: en
 image: /solidworks-api/data-storage/custom-properties/read-all-properties/custom-properties.png
 labels: [properties,cut-list,configuration]
 ---

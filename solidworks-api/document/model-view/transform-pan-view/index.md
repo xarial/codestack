@@ -3,7 +3,6 @@ layout: article
 title: Pan model views with screen pixels using SOLIDWORKS API
 caption: Pan Model View
 description: Example demonstrates how to pan a model view with view transforms by providing the offset in the screen pixels
-lang: en
 image: /solidworks-api/document/model-view/transform-pan-view/pan-view.png.png
 ---
 {% include img.html src="pan-view.png" width=350 alt="Model View Panning" align="center" %}

@@ -2,7 +2,6 @@
 layout: article
 title: VBA Editor Windows
 description: Walkthrough the different windows available in VBA editor
-lang: en
 image: /images/codestack-snippet.png
 sitemap: false
 ---

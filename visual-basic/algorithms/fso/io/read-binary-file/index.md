@@ -3,7 +3,6 @@ layout: article
 title: Reading the content of binary file using Visual Basic (VBA)
 caption: Read Binary File
 description: Reading the content of binary file into the byte array using Visual Basic (VBA)
-lang: en
 image: /images/codestack-snippet.png
 labels: [read,input,binary]
 ---

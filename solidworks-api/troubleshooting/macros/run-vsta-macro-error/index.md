@@ -3,7 +3,6 @@ layout: issue-fix
 title: Fix failed SOLIDWORKS VSTA (C# or VB.NET) macro
 caption: Failed to Run VSTA (C# or VB.NET) Macro
 description: Fixing the Cannot Open error when running the VSTA macro (C# or VB.NET)
-lang: en
 image: /solidworks-api/troubleshooting/macros/run-vsta-macro-error/cannot-open-vsta-macro.png
 labels: [macro, troubleshooting]
 redirect_from:

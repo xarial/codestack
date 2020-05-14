@@ -3,7 +3,6 @@ layout: article
 title: Hosting eDrawings control in Windows Forms
 caption: Hosting Control in WinForms
 description: Guide of hosting eDrawings control in C# Widndows Forms
-lang: en
 image: /edrawings-api/gettings-started/winforms/edrawings-winform.png
 labels: [edrawings,host,winforms]
 ---

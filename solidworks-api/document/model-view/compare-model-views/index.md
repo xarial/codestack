@@ -3,7 +3,6 @@ layout: article
 title: Compare model views transformations using SOLIDWORKS API
 caption: Compare Model Views
 description: Example demonstrates how to compare 2 model views (by orientation, translation and scale)
-lang: en
 image: /solidworks-api/document/model-view/compare-model-views/view-orientation.png
 ---
 {% include img.html src="view-orientation.png" width=250 alt="Model View Orientation" align="center" %}

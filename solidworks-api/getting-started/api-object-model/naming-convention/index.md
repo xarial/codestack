@@ -3,7 +3,6 @@ layout: article
 title: Naming for methods and properties in SOLIDWORKS API
 caption: Naming Convention
 description: Explanation of the naming convention for methods, properties and interfaces in the SOLIDWORKS API object model (i.e. OpenDoc6 vs OpenDoc5)
-lang: en
 image: /solidworks-api/getting-started/api-object-model/naming-convention/obsolete-api-interface.png
 labels: [obsolete,version,number]
 ---

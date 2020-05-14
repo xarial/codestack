@@ -3,7 +3,6 @@ layout: article
 title: Managing SOLIDWORKS documents life cycle via SwEx.AddIn framework
 caption: Documents Management
 description: Framework to manage SOLIDWORKS documents life cycle (open, close, activate) and its events in SwEx.AddIn
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 3
 ---

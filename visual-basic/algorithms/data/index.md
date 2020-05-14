@@ -3,7 +3,6 @@ layout: article
 title: Visual Basic (VBA) Data manipulation examples
 caption: Data Manipulation
 description: Collection of examples showing the different ways of manipulating the data (sorting, grouping, selecting etc.) in Visual Basic  (VBA)
-lang: en
 image: /images/codestack-snippet.png
 sitemap: true
 ---

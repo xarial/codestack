@@ -3,7 +3,6 @@ layout: sw-tool
 title: Macro to scale drawing views based on the geometry size using SOLIDWORKS API
 caption: Scale Views Based On Geometry Size
 description: VBA macro to scale drawing views in the current sheet based on the geometry size and specified map
-lang: en
 image: /solidworks-api/document/drawing/views-size-based-scale/drawing-view-scale.png
 labels: [scale,size,bounding box]
 categories: sw-tools

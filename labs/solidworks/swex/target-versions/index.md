@@ -3,7 +3,6 @@ layout: article
 title: Target multiple SOLIDWORKS versions using SwEx framework
 caption: Target Multiple Versions
 description: How to target multiple versions of the SOLIDWORKS with the same code base using SwEx framework
-lang: en
 image: /labs/solidworks/swex/target-versions/get6-api-availability.png
 toc_group_name: labs-solidworks-swex
 order: 5

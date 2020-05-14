@@ -3,7 +3,6 @@ layout: article
 title: Classes in Visual Basic 6 (VBA)
 description: Article explaining the usage of classes in Visual Basic. Introducing to Object Oriented Programming (OOP)
 caption: Classes
-lang: en
 image: /visual-basic/classes/insert-class-module.png
 order: 13
 ---

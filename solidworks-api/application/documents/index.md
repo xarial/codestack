@@ -3,7 +3,6 @@ layout: article
 title: Managing SOLIDWORKS documents via API
 caption: Documents
 description: Examples of closing, opening, traversing documents using SOLIDWORKS API
-lang: en
 image: /images/codestack-snippet.png
 labels: [documents]
 ---

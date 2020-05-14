@@ -3,7 +3,6 @@ layout: article
 title: How to utilize SOLIDWORKS API methods within the scripts
 caption: Scripts
 description: Article provides examples of calling SOLIDWORKS APIs from different scripts, including vbScript, PowerShell, JavaScript
-lang: en
 labels: [Script, html, JavaScript, PowerShell, cmd]
 order: 5
 ---

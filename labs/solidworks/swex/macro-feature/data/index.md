@@ -3,7 +3,6 @@ layout: article
 title: Storing data (parameters, bodies, selection) in SOLIDWORKS macro feature
 caption: Data
 description: Storing the parameters, metadata, dimensions, selections in the SOLIDWORKS macro feature using SwEx.MacroFeature framework
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 3
 ---

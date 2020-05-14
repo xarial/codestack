@@ -3,7 +3,6 @@ layout: article
 title: Group Box in SOLIDWORKS Property Manager Page
 caption: Group Box
 description: Overview of functionality to groups the controls
-lang: en
 image: /labs/solidworks/swex/pmpage/controls/group/group-box.png
 toc_group_name: labs-solidworks-swex
 order: 3

@@ -3,7 +3,6 @@ layout: sw-tool
 title: VBA macro to rename features based on type names using SOLIDWORKS API
 caption: Rename Features Based On Type Names
 description: VBA macro renames (translates) the features in the part feature tree using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/features-manager/rename-features-by-type-name/feature-tree-eng.png
 labels: [rename, translate, feature]
 categories: sw-tools

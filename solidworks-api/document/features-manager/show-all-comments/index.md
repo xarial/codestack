@@ -3,7 +3,6 @@ layout: sw-tool
 title: Show the text of all comments in the active model using SOLIDWORKS API
 caption: Show All Comments Text
 description: VBA macro to text from comments in the active document using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/features-manager/show-all-comments/comments.png
 labels: [comment]
 categories: sw-tools

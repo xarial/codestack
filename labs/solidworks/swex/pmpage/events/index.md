@@ -3,7 +3,6 @@ layout: article
 title: Handling events of SOLIDWORKS property manager page
 caption: Events
 description: Overview of property manager page events handling
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 3
 ---

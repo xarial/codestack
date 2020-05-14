@@ -3,7 +3,6 @@ layout: article
 title: SOLIDWORKS macro finds intersection points between surface and curve
 caption: Find Intersection Points Between Surface And Curve
 description: Example demonstrates how to find the intersection points between selected plane or face with edge or sketch segment
-lang: en
 image: /solidworks-api/geometry/surface-curve-intersection.png/surface-curve-intersection.png.png
 labels: [curve, evaluate, geometry, macro, points, solidworks api, spline, intersection, trimmed curve, vba]
 ---

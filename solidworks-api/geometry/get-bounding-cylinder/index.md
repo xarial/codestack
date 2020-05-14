@@ -3,7 +3,6 @@ layout: article
 title: Finding the body bounding cylinder using SOLIDWORKS API
 caption: Get Body Bounding Cylinder
 description: This example demonstrates how to get the bounding cylinder of the solid body using SOLIDWORKS API
-lang: en
 image: /solidworks-api/geometry/get-bounding-cylinder/cylindrical-bounding-box.png
 ---
 {% include img.html src="cylindrical-bounding-box.png" height=400 alt="Cylindrical bounding box is created around the body" align="center" %}

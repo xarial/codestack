@@ -3,7 +3,6 @@ layout: article
 title: Managing permissions in SOLIDWORKS Professional PDM API
 caption: Permissions
 description: Managing user, groups and folders permissions in SOLIDWORKS PDM Professional using SOLIDWORKS PDM API
-lang: en
 image: /images/codestack-snippet.png
 labels: [rights, permissions]
 order: 5

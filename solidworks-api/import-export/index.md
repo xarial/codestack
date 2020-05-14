@@ -4,7 +4,6 @@ title: Importing and exporting files using SOLIDWORKS API
 caption: Import/Export
 description: Collection of examples and articles related to files importing and exporting using SOLIDWORKS API
 image: /solidworks-api/import-export/import-export.img
-lang: en
 order: 7
 ---
 {% include img.html src="import-export.svg" width=250 alt="Importing and exporting SOLIDWORKS files with SOLIDWORKS API" align="center" %}

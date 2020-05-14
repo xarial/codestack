@@ -3,7 +3,6 @@ layout: article
 title: Overview of SwEx.PMPage framework for SOLIDWORKS API
 caption: Overview
 description: General overview of the approach used by SwEx.PMPage framework for building property manager pages in SOLIDWORKS API
-lang: en
 image: /labs/solidworks/swex/pmpage/getting-started/overview/data-model-pmpage.png
 toc_group_name: labs-solidworks-swex
 order: 3

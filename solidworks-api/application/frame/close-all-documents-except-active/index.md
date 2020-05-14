@@ -3,7 +3,6 @@ layout: sw-tool
 title: Macro to close all SOLIDWORKS documents except active
 caption: Close All Documents Except Active
 description: Closes all opened documents except of an active one using SOLIDWORKS API
-lang: en
 image: /solidworks-api/application/frame/close-all-documents-except-active/close-all-but-active.png
 logo: /solidworks-api/application/frame/close-all-documents-except-active/close-all-but-active.svg
 labels: [close, window]

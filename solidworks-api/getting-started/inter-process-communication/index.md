@@ -3,7 +3,6 @@ layout: article
 title: Inter-Process communication between SOLIDWORKS applications
 caption: Inter-Process Communication
 description: Ways for Inter-Process communication between SOLIDWORKS applications (macros, add-ins, stand-alone application)
-lang: en
 image: /images/codestack-snippet.png
 labels: [communication,parameters]
 ---

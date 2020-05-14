@@ -3,7 +3,6 @@ layout: sw-tool
 title: SOLIDWORKS macro to rename configurations based on custom property
 caption: Rename Configurations Based On Custom Property
 description: Macro renames all configurations of assembly or part into the value of the specified configuration specific custom property
-lang: en
 image: /solidworks-api/data-storage/custom-properties/rename-configurations-based-custom-property/sw-configuration-name.png
 labels: [configuration, custom property, rename, solidworks api, utility]
 categories: sw-tools

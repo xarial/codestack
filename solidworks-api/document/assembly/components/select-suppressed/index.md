@@ -3,7 +3,6 @@ layout: article
 title: Select all suppressed components in the assembly using SOLIDWORKS API
 caption: Select All Suppressed Components
 description: VBA macro which runs the 'Component Selection - Select Suppressed' command in assembly document to select all assembly components in a batch
-lang: en
 image: /solidworks-api/document/assembly/components/select-suppressed/select-suppressed-components.png
 labels: [command,suppressed,components]
 ---

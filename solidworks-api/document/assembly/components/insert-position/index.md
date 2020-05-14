@@ -3,7 +3,6 @@ layout: article
 title: Batch add components and position them in the grid using SOLIDWORKS API
 caption: Insert And Position Components In A Grid
 description: VBA example demonstrates how to batch insert and position components in the 3D grid using SOLIDWORKS API by providing the number of rows and columns and distance between components
-lang: en
 image: /solidworks-api/document/assembly/components/insert-position/positioned-components.png
 labels: [components,positions]
 ---

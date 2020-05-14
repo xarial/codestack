@@ -3,7 +3,6 @@ layout: article
 title: Selecting entities in drawing view using SOLIDWORKS API
 caption: Selecting Entities In Drawing View
 description: Example demonstrates different approaches of selecting entities (e.g. edge, face, vertex) in the drawing views
-lang: en
 image: /solidworks-api/document/selection/drawing-view-entities/circular-edge-selected-in-views.png
 ---
 {% include img.html src="circular-edge-selected-in-views.png" width=300 alt="Named edge is selected in 3 drawing views" align="center" %}

@@ -3,7 +3,6 @@ layout: article
 title: Extract selection from boss-extrude feature using SOLIDWORKS API
 caption: Extract Selection From Boss-Extrude Feature
 description: C# VSTA macro to extract selection references (from entity, end condition and direction references) from the selected boss-extrude feature using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/features-manager/get-boss-extrude-selection/boss-extrude-property-page.png
 labels: [selection,boss-extrude]
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Selecting SOLIDWORKS objects by name and coordinates using API
 caption: Selecting Objects By Name And Coordinates
 description: Article explains the pros and cons of SelectById2 method
-lang: en
 image: /solidworks-api/document/selection/select-by-id/recorded-macro-for-extrude-feature.png
 labels: [selection, select by name, select by id]
 ---

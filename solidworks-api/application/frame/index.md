@@ -3,7 +3,6 @@ layout: article
 title: Application frame customization using SOLIDWORKS API
 caption: Frame
 description: Automating SOLIDWORKS frame (menu, toolbars, command manager) using API
-lang: en
 image: /images/codestack-snippet.png
 labels: [frame,menu,toolbar,commands]
 ---

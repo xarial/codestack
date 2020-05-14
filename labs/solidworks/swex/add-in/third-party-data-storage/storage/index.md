@@ -3,7 +3,6 @@ layout: article
 title: Storing data in the 3rd party storage store via SwEx.AddIn framework
 caption: Storage
 description: Serializing custom structures into the 3rd party storage store using SwEx.AddIn framework
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 2
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Creating VB.NET add-in for SOLIDWORKS using API
 caption: Creating VB.NET Add-In For SOLIDWORKS
 description: Detailed guide of creating 'hello world' SOLIDWORKS add-in from scratch using VB.NET
-lang: en
 image: /solidworks-api/getting-started/add-ins/vbnet/new-vbnet-class-library.png
 labels: [add-in, vb.net]
 ---

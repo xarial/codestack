@@ -3,7 +3,6 @@ layout: article
 title: Transfer domain host from GoDaddy to Google Domains
 caption: Transfer GoDaddy Domain To Google Domains
 description: Detailed guide of transferring domain host from GoDaddy to Google Domains
-lang: en
 image: /hosting/domain/transfer-godaddy-domain-to-googledomains/transfer-domain-to-google.png
 labels: [google domains,godaddy,transfer]
 ---

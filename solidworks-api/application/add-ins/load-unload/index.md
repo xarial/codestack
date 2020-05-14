@@ -3,7 +3,6 @@ layout: sw-tool
 title: Macro to load and unload add-in using SOLIDWORKS API
 caption: Load/Unload Add-In
 description: Macro to trigger (load/unload) the specified add-in using SOLIDWORKS API
-lang: en
 image: /solidworks-api/application/add-ins/load-unload/toggle-addins.png
 logo: /solidworks-api/application/add-ins/load-unload/toggle-addins.svg
 labels: [add-in, load]

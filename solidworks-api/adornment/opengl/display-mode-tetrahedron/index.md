@@ -3,7 +3,6 @@ layout: article
 title: Render tetrahedron using OpenGL and handle view display modes using SOLIDWORKS API
 caption: Render Tetrahedron And Handle View Display Modes
 description: VB.NET add-in for SOLIDWORKS to render the graphics of tetrahedron in different display modes (shaded, shaded with edges, hlr, hlv, wireframe)
-lang: en
 image: /solidworks-api/adornment/opengl/display-mode-tetrahedron/shaded-with-edges.png
 labels: [opengl,display model,shaded,hlr,hlv,wireframe]
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Calculating rotation transformation to align component with direction
 caption: Aligning Component With Rotation Transformation
 description: VBA example demonstrates hwo to calculate the rotation transformation to align the normal of the component's face with edge direction around the component's origin
-lang: en
 image: /solidworks-api/document/assembly/components/rotation-transform-align/rotation-transform.png
 labels: [transform,rotation,align]
 ---

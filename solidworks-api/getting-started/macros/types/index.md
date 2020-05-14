@@ -3,7 +3,6 @@ layout: article
 title: SOLIDWORKS Macro types - VBA (swp), SWBasic (swb), VSTA (dll)
 caption: Macros Types
 description: This article explains the different types of macros supported by SOLIDWORKS (VBA, VSTA, SWBasic)
-lang: en
 image: /solidworks-api/getting-started/macros/types/macro-edit-run-filters.png
 labels: [macros, vsta, vba, swmacro, swb, swp]
 order: 1

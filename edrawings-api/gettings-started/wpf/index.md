@@ -3,7 +3,6 @@ layout: article
 title: Hosting SOLIDWORKS eDrawings control in Windows Presentation Foundation (WPF)
 caption: Hosting Control in WPF
 description: Detailed guide on hosting SOLIDWORKS eDrawings control as WPF User Control in Windows Presentation Foundation (WPF)
-lang: en
 image: /edrawings-api/gettings-started/wpf/edrawings-wpf-window.png
 labels: [edrawings,host,wpf]
 ---

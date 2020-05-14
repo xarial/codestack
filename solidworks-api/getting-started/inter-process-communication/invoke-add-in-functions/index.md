@@ -3,7 +3,6 @@ layout: article
 title: Invoke function of SOLIDWORKS add-in from stand-alone application or macro
 caption: Invoke Function Of Add-in
 description: Calling function of SOLIDWORKS add-in from stand-alone application or macro (enabling add-in custom API)
-lang: en
 image: /images/codestack-snippet.png
 labels: [add-in api,invoke]
 ---

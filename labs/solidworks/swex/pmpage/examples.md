@@ -3,7 +3,6 @@ layout: article
 title: Examples and source code for SwEx.PMPage framework
 caption: Examples
 description: Collection of examples using the SwEx.PMPage framework for SOLIDWORKS
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 4
 ---

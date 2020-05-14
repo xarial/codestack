@@ -3,7 +3,6 @@ layout: sw-tool
 title: Set multiple assembly components solving (rigid or flexible) using SOLIDWORKS API
 caption: Set Components Solving (Rigid or Flexible)
 description: VBA macro to batch set the rigid or flexible option for selected components in the assembly using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/assembly/components/set-solving/batch-set-solving.png
 labels: [batch,solving,rigid,flexible]
 categories: sw-tools

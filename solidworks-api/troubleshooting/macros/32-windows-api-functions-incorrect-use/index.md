@@ -3,7 +3,6 @@ layout: issue-fix
 title: Fix incorrect use of 32-bit versions of Windows API functions in SOLIDWORKS macros
 caption: Incorrect Use Of 32-bit Versions Of Windows API Functions
 description: Fixing the Compile error - The code in this project must be updated for use on 64-bit systems when macro is utilizing Windows API functions
-lang: en
 image: /solidworks-api/troubleshooting/macros/32-windows-api-functions-incorrect-use/declare-function-win-api.png
 labels: [macro, troubleshooting]
 redirect_from:

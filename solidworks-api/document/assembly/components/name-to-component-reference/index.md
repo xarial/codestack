@@ -3,7 +3,6 @@ layout: sw-tool
 title: Copy component name to the component reference using SOLIDWORKS API
 caption: Copy Component Name To Component Reference
 description: VBA macro to copy component name to the component reference using SOLIDWORKS with an ability to filter virtual components only
-lang: en
 image: /solidworks-api/document/assembly/components/name-to-component-reference/component-reference.png
 labels: [name,virtual,component reference]
 categories: sw-tools

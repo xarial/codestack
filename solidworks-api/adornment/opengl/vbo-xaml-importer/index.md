@@ -3,7 +3,6 @@ layout: article
 title: Import and render XAML file using VBO in OpenGL and SOLIDWORKS API
 caption: Import XAML File And Render Using VBO
 description: C# add-in to import the geometry in XAML format into the current model space and render the graphics with high performance using Vertex Buffer Object (VBO) of OpenGL and SOLIDWORKS API
-lang: en
 image: /solidworks-api/adornment/opengl/vbo-xaml-importer/vbo-opengl.png
 labels: [opengl,vbo,performance,xaml,graphics]
 ---

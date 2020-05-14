@@ -3,7 +3,6 @@ layout: article
 title: 'Getting started: Developing applications with SOLIDWORKS API'
 caption: Getting Started
 description: Detailed guides of getting started with developing applications for SOLIDWORKS via API
-lang: en
 image: /solidworks-api/getting-started/solidworks-api-getting-started.png
 order: 1
 ---

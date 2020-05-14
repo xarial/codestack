@@ -3,7 +3,6 @@ layout: article
 title: Managing user preferences of the document using SOLIDWORKS API
 caption: Document Options
 description: Collection of articles and examples which demonstrate how to control document options (user preferences) using SOLIDWORKS API
-lang: en
 image: /images/codestack-snippet.png
 labels: [document, preferences, options]
 ---

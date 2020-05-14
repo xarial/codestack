@@ -3,7 +3,6 @@ layout: article
 title: Create temp toroidal sheet body using SOLIDWORKS modeler API
 caption: Create Temp Toroidal Sheet Body
 description: Example demonstrates how to create temp body of a toroidal sheet
-lang: en
 image: /solidworks-api/geometry/primitives/create-toroidal-surface/toroidal-surface.png
 labels: [topology, geometry, sheet, modeler, cylinder]
 ---

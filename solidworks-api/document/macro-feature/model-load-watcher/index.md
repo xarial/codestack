@@ -3,7 +3,6 @@ layout: sw-tool
 title: Run VBA macro on model load using macro feature and SOLIDWORKS API
 caption: Automatically Run Macro On Model Load
 description: Macro feature to run VBA code on model loading using SOLIDWORKS API
-lang: en
 image: /solidworks-api/document/macro-feature/model-load-watcher/load-watcher-macro-feature.png
 labels: [macro feature,load event,auto run]
 categories: sw-tools

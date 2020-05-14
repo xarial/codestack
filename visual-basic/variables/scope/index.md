@@ -3,7 +3,6 @@ layout: article
 title: Variables Scope in Visual Basic
 caption: Variables Scope
 description: Article explaining different variables scopes (public and private class level, local) in Visual Basic
-lang: en
 image: /visual-basic/variables/scope/custom-module-named-module1.png
 order: 4
 ---

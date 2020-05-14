@@ -3,7 +3,6 @@ layout: article
 title: Setup GoDaddy e-mail forwarding from custom domain for free
 caption: Setup GoDaddy E-Mail Forwarding
 description: Setup of up to 100 of free e-mail forwarding from custom domain using GoDaddy
-lang: en
 image: /images/codestack-snippet.png
 labels: [godaddy,email forwarding]
 ---

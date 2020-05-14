@@ -3,7 +3,6 @@ layout: article
 title: Working with files in the vault using SOLIDWORKS PDM API
 caption: Files
 description: Collection of examples and articles regarding working with files in vault using PDM Professional API
-lang: en
 image: /images/codestack-snippet.png
 labels: [pdm,file]
 order: 3

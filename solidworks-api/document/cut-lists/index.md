@@ -3,7 +3,6 @@ layout: article
 title: Managing cut-list bodies using SOLIDWORKS API
 caption: Cut-Lists
 description: Automating cut-list bodies (weldment and sheet metal) using SOLIDWORKS API
-lang: en
 order: 11
 image: /images/codestack-snippet.png
 labels: [cut-list,weldment,sheet metal]

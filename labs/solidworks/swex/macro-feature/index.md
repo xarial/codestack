@@ -3,7 +3,6 @@ layout: article
 title: SwEx.MacroFeature - advanced framework for SOLIDWORKS macro feature
 caption: SwEx.MacroFeature
 description: Framework for simplified development of custom macro features using SOLIDWORKS API
-lang: en
 toc_group_name: labs-solidworks-swex
 order: 4
 ---

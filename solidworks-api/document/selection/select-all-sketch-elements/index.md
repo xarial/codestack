@@ -3,7 +3,6 @@ layout: article
 title: Select all sketch elements using SOLIDWORKS API
 caption: Select All Sketch Elements
 description: This example demonstrates how to select all sketch elements (segments and points) in the active sketch
-lang: en
 image: /solidworks-api/document/selection/select-all-sketch-elements/select-all-sketch-elements.png
 labels: [selection, sketch segment, sketch point]
 ---

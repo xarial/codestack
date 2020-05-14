@@ -3,7 +3,6 @@ layout: article
 title: Display assembly visualization page using SOLIDWORKS API
 caption: Display Assembly Visualization Page
 description: Example displays the page for Assembly Visualization page
-lang: en
 image: /solidworks-api/document/assembly/display-assembly-visualization-page/sw-assembly-visualization.png
 labels: [assembly, example, solidworks api, visualization]
 redirect_from:
