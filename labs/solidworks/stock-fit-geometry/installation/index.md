@@ -4,7 +4,7 @@ title: Installation Guide for Stock Master add-ins for SOLIDWORKS
 caption: Installation Guide
 description: Instructions of installing of Stock Master add-in for SOLIDWORKS which provides additional features for packaging and stocking
 image: /images/codestack-snippet.png
-toc_group_name: labs-solidworks-stock-master
+toc-group-name: labs-solidworks-stock-master
 order: 2
 ---
 To install add-in download the latest msi-installer (*StockMaster.msi*) at [this link v. 0.5.0 (beta 1)](https://github.com/codestackdev/stock-fit-geometry/releases/tag/beta1).

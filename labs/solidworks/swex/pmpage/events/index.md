@@ -3,7 +3,7 @@ layout: article
 title: Handling events of SOLIDWORKS property manager page
 caption: Events
 description: Overview of property manager page events handling
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 3
 ---
 [PropertyManagerPageHandlerEx](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_PropertyManagerPageHandlerEx.htm) class is responsible for providing the events raised by property manager page to the client

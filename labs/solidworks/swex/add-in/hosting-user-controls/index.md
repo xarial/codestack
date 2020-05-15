@@ -3,7 +3,7 @@ layout: article
 title: Hosting custom user controls in SOLIDWORKS panels using SwEx.AddIn framework
 caption: Hosting User Controls
 description: Hosting custom user controls in SOLIDWORKS panels (task pane, model view manager, feature manager, options dialog) using SwEx.AddIn framework
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 4
 ---
 Frameworks simplifies adding and managing of [custom user controls](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.usercontrol?view=netframework-4.8) in the standard panels of SOLIDWORKS.

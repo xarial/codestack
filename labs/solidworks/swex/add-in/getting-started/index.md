@@ -3,7 +3,7 @@ layout: article
 title: Getting Started with SwEx.AddIn to develop advanced add-ins for SOLIDWORKS
 caption: Getting Started
 description: Instructions on getting started with SwEx.AddIn framework for developing SOLIDWORKS add-ins in C# and VB.NET
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 1
 ---
 Framework is supported by .NET language (i.e. C# and VB.NET) targeting .NET Framework 4.0 or newer.

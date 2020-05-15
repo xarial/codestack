@@ -3,7 +3,7 @@ layout: article
 title: Managing selection of SOLIDWORKS macro feature
 caption: Selections
 description: Managing selections of SOLIDWORKS macro feature using the SwEx.MacroFeature framework
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 2
 ---
 ~~~ cs

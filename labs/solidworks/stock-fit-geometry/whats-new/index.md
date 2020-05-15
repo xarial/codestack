@@ -4,7 +4,7 @@ title: 'Whats New: new features and bug fixes of Stock Master add-in for SOLIDWO
 caption: Whats New
 description: Version history for Stock Master add-in for SOLIDWORKS
 image: /labs/solidworks/stock-fit-geometry/round-stock-feature-property-page.png
-toc_group_name: labs-solidworks-stock-master
+toc-group-name: labs-solidworks-stock-master
 order: 1
 ---
 Stock Master is a SOLIDWORKS add-in providing the additional functionality for managing geometry to be stocked (e.g. cylindrical stock). This page lists all notable features and bug fixes which were added in each release of the software.

@@ -3,7 +3,7 @@ layout: article
 title: Overview of SwEx.MacroFeature framework for SOLIDWORKS add-ins
 caption: Overview
 description: Generic overview of macro feature and SwEx.MacroFeature framework
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 2
 ---
 Framework provides 3 main macro feature abstract classes which reside in the [CodeStack.SwEx.MacroFeature](https://docs.codestack.net/swex/macro-feature/html/N_CodeStack_SwEx_MacroFeature.htm) namespace to be inherited in order to register new macro feature.

@@ -3,7 +3,7 @@ layout: article
 title: Examples and source code for SwEx.PMPage framework
 caption: Examples
 description: Collection of examples using the SwEx.PMPage framework for SOLIDWORKS
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 4
 ---
 This section contains examples which are using SwEx.PMPage framework and SOLIDWORKS API for developing advanced Property Manager Pages in SOLIDWORKS add-ins.

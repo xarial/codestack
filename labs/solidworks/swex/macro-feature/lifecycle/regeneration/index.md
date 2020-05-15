@@ -3,7 +3,7 @@ layout: article
 title: Handling Regeneration method of SOLIDWORKS macro feature
 caption: Regeneration
 description: Handling regeneration event of SOLIDWORKS macro feature and returning bodies or errors to drive the behavior using SwEx.MacroFeature framework
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 1
 ---
 This handler called when feature is being rebuilt (either when regenerate is invoked or when the parent elements have been changed).

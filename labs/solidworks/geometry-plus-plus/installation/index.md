@@ -4,7 +4,7 @@ title: Installing Geometry++ SOLIDWORKS add-in
 caption: Installation Guide
 description: Instructions of installing of Geometry++ add-in
 image: /images/codestack-snippet.png
-toc_group_name: labs-solidworks-geometry-plus-plus
+toc-group-name: labs-solidworks-geometry-plus-plus
 order: 2
 ---
 To install add-in download the latest msi-installer (*geometry_plus_plus.msi*) at [this link v. 0.4.0 (alpha 3)](https://github.com/codestackdev/geometry-plus-plus/releases/tag/alpha3).

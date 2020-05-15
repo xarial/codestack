@@ -3,7 +3,7 @@ layout: article
 title: Entry Point of SwEx.AddIn framework
 caption: Entry Point
 description: Instructions on starting the coding with the SwEx.AddIn framework for SOLIDWORKS
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 2
 ---
 ## Registering the add-in

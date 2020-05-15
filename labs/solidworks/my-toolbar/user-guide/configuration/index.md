@@ -5,7 +5,7 @@ caption: Configuration
 description: Adding, removing and customizing (tooltips and icons) toolbars and macro buttons in MyToolbar add-in for SOLIDWORKS
 image: /images/codestack-snippet.png
 labels: [configure,macro button icon,macro button tooltip]
-toc_group_name: labs-solidworks-my-toolbar
+toc-group-name: labs-solidworks-my-toolbar
 order: 1
 ---
 ## Adding Macro Buttons And Toolbars

@@ -3,7 +3,7 @@ layout: article
 title: Custom enable command state for SOLIDWORKS commands
 caption: Custom Enable Command State
 description: Explanation on using the custom enable states for the SOLIDWORKS commands using SwEx framework
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 4
 ---
 There are 4 command states supported by SOLIDWORKS:
@@ -23,4 +23,4 @@ The value of state will be preassigned based on the workspace and can be changed
 
 > This method allows to implement the toggle button in toolbar and menu. To set the checked state assign the *SelectEnable* or *SelectDisable* values of [CommandItemEnableState_e](https://docs.codestack.net/swex/add-in/html/T_CodeStack_SwEx_AddIn_Enums_CommandItemEnableState_e.htm) enumeration.
 
-{% include code-tabs.html src="CommandsManager.CustomEnableState" %}
+{#% include code-tabs.html src="CommandsManager.CustomEnableState" %}

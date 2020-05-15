@@ -6,10 +6,11 @@ menu: LABS
 description: Collection of tools and add-ins for SOLIDWORKS
 image: /labs/solidworks/solidworks-labs.png
 order: 5
+search: false
 styles:
   - /assets/styles/catalogue.css
 ---
-![SOLIDWORKS Labs](solidworks-labs.svg){ height=150 }
+![SOLIDWORKS Labs](solidworks-labs.svg){ width=150 }
 
 This section lists the various productivity tools and add-ins developed for SOLIDWORKS application.
 

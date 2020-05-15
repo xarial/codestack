@@ -4,7 +4,7 @@ title: Hosting SOLIDWORKS commands in menu, toolbar and context menu using SwEx.
 caption: Hosting Commands
 description: Hosting options for SOLIDWORKS commands using SwEx.AddIn (command group, context menu, toolbar and commands tab box)
 image: /labs/solidworks/swex/add-in/commands-manager/hosting-commands/commands-toolbar.png
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 2
 redirect-from:
   - /labs/solidworks/swex/add-in/commands-manager/adding-command-group/
@@ -19,7 +19,7 @@ In order to add command group it is required to call the [AddCommandGroup](https
 
 It is required to provide the void handler function with a parameter of enumerator which will be called by framework when command is clicked.
 
-{% include code-tabs.html src="CommandsManager.CommandGroup" %}
+{#% include code-tabs.html src="CommandsManager.CommandGroup" %}
 
 ### Menu
 
@@ -48,7 +48,7 @@ Command item can be added to tab box by setting the *showInCmdTabBox* parameter 
 * Text below icon (swCommandTabButton_TextBelow)
 * Text to the right to icon, aligned horizontally (swCommandTabButton_TextHorizontal)
 
-{% include code-tabs.html src="CommandsManager.CommandTabBox" %}
+{#% include code-tabs.html src="CommandsManager.CommandTabBox" %}
 
 ## Context Menu
 
@@ -60,7 +60,7 @@ It is required to provide the void handler function with a parameter of enumerat
 
 It is optionally required to specify the selection type of where this menu should be displayed.
 
-{% include code-tabs.html src="CommandsManager.ContextMenu" %}
+{#% include code-tabs.html src="CommandsManager.ContextMenu" %}
 
 
 

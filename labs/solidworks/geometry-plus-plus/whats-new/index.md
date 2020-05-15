@@ -4,7 +4,7 @@ title: 'Whats New: new features and bug fixes in Geometry++'
 caption: Whats New
 description: Version history for Geometry++ add-in for SOLIDWORKS
 image: /images/codestack-snippet.png
-toc_group_name: labs-solidworks-geometry-plus-plus
+toc-group-name: labs-solidworks-geometry-plus-plus
 order: 1
 ---
 This page lists the version history of the released of Geometry++ add-in for SOLIDWORKS advanced geometry. It includes the most notable feature implemented and bugs fixed.

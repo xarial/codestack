@@ -3,7 +3,7 @@ layout: article
 title: Hosting user control in SOLIDWORKS Task Pane using SwEx.AddIn framework
 caption: Task Pane
 description: Hosting WinForms user control in SOLIDWORKS Task Pane panel using SwEx.AddIn framework
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 1
 ---
 Any [System.Windows.Forms.UserControl](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.usercontrol?view=netframework-4.8) can be hosted in the Task Pane by calling the [ISwAddInEx.CreateTaskPane](https://docs.codestack.net/swex/add-in/html/Overload_CodeStack_SwEx_AddIn_Base_ISwAddInEx_CreateTaskPane.htm) method.

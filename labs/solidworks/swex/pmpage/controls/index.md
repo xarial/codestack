@@ -3,7 +3,7 @@ layout: article
 title: Adding and customizing controls to Property Manager page 
 caption: Controls
 description: Overview of controls supported by the SwEx.PMPage framework and the customization and decoration options
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 2
 ---
 Framework will automatically generate the best suitable control for the public property in the data model. For example for all numeric properties the number box control will be generated. For all string properties text box control will be generated. For all complex types group box will be generated.

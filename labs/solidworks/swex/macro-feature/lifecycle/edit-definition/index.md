@@ -3,7 +3,7 @@ layout: article
 title: Edit SOLIDWORKS macro feature definition
 caption: Edit Definition
 description: Edit definition of SOLIDWORKS macro feature using SwEx.MacroFeature framework
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 2
 ---
 Edit definition allows to modify the parameters of an existing feature. Edit definition is called when *Edit Feature* command is clicked form the feature manager tree.

@@ -6,7 +6,7 @@ description: Libraries for extending SOLIDWORKS functionality and utilizing API
 image: /labs/solidworks/swex/logo.png
 categories: sw-labs
 group: For Developers
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 type: sw-lab
 ---
 ![SwEx Framework](logo.png)

@@ -6,7 +6,7 @@ description: SOLIDWORKS add-in to generate round stock feature around the input 
 image: /labs/solidworks/stock-fit-geometry/round-stock-icon.png
 categories: sw-labs
 group: Geometry
-toc_group_name: labs-solidworks-stock-master
+toc-group-name: labs-solidworks-stock-master
 type: sw-lab
 ---
 ![Property page for Round Stock feature](round-stock-feature-property-page.png){ height=350 }

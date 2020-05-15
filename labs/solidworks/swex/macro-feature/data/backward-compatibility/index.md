@@ -3,7 +3,7 @@ layout: article
 title: Backward compatibility support for SOLIDWORKS macro feature parameters
 caption: Backward Compatibility
 description: Explanation of ways to implement backward compatibility for the parameters stored in SOLIDWORKS macro feature
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 5
 ---
 ### Parameters

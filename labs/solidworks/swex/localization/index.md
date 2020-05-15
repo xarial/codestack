@@ -4,7 +4,7 @@ title: Localizing SOLIDWORKS add-ins using SwEx framework
 caption: Localization
 description: How to support multi language SOLIDWORKS add-ins by using of localized resources in SwEx framework
 image: /labs/solidworks/swex/localization/menu-localized.png
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 6
 ---
 SwEx frameworks supports [resources in .NET applications](https://docs.microsoft.com/en-us/dotnet/framework/resources/index) to enable localization of the add-in, e.g. supporting multiple languages.
@@ -29,7 +29,7 @@ Two commands in menu are localized for Russian and English versions of the add-i
 
 ![Localized menu commands](menu-localized.png)
 
-{% include code-tabs.html src="LocalizationAddIn.Commands" %}
+{#% include code-tabs.html src="LocalizationAddIn.Commands" %}
 
 ## Property Manager Page
 
@@ -37,7 +37,7 @@ Property Manager page title and tooltips for the controls are localized for Russ
 
 ![Localized Property Manager Page](property-page-localized.png)
 
-{% include code-tabs.html src="LocalizationAddIn.PMPage" %}
+{#% include code-tabs.html src="LocalizationAddIn.PMPage" %}
 
 ## Macro Feature
 
@@ -51,4 +51,4 @@ In a similar way it is possible to use strings from the resources to return anot
 
 ![Localized macro feature error](macro-feature-error-localized.png)
 
-{% include code-tabs.html src="LocalizationAddIn.MacroFeature" %}
+{#% include code-tabs.html src="LocalizationAddIn.MacroFeature" %}

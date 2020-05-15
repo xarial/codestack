@@ -4,7 +4,7 @@ title: Target multiple SOLIDWORKS versions using SwEx framework
 caption: Target Multiple Versions
 description: How to target multiple versions of the SOLIDWORKS with the same code base using SwEx framework
 image: /labs/solidworks/swex/target-versions/get6-api-availability.png
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 5
 ---
 When SwEx.Framework library is installed via nuget package, SOLIDWORKS interop libraries are also installed. Framework referencing latest interop libraries in its project, allowing the users to use the latest versions of API with the newer versions of the SOLIDWORKS.
@@ -21,7 +21,7 @@ Use the [ISldWorks::IsVersionNewerOrEqual](https://docs.codestack.net/swex/commo
 
 That means if we want to extract custom properties in our add-in and target all SOLIDWORKS versions starting from the SOLIDWORKS 2012, we need to write the code below:
 
-{% include code-tabs.html src="MultiTargetAddIn.Major" %}
+{#% include code-tabs.html src="MultiTargetAddIn.Major" %}
 
 > Note. Although it is possible to simply use the oldest version of the method which corresponds to the minimum required SOLIDWORKS version as SOLIDWORKS supports backward compatibility, it is not recommended practice as newer version of methods might include critical bug fixes.
 
@@ -31,4 +31,4 @@ For example [IDimensionTolerance::GetMinValue2](http://help.solidworks.com/2019/
 
 > Note, that we cannot simply check if current SOLIDWORKS version is 2015 as the method only works in SP3 and we need to explicitly specify the service pack
 
-{% include code-tabs.html src="MultiTargetAddIn.Minor" %}
+{#% include code-tabs.html src="MultiTargetAddIn.Minor" %}

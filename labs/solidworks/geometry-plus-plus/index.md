@@ -6,7 +6,7 @@ description: SOLIDWORKS add-in providing additional set of commands related to g
 image: /labs/solidworks/geometry-plus-plus/logo.png
 categories: sw-labs
 group: Geometry
-toc_group_name: labs-solidworks-geometry-plus-plus
+toc-group-name: labs-solidworks-geometry-plus-plus
 type: sw-lab
 ---
 ![Geometry++](logo.png)

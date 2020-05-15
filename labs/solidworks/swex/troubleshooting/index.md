@@ -4,7 +4,7 @@ title: Troubleshoot SOLIDWORKS add-in developed with SwEx framework
 caption: Troubleshooting
 description: Troubleshooting techniques for the applications built on SwEx framework
 image: /labs/solidworks/swex/troubleshooting/debug-view-output.png
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 7
 ---
 SwEx framework outputs the trace messages which simpifies the troubleshooting process. The messages are output to the default trace listener.

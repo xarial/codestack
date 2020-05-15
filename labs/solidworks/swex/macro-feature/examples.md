@@ -3,7 +3,7 @@ layout: article
 title: Examples with source code built using SwEx.MacroFeature framework for SOLIDWORKS API
 caption: Examples
 description: Collection of examples using the SwEx.MacroFeature framework for SOLIDWORKS API
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 4
 ---
 SwEx.MacroFeature is a framework for SOLIDWORKS API enabling the simplified development and data binding of macro features.

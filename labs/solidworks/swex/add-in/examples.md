@@ -3,7 +3,7 @@ layout: article
 title: Examples and source code for SwEx.Addin framework for SOLIDWORKS API
 caption: Examples
 description: Collection of examples using the SwEx.Addin framework for SOLIDWORKS
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 6
 ---
 This section contains code examples and projects utilizing SwEx.Addin framework for developing modern add-in applications for SOLIDWORKS.

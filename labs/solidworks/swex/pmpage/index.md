@@ -3,12 +3,10 @@ layout: article
 title: SwEx.PMPage - advanced framework for SOLIDWORKS property manager pages
 caption: SwEx.PMPage
 description: Utilities for advanced development of SOLIDWORKS Property Manager Pages which enables data driven development with data binding
-toc_group_name: labs-solidworks-swex
+toc-group-name: labs-solidworks-swex
 order: 3
 redirect-from:
-  - /labs/solidworks/vpages
   - /labs/solidworks/vpages/
-  - /labs/solidworks/swex/pmp
   - /labs/solidworks/swex/pmp/
 ---
 ![SwEx.PMPage framework for SOLIDWORKS](logo.png)
