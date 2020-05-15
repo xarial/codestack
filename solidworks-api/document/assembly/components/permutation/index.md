@@ -3,7 +3,7 @@ layout: sw-tool
 title: Macro for components configurations permutation using SOLIDWORKS API
 caption: Components Configurations Permutation
 description: Macro performs a permutation for each components in the root level of the assembly using SOLIDWORKS API and saves the results as individual files
-image: /solidworks-api/document/assembly/components/permutation/component-configurations.png
+image: component-configurations.png
 labels: [permutation,component,generation,configuration]
 group: Assembly
 ---

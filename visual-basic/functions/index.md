@@ -3,7 +3,7 @@ layout: article
 title: Functions, subroutines and parameters in Visual Basic
 caption: Functions and Subroutines
 description: Articles about using functions and subroutines (procedures) in Visual Basic as well as parameters
-image: /visual-basic/functions/argument-not-optional.png
+image: argument-not-optional.png
 order: 4
 ---
 Functions are used to define the reusable procedures (group of code statements) which can be called from another functions. Functions in Visual Basic are synchronous which means that the caller must wait for the function to return the control before proceeding to the next statement.

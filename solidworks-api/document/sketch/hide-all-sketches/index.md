@@ -3,7 +3,7 @@ layout: sw-tool
 title: VBA Macro to hide all sketches in the model using SOLIDWORKS API
 caption: Hide All Sketches
 description: Macro will hide (blank) or show (unblank) all sketches (2D and 3D) in the active document using SOLIDWORKS API
-image: /solidworks-api/document/sketch/hide-all-sketches/sw-hide-all-sketches.png
+image: sw-hide-all-sketches.png
 labels: [blank sketch, hide sketch, solidworks api, utils]
 group: Sketch
 redirect-from:

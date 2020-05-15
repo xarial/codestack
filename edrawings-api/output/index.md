@@ -3,7 +3,7 @@ layout: article
 title: Outputting SOLIDWORKS files to different formats using SOLIDWORKS eDrawings API
 caption: Output
 description: Explanation of options of exporting and printing of SOLIDWORKS file via eDrawings API
-image: /edrawings-api/output/edrawings-export-types.png
+image: edrawings-export-types.png
 labels: [print,export,edrawings]
 ---
 eDrawings enables exporting of the SOLIDWORKS files to the foreign format listed below:

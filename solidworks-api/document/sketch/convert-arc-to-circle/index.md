@@ -3,7 +3,7 @@ layout: article
 title: Convert arc to circle by merging end points using SOLIDWORKS API
 caption: Convert Arc To Circle
 description: VBA macro to convert sketch arc to a sketch circle by adding the merge relation between start and end points using SOLIDWORKS API
-image: /solidworks-api/document/sketch/convert-arc-to-circle/sketch-arc.png
+image: sketch-arc.png
 labels: [sketch,arc,circle,merge,relation]
 ---
 ![Sketch arc](sketch-arc.png){ width=350 }

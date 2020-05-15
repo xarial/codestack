@@ -3,7 +3,7 @@ layout: article
 title: Starting SOLIDWORKS application in background (hidden)
 caption: Start In Background
 description: Instructions of how to start SOLIDWORKS application to be used by stand-alone automation tool in background (hidden)
-image: /solidworks-api/getting-started/stand-alone/start-background/invisible-app.png
+image: invisible-app.png
 labels: [background,invisible]
 ---
 ![Hidden SOLIDWORKS application](invisible-app.png){ width=350 }

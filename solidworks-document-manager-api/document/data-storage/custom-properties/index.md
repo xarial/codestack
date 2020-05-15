@@ -3,7 +3,6 @@ layout: article
 title: Managing custom properties for files using SOLIDWORKS Document Manager API
 caption: Custom Properties
 description: Adding, removing, modifying, reading custom properties (visible and invisible) for files using SOLIDWORKS Document Manager API
-image: /images/codestack-snippet.png
 labels: [custom properties]
 ---
 SOLIDWORKS Document Manager API provides a comprehensive set of functions to manage (add, remove, modify and read) custom properties in SOLIDWORKS files.

@@ -3,7 +3,7 @@ layout: article
 title: Selection box control in SOLIDWORKS Property Page with SwEx.PMPage framework
 caption: Selection Box
 description: Overview of options applied to Selection Box control
-image: /labs/solidworks/swex/pmpage/controls/selection-box/selection-box.png
+image: selection-box.png
 toc-group-name: labs-solidworks-swex
 order: 8
 ---

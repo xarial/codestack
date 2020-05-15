@@ -4,7 +4,6 @@ title: Automating assemblies using SOLIDWORKS API
 caption: Assembly
 description: Assemblies automation (components, BOM, contexts) using SOLIDWORKS API
 order: 1
-image: /images/codestack-snippet.png
 labels: [assembly]
 ---
 Assembly is a specific type of the model document which represents a composition of sub documents to form the complete product.

@@ -4,7 +4,7 @@ title: Features Manager Tree automation using SOLIDWORKS API
 caption: Features Manager
 description: Collection of guides for automating features creation via SOLIDWORKS API
 order: 4
-image: /solidworks-api/document/features-manager/feature-manager-api.png
+image: feature-manager-api.png
 ---
 ![Automating features creation via API](feature-manager-api.png)
 

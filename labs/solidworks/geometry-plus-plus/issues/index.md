@@ -3,7 +3,6 @@ layout: article
 title: Issues report page for Geometry++ add-in
 caption: Issues
 description: Reporting and reviewing the status of issues for Geometry++ add-in for SOLIDWORKS
-image: /images/codestack-snippet.png
 toc-group-name: labs-solidworks-geometry-plus-plus
 order: 4
 ---

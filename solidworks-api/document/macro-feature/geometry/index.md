@@ -3,7 +3,7 @@ layout: article
 title: Generate box geometry (solid, sheet, wire) Macro Feature using SOLIDWORKS API
 caption: Generate Box Geometry
 description: Example of creating VBA macro feature which generates different types of box geometry (solid, sheet, wire) using SOLIDWORKS API
-image: /solidworks-api/document/macro-feature/geometry/solid-body.png
+image: solid-body.png
 labels: [macro feature,geometry,box,solid,sheet,wire]
 ---
 This VBA example demonstrates how to create macro feature which generates custom geometry.

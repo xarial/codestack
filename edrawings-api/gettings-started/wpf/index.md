@@ -3,7 +3,7 @@ layout: article
 title: Hosting SOLIDWORKS eDrawings control in Windows Presentation Foundation (WPF)
 caption: Hosting Control in WPF
 description: Detailed guide on hosting SOLIDWORKS eDrawings control as WPF User Control in Windows Presentation Foundation (WPF)
-image: /edrawings-api/gettings-started/wpf/edrawings-wpf-window.png
+image: edrawings-wpf-window.png
 labels: [edrawings,host,wpf]
 ---
 eDrawings API doesn't provide a native WPF control to be used in WPF. It is however possible to use the [WindowsFormsIntegration](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.integration) framework to host Windows Forms Control in the Windows Presentation Foundation (WPF) environment. Follow [Hosting eDrawings control in Windows Forms](/edrawings-api/gettings-started/winforms/) guide of creating the eDrawings control for Windows Forms.

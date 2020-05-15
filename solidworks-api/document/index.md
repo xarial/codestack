@@ -3,7 +3,7 @@ layout: article
 title: Automating SOLIDWORKS parts, assemblies and drawings using API
 caption: Document
 description: Articles and examples explaining the ways of automating SOLIDWORKS documents (parts, assemblies and drawings) via API
-image: /solidworks-api/document/solidworks-document-api.png
+image: solidworks-document-api.png
 order: 2
 ---
 ![Automating of SOLIDWORKS documents with API](solidworks-document-api.png){ width=200 }

@@ -3,7 +3,7 @@ layout: article
 title: Get type of cylindrical face using SOLIDWORKS API
 caption: Get Type Of Cylindrical Face
 description: Macro identifies the type of the selected simple cylindrical face (through all hole, blind hole or external hole) using SOLIDWORKS API based on the loops type
-image: /solidworks-api/geometry/cylindrical-face-type/cylindrical-faces-types.png
+image: cylindrical-faces-types.png
 labels: [geometry, face, hole, outer, inner]
 ---
 ![Types of cylindrical faces](cylindrical-faces-types.png){ width=250 }

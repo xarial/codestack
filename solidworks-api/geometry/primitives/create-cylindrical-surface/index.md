@@ -3,7 +3,7 @@ layout: article
 title: Create temp cylindrical sheet body using SOLIDWORKS modeler API
 caption: Create Temp Cylindrical Sheet Body
 description: Example demonstrates how to create temp body of a cylindrical sheet
-image: /solidworks-api/geometry/primitives/create-cylindrical-surface/cylindrical-surface.png
+image: cylindrical-surface.png
 labels: [topology, geometry, sheet, modeler, cylinder]
 ---
 ![Cylindrical sheet body](cylindrical-surface.png)

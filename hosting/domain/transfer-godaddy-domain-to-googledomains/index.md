@@ -3,7 +3,7 @@ layout: article
 title: Transfer domain host from GoDaddy to Google Domains
 caption: Transfer GoDaddy Domain To Google Domains
 description: Detailed guide of transferring domain host from GoDaddy to Google Domains
-image: /hosting/domain/transfer-godaddy-domain-to-googledomains/transfer-domain-to-google.png
+image: transfer-domain-to-google.png
 labels: [google domains,godaddy,transfer]
 ---
 This article is a detailed step-by-step guidance to transfer the domain host from GoDaddy to Google Domains. There might be multiple reasons for transferring the domains from one registrar to another. This may include pricing, security, privacy features, flexibility, special offers, hosting options etc.

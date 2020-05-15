@@ -3,7 +3,6 @@ layout: article
 title: Reading the content of text file using Visual Basic (VBA)
 caption: Read Text File
 description: Reading the content of text file into the variable using Visual Basic (VBA)
-image: /images/codestack-snippet.png
 labels: [read,input]
 ---
 The below code snippet demonstrates how to read the text content from the specified file.

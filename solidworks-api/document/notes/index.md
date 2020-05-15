@@ -4,7 +4,6 @@ title: Working with Notes using SOLIDWORKS API
 caption: Notes
 description: Collection of articles and code examples about automation of SOLIDWORKS notes annotations
 order: 9
-image: /images/codestack-snippet.png
 ---
 [INote](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.INote.html) interface is a SOLIDWORKS API representation of the note annotation. This interface would work with notes in assembly, part and drawing environments.
 

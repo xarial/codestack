@@ -3,7 +3,7 @@ layout: article
 title: Common Options of all controls in SOLIDWORKS property manager page
 caption: Common Options
 description: Overview of options applied to all controls in the SOLIDWORKS property manager page
-image: /labs/solidworks/swex/pmpage/controls/common/property-manager-page-control.png
+image: property-manager-page-control.png
 toc-group-name: labs-solidworks-swex
 order: 1
 ---

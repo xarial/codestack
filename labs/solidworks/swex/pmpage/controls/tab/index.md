@@ -3,7 +3,7 @@ layout: article
 title: Tab control in SOLIDWORKS property Manager Page
 caption: Tab
 description: Creating tab control in the Property Manager Page using SwEx.PMPage framework
-image: /labs/solidworks/swex/pmpage/controls/tab/pmpage-tab.png
+image: pmpage-tab.png
 toc-group-name: labs-solidworks-swex
 order: 3
 ---

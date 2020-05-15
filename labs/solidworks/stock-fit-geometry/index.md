@@ -3,7 +3,7 @@ layout: article
 title: Stock Master - SOLIDWORKS add-in for managing geometry stocks
 caption: Stock Master
 description: SOLIDWORKS add-in to generate round stock feature around the input solid body
-image: /labs/solidworks/stock-fit-geometry/round-stock-icon.png
+image: round-stock-icon.png
 categories: sw-labs
 group: Geometry
 toc-group-name: labs-solidworks-stock-master

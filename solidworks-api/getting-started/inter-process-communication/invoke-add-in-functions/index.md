@@ -3,7 +3,6 @@ layout: article
 title: Invoke function of SOLIDWORKS add-in from stand-alone application or macro
 caption: Invoke Function Of Add-in
 description: Calling function of SOLIDWORKS add-in from stand-alone application or macro (enabling add-in custom API)
-image: /images/codestack-snippet.png
 labels: [add-in api,invoke]
 ---
 This section contains examples and explains how to create an API for SOLIDWORKS add-in so its functions can be called from [Macros](/solidworks-api/getting-started/macros/), [Stand-Alone Applications](/solidworks-api/getting-started/stand-alone/), [Scripts](/solidworks-api/getting-started/scripts/) or other [Add-Ins](/solidworks-api/getting-started/add-ins/)

@@ -3,7 +3,7 @@ layout: article
 title: Selecting SOLIDWORKS Objects for API only
 caption: Selecting Objects For API Only
 description: Example shows how to select the object for API purpose only (without graphics selection) preserving current user selections
-image: /solidworks-api/document/selection/api-only-selection/extrude-direction-up-to-surface.png
+image: extrude-direction-up-to-surface.png
 labels: [selection, extrude]
 ---
 ![Extruded sketch arc up to the planar surface following the line direction](extrude-direction-up-to-surface.png){ width=500 }

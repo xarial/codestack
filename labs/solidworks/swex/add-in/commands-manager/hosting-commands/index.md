@@ -3,7 +3,7 @@ layout: article
 title: Hosting SOLIDWORKS commands in menu, toolbar and context menu using SwEx.AddIn
 caption: Hosting Commands
 description: Hosting options for SOLIDWORKS commands using SwEx.AddIn (command group, context menu, toolbar and commands tab box)
-image: /labs/solidworks/swex/add-in/commands-manager/hosting-commands/commands-toolbar.png
+image: commands-toolbar.png
 toc-group-name: labs-solidworks-swex
 order: 2
 redirect-from:

@@ -3,7 +3,7 @@ layout: article
 title: Storing data in SOLIDWORKS models using API
 caption: Data Storage
 description: Collection of articles and code examples which demonstrate how to store different type of data within the SOLIDWORKS models (3rd party storage, attributes, custom properties)
-image: /solidworks-api/data-storage/solidworks-model-data-storage.png
+image: solidworks-model-data-storage.png
 order: 4
 ---
 ![Storing the user data in the model via API](solidworks-model-data-storage.png){ width=250 }

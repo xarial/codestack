@@ -3,7 +3,7 @@ layout: article
 title: Convert Solid To Surface feature in Geometry++
 caption: Convert Solid To Surface
 description: Converts solid bodies to surface bodies in SOLIDWORKS part document preserving the parametric functionality
-image: /labs/solidworks/geometry-plus-plus/user-guide/convert-solid-to-surface/icon.png
+image: icon.png
 toc-group-name: labs-solidworks-geometry-plus-plus
 ---
 This feature converts solid bodies to surface bodies.

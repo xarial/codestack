@@ -3,7 +3,7 @@ layout: article
 title: Add mate between coordinate systems using SOLIDWORKS API
 caption: Add Mate Between Coordinate Systems
 description: Macro adds coincident mate between 2 coordinate systems of 2 selected components
-image: /solidworks-api/document/assembly/mates/add-mate-between-coordinate-systems/sw-mate-coincident.png
+image: sw-mate-coincident.png
 labels: [assembly, component, coordinate system, example, mate, solidworks api]
 redirect-from:
   - /2018/03/solidworks-api-assembly-add-mate-between-coord-sys.html

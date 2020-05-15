@@ -3,7 +3,7 @@ layout: article
 title: MyToolbar - SOLIDWORKS add-in container for custom commands
 caption: MyToolbar
 description: SOLIDWORKS add-in which allows creating new toolbars within SOLIDWORKS for hosting custom commands (either macro buttons or any existing SOLIDWORKS commands)
-image: /labs/solidworks/my-toolbar/my-toolbar-logo.png
+image: my-toolbar-logo.png
 categories: sw-labs
 group: Application
 toc-group-name: labs-solidworks-my-toolbar

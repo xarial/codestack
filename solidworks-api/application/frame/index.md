@@ -3,7 +3,6 @@ layout: article
 title: Application frame customization using SOLIDWORKS API
 caption: Frame
 description: Automating SOLIDWORKS frame (menu, toolbars, command manager) using API
-image: /images/codestack-snippet.png
 labels: [frame,menu,toolbar,commands]
 ---
 Elements displayed in the SOLIDWORKS application frame, such as menu, command manager and tabs, toolbars can be customized using [IFrame](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IFrame.html) and [ISldWorks](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISldWorks.html) SOLIDWORKS API Interfaces.

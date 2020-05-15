@@ -3,7 +3,7 @@ layout: article
 title: Move design table object using SOLIDWORKS API
 caption: Move Design Table OLE Object
 description: Example demonstrates how to resize and move the design table OLE object in the model graphics area
-image: /solidworks-api/adornment/ole-objects/move-design-table/design-table-ole-object.png
+image: design-table-ole-object.png
 labels: [adornment, boundary, design table, example, move, ole object, solidworks api]
 redirect-from:
   - /2018/03/move-design-table-ole-object.html

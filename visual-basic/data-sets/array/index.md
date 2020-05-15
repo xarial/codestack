@@ -3,7 +3,7 @@ layout: article
 title: Arrays in Visual Basic
 caption: Array
 description: Article explaining arrays in Visual Basic - set of elements which stored in the single variable and can be accessed by index
-image: /visual-basic/data-sets/array/two-dimensional-array.png
+image: two-dimensional-array.png
 order: 1
 ---
 Visual Basic array is a set of elements which is stored in the single variable and can be accessed by index.

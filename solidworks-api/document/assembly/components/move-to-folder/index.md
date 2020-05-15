@@ -3,7 +3,7 @@ layout: sw-tool
 title: Move selected components to feature folder using SOLIDWORKS API
 caption: Move To Folder
 description: Macro move the components selected in the graphics area into a new folder in the feature manager tree
-image: /solidworks-api/document/assembly/components/move-to-folder/move-components-to-folder.png
+image: move-components-to-folder.png
 labels: [components, move to folder]
 group: Assembly
 ---

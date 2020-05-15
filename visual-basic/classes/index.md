@@ -3,7 +3,7 @@ layout: article
 title: Classes in Visual Basic 6 (VBA)
 description: Article explaining the usage of classes in Visual Basic. Introducing to Object Oriented Programming (OOP)
 caption: Classes
-image: /visual-basic/classes/insert-class-module.png
+image: insert-class-module.png
 order: 13
 ---
 Class is a fundamental concept of Object Oriented Programming (OOP). Class can be considered as repository for storing data in class level [variables](/visual-basic/variables/), and providing [functions](/visual-basic/functions/), [properties](/visual-basic/properties/) and exposing [events](/visual-basic/events/).

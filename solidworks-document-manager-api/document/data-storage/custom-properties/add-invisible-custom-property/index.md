@@ -3,7 +3,6 @@ layout: article
 title: Add invisible custom property to the model using SOLIDWORKS Document Manager API
 caption: Add Invisible Custom Property
 description: VBA macro to add invisible custom property to the model using SOLIDWORKS Document Manager API
-image: /images/codestack-snippet.png
 labels: [invisible, custom property]
 ---
 SOLIDWORKS models contain several invisible custom properties, such as $PRP:"SW-File Name", $PRP:"SW-Title". Those are read-only and cannot be modified from the user interface. It is however possible to add new custom property using Document Manager API. This property is not available in the custom property manager page and cannot be modified by the user or SOLIDWORKS API.

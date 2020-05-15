@@ -3,7 +3,6 @@ layout: article
 title: 'SOLIDWORKS Macros Troubleshooting: Issues And Resolutions'
 caption: 'Macros Troubleshooting: Issues And Resolutions'
 description: Overview and solutions for the most common errors of running the macros in SOLIDWORKS
-image: /images/codestack-snippet.png
 labels: [macro, not working, problem, solidworks api, troubleshooting, vba]
 styles:
   - /assets/styles/catalogue.css

@@ -3,7 +3,7 @@ layout: article
 title: Developing rich web applications using Angular Framework
 caption: Angular
 description: Articles and tutorials for developing web applications using modern Angular framework
-image: /angular/angular.png
+image: angular.png
 ---
 ![Angular logo](angular.png)
 

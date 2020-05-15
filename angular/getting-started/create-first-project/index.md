@@ -3,7 +3,7 @@ layout: article
 title: Setup development environment and create first Angular 8 project
 caption: Create First Project
 description: Setup development environment with Node.js and create first project using Angular 8 framework and Angular CLI in Visual Studio Code
-image: /angular/getting-started/create-first-project/angular-start-page.png
+image: angular-start-page.png
 labels: [nodejs,visual studio code,angular cli,angular project]
 order: 1
 ---

@@ -3,7 +3,7 @@ layout: sw-tool
 title: Rename SOLIDWORKS drawing sheets with custom properties values
 caption: Rename Drawing Sheets With Custom Properties Values
 description: Macro will rename all drawings sheets using the value of the specified custom property using SOLIDWORKS API
-image: /solidworks-api/document/drawing/rename-sheets-custom-properties-values/drw-sheets.png
+image: drw-sheets.png
 labels: [custom property, drawing, example, macro, properties, rename, sheet, solidworks api, vba]
 group: Drawing
 redirect-from:

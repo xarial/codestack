@@ -3,7 +3,7 @@ layout: article
 title: Working with geometry (IModeler) using SOLIDWORKS API
 caption: Geometry
 description: Collection of examples and articles related to SOLIDWORKS model geometry topology.
-image: /solidworks-api/geometry/solidworks-geometry-api.png
+image: solidworks-geometry-api.png
 order: 5
 ---
 ![SOLIDWORKS models geometry API](solidworks-geometry-api.png){ width=250 }

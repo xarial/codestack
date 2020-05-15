@@ -3,7 +3,7 @@ layout: article
 title: Programming in Visual Basic (VBA)
 caption: Visual Basic
 description: Collection of tutorials and examples on using Visual Basic programming language
-image: /visual-basic/visual-basic.png
+image: visual-basic.png
 ---
 ![Visual Basic](visual-basic.png){ width=300 }
 

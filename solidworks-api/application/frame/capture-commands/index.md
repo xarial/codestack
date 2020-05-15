@@ -3,7 +3,7 @@ layout: sw-tool
 title: VBA macro to capture SOLIDWORKS commands via API event handlers
 caption: Capture SOLIDWORKS Commands
 description: Macro allows capturing SOLIDWORKS and user commands into the list box
-image: /solidworks-api/application/frame/capture-commands/capturing-hide-command-id.png
+image: capturing-hide-command-id.png
 labels: [command, event]
 group: Developers
 ---

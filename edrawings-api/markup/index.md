@@ -3,7 +3,6 @@ layout: article
 title: Utilizing markup functionality using SOLIDWORKS eDrawings API
 caption: Markup
 description: Guide on using the markup functionality (measurements, stamps, comments) using eDrawings API
-image: /images/codestack-snippet.png
 labels: [edrawings,markup,getting started]
 ---
 eDrawings markup API (such as comments, stamps, measurements) can be accessed via [IEModelMarkupControl](http://help.solidworks.com/2016/english/api/emodelapi/eDrawings.Interop.EModelMarkupControl~eDrawings.Interop.EModelMarkupControl.IEModelMarkupControl.html) interface.

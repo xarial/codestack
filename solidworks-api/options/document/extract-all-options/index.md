@@ -3,7 +3,7 @@ layout: sw-tool
 title: Export all SOLIDWORKS document level options to Excel
 caption: Export All Document Options To Excel
 description: Macro allows to export all document properties into excel format using SOLIDWORKS API and reflection
-image: /solidworks-api/options/document/extract-all-options/document-properties.png
+image: document-properties.png
 labels: [export, excel, csv, options]
 group: Options
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Handling the common events of SOLIDWORKS file using SwEx.AddIn framework
 caption: Common Events
 description: Handling of common events (rebuild, selection, configuration change, item modification, custom property modification etc.) using documents management functionality in SwEx.AddIn Framework
-image: /images/codestack-snippet.png
 toc-group-name: labs-solidworks-swex
 labels: [events,rebuild,selection]
 ---

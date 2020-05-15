@@ -3,7 +3,7 @@ layout: sw-tool
 title: Copy custom properties from the drawing view to SOLIDWORKS drawing file
 caption: Copy Drawing View Properties
 description: VBA macro to copy specified custom properties from the selected or default drawing view into the drawing properties
-image: /solidworks-api/document/drawing/copy-view-properties/drawing-custom-properties.png
+image: drawing-custom-properties.png
 labels: [drawing,view,custom properties]
 group: Drawing
 ---

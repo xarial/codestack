@@ -3,7 +3,7 @@ layout: article
 title: Recording and editing macros in SOLIDWORKS
 caption: Recording Macros
 description: This article explains how to record the macro commands
-image: /solidworks-api/getting-started/macros/recording/macros-save-filter.png
+image: macros-save-filter.png
 labels: [macro, recording]
 order: 2
 ---

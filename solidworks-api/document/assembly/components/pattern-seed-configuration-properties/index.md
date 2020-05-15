@@ -3,7 +3,7 @@ layout: article
 title: SOLIDWORKS macro to change configuration specific properties for component in pattern
 caption: Change Configuration Specific Properties For Component In Pattern
 description: Example demonstrates how to change the configuration specific properties (use same configuration as pattern seed component or use named configuration) of the component in the pattern using SOLIDWORKS API
-image: /solidworks-api/document/assembly/components/pattern-seed-configuration-properties/component-config-specific-properties.png
+image: component-config-specific-properties.png
 labels: [assembly, spattern, configuration, seed]
 ---
 ![Configuration specific properties for the seed component of the sketch driven pattern](component-config-specific-properties.png)

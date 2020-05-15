@@ -3,7 +3,7 @@ layout: article
 title: Embed Array In Visual Basic 6 (VBA) code
 caption: Embed Arrays
 description: Workarounds for embedding data in array within the Visual Basic 6 (VBA) project
-image: /visual-basic/algorithms/data/helpers/embed-arrays/array-text-declaration.png
+image: array-text-declaration.png
 labels: [embed array,declare array]
 ---
 In some cases it might be required to embed file or data directly into the Visual Basic 6 project or VBA macro. Resources are not supported in Visual Basic. The below functions demonstrate how to embed the binary array into the macro without the need to redistribute the data file.

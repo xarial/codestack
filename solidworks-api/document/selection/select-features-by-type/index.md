@@ -3,7 +3,7 @@ layout: sw-tool
 title: Macro to select all features in SOLIDWORKS model by type using SOLIDWORKS API
 caption: Select Features By Type
 description: VBA Macro to select all features in the active SOLIDWORKS model (part, assembly or drawing) by specifying its type
-image: /solidworks-api/document/selection/select-features-by-type/selected-3dsketches.png
+image: selected-3dsketches.png
 labels: [select,feature type,multi select,batch select]
 group: Model
 ---

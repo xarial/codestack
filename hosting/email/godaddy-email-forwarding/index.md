@@ -3,7 +3,6 @@ layout: article
 title: Setup GoDaddy e-mail forwarding from custom domain for free
 caption: Setup GoDaddy E-Mail Forwarding
 description: Setup of up to 100 of free e-mail forwarding from custom domain using GoDaddy
-image: /images/codestack-snippet.png
 labels: [godaddy,email forwarding]
 ---
 If you have a registered domain with GoDaddy you might want to setup e-mails to be send and received using the custom domain (e.g. info@domain.com).

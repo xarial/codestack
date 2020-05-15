@@ -3,7 +3,7 @@ layout: article
 title: User Defined Types in Visual Basic
 caption: Types
 description: Article explaining usage of custom user defined types (aka Structures) in Visual Basic
-image: /visual-basic/data-structures/types/type-definition-intellisense.png
+image: type-definition-intellisense.png
 ---
 ![User defined type in intelli-sense](type-definition-intellisense.png){ width=350 }
 

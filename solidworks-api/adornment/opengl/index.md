@@ -4,7 +4,6 @@ title: Rendering custom 3D graphics with Open GL in SOLIDWORKS API
 caption: OpenGL
 description: Section contains examples and code snippets for rendering 3D graphics in the model view using SOLIDWORKS API with OpenGL methods
 order: 3
-image: /images/codestack-snippet.png
 labels: [graphics, opengl, render]
 redirect-from:
   - /solidworks-api/adornment/open-gl/

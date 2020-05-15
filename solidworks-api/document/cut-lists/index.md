@@ -4,7 +4,6 @@ title: Managing cut-list bodies using SOLIDWORKS API
 caption: Cut-Lists
 description: Automating cut-list bodies (weldment and sheet metal) using SOLIDWORKS API
 order: 11
-image: /images/codestack-snippet.png
 labels: [cut-list,weldment,sheet metal]
 ---
 Cut-list bodies got generated from the sheet metal and weldment bodies in SOLIDWORKS. Although those bodies are still managed via [IBody2](http://help.solidworks.com/2019/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ibody2.html) SOLIDWORKS API interface they enable additional functionality compared to regular bodies:

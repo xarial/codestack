@@ -3,7 +3,7 @@ layout: article
 title: Automating Motion Study using SOLIDWORKS API
 caption: Motion Study
 description: Collection of articles and examples related to SOLIDWORKS Motion Study API
-image: /solidworks-api/motion-study/motion-study.png
+image: motion-study.png
 order: 10
 ---
 ![SOLIDWORKS Motion Study API](motion-study.svg){ width=250 }

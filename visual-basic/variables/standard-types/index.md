@@ -3,7 +3,7 @@ layout: article
 title: Standard Types in Visual Basic
 caption: Standard Types
 description: Overview of standard types in Visual Basic (i.e. Integer, String, Double, Object etc.) in Visual Basic
-image: /visual-basic/variables/standard-types/vba-integer-overflow.png
+image: vba-integer-overflow.png
 order: 1
 ---
 The following classifications list different standard types in Visual Basic grouped by categories. Each type allocates different size of memory storage. Some of the types have declaration character which can be used to explicitly define the type of the variable in a short form. Most of the types provide specific function to convert the value from a variant.

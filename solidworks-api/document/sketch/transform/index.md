@@ -3,7 +3,7 @@ layout: article
 title: Understanding transforms in sketches while using SOLIDWORKS API
 caption: Understanding Sketch Transforms
 description: Explanation of model to sketch and sketch to model transformations in SOLIDWORKS API to properly calculate the coordinates of sketch segments
-image: /solidworks-api/document/sketch/transform/sketch-coordinate-systems.png
+image: sketch-coordinate-systems.png
 labels: [transform,sketch]
 ---
 When working with sketch segments (e.g. line, arc, etc.) or points it is important to consider the fact that the coordinates values returned from SOLIDWORKS API such as [ISketchPoint::X](http://help.solidworks.com/2017/English/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISketchPoint~X.html) property are relative to the local sketch coordinate system.

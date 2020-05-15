@@ -3,7 +3,7 @@ layout: article
 title: Change value of global variable in model using SOLIDWORKS API
 caption: Change Value Of Global Variable
 description: Example demonstrate how to modify the value of the global variable by name in the equation manager
-image: /solidworks-api/document/change-global-variable-value/equation-manager-global-variable.png
+image: equation-manager-global-variable.png
 labels: [equation, variable]
 ---
 ![Equation Manager with Global Variable](equation-manager-global-variable.png)

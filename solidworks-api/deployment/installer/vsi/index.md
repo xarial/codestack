@@ -3,7 +3,7 @@ layout: article
 title: Creating the Visual Studio Installer (VSI) for SOLIDWORKS application
 caption: Visual Studio Installer (VSI)
 description: Article explains the steps required to create an installer package for deploying SOLIDWORKS add-in
-image: /solidworks-api/deployment/installer/vsi/installation-process.png
+image: installation-process.png
 labels: [installer, setup, deployment, msi, vsi]
 ---
 {% youtube { id: JRc1vx1snv4 } %}

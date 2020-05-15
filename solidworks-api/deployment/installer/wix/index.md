@@ -3,7 +3,7 @@ layout: article
 title: Creating the SOLIDWORKS add-in installer with Windows Installer XML (WiX)
 caption: Windows Installer XML (WiX)
 description: Creating the installer package for SOLIDWORKS add-in using the Windows Installer XML (WiX)
-image: /solidworks-api/deployment/installer/wix/wix-installation-dialog.png
+image: wix-installation-dialog.png
 labels: [installer, wix, deployment]
 ---
 {% youtube { id: HdG3vFaS_y4 } %}

@@ -3,7 +3,7 @@ layout: article
 title: Tracking IDs in SOLIDWORKS API to track entities across operations
 caption: Tracking IDs
 description: This example demonstrates the use of tracking ids on face while running the merge body operation
-image: /solidworks-api/document/tracking-objects/tracking-ids/select-bodies-faces.png
+image: select-bodies-faces.png
 labels: [tracking id, merge]
 ---
 Tracking ids are used to map (track) entities across geometrical operations such as merge, subtract, copy, split, pattern while developing macros and applications using SOLIDWORKS API.

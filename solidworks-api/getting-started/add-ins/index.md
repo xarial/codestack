@@ -3,7 +3,7 @@ layout: article
 title: How to develop add-ins for SOLIDWORKS automation via API
 caption: Add-Ins
 description: Detailed guides for creating SOLIDWORKS add-ins in most popular programming languages to extend SOLIDWORKS functionality using SOLIDWORKS API
-image: /solidworks-api/getting-started/add-ins/add-in-load-msgbox.png
+image: add-in-load-msgbox.png
 labels: [add-ins]
 order: 3
 ---

@@ -3,7 +3,7 @@ layout: article
 title: SOLIDWORKS API to create surface loft feature via contours
 caption: Create Surface Loft Feature Via Contours
 description: Example demonstrates how to create surface loft feature from the contours as the profiles using SOLIDWORKS API
-image: /solidworks-api/document/features-manager/contrours-surface-loft/lofted-surface-sketch-contours.png
+image: lofted-surface-sketch-contours.png
 labels: [surface, loft, contour]
 ---
 ![Lofted surface feature using sketch contours as the profiles](lofted-surface-sketch-contours.png){ width=500 }

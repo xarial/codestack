@@ -3,7 +3,7 @@ layout: article
 title: Edit feature in the context of the assembly using SOLIDWORKS API
 caption: Edit Feature In The Context Of The Assembly
 description: Example demonstrates how to modify feature definition in the context of the assembly
-image: /solidworks-api/document/features-manager/modify-feature-definition-in-context/edit-extrude-feature-in-context.png
+image: edit-extrude-feature-in-context.png
 labels: [edit, feature, context]
 ---
 ![Boss-Extrude feature is editing in the context of the assembly](edit-extrude-feature-in-context.png){ width=450 }

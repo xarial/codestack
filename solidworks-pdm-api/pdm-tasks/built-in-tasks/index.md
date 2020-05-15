@@ -3,7 +3,6 @@ layout: article
 title: Configuring built-in tasks using SOLIDWORKS API
 caption: Built-In Tasks
 description: Guidelines for configuring built-in tasks (convert and print) using SOLIDWORKS PDM API
-image: /images/codestack-snippet.png
 labels: [task,convert task,print task]
 ---
 Default installation of SOLIDWORKS PDM includes couple of useful tasks:

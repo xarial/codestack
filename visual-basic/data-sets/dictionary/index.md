@@ -3,7 +3,7 @@ layout: article
 title: Dictionary in Visual Basic
 caption: Dictionary
 description: Explanation of using Dictionary object to store key-value pairs in Visual Basic
-image: /visual-basic/data-sets/dictionary/dictionary-key-already-associated.png
+image: dictionary-key-already-associated.png
 order: 3
 ---
 Visual Basic dictionary object is a collection of unique keys and associated values. It is also possible to

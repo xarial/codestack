@@ -4,7 +4,7 @@ title: Performing entity selection using SOLIDWORKS API
 caption: Selection
 description: Articles and examples explaining the selection techniques in SOLIDWORKS API
 order: 5
-image: /solidworks-api/document/selection/solidworks-selection.png
+image: solidworks-selection.png
 ---
 ![Selections in SOLIDWORKS API](solidworks-selection.png){ width=300 }
 

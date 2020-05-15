@@ -3,7 +3,7 @@ layout: article
 title: Variables Scope in Visual Basic
 caption: Variables Scope
 description: Article explaining different variables scopes (public and private class level, local) in Visual Basic
-image: /visual-basic/variables/scope/custom-module-named-module1.png
+image: custom-module-named-module1.png
 order: 4
 ---
 In Visual Basic language variables can be declared in different scopes (module level, local in the function, within the code block) with different access modifiers (private or public) which define their visibility in the code.

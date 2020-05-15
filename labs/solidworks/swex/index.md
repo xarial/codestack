@@ -3,7 +3,7 @@ layout: article
 title: SwEx - framework which simplifies the development using SOLIDWORKS API
 caption: SwEx
 description: Libraries for extending SOLIDWORKS functionality and utilizing API
-image: /labs/solidworks/swex/logo.png
+image: logo.png
 categories: sw-labs
 group: For Developers
 toc-group-name: labs-solidworks-swex

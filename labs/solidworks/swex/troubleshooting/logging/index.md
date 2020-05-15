@@ -3,7 +3,6 @@ layout: article
 title: Logging capabilities in SwEx framework for SOLIDWORKS add-ins
 caption: Logging
 description: Logging debug messages from SwEx modules
-image: /images/codestack-snippet.png
 labels: [logging]
 toc-group-name: labs-solidworks-swex
 ---

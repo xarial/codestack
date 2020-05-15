@@ -3,7 +3,7 @@ layout: article
 title: SOLIDWORKS API Code Examples for Macros and Add-ins
 caption: API & Macros
 description: Collection of tutorials and examples on automating SOLIDWORKS using the SOLIDWORKS API in VBA and VSTA macros, add-ins and stand-alone applications
-image: /solidworks-api/solidworks-api-automation.png
+image: solidworks-api-automation.png
 redirect-from:
   - /p/solidworks-api.html
 ---

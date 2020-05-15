@@ -3,7 +3,7 @@ layout: article
 title: Change apply appearance option in material using SOLIDWORKS API
 caption: Change Apply Appearance Option In Material
 description: Example demonstrates how to change the Apply Appearance option in the material options
-image: /solidworks-api/document/materials/change-apply-appearance/material-apply-appearance.png
+image: material-apply-appearance.png
 labels: [part, solidworks api, material, appearance, example]
 ---
 ![Apply Appearance option in Edit material dialog](material-apply-appearance.png)

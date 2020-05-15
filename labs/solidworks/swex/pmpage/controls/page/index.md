@@ -3,7 +3,7 @@ layout: article
 title: Options of SOLIDWORKS Property Manager Page
 caption: Page
 description: Overview of options applied to the SOLIDWORKS property manager page itself
-image: /labs/solidworks/swex/pmpage/controls/page/property-manager-page.png
+image: property-manager-page.png
 toc-group-name: labs-solidworks-swex
 order: 2
 ---

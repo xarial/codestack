@@ -3,7 +3,7 @@ layout: article
 title: Get all assembly components using SOLIDWORKS Document Manager API
 caption: Get All Components
 description: Example demonstrates how to get all components on all levels from the document using the Document Manager API
-image: /solidworks-document-manager-api/document/assembly/get-all-components/components-tree.png
+image: components-tree.png
 ---
 ![SOLIDWORKS assembly tree](components-tree.png){ width=200 }
 

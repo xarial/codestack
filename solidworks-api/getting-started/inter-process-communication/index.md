@@ -3,7 +3,6 @@ layout: article
 title: Inter-Process communication between SOLIDWORKS applications
 caption: Inter-Process Communication
 description: Ways for Inter-Process communication between SOLIDWORKS applications (macros, add-ins, stand-alone application)
-image: /images/codestack-snippet.png
 labels: [communication,parameters]
 ---
 This section describes ways to perform inter-process communication between applications developed for SOLIDWORKS. Communication involves passing of custom parameters or signals between different modules (i.e. macros, add-ins and stand-alone applications).

@@ -4,7 +4,6 @@ title: Using Callouts object for model annotation in SOLIDWORKS API
 caption: Callouts
 description: Using Callouts for annotating models (similar to balloons), linking to the entities and displaying custom data using SOLIDWORKS API
 order: 1
-image: /images/codestack-snippet.png
 labels: [callout, balloons]
 ---
 Callouts in SOLIDWORKS are balloon like objects which can be attached to the entities (usually with selection) and display additional information about the entity. Callouts are not scaled with the model and stay in the same orientation even when model rotates.

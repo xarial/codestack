@@ -3,7 +3,7 @@ layout: article
 title: Capture measurement of SOLIDWORKS entities using eDrawings markup API
 caption: Capturing Measurements
 description: Performing measurements capturing of the entities in the SOLIDWORKS model into a text box using eDrawings markup API
-image: /edrawings-api/markup/measurement/surveying-form.png
+image: surveying-form.png
 labels: [edrawings,markup,mesurement]
 ---
 ![Measurement captured in the text box](surveying-form.png){ width=450 }

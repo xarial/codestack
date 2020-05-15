@@ -4,7 +4,6 @@ title: Working with part materials using SOLIDWORKS API
 caption: Materials
 description: Collection of articles and examples related to materials handling using SOLIDWORKS API
 order: 15
-image: /images/codestack-snippet.png
 ---
 Material database in SOLIDWORKS is stored within the XML file. SOLIDWORKS API doesn't provide any direct methods of working with materials database (i.e. searching, adding, reading etc.). However as XML is an open format any XML parsing techniques would apply, i.e. using the [XmlDocument](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xmldocument), [XmlSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlserializer) etc.
 

@@ -3,7 +3,7 @@ layout: article
 title: Select component in feature tree using its name via SOLIDWORKS API
 caption: Select Component By Name
 description: Example demonstrates how to select component by full name at any level of the assembly in the feature manager tree
-image: /solidworks-api/document/selection/select-component-by-name/components-tree.png
+image: components-tree.png
 labels: [select, component]
 ---
 ![Multi-level tree of components](components-tree.png){ width=200 }

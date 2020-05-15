@@ -3,7 +3,7 @@ layout: article
 title: Renaming permanent and virtual components using SOLIDWORKS API
 caption: Renaming Components
 description: This code example explains correct ways of changing the name of the component (including virtual component or component in sub-assembly)
-image: /solidworks-api/document/assembly/components/rename/component-name.png
+image: component-name.png
 labels: [assembly, component, name]
 ---
 [IComponent2::Name2](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~name2.html) SOLIDWORKS API property provides get and set accessors for reading and changing the component name respectively.

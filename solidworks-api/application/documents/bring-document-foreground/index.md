@@ -3,7 +3,6 @@ layout: article
 title: Bring document foreground (activate document) using SOLIDWORKS API
 caption: Bring Document Foreground (Activate Document)
 description: Example demonstrates how to bring the document selected by path to foreground (make active)
-image: /images/codestack-snippet.png
 labels: [activate doc, assembly, example, foreground, open document]
 redirect-from:
   - /2018/03/bring-document-foreground-activate.html

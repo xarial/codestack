@@ -3,7 +3,6 @@ layout: article
 title: Usage of IEdmVault5 interface in SOLIDWORKS PDM API
 caption: Vault
 description: Collection of code examples and tutorials for usage of IEdmVault5 interface in SOLIDWORKS PDM API
-image: /images/codestack-snippet.png
 order: 2
 ---
 [IEdmVault5](http://help.solidworks.com/2018/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmvault5.html) interface is a root object in the SOLIDWORKS PDM API object model. It provides an access to the base services of the system, such as:

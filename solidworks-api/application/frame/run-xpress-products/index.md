@@ -3,7 +3,7 @@ layout: article
 title: Run Xpress products (e.g. DriveWorks) using SOLIDWORKS API
 caption: Run Xpress Products
 description: Example demonstrates how to run the xpress products (DriveWorks, DFM, Simulation, Flo)
-image: /solidworks-api/application/frame/run-xpress-products/solidworks-xpress-products.png
+image: solidworks-xpress-products.png
 labels: [frame, xpress, driveworks, dfm, flo, simulation]
 ---
 ![Menu for Xpress products](solidworks-xpress-products.png)

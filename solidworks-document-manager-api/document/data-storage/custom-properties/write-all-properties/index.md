@@ -3,7 +3,7 @@ layout: article
 title: Write custom properties to all sources using Document Manager API
 caption: Write All Properties
 description: VBA macro to write custom properties to all sources (file, configuration, cut-list items) using Document Manager API
-image: /solidworks-document-manager-api/document/data-storage/custom-properties/write-all-properties/added-custom-property.png
+image: added-custom-property.png
 labels: [write properties]
 ---
 ![Custom property added to the file](added-custom-property.png){ width=450 }

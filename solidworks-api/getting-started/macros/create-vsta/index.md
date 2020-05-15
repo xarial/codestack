@@ -3,7 +3,7 @@ layout: article
 title: Create And Run VSTA Macro (C# and VB.NET) in SOLIDWORKS
 caption: Create And Run VSTA Macro
 description: This article explains how to create a VSTA macro (C# or VB.NET) from the existing code and run it
-image: /solidworks-api/getting-started/macros/create-vsta/new-macro-vsta-filter.png
+image: new-macro-vsta-filter.png
 labels: [vsta, macro, run]
 ---
 This article explains how to create a VSTA macro (C# or VB.NET) from the existing code and run it

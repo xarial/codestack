@@ -3,7 +3,7 @@ layout: article
 title: Creating macro buttons in SOLIDWORKS toolbars
 caption: Creating Macro Buttons
 description: Article explains how to create a custom button to run the macro from the commands toolbar
-image: /solidworks-api/getting-started/macros/macro-buttons/customize-macro-button.png
+image: customize-macro-button.png
 labels: [macro, macro button]
 ---
 <center>

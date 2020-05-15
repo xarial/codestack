@@ -3,7 +3,6 @@ layout: article
 title: Assembly components automation using SOLIDWORKS API
 caption: Components
 description: Collection of articles and code examples for working with components in SOLIDWORKS assembly
-image: /images/codestack-snippet.png
 labels: [assembly, components]
 order: 1
 ---

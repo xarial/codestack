@@ -3,7 +3,6 @@ layout: article
 title: Developing add-ins using SOLIDWORKS PDM API
 caption: Developing Add-Ins
 description: Instructions and code examples for developing add-ins for SOLIDWORKS PDM
-image: /images/codestack-snippet.png
 labels: [add-in,pdm]
 ---
 Add-ins in SOLIDWORKS PDM are applications which are integrated into the systems. Add-ins are installed into the SOLIDWORKS PDM Administration Console and redistributed among all clients which are connected to the vault.

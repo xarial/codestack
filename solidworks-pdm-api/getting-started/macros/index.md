@@ -3,7 +3,7 @@ layout: article
 title: Using SOLIDWORKS PDM API In VBA And VSTA Macros
 caption: Developing Macros
 description: Getting starting with writing VBA and VSTA macros utilizing SOLIDWORKS PDM API
-image: /solidworks-pdm-api/getting-started/macros/edm-type-library.png
+image: edm-type-library.png
 labels: [getting started,vba macros,pdm api]
 ---
 In some cases it might be beneficial to use SOLIDWORKS PDM API directly from SOLIDWORKS VBA or VSTA macro. In this case you can combine [SOLIDWORKS API](/solidworks-api/) and [SOLIDWORKS PDM API](/solidworks-pdm-api/) functions in a single macro.

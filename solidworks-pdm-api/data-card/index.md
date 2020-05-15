@@ -3,7 +3,6 @@ layout: article
 title: Managing variables and data card using SOLIDWORKS PDM API
 caption: Data Card And Variables
 description: Code examples and snippets for managing variables and data card using SOLIDWORKS PDM API
-image: /images/codestack-snippet.png
 labels: [data card,variable]
 order: 4
 ---

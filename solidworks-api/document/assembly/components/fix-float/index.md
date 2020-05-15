@@ -3,7 +3,7 @@ layout: article
 title: Fix or float component in active or all configurations using SOLIDWORKS API
 caption: Fix/Float In This Or All Configurations
 description: Example demonstrates a workaround for missing SOLIDWORKS API for fixing or floating the component in the active or all configuration
-image: /solidworks-api/document/assembly/components/fix-float/component-fix-options.png
+image: component-fix-options.png
 labels: [fix, float, component, workaround]
 ---
 ![Options to fix component](component-fix-options.png)

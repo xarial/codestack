@@ -3,7 +3,7 @@ layout: article
 title: Create multiple rows callout using SOLIDWORKS API
 caption: Create Multiple Rows Callout
 description: Example demonstrates how to create a callout with multiple rows from the selection in SOLIDWORKS API
-image: /solidworks-api/adornment/callouts/multiple-rows-callout/sw-callout-spec.png
+image: sw-callout-spec.png
 labels: [adornment, callout, example, note, solidworks api]
 redirect-from:
   - /2018/04/solidworks-api-adornment-create-multirow-callout.html

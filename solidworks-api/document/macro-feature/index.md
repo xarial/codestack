@@ -4,7 +4,6 @@ title: Utilizing Macro Features in SOLIDWORKS API
 caption: Macro Feature
 description: Explanation and examples of using macro feature (custom feature) using SOLIDWORKS API
 order: 14
-image: /images/codestack-snippet.png
 ---
 {% youtube { id: tE_OVE9YTMs } %}
 

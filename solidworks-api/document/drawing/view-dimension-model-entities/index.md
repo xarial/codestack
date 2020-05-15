@@ -3,7 +3,7 @@ layout: article
 title: Dimension named model entities in drawing view using SOLIDWORKS API
 caption: Dimension Named Model Entities
 description: Add dimension between two named entities of the part drawing retrieved from the underlying model using SOLIDWORKS API
-image: /solidworks-api/document/drawing/view-dimension-model-entities/drawing-view-dimension.png
+image: drawing-view-dimension.png
 labels: [view,dimension,named]
 ---
 Similar to [Assembly Context](/solidworks-api/document/assembly/context/) there is drawing context. Pointer to the entity may exist in underlying model context and in the drawing view context.

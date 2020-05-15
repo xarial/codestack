@@ -3,7 +3,7 @@ layout: article
 title: Macro to create ISO curves for face using SOLIDWORKS API
 caption: Create ISO Curves For Face
 description: Example demonstrates how to find specified number of iso-curves in the u and v bounds of the selected face using SOLIDWORKS API
-image: /solidworks-api/geometry/face-iso-curves/iso-curves-wire-body.png
+image: iso-curves-wire-body.png
 labels: [curve, evaluate, geometry, macro, iso, uv, trimmed curve, vba]
 ---
 ![Preview of iso curves of the face](iso-curves-wire-body.png){ width=300 }

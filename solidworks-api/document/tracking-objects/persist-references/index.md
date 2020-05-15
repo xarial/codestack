@@ -3,7 +3,7 @@ layout: article
 title: Using persistent reference id in SOLIDWORKS API to track objects
 caption: Persistent Reference Id
 description: This article explains the use of persistent reference ids to track any selectable entity across SOLIDWORKS sessions
-image: /solidworks-api/document/tracking-objects/persist-references/persist-id-array.png
+image: persist-id-array.png
 labels: [persistent, reference, tracking]
 ---
 Persistent reference ids available in SOLIDWORKS API allow to retrieve the persistent link to any selectable object in SOLIDWORKS. The main benefit of persistent reference is its life cycle as the reference remains valid across rebuild operations, SOLIDWORKS sessions or even SOLIDWORKS releases.

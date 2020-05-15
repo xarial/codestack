@@ -3,7 +3,7 @@ layout: article
 title: Draw sketch segments in context of the drawing sheet using SOLIDWORKS API
 caption: Draw Sketch Segments In Sheet
 description: Draw underlying model bounding box sketch segment in the context of the drawing sheet using SOLIDWORKS API
-image: /solidworks-api/document/drawing/sheet-context-sketch/drawing-view-line.png
+image: drawing-view-line.png
 labels: [sketch,dimension,edge,bounding box]
 ---
 This code example demonstrates how to draw the model bounding box diagonal in the drawing view using SOLIDWORKS API.

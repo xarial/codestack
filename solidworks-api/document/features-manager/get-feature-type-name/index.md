@@ -3,7 +3,7 @@ layout: article
 title: VBA macro to get feature type names using SOLIDWORKS API
 caption: Get Features Type Name
 description: VBA macro which gets the type names of selected features using SOLIDWORKS API and displays the message box
-image: /solidworks-api/document/features-manager/get-feature-type-name/type-names-msg-box.png
+image: type-names-msg-box.png
 labels: [type name,feature,kind]
 ---
 This VBA macro reads the type names of the selected features in the feature manager tree using SOLIDWORKS API and displays the result in the message box in the following format:

@@ -3,7 +3,7 @@ layout: sw-macro-fix
 title: Fix SOLIDWORKS macro which is using future version APIs
 caption: Macro Is Using Future Version APIs
 description: Fixing the macro which fails when run on old (not the latest) version of SOLIDWORKS and Run-time error '438' - object doesn't support this property or method or Run-time error '445' - object doesn't support this action error is displayed
-image: /solidworks-api/troubleshooting/macros/future-version-apis/object-doesnt-support-this-action.png
+image: object-doesnt-support-this-action.png
 labels: [macro, troubleshooting]
 redirect-from:
   - /2018/04/macro-troubleshooting-macro-using-future-version-apis.html

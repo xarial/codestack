@@ -3,7 +3,7 @@ layout: article
 title: Add watermark to model using 3rd party storage via SOLIDWORKS Document Manager API
 caption: Add Watermark To Model
 description: Add digital watermark into model using 3rd party storage via SOLIDWORKS Document Manager API
-image: /solidworks-document-manager-api/document/data-storage/third-party/add-watermark/add-watermark-console-output.png
+image: add-watermark-console-output.png
 labels: [watermark, storage]
 ---
 This example demonstrates how to add digital watermark into SOLIDWORKS model (part, assembly or drawing) into 3rd party storage (stream) using SOLIDWORKS Document Manager API.

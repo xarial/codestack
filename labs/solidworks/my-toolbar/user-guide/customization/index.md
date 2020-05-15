@@ -3,7 +3,6 @@ layout: article
 title: Additional customization for commands in MyToolbar
 caption: Customization
 description: Additional options to customize the commands in MyToolbar (adding to command tab boxes, assigning shortcuts, etc.)
-image: /images/codestack-snippet.png
 labels: [shortcut,command tab]
 toc-group-name: labs-solidworks-my-toolbar
 order: 2

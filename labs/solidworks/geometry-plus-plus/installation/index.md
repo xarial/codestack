@@ -3,7 +3,6 @@ layout: article
 title: Installing Geometry++ SOLIDWORKS add-in
 caption: Installation Guide
 description: Instructions of installing of Geometry++ add-in
-image: /images/codestack-snippet.png
 toc-group-name: labs-solidworks-geometry-plus-plus
 order: 2
 ---

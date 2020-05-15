@@ -3,7 +3,6 @@ layout: article
 title: Data Sets (Arrays, Collections, Dictionaries) in Visual Basic
 caption: Data Sets (Arrays, Collections, Dictionaries)
 description: Article explaining the usage of arrays (one- and two-dimensional), collections (dynamic arrays), dictionaries in Visual Basic
-image: /images/codestack-snippet.png
 order: 7
 ---
 Data set is a list of elements stored within one variable. Data sets are used to hold family of values which are related to each other in certain way. For example data set may contain list of property names used in the document or a list of numbers of the average daily temperature within the year. Set may contain strongly typed data (i.e. set of String or set of Double) or it can contain set of variants.

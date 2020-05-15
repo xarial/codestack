@@ -4,7 +4,6 @@ title: Tracking objects by temp and persistent ids in SOLIDWORKS API
 caption: Tracking Objects
 description: This collection of articles explaining how to track different objects while geometry manipulation or across sessions
 order: 13
-image: /images/codestack-snippet.png
 labels: [track, id, persist, reference]
 ---
 When developing application which interacts with SOLIDWORKS entities in some cases it is required to reference certain objects and track them during different actions. For example it is required to find the specific feature in the template model or identify the user selected face after the face got modified (split or merged).

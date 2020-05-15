@@ -3,7 +3,7 @@ layout: article
 title: Customizing SOLIDWORKS PDM convert task using API
 caption: Customizing SOLIDWORKS PDM Convert Task
 description: Guide of changing the script for the standard task. Custom utility to simplify the debugging of the PDM tasks
-image: /solidworks-pdm-api/pdm-tasks/built-in-tasks/customizing-solidworks-pdm-convert-task/pdm-convert-task-script.png
+image: pdm-convert-task-script.png
 labels: [convert task, debugging.dpi, solidworks pd, task]
 redirect-from:
   - /2018/03/customizing-solidworks-pdm-convert-task.html

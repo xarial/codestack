@@ -3,7 +3,7 @@ layout: sw-macro-fix
 title: How to fix Missing SOLIDWORKS Type Library References error
 caption: Missing SOLIDWORKS Type Library References
 description: Fixing Can't find project or library error in legacy macro
-image: /solidworks-api/troubleshooting/macros/missing-solidworks-type-library-references/error-cant-find-project-or-library.png
+image: error-cant-find-project-or-library.png
 labels: [macro, troubleshooting]
 redirect-from:
   - /2018/04/macro-troubleshooting-missing-solidworks-type-library-references.html

@@ -4,7 +4,6 @@ title: Using transformations in SOLIDWORKS API
 caption: Transformation
 description: Applying and reading transformation (components, bodies, sketches etc.) using SOLIDWORKS API
 order: 2
-image: /images/codestack-snippet.png
 labels: [transform,math]
 ---
 Transformation in SOLIDWORKS API is represented in the [IMathTransform](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathtransform.html) interface. This is a 4x4 transformation matrix holding the information about transform, scale and translation.

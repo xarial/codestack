@@ -3,7 +3,7 @@ layout: article
 title: Create elliptical swept temp body using SOLIDWORKS modeler API
 caption: Create Elliptical Swept Temp Body
 description: Example demonstrates how to sweep the circular profile along elliptical path to create a temp body using SOLIDWORKS API and IModeler::CreateSweptBody method
-image: /solidworks-api/geometry/primitives/create-elliptical-sweep/elliptical-sweep.png
+image: elliptical-sweep.png
 labels: [topology, geometry, sheet, modeler, sphere]
 ---
 ![Circular profile swept along elliptical path](elliptical-sweep.png){ width=250 }

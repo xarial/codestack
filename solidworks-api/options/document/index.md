@@ -3,7 +3,6 @@ layout: article
 title: Managing user preferences of the document using SOLIDWORKS API
 caption: Document Options
 description: Collection of articles and examples which demonstrate how to control document options (user preferences) using SOLIDWORKS API
-image: /images/codestack-snippet.png
 labels: [document, preferences, options]
 ---
 To manage user preferences (options) of the SOLIDWORKS part, assembly or drawing it is required to use one of the following SOLIDWORKS API:

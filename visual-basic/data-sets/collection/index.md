@@ -3,7 +3,7 @@ layout: article
 title: Managing Collections in Visual Basic
 caption: Collection
 description: Article describing the benefits of collections (dynamic lists) to store the arrays of data in Visual Basic
-image: /visual-basic/data-sets/collection/collection-key-already-associated.png
+image: collection-key-already-associated.png
 order: 2
 ---
 Visual Basic collection is a data sets similar to [Array](visual-basic/data-sets/array) designed to hold dynamically changing data. Unlike arrays collection doesn't need to be resized to add or remove values.

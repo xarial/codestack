@@ -3,7 +3,7 @@ layout: sw-tool
 title: SOLIDWORKS macro renames all features in model sequentially
 caption: Rename All Features Sequentially
 description: Macro renames all the features in the order preserving the base names using SOLIDWORKS API
-image: /solidworks-api/document/features-manager/rename-features-sequentially/sequntial-features.svg
+image: sequntial-features.svg
 labels: [feature, rename]
 group: Model
 ---

@@ -3,7 +3,7 @@ layout: article
 title: Untrim face or surface with temporary geometry using SOLIDWORKS API
 caption: Create Untrimmed Surface
 description: VBA example to create an untrimmed (restored) surface from the selected face with temporary geometry using SOLIDWORKS API
-image: /solidworks-api/geometry/untrim-surface/untrimmed-surface.png
+image: untrimmed-surface.png
 labels: [trim,curve,untrim]
 ---
 This VBA example restores the surface of the selected face by performing the untrim operation.

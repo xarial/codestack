@@ -3,7 +3,7 @@ layout: article
 title: Overview of SOLIDWORKS Assembly context and usage from API
 caption: Assembly Context
 description: Explanation of assembly contexts and the ways to transform the pointer form assembly context to the model context and vice-versa using SOLIDWORKS API
-image: /solidworks-api/document/assembly/context/assembly-model-context.png
+image: assembly-model-context.png
 labels: [context, corresponding, assembly]
 ---
 ![Assembly and Model contexts](assembly-model-context.png){ width=450 }

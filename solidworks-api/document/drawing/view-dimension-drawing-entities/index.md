@@ -3,7 +3,7 @@ layout: article
 title: Dimension visible drawing entities from view using SOLIDWORKS API
 caption: Dimension Visible Entities
 description: Find and dimension the longest visible entity in the drawing view using SOLIDWORKS API
-image: /solidworks-api/document/drawing/view-dimension-drawing-entities/longest-edge-dimension.png
+image: longest-edge-dimension.png
 labels: [drawing,dimension,visible entities]
 ---
 ![Longest edge dimensioned in the drawing view](longest-edge-dimension.png){ width=250 }

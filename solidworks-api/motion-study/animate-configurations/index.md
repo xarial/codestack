@@ -3,7 +3,7 @@ layout: sw-tool
 title: Macro animates switching of configurations using SOLIDWORKS API
 caption: Animate Configurations
 description: Macro demonstrates how to create an animation from configurations to represents model history or sheet metal folding
-image: /solidworks-api/motion-study/animate-configurations/motion-study-configuration-animation.png
+image: motion-study-configuration-animation.png
 labels: [motion, animation, sheet metal, bending]
 group: Motion Study
 ---

@@ -3,7 +3,7 @@ layout: article
 title: Concatenate description variable on a data card button click using SOLIDWORKS PDM API
 caption: Concatenate Description Variable
 description: This example demonstrates how to handle the button click on data card and concatenate value of description variable based on values of revision and number variables in PDM add-in using SOLIDWORKS PDM Professional API
-image: /solidworks-pdm-api/hooks/datacard-button/update-description-addin/button-update-variable.gif
+image: button-update-variable.gif
 labels: [hook, button click, variables]
 ---
 This example demonstrates how to handle the button click on data card using SOLIDWORKS PDM API and set the value of description variable based on concatenation of values of revision and number variables in PDM add-in.

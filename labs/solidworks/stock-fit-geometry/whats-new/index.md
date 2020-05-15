@@ -3,7 +3,6 @@ layout: article
 title: 'Whats New: new features and bug fixes of Stock Master add-in for SOLIDWORKS'
 caption: Whats New
 description: Version history for Stock Master add-in for SOLIDWORKS
-image: /labs/solidworks/stock-fit-geometry/round-stock-feature-property-page.png
 toc-group-name: labs-solidworks-stock-master
 order: 1
 ---

@@ -3,7 +3,6 @@ layout: article
 title: Managing system options (application level) using SOLIDWORKS API
 caption: Application Options
 description: Collection of articles and examples which demonstrate how to control application (system) options (user preferences) using SOLIDWORKS API
-image: /images/codestack-snippet.png
 labels: [document, preferences, options]
 ---
 System or application level options are settings available in the options dialog of SOLIDWORKS. Those values can be controlled with following SOLIDWORKS API:

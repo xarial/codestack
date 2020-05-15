@@ -3,7 +3,7 @@ layout: sw-macro-fix
 title: Fix too long path error when running the SOLIDWORKS macro
 caption: Too Long Macro Path
 description: Fixing the Cannot Open error when opening or running the macro stored under the long projects structure
-image: /solidworks-api/troubleshooting/macros/too-long-macro-path/long-macro-path.png
+image: long-macro-path.png
 labels: [macro, troubleshooting]
 redirect-from:
   - /2018/04/macro-troubleshooting-too-long-macro-path.html

@@ -2,7 +2,6 @@
 layout: article
 title: Visual Basic for Applications (VBA)
 description: Introduction to Visual Basic for Applications (VBA)
-image: /images/codestack-snippet.png
 order: 1
 sitemap: false
 ---

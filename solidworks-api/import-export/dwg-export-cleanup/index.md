@@ -3,7 +3,7 @@ layout: article
 title: Export Flat Pattern to DXF/DWG with Cleanup page using SOLIDWORKS API
 caption: Export Flat Pattern With Cleanup
 description: VBA example which demonstrates how to export specified flat pattern to DXF/DWG with Cleanup dialog
-image: /solidworks-api/import-export/dwg-export-cleanup/cleanup-page.png
+image: cleanup-page.png
 labels: [dxf,dwg,cleanup,flat pattern,export]
 ---
 [IPartDoc::ExportToDwg2](https://help.solidworks.com/2014/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IPartDoc~ExportToDWG2.html) SOLIDWORKS API method allows to export selected flat pattern to DXF/DWG format. But this API doesn't allow to show the built in Cleanup dialog to modify the DXF/DWG before exporting.

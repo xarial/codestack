@@ -3,7 +3,7 @@ layout: article
 title: Set BOM Quantity (Unit Of Measure) property using SOLIDWORKS API
 caption: Set BOM Quantity (Unit Of Measure) Property In The Model
 description: Example demonstrates how to modify the BOM quantity field in the properties dialog
-image: /solidworks-api/document/set-bom-quantity-unit-of-measure-property/bom-quantity-property.png
+image: bom-quantity-property.png
 labels: [bom quantity, example, qty, unit of measure]
 redirect-from:
   - /2018/03/set-bom-quantity-unit-of-measure.html

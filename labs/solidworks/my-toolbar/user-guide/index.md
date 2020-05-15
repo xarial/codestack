@@ -3,7 +3,6 @@ layout: article
 title: User Guide for MyToolbar SOLIDWORKS add-in
 caption: User Guide
 description: Documentation of MyToolbar SOLIDWORKS add-in
-image: /labs/solidworks/my-toolbar/user-guide/solidworks-custom-toolbar.png
 toc-group-name: labs-solidworks-my-toolbar
 order: 3
 ---

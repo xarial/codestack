@@ -3,7 +3,7 @@ layout: article
 title: Bodies fillet feature in Geometry++
 caption: Bodies Fillet
 description: Feature allows adding the fillet to bodies, faces and edges and supports multi-bodies in SOLIDWORKS model
-image: /labs/solidworks/geometry-plus-plus/user-guide/body-fillet/icon.png
+image: icon.png
 toc-group-name: labs-solidworks-geometry-plus-plus
 ---
 This commands allows adding the simple fillet to bodies, faces and edges. This command supports multi-bodies which means that single feature can be used to add fillets to different bodies.

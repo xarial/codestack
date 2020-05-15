@@ -3,7 +3,6 @@ layout: article
 title: Developing and customizing SOLIDWORKS PDM Tasks
 caption: PDM Tasks
 description: Examples and guidelines for developing new SOLIDWORKS PDM Tasks and customizing built-in tasks
-image: /images/codestack-snippet.png
 labels: [task,add-in,pdm]
 order: 7
 ---

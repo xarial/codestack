@@ -3,7 +3,7 @@ layout: article
 title: Render box grid with transparency using OpenGL and SOLIDWORKS API
 caption: Render Box Grid With Transparency
 description: Rendering grid of cubes with transparency using OpenGL and SOLIDWORKS API
-image: /solidworks-api/adornment/opengl/box-grid-transparency/opengl-cubes.png
+image: opengl-cubes.png
 labels: [opengl,render,transparency]
 ---
 ![Transparent cubes rendered with OpenGL](opengl-cubes.png){ width=250 }

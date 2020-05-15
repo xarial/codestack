@@ -3,7 +3,6 @@ layout: sw-addin-fix
 title: How to fix the error of SOLIDWORKS add-ins sharing common libraries
 caption: Add-ins which are using shared libraries cannot work together
 description: Fixing the issue of using different versions of shared library by enabling binding redirect
-image: 
 labels: [add-in, troubleshooting, shared library]
 ---
 ## Symptoms

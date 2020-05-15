@@ -3,7 +3,7 @@ layout: article
 title: Check-out active SOLIDWORKS model using SOLIDWORKS and PDM API
 caption: Check-Out Active Model
 description: VBA macro to check-out active model (using release lock) opened in SOLIDWORKS from PDM vault using SOLIDWORKS and PDM APIs
-image: /solidworks-pdm-api/files/check-out-active-model/open-read-only-warning.png
+image: open-read-only-warning.png
 labels: [check-out,release locks]
 ---
 When file which is checked-in to SOLIDWORKS PDM vault is opened in SOLIDWORKS it will be accessed with read-only access

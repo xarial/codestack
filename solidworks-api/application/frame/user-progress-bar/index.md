@@ -3,7 +3,7 @@ layout: article
 title: Handling the long operation progress using progress bar in SOLIDWORKS API
 caption: User Progress Bar
 description: Displaying the long operation progress using user progress bar in SOLIDWORKS API
-image: /solidworks-api/application/frame/user-progress-bar/taskbar-progress.png
+image: taskbar-progress.png
 labels: [progress,user progress bar,background]
 ---
 To improve the user experience of your macro or add-in it is recommended to display and update the progress bar when the long SOLIDWORKS API operation is performed.

@@ -3,7 +3,7 @@ layout: sw-tool
 title: Macro to select equal arcs in the sketch using SOLIDWORKS API
 caption: Select Equal Arcs
 description: VBA macro to find and select all arcs with diameter equal to the input arc using SOLIDWORKS API
-image: /solidworks-api/document/sketch/select-equal-arcs/selected-equal-arcs.png
+image: selected-equal-arcs.png
 labels: [sketch,arc,circle,equal]
 group: Sketch
 ---

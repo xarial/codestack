@@ -3,7 +3,6 @@ layout: article
 title: Issues report page for Stock Master add-in for SOLIDWORKS
 caption: Issues
 description: Reporting and reviewing the status of issues for Stock Master add-in for SOLIDWORKS
-image: /images/codestack-snippet.png
 toc-group-name: labs-solidworks-stock-master
 order: 4
 sitemap: false

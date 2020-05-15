@@ -3,7 +3,7 @@ layout: article
 title: Difference between SOLIDWORKS API methods with and without I
 caption: I-Versions Of Methods And Interfaces
 description: Explanation of the differences between method names and interfaces containing the I at the beginning (e.g. IModelDoc2 vs ModelDoc2)
-image: /solidworks-api/getting-started/api-object-model/i-api-versions/intellisense-events.png
+image: intellisense-events.png
 labels: [events,i-methods,i-interfaces]
 ---
 Methods, properties and objects (interfaces) in SOLIDWORKS API help available in 2 versions:

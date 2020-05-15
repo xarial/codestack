@@ -3,7 +3,7 @@ layout: article
 title: Show Edit Material dialog using SOLIDWORKS API
 caption: Show Edit Material Dialog
 description: VBA macro which opens the Edit Material dialog in SOLIDWORKS part documents using SOLIDWORKS API and Windows API
-image: /solidworks-api/document/materials/show-edit-material-dialog/edit-material-command.png
+image: edit-material-command.png
 labels: [edit material]
 ---
 ![Edit material menu command in SOLIDWORKS part](edit-material-command.png){ width=350 }

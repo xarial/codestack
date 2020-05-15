@@ -3,7 +3,7 @@ layout: article
 title: Add comments to model using 3rd party store via SOLIDWORKS Document Manager API
 caption: Add Comments To Model Stream
 description: Add comments to model into 3rd party storage store via SOLIDWORKS Document Manager API
-image: /solidworks-document-manager-api/document/data-storage/third-party/add-comments/add-comment-console-output.png
+image: add-comment-console-output.png
 labels: [storage store,comments]
 ---
 This example demonstrates how to store user text comments directly in the model 3rd party storage store using SOLIDWORKS Document Manager API.

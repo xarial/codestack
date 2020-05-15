@@ -3,7 +3,7 @@ layout: article
 title: Read All Custom Properties using SOLIDWORKS Document Manager API
 caption: Read All Properties
 description: VBA macro which reads all custom properties from all sources (file, configuration, cut-list) using SOLIDWORKS Document Manager API
-image: /solidworks-document-manager-api/document/data-storage/custom-properties/read-all-properties/properties-list.png
+image: properties-list.png
 labels: [read properties,custom properties]
 ---
 ![SOLIDWORKS custom properties](properties-list.png){ width=550 }

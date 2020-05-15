@@ -2,7 +2,6 @@
 layout: article
 title: Errors And Exceptions Handling
 description: Introducing the principles of handling errors and exceptions in Visual Basic
-image: /images/codestack-snippet.png
 order: 9
 sitemap: false
 ---

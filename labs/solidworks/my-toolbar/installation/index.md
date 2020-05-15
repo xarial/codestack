@@ -3,7 +3,7 @@ layout: article
 title: Installation of MyToolbar SOLIDWORKS add-in
 caption: Installation Guide
 description: Instructions of installing of MyToolbar add-in
-image: /labs/solidworks/my-toolbar/installation/my-toolbar-upgrade.png
+image: my-toolbar-upgrade.png
 toc-group-name: labs-solidworks-my-toolbar
 order: 2
 ---

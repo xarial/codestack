@@ -3,7 +3,7 @@ layout: article
 title: Number Box in SOLIDWORKS Property Manager Page
 caption: Number Box
 description: Overview of options applied to Number Box control
-image: /labs/solidworks/swex/pmpage/controls/number-box/number-box-units-wheel.png
+image: number-box-units-wheel.png
 toc-group-name: labs-solidworks-swex
 order: 6
 ---

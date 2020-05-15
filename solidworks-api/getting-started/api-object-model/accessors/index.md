@@ -3,7 +3,7 @@ layout: article
 title: How to use Accessors section in SOLIDWORKS API Help
 caption: Accessors
 description: Explanation of accessors section in API Help documentation which helps to find the way of accessing specific objects in SOLIDWORKS API
-image: /solidworks-api/getting-started/api-object-model/accessors/accessors.png
+image: accessors.png
 labels: [access,cast]
 ---
 Accessibility of certain interface can be found in the *Accessors* section of specific interface in the SOLIDWORKS API Help documentation.

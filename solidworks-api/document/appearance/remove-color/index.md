@@ -3,7 +3,7 @@ layout: sw-tool
 title: Macro to remove all colors from SOLIDWORKS part
 caption: Remove All Colors From Part
 description: Macro demonstrates how to remove all colors from the part document on all levels (face, feature, body) using SOLIDWORKS API
-image: /solidworks-api/document/appearance/remove-color/remove-colors.svg
+image: remove-colors.svg
 labels: [remove color, appearance, material property]
 group: Part
 ---

@@ -3,7 +3,7 @@ layout: sw-tool
 title: count all selected components using SOLIDWORKS API
 caption: Count All Selected Components
 description: Macro counts all unique components selected in the assembly and displays the result in the commands bar
-image: /solidworks-api/document/assembly/components/count-all-selected-components/status-bar-selected-comps.png
+image: status-bar-selected-comps.png
 labels: [assembly, count components, solidworks api, status bar, utility]
 group: Assembly
 redirect-from:

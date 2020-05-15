@@ -3,7 +3,7 @@ layout: article
 title: Geometry++ - add-in which complements SOLIDWORKS geometry commands
 caption: Geometry++
 description: SOLIDWORKS add-in providing additional set of commands related to geometry modifications and creation
-image: /labs/solidworks/geometry-plus-plus/logo.png
+image: logo.png
 categories: sw-labs
 group: Geometry
 toc-group-name: labs-solidworks-geometry-plus-plus

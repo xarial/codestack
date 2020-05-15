@@ -3,7 +3,7 @@ layout: sw-tool
 title: SOLIDWORKS macro copies data from Excel table into general table
 caption: Write Data From Excel Table Into General Table
 description: Macro will read all the data from the Excel table and import it into the new general table of the active document or update existing table using SOLIDWORKS API
-image: /solidworks-api/document/tables/write-excel-table-into-general-table/excel-to-table.svg
+image: excel-to-table.svg
 labels: [table annotation, excel, general table, 2 dimensional array]
 group: Model
 ---

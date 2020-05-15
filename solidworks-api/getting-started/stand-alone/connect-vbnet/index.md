@@ -4,7 +4,7 @@ title: Create VB.NET Stand-Alone (exe) application for SOLIDWORKS
 caption: Create VB.NET Stand-Alone Application for SOLIDWORKS
 description: Guide for how to connect to SOLIDWORKS application from out-of-process (a.k.a Stand-Alone) application (e.g. Windows Forms, Windows Console) using VB.NET and Microsoft Visual Studio
 order: 2
-image: /solidworks-api/getting-started/stand-alone/connect-vbnet/proj-template.png
+image: proj-template.png
 labels: [activator, create instance, example, getobject, rot, sdk, solidworks api, vb.net]
 redirect-from:
   - /2018/03/create-vbnet-stand-alone-application.html

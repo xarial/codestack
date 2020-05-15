@@ -3,7 +3,7 @@ layout: sw-macro-fix
 title: Failed to run SOLIDWORKS macro with multiple entry points
 caption: Multiple Entry Points In The Macro
 description: Fixing the macro which doesn't work if it is run from the Tools->Macro->Run menu in SOLIDWORKS but works correctly if opened in the VBA editor and executed via F5 or by clicking green arrow
-image: /solidworks-api/troubleshooting/macros/macro-multiple-entry-points/error-object-variable-or-with-block-variable-not-set.png
+image: error-object-variable-or-with-block-variable-not-set.png
 labels: [macro, troubleshooting]
 redirect-from:
   - /2018/04/macro-troubleshooting-multiple-entry-points-in-macro.html

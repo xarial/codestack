@@ -3,7 +3,7 @@ layout: article
 title: Offset planar curve (wire body) using SOLIDWORKS API
 caption: Offset Planar Wire Body
 description: VBA macro example to offset planar curve (wire body) and display the offset preview using SOLIDWORKS API
-image: /solidworks-api/geometry/offset-planar-wire-body/offset-wire-body.png
+image: offset-wire-body.png
 labels: [body,wire,offset]
 ---
 This VBA example demonstrates how to offset the wire body of the SOLIDWORKS curve and display the preview using SOLIDWORKS API.

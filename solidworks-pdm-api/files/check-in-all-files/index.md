@@ -3,7 +3,7 @@ layout: article
 title: Check-in all checked-out files in SOLIDWORKS PDM vault
 caption: Check-In All Checked-Out Files
 description: Command line utility to check-in all checked-out files in SOLIDWORKS PDM vault
-image: /solidworks-pdm-api/files/check-in-all-files/console-output.png
+image: console-output.png
 labels: [check-in,check-out,pdm]
 ---
 This VB.NET command line utility searches for all checked-out files in the specified SOLIDWORKS PDM Professional vault and checks them in.

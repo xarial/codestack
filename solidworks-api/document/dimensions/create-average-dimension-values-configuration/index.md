@@ -3,7 +3,7 @@ layout: sw-tool
 title: SOLIDWORKS macro to create configuration with average dimension values
 caption: Create Configuration With Average Dimension Values
 description: Macro will create child configuration where all the dimension will be set to average value based on the minimum and maximum values of the tolerance
-image: /solidworks-api/document/dimensions/create-average-dimension-values-configuration/sw-dimension-tolerance.png
+image: sw-dimension-tolerance.png
 labels: [average, configuration, dimension, solidworks api, tolerance, utility]
 group: Model
 redirect-from:

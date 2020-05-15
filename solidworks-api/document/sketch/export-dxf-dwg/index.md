@@ -3,7 +3,7 @@ layout: sw-tool
 title: Macro to export selected sketch in SOLIDWORKS file to DXF/DWG file
 caption: Export Sketch To DXF/DWG
 description: VBA macro to export the selected 2D sketch in SOLIDWORKS part or assembly file to the DXF or DWG file
-image: /solidworks-api/document/sketch/export-dxf-dwg/dxf-sketch.svg
+image: dxf-sketch.svg
 labels: [sketch,export,dxf,dwg]
 group: Import/Export
 ---

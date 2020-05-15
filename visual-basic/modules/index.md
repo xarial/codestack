@@ -3,7 +3,7 @@ layout: article
 title: Modules in Visual Basic
 caption: Modules
 description: Article explain the usage of modules for storing the shareable functions and variables in Visual Basic
-image: /visual-basic/modules/add-new-module.png
+image: add-new-module.png
 order: 3
 ---
 Modules are containers to define custom functions, procedures or variables to group code in Visual Basic.

@@ -3,7 +3,7 @@ layout: article
 title: Get parameters of face at centroid using SOLIDWORKS API
 caption: Get Face Center Parameters
 description: Example demonstrates how to find the face parameters (coordinate and normal) at the center of the face using SOLIDWORKS API
-image: /solidworks-api/geometry/get-face-center-parameters/face-center.png
+image: face-center.png
 labels: [center, uv, normal]
 ---
 ![Point created at the center of the face](face-center.png){ width=250 }

@@ -3,7 +3,7 @@ layout: article
 title: Connect to SOLIDWORKS Document Manager Application from API
 caption: Connect To Document Manager Application
 description: Detailed instructions for initializing the connection to SOLIDWORKS Document Manager library
-image: /solidworks-document-manager-api/getting-started/create-connection/dm-functionality.png
+image: dm-functionality.png
 labels: [dm key, document manager, getting started, license]
 ---
 ## Activating Document Manager

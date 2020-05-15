@@ -3,7 +3,6 @@ layout: article
 title: Troubleshooting the registration of SOLIDWORKS PDM add-ins
 caption: Add-Ins
 description: Symptoms and resolutions for the most common errors with SOLIDWORKS PDM add-ins development, debugging and registering.
-image: /images/codestack-snippet.png
 labels: [add-in registration]
 styles:
   - /assets/styles/catalogue.css

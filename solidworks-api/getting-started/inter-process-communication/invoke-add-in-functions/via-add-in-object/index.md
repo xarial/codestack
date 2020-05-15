@@ -3,7 +3,7 @@ layout: article
 title: Call function of SOLIDWORKS add-in object from stand-alone application or macro
 caption: Via Add-in Object
 description: Invoking function of SOLIDWORKS add-in from stand-alone application or macro (enabling add-in custom API)
-image: /solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions/via-add-in-object/object-browser-interface.png
+image: object-browser-interface.png
 labels: [add-in api,addin object,invoke]
 order: 1
 ---

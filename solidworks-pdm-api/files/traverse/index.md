@@ -3,7 +3,7 @@ layout: article
 title: Recursively Traverse Files And Folders In Vault Using SOLIDWORKS PDM API
 caption: Traverse Folder Recursively
 description: VBA example to traverse and list all files and folders from the selected folder in SOLIDWORKS PDM vault using SOLIDWORKS PDM API
-image: /solidworks-pdm-api/files/traverse/pdm-folder-structure-output.png
+image: pdm-folder-structure-output.png
 labels: [traverse,vault,browse folder]
 ---
 This VBA example demonstrates how to traverse files and folders in the SOLIDWORKS PDM vault using SOLIDWORKS PDM API.

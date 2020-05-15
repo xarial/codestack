@@ -3,7 +3,6 @@ layout: article
 title: Pass Parameters To SOLIDWORKS VBA Macro
 caption: Pass Parameters To VBA Macro
 description: Workarounds for passing parameters to SOLIDWORKS VBA macro from external applications
-image: /images/codestack-snippet.png
 labels: [arguments,parameters,interoperability]
 ---
 SOLIDWORKS VBA macros do not accept custom parameters as an input so it is not possible to pass user argument to [ISldWorks::RunMacro2](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~runmacro2.html) method. This limitation could be the major 'roadblock' for performing the automation of SOLIDWORKS using API.

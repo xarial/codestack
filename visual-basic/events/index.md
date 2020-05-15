@@ -3,7 +3,7 @@ layout: article
 title: Handling and declaring events in Visual Basic 6 (VBA)
 description: Introduction of events handling and declaration in Visual Basic 6 (VBA)
 caption: Events
-image: /visual-basic/events/events-list.png
+image: events-list.png
 order: 15
 ---
 Event is a mechanism of providing a notification to external listeners when certain action occurs. For example your object might need to tell its listeners that it is loaded, updated or removed. In Microsoft Office application example of the event would be: opening of the document, entering text in MS word, recalculating the value of cell in Excel, etc.

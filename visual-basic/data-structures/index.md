@@ -3,7 +3,6 @@ layout: article
 title: Data Structures in Visual Basic
 caption: Data Structures
 description: Articles explains the usage of data structures (types and enumerations) in Visual Basic
-image: /images/codestack-snippet.png
 order: 12
 ---
 Data structures allows to store complex data groups as a single type.

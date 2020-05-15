@@ -3,7 +3,7 @@ layout: article
 title: Using SOLIDWORKS API to render feature tree in HTML page
 caption: Render Feature Tree In HTML Page
 description: Example demonstrates how to extract and render feature tree of SOLIDWORKS part document in HTML page using SOLIDWORKS API with JavaScript and ActiveX control in Internet Explorer
-image: /solidworks-api/getting-started/scripts/java-script/html-feature-tree/html-feature-tree-rendered.png
+image: html-feature-tree-rendered.png
 labels: [JavaScript, feature manager]
 ---
 This example demonstrates how to load feature tree content of the SOLIDWORKS part file using SOLIDWORKS API into the HTML page using JavaScript and ActiveX in Internet Explorer (this will not work in any other browsers as ActiveX is not supported by default - it might be required to install special plugins to enable the support).

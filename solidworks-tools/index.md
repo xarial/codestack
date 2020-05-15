@@ -3,7 +3,7 @@ layout: default
 title: Library of macros and scripts to automate SOLIDWORKS
 caption: "'Goodies'"
 description: Useful automation macros and scripts to increase your productivity when working in SOLIDWORKS
-image: /solidworks-tools/macros-library.png
+image: macros-library.png
 labels: [tools,solidworks,macro]
 search: false
 styles:

@@ -3,7 +3,6 @@ layout: article
 title: Variables, Constants and Data Types in Visual Basic
 caption: Variables, Constants and Data Types
 description: Explanation of variables and variable types in Visual Basic
-image: /images/codestack-snippet.png
 order: 2
 ---
 This section explains the usage of variables and constants when developing code in Visual Basic. 

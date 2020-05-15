@@ -3,7 +3,7 @@ layout: article
 title: Using attributes in SOLIDWORKS API to store data and selections
 caption: Attributes
 description: This article example the use of attributes (adding parameters, associating with objects)
-image: /solidworks-api/data-storage/attributes/attributes.png
+image: attributes.png
 labels: [tracking, attributes, selection, parameters]
 ---
 ![Attribute feature](attributes.png)

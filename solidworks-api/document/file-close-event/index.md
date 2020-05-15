@@ -3,7 +3,7 @@ layout: article
 title: Handling pre and post close notifications using SOLIDWORKS API
 caption: Handle Pre and Post Close Notification
 description: Example demonstrates how to handle pre and post notification of file closing using SOLIDWORKS API
-image: /solidworks-api/document/file-close-event/file-lock-output.png
+image: file-lock-output.png
 labels: [event, close, pdm]
 ---
 File closing (destroy) notification (such as [DestroyNotify2](http://help.solidworks.com/2017/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.DAssemblyDocEvents_DestroyNotify2EventHandler.html)) for parts, assemblies and drawings are raised when the file is about to be closed (pre notification), which means that file is still not released from memory.

@@ -3,7 +3,7 @@ layout: sw-tool
 title: Copy SOLIDWORKS file specific custom properties to configuration
 caption: Copy File Specific Custom Properties To Configuration Properties
 description: Macro copies all the file specific properties into the properties of the active configuration
-image: /solidworks-api/data-storage/custom-properties/copy-file-specific-to-configuration/file-specific-custom-properties.png
+image: file-specific-custom-properties.png
 labels: [configuration, copy, custom properties, utility]
 group: Custom Properties
 redirect-from:

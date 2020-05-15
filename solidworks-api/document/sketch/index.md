@@ -4,7 +4,6 @@ title: Working with sketch using SOLIDWORKS API
 caption: Sketch
 description: Working with 2D and 3D sketches (adding and reading segments, transformations, feature creation) using SOLIDWORKS API
 order: 6
-image: /images/codestack-snippet.png
 labels: [sketch,draw]
 ---
 Sketch is a 3D or 3D layout in SOLIDWORKS parts, assemblies and drawing. In most cases sketch is used as a profile for generating 3D elements (extrudes, cuts, lofts etc.).

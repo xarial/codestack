@@ -3,7 +3,6 @@ layout: article
 title: Managing SOLIDWORKS documents via API
 caption: Documents
 description: Examples of closing, opening, traversing documents using SOLIDWORKS API
-image: /images/codestack-snippet.png
 labels: [documents]
 ---
 SOLIDWORKS document represented as [IModelDoc2](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModelDoc2.html) interface in SOLIDWORKS API.

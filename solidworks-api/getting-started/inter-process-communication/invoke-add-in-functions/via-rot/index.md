@@ -3,7 +3,7 @@ layout: article
 title: Call functions of SOLIDWORKS add-in via Running Objects Table (ROT)
 caption: Via Running Objects Table (ROT)
 description: Calling SOLIDWORKS add-in functions (add-in API) by registering an API object in the Running Object Table (ROT)
-image: /solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions/via-rot/stand-alone-references.png
+image: stand-alone-references.png
 labels: [add-in api,stand-alone,rot]
 order: 2
 ---

@@ -3,7 +3,7 @@ layout: article
 title: Installing SOLIDWORKS add-in by manual registration
 caption: Manual
 description: Article explains how to deploy and register SOLIDWORKS add-in manually
-image: /solidworks-api/deployment/manual/types-registered-successfully.png
+image: types-registered-successfully.png
 labels: [deployment, setup, installer]
 ---
 This article explains how to deploy and register SOLIDWORKS add-in manually.

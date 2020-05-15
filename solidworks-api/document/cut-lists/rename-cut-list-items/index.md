@@ -3,7 +3,7 @@ layout: sw-tool
 title: Rename cut list features based on custom properties using SOLIDWORKS API
 caption: Rename Cut List Features
 description: VBA macro to rename cut list features (sheet metal and weldment) based on custom properties using SOLIDWORKS API
-image: /solidworks-api/document/cut-lists/rename-cut-list-items/sheet-metal-cut-list.png
+image: sheet-metal-cut-list.png
 labels: [cut-list,sheet metal,weldment,rename]
 group: Part
 ---

@@ -3,7 +3,7 @@ layout: article
 title: Setup E-Mail aliases in Gmail to send e-mail from custom domain
 caption: Setup E-Mail Aliases In Gmail
 description: Guide to setup e-mail aliases of custom domains when sending e-mails from Gmail
-image: /hosting/email/setup-gmail-email-aliases/smtp-server-details.png
+image: smtp-server-details.png
 labels: [alias,e-mail,gmail,send as]
 ---
 Gmail enables sending of e-mails with alias, which means that gmail can be sent on behalf of the custom domain setup with registrars such as [GoDaddy](https://godaddy.com) or [Google Domains](https://domains.google).

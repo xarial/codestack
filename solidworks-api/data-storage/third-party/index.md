@@ -3,7 +3,7 @@ layout: article
 title: Data saving in the 3rd party storage using SOLIDWORKS API
 caption: 3rd Party Storage And Store
 description: Section explaining how to use 3rd party storage and 3rd party store in SOLIDWORKS API to serialize and deserialize the data directly in the model stream
-image: /solidworks-api/data-storage/third-party/store-diagram.png
+image: store-diagram.png
 labels: [store,3rd party,third party,storage,serialization]
 ---
 3rd party storage and 3rd party store are the containers for the external applications (add-ins, macros, stand alone applications) to store serialize the data directly in the model stream.

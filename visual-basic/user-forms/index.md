@@ -3,7 +3,7 @@ layout: article
 title: User Form And Controls in Visual Basic 6 (VBA)
 description: Article explaining the usage of user interface elements (text box, combo box, list etc.) and forms in Visual Basic 6 (VBA)
 caption: User Form And Controls
-image: /visual-basic/user-forms/user-form-shown.png
+image: user-form-shown.png
 order: 11
 ---
 User forms allow to defined the custom Graphics User Interface (GUI) to collect user inputs, show outputs or provide an interaction with your application.

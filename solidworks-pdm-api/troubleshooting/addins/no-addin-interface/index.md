@@ -3,7 +3,7 @@ layout: sw-pdm-addin-fix
 title: Fix 'Please select at least one DLL implementing the IEdmAddIn5 interface' error
 caption: Please select at least one DLL implementing the IEdmAddIn5 interface
 description: Troubleshooting the 'Please select at least one DLL implementing the IEdmAddIn5 interface' error when registering SOLIDWORKS PDM add-in
-image: /solidworks-pdm-api/troubleshooting/addins/no-addin-interface/no-addin-dll.png
+image: no-addin-dll.png
 labels: [pdm add-in, error]
 ---
 ## Symptoms

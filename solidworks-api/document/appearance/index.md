@@ -4,7 +4,6 @@ title: Configuring document appearance using SOLIDWORKS API
 caption: Appearance
 description: Collection of examples and articles related to managing of appearance (e.g. color) in the documents using SOLIDWORKS API
 order: 12
-image: /images/codestack-snippet.png
 labels: [color, appearance, material property]
 ---
 This section contains code examples and macros of configuring with various appearance layers (colors, decals, renders) in documents using SOLIDWORKS API.

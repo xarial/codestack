@@ -3,7 +3,6 @@ layout: article
 title: Block model editing using SOLIDWORKS API
 caption: Block Model Editing
 description: Example demonstrate different ways of disabling the model editing
-image: /images/codestack-snippet.png
 labels: [block editing, block model, example, lock, menu, solidworks api]
 redirect-from:
   - /2018/03/block-model-editing.html

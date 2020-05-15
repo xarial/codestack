@@ -3,7 +3,6 @@ layout: article
 title: Working with assembly documents using SOLIDWORKS Document Manager API
 caption: Assembly
 description: Collection of examples for assemblies in Document Manager API
-image: /images/codestack-snippet.png
 ---
 Unlike regular SOLIDWORKS API, Document Manager doesn't provide a specific interface for the assembly document rather it should be managed by [ISwDMDocument](http://help.solidworks.com/2016/english/api/swdocmgrapi/SolidWorks.Interop.swdocumentmgr~SolidWorks.Interop.swdocumentmgr.ISwDMDocument.html) and [ISwDMConfiguration2](http://help.solidworks.com/2018/english/api/swdocmgrapi/SolidWorks.Interop.swdocumentmgr~SolidWorks.Interop.swdocumentmgr.ISwDMConfiguration2.html) interfaces.
 

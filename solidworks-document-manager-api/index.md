@@ -3,7 +3,7 @@ layout: article
 title: Introduction to SOLIDWORKS Document Manager API
 caption: Document Manager API
 description: Collection of examples and articles utilizing SOLIDWORKS Document Manager library
-image: /solidworks-document-manager-api/document-manager-api.png
+image: document-manager-api.png
 labels: [document manager]
 redirect-from:
   - /2018/04/document-manager-api-getting-started.html
