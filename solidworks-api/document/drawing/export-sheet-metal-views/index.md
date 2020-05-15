@@ -7,7 +7,7 @@ image: /solidworks-api/document/drawing/export-sheet-metal-views/flat-pattern-vi
 labels: [dxf,dwg,export,flat pattern]
 group: Drawing
 ---
-![Flat pattern exported to DXF](flat-pattern-dxf.png){ height=350 }
+![Flat pattern exported to DXF](flat-pattern-dxf.png){ width=350 }
 
 This VBA macro exports all flat pattern views from the active sheet in the drawing to the specified format (e.g. DXF or DWG) using SOLIDWORKS API. Macro exports the file to the same folder as original drawing and names files after the drawing view name.
 

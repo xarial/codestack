@@ -11,6 +11,6 @@ redirect-from:
 ---
 This example demonstrates how to traverse components tree in the assembly using SOLIDWORKS API and output the result using the specified indentation symbol.
 
-![Components Tree](sw-components-tree.png){ height=320 }
+![Components Tree](sw-components-tree.png){ width=320 }
 
 {% code-snippet { file-name: Macro.vba } %}

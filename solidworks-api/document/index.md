@@ -6,7 +6,7 @@ description: Articles and examples explaining the ways of automating SOLIDWORKS 
 image: /solidworks-api/document/solidworks-document-api.png
 order: 2
 ---
-![Automating of SOLIDWORKS documents with API](solidworks-document-api.png){ height=200 }
+![Automating of SOLIDWORKS documents with API](solidworks-document-api.png){ width=200 }
 
 SOLIDWORKS documents (parts, assemblies and drawings) provide large amount of API functions for automation.
 

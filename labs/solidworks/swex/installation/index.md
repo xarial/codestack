@@ -11,7 +11,7 @@ order: 1
 
 Select *Manage NuGet Packages...* command from the context menu of the project in Visual Studio
 
-![Manage NuGet Packages... command in the project context menu](manage-nuget-packages.png){ height=250 }
+![Manage NuGet Packages... command in the project context menu](manage-nuget-packages.png){ width=250 }
 
 Search for *CodeStack.SwEx* in the search box. Once found click *Install* button for the required framework.
 
@@ -23,17 +23,17 @@ This will install all required libraries to the project.
 
 Set the *Embed Interop Types* to *False* for the SOLIDWORKS Interop libraries as shown below.
 
-![Disabling the option to embed interop types for SOLIDWORKS interops](sw-interops-embed-inteop-types-false.png){ height=300 }
+![Disabling the option to embed interop types for SOLIDWORKS interops](sw-interops-embed-inteop-types-false.png){ width=300 }
 
 Check the *Register for COM Interop* option in project properties:
 
 For C# project this option can be found in *Build* tab:
 
-![Register for COM Interop option in C# project](register-for-com-interops-csharp.png){ height=300 }
+![Register for COM Interop option in C# project](register-for-com-interops-csharp.png){ width=300 }
 
 For VB.NET project this option can be found in *Compile* tab:
 
-![Register for COM Interop option in VB.NET project](register-for-com-interops-vbnet.png){ height=300 }
+![Register for COM Interop option in VB.NET project](register-for-com-interops-vbnet.png){ width=300 }
 
 ## Updates
 

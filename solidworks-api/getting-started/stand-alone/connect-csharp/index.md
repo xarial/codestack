@@ -33,7 +33,7 @@ I will be using Microsoft Visual Studio development environment. You can use any
 For projects targeting Framework 4.0 I recommend to set the **[Embed Interop Types](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)** option to false.
 Otherwise it is possible to have unpredictable behaviour of the application when calling the SOLIDWORKS API due to a type cast issue.  
 
-![Option to embed interop assemblies](embed-interop-types.png){ height=320 }
+![Option to embed interop assemblies](embed-interop-types.png){ width=320 }
 
 Now we can add the code to connect to SOLIDWORKS instance.  
 

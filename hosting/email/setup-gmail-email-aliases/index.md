@@ -34,7 +34,7 @@ Click *Generate* button. As the result the password is generated for the app. Co
 
 Open the [e-mail page](https://mail.google.com) and select the *Settings* command from the drop-down.
 
-![Opening Gmail settings page](google-email-settings.png){ height=350 }
+![Opening Gmail settings page](google-email-settings.png){ width=350 }
 
 Activate *Accounts and import* tab.
 

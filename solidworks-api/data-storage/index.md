@@ -6,7 +6,7 @@ description: Collection of articles and code examples which demonstrate how to s
 image: /solidworks-api/data-storage/solidworks-model-data-storage.png
 order: 4
 ---
-![Storing the user data in the model via API](solidworks-model-data-storage.png){ height=250 }
+![Storing the user data in the model via API](solidworks-model-data-storage.png){ width=250 }
 
 SOLIDWORKS provides multiple ways to store the custom user data (i.e. text, numbers or more complex types like images or videos) within the SOLIDWORKS models using API. The most common ways are:
 

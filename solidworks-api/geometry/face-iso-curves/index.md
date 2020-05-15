@@ -6,7 +6,7 @@ description: Example demonstrates how to find specified number of iso-curves in 
 image: /solidworks-api/geometry/face-iso-curves/iso-curves-wire-body.png
 labels: [curve, evaluate, geometry, macro, iso, uv, trimmed curve, vba]
 ---
-![Preview of iso curves of the face](iso-curves-wire-body.png){ height=300 }
+![Preview of iso curves of the face](iso-curves-wire-body.png){ width=300 }
 
 This example demonstrates how to find specified number of iso-curves in the u and v bounds of the selected face using SOLIDWORKS API.
 
@@ -23,7 +23,7 @@ vCurves = GetIsoCurves(swFace, <Number of curves in u direction>, <Number of cur
 
 Optionally macro allows to create curves in the 3D Sketch.
 
-![Sketch created for iso curves of the face](iso-curves-sketch.png){ height=300 }
+![Sketch created for iso curves of the face](iso-curves-sketch.png){ width=300 }
 
 This option can be enabled by setting *CREATE_SKETCH* constant to *True* at the beginning of the macro:
 

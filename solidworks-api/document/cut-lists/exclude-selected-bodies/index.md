@@ -8,7 +8,7 @@ image: /solidworks-api/document/cut-lists/exclude-selected-bodies/excluded-cut-l
 labels: [api, cut-list, exclude, utility, vba]
 group: Part
 ---
-![Exclude from cut-list](exclude-from-cut-list.png){ height=300 }
+![Exclude from cut-list](exclude-from-cut-list.png){ width=300 }
 
 This macro allows to exclude the selected bodies from the weldment or sheet metal cut list using SOLIDWORKS API.
 

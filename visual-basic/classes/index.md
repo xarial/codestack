@@ -10,7 +10,7 @@ Class is a fundamental concept of Object Oriented Programming (OOP). Class can b
 
 Classes are created in the class modules
 
-![Adding new class module](insert-class-module.png){ height=300 }
+![Adding new class module](insert-class-module.png){ width=300 }
 
 Classes must have a unique name which can be defined in the Visual Basic Editor
 

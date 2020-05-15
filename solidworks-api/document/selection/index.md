@@ -56,7 +56,7 @@ There are multiple ways of selecting entities in SOLIDWORKS. The following list 
 
 * By direct *SelectX* method. Majority of selectable objects in SOLIDWORKS provide direct *SelectX* method which allows to select the element from its pointer:
 
-![Direct SelectX methods for SOLIDWORKS objects](objects-select-method-api-help.png){ height=300 }
+![Direct SelectX methods for SOLIDWORKS objects](objects-select-method-api-help.png){ width=300 }
 
 This is a preferable method of selection as it provides the consistency and it is not dependent on the view's orientation. Refer the [Select All Sketch Elements](select-all-sketch-elements) example which shows how different sketch elements can be selected.
 

@@ -12,7 +12,7 @@ Module containing an entry point subroutine (main) is an entry module. It is alw
 
 In order to add new module it is required to RMB (right mouse button click) the **Modules** folder and select *Inset->Module* command
 
-![Adding new module to the macro](add-new-module.png){ height=250 }
+![Adding new module to the macro](add-new-module.png){ width=250 }
 
 Module must have an unique name which can be defined by the developer.
 

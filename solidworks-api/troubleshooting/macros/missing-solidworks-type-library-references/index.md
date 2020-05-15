@@ -21,7 +21,7 @@ Alternatively non-SOLIDWORKS declarations can be highlighted (such as Left or Mi
 
 * If the libraries were never selected in the macro the *Compile error: user-defined type not defined* can be displayed.
 
-![Compile error: user-defined type not defined](compile-error-user-defined-type-not-defined.png){ height=200 }
+![Compile error: user-defined type not defined](compile-error-user-defined-type-not-defined.png){ width=200 }
 
 ## Cause
 
@@ -35,7 +35,7 @@ Alternatively non-SOLIDWORKS declarations can be highlighted (such as Left or Mi
 * Navigate to Tools->References menu in the VBA editor
 * Select the SOLIDWORKS type libraries as shown below. If libraries cannot be found in the *Available References* list use *Browse...* button and find the *sldworks.tlb*, *swconst.tlb*, *swcommands.tlb* in the installation folder of SOLIDWORKS.
 
-![Required SOLIDWORKS type libraries](selected-sw-references.png){ height=200 }
+![Required SOLIDWORKS type libraries](selected-sw-references.png){ width=200 }
 
 * If libraries are selected or **MISSING** keyword is present it is required to force update the references by following the steps below:
 

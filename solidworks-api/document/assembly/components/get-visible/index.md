@@ -6,7 +6,7 @@ description: VBA macro example to get and select all visible components (not sup
 image: /solidworks-api/document/assembly/components/get-visible/components-tree.png
 labels: [components,suppressed,hidden,select]
 ---
-![Components selected in the feature manager tree](components-tree.png){ height=350 }
+![Components selected in the feature manager tree](components-tree.png){ width=350 }
 
 This VBA macro gets all the pointers to the visible (not suppressed and not hidden) components in the active assembly. All the components are selected using multi-select SOLIDWORKS API.
 

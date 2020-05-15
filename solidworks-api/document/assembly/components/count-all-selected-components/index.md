@@ -14,6 +14,6 @@ This macro counts all unique components selected in the assembly using SOLIDWORK
 
 Macro will also count component if only entity of the component is selected (e.g. face or edge) using [ISelectionMgr](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISelectionMgr.html) SOLIDWORKS API Interface..
 
-![Quantity of selected components displayed in the status bar](status-bar-selected-comps.png){ height=320 }
+![Quantity of selected components displayed in the status bar](status-bar-selected-comps.png){ width=320 }
 
 {% code-snippet { file-name: Macro.vba } %}

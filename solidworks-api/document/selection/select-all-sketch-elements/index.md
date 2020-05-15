@@ -6,7 +6,7 @@ description: This example demonstrates how to select all sketch elements (segmen
 image: /solidworks-api/document/selection/select-all-sketch-elements/select-all-sketch-elements.png
 labels: [selection, sketch segment, sketch point]
 ---
-![Selected sketch elements in the active sketch](select-all-sketch-elements.png){ height=250 }
+![Selected sketch elements in the active sketch](select-all-sketch-elements.png){ width=250 }
 
 This example demonstrates how to select all sketch segments and sketch points in the active sketch using the direct ::Select method in SOLIDWORKS API.
 

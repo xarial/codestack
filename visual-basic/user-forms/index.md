@@ -33,7 +33,7 @@ Form and its controls are exposing different [events](/visual-basic/events/), su
 
 Event handlers are defined in the code behind of the form.
 
-![View Code command of User Form](view-code-menu-command.png){ height=400 }
+![View Code command of User Form](view-code-menu-command.png){ width=400 }
 
 Available control events can be selected from the drop-down list.
 

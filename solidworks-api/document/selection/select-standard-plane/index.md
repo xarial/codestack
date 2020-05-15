@@ -6,7 +6,7 @@ description: Example demonstrates how to select standard plane (Top, Front or Ri
 image: /solidworks-api/document/selection/select-standard-plane/selected-right-plane.png
 labels: [selection, plane]
 ---
-![Right plane selected in the graphics view](selected-right-plane.png){ height=250 }
+![Right plane selected in the graphics view](selected-right-plane.png){ width=250 }
 
 It is not recommended to select the standard planes by their names as names are not consistent and may be changed in the template (e.g. different localization or standard).
 

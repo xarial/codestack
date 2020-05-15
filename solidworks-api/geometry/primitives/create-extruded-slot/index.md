@@ -14,6 +14,6 @@ Macro will stop the execution and display the preview of the slot in the graphic
 
 Slot profile is built in the *GetSlotProfileBody* function as per the parameters below:
 
-![Parameters of the slot](slot-parameters.png){ height=250 }
+![Parameters of the slot](slot-parameters.png){ width=250 }
 
 {% code-snippet { file-name: Macro.vba } %}

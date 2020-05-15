@@ -12,7 +12,7 @@ This VBA macro finds all bodies of the selected drawing view (including sheet me
 
 [IView::Bodies](http://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iview~bodies.html) property finds the bodies of the drawing view, however this SOLIDWORKS API property returns Nothing for the drawing view created from sheet metal flat pattern.
 
-![Flat pattern is set in the drawing view property page](flat-pattern-view-settings.png){ height=250 }
+![Flat pattern is set in the drawing view property page](flat-pattern-view-settings.png){ width=250 }
 
 Macro below extracts bodies and finds the materials assigned to them in both cases (for regular parts and for sheet metal patterns). The result is output to Immediate window of VBA editor.
 

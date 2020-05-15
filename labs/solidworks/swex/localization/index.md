@@ -11,7 +11,7 @@ SwEx frameworks supports [resources in .NET applications](https://docs.microsoft
 
 This technique allows to load localized string at runtime based on the Windows settings in the control panel.
 
-![Region and language page in Control Panel](region-format.png){ height=450 }
+![Region and language page in Control Panel](region-format.png){ width=450 }
 
 Resources should be added to the corresponding localized .resx file (e.g. Resources.resx for default, Resources.ru.resx for Russian, Resources.fr.resx for French, etc.)
 

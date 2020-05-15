@@ -14,7 +14,7 @@ This technique can be useful when the type of the object is not known in advance
 
 The following example provides similar functionality to SOLIDWORKS [Create Selection Set](http://help.solidworks.com/2015/english/whatsnew/t_creating_selection_sets.htm)
 
-![Create Selection Set context menu command](create-selection-set.png){ height=300 }
+![Create Selection Set context menu command](create-selection-set.png){ width=300 }
 
 * Open any model and select any objects (this can be different types objects like features, entities, annotations etc.)
 * Run the macro. Macro will collect the pointers of all selected object
