@@ -3,8 +3,7 @@ layout: sw-tool
 title: Batch export files to foreign format via eDrawings API (without SOLIDWORKS)
 caption: Batch Export To Foreign Formats
 description: Console application which exports all files from the specified folder to specified foreign format (e.g. eDrawings, html, stl, jpeg, etc.) using eDrawings API, without the need to have SOLIDWORKS installed or SOLIDWORKS license
-image: /edrawings-api/output/export/export-edrawings.png
-logo: /edrawings-api/output/export/export-edrawings.svg
+image: /edrawings-api/output/export/export-edrawings.svg
 labels: [export,batch,edrawings]
 
 group: Import/Export

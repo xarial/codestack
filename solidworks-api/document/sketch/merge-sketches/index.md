@@ -3,8 +3,7 @@ layout: sw-tool
 title: Macro to merge sketches using SOLIDWORKS API
 caption: Merge Sketches
 description: VBA macro to merge selected sketches into a single 3D sketch using SOLIDWORKS API
-image: /solidworks-api/document/sketch/merge-sketches/merged-3dsketch.png
-logo: /solidworks-api/document/sketch/merge-sketches/merged-sketches.svg
+image: /solidworks-api/document/sketch/merge-sketches/merged-sketches.svg
 labels: [sketch,convert entities,merge]
 group: Sketch
 ---

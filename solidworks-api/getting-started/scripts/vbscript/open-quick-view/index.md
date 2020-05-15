@@ -3,8 +3,7 @@ layout: sw-tool
 title: Open SOLIDWORKS assembly in quick view mode from Windows file explorer
 caption: Open Document In Quick View Mode From File Explorer
 description: Tool to open SOLIDWORKS assembly or drawing in quick view (large design review) mode from the context menu in Windows file explorer
-image: /solidworks-api/getting-started/scripts/vbscript/open-quick-view/open-in-quick-view.png
-logo: /solidworks-api/getting-started/scripts/vbscript/open-quick-view/open-in-quick-view.svg
+image: /solidworks-api/getting-started/scripts/vbscript/open-quick-view/open-in-quick-view.svg
 labels: [quick view,large design review,performance,shell,context menu]
 group: Performance
 ---

@@ -3,8 +3,7 @@ layout: sw-tool
 title: SOLIDWORKS Macro shows selected assembly component in the Window folder
 caption: Show Selected Assembly Component In The Window Folder
 description: Example demonstrates how to open the folder of the selected component in the assembly in the Windows File Explorer
-image: /solidworks-api/document/assembly/components/show-selected-assembly-component-window-folder/windows-folder-selected-component.png
-logo: /solidworks-api/document/assembly/components/show-selected-assembly-component-window-folder/windows-folder-selected-component.svg
+image: /solidworks-api/document/assembly/components/show-selected-assembly-component-window-folder/windows-folder-selected-component.svg
 labels: [assembly, component, explorer, frame, macro, show in folder, solidworks, solidworks api, utility, vba]
 group: Assembly
 redirect-from:

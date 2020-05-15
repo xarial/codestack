@@ -3,8 +3,7 @@ layout: sw-tool
 title: SOLIDWORKS macro to exclude selected bodies from cut-lists
 caption: Exclude Selected Bodies From Cut-Lists
 description: Macro excludes the solid bodies selected from the graphics area or from the feature tree from weldment or sheet metal cut-list using SOLIDWORKS API
-logo: /solidworks-api/document/cut-lists/exclude-selected-bodies/excluded-cut-list-item.svg
-image: /solidworks-api/document/cut-lists/exclude-selected-bodies/excluded-cut-list-item.png
+image: /solidworks-api/document/cut-lists/exclude-selected-bodies/excluded-cut-list-item.svg
 labels: [api, cut-list, exclude, utility, vba]
 group: Part
 ---

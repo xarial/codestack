@@ -3,8 +3,7 @@ layout: sw-tool
 title: Run VBA macro automatically on document save using SOLIDWORKS API
 caption: Run Macro On Document Save
 description: Macro runs VBA code (or another macro) automatically on file save using SOLIDWORKS API
-image: /solidworks-api/application/documents/handle-document-save/run-macro-on-save.png
-logo: /solidworks-api/application/documents/handle-document-save/run-macro-on-save.svg
+image: /solidworks-api/application/documents/handle-document-save/run-macro-on-save.svg
 labels: [auto run,model save event]
 group: Model
 ---
