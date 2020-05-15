@@ -11,6 +11,6 @@ order: 4
 
 Text box control will be automatically generated for all properties of type *string*.
 
-{#% include code-tabs.html src="TextBox" %}
+{% code-snippet { file-name: TextBox.* } %}
 
 Additional options can be specified via [TextBoxOptionsAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_TextBoxOptionsAttribute.htm)

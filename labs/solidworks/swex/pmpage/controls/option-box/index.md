@@ -12,4 +12,4 @@ order: 9
 
 Options group can be defined by decorating the property of type Enum with [OptionBoxAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_OptionBoxAttribute.htm).
 
-{#% include code-tabs.html src="OptionBox" %}
+{% code-snippet { file-name: OptionBox.* } %}

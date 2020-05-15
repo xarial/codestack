@@ -11,6 +11,6 @@ order: 3
 
 Group box will be automatically created for all complex types in the data model
 
-{#% include code-tabs.html src="Group" %}
+{% code-snippet { file-name: Group.* } %}
 
 > SOLIDWORKS doesn't support groups nested into other groups, so all the nested complex types will be added as the groups to the main property manager page.

@@ -22,7 +22,7 @@ Below is a code example demonstrating how to disable/enable selection box contro
 
 ![Changing the control enable state based on the check box](enable-control.gif)
 
-{#% include code-tabs.html src="TagsAndDependencies.Enable" %}
+{% code-snippet { file-name: TagsAndDependencies.Enable.* } %}
 
 ## Cascading Lists
 
@@ -32,4 +32,4 @@ Below code example demonstrates how to implement cascading list.
 
 Each value in the dropdown (defined via Enum) has its own nested list of options (also defined by another Enums). Once the value of the drp-down changed the visibility of option groups is changed as well.
 
-{#% include code-tabs.html src="TagsAndDependencies.CascadingVisibility" %}
+{% code-snippet { file-name: TagsAndDependencies.CascadingVisibility.* } %}

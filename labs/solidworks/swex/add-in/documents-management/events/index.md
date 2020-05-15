@@ -24,8 +24,8 @@ It is recommended to use the [HandleCreated](https://docs.codestack.net/swex/add
 
 Unsubscribe from the events from [Destroyed](https://docs.codestack.net/swex/add-in/html/E_CodeStack_SwEx_AddIn_Core_DocumentHandler_Destroyed.htm) notification.
 
-{#% include code-tabs.html src="EventsAddIn" %}
+{% code-snippet { file-name: EventsAddIn.* } %}
 
 Event handlers provide additional information about event, such as is it a pre or post notification and any additional parameters. Explore API reference for more information about the passed parameters.
 
-{#% include code-tabs.html src="EventsAddIn.EventHandlers" %}
+{% code-snippet { file-name: EventsAddIn.EventHandlers.* } %}

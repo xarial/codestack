@@ -23,4 +23,4 @@ The value of state will be preassigned based on the workspace and can be changed
 
 > This method allows to implement the toggle button in toolbar and menu. To set the checked state assign the *SelectEnable* or *SelectDisable* values of [CommandItemEnableState_e](https://docs.codestack.net/swex/add-in/html/T_CodeStack_SwEx_AddIn_Enums_CommandItemEnableState_e.htm) enumeration.
 
-{#% include code-tabs.html src="CommandsManager.CustomEnableState" %}
+{% code-snippet { file-name: CommandsManager.CustomEnableState.* } %}

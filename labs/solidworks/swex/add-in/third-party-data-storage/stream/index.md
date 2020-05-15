@@ -14,16 +14,16 @@ use this approach when it is required to store a single structure at the model.
 
 To simplify the handling of the stream lifecycle, use the Documents Manager API from the SwEx.AddIn framework:
 
-{#% include code-tabs.html src="ThirdPartyData.StreamHandler" %}
+{% code-snippet { file-name: ThirdPartyData.StreamHandler.* } %}
 
 ## Reading data
 
 [IThirdPartyStreamHandler::Stream](https://docs.codestack.net/swex/add-in/html/P_CodeStack_SwEx_AddIn_Base_IThirdPartyStreamHandler_Stream.htm) property returns null for the stream which not exists on reading.
 
-{#% include code-tabs.html src="ThirdPartyData.Stream.StreamLoad" %}
+{% code-snippet { file-name: ThirdPartyData.Stream.StreamLoad.* } %}
 
 ## Writing data
 
 [IThirdPartyStreamHandler::Stream](https://docs.codestack.net/swex/add-in/html/P_CodeStack_SwEx_AddIn_Base_IThirdPartyStreamHandler_Stream.htm) will always return the pointer to the stream (stream is automatically created if it doesn't exist).
 
-{#% include code-tabs.html src="ThirdPartyData.Stream.StreamSave" %}
+{% code-snippet { file-name: ThirdPartyData.Stream.StreamSave.* } %}

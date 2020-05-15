@@ -11,10 +11,10 @@ order: 6
 
 Number box will be automatically created for the properties of *int* and *double* types.
 
-{#% include code-tabs.html src="NumberBox.Simple" %}
+{% code-snippet { file-name: NumberBox.Simple.* } %}
 
 Style of the number box can be customized via the [NumberBoxOptionsAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_NumberBoxOptionsAttribute.htm)
 
 ![Number boxes with additional styles allowing specifying the units and displaying thumbwheel for changing the value](number-box-units-wheel.png)
 
-{#% include code-tabs.html src="NumberBox.Style" %}
+{% code-snippet { file-name: NumberBox.Style.* } %}

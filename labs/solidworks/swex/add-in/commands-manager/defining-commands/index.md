@@ -10,7 +10,7 @@ order: 1
 
 SwEx framework allows defining the commands in the enumeration (enum). In this case the enumeration value become the id of the corresponding command.
 
-{#% include code-tabs.html src="CommandsManager.DefiningCommands" %}
+{% code-snippet { file-name: CommandsManager.DefiningCommands.* } %}
 
 ## Commands Decoration
 
@@ -37,7 +37,7 @@ Transparency is supported. SwEx framework will automatically assign the required
 
 Icons can be referenced from any static class. Usually this should be a resource class. It is required to specify the type of the resource class as first parameter, and the resource names as additional parameters. Use *nameof* keyword to load the resource name to avoid usage of 'magic' strings.
 
-{#% include code-tabs.html src="CommandsManager.CommandsAttribution" %}
+{% code-snippet { file-name: CommandsManager.CommandsAttribution.* } %}
 
 ## Commands Scope
 
@@ -45,11 +45,11 @@ Each command can be assigned with the operation scope (i.e. the environment wher
 
 Framework will automatically disable/enable the commands based on the active environment as per the specified scope. For additional logic for assigning the state visit [Custom Enable Command State](/labs/solidworks/swex/add-in/commands-manager/command-states/) article.
 
-{#% include code-tabs.html src="CommandsManager.CommandsScope" %}
+{% code-snippet { file-name: CommandsManager.CommandsScope.* } %}
 
 ## User Assigned Command Group IDs
 
 [CommandGroupInfoAttribute](https://docs.codestack.net/swex/add-in/html/T_CodeStack_SwEx_AddIn_Attributes_CommandGroupInfoAttribute.htm) allows to assign the static command id to the group. This should be applied to the enumerator definition. If this attribute is not used SwEx framework will assign the ids automatically.
 
-{#% include code-tabs.html src="CommandsManager.CommandGroupId" %}
+{% code-snippet { file-name: CommandsManager.CommandGroupId.* } %}
 

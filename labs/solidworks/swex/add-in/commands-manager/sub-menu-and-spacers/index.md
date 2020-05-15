@@ -11,7 +11,7 @@ order: 3
 
 Spacer can be added between the commands by decorating the command using the [CommandSpacerAttribute](https://docs.codestack.net/swex/add-in/html/T_CodeStack_SwEx_AddIn_Attributes_CommandSpacerAttribute.htm). Spacer will be added before this command.
 
-{#% include code-tabs.html src="CommandsManager.Spacer" %}
+{% code-snippet { file-name: CommandsManager.Spacer.* } %}
 
 If command tab tab boxes are created for this command group (i.e. *showInCmdTabBox* parameter is set to *true* in the [CommandItemInfoAttribute](https://docs.codestack.net/swex/add-in/html/M_CodeStack_SwEx_AddIn_Attributes_CommandItemInfoAttribute__ctor_2.htm)), spacer is not reflected in the corresponding command tab box.
 
@@ -19,13 +19,13 @@ If command tab tab boxes are created for this command group (i.e. *showInCmdTabB
 
 Sub-menus for the command groups can be defined by calling the corresponding overload of the [CommandGroupInfoAttribute](https://docs.codestack.net/swex/add-in/html/M_CodeStack_SwEx_AddIn_Attributes_CommandGroupInfoAttribute__ctor_2.htm) attribute and specifying the type of the parent menu group
 
-{#% include code-tabs.html src="CommandsManager.SubMenu" %}
+{% code-snippet { file-name: CommandsManager.SubMenu.* } %}
 
 Sub menus are rendered in separate tab boxes in the command tab.
 
 ## Example
 
-{#% include code-tabs.html src="CommandsManager.SpacerAndSubMenu" %}
+{% code-snippet { file-name: CommandsManager.SpacerAndSubMenu.* } %}
 
 The above commands configuration would result in the following menu and command tab boxes created:
 

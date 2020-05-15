@@ -11,10 +11,10 @@ order: 3
 
 Tab containers are created for the complex types decorated with [TabAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_TabAttribute.htm).
 
-{#% include code-tabs.html src="Tab" %}
+{% code-snippet { file-name: Tab.* } %}
 
 ## Tab with nested groups
 
 Controls can be added directly to tabs or can reside in the nested groups:
 
-{#% include code-tabs.html src="Tab.WithGroup" %}
+{% code-snippet { file-name: Tab.WithGroup.* } %}

@@ -21,7 +21,7 @@ Common styles can be customized via [ControlOptionsAttribute](https://docs.codes
 
 This attribute allows to define the alignment, position, size as well as background and foreground colours:
 
-{#% include code-tabs.html src="CommonOptions.Style" %}
+{% code-snippet { file-name: CommonOptions.Style.* } %}
 
 ![Custom background and foreground colours applied to textbox](textbox-foreground-background.png)
 
@@ -37,7 +37,7 @@ Tooltip for controls can be set by applying the [DescriptionAttribute](https://d
 
 Standard icon defined in [swControlBitmapLabelType_e](http://help.solidworks.com/2017/english/api/swconst/SolidWorks.Interop.swconst~SolidWorks.Interop.swconst.swControlBitmapLabelType_e.html?id=aff2422a1ecf4632aae3e41abe59c6fc) enumeration can be set to control via [ControlAttributionAttribute](https://docs.codestack.net/swex/pmpage/html/M_CodeStack_SwEx_PMPage_Attributes_ControlAttributionAttribute__ctor.htm) attribute.
 
-{#% include code-tabs.html src="CommonOptions.StandardIcon" %}
+{% code-snippet { file-name: CommonOptions.StandardIcon.* } %}
 
 Use the below map of all available standard icons:
 
@@ -73,6 +73,6 @@ Use the below map of all available standard icons:
 
 Custom icon can be set via overloaded constructor of [ControlAttributionAttribute](https://docs.codestack.net/swex/pmpage/html/M_CodeStack_SwEx_PMPage_Attributes_ControlAttributionAttribute__ctor_1.htm) attribute
 
-{#% include code-tabs.html src="CommonOptions.CustomIcon" %}
+{% code-snippet { file-name: CommonOptions.CustomIcon.* } %}
 
 Second version of the [overloaded constructor](https://docs.codestack.net/swex/pmpage/html/M_CodeStack_SwEx_PMPage_Attributes_ControlAttributionAttribute__ctor_2.htm) allows to specify the transparency mask through shades of grey with boundaries of black pixels = 100% opaque and white pixels = 100% transparent. If first version of constructor is used mask will be generated automatically based on the transparency (Alpha channel of the image).

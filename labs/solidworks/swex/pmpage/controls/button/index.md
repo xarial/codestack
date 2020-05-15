@@ -13,4 +13,4 @@ In order to create a button in the property manager page, it is required to decl
 
 The pointer to void function assigned to this property is a handler of the button:
 
-{#% include code-tabs.html src="Button" %}
+{% code-snippet { file-name: Button.* } %}

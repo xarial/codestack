@@ -26,7 +26,7 @@ It is required to do 3 mandatory steps to make the class for PDM add-in:
 1. Mark the class as Com Visible
 1. Specify the minimum major version supported by the add-in within the [GetAddInInfo](http://help.solidworks.com/2014/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.IEdmAddIn5~GetAddInInfo.html) by setting the [EdmAddInInfo.mlRequiredVersionMajor](http://help.solidworks.com/2014/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.edmaddininfo~mlrequiredversionmajor.html) property.
 
-{#% include code-tabs.html src="SampleAddIn" %}
+{% code-snippet { file-name: SampleAddIn.* } %}
 
 ## Notes
 

@@ -14,18 +14,18 @@ Use this approach when it is required to store multiple data structures which ne
 
 To simplify the handling of the storage lifecycle, use the Documents Manager API from the SwEx.AddIn framework:
 
-{#% include code-tabs.html src="ThirdPartyData.StorageHandler" %}
+{% code-snippet { file-name: ThirdPartyData.StorageHandler.* } %}
 
 ## Reading data
 
 [IThirdPartyStoreHandler::Storage](https://docs.codestack.net/swex/add-in/html/P_CodeStack_SwEx_AddIn_Base_IThirdPartyStoreHandler_Storage.htm) property returns null for the storage which not exists on reading.
 
-{#% include code-tabs.html src="ThirdPartyData.Storage.StorageLoad" %}
+{% code-snippet { file-name: ThirdPartyData.Storage.StorageLoad.* } %}
 
 ## Writing data
 
 [IThirdPartyStoreHandler::Storage](https://docs.codestack.net/swex/add-in/html/P_CodeStack_SwEx_AddIn_Base_IThirdPartyStoreHandler_Storage.htm) will always return the pointer to the storage (stream is automatically created if it doesn't exist).
 
-{#% include code-tabs.html src="ThirdPartyData.Storage.StorageSave" %}
+{% code-snippet { file-name: ThirdPartyData.Storage.StorageSave.* } %}
 
 Explore the methods of [IComStorage](https://docs.codestack.net/swex/add-in/html/T_CodeStack_SwEx_AddIn_Base_IComStorage.htm) for information of how to create sub streams or sub storages and enumerate the existing elements.

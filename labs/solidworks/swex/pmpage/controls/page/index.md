@@ -20,7 +20,7 @@ Property manager page style can be customized by applying the [PageOptionsAttrib
 
 ![Property page with OK and Cancel button options](pmpage-options.png)
 
-{#% include code-tabs.html src="Page.Options" %}
+{% code-snippet { file-name: Page.Options.* } %}
 
 Attributes allow to customize the buttons and behaviour of the page
 
@@ -34,7 +34,7 @@ Icon can be set via overloaded constructor of [PageOptionsAttribute](https://doc
 
 Custom user message to provide additional information can be set via [MessageAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_MessageAttribute.htm)
 
-{#% include code-tabs.html src="Page.Attribution" %}
+{% code-snippet { file-name: Page.Attribution.* } %}
 
 ### Help Links
 
@@ -42,4 +42,4 @@ Custom user message to provide additional information can be set via [MessageAtt
 
 [HelpAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_HelpAttribute.htm) allows providing links to help resources for your add-in. Framework will automatically open the specified url when user clicks corresponding help buttons in the property manager page:
 
-{#% include code-tabs.html src="Page.HelpLinks" %}
+{% code-snippet { file-name: Page.HelpLinks.* } %}

@@ -11,7 +11,7 @@ order: 1
 
 Framework passes the reason of close and [closing argument](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Base_ClosingArg.htm) which allows to cancel property manager page closing and display error to the user as a tooltip.
 
-{#% include code-tabs.html src="Events.Closing" %}
+{% code-snippet { file-name: Events.Closing.* } %}
 
 This event is raised when Property Manager Page dialog is still visible. There should be no rebuild operations performed within this handler, it includes the direct rebuilds but also any new features or geometry creation or modification (with an exception of temp bodies). Note that some operations such as saving may also be unsupported. In general if certain operation cannot be performed from the user interface while property page is opened it shouldn't be called from the closing event via API as well. Otherwise this could cause instability including crashes. Use [Post closing event](#post-closing-event) event to perform any rebuild operations.
 
@@ -23,4 +23,4 @@ In some cases it is required to perform this operation while property manager pa
 
 Use this handler to perform the required operations.
 
-{#% include code-tabs.html src="Events.Closed" %}
+{% code-snippet { file-name: Events.Closed.* } %}

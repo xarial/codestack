@@ -19,7 +19,7 @@ In order to add command group it is required to call the [AddCommandGroup](https
 
 It is required to provide the void handler function with a parameter of enumerator which will be called by framework when command is clicked.
 
-{#% include code-tabs.html src="CommandsManager.CommandGroup" %}
+{% code-snippet { file-name: CommandsManager.CommandGroup.* } %}
 
 ### Menu
 
@@ -48,7 +48,7 @@ Command item can be added to tab box by setting the *showInCmdTabBox* parameter 
 * Text below icon (swCommandTabButton_TextBelow)
 * Text to the right to icon, aligned horizontally (swCommandTabButton_TextHorizontal)
 
-{#% include code-tabs.html src="CommandsManager.CommandTabBox" %}
+{% code-snippet { file-name: CommandsManager.CommandTabBox.* } %}
 
 ## Context Menu
 
@@ -60,7 +60,7 @@ It is required to provide the void handler function with a parameter of enumerat
 
 It is optionally required to specify the selection type of where this menu should be displayed.
 
-{#% include code-tabs.html src="CommandsManager.ContextMenu" %}
+{% code-snippet { file-name: CommandsManager.ContextMenu.* } %}
 
 
 

@@ -17,7 +17,7 @@ The following modules provide logger:
 
 Additional options can be specified by decorating the module class via [LoggerOptionsAttribute](https://docs.codestack.net/swex/common/html/M_CodeStack_SwEx_Common_Attributes_LoggerOptionsAttribute__ctor.htm)
 
-{#% include code-tabs.html src="LogAddIn" %}
+{% code-snippet { file-name: LogAddIn.* } %}
 
 Specified logger name will be appended to the SwEx module name (e.g. SwEx.AddIn.MyAddInLog or SwEx.MacroFeature.MyAddInLog or SwEx.PMPage.MyAddInLog).
 
