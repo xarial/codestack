@@ -3,7 +3,7 @@ layout: article
 title: Managing System Options And User Preferences using SOLIDWORKS API
 caption: Options
 description: Articles and example to control user preferences and system options at document and application levels using SOLIDWORKS API
-image: solidworks-options.png
+image: solidworks-options.svg
 labels: [preferences, options]
 order: 8
 ---

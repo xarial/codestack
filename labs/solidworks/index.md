@@ -4,7 +4,7 @@ title: Productivity tools and add-ins for SOLIDWORKS
 caption: SOLIDWORKS
 menu: LABS
 description: Collection of tools and add-ins for SOLIDWORKS
-image: solidworks-labs.png
+image: solidworks-labs.svg
 order: 5
 search: false
 styles:
