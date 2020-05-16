@@ -10,7 +10,6 @@ order: 1
 
 SOLIDWORKS API can be used in any COM-compatible language (i.e. C++, C#, VB.NET and Visual Basic). There are different types of applications which can be developed using the SOLIDWORKS API. Please refer the comparison table below for selecting the right type of the application which suits the requirements.
 
-|------+----------+-------+----------+-------------+-------+--------|
 |Method|VBA Macros|Add-ins|VSTA Macros|Stand-Alones|Scripts|Comments|
 |------|:--------:|:-----:|:---------:|:----------:|:-----:|--------|
 |Easy to start|Yes|No|Yes|Yes|Yes|Average time spent for a not experienced user to start a solution|
@@ -23,7 +22,6 @@ SOLIDWORKS API can be used in any COM-compatible language (i.e. C++, C#, VB.NET 
 |Requirement of additional software|No|Development IDE required|No (Yes for SW 2018)|Development IDE required|No|Development IDE usually consist of code text editor and compiler (e.g Visual Studio, Eclipse, CBuilder etc.)|
 |User Friendly for the beginners|Yes|No|No|No|No||
 |Performance|Normal|Good|Good|Normal|Normal|Operating performance|
-|------+----------+-------+-----------+------------+-------|--------|
 
 ## References For .NET Projects
 
