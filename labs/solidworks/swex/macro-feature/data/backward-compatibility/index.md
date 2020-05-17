@@ -6,7 +6,7 @@ description: Explanation of ways to implement backward compatibility for the par
 toc-group-name: labs-solidworks-swex
 order: 5
 ---
-### Parameters
+## Parameters
 
 Macro feature parameters might need to change from version to version. And SwEx.MacroFeature framework provides a mechanism to handle the backward compatibility of existing features.
 
@@ -62,7 +62,7 @@ If new dimensions have been added to the feature it is required to use the [Disp
 
 In some cases framework is not able to convert some parameters. For example Icons and Dimensions cannot be converted. In this case [SetParameters](https://docs.codestack.net/swex/macro-feature/html/M_CodeStack_SwEx_MacroFeature_MacroFeatureEx_1_SetParameters_1.htm) method will return the [outdate state](https://docs.codestack.net/swex/macro-feature/html/T_CodeStack_SwEx_MacroFeature_Base_MacroFeatureOutdateState_e.htm). If state is not up-to-date it is recommended to warn the user and call the [IFeatureManager::ReplaceComFeature](https://docs.codestack.net/swex/macro-feature/html/M_SolidWorks_Interop_sldworks_FeatureManagerEx_ReplaceComFeature__1.htm) extension method which will replace feature in the tree preserving all the parameters.
 
-### Obsolete Feature
+## Obsolete Feature
 
 In some cases feature might become obsolete (i.e. no longer supported). Framework provides a mechanism to mark the feature as obsolete and allow replacement (if applicable).
 

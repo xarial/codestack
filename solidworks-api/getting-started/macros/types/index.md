@@ -11,13 +11,13 @@ order: 1
 
 Macros can be edited directly in the built-in VBA Editor and can be executed in SOLIDWORKS using out-of-the-box engine. It is not required to install any additional software to run macros (the only exception are VSTA 3.0 macros which require the stand-alone installation of Visual Studio)
 
-### VBA Macros (*.swp)
+## VBA Macros (*.swp)
 
 These probably the most popular macros. The macros are based on VBA7 (for SOLIDWORKS 2015 and newer) and VBA6 for older versions. VBA6 and VBA7 are derived languages from Visual Basic 6. So all the syntax is the same. Refer [Visual Basic Tutorials](/visual-basic) for more documentation about this language.
 
 Macros are saved in the binary format with *.swb extension and can be viewed and edited by SOLIDWORKS VBA Editor only.
 
-### SWBasic Macros (*.swb)
+## SWBasic Macros (*.swb)
 
 Similar to *.swp macros these types of macros are based on VBA6 and VBA7 languages. The only difference that these macros are saved in plain text format with *.swp extensions.
 
@@ -25,7 +25,9 @@ Which makes it readable and editable outside of SOLIDWORKS environment with any 
 
 These macros cannot reference any 3rd party type libraries (such as Excel, File System Object, etc.) and will only include references to SOLIDWORKS type libraries. If it is required to use any 3rd party type library it is possible to do so via [Late binding](/visual-basic/variables/declaration/#early-binding-and-late-binding).
 
-### C# and VB.NET VSTA Macros
+Those macros will only have one [module](/visual-basic/modules/) and cannot use [classes](/visual-basic/classes/) or [user forms](/visual-basic/user-forms/).
+
+## C# and VB.NET VSTA Macros
 
 **V**isual **ST**udio for **A**pplication (VSTA) macros based on .NET language (C# or VB.NET) which provides more flexibility and leverages the power of .NET framework bringing the access to the big variety of libraries, 3rd party components and Object Oriented Programming (OOP) paradigms into the macros.
 

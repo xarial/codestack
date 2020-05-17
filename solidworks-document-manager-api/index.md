@@ -12,14 +12,14 @@ redirect-from:
 
 This section introduces you to SOLIDWORKS Document Manager - powerful stand-alone library supplied by SOLIDWORKS which exposes API and allows to read and write metadata directly from SOLIDWORKS files stream.
 
-### Benefits
+## Benefits
 
 * Free for customers or SOLIDWORKS partners (research, solution or gold) on subscription
 * Lightweight - library is about 13 MB in size
 * Stand-alone - doesn't require SOLIDWORKS to be installed in order to access the files
 * Quick - data is accessed directly from the stream without the need to load the full file into the memory
 
-### Supported Functionality
+## Supported Functionality
 
 Document Manager has a limited functionality compared to full SOLIDWORKS API. The following list are the main modules supported by Document Manager library.
 
@@ -49,7 +49,7 @@ Document Manager has a limited functionality compared to full SOLIDWORKS API. Th
 * Tesselation
 	* Getting the tessellation (triangulation) data (if stored in the model)
 
-### Application
+## Application
 
 List of possible applications which could be developed with SOLIDWORKS Document Manager API includes but not limited to the following types of software:
 

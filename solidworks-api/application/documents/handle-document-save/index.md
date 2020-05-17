@@ -21,7 +21,7 @@ Macro operates in the background and needs to be run once a session to start mon
 
 ~~~ vb
 Sub OnSaveDocument(Optional dummy As Variant = Empty)
-    'TODO: place the code here to run whn document is saved
+    'TODO: place the code here to run when document is saved
     MsgBox "Saved"
 End Sub
 ~~~

@@ -10,10 +10,10 @@ This PowerShell script allows generating model using SOLIDWORKS API based on the
 
 * Create two files and paste the code from the below snippets
 
-### model-generator.ps1
+## model-generator.ps1
 {% code-snippet { file-name: model-generator.ps1 } %}
 
-### model-generator.cmd
+## model-generator.cmd
 {% code-snippet { file-name: model-generator.cmd } %}
 
 Download [Template Model](template.SLDPRT) and save it to the same folder where the above two scripts are saved.

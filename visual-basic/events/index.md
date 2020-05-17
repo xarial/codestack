@@ -55,7 +55,7 @@ Public Sub DoWork()
 End Sub
 ~~~
 
-### EventsHandler Class Module
+## EventsHandler Class Module
 
 This class handles the event and displays the message box.
 
@@ -72,7 +72,7 @@ Private Sub myEventRaiser_Completed(timeStamp As String)
 End Sub
 ~~~
 
-### Macro11 Module
+## Macro11 Module
 
 This module is an entry point which instantiates an instance of the events handler and keeps it in the memory.
 

@@ -7,7 +7,7 @@ image: class-module-class-declaration.png
 order: 2
 ---
 
-### Enumerations
+## Enumerations
 Enumerations are Visual Basic data types which hold sets of integer constants. Enumerations are useful to define family of constants to be used by the developers (i.e. options).
 
 Refer [Enumerations](visual-basic/data-structures/enumerators) article for more information about enumerators.
@@ -21,13 +21,13 @@ myEnumVal = MyEnum_e.Val1 'assigning the enumerator explicitly stating the name 
 myEnumVal1 = Val1 'implicit assignment of the enumerator
 ~~~
 
-### Type
+## Type
 
 Visual Basic allows to create new data groups. Custom user-defined Type is a data type, also known as *Structure* which allows to define complex data storage. Types are useful when it is required to pass or store the data which consists of multiple elements (e.g. geometrical point, log entry, etc.)
 
 Refer [Custom User Defined Types](visual-basic/data-structures/types) article for more information about custom types.
 
-### Class
+## Class
 Unlike enumerations and types classes can only be created in separate Visual Basic class modules.
 
 ![MyClass class module is added to the Visual Basic project](class-module-class-declaration.png){ width=500 }

@@ -37,7 +37,7 @@ Messages will be output to trace window
 
 Use *eraser* button to clean messages (marked in blue)
 
-### Notes
+## Notes
 * Trace output is very powerful tool for troubleshooting the add-in on clients computers
 * DebugView tool is lightweight and doesn't require installation and is provided by Microsoft
 * Trace messages will be also output in the release mode

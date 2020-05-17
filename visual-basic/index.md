@@ -9,7 +9,7 @@ image: visual-basic.png
 
 This beginners friendly tutorial is designed to introduce the main features of Visual Basic programming language.
 
-### What is Visual Basic
+## What is Visual Basic
 
 Visual Basic is a Component Object Model (COM) based programming language and development environment (IDE) from Microsoft.
 
@@ -24,7 +24,7 @@ The main features of Visual Basic are
 * Ability to create executables (*.exe), ActiveX components and dlls
 * Automatic memory management using reference counting which allows to avoid memory leaking
 
-### History of Visual Basic
+## History of Visual Basic
 
 * 1991 - Visual Basic 1.0
 * 1992 - Visual Basic 2.0
@@ -35,7 +35,7 @@ The main features of Visual Basic are
 * 2008 - Declared legacy
 * 2010 - VBA 7.0 (based on Visual Basic) for x64 support
 
-### Versions of Visual Basic
+## Versions of Visual Basic
 
 [Visual Basic for Applications (VBA)](visual-basic/vba) - integrated environment for creating and executing macros used in a number of applications such as MS Office, SOLIDWORKS, AutoCAD, etc.
 

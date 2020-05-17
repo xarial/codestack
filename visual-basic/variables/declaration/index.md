@@ -6,7 +6,7 @@ description: Overview of declaration of variables and constants and assignment o
 image: option-explicit-variable-not-defined.png
 order: 3
 ---
-### Declaring variables
+## Declaring variables
 
 Variables can be declared either explicitly or implicitly in Visual Basic. To declare variable explicitly it is required to use *Dim* keyword or *Public* keyword to declare the variable as public class or module member (refer the [Variables Scope](visual-basic/variables/scope) article for more information).
 
@@ -34,7 +34,7 @@ This is not recommended approach as it may introduce the ambiguity and potential
 
 ![Compile error when Explicit option is enabled and implicit variable assignment is used](option-explicit-variable-not-defined.png){ width=300 }
 
-#### Declaring group of variables of the same type
+### Declaring group of variables of the same type
 
 Variables can be declared in the group.
 
@@ -44,7 +44,7 @@ Dim textVar1, textVar2, textVar3 As String '3 variables explicitly declared as S
 
 This approach allows to make code more readable and compact.
 
-#### Declaring group of variables with different types
+### Declaring group of variables with different types
 
 It is allowed to use declaration characters for each variable to declare the type explicitly using the short declaration
 
@@ -56,7 +56,7 @@ Refer the [Standard Types](visual-basic/variables/standard-types) article for th
 
 > This is a legacy way to declare the variables. This approach is not recommended way to declare the variables.
 
-### Assigning the values
+## Assigning the values
 
 In order to assign the value of the variable it is required to use equal (=) sign, where the variable name appears on the left and variable value appears on the right.
 
@@ -81,7 +81,7 @@ Dim funcRes As Double
 funcRes = GetValueFunc()
 ~~~
 
-### Declaring constants
+## Declaring constants
 
 Constant allows to define the value which will not change during execution. It is usually used for declaring mathematical constants (e.g. PI, gravitational constant, etc.), conversions factors (e.g. hours to minutes, inches to meters etc.) or any other program specific values.
 
@@ -101,7 +101,7 @@ This code example demonstrates different ways of declaring and assigning constan
 
 {% code-snippet { file-name: assigning-value-variables.vba } %}
 
-### Assigning reference variables
+## Assigning reference variables
 
 Unlike value types, [references types](visual-basic/variables/user-defined-types#class) must follow several additional rules when assigning the value.
 
@@ -121,7 +121,7 @@ See code below for the correct assignment of reference type variable.
 
 > References variables are only holding the pointer to the actual value, i.e. Set keyword assigns the reference (not the actual value like in value types). That means if reference of one variable is assigned to another variables, both of them now refer the same data.
 
-#### Early binding and late binding
+### Early binding and late binding
 
 Binding is a process of assigning object to a variable. When early binding is used the specific object type is declared in advanced so the binding can occur at compile time. Late binding is resolved at runtime and specific object type is not known in advance.
 

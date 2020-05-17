@@ -15,7 +15,7 @@ All generated controls have common properties which can be customized
 1. Custom control icon loaded from the image
 1. Tooltip of the control displayed on mouse hovering
 
-### Style
+## Style
 
 Common styles can be customized via [ControlOptionsAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_ControlOptionsAttribute.htm) by decorating the specific properties in data model.
 
@@ -25,13 +25,13 @@ This attribute allows to define the alignment, position, size as well as backgro
 
 ![Custom background and foreground colours applied to textbox](textbox-foreground-background.png)
 
-### Attribution
+## Attribution
 
-#### Tooltip
+### Tooltip
 
 Tooltip for controls can be set by applying the [DescriptionAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.descriptionattribute?view=netframework-4.0)
 
-#### Standard Icon
+### Standard Icon
 
 ![Standard icon added to text box control](standard-icon-textbox.png)
 
@@ -69,7 +69,7 @@ Use the below map of all available standard icons:
 1. swBitmapLabel_SelectProfile
 1. swBitmapLabel_SelectBoundary
 
-#### Custom Icon
+### Custom Icon
 
 Custom icon can be set via overloaded constructor of [ControlAttributionAttribute](https://docs.codestack.net/swex/pmpage/html/M_CodeStack_SwEx_PMPage_Attributes_ControlAttributionAttribute__ctor_1.htm) attribute
 

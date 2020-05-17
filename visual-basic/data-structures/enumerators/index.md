@@ -13,7 +13,7 @@ The main benefit of enumerator vs constant is an ability to group the constant u
 
 Enumerators are usually used to declare different options or actions (e.g. add, remove, delete, move, copy etc. ).
 
-### Declaration and assignment of enumerators
+## Declaration and assignment of enumerators
 
 Enumerator can be declared using **Enum - End Enum** code block where each constant declared on new line
 
@@ -39,7 +39,7 @@ enumVal = Val1
 
 {% code-snippet { file-name: declaration.vba } %}
 
-### Traversing enumerator values
+## Traversing enumerator values
 
 As enumerators are Long constants it is possible to traverse all the items by knowing the first and last one.
 
@@ -49,7 +49,7 @@ Visual basic allows to declare the special enumerators which are not visible in 
 
 {% code-snippet { file-name: traversing.vba } %}
 
-### Flag enumerator (multiple options)
+## Flag enumerator (multiple options)
 
 Enumerators can be useful to hold multiple options using bitmasks.
 

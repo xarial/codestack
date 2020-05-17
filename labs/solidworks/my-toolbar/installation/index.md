@@ -7,7 +7,7 @@ image: my-toolbar-upgrade.png
 toc-group-name: labs-solidworks-my-toolbar
 order: 2
 ---
-### Download
+## Download
 
 Latest version of the add-in can be downloaded from this link: [Version 2.2 (Beta)](https://github.com/codestackdev/my-toolbar/releases/tag/v2.2).
 
@@ -15,7 +15,7 @@ Download the *my-toolbar.msi* installer file.
 
 ![Download page for the MyToolbar installer](my-toolbar-installer.png){ width=450 }
 
-### Installation
+## Installation
 
 * Run downloaded *my-toolbar.msi* installer file
 * Follow the installation wizard
@@ -23,7 +23,7 @@ Download the *my-toolbar.msi* installer file.
 
 ![MyToolbar installation wizard](my-toolbar-setup.png){ width=350 }
 
-### Updates
+## Updates
 
 Every time add-in starts it checks if there any updates available on the server. If new version is available the following message is displayed:
 
@@ -31,7 +31,7 @@ Every time add-in starts it checks if there any updates available on the server.
 
 It is possible to see what's new features have been added or download new version by following the corresponding links.
 
-### Deinstallation
+## Deinstallation
 
 * Close SOLIDWORKS
 * Navigate to Windows Control Panel (*Control Panel\Programs\Programs and Features*) and locate *MyToolbar* application. Click uninstall

@@ -17,13 +17,13 @@ SOLIDWORKS API covers almost all functionality of SOLIDWORKS with the minor exce
 
 SOLIDWORKS API is used by SOLIDWORKS partners to develop bespoke solutions (add-ins). Follow [SOLIDWORKS Partner Products](http://www.solidworks.com/sw/products/search/results.htm) link for the list of registered solutions.
 
-### Application
+## Application
 
 * Automation software to reduce repetitive tasks (e.g. batch processing, commands grouping)
 * Specialized software (e.g. rendering, CAM, animation, steel fabrication, wood fabrication, etc.)
 * Additional commands
 
-### Notes
+## Notes
 
 * SOLIDWORKS API included in all packages of SOLIDWORKS (i.e. Standard, Professional and Premium).
 * SOLIDWORKS API Help is available [online](http://help.solidworks.com/2017/english/api/sldworksapiprogguide/welcome.htm)

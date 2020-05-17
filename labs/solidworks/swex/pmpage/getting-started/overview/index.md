@@ -9,7 +9,7 @@ order: 3
 ---
 ![Property Manager Page driven by data model](data-model-pmpage.png){ width=250 }
 
-### Data model
+## Data model
 
 Start by defining the data model required to be filled by property manager page.
 
@@ -17,7 +17,7 @@ Start by defining the data model required to be filled by property manager page.
 
 Use properties with public getters and setters
 
-### Events handler
+## Events handler
 
 Create handler for property manager page by inheriting the public class from 	
 [PropertyManagerPageHandlerEx](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_PropertyManagerPageHandlerEx.htm) class.
@@ -28,13 +28,13 @@ This class will be instantiated by the framework and will allow handling the pro
 
 > Class must be com visible and have public parameterless constructor.
 
-### Ignoring members
+## Ignoring members
 
 If it is required to exclude the members in the data model from control generation such members should be decorated with [IgnoreBindingAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_IgnoreBindingAttribute.htm)
 
 {% code-snippet { file-name: Overview.Ignore.* } %}
 
-### Creating instance
+## Creating instance
 
 Create instance of the property manager page by passing the type of the handler and data model instance into the generic arguments
 

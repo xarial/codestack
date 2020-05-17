@@ -27,7 +27,7 @@ Set dict = CreateObject("Scripting.Dictionary")
 
 Refer [Early Binding and Late Binding](visual-basic/variables/declaration#early-binding-and-late-binding) article for more information about these approaches.
 
-### Add, edit and traverse elements
+## Add, edit and traverse elements
 
 In order to add new key-value pair it is required to use **Add** method of **Dictionary** object
 
@@ -52,7 +52,7 @@ All values from the dictionary can be retrieved using the **Values** property.
 
 {% code-snippet { file-name: add-edit-traverse.vba } %}
 
-### Key compare mode
+## Key compare mode
 
 By default the compare mode for keys is set to **Binary** comparison. This means if dictionary has keys of type String the keys are case-sensitive, i.e. it is acceptable to have both *A* and *a* as the key.
 
@@ -69,7 +69,7 @@ Mode can only be changed for an empty dictionary (without values), otherwise the
 
 {% code-snippet { file-name: exists-compare.vba } %}
 
-### Remove elements
+## Remove elements
 
 Any element can be removed from the dictionary either by key or by 0-based index using **Remove** method.
 

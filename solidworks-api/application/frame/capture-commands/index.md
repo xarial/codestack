@@ -13,7 +13,7 @@ This could be in particularly useful when certain SOLIDWORKS APIs are not availa
 
 All commands have user friendly names however they could not always match the names in the user interface. This fact could make it hard to find the correct command (as there are currently more than 3000 commands available). For example Hide Sketch command in User Interface corresponds to *swCommands_Blank_Refgeom* command id.
 
-### Capturing standard commands
+## Capturing standard commands
 
 This macro helps to capture the id of command directly from SOLIDWORKS by clicking the required command.
 
@@ -29,7 +29,7 @@ The command id can be looked up in the the [commands list]((http://help.solidwor
 
 > It is not required to explicitly use [swCommands_e](http://help.solidworks.com/2012/english/api/swcommands/solidworks.interop.swcommands~solidworks.interop.swcommands.swcommands_e.html) enumeration as it is defined in another interop (*solidworks.interop.swcommands.dll*). Instead command id can be defined as an integer or custom enumeration.
 
-### Capturing commands from the custom add-ins
+## Capturing commands from the custom add-ins
 
 For the standard SOLIDWORKS commands, User Command argument will be equal to 0. However commands cannot be defined for any custom add-in or [Macro Buttons](solidworks-api/getting-started/macros/macro-buttons/)
 
@@ -41,7 +41,7 @@ Command would indicate the type of the button (minimized toolbar, menu, macro bu
 
 ![Capturing the commands from the custom add-in](capturing-user-command-id.png){ width=250 }
 
-### Creating macro
+## Creating macro
 
 * Add User Form module to the macro and name it *CommandsMonitorForm*
 

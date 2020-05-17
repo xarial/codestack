@@ -24,7 +24,7 @@ Property manager page style can be customized by applying the [PageOptionsAttrib
 
 Attributes allow to customize the buttons and behaviour of the page
 
-### Attribution
+## Attribution
 
 ![Property page with custom title, icon and message](pmpage-attributes.png)
 
@@ -36,7 +36,7 @@ Custom user message to provide additional information can be set via [MessageAtt
 
 {% code-snippet { file-name: Page.Attribution.* } %}
 
-### Help Links
+## Help Links
 
 ![Property page with help and what's new links](pmpage-help.png)
 

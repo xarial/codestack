@@ -14,3 +14,4 @@ This section contains the implementation of alternative workarounds to overcome 
 Several options of passing parameters to SOLIDWORKS VBA macros are explored and examples are provided.
 
 * [Via Clipboard](via-clipboard)
+* [Via SWB Macro](via-swb-macro)

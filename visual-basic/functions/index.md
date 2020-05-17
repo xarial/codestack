@@ -14,7 +14,7 @@ Functions can expect or return parameters (**ByRef** parameters) or be parameter
 
 Function which is invoking itself called **recursive function**
 
-### Declaring function
+## Declaring function
 
 Function is declared within the **Function**-**End Function** block
 
@@ -38,7 +38,7 @@ Functions and procedures must have unique name within module or class. Functions
 
 ![Compile error: Ambiguous name detected](ambiguous-name-detected.png){ width=300 }
 
-### Calling functions and subroutines
+## Calling functions and subroutines
 
 Function and subroutines can be called by specifying its name. If the function resides in different module than function name should be preceded by module name and . symbol
 
@@ -56,7 +56,7 @@ Call Func1()  'using () while calling using Call operator
 
 > **Rule:** no equal (or call operator) - no parenthesis.
 
-### Returning values
+## Returning values
 
 In order to return the value from function is is required to consider its name as variable and follow the same rules as while [assigning the variables values](visual-basic/variables/)
 
@@ -70,7 +70,7 @@ Function GetObject() As Object
 End Sub
 ~~~
 
-### Passing parameters
+## Passing parameters
 
 Parameters must be passed to the function or subroutine in the order they declared in the function
 
@@ -84,7 +84,7 @@ Func par1, par2, "value2" 'calling function Func with 3 parameters
 
 ![Compile error: Argument not optional](argument-not-optional.png){ width=300 }
 
-#### Reference parameters
+### Reference parameters
 
 Function or subroutine can return additional parameters. It is required to use **ByRef** keyword to declare parameter as out parameter.
 
@@ -93,7 +93,7 @@ Function Func(par1 As Double, ByRef outPar1 As Integer) As Double 'function expe
 End Function
 ~~~
 
-#### Optional parameters
+### Optional parameters
 
 Function or subroutine can declare optional parameters with the default values. In this case it is not required to explicitly set the value for the parameter when function is called.
 
@@ -117,7 +117,7 @@ Example below demonstrates cases where the optional parameters can be used.
 
 {% code-snippet { file-name: optional-parameters.vba } %}
 
-### Terminating function and subroutine
+## Terminating function and subroutine
 
 Function and subroutine can be terminated and control returned to the caller at any stage using the **Exit Function** and **Exit Sub** respectively.
 
