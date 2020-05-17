@@ -13,11 +13,11 @@ This macro can be used as a translator macro to rename feature tree form one lan
 
 For example this feature tree is in Russian language:
 
-![Feature tree in Russian language](feature-tree-rus.png){ width=350 }
+![Feature tree in Russian language](feature-tree-rus.png){ width=150 }
 
 It can be renamed to English language equivalent:
 
-![Feature tree in English version](feature-tree-eng.png){ width=350 }
+![Feature tree in English version](feature-tree-eng.png){ width=150 }
 
 ## Configuration
 

@@ -24,6 +24,6 @@ Once selection completed and green tick is clicked new feature is added to the f
 
 Original bodies are acquired by new feature. The bodies outside of the region will be removed by macro feature.
 
-![Crop bodies feature in the feature manager tree](crop-body-feature.png){ width=450 }
+![Crop bodies feature in the feature manager tree](crop-body-feature.png){ width=300 }
 
 Feature can be edited, removed and rollbacked as any other feature.

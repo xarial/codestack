@@ -42,7 +42,8 @@ In this case your program will connect to the version last installed or modified
 To use version specific program identifier it is required to specify the revision number after the program identifier, i.e. **"SldWorks.Application.RevisionNumber"**.
 Please refer the table below for the list of SOLIDWORKS versions and its revision numbers:
 
-**Version**|**Revision**
+Version|Revision
+----|----
 SOLIDWORKS 2005|13
 SOLIDWORKS 2006|14
 SOLIDWORKS 2007|15

@@ -10,6 +10,8 @@ Transformation in SOLIDWORKS API is represented in the [IMathTransform](http://h
 
 Matrix array is represented with 16 doubles (0 to 15) which are aligned in the following order
 
+|||||
+|-|-|-|-|
 |0|1|2|13|
 |3|4|5|14|
 |6|7|8|15|
