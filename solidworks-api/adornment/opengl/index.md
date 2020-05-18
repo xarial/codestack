@@ -18,4 +18,6 @@ OpenGL is the most popular cross-platform library for high performance rendering
 
 OpenGL graphics should be rendered within the [BufferSwapNotify](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.dmodelviewevents_bufferswapnotifyeventhandler.html) event of [IModelView](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModelView.html) interface.
 
+Such technique of rendering can be useful when it is required to display complex graphics or animation, but creating temp or permanent geometry can be performance consuming or impossible due to the other constraints.
+
 Explore this section for code examples and macros which demonstrate the usage of OpenGL to render objects in views using SOLIDWORKS API.

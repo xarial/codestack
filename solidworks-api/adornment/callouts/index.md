@@ -12,6 +12,8 @@ Callouts are temp objects and usually destroyed after selection is cleared or op
 
 The most common example of callouts in SOLIDWORKS is a Measure tool. When entities are selected the measurement results are displayed in the callouts.
 
-SOLIDWORKS API enables the ability for creating callouts via the [ISwCalloutHandler Interface](http://help.solidworks.com/2018/english/api/swpublishedapi/solidworks.interop.swpublished~solidworks.interop.swpublished.iswcallouthandler.html) interface. THis handler allows to create a definition of the callout and handle related events.
+SOLIDWORKS API enables the ability for creating callouts via the [ISwCalloutHandler Interface](http://help.solidworks.com/2018/english/api/swpublishedapi/solidworks.interop.swpublished~solidworks.interop.swpublished.iswcallouthandler.html) interface. This handler allows to create a definition of the callout and handle related events.
+
+Callouts can be displayed read-only or can capture the values, entered by users. Callouts can have different colors or be a single or multi rows.
 
 This section contains macros and code examples utilizing SOLIDWORKS API to create, display and handle events of the callouts.
