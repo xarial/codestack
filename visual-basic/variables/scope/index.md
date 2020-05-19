@@ -14,13 +14,17 @@ Usually declared in the header of the class (outside of functions and procedures
 
 ### Private
 
-Declared using *Dim* keyword and only visible by the function and procedures within the scope of this class or module.
+Declared using *Dim* or *Private* keyword and only visible by the function and procedures within the scope of this class or module.
 
 *Module1*
+
 ~~~vb
 Dim member As Integer
+Private member1 As String
+
 Sub Init()
     member = 10 'visible within the Init function of the Module
+    member1 = "A"
 End Sub
 ~~~
 
@@ -30,25 +34,27 @@ Private variables cannot be accessed from outside of the module or class. Compil
 
 ### Public
 
-Public variables declared using the *Public* keyword and can be accessed both from current module or class and external module or class
+Public variables declared using the *Public* keyword and can be accessed both from current module or class and external module or class.
 
 *Module1*
-~~~vb
+~~~vb jagged
 Dim publicMember As Integer
 ~~~
 
 *Module2*
-~~~vb
+~~~vb jagged
 Sub main()
-Module1.publicMember = 20 'variable is accessed and assigned from the external module
+    Module1.publicMember = 20 'variable is accessed and assigned from the external module
 End Sub
 ~~~
+
+Alternatively public member can be declared with the *Global* keyword. It will act exactly the same as *Public* however can only be declared within the [module](/visual-basic/modules/) and cannot be declared in the [user form](/visual-basic/user-forms/) or [class module](/visual-basic/classes/).
 
 ## Local
 
 Local variables declared in the scope of specific code block or function and only visible within that block for the code appearing after the declaration of the variable
 
-~~~ vb
+~~~ vb jagged
 Dim var1 As Double
 var1 = 0.5 'var1 is visible here
 var2 = 0.25 'var2 is not visible at this step as it is declared in the next line
@@ -58,7 +64,7 @@ Dim var2 As Double
 ### Code block
 Variables defined in the loops or conditional statements
 
-~~~ vb
+~~~ vb jagged
 If res Then
     Dim localVar As Integer 'local variable defined within the If code block
     localVar = 25
@@ -105,3 +111,55 @@ This example demonstrates the behaviour of variables declared in the different s
 Output to [Immediate Window](visual-basic/vba/vba-editor/windows#immediate-window)
 
 ![Output of variable values](immediate-window-output.png){ width=350 }
+
+## Scope Table
+
+Given the following project structure:
+
+![VBA project](vb-project.png)
+
+Each of the files has the following declarations:
+
+### UserForm
+
+~~~ vb jagged
+Public VarFormPublic As String
+Private VarFormPrivate As String
+Dim VarFormDim As String
+Dim VarFormGlobal As String 'cannot be declared
+~~~
+
+### Module
+
+~~~ vb jagged
+Public VarModulePublic As String
+Global VarModuleGlobal As String
+Dim VarModuleDim As String
+Private VarModulePrivate As String
+~~~
+
+### Class
+
+~~~ vb jagged
+Public VarClassPublic As String
+Dim VarClassDim As String
+Private VarClassPrivate As String
+Dim VarClassGlobal As String 'cannot be declared
+~~~
+
+Table below describes the visibility of variables across different files
+
+|Variable Name|UserForm|Module|Module1|Class
+|---|---|--|--|--|
+VarFormPublic|✓|✓|✓|✓|
+VarFormPrivate|✓|☓|☓|☓|
+VarFormDim|✓|☓|☓|☓|
+VarFormGlobal|-|-|-|-|
+VarModulePublic|✓|✓|✓|✓|
+VarModuleGlobal|✓|✓|✓|✓|
+VarModuleDim|☓|✓|☓|☓|
+VarModulePrivate|☓|✓|☓|☓|
+VarClassPublic|✓|✓|✓|✓|
+VarClassPrivate|☓|☓|☓|✓|
+VarClassDim|☓|☓|☓|✓|
+VarClassGlobal|-|-|-|-|
