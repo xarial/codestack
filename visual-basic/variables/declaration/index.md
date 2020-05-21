@@ -1,14 +1,14 @@
 ---
 layout: article
-title: Variables and Constants in Visual Basic
-caption: Variables and Constants Declaration and Assignment
+title: Declaration and assignment of variables and constants in Visual Basic
+caption: Variables and Constants
 description: Overview of declaration of variables and constants and assignment of values in Visual Basic
 image: option-explicit-variable-not-defined.png
 order: 3
 ---
 ## Declaring variables
 
-Variables can be declared either explicitly or implicitly in Visual Basic. To declare variable explicitly it is required to use *Dim* keyword or *Public* keyword to declare the variable as public class or module member (refer the [Variables Scope](visual-basic/variables/scope) article for more information).
+Variables can be declared either explicitly or implicitly in Visual Basic. To declare variable explicitly it is required to use *Dim* keyword or *Public* keyword to declare the variable as public class or module member (refer the [Variables Scope](/visual-basic/variables/scope) article for more information).
 
 Type of the variable can be declared using *As* keyword.
 
@@ -16,7 +16,7 @@ Type of the variable can be declared using *As* keyword.
 Dim textVal As String
 ~~~
 
-> If type of the variable is not explicitly stated than it is defaulted to [Variant](visual-basic/variables/standard-types#variant)
+> If type of the variable is not explicitly stated than it is defaulted to [Variant](/visual-basic/variables/standard-types#variant)
 
 ~~~ vb
 Dim varVal 'implicitly declared as Variant
@@ -52,7 +52,7 @@ It is allowed to use declaration characters for each variable to declare the typ
 Dim intVar%, doubleVar#, longVar& 'Integer, Double and Long variables are declared explicitly using short declaration
 ~~~
 
-Refer the [Standard Types](visual-basic/variables/standard-types) article for the list of declaration characters.
+Refer the [Standard Types](/visual-basic/variables/standard-types) article for the list of declaration characters.
 
 > This is a legacy way to declare the variables. This approach is not recommended way to declare the variables.
 
@@ -74,7 +74,7 @@ var1 = 10
 var2 = var1 'value of var2 now equals to var1 which equals to 10
 ~~~
 
-It is possible to assign the value to the variable as the result of calling another function. Refer [Functions and Procedures](visual-basic/functions) article on more information about functions.
+It is possible to assign the value to the variable as the result of calling another function. Refer [Functions and Procedures](/visual-basic/functions) article on more information about functions.
 
 ~~~ vb
 Dim funcRes As Double
@@ -103,7 +103,7 @@ This code example demonstrates different ways of declaring and assigning constan
 
 ## Assigning reference variables
 
-Unlike value types, [references types](visual-basic/variables/user-defined-types#class) must follow several additional rules when assigning the value.
+Unlike value types, [references types](/visual-basic/variables/user-defined-types#class) must follow several additional rules when assigning the value.
 
 ![Custom User Defined Type](user-type-declaration.png){ width=200 }
 
@@ -154,4 +154,4 @@ Benefits of early binding
 
 Benefits of late binding
 
-* No need to maintain 3rd party references which may be an issue when code is ported to another environment or another version of 3rd party references is released. Refer this [Example of references issue](solidworks-api/troubleshooting/macros/missing-solidworks-type-library-references)
+* No need to maintain 3rd party references which may be an issue when code is ported to another environment or another version of 3rd party references is released. Refer this [Example of references issue](/solidworks-api/troubleshooting/macros/missing-solidworks-type-library-references)

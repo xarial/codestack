@@ -10,6 +10,8 @@ group: Import/Export
 ---
 This console application developed in C# allows to export SOLIDWORKS, DXF, DWG, eDrawings files to foreign format (.jpg, .tif, .bmp, .stl, .exe, .htm, .zip, .edrw, .eprt, and .easm) using free version of SOLIDWORKS eDrawings via its API. It is not required to have SOLIDWORKS installed or use its license to use this tool.
 
+This functionality has been integrated into the [xPort](https://cadplus.xarial.com/xport/) utility.
+
 ## Running the tool
 
 This application can be run from the command line and with the following parameters:
