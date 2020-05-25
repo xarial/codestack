@@ -25,7 +25,7 @@ Follow the steps below:
 
 ![Options for Document Manager Key](doc-mgr-key-options.png){ width=320 height=95 }
 
-* Fill the request form and select the functionality required for your software (refer [Supported Functionality]({{ 'solidworks-document-manager-api/#supported-functionality' | relative_url }}) section to select the right functions)
+* Fill the request form and select the functionality required for your software (refer [Supported Functionality](solidworks-document-manager-api/#supported-functionality) section to select the right functions)
 
 ![Document Manager supported functionality](dm-functionality.png){ width=320 height=246 }
 
