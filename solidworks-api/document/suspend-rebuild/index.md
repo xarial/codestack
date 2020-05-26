@@ -3,7 +3,7 @@ layout: sw-tool
 title: Macro to suspend rebuild operation in SOLIDWORKS model using API
 caption: Suspend Rebuild Operation
 description: This macro allows to suspend rebuild operation for parts, assemblies and drawings to enhance the performance using SOLIDWORKS API
-image: suspend-rebuild-form.png
+image: suspended-rebuild.svg
 labels: [api, rebuild, utility, suspend, performance]
 group: Performance
 ---

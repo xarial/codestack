@@ -3,7 +3,7 @@ layout: sw-tool
 title: Macro to update XYZ curve from the linked file using SOLIDWORKS API
 caption: Update XYZ Curve From File
 description: VBA macro which updates coordinates of the free form (through XYZ points) curve from the linked external text file
-image: curve-file.png
+image: curve.svg
 labels: [curve,linked,xyz,free form curve]
 group: Model
 ---

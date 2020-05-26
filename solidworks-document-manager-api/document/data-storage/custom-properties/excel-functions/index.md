@@ -2,7 +2,7 @@
 layout: sw-tool
 title: Excel macro to manage custom properties in SOLIDWORKS files
 caption: Manage Properties In Excel
-description: Excel macro which allows very fast way to manage (read and write) custom properties in a batch directly from Excel spreadsheet
+description: Excel macro which allows very fast way to manage (read and write) SOLIDWORKS custom properties in a batch directly from Excel spreadsheet
 image: excel-custom-properties.svg
 labels: [dm, excel, custom properties]
 group: Custom Properties
@@ -34,6 +34,8 @@ Const SW_DM_KEY As String = "<Your License Key>"
 
 ## Usage
 
+{% youtube id: a068ht0rDQQ %}
+
 Macro will add 2 functions into the Excel functions scope which can be used as any other function in Excel
 
 ![Excel function added to the list](excel-function.png)
@@ -52,7 +54,7 @@ When multiple properties need to be written or read, use Excel ranges to maximiz
 
 ### GETSWPRP
 
-This function allows to extract the values of specified property from file or a given configuration
+This function allows to extract the values of specified property from file or a given configuration. Error is thrown attempting to read the property which not exists.
 
 #### Parameters
 
@@ -62,7 +64,7 @@ This function allows to extract the values of specified property from file or a 
 
 ### SETSWPRP
 
-Writes properties to the specified SOLIDWORKS file into the specified configuration
+Writes properties to the specified SOLIDWORKS file into the specified configuration. This function will either update existing property or create new if not exists.
 
 #### Parameters
 
@@ -80,5 +82,7 @@ In case of an error the corresponding cell will indicate this:
 To find more about the error. Open the macro and inspect immediate window output
 
 ![Error displayed in VBA Immediate Window](immediate-window-error.png)
+
+Descriptions of open error code can be found [here](https://help.solidworks.com/2015/English/api/swdocmgrapi/SolidWorks.Interop.swdocumentmgr~SolidWorks.Interop.swdocumentmgr.SwDmDocumentOpenError.html)
 
 > It is strongly recommended to test this macro on sample data before using on production file. And also it is strongly recommended to backup the data before using this macro.
