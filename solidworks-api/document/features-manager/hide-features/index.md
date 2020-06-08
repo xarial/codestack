@@ -1,5 +1,4 @@
 ---
-layout: article
 title: VBA macro to hide all selected features from the SOLIDWORKS file tree
 caption: Hide Features In The Tree
 description: VBA macro which hides features and makes them invisible in the SOLIDWORKS Feature Manager tree

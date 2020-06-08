@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Defining commands buttons in SOLIDWORKS toolbar using SwEx.AddIn framework
 caption: Defining Commands
 description: Explanations on the ways of defining the commands in groups using SwEx framework for SOLIDWORKS add-ins in C# and VB.NET

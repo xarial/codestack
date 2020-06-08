@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Select components associated with attributes using SOLIDWORKS API
 caption: Select The Components Associated With Attributes On Select
 description: Example attaches to the selection events of the active assembly

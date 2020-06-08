@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Traverse feature manager nodes using SOLIDWORKS API
 caption: Traverse Feature Nodes
 description: Example demonstrates how to traverse nodes in the Feature Manager Tree using SOLIDWORKS API

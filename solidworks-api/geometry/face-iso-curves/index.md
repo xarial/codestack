@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Macro to create ISO curves for face using SOLIDWORKS API
 caption: Create ISO Curves For Face
 description: Example demonstrates how to find specified number of iso-curves in the u and v bounds of the selected face using SOLIDWORKS API

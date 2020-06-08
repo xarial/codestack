@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Overview of SwEx.MacroFeature framework for SOLIDWORKS add-ins
 caption: Overview
 description: Generic overview of macro feature and SwEx.MacroFeature framework

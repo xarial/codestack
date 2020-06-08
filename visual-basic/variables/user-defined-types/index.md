@@ -1,5 +1,4 @@
 ---
-layout: article
 title: 'Visual Basic data structures: objects, types, enumerations'
 caption: User Defined Types
 description: Overview of user defined types in Visual Basic (i.e. objects, types, enumerations) in Visual Basic

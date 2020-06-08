@@ -1,5 +1,4 @@
 ---
-layout: article
 title: User Defined Types in Visual Basic
 caption: Types
 description: Article explaining usage of custom user defined types (aka Structures) in Visual Basic

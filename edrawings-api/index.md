@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Tutorials and code examples of SOLIDWORKS eDrawings API
 caption: eDrawings API
 description: Overview of SOLIDWORKS eDrawings API, examples, tutorials and code snippets

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Working with geometry (IModeler) using SOLIDWORKS API
 caption: Geometry
 description: Collection of examples and articles related to SOLIDWORKS model geometry topology.

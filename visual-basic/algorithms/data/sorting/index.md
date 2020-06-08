@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Sorting data in Visual Basic 6 (VBA)
 caption: Sorting
 description: Code example of various method of sorting data in Visual Basic 6 (VBA)

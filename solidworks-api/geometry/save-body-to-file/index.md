@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Save the selected body into external file using SOLIDWORKS API
 caption: Save Body To File
 description: VBA example to serialize the selected body as binary file using SOLIDWORKS API

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Writing the binary content into the file using Visual Basic (VBA)
 caption: Write Binary File
 description: Function to write the binary content of byte array into a file using Visual Basic (VBA)

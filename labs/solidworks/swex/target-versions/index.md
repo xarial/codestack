@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Target multiple SOLIDWORKS versions using SwEx framework
 caption: Target Multiple Versions
 description: How to target multiple versions of the SOLIDWORKS with the same code base using SwEx framework

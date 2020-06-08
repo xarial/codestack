@@ -1,5 +1,4 @@
 ---
-layout: article
 title: How to create SOLIDWORKS PDM Professional (EPDM) add-in
 caption: How To Create SOLIDWORKS PDM Professional Add-In
 description: Detailed guide for creating add-in to SOLIDWORKS PDM Professional (formerly EPDM)

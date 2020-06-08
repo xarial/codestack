@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Get sketch lines of sheet metal sketched bend using SOLIDWORKS API
 caption: Get Sketch Lines For Sheet Metal Sketched Bend Feature
 description: Finds all straight lines (bends) of the sheet metal Sketched Bend feature and selects all segments

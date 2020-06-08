@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Create temp solid body box using SOLIDWORKS API and IModeler interface
 caption: Create Box Body
 description: VBA example to create a temp body by center point, direction and size using SOLIDWORKS API and IModeler interface

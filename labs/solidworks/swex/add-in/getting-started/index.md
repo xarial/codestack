@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Getting Started with SwEx.AddIn to develop advanced add-ins for SOLIDWORKS
 caption: Getting Started
 description: Instructions on getting started with SwEx.AddIn framework for developing SOLIDWORKS add-ins in C# and VB.NET

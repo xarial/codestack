@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Debugging SOLIDWORKS PDM Add-In - Best Practices
 caption: Debugging SOLIDWORKS PDM Add-In - Best Practices
 description: Detailed guide for debugging the SOLIDWORKS PDM Add-In. Simplified debugging using the Vault Browser tool

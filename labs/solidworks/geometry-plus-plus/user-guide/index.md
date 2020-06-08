@@ -1,5 +1,4 @@
 ---
-layout: article
 title: 'User Guide: Geometry++ add-in for SOLIDWORKS'
 caption: User Guide
 description: Geometry++ add-in for additional geometry commands for SOLIDWORKS usage instructions

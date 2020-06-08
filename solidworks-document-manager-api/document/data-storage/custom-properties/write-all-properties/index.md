@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Write custom properties to all sources using Document Manager API
 caption: Write All Properties
 description: VBA macro to write custom properties to all sources (file, configuration, cut-list items) using Document Manager API

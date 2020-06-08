@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Catch new feature creation event from SOLIDWORKS API notification
 caption: Catch New Feature Creation Event
 description: Example listens for feature added event of the active part document and displays the message box

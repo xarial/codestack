@@ -1,5 +1,4 @@
 ---
-layout: article
 title: 'Getting started: Developing applications with SOLIDWORKS API'
 caption: Getting Started
 description: Detailed guides of getting started with developing applications for SOLIDWORKS via API

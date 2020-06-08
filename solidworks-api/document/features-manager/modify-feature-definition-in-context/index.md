@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Edit feature in the context of the assembly using SOLIDWORKS API
 caption: Edit Feature In The Context Of The Assembly
 description: Example demonstrates how to modify feature definition in the context of the assembly

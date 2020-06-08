@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Script extract mass properties of file using SOLIDWORKS API
 caption: Get Mass Properties
 description: Example demonstrates how to extract mass properties form the specified file using vbScript and SOLIDWORKS API

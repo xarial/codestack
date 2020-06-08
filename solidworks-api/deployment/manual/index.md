@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Installing SOLIDWORKS add-in by manual registration
 caption: Manual
 description: Article explains how to deploy and register SOLIDWORKS add-in manually

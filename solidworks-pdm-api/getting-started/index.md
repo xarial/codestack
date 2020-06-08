@@ -1,5 +1,4 @@
 ---
-layout: article
 title: 'Getting Started: SOLIDWORKS PDM API Development'
 caption: Getting Started
 description: Introduction to SOLIDWORKS PDM API, explanation of different ways of accessing API from add-ins and stand-alone applications

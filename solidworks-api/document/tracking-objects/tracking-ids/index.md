@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Tracking IDs in SOLIDWORKS API to track entities across operations
 caption: Tracking IDs
 description: This example demonstrates the use of tracking ids on face while running the merge body operation

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Get the pointer to component from name using SOLIDWORKS API
 caption: Get Component By Name
 description: Example demonstrates how to get the pointer to the component at any level of the assembly from its full name

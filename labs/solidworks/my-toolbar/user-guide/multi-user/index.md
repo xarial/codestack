@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Sharing the SOLIDWORKS toolbars using MyToolbar in multi-user environment
 caption: Multi-User
 description: Sharing the SOLIDWORKS toolbars and macro buttons using MyToolbar with multiple users

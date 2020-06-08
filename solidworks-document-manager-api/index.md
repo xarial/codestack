@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Introduction to SOLIDWORKS Document Manager API
 caption: Document Manager API
 description: Collection of examples and articles utilizing SOLIDWORKS Document Manager library

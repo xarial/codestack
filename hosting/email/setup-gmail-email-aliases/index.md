@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Setup E-Mail aliases in Gmail to send e-mail from custom domain
 caption: Setup E-Mail Aliases In Gmail
 description: Guide to setup e-mail aliases of custom domains when sending e-mails from Gmail

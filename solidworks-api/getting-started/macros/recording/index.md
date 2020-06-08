@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Recording and editing macros in SOLIDWORKS
 caption: Recording Macros
 description: This article explains how to record the macro commands

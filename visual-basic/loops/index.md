@@ -1,5 +1,4 @@
 ---
-layout: article
 caption: Loops
 title: Usage of for, while, for each, do loops in Visual Basic
 description: Article explaining loops (while-wend, for-next, for each-next, do-while) and traversing techniques

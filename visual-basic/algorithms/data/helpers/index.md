@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Helper functions for Visual Basic 6
 caption: Helpers
 description: Various helper function to overcome the limitations of Visual Basic 6

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Visual Basic for Applications (VBA)
 description: Introduction to Visual Basic for Applications (VBA)
 order: 1

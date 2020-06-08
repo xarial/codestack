@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Get and select all visible components in assembly using SOLIDWORKS API
 caption: Get And Select Visible Components Only
 description: VBA macro example to get and select all visible components (not suppressed and not hidden) using SOLIDWORKS API

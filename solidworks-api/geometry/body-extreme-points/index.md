@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Macro gets extreme points on body using SOLIDWORKS API
 caption: Get Extreme Points On Body
 description: Example will find the extreme points of the selected body in XYZ directions and create a sketch points

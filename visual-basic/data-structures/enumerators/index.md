@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Enumerations in Visual Basic (VBA)
 caption: Enumerations
 description: Introduction to enumeration data types (collection of predefined long constants) in Visual Basic

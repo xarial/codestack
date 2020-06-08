@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Button control in SOLIDWORKS property Manager Page
 caption: Button
 description: Creating button control in the Property Manager Page using SwEx.PMPage framework

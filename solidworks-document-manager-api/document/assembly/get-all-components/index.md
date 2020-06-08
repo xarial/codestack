@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Get all assembly components using SOLIDWORKS Document Manager API
 caption: Get All Components
 description: Example demonstrates how to get all components on all levels from the document using the Document Manager API

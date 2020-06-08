@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Sketch++ - SOLIDWORKS add-in which enables advanced sketch functionality
 caption: Sketch++
 description: Utilities for complimenting sketch functionality in SOLIDWORKS

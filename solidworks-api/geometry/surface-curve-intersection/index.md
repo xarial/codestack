@@ -1,5 +1,4 @@
 ---
-layout: article
 title: SOLIDWORKS macro finds intersection points between surface and curve
 caption: Find Intersection Points Between Surface And Curve
 description: Example demonstrates how to find the intersection points between selected plane or face with edge or sketch segment

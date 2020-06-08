@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Get files paths from folder using Visual Basic 6 (VBA)
 caption: Get Files From Folder
 description: Function to get the list of all files in the folder with an option to traverse sub directories and specify the file extension using Visual Basic 6 (VBA)

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Change apply appearance option in material using SOLIDWORKS API
 caption: Change Apply Appearance Option In Material
 description: Example demonstrates how to change the Apply Appearance option in the material options

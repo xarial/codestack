@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Storing data in the 3rd party storage (stream) via SwEx.AddIn framework
 caption: Stream
 description: Serializing custom structures into the 3rd party storage (stream) using SwEx.AddIn framework

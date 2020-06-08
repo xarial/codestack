@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Split SOLIDWORKS body by faces using Geometry++
 caption: Split Body By Faces
 description: Feature allows splitting solid or surface body(es) by faces creating individual sheet bodies

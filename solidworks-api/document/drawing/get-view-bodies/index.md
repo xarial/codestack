@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Get bodies and materials from drawing view using SOLIDWORKS API
 caption: Get Bodies And Materials From Drawing View
 description: VBA macro to find bodies and their materials of the selected drawing view (including sheet metal flat pattern) using SOLIDWORKS API

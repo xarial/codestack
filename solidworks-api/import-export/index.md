@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Importing and exporting files using SOLIDWORKS API
 caption: Import/Export
 description: Collection of examples and articles related to files importing and exporting using SOLIDWORKS API

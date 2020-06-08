@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Automating Motion Study using SOLIDWORKS API
 caption: Motion Study
 description: Collection of articles and examples related to SOLIDWORKS Motion Study API

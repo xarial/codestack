@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Replace references in components or drawing views using SOLIDWORKS Document Manager API
 caption: Replace References
 description: Example demonstrates how to replace references (components or drawing views) in SOLIDWORKS files using Document Manager API

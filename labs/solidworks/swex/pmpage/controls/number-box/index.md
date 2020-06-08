@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Number Box in SOLIDWORKS Property Manager Page
 caption: Number Box
 description: Overview of options applied to Number Box control

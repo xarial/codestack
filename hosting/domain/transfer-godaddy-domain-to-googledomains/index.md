@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Transfer domain host from GoDaddy to Google Domains
 caption: Transfer GoDaddy Domain To Google Domains
 description: Detailed guide of transferring domain host from GoDaddy to Google Domains

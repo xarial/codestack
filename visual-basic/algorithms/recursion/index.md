@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Using of recursion techniques in Visual Basic
 caption: Recursion
 description: Explanation of recursion and usage in Visual Basic to output the structure of the Bill Of Materials (BOM)

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Utilizing SOLIDWORKS API methods in Java Script
 caption: Java Script
 description: Examples demonstrating how to call SOLIDWORKS API from JavaScript in internet browser via ActiveXObject

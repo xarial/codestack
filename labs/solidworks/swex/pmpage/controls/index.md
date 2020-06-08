@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Adding and customizing controls to Property Manager page 
 caption: Controls
 description: Overview of controls supported by the SwEx.PMPage framework and the customization and decoration options

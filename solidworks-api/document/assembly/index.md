@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Automating assemblies using SOLIDWORKS API
 caption: Assembly
 description: Assemblies automation (components, BOM, contexts) using SOLIDWORKS API

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Functions, subroutines and parameters in Visual Basic
 caption: Functions and Subroutines
 description: Articles about using functions and subroutines (procedures) in Visual Basic as well as parameters

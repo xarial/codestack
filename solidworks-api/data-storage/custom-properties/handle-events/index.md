@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Handle custom properties modification events (add, delete, change) using SOLIDWORKS API
 caption: Handle Modification Events
 description: Handling all events related to the modification of general or configuration specific custom properties from the SOLIDWORKS API. Workaround for the issue when AddCustomPropertyNotify, DeleteCustomPropertyNotify, ChangeCustomPropertyNotify events are not raised

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Managing user preferences of the document using SOLIDWORKS API
 caption: Document Options
 description: Collection of articles and examples which demonstrate how to control document options (user preferences) using SOLIDWORKS API

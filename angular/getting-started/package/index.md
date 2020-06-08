@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Angular package.json file overview
 caption: Package File Overview
 description: Overview of a package.json file to manage Angular project

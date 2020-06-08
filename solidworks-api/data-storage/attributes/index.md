@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Using attributes in SOLIDWORKS API to store data and selections
 caption: Attributes
 description: This article example the use of attributes (adding parameters, associating with objects)

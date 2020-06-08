@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Using internal IDs of SOLIDWORKS objects from API
 caption: Internal IDs
 description: This article explains the use of internal ids and the ways to read the ids from the objects

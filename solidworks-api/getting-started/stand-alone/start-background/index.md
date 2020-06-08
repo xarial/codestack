@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Starting SOLIDWORKS application in background (hidden)
 caption: Start In Background
 description: Instructions of how to start SOLIDWORKS application to be used by stand-alone automation tool in background (hidden)

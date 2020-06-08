@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Add Tag to selected note using SOLIDWORKS API
 caption: Add Tag To Selected Note
 description: Example demonstrates how to add text tag to the selected note in SOLIDWORKS model

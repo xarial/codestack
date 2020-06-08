@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Customizing SOLIDWORKS PDM convert task using API
 caption: Customizing SOLIDWORKS PDM Convert Task
 description: Guide of changing the script for the standard task. Custom utility to simplify the debugging of the PDM tasks

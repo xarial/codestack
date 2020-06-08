@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Macro to suspend graphics update using SOLIDWORKS API
 caption: Suspend Graphics Update
 description: Example demonstrates how to suppress graphics update while performing the operations using SOLIDWORKS API

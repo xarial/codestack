@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Selecting SOLIDWORKS Objects for API only
 caption: Selecting Objects For API Only
 description: Example shows how to select the object for API purpose only (without graphics selection) preserving current user selections

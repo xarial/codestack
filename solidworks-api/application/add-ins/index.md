@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Developing C++, C#, VB.NET add-ins for SOLIDWORKS using API
 caption: Add-ins
 description: Examples and articles explaining how to work with add-ins in SOLIDWORKS

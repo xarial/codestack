@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Managing selection of SOLIDWORKS macro feature
 caption: Selections
 description: Managing selections of SOLIDWORKS macro feature using the SwEx.MacroFeature framework

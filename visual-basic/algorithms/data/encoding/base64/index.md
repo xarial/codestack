@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Encoding and decoding data in Base64 string format in Visual Basic 6 (VBA)
 caption: Base64 String
 description: Encoding and decoding byte array into Base64 string format in Visual Basic 6 (VBA)

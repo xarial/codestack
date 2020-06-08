@@ -1,5 +1,4 @@
 ---
-layout: article
 title: How to create stand-alone (exe) applications using SOLIDWORKS API
 caption: Stand-Alone Application
 description: Two approaches to connect to SOLIDWORKS instance from the COM-compatible programming languages

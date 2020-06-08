@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Tables (BOM, General, Revision etc.) automation using SOLIDWORKS API
 caption: Tables
 description: Article explaining the functions to work with tables (Bill of Materials, General, Weldment Cut List, Holes Table) using SOLIDWORKS API

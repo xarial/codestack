@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Installation of SOLIDWORKS add-ins, macros and stand-alone
 caption: Deployment
 description: Guides and examples of deploying add-ins, macros and stand-alone applications for SOLIDWORKS

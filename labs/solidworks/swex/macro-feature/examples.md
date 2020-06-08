@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Examples with source code built using SwEx.MacroFeature framework for SOLIDWORKS API
 caption: Examples
 description: Collection of examples using the SwEx.MacroFeature framework for SOLIDWORKS API

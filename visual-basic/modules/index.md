@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Modules in Visual Basic
 caption: Modules
 description: Article explain the usage of modules for storing the shareable functions and variables in Visual Basic

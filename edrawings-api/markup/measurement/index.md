@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Capture measurement of SOLIDWORKS entities using eDrawings markup API
 caption: Capturing Measurements
 description: Performing measurements capturing of the entities in the SOLIDWORKS model into a text box using eDrawings markup API

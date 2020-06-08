@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Understanding transforms in sketches while using SOLIDWORKS API
 caption: Understanding Sketch Transforms
 description: Explanation of model to sketch and sketch to model transformations in SOLIDWORKS API to properly calculate the coordinates of sketch segments

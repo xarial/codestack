@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Selecting entities in drawing view using SOLIDWORKS API
 caption: Selecting Entities In Drawing View
 description: Example demonstrates different approaches of selecting entities (e.g. edge, face, vertex) in the drawing views

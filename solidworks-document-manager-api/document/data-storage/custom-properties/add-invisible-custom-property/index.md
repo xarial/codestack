@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Add invisible custom property to the model using SOLIDWORKS Document Manager API
 caption: Add Invisible Custom Property
 description: VBA macro to add invisible custom property to the model using SOLIDWORKS Document Manager API

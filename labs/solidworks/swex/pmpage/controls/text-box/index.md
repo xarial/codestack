@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Text Box control in SOLIDWORKS Property Manager Page
 caption: Text Box
 description: Overview of options applied to Text Box control

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: SOLIDWORKS Macro types - VBA (swp), SWBasic (swb), VSTA (dll)
 caption: Macros Types
 description: This article explains the different types of macros supported by SOLIDWORKS (VBA, VSTA, SWBasic)

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Writing the text content into the file using Visual Basic (VBA)
 caption: Write Text File
 description: Function to write the text content into a file using Visual Basic (VBA) with an option to overwrite or append content.

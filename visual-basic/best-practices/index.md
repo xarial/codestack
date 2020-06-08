@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Best Practices for developing VBA applications
 caption: Best Practices
 description: Explanation of best practices for making VBA applications reliable, maintainable and stable

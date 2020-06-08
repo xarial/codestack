@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Automation of SOLIDWORKS using SOLIDWORKS API in vbScript
 caption: vbScript
 description: Introduction to automation of SOLIDWORKS using API with vbScript

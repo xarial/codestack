@@ -1,5 +1,4 @@
 ---
-layout: article
 title: In-Process invoking of SOLIDWORKS add-in API from out-of-process applications
 caption: In-Process Invoking From Out-Of-Process Applications
 description: Framework for calling the add-in API in-process form stand-alone applications or macros to gain maximum performance

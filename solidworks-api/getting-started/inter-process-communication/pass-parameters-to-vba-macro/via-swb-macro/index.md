@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Passing the parameters to SOLIDWORKS Macro using the SWBasic macro
 caption: Via SWBasic Macro
 description: Workaround of passing the parameters to the SOLIDWORKS macro via replacing the text in the SWBasic macro

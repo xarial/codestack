@@ -1,5 +1,4 @@
 ---
-layout: article
 title: VBA Editor
 description: Walkthrough of user interface and functionality for VBA Editor
 sitemap: false

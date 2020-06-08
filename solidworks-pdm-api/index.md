@@ -1,5 +1,4 @@
 ---
-layout: article
 title: SOLIDWORKS PDM Professional API
 caption: PDM Professional (EPDM) API
 description: Overview of SOLIDWORKS PDM Professional (formerly SOLIDWORKS EPDM) API, examples, tutorials and code snippets

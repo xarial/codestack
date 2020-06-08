@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Using Callouts object for model annotation in SOLIDWORKS API
 caption: Callouts
 description: Using Callouts for annotating models (similar to balloons), linking to the entities and displaying custom data using SOLIDWORKS API

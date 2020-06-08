@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Bitmap control in SOLIDWORKS property Manager Page
 caption: Bitmap
 description: Creating bitmap control in the Property Manager Page using SwEx.PMPage framework

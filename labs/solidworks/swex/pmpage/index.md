@@ -1,5 +1,4 @@
 ---
-layout: article
 title: SwEx.PMPage - advanced framework for SOLIDWORKS property manager pages
 caption: SwEx.PMPage
 description: Utilities for advanced development of SOLIDWORKS Property Manager Pages which enables data driven development with data binding

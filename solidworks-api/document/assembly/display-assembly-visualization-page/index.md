@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Display assembly visualization page using SOLIDWORKS API
 caption: Display Assembly Visualization Page
 description: Example displays the page for Assembly Visualization page

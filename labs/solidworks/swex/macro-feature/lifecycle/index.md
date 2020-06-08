@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Life cycle of SOLIDWORKS macro feature
 caption: Lifecycle
 description: Explanation of the SOLIDWORKS macro feature behavior and life cycle

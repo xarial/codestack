@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Utilizing main ISwDMApplication application object in SOLIDWORKS Document Manager API
 caption: Application
 description: Explanation and examples of top level object in Document Manager API ISwDMApplication

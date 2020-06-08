@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Declaration and assignment of variables and constants in Visual Basic
 caption: Variables and Constants
 description: Overview of declaration of variables and constants and assignment of values in Visual Basic

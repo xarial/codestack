@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Overview of SwEx.PMPage framework for SOLIDWORKS API
 caption: Overview
 description: General overview of the approach used by SwEx.PMPage framework for building property manager pages in SOLIDWORKS API

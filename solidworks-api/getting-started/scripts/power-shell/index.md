@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Utilizing SOLIDWORKS API methods in PowerShell scripts
 caption: PowerShell
 description: Introduction to automation of SOLIDWORKS using API with PowerShell script

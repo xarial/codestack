@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Hosting eDrawings control in Windows Forms
 caption: Hosting Control in WinForms
 description: Guide of hosting eDrawings control in C# Widndows Forms

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Managing of Edit Bodies in SOLIDWORKS macro feature
 caption: Edit Bodies
 description: Managing of Edit Bodies in SOLIDWORKS macro feature using SwEx.MacroFeature framework

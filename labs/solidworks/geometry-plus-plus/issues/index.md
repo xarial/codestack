@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Issues report page for Geometry++ add-in
 caption: Issues
 description: Reporting and reviewing the status of issues for Geometry++ add-in for SOLIDWORKS

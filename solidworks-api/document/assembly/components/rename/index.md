@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Renaming permanent and virtual components using SOLIDWORKS API
 caption: Renaming Components
 description: This code example explains correct ways of changing the name of the component (including virtual component or component in sub-assembly)

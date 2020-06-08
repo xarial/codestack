@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Compare model views transformations using SOLIDWORKS API
 caption: Compare Model Views
 description: Example demonstrates how to compare 2 model views (by orientation, translation and scale)

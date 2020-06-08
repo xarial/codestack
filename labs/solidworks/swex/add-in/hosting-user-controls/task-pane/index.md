@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Hosting user control in SOLIDWORKS Task Pane using SwEx.AddIn framework
 caption: Task Pane
 description: Hosting WinForms user control in SOLIDWORKS Task Pane panel using SwEx.AddIn framework

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Crop Bodies feature in Geometry++
 caption: Crop Bodies
 description: Feature allows trimming surface or solid or multiple surfaces or solids using sketch or sketch contour in SOLIDWORKS part document

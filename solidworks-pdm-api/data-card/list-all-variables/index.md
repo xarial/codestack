@@ -1,5 +1,4 @@
 ---
-layout: article
 title: List all variables in the vault using SOLIDWORKS PDM API
 caption: List All Variables
 description: VBA macro to list all variable names and ids in the specified vault using SOLIDWORKS PDM API

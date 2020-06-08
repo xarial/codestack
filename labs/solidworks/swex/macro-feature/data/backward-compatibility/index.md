@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Backward compatibility support for SOLIDWORKS macro feature parameters
 caption: Backward Compatibility
 description: Explanation of ways to implement backward compatibility for the parameters stored in SOLIDWORKS macro feature

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Get parameters of face at centroid using SOLIDWORKS API
 caption: Get Face Center Parameters
 description: Example demonstrates how to find the face parameters (coordinate and normal) at the center of the face using SOLIDWORKS API

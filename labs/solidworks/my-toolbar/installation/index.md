@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Installation of MyToolbar SOLIDWORKS add-in
 caption: Installation Guide
 description: Instructions of installing of MyToolbar add-in

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Create VB.NET Stand-Alone (exe) application for SOLIDWORKS
 caption: Create VB.NET Stand-Alone Application for SOLIDWORKS
 description: Guide for how to connect to SOLIDWORKS application from out-of-process (a.k.a Stand-Alone) application (e.g. Windows Forms, Windows Console) using VB.NET and Microsoft Visual Studio

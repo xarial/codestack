@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Developing rich web applications using Angular Framework
 caption: Angular
 description: Articles and tutorials for developing web applications using modern Angular framework

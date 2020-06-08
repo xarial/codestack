@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Options of SOLIDWORKS Property Manager Page
 caption: Page
 description: Overview of options applied to the SOLIDWORKS property manager page itself

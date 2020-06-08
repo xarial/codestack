@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Call function of SOLIDWORKS add-in object from stand-alone application or macro
 caption: Via Add-in Object
 description: Invoking function of SOLIDWORKS add-in from stand-alone application or macro (enabling add-in custom API)

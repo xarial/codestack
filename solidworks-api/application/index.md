@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Automating SOLIDWORKS Application frame, menus and toolbars using API
 caption: Application
 description: Collection of articles and code examples for customization of SOLIDWORKS application frame, menus and toolbars and managing documents.

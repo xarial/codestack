@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Custom enable command state for SOLIDWORKS commands
 caption: Custom Enable Command State
 description: Explanation on using the custom enable states for the SOLIDWORKS commands using SwEx framework

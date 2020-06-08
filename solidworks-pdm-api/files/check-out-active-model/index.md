@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Check-out active SOLIDWORKS model using SOLIDWORKS and PDM API
 caption: Check-Out Active Model
 description: VBA macro to check-out active model (using release lock) opened in SOLIDWORKS from PDM vault using SOLIDWORKS and PDM APIs

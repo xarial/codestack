@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Get selected sketch segments info using SOLIDWORKS API
 caption: Get Selected Sketch Segments Info
 description: VBA macro to get the specific information from the selected sketch segments (line, arc, parabola, spline etc.) using SOLIDWORKS API

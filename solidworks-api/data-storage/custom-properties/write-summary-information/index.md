@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Write summary information to the active file using SOLIDWORKS API
 caption: Write Summary Information
 description: VBA macro to fill the summary information (author, keywords, comments, title, subject) for active SOLIDWORKS file using SOLIDWORKS API

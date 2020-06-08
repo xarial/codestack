@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Handling dynamic values updated in the controls
 caption: Dynamic Values
 description: Handling dynamic values updated in the controls of the Property Manager Page using SwEx.PMPage framework

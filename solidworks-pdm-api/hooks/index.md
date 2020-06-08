@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Hooking the notifications in SOLIDWORKS PDM API
 caption: Hooks
 description: Articles and examples explaining how to use event hooks in SOLIDWORKS PDM add-in from API

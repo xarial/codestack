@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Variables, Constants and Data Types in Visual Basic
 caption: Variables, Constants and Data Types
 description: Explanation of variables and variable types in Visual Basic

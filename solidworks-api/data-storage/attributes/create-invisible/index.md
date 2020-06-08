@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Create invisible attribute using SOLIDWORKS API
 caption: Create Invisible Attribute
 description: Example creates an invisible attribute and attaches to the selected object (entity or component)

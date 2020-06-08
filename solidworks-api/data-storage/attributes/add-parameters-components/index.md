@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Add and read attributes with parameters to components using SOLIDWORKS API
 caption: Add Attributes With Parameters To Components And Read Values
 description: Example adds attributes with string values as the parameters to the selected components

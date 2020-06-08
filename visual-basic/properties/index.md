@@ -1,5 +1,4 @@
 ---
-layout: article
 caption: Properties
 title: Properties in Visual Basic
 description: Article explaining usage (declaring, setting and reading the values) of properties in Visual Basic. Difference between properties and variables

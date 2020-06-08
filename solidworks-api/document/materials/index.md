@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Working with part materials using SOLIDWORKS API
 caption: Materials
 description: Collection of articles and examples related to materials handling using SOLIDWORKS API

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Issues report page for MyToolbar SOLIDWORKS add-in
 caption: Issues
 description: Reporting and reviewing the status of issues of MyToolbar add-in for SOLIDWORKS

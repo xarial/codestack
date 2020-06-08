@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Extract PNG preview image from active configuration using SOLIDWORKS Document Manager API
 caption: Extract PNG Preview Image From The Active Configuration
 description: Example demonstrates how to extract PNG preview image from the active configuration of SOLIDWORKS assembly or part using the document manager API.

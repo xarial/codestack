@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Finding the body bounding cylinder using SOLIDWORKS API
 caption: Get Body Bounding Cylinder
 description: This example demonstrates how to get the bounding cylinder of the solid body using SOLIDWORKS API

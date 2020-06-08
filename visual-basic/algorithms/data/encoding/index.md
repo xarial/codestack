@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Encoding data in Visual Basic 6 (VBA)
 caption: Encoding
 description: Overview of options to encode the data in Visual Basic 6 (VBA)

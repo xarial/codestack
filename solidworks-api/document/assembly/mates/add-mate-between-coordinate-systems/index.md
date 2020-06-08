@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Add mate between coordinate systems using SOLIDWORKS API
 caption: Add Mate Between Coordinate Systems
 description: Macro adds coincident mate between 2 coordinate systems of 2 selected components

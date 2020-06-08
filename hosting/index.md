@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Hosting, configuration and maintenance of domains and e-mails
 caption: Hosting
 description: Guides and tutorials related to configuration and maintenance for hosting of web-sites and e-mails with various service providers

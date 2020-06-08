@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Configuring macro buttons in MyToolbar add-in for SOLIDWORKS
 caption: Configuration
 description: Adding, removing and customizing (tooltips and icons) toolbars and macro buttons in MyToolbar add-in for SOLIDWORKS

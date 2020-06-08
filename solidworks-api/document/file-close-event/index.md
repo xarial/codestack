@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Handling pre and post close notifications using SOLIDWORKS API
 caption: Handle Pre and Post Close Notification
 description: Example demonstrates how to handle pre and post notification of file closing using SOLIDWORKS API

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Programming in Visual Basic (VBA)
 caption: Visual Basic
 description: Collection of tutorials and examples on using Visual Basic programming language

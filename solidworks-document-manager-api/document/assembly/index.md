@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Working with assembly documents using SOLIDWORKS Document Manager API
 caption: Assembly
 description: Collection of examples for assemblies in Document Manager API

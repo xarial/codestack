@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Data Sets (Arrays, Collections, Dictionaries) in Visual Basic
 caption: Data Sets
 description: Article explaining the usage of arrays (one- and two-dimensional), collections (dynamic arrays), dictionaries in Visual Basic

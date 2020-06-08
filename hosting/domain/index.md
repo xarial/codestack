@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Overview and guides for hosting and maintaining domains on cloud services and on premises
 caption: Domain
 description: Guides, tutorials and examples for maintaining custom domains on cloud services (e.g. GoDaddy, Google domain, Hostgator, etc.) and on premises

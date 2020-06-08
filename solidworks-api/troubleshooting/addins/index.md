@@ -1,5 +1,4 @@
 ---
-layout: article
 title: 'SOLIDWORKS Add-Ins Troubleshooting: Issues And Resolutions'
 caption: 'Add-Ins Troubleshooting: Issues And Resolutions'
 description: Overview and solutions for the most common errors of SOLIDWORKS add-ins and SDK

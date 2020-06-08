@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Code snippets for File System Object (FSO) in Visual Basic (VBA)
 caption: File System Object
 description: Algorithms and code snippets for manipulating File System Object using Visual Basic (VBA)

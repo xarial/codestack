@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Add components to assembly using SOLIDWORKS API
 caption: Add Components To Assembly
 description: Example Demonstrates 2 different ways to add component into the assembly tree (single component add or batch adding)

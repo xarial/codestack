@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Programming VBA and VSTA macros using SOLIDWORKS API
 caption: Macros
 description: Introduction to VBA and VSTA SOLIDWORKS macros development for SOLIDWORKS automation using SOLIDWORKS API

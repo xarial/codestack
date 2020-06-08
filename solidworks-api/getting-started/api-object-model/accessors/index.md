@@ -1,5 +1,4 @@
 ---
-layout: article
 title: How to use Accessors section in SOLIDWORKS API Help
 caption: Accessors
 description: Explanation of accessors section in API Help documentation which helps to find the way of accessing specific objects in SOLIDWORKS API

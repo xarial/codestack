@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Find features in the tree by type and/or name pattern using SOLIDWORKS API
 caption: Find Features
 description: VBA macro to find all or first feature in the Feature Manager tree which match specific feature type name or name pattern using SOLIDWORKS API

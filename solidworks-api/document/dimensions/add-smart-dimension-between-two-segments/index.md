@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Add smart dimension between two segments using SOLIDWORKS API
 caption: Add Smart Dimension Between Two Segments
 description: Example adds the dimension between 2 selected sketch segments

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: SOLIDWORKS commands manager with SwEx.AddIn framework
 caption: Commands Manager
 description: Instructions on adding commands (menu, toolbar and context menu) with SwEx.AddIn framework for developing SOLIDWORKS add-ins in C# and VB.NET

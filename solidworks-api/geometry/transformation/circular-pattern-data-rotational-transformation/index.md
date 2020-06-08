@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Create rotational transformation of circular pattern via SOLIDWORKS API
 caption: Create A Rotational Transformation Based On Circular Pattern Data
 description: Example reads the transform of the selected circular pattern and creates a temp preview of the pattern of the specified seed body by applying the same transform as in the circular pattern

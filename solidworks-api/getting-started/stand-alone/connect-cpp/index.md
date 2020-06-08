@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Create C++ Stand-Alone (exe) application for SOLIDWORKS
 caption: Create C++ Stand-Alone Application for SOLIDWORKS
 description: Guide for how to connect to SOLIDWORKS application from out-of-process (a.k.a Stand-Alone) application (e.g. MFC, Win32 Console Application) using C++ and Microsoft Visual Studio

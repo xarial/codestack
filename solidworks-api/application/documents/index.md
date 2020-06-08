@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Managing SOLIDWORKS documents via API
 caption: Documents
 description: Examples of closing, opening, traversing documents using SOLIDWORKS API

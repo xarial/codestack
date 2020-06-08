@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Comments in Visual Basic
 caption: Comments
 description: Article explaining the usage of comments to annotate the code

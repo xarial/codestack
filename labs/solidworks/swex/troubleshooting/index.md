@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Troubleshoot SOLIDWORKS add-in developed with SwEx framework
 caption: Troubleshooting
 description: Troubleshooting techniques for the applications built on SwEx framework

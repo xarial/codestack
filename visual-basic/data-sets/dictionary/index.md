@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Dictionary in Visual Basic
 caption: Dictionary
 description: Explanation of using Dictionary object to store key-value pairs in Visual Basic

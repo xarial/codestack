@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Write custom property to file, configuration and cut-list using SOLIDWORKS API
 caption: Write All Properties
 description: VBA macro example to write different types of properties (general, configuration specific and cut list) using SOLIDWORKS API

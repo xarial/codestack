@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Getting Started with SOLIDWORKS Document Manager API
 caption: Getting Started
 order: 1

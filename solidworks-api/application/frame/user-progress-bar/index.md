@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Handling the long operation progress using progress bar in SOLIDWORKS API
 caption: User Progress Bar
 description: Displaying the long operation progress using user progress bar in SOLIDWORKS API

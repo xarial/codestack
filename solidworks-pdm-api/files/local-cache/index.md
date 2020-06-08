@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Cache file from PDM vault locally using SOLIDWORKS PDM API
 caption: Cache File Locally
 description: Example demonstrates how to get local copies of the file and all the dependencies using PDM Professional API to be used in desktop application

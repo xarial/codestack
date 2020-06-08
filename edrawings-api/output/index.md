@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Outputting SOLIDWORKS files to different formats using SOLIDWORKS eDrawings API
 caption: Output
 description: Explanation of options of exporting and printing of SOLIDWORKS file via eDrawings API

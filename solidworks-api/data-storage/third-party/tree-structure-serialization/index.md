@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Tree structure serialization in model 3rd party storage using SOLIDWORKS API
 caption: Third Party Store Tree Serialization
 description: Example of usage of 3rd Party Storage (stream) to serialize and deserialize tree structure using SOLIDWORKS API and XmlSerializers within the model document

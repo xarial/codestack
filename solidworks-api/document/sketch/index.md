@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Working with sketch using SOLIDWORKS API
 caption: Sketch
 description: Working with 2D and 3D sketches (adding and reading segments, transformations, feature creation) using SOLIDWORKS API

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Examples and source code for SwEx.Addin framework for SOLIDWORKS API
 caption: Examples
 description: Collection of examples using the SwEx.Addin framework for SOLIDWORKS

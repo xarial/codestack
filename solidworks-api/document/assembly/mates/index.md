@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Automating mates in assemblies using SOLIDWORKS API
 caption: Mates
 description: Collection of articles and code examples for mating components in the assembly

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Automating SOLIDWORKS parts, assemblies and drawings using API
 caption: Document
 description: Articles and examples explaining the ways of automating SOLIDWORKS documents (parts, assemblies and drawings) via API

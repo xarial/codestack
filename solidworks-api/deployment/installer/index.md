@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Installing the SOLIDWORKS add-in by creating the msi-installer
 caption: Installer
 description: Creating the installer .msi package for deploying applications for SOLIDWORKS

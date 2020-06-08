@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Create extruded slot temp body using SOLIDWORKS modeler API
 caption: Create Extruded Slot Temp Body
 description: Example demonstrates how to extrude the slot profile to create a temp body using SOLIDWORKS API and IModeler interface

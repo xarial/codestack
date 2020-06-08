@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Utilizing markup functionality using SOLIDWORKS eDrawings API
 caption: Markup
 description: Guide on using the markup functionality (measurements, stamps, comments) using eDrawings API

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Issues report page for Stock Master add-in for SOLIDWORKS
 caption: Issues
 description: Reporting and reviewing the status of issues for Stock Master add-in for SOLIDWORKS

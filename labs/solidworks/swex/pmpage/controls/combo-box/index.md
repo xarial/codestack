@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Combo Box control in SOLIDWORKS property Manager Page
 caption: Combo Box
 description: Overview of options applied to Combo Box control

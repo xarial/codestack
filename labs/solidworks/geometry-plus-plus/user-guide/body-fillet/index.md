@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Bodies fillet feature in Geometry++
 caption: Bodies Fillet
 description: Feature allows adding the fillet to bodies, faces and edges and supports multi-bodies in SOLIDWORKS model

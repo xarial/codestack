@@ -1,5 +1,4 @@
 ---
-layout: article
 title: 'Whats New: new features and bug fixes in Geometry++'
 caption: Whats New
 description: Version history for Geometry++ add-in for SOLIDWORKS

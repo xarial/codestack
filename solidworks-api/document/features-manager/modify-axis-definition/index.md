@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Modify the definition of axis feature using SOLIDWORKS API
 caption: Modify Axis Definition
 description: VBA macro example to change the selection of the axis feature using SOLIDWORKS API

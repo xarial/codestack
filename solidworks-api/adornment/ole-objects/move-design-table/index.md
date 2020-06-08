@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Move design table object using SOLIDWORKS API
 caption: Move Design Table OLE Object
 description: Example demonstrates how to resize and move the design table OLE object in the model graphics area

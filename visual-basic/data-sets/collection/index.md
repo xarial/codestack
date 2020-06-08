@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Managing Collections in Visual Basic
 caption: Collection
 description: Article describing the benefits of collections (dynamic lists) to store the arrays of data in Visual Basic

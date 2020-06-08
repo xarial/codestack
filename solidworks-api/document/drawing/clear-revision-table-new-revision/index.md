@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Clear revision table and add new revision using SOLIDWORKS API
 caption: Clear Revision Table And Add New Revision
 description: Example finds the revision table and removes all revisions and then adds new row with custom data

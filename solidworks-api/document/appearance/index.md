@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Configuring document appearance using SOLIDWORKS API
 caption: Appearance
 description: Collection of examples and articles related to managing of appearance (e.g. color) in the documents using SOLIDWORKS API

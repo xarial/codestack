@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Managing e-mails for custom domains
 caption: E-Mail
 description: Guides for setting up and managing e-mails for custom domains (e.g. configuring forwarding of e-mails or using hosted options)

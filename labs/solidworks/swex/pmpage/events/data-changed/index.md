@@ -1,5 +1,4 @@
 ---
-layout: article
 title: SOLIDWORKS Property Manager Page data changed events handling
 caption: Data Change
 description: Overview of events associated with data change of SOLIDWORKS property manager page handled in SwEx.PMPage framework

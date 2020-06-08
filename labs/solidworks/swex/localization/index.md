@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Localizing SOLIDWORKS add-ins using SwEx framework
 caption: Localization
 description: How to support multi language SOLIDWORKS add-ins by using of localized resources in SwEx framework

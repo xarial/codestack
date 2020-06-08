@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Draw sketch segments in context of the drawing sheet using SOLIDWORKS API
 caption: Draw Sketch Segments In Sheet
 description: Draw underlying model bounding box sketch segment in the context of the drawing sheet using SOLIDWORKS API

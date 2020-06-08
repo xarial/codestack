@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Add equation to dimension using SOLIDWORKS API
 caption: Add Equation To Dimension
 description: Example will modify the value of the selected dimension and sets its value to be equal to the equation

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Get instance Id of assembly component using SOLIDWORKS API
 caption: Get Instance Id Of Component
 description: Example extracts the component instance index from the component's name

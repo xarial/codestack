@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Logging capabilities in SwEx framework for SOLIDWORKS add-ins
 caption: Logging
 description: Logging debug messages from SwEx modules

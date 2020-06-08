@@ -1,5 +1,4 @@
 ---
-layout: article
 title: SOLIDWORKS macro feature to link and auto update general table to Excel
 caption: Link And Auto Update General Table To Excel
 description: Macro allows to link and automatically update the general table to external Excel or text/CSV file using SOLIDWORKS API

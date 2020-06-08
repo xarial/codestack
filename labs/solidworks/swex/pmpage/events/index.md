@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Handling events of SOLIDWORKS property manager page
 caption: Events
 description: Overview of property manager page events handling

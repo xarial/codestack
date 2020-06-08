@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Using transformations in SOLIDWORKS API
 caption: Transformation
 description: Applying and reading transformation (components, bodies, sketches etc.) using SOLIDWORKS API

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Installing Geometry++ SOLIDWORKS add-in
 caption: Installation Guide
 description: Instructions of installing of Geometry++ add-in

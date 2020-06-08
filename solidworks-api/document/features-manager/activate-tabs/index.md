@@ -1,5 +1,4 @@
 ---
-layout: article
 title: VSTA Macro which activates feature manager tab via SOLIDWORKS API
 caption: Activate Feature Manager Tab
 description: Example demonstrates how to activate standard tabs (feature manager tree, property manager, configuration manager, DimXpert manager, display manager) in the feature manager view using SOLIDWORKS API

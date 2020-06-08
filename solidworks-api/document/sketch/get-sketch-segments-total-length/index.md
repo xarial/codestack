@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Get the total length of segments in selected sketch using SOLIDWORKS API
 caption: Get Total Length Of Sketch Segments
 description: C# example to calculate total length of all non construction geometry sketch segments in the selected sketch using SOLIDWORKS API

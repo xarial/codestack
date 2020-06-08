@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Fix or float component in active or all configurations using SOLIDWORKS API
 caption: Fix/Float In This Or All Configurations
 description: Example demonstrates a workaround for missing SOLIDWORKS API for fixing or floating the component in the active or all configuration

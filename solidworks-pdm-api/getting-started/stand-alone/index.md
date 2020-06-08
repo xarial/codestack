@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Developing stand-alone applications using SOLIDWORKS PDM API
 caption: Developing Stand-Alone Application
 description: Examples and guidelines for creating stand-alone (exe) applications with SOLIDWORKS PDM API

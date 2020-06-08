@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Usage of assembly component transformation in SOLIDWORKS API
 caption: Component Transformation In The Assembly
 description: Example explains transformation of rotation and translation for components in the assembly

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Examples of using ISwDMDocument object for document in Document Manager API
 caption: Document
 order: 2

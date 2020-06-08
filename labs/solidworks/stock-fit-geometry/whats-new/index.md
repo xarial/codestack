@@ -1,5 +1,4 @@
 ---
-layout: article
 title: 'Whats New: new features and bug fixes of Stock Master add-in for SOLIDWORKS'
 caption: Whats New
 description: Version history for Stock Master add-in for SOLIDWORKS

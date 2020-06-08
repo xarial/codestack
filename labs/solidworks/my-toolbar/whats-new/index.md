@@ -1,5 +1,4 @@
 ---
-layout: article
 title: 'Whats New: features and bug fixes for MyToolbar add-in for SOLIDWORKS'
 caption: Whats New
 description: Version history for MyToolbar add-in for SOLIDWORKS

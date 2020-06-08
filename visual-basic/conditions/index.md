@@ -1,5 +1,4 @@
 ---
-layout: article
 caption: Conditions
 title: Conditions (if, select case, logical operations) in Visual Basic
 description: Articles explaining logical conditions, if-else, select case statements and boolean operations

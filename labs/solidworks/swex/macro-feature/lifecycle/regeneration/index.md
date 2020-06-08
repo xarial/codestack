@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Handling Regeneration method of SOLIDWORKS macro feature
 caption: Regeneration
 description: Handling regeneration event of SOLIDWORKS macro feature and returning bodies or errors to drive the behavior using SwEx.MacroFeature framework

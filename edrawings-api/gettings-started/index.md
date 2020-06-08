@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Getting started with SOLIDWORKS eDrawings API
 caption: Getting Started
 description: Instructions of getting started developing applications using eDrawings API

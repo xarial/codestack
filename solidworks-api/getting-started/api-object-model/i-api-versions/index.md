@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Difference between SOLIDWORKS API methods with and without I
 caption: I-Versions Of Methods And Interfaces
 description: Explanation of the differences between method names and interfaces containing the I at the beginning (e.g. IModelDoc2 vs ModelDoc2)

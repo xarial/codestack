@@ -1,5 +1,4 @@
 ---
-layout: article
 title: How to develop add-ins for SOLIDWORKS automation via API
 caption: Add-Ins
 description: Detailed guides for creating SOLIDWORKS add-ins in most popular programming languages to extend SOLIDWORKS functionality using SOLIDWORKS API

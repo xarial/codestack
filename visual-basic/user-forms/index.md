@@ -1,5 +1,4 @@
 ---
-layout: article
 title: User Form And Controls in Visual Basic 6 (VBA)
 description: Article explaining the usage of user interface elements (text box, combo box, list etc.) and forms in Visual Basic 6 (VBA)
 caption: User Form And Controls

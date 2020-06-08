@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Add watermark to model using 3rd party storage via SOLIDWORKS Document Manager API
 caption: Add Watermark To Model
 description: Add digital watermark into model using 3rd party storage via SOLIDWORKS Document Manager API

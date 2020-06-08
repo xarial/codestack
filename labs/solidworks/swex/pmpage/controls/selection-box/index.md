@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Selection box control in SOLIDWORKS Property Page with SwEx.PMPage framework
 caption: Selection Box
 description: Overview of options applied to Selection Box control

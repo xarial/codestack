@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Adding sub-menus and spacers to SOLIDWORKS command manager using SwEx.AddIn
 caption: Sub-Menus And Spacers
 description: Adding sub-menus and spacers or command tab boxes in SOLIDWORKS command manager using SwEx.AddIn framework

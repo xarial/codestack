@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Run Xpress products (e.g. DriveWorks) using SOLIDWORKS API
 caption: Run Xpress Products
 description: Example demonstrates how to run the xpress products (DriveWorks, DFM, Simulation, Flo)

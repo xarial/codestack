@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Installation Guide for Stock Master add-ins for SOLIDWORKS
 caption: Installation Guide
 description: Instructions of installing of Stock Master add-in for SOLIDWORKS which provides additional features for packaging and stocking

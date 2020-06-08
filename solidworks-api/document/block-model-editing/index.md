@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Block model editing using SOLIDWORKS API
 caption: Block Model Editing
 description: Example demonstrate different ways of disabling the model editing

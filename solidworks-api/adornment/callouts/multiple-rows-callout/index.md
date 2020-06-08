@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Create multiple rows callout using SOLIDWORKS API
 caption: Create Multiple Rows Callout
 description: Example demonstrates how to create a callout with multiple rows from the selection in SOLIDWORKS API

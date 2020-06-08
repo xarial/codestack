@@ -1,5 +1,4 @@
 ---
-layout: article
 title: User Guide for MyToolbar SOLIDWORKS add-in
 caption: User Guide
 description: Documentation of MyToolbar SOLIDWORKS add-in
