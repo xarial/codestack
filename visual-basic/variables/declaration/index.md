@@ -121,9 +121,11 @@ See code below for the correct assignment of reference type variable.
 
 > References variables are only holding the pointer to the actual value, i.e. Set keyword assigns the reference (not the actual value like in value types). That means if reference of one variable is assigned to another variables, both of them now refer the same data.
 
-### Early binding and late binding
+### Binding
 
 Binding is a process of assigning object to a variable. When early binding is used the specific object type is declared in advanced so the binding can occur at compile time. Late binding is resolved at runtime and specific object type is not known in advance.
+
+#### Early Binding
 
 ~~~ vb
 Dim objLate As Object 'example of late binding
@@ -137,6 +139,14 @@ Dim objEarly as MySpecificType
 Set objEarly = new MySpecificType
 ~~~
 
+##### Benefits
+
+* Performance. Compiler can perform required optimization as the type of the object and its size is known at compile time
+* Maintainability. Code is cleaner and easier to maintain and read when specific type is declared
+* Dynamic help and IntelliSense (code completion) features are available for early bound objects
+
+#### Late Binding
+
 While late bound objects are usually initiated with [CreateObject](https://msdn.microsoft.com/en-us/vba/language-reference-vba/articles/createobject-function) or [GetObject](https://msdn.microsoft.com/en-us/vba/language-reference-vba/articles/getobject-function) functions
 
 ~~~ vb
@@ -146,12 +156,6 @@ Set xlApp = CreateObject("Excel.Application")
 
 But it is still acceptable to use *new* keyword in late binding and CreateObject or GetObject in early binding.
 
-Benefits of early binding
-
-* Performance. Compiler can perform required optimization as the type of the object and its size is known at compile time
-* Maintainability. Code is cleaner and easier to maintain and read when specific type is declared
-* Dynamic help and IntelliSense (code completion) features are available for early bound objects
-
-Benefits of late binding
+##### Benefits
 
 * No need to maintain 3rd party references which may be an issue when code is ported to another environment or another version of 3rd party references is released. Refer this [Example of references issue](/solidworks-api/troubleshooting/macros/missing-solidworks-type-library-references)

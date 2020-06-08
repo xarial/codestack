@@ -225,9 +225,29 @@ For VBA macros simple header at the top of the macro can be sufficient. Specify 
 Sub main()
 ~~~
 
-## Stay Within The Scope
+## Referencing 3rd Party Type Libraries
 
-Try to keep your applications within the capacity of the technology and programming language. For a simple applications, scripts and VBA macros can be sufficient, but for more complicated functionalities where database connection, web service calls, data processing and analyzing etc. is required consider switching to more sophisticated environments (add-ins, stand-alone applications, web services) and OOP languages, such as VB.NET, C#, C++, Java etc.
+When just few objects or functions from the 3rd party type library are used (e.g. Microsoft Scripting Runtime, Microsoft Excel, etc.) and this is not a primary target of automation, consider using them with [Late Binding](/visual-basic/variables/declaration#late-binding) instead of an [Early Binding](/visual-basic/variables/declaration#early-binding)
+
+For example Excel VBA macro needs to create a [dictionary](/visual-basic/data-sets/dictionary/) object to hold key-value pairs. Instead of referring the *Microsoft Scripting Runtime* reference and using the following code
+
+~~~ vb
+Dim dict As Scripting.Dictionary
+Set dict = New Scripting.Dictionary
+~~~
+
+It is possible to avoid adding the *Microsoft Scripting Runtime* reference and instead use
+
+~~~ vb
+Dim dict As Object
+Set dict = CreateObject("Scripting.Dictionary")
+~~~
+
+Another example is SOLIDWORKS VBA macro, which primarily automates SOLIDWORKS, while some Excel API invocation might be required. In this case Excel can be created as late bound object and no references to Excel library need to be added to the macro.
+
+This approach allows to simplify the compatibility between different versions of library and avoid [missing references issue](/solidworks-api/troubleshooting/macros/missing-solidworks-type-library-references/)
+
+> Late binding has a limitation and some of the methods cannot be invoked with late binding, in this case early binding is an only option
 
 ## Use Asserts
 
@@ -316,3 +336,7 @@ Most of VBA macro engine implementations in various applications such as MS Word
 It is however still beneficial and recommended to extract a text copy of the macro code and add this under the revision control.
 
 ![VBA macro in the GIT repository browsed using the GIT Extensions client](git-extensions-vba-macro.png)
+
+## Stay Within The Scope
+
+Try to keep your applications within the capacity of the technology and programming language. For a simple applications, scripts and VBA macros can be sufficient, but for more complicated functionalities where database connection, web service calls, data processing and analyzing etc. is required consider switching to more sophisticated environments (add-ins, stand-alone applications, web services) and OOP languages, such as VB.NET, C#, C++, Java etc.
