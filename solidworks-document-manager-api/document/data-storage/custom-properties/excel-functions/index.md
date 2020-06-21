@@ -86,3 +86,13 @@ To find more about the error. Open the macro and inspect immediate window output
 Descriptions of open error code can be found [here](https://help.solidworks.com/2015/English/api/swdocmgrapi/SolidWorks.Interop.swdocumentmgr~SolidWorks.Interop.swdocumentmgr.SwDmDocumentOpenError.html)
 
 > It is strongly recommended to test this macro on sample data before using on production file. And also it is strongly recommended to backup the data before using this macro.
+
+## Notes
+
+This macro will extract formulas (instead of resolved values) for properties with equations such as mass or material.
+
+To define the formula use "" to protect the " symbol. For example
+
+~~~
+=SETSWPRP(A2, "Mass", """SW-Mass@Part1.SLDPRT""")
+~~~

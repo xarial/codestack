@@ -7,7 +7,7 @@ image: macros-library.svg
 labels: [tools,solidworks,macro]
 search: false
 styles:
-  - /assets/styles/catalogue.css
+  - /_assets/styles/catalogue.css
 group-descriptions:
   Model: Automation of 3D Models (parts and assemblies) and 2D drawings
   Materials: Automation of SOLIDWORKS materials database and properties in parts

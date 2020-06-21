@@ -10,4 +10,4 @@ Body is displayed to the user and macro execution stops. Body is not present in 
 
 Continue the macro execution to destroy the body.
 
-{% code-snippet { file-name: Macro.vba } %}
+{% code-snippet { file-name: Macro.* } %}

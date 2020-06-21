@@ -4,7 +4,7 @@ caption: 'Macros Troubleshooting: Issues And Resolutions'
 description: Overview and solutions for the most common errors of running the macros in SOLIDWORKS
 labels: [macro, not working, problem, solidworks api, troubleshooting, vba]
 styles:
-  - /assets/styles/catalogue.css
+  - /_assets/styles/catalogue.css
 redirect-from:
   - /2018/04/macros-troubleshooting-issues-and-resolutions.html
 ---

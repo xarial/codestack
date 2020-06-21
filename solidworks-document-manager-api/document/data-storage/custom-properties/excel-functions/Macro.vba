@@ -27,6 +27,8 @@ Function OpenDocument(swDmApp As SwDocumentMgr.SwDMApplication, path As String, 
     Dim docType As SwDmDocumentType
     
     Select Case ext
+        Case "sldlfp"
+            docType = swDmDocumentPart
         Case "sldprt"
             docType = swDmDocumentPart
         Case "sldasm"

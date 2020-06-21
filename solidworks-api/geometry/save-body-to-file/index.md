@@ -6,4 +6,4 @@ labels: [serialize,com stream,save body]
 ---
 This VBA example demonstrates how to serialize the selected body (surface or solid) into the COM Stream using SOLIDWORKS API and store that in the external binary file.
 
-{% code-snippet { file-name: Macro.vba } %}
+{% code-snippet { file-name: Macro.* } %}

@@ -8,7 +8,7 @@ image: solidworks-labs.svg
 order: 5
 search: false
 styles:
-  - /assets/styles/catalogue.css
+  - /_assets/styles/catalogue.css
 ---
 ![SOLIDWORKS Labs](solidworks-labs.svg){ width=150 }
 
