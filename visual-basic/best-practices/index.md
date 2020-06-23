@@ -47,6 +47,21 @@ Function GetCircleArea(radius As Double)
 End Function
 ~~~
 
+## Avoid Magic String And Numbers
+
+Avoid using unnamed string and numbers ([magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming))), instead declare the constants with a [descriptive name](#descriptive-names)
+
+~~~ vb jagged
+Const PI As Double = 3.14
+Dim circArea As Double
+cirArea = PI * rad ^ 2
+~~~
+
+~~~ vb jagged
+Const OUT_FOLDER_PATH As String = "D:\out"
+Export OUT_FOLDER_PATH
+~~~
+
 ## Error Handling
 
 When developing code, avoid 'hiding the problem' as this may potentially cause more damage than crash of the application.
