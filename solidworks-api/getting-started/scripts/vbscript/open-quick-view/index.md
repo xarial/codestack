@@ -45,3 +45,5 @@ reg add "HKCR\SldDraw.Document\shell\Quick View\command" /ve /d "wscript.exe """
 As the result the *Quick View* context menu command is added to the Windows File Explorer. Select any assembly and click right mouse button. Click Quick View and the file will be opened in the quick view mode in SOLIDWORKS:
 
 ![Quick View context menu when assembly is selected](quick-view-context-menu.png){ width=450 }
+
+Watch [video demonstration](https://youtu.be/9uZCecGg25I?t=12)

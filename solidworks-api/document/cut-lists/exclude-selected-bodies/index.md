@@ -19,4 +19,6 @@ It is also possible to select face, edge or vertex of the body to be excluded.
 
 ![Bodies to exclude from cut list selected using selection filters](filter-bodies-selection.png){ width=500 }
 
+Watch [video demonstration](https://youtu.be/9uZCecGg25I?t=509)
+
 {% code-snippet { file-name: Macro.vba } %}

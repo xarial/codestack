@@ -20,11 +20,11 @@ There are 2 main categories of macros supported by SOLIDWORKS: VSTA and VBA macr
 
 Macro toolbar provides commands for
 
-* Running the macro
-* [Recording macro](/solidworks-api/getting-started/macros/recording) (as well as stop recording and pausing)
+* [Running the macro](/solidworks-api/getting-started/macros/run/)
+* [Recording macro](/solidworks-api/getting-started/macros/recording/) (as well as stop recording and pausing)
 * Creating new blank macro
-* Editing the macro
-* [Assigning macro to buttons](/solidworks-api/getting-started/macros/macro-buttons)
+* [Editing the macro](/solidworks-api/getting-started/macros/edit/)
+* [Assigning macro to buttons](/solidworks-api/getting-started/macros/macro-buttons/)
 
 The above commands are also available from the menu.
 

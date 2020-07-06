@@ -9,6 +9,9 @@ End Sub
 
 Sub main()
 
+try_:
+    On Error GoTo catch_
+    
     Init
     
     Set swApp = Application.SldWorks
@@ -25,17 +28,47 @@ Sub main()
         Dim i As Integer
         
         For i = 0 To UBound(vCutLists)
+            
             Dim swCutListFeat As SldWorks.Feature
             Set swCutListFeat = vCutLists(i)
+            
             Dim vPrpVals As Variant
             vPrpVals = ReadProperties(swCutListFeat.CustomPropertyManager, PROPERTIES)
-            swCutListFeat.Name = FormatString(NAME_TEMPLATE, vPrpVals)
+            
+            Dim featName As String
+            
+            featName = FormatString(NAME_TEMPLATE, vPrpVals)
+
+            If swCutListFeat.Name <> featName Then
+                                
+                If featName <> "" Then
+                
+                    Dim index As Integer
+                    index = 0
+                    
+                    While swModel.FeatureManager.IsNameUsed(swNameType_e.swFeatureName, featName)
+                        index = index + 1
+                        featName = FormatString(NAME_TEMPLATE, vPrpVals) + CStr(index)
+                    Wend
+                    
+                    swCutListFeat.Name = featName
+                Else
+                    Debug.Print "Empty name for " & swCutListFeat.Name
+                End If
+            End If
+            
         Next
         
     Else
         MsgBox "Please open the document"
     End If
     
+    GoTo finally_
+
+catch_:
+    swApp.SendMsgToUser2 Err.Description, swMessageBoxIcon_e.swMbStop, swMessageBoxBtn_e.swMbOk
+finally_:
+
 End Sub
 
 Function ReadProperties(custPrpMgr As SldWorks.CustomPropertyManager, prpNames As Variant) As Variant
@@ -58,37 +91,65 @@ End Function
 
 Function GetCutLists(model As SldWorks.ModelDoc2) As Variant
     
-    Dim swCutListFeats() As SldWorks.Feature
-    Dim isInit As Boolean
-    isInit = False
+    GetCutLists = GetFeaturesByType(model, "CutListFolder")
+
+End Function
+
+Function GetFeaturesByType(model As SldWorks.ModelDoc2, typeName As String) As Variant
+    
+    Dim swFeats() As SldWorks.Feature
     
     Dim swFeat As SldWorks.Feature
-    Dim swBodyFolder As SldWorks.BodyFolder
     
     Set swFeat = model.FirstFeature
     
     Do While Not swFeat Is Nothing
         
-        If swFeat.GetTypeName2 = "CutListFolder" Then
-            
-            If Not isInit Then
-                isInit = True
-                ReDim swCutListFeats(0)
-            Else
-                ReDim Preserve swCutListFeats(UBound(swCutListFeats) + 1)
-            End If
-            
-            Set swCutListFeats(UBound(swCutListFeats)) = swFeat
-            
-        End If
-        
+        ProcessFeature swFeat, swFeats, typeName
+
         Set swFeat = swFeat.GetNextFeature
         
     Loop
     
-    GetCutLists = swCutListFeats
-
+    If (Not swFeats) = -1 Then
+        GetFeaturesByType = Empty
+    Else
+        GetFeaturesByType = swFeats
+    End If
+    
 End Function
+
+Sub ProcessFeature(thisFeat As SldWorks.Feature, featsArr() As SldWorks.Feature, typeName As String)
+    
+    If thisFeat.GetTypeName2() = typeName Then
+    
+        If (Not featsArr) = -1 Then
+            ReDim featsArr(0)
+            Set featsArr(0) = thisFeat
+        Else
+            Dim i As Integer
+            
+            For i = 0 To UBound(featsArr)
+                If swApp.IsSame(featsArr(i), thisFeat) = swObjectEquality.swObjectSame Then
+                    Exit Sub
+                End If
+            Next
+            
+            ReDim Preserve featsArr(UBound(featsArr) + 1)
+            Set featsArr(UBound(featsArr)) = thisFeat
+        End If
+    
+    End If
+    
+    Dim swSubFeat As SldWorks.Feature
+    Set swSubFeat = thisFeat.GetFirstSubFeature
+        
+    While Not swSubFeat Is Nothing
+        ProcessFeature swSubFeat, featsArr, typeName
+        Set swSubFeat = swSubFeat.GetNextSubFeature
+    Wend
+        
+End Sub
 
 Function FormatString(inputStr As String, params As Variant)
     

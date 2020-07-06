@@ -41,4 +41,6 @@ Const REORDER_GENERAL_CUST_PRPS As Boolean = True 'True to sort file specific cu
 Const REORDER_CONF_CUST_PRPS As Boolean = True 'True to sort configuration specific custom properties (for parts and assemblies), False to skip
 ~~~
 
+Watch [video demonstration](https://youtu.be/jsjN8zNRTuc?t=97)
+
 {% code-snippet { file-name: Macro.vba } %}

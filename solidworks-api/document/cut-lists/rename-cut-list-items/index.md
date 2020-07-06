@@ -3,7 +3,7 @@ layout: sw-tool
 title: Rename cut list features based on custom properties using SOLIDWORKS API
 caption: Rename Cut List Features
 description: VBA macro to rename cut list features (sheet metal and weldment) based on custom properties using SOLIDWORKS API
-image: sheet-metal-cut-list.png
+image: cut-list-table.svg
 labels: [cut-list,sheet metal,weldment,rename]
 group: Part
 ---
@@ -28,5 +28,7 @@ Sub Init(Optional dummy As Variant = Empty)
     PROPERTIES = Array("Prp1", "Prp2", "Prp3", "Prp4") 'custom properties to extract. Value of Prp1 will replace {0}, Prp2 will replace {1} etc.
 End Sub
 ~~~
+
+Watch [video demonstration](https://youtu.be/jsjN8zNRTuc?t=200)
 
 {% code-snippet { file-name: Macro.vba } %}

@@ -21,4 +21,6 @@ The macro below allows to delete all of the features in the selected folder in o
 
 Macro can optionally display the confirmation dialog with the list of features about to be deleted
 
+Watch [video demonstration](https://youtu.be/9uZCecGg25I?t=396)
+
 {% code-snippet { file-name: Macro.vba } %}

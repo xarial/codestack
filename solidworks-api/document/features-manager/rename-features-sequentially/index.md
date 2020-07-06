@@ -19,4 +19,6 @@ Only indices are renamed and the base name is preserved. For example *Sketch21* 
 * Case is ignored (case insensitive search)
 * Only modelling features are renamed (the ones created after the Origin feature)
 
+Watch [video demonstration](https://youtu.be/jsjN8zNRTuc?t=139)
+
 {% code-snippet { file-name: Macro.vba } %}
