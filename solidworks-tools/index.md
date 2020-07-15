@@ -24,6 +24,7 @@ group-descriptions:
   Import/Export: Automation of importing and exporting SOLIDWORKS files to different formats
   Motion Study: Automation of SOLIDWORKS Motion Study module
   Options: SOLIDWORKS document and system option automation
+  Cut-List: 'Automation of SOLIDWORKS cut-lists in Sheet Metal and Weldment parts and drawings'
 redirect-from:
   - /p/solidworks-goodies.html
 ---
