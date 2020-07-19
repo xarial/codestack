@@ -63,7 +63,7 @@ Array elements can be treated as individual variables and the same rules of read
 ~~~ vb
 Dim arr(2) As Double
 arr(<INDEX>) = 10 'changing the value of the variable at <INDEX>
-Debug.Pring arr(<INDEX>) 'reading the value of the variable at <INDEX>
+Debug.Print arr(<INDEX>) 'reading the value of the variable at <INDEX>
 ~~~
 
 {% code-snippet { file-name: fill.vba } %}
