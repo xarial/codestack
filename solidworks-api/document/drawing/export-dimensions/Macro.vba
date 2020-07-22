@@ -97,6 +97,8 @@ Sub ExportViewDimensions(view As SldWorks.view, draw As SldWorks.DrawingDoc, fil
         Dim swDim As SldWorks.dimension
         Set swDim = swDispDim.GetDimension2(0)
                 
+        Dim drwZone As String
+        drwZone = swSheet.GetDrawingZone(vPos(0), vPos(1))
         vPos = GetPositionInDrawingUnits(vPos, draw)
         
         Dim tolType As String
@@ -107,7 +109,7 @@ Sub ExportViewDimensions(view As SldWorks.view, draw As SldWorks.DrawingDoc, fil
         
         OutputDimensionData fileNmb, swDim.FullName, view.name, GetDimensionType(swDispDim), CDbl(vPos(0)), CDbl(vPos(1)), _
                 CDbl(swDim.GetValue3(swInConfigurationOpts_e.swThisConfiguration, Empty)(0)), _
-                swSheet.GetDrawingZone(vPos(0), vPos(1)), tolType, minVal, maxVal
+                drwZone, tolType, minVal, maxVal
         
         Set swDispDim = swDispDim.GetNext5
         
