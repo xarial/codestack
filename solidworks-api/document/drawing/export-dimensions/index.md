@@ -26,6 +26,6 @@ Macro includes the following information into the report:
 
 ![Dimensions information opened in Excel](dimensions-report.png){ width=600 }
 
-Resulting file is saved into the same folder as original drawing and named *[drawing name]-dimensions.csv*
+Output file is saved into the same folder as original drawing and named *[drawing name]-dimensions.csv*
 
 {% code-snippet { file-name: Macro.vba } %}
