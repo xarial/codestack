@@ -8,6 +8,9 @@ Sub main()
 
     Set swApp = Application.SldWorks
     
+try_:
+    On Error GoTo catch_
+    
     Set swModel = swApp.ActiveDoc
     
     Dim hasDeleted As Boolean
@@ -16,7 +19,7 @@ Sub main()
     
     If swModel.GetType = swDocumentTypes_e.swDocASSEMBLY Then
         
-        If MsgBox("Do you want to delete equations in all components of the assembly?", vbYesNo) = vbYes Then
+        If swApp.SendMsgToUser2("Do you want to delete equations in all components of the assembly?", swMessageBoxIcon_e.swMbQuestion, swMessageBoxBtn_e.swMbYesNo) = swMessageBoxResult_e.swMbHitYes Then
             
             Dim swAssy As SldWorks.AssemblyDoc
             Set swAssy = swModel
@@ -58,6 +61,12 @@ Sub main()
     If hasDeleted Then
         swModel.ForceRebuild3 False
     End If
+    
+    GoTo finally_
+    
+catch_:
+    swApp.SendMsgToUser2 Err.Description, swMessageBoxIcon_e.swMbStop, swMessageBoxBtn_e.swMbOk
+finally_:
     
 End Sub
 
