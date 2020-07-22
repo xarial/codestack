@@ -16,7 +16,7 @@ This example demonstrates how to run command synchronously using SOLIDWORKS API,
 ## Run Instructions
 
 * Open/create part document
-* Create any sketch with rectange (or another shape)
+* Create any sketch with rectangle (or another shape)
 * Select the sketch
 * Run the macro. As the result 'Boss-Extrude' property page is displayed
 * Modify options and click green tick (OK) or cross (Cancel)
