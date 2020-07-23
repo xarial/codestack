@@ -15,4 +15,4 @@ Currently, CodeStack consists of following sections:
 * [SOLIDWORKS eDrawings API](https://www.codestack.net/edrawings-api/) - a collection of example and tutorials of automating of SOLIDWORKS eDrawings
 * [Visual Basic](https://www.codestack.net/visual-basic/) - tutorial of Visual Basic (VBA) - popular language for writing macros in CAD systems and office applications
 
-[CodeStack](https://www.codestack.net) welcomes contributors! If you found an error, typo, wish to extend the article, or add a new article we will appreciate your contribution.
+[CodeStack](https://www.codestack.net) welcomes contributors! If you found an error, typo, wish to extend the article, or add a new article we will appreciate your contribution. Please follow [this blog post](https://blog.xarial.com/codestack-opensource/) for contributing guidelines.
