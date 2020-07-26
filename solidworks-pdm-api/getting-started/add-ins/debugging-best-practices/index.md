@@ -56,7 +56,7 @@ Video Demonstration:
 
 {% youtube { id: uVcc4zvsSN0 } %}
 
-Examples of PDM add-ins. Please read the [How To Create SOLIDWORKS PDM Professional Add-In](http://www.codestack.net/2018/03/how-to-create-solidworks-pdm.html) article to learn how to build PDM add-in from scratch.
+Examples of PDM add-ins. Please read the [How To Create SOLIDWORKS PDM Professional Add-In](/solidworks-pdm-api/getting-started/add-ins/create/) article to learn how to build PDM add-in from scratch.
 
 <details>
 <summary>C# Example</summary>

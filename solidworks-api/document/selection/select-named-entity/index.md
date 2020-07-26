@@ -15,7 +15,7 @@ Name can be set in the displayed dialog and it is unique per part.
 
 ![Face name dialog](face-name.png){ width=250 }
 
-Pointer to the entity can be retrieved via [IPartDoc::GetEntityByName](http://help.solidworks.com/2014/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IPartDoc~GetEntityByName.html) SOLIDWORKS API method.
+Pointer to the entity can be retrieved via [IPartDoc::GetEntityByName](https://help.solidworks.com/2014/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IPartDoc~GetEntityByName.html) SOLIDWORKS API method.
 
 This example enhances the functionality and also allows to select entity by name in drawing (from the selected drawing view) or assembly (from the selected component of part).
 

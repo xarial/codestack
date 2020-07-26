@@ -8,6 +8,6 @@ redirect-from:
 ---
 This example demonstrates how to read the content of the selected table (Bill Of Materials, General Table, Cut-List Table etc.) into the 2-dimensional array using SOLIDWORKS API.
 
-[ITableAnnotation](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ITableAnnotation.html) SOLIDWORKS API interface provides an access to the data of all table types.
+[ITableAnnotation](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ITableAnnotation.html) SOLIDWORKS API interface provides an access to the data of all table types.
 
 {% code-snippet { file-name: Macro.vba } %}

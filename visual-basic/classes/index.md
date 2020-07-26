@@ -39,7 +39,7 @@ cl1.Var2 = 1
 cl2.Var2 = 2
 ~~~
 
-Classes are similar to [modules](http://localhost:4000/visual-basic/modules/), but there are several differences:
+Classes are similar to [modules](/visual-basic/modules/), but there are several differences:
 
 * It is required to create an instance of a class using **new** keyword
 * All the data associated with this class wil be stored within its instance, which means that different instances of the same class may have different data.

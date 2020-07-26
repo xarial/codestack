@@ -11,7 +11,7 @@ This example demonstrates how to get local copies of the file and all the depend
 
 PDM is a server based application and files are cached locally when they are accessed in PDM via Windows File Explorer. Files cache can be cleared or outdated. That means that desktop applications may fail when trying to access the file in PDM vault if it has not been cached locally. File Not Found error will occur (e.g. when using SOLIDWORKS API to open the file or using File System Object to traverse the folders structure or read any attributes).
 
-To increase the performance this macro utilizes the [IEdmBatchGet](http://help.solidworks.com/2018/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmbatchget.html) SOLIDWORKS PDM API interface which enables batch files processing.
+To increase the performance this macro utilizes the [IEdmBatchGet](https://help.solidworks.com/2018/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmbatchget.html) SOLIDWORKS PDM API interface which enables batch files processing.
 
 To test this scenario
 

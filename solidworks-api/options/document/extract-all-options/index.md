@@ -20,11 +20,11 @@ Macro outputs the properties into the CSV file which can be opened in Excel. The
 * Preference option - additional information about preference
 * Value - current value of the preference
 
-Refer [System Options and Document Properties](http://help.solidworks.com/2016/english/api/sldworksapiprogguide/overview/system_options_and_document_properties.htm) article for a list of options to match the specific preference ID and value.
+Refer [System Options and Document Properties](https://help.solidworks.com/2016/english/api/sldworksapiprogguide/overview/system_options_and_document_properties.htm) article for a list of options to match the specific preference ID and value.
 
 ![Extracted user preferences opened in Excel](user-preferences-excel.png){ width=350 }
 
-This macro can be useful if it is required to compare the preferences between different files. Any diff tool can be used to simplify the comparison and identify the differences, such as [WinMerge](http://winmerge.org/)
+This macro can be useful if it is required to compare the preferences between different files. Any diff tool can be used to simplify the comparison and identify the differences, such as [WinMerge](https://winmerge.org/)
 
 ![Differences between user preferences of two models](diff-user-preferences.png){ width=550 }
 

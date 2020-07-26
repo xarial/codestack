@@ -3,9 +3,9 @@ title: Utilizing main ISwDMApplication application object in SOLIDWORKS Document
 caption: Application
 description: Explanation and examples of top level object in Document Manager API ISwDMApplication
 ---
-[ISwDMApplication](http://help.solidworks.com/2017/english/api/swdocmgrapi/solidworks.interop.swdocumentmgr~solidworks.interop.swdocumentmgr.iswdmapplication.html) is a top level object in SOLIDWORKS Document Manager API hierarchy and represents the application itself.
+[ISwDMApplication](https://help.solidworks.com/2017/english/api/swdocmgrapi/solidworks.interop.swdocumentmgr~solidworks.interop.swdocumentmgr.iswdmapplication.html) is a top level object in SOLIDWORKS Document Manager API hierarchy and represents the application itself.
 
-Pointer to the object can be accessed via [ISwDMClassFactory::GetApplication](http://help.solidworks.com/2017/english/api/swdocmgrapi/SOLIDWORKS.Interop.swdocumentmgr~SOLIDWORKS.Interop.swdocumentmgr.ISwDMClassFactory~GetApplication.html) method.
+Pointer to the object can be accessed via [ISwDMClassFactory::GetApplication](https://help.solidworks.com/2017/english/api/swdocmgrapi/SOLIDWORKS.Interop.swdocumentmgr~SOLIDWORKS.Interop.swdocumentmgr.ISwDMClassFactory~GetApplication.html) method.
 
 ### Functionality
 

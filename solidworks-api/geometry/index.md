@@ -7,7 +7,7 @@ order: 5
 ---
 ![SOLIDWORKS models geometry API](solidworks-geometry-api.png){ width=250 }
 
-SOLIDWORKS API provides a low level access to geometry generation and processing via [IModeler](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModeler.html) interface.
+SOLIDWORKS API provides a low level access to geometry generation and processing via [IModeler](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModeler.html) interface.
 
 This interface allows to manipulate the geometry on a kernel level:
 

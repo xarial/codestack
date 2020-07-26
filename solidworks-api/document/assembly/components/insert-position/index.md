@@ -9,7 +9,7 @@ labels: [components,positions]
 
 This example demonstrates the performance efficient way of inserting a batch of components into assembly and automatic positioning of them in 3D grid using SOLIDWORKS API.
 
-Components are inserted using the [IAssemblyDoc::AddComponents3](http://help.solidworks.com/2011/English/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IAssemblyDoc~AddComponents3.html) SOLIDWORKS API method. Which allows to preassign the transformations for components to be inserted.
+Components are inserted using the [IAssemblyDoc::AddComponents3](https://help.solidworks.com/2011/English/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IAssemblyDoc~AddComponents3.html) SOLIDWORKS API method. Which allows to preassign the transformations for components to be inserted.
 
 Boundaries of the grid can be specified by setting the constants in the begging of the macro.
 

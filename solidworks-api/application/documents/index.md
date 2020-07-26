@@ -4,7 +4,7 @@ caption: Documents
 description: Examples of closing, opening, traversing documents using SOLIDWORKS API
 labels: [documents]
 ---
-SOLIDWORKS document represented as [IModelDoc2](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModelDoc2.html) interface in SOLIDWORKS API.
+SOLIDWORKS document represented as [IModelDoc2](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModelDoc2.html) interface in SOLIDWORKS API.
 
 SOLIDWORKS allows to open and keep active multiple documents at a time. Furthermore documents might have embedded documents, for example assemblies often have another assemblies or parts linked to them as components, drawings refer underlying documents for loading drawing views and also parts can have embedded parts.
 

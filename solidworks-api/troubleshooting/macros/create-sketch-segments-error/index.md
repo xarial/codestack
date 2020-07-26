@@ -13,11 +13,11 @@ SOLIDWORKS macro creates sketch segments (line, arcs, etc) or sketch points usin
 
 ## Cause
 
-By default all entities inserted using the [ISketchManager](http://help.solidworks.com/2016/English/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISketchManager.html) interface are created via user interface. That means that the entity cannot be created if the target area (i.e. boundaries of the segments) is not visible in the user interface (e.g. the view is moved or scaled).  
+By default all entities inserted using the [ISketchManager](https://help.solidworks.com/2016/English/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISketchManager.html) interface are created via user interface. That means that the entity cannot be created if the target area (i.e. boundaries of the segments) is not visible in the user interface (e.g. the view is moved or scaled).  
 
 ## Resolution
 
-Set [ISketchManager::AddToDB](http://help.solidworks.com/2016/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isketchmanager~addtodb.html) property to *True* before the entities creation and restore the original value once the job is finished.
+Set [ISketchManager::AddToDB](https://help.solidworks.com/2016/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isketchmanager~addtodb.html) property to *True* before the entities creation and restore the original value once the job is finished.
 Setting this option to true will bypass the creation of entities via User Interface rather add the data directly to the model storage. This may also improve performance while creating the entities.
   
 {% code-snippet { file-name: add-to-db.vba } %}

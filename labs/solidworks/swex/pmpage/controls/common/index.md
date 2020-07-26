@@ -34,7 +34,7 @@ Tooltip for controls can be set by applying the [DescriptionAttribute](https://d
 
 ![Standard icon added to text box control](standard-icon-textbox.png)
 
-Standard icon defined in [swControlBitmapLabelType_e](http://help.solidworks.com/2017/english/api/swconst/SolidWorks.Interop.swconst~SolidWorks.Interop.swconst.swControlBitmapLabelType_e.html?id=aff2422a1ecf4632aae3e41abe59c6fc) enumeration can be set to control via [ControlAttributionAttribute](https://docs.codestack.net/swex/pmpage/html/M_CodeStack_SwEx_PMPage_Attributes_ControlAttributionAttribute__ctor.htm) attribute.
+Standard icon defined in [swControlBitmapLabelType_e](https://help.solidworks.com/2017/english/api/swconst/SolidWorks.Interop.swconst~SolidWorks.Interop.swconst.swControlBitmapLabelType_e.html?id=aff2422a1ecf4632aae3e41abe59c6fc) enumeration can be set to control via [ControlAttributionAttribute](https://docs.codestack.net/swex/pmpage/html/M_CodeStack_SwEx_PMPage_Attributes_ControlAttributionAttribute__ctor.htm) attribute.
 
 {% code-snippet { file-name: CommonOptions.StandardIcon.* } %}
 

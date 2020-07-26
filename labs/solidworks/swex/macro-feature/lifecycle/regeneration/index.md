@@ -13,6 +13,6 @@ Feature can generate the following output
 
 {% code-snippet { file-name: RegenerationResults.cs } %}
 
-Use [IModeler](http://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeler.html) interface if feature needs to create new bodies. Only temp bodies can be returned from the regeneration method.
+Use [IModeler](https://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeler.html) interface if feature needs to create new bodies. Only temp bodies can be returned from the regeneration method.
 
 Use extension methods available in the [IModelerExtension](https://docs.codestack.net/swex/macro-feature/html/T_SolidWorks_Interop_sldworks_ModelerEx.htm) class.

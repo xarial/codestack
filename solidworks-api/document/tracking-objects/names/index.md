@@ -26,7 +26,7 @@ The following object types have names assigned to them
 
 By default names of entities (faces, edges, vertices) are not assigned.
 
-Entity name can be changed from the **Entity Property** dialog. Refer [Displaying Entity Properties](http://help.solidworks.com/2017/english/solidworks/sldworks/hidd_ent_property.htm)
+Entity name can be changed from the **Entity Property** dialog. Refer [Displaying Entity Properties](https://help.solidworks.com/2017/english/solidworks/sldworks/hidd_ent_property.htm)
 
 ![Entity Property dialog box for assigning the entity name](entity-property.png)
 

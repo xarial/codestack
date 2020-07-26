@@ -10,6 +10,6 @@ This example demonstrates how to replace references (components or drawing views
 * Specify the full path to the document to replace
 * Specify the full path to the new document
 
-[ISwDMDocument::ReplaceReference](http://help.solidworks.com/2018/english/api/swdocmgrapi/solidworks.interop.swdocumentmgr~solidworks.interop.swdocumentmgr.iswdmdocument~replacereference.html) SOLIDWORKS Document Manager API method is used to replace the old reference with new one.
+[ISwDMDocument::ReplaceReference](https://help.solidworks.com/2018/english/api/swdocmgrapi/solidworks.interop.swdocumentmgr~solidworks.interop.swdocumentmgr.iswdmdocument~replacereference.html) SOLIDWORKS Document Manager API method is used to replace the old reference with new one.
 
 {% code-snippet { file-name: Macro.vba } %}

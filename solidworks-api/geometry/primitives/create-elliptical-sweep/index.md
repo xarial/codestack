@@ -9,7 +9,7 @@ labels: [topology, geometry, sheet, modeler, sphere]
 
 This example demonstrates how to sweep the circular profile along elliptical path to create a temp body using SOLIDWORKS API.
 
-The [IModeler::CreateSweptBody](http://help.solidworks.com/2012/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.IModeler~CreateSweptBody.html) SOLIDWORKS API method requires profile and path to be preselected which means curves cannot be used for sweep operation.
+The [IModeler::CreateSweptBody](https://help.solidworks.com/2012/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.IModeler~CreateSweptBody.html) SOLIDWORKS API method requires profile and path to be preselected which means curves cannot be used for sweep operation.
 
 However macro demonstrates how to create edges from the curves in the temp wire bodies.
 

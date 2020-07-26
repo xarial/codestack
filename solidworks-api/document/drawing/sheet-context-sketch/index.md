@@ -13,7 +13,7 @@ The bounding box coordinate system is extracted from the underlying model of the
 
 In order to properly transform the coordinate into the drawing sheet space it is required to consider the following:
 
-* Drawing view transformation. This can be extracted using the [IView::ModelToViewTransform](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iview~modeltoviewtransform.html) SOLIDWORKS API method.
+* Drawing view transformation. This can be extracted using the [IView::ModelToViewTransform](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iview~modeltoviewtransform.html) SOLIDWORKS API method.
 * Drawing sheet transformation.
 * Drawing sheet scale
 
@@ -21,7 +21,7 @@ In order to properly transform the coordinate into the drawing sheet space it is
 
 The combination of the above transformation will return the full transformation of the coordinate from the model space into the current sheet space.
 
-> When inserting the sketch segments into the drawing sheet it is imported to activate the sheet space by calling the [IDrawingDoc::ActivateView](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.idrawingdoc~activateview.html) SOLIDWORKS API method and passing an empty string as the parameter. Otherwise the entity will be inserted directly into the model space of the view document.
+> When inserting the sketch segments into the drawing sheet it is imported to activate the sheet space by calling the [IDrawingDoc::ActivateView](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.idrawingdoc~activateview.html) SOLIDWORKS API method and passing an empty string as the parameter. Otherwise the entity will be inserted directly into the model space of the view document.
 
 ## Running macro
 

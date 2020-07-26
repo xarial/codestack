@@ -8,6 +8,6 @@ Add-ins in SOLIDWORKS PDM are applications which are integrated into the systems
 
 Add-in enables an access to all available SOLIDWORKS API interfaces and methods.
 
-In order to create an add-in it is required to implement the [IEdmAddIn5](http://help.solidworks.com/2018/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmaddin5.html) interface.
+In order to create an add-in it is required to implement the [IEdmAddIn5](https://help.solidworks.com/2018/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmaddin5.html) interface.
 
 This section provides guidelines of creating and troubleshooting add-ins using SOLIDWORKS PDM API.

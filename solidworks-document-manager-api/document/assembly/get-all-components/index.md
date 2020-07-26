@@ -19,6 +19,6 @@ To get top level components only modify the function as follows
 Call GetAllComponents(swDmDoc, "", True, comps)
 ~~~
 
-> Do not store the pointer to [ISwDMComponent](http://help.solidworks.com/2015/english/api/swdocmgrapi/solidworks.interop.swdocumentmgr~solidworks.interop.swdocumentmgr.iswdmcomponent.html) while traversing the levels of assembly as it will be destroyed once the document is closed or pointer is released
+> Do not store the pointer to [ISwDMComponent](https://help.solidworks.com/2015/english/api/swdocmgrapi/solidworks.interop.swdocumentmgr~solidworks.interop.swdocumentmgr.iswdmcomponent.html) while traversing the levels of assembly as it will be destroyed once the document is closed or pointer is released
 
 {% code-snippet { file-name: Macro.vba } %}

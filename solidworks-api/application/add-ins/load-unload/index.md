@@ -7,7 +7,7 @@ image: toggle-addins.svg
 labels: [add-in, load]
 group: Frame
 ---
-This macro allows to trigger the load state of the specified add-in using the [ISldWorks::LoadAddIn](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~loadaddin.html) and [ISldWorks::UnloadAddIn](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~unloadaddin.html) SOLIDWORKS API.
+This macro allows to trigger the load state of the specified add-in using the [ISldWorks::LoadAddIn](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~loadaddin.html) and [ISldWorks::UnloadAddIn](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~unloadaddin.html) SOLIDWORKS API.
 
 This can be useful to provide a short-cut for loading and unloading the add-in with one button click. It is recommended to use [Macro Buttons](solidworks-api/getting-started/macros/macro-buttons/) to create a button for add-in in the toolbar.
 

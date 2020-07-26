@@ -14,7 +14,7 @@ Software developers can emulate the user interaction with SOLIDWORKS to implemen
 
 SOLIDWORKS API covers almost all functionality of SOLIDWORKS with the minor exceptions (in this case the API implementation is usually planned for future releases). So it is possible to say that everything user can do with SOLIDWORKS from the interface can be emulated in the code.
 
-SOLIDWORKS API is used by SOLIDWORKS partners to develop bespoke solutions (add-ins). Follow [SOLIDWORKS Partner Products](http://www.solidworks.com/sw/products/search/results.htm) link for the list of registered solutions.
+SOLIDWORKS API is used by SOLIDWORKS partners to develop bespoke solutions (add-ins). Follow [SOLIDWORKS Partner Products](https://www.solidworks.com/engineering-software-partners-products) link for the list of registered solutions.
 
 ## Application
 
@@ -25,7 +25,7 @@ SOLIDWORKS API is used by SOLIDWORKS partners to develop bespoke solutions (add-
 ## Notes
 
 * SOLIDWORKS API included in all packages of SOLIDWORKS (i.e. Standard, Professional and Premium).
-* SOLIDWORKS API Help is available [online](http://help.solidworks.com/2017/english/api/sldworksapiprogguide/welcome.htm)
+* SOLIDWORKS API Help is available [online](https://help.solidworks.com/2017/english/api/sldworksapiprogguide/welcome.htm)
 * Same as SOLIDWORKS itself its API is backward compatible but not forward compatible. I.e. older versions of macros and add-ins are compatible with future versions of SOLIDWORKS but not vice versa.
 
 Please explore the Table of Content for more detailed guides and examples of SOLIDWORKS API.

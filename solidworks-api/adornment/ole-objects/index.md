@@ -11,6 +11,6 @@ Such objects usually can be manipulated directly from the host environment. For 
 
 OLE Objects are usually saved with SOLIDWORKS file and can be removed, resized or used directly in the graphics area.
 
-SOLIDWORKS API enables the access to OLE objects via [ISwOLEObject](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISwOLEObject.html) interface. Objects can be enumerated, created and deleted by using the API methods of [IModelDocExtension](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModelDocExtension.html) interface.
+SOLIDWORKS API enables the access to OLE objects via [ISwOLEObject](https://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.ISwOLEObject.html) interface. Objects can be enumerated, created and deleted by using the API methods of [IModelDocExtension](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IModelDocExtension.html) interface.
 
 This section contains macros and examples allowing to manipulate OLE objects in documents using the SOLIDWORKS API.

@@ -9,7 +9,7 @@ redirect-from:
 ---
 SOLIDWORKS components are instances of models (parts or assemblies) in the another parent assembly. Component's position in its space is driven by its transformation (regardless if the component is constrained by mates or moved in the space by free drag-n-drop operation). Transformation consists of 3 components: translation, rotation and scale.
 
-To get the transformation of the component use the [IComponent2::Transform2](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~transform2.html) SOLIDWORKS API property. The transform in this case represents the relation of the component origin coordinate systems to the root assembly origin coordinate system. It is not required to multiple the transform of sub-assemblies for its children components to get the total transformation of these components relative to root assembly.
+To get the transformation of the component use the [IComponent2::Transform2](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~transform2.html) SOLIDWORKS API property. The transform in this case represents the relation of the component origin coordinate systems to the root assembly origin coordinate system. It is not required to multiple the transform of sub-assemblies for its children components to get the total transformation of these components relative to root assembly.
 
 ## Translation Transformation
 

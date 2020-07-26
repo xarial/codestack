@@ -11,7 +11,7 @@ This example demonstrates how to select any SOLIDWORKS objects (entities, featur
 
 This technique can be useful when the type of the object is not known in advance. It also gives performance benefits when selecting several objects at a time instead of selecting one-by-one using SOLIDWORKS API.
 
-The following example provides similar functionality to SOLIDWORKS [Create Selection Set](http://help.solidworks.com/2015/english/whatsnew/t_creating_selection_sets.htm)
+The following example provides similar functionality to SOLIDWORKS [Create Selection Set](https://help.solidworks.com/2015/english/whatsnew/t_creating_selection_sets.htm)
 
 ![Create Selection Set context menu command](create-selection-set.png){ width=300 }
 

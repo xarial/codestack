@@ -28,7 +28,7 @@ Document Manager has a limited functionality compared to full SOLIDWORKS API. Th
     * Replacing file relationships (components and drawing view references)
     * Reading components transformations in the assembly
     * Reading tables data in models and drawings
-    * Reading [3rd party storage data](http://help.solidworks.com/2015/english/api/sldworksapiprogguide/overview/third-party_data_in_solidworks_files.htm)
+    * Reading [3rd party storage data](https://help.solidworks.com/2015/english/api/sldworksapiprogguide/overview/third-party_data_in_solidworks_files.htm)
     * Getting the information about the configurations, drawing views and their properties
 	
 * Previews

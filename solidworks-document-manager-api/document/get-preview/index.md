@@ -11,6 +11,6 @@ This approach would work for both in-process and out-of-process application.
 * Paste the code
 * Run the application with 2 arguments: full path to the input SOLIDWORKS part or assembly and full path to output PNG image
 
-This example is using the [ISwDMConfiguration9::GetPreviewPNGBitmapBytes](http://help.solidworks.com/2018/english/api/swdocmgrapi/solidworks.interop.swdocumentmgr~solidworks.interop.swdocumentmgr.iswdmconfiguration9~getpreviewpngbitmapbytes.html) SOLIDWORKS Document Manager API to extract byte buffer of preview and convert it to an [Image](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image?view=netframework-4.7.2) object.
+This example is using the [ISwDMConfiguration9::GetPreviewPNGBitmapBytes](https://help.solidworks.com/2018/english/api/swdocmgrapi/solidworks.interop.swdocumentmgr~solidworks.interop.swdocumentmgr.iswdmconfiguration9~getpreviewpngbitmapbytes.html) SOLIDWORKS Document Manager API to extract byte buffer of preview and convert it to an [Image](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image?view=netframework-4.7.2) object.
 
 {% code-snippet { file-name: console.cs } %}

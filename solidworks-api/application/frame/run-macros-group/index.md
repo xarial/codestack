@@ -9,7 +9,7 @@ group: Frame
 ---
 ![Library of macros in the Windows folder](macros-library.png)
 
-Macro can be run from another macro using the [ISldWorks::RunMacro2](http://help.solidworks.com/2010/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~runmacro2.html) SOLIDWORKS API function.
+Macro can be run from another macro using the [ISldWorks::RunMacro2](https://help.solidworks.com/2010/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~runmacro2.html) SOLIDWORKS API function.
 
 This enables the possibility to run multiple macros from within one macro. This can be useful when [adding the custom macro buttons on the macro toolbar](/solidworks-api/getting-started/macros/macro-buttons/) so multiple commands can be executed by one button click.
 

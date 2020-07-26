@@ -13,6 +13,6 @@ This example will modify the value of the selected dimension and sets its value 
 
 ![Equation in dimension](sw-dimension-equation.png){ width=320 height=200 }
 
-[IEquationMgr](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IEquationMgr.html) SOLIDWORKS API interface should be used to manage equations in SOLIDWORKS document.
+[IEquationMgr](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IEquationMgr.html) SOLIDWORKS API interface should be used to manage equations in SOLIDWORKS document.
 
 {% code-snippet { file-name: Macro.vba } %}

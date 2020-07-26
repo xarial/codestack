@@ -9,7 +9,7 @@ labels: [installer, wix, deployment]
 
 ## Downloading and installing WiX framework
 
-Download the WiX installer from the [WiX Toolset](http://wixtoolset.org/) website
+Download the WiX installer from the [WiX Toolset](https://wixtoolset.org/) website
 
 > It is recommended to download the latest stable version
 
@@ -21,7 +21,7 @@ Once installation is complete click the button to install the Visual Studio exte
 
 ![Installing the Visual Studio extension](wix-visual-studio-extension.png){ width=250 }
 
-> Alternatively extensions can be downloaded directly from the [Releases Page](http://wixtoolset.org/releases/) or from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=RobMensching.WiXToolset)
+> Alternatively extensions can be downloaded directly from the [Releases Page](https://wixtoolset.org/releases/) or from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=RobMensching.WiXToolset)
 
 ## Adding the installer project
 
@@ -167,7 +167,7 @@ Alternatively files can be added automatically using the harvest tool so it is n
 
 > If stand-alone application needs to be deployed and no COM components needs to be registered than this step could be skipped.
 
-SOLIDWORKS add-in must be registered as a COM component. It is recommended to use [Harvest tool (heat)](http://wixtoolset.org/documentation/manual/v3/overview/heat.html) instead of custom action with [regasm](https://docs.microsoft.com/en-us/dotnet/framework/tools/regasm-exe-assembly-registration-tool) to deploy COM components
+SOLIDWORKS add-in must be registered as a COM component. It is recommended to use [Harvest tool (heat)](https://wixtoolset.org/documentation/manual/v3/overview/heat.html) instead of custom action with [regasm](https://docs.microsoft.com/en-us/dotnet/framework/tools/regasm-exe-assembly-registration-tool) to deploy COM components
 
 Harvest tool can be used in 2 approaches
 

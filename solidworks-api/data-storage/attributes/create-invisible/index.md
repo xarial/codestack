@@ -9,7 +9,7 @@ redirect-from:
 ---
 This example creates an invisible attribute and attaches to the selected object (entity or component).
 
-Attribute ca be hidden by setting the corresponding flag in the [IAttributeDef::CreateInstance5](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iattributedef~createinstance5.html) SOLIDWORKS API method.
+Attribute ca be hidden by setting the corresponding flag in the [IAttributeDef::CreateInstance5](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iattributedef~createinstance5.html) SOLIDWORKS API method.
 
 ![Attribute feature inserted to the Feature Manager Tree](sw-attribute-features-tree.png){ width=272 height=320 }
 

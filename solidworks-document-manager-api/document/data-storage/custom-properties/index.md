@@ -8,9 +8,9 @@ SOLIDWORKS Document Manager API provides a comprehensive set of functions to man
 
 Custom properties can be accessed for the
 
-* File (general) via [ISwDMDocument](http://help.solidworks.com/2018/english/api/swdocmgrapi/SolidWorks.Interop.swdocumentmgr~SolidWorks.Interop.swdocumentmgr.ISwDMDocument.html) interface
-* Configuration via [ISwDMConfiguration](http://help.solidworks.com/2018/english/api/swdocmgrapi/SolidWorks.Interop.swdocumentmgr~SolidWorks.Interop.swdocumentmgr.ISwDMConfiguration.html) interface
-* Cut-list items via [ISwDMCutListItem2](http://help.solidworks.com/2018/english/api/swdocmgrapi/SolidWorks.Interop.swdocumentmgr~SolidWorks.Interop.swdocumentmgr.ISwDMCutListItem2.html) interface
+* File (general) via [ISwDMDocument](https://help.solidworks.com/2018/english/api/swdocmgrapi/SolidWorks.Interop.swdocumentmgr~SolidWorks.Interop.swdocumentmgr.ISwDMDocument.html) interface
+* Configuration via [ISwDMConfiguration](https://help.solidworks.com/2018/english/api/swdocmgrapi/SolidWorks.Interop.swdocumentmgr~SolidWorks.Interop.swdocumentmgr.ISwDMConfiguration.html) interface
+* Cut-list items via [ISwDMCutListItem2](https://help.solidworks.com/2018/english/api/swdocmgrapi/SolidWorks.Interop.swdocumentmgr~SolidWorks.Interop.swdocumentmgr.ISwDMCutListItem2.html) interface
 
 It is possible to read properties one-by-one or extract the values in a batch.
 

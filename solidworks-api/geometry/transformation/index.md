@@ -5,7 +5,7 @@ description: Applying and reading transformation (components, bodies, sketches e
 order: 2
 labels: [transform,math]
 ---
-Transformation in SOLIDWORKS API is represented in the [IMathTransform](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathtransform.html) interface. This is a 4x4 transformation matrix holding the information about transform, scale and translation.
+Transformation in SOLIDWORKS API is represented in the [IMathTransform](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathtransform.html) interface. This is a 4x4 transformation matrix holding the information about transform, scale and translation.
 
 Matrix array is represented with 16 doubles (0 to 15) which are aligned in the following order
 
@@ -55,11 +55,11 @@ var matrix = new double[]
 };
 ~~~
 
-[IMathUtility](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathutility.html) is a SOLIDWORKS API utility interface providing the access to operations related to composing the transformation based on input parameters (such as rotation angles, translation, raw data).
+[IMathUtility](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathutility.html) is a SOLIDWORKS API utility interface providing the access to operations related to composing the transformation based on input parameters (such as rotation angles, translation, raw data).
 
 The following interfaces are usually used while calculation of transformations and translations:
 
-[IMathVector](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathvector.html)
-[IMathPoint](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathpoint.html)
+[IMathVector](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathvector.html)
+[IMathPoint](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathpoint.html)
 
 This example contains articles and tutorials explaining the use of transformation matrices.

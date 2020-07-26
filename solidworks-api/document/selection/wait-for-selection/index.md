@@ -7,7 +7,7 @@ labels: [selection,event,notification]
 ---
 This article describes two approaches of waiting for the object selection in SOLIDWORKS document using SOLIDWORKS API in VBA macro.
 
-For both approaches specify the filter to wait selection for at the beginning of the macro. Available filter values defined in the [swSelectType_e](http://help.solidworks.com/2014/english/api/swconst/SolidWorks.Interop.swconst~SolidWorks.Interop.swconst.swSelectType_e.html) enumeration
+For both approaches specify the filter to wait selection for at the beginning of the macro. Available filter values defined in the [swSelectType_e](https://help.solidworks.com/2014/english/api/swconst/SolidWorks.Interop.swconst~SolidWorks.Interop.swconst.swSelectType_e.html) enumeration
 
 ~~~ vb
 Const FILTER As Integer = swSelectType_e.swSelEDGES

@@ -9,7 +9,7 @@ group: Developers
 ---
 ![Type of specific feature and feature definition of selected feature output to the window](specific-feature-types.png){ width=450 }
 
-[IFeature::GetSpecificFeature2](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IFeature~GetSpecificFeature2.html) and [IFeature::GetDefinition](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ifeature~getdefinition.html) SOLIDWORKS API methods return dispatch pointers which in some cases are not easy to identify and cast to specific types.
+[IFeature::GetSpecificFeature2](https://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IFeature~GetSpecificFeature2.html) and [IFeature::GetDefinition](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ifeature~getdefinition.html) SOLIDWORKS API methods return dispatch pointers which in some cases are not easy to identify and cast to specific types.
 
 The following code example allows to output all assignable interfaces for the selected feature's definition and specific feature. The result is output to the *Output* window of VSTA editor.
 

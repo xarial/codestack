@@ -20,7 +20,7 @@ Scrip arguments:
 1. *password* - password for the user name above
 1. *folderName* - full path to folder to change permission for
 1. *targetUserName* - user name to change permissions for
-1. *permissions* - permissions to assign. Integer number which represents a single permissions or a group of permissions. Permissions numbers defined in [EdmRightFlags](http://help.solidworks.com/2018/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.EdmRightFlags.html). Sum the values of required permissions to assign multiple values (e.g. set 1 for read files permission and 15 for read, check out, delete and add files [1 + 2 + 4 + 8])
+1. *permissions* - permissions to assign. Integer number which represents a single permissions or a group of permissions. Permissions numbers defined in [EdmRightFlags](https://help.solidworks.com/2018/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.EdmRightFlags.html). Sum the values of required permissions to assign multiple values (e.g. set 1 for read files permission and 15 for read, check out, delete and add files [1 + 2 + 4 + 8])
 
 ~~~
 > set-permissions.cmd MyVault admin pwd "D:\My Vaults\Vault1\Folder1" user1 15

@@ -15,7 +15,7 @@ Example demonstrates how to align all sketch lines in the active sketch (add the
 
 This example will work with both 2D and 3D sketch.
 
-[ISketchRelationManager](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isketchrelationmanager.html) SOLIDWORKS API interface is used to manage the relations of the sketch entities.
+[ISketchRelationManager](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isketchrelationmanager.html) SOLIDWORKS API interface is used to manage the relations of the sketch entities.
 
 ![Relations in sketch line](sw-sketch-line-relation.png){ width=320 height=229 }
 

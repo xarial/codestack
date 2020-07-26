@@ -11,6 +11,6 @@ This example finds the revision table and removes all revisions and then adds ne
 
 ![Revision Table](sw-revision-table.png){ width=640 }
 
-[IRevisionTableAnnotation](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.irevisiontableannotation.html) SOLIDWORKS API interface is used to manage specific functionality of this type of the table.
+[IRevisionTableAnnotation](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.irevisiontableannotation.html) SOLIDWORKS API interface is used to manage specific functionality of this type of the table.
 
 {% code-snippet { file-name: Macro.vba } %}

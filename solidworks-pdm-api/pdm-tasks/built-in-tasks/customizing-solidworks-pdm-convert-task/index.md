@@ -13,7 +13,7 @@ There are several out-of-the-box tasks provided by SOLIDWORKS PDM
 
 ![List of standard tasks in the Administration Panel](standard-sw-pdm-tasks.png){ width=203 height=320 }
 
-Those tasks are highly customizable via task settings. For example it is possible to change the conversion settings for [Convert task](http://help.solidworks.com/2017/english/enterprisepdm/admin/t_configure_convert.htm) from the Settings Page.
+Those tasks are highly customizable via task settings. For example it is possible to change the conversion settings for [Convert task](https://help.solidworks.com/2017/english/enterprisepdm/admin/t_configure_convert.htm) from the Settings Page.
 
 ![Convert task conversion settings](convert-task-conversion-settings.png){ width=320 height=308 }
 
@@ -42,7 +42,7 @@ As an example, in order to set the DPI settings for the PDF output is it require
 
 ![Code block to set DPI for the output file](set-dpi-output.png){ width=640 height=210 }
 
-Please note that starting and closing of SOLIDWORKS as well as check-in of the output file and [paste-as-reference](http://help.solidworks.com/2012/english/enterprisepdm/fileexplorer/t_Creating_a_Topic_Reference.htm) (if specified) are performed outside of the script scope.
+Please note that starting and closing of SOLIDWORKS as well as check-in of the output file and [paste-as-reference](https://help.solidworks.com/2012/english/enterprisepdm/fileexplorer/t_Creating_a_Topic_Reference.htm) (if specified) are performed outside of the script scope.
 
 In order to intercept the task execution for debug purposes it is required to add the *Debug.Assert False* statement anywhere in the code and make sure that the dedicated task host is set to the local machine.
 

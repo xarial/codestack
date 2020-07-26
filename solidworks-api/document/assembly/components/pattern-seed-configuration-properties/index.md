@@ -12,7 +12,7 @@ This macro example demonstrates how to change the following configuration specif
 * Use same configuration as pattern seed component
 * Use named configuration
 
-[IAssemblyDoc::CompConfigProperties5](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iassemblydoc~compconfigproperties5.html) SOLIDWORKS API is used to modify the multiple properties at a time for the selected component.
+[IAssemblyDoc::CompConfigProperties5](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iassemblydoc~compconfigproperties5.html) SOLIDWORKS API is used to modify the multiple properties at a time for the selected component.
 
 In the instance component of the pattern (e.g. Sketch Driven Pattern)
 

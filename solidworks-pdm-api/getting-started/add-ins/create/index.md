@@ -21,9 +21,9 @@ In this article I will be creating the add-in in .NET (C# and VB.NET) in Microso
 
 It is required to do 3 mandatory steps to make the class for PDM add-in:
 
-1. Implement [IEdmAddIn5 ](http://help.solidworks.com/2014/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmaddin5.html)interface.
+1. Implement [IEdmAddIn5 ](https://help.solidworks.com/2014/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmaddin5.html)interface.
 1. Mark the class as Com Visible
-1. Specify the minimum major version supported by the add-in within the [GetAddInInfo](http://help.solidworks.com/2014/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.IEdmAddIn5~GetAddInInfo.html) by setting the [EdmAddInInfo.mlRequiredVersionMajor](http://help.solidworks.com/2014/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.edmaddininfo~mlrequiredversionmajor.html) property.
+1. Specify the minimum major version supported by the add-in within the [GetAddInInfo](https://help.solidworks.com/2014/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.IEdmAddIn5~GetAddInInfo.html) by setting the [EdmAddInInfo.mlRequiredVersionMajor](https://help.solidworks.com/2014/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.edmaddininfo~mlrequiredversionmajor.html) property.
 
 {% code-snippet { file-name: SampleAddIn.* } %}
 

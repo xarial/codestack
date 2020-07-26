@@ -5,7 +5,7 @@ description: Example demonstrates how to handle pre and post notification of fil
 image: file-lock-output.png
 labels: [event, close, pdm]
 ---
-File closing (destroy) notification (such as [DestroyNotify2](http://help.solidworks.com/2017/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.DAssemblyDocEvents_DestroyNotify2EventHandler.html)) for parts, assemblies and drawings are raised when the file is about to be closed (pre notification), which means that file is still not released from memory.
+File closing (destroy) notification (such as [DestroyNotify2](https://help.solidworks.com/2017/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.DAssemblyDocEvents_DestroyNotify2EventHandler.html)) for parts, assemblies and drawings are raised when the file is about to be closed (pre notification), which means that file is still not released from memory.
 
 This could be a blocker for the applications such as Product Data Management (PDM) where closing of the file should unlock it as some additional operation might need to be performed (e.g. removing the file from the local cache, moving to the archive, post processing the stream, clearing resources).
 

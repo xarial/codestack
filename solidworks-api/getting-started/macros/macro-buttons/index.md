@@ -42,7 +42,7 @@ Fill the form with the corresponding data
 * Optionally specify the icon. For SOLIDWORKS 2015 or older use 16 by 16 bitmap, for all newer version use 20 by 20 bitmap. Use white color as the transparency key.
 * Optionally specify the tooltip and prompt text.
 
-The buttons positions within toolbar will be maintained across SOLIDWORKS sessions. And can be exported-restored using the [SOLIDWORKS Copy Settings Wizard](http://help.solidworks.com/2013/english/solidworks/sldworks/c_copy_settings_wizard.htm).
+The buttons positions within toolbar will be maintained across SOLIDWORKS sessions. And can be exported-restored using the [SOLIDWORKS Copy Settings Wizard](https://help.solidworks.com/2013/english/solidworks/sldworks/c_copy_settings_wizard.htm).
 
 Macro buttons are performing in the same way as any other standard buttons. It is possible to assign the keyboard shortcut to the macro buttons.
 

@@ -13,7 +13,7 @@ redirect-from:
 SOLIDWORKS macro is using the title of the model (e.g. inserting the note, linking the custom property value, generating new file name for exporting).
 As the result macro misbehaves (inserting extension twice) or displays the error: *Run-time Error '5': Invalid procedure call or argument*  
 
-The extension is extracted from the document title via [IModelDoc2::GetTitle](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldoc2~gettitle.html) SOLIDWORKS API method.
+The extension is extracted from the document title via [IModelDoc2::GetTitle](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldoc2~gettitle.html) SOLIDWORKS API method.
 
 ![Run-time Error '5': Invalid procedure call or argument error when running a macro](invalid-procedure-or-call-error.png){ width=640 height=211 }
 

@@ -7,7 +7,7 @@ labels: [adornment, callout, example, note, solidworks api]
 redirect-from:
   - /2018/04/solidworks-api-adornment-create-multirow-callout.html
 ---
-This example demonstrates how to create a callout with multiple rows while selecting the object using [ISelectionMgr::CreateCallout2](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iselectionmgr~createcallout2.html) SOLIDWORKS API method.
+This example demonstrates how to create a callout with multiple rows while selecting the object using [ISelectionMgr::CreateCallout2](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iselectionmgr~createcallout2.html) SOLIDWORKS API method.
 
 ![Callout element specification](sw-callout-spec.png){ width=640 height=354 }
 

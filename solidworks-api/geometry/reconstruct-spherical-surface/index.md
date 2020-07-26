@@ -13,6 +13,6 @@ This example demonstrates how to create spherical surface (360 degress) from the
 * Reconstructed spherical surface is created as temp body and displayed in the graphics area
 * Clear the selection to clear the preview
 
-Spherical surface is created using the [IModeler::CreateSphericalSurface2](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeler~createsphericalsurface2.html) SOLIDWORKS API method which is trimmed using the [ISurface::CreateTrimmedSheet4](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isurface~createtrimmedsheet4.html)
+Spherical surface is created using the [IModeler::CreateSphericalSurface2](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeler~createsphericalsurface2.html) SOLIDWORKS API method which is trimmed using the [ISurface::CreateTrimmedSheet4](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isurface~createtrimmedsheet4.html)
 
 {% code-snippet { file-name: Macro.cs } %}

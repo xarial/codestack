@@ -7,7 +7,7 @@ labels: [assembly]
 ---
 Assembly is a specific type of the model document which represents a composition of sub documents to form the complete product.
 
-Assemblies are represented with [IAssemblyDoc](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IAssemblyDoc.html) SOLIDWORKS API interface.
+Assemblies are represented with [IAssemblyDoc](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IAssemblyDoc.html) SOLIDWORKS API interface.
 
 This section contains examples and macros of automation assemblies using SOLIDWORKS API.
 

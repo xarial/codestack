@@ -26,7 +26,7 @@ In addition to above, it is beneficial to use the */r* argument when starting SO
 
 > */b* flag is handled by SOLIDWORKS Task Scheduler and won't work for SOLIDWORKS Standard as Task Scheduler is not included into this package.
 
-Function below considers all points above and starts new session of SOLIDWORKS hidden. Use this function in conjunction with the code from the [Create C# Stand-Alone Application](http://localhost:4000/solidworks-api/getting-started/stand-alone/connect-csharp/).
+Function below considers all points above and starts new session of SOLIDWORKS hidden. Use this function in conjunction with the code from the [Create C# Stand-Alone Application](/solidworks-api/getting-started/stand-alone/connect-csharp/).
 
 > Some of the API method might not execute or behave incorrectly with SOLIDWORKS application being invisible.
 

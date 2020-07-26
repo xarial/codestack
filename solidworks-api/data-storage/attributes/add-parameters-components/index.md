@@ -7,7 +7,7 @@ labels: [attributes, data, definition, example, instance, properties, storage]
 redirect-from:
   - /2018/03/add-attributes-with-parameters-to.html
 ---
-This example adds attributes with string values as the parameters to the selected components via [IAttributeDef](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iattributedef.html) SOLIDWORKS API interface. Rebuilds the model and reads the attributes back by finding them with [IComponent2::FindAttribute](http://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.IComponent2~FindAttribute.html) method.
+This example adds attributes with string values as the parameters to the selected components via [IAttributeDef](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iattributedef.html) SOLIDWORKS API interface. Rebuilds the model and reads the attributes back by finding them with [IComponent2::FindAttribute](https://help.solidworks.com/2018/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.IComponent2~FindAttribute.html) method.
 
 Attributes are lightweight features which can be attached to SOLIDWORKS entities and store the custom data.
 

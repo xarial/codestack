@@ -11,7 +11,7 @@ order: 8
 Selection box will be generated for the public properties decorated with [SelectionBoxAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_SelectionBoxAttribute.htm).
 
 This attribute is applicable to the property of type object or any specific selectable type from 
-[SolidWorks.Interop.SldWorks](http://help.solidworks.com/2014/english/api/SWHelp_List.html?id=a4a58f35c9bf4504aea25542315877d0#Pg0&ProductType=&ProductName=) namespace. In this case the type of the object should match the type specified in the [SelectionBoxAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_SelectionBoxAttribute.htm)
+[SolidWorks.Interop.SldWorks](https://help.solidworks.com/2014/english/api/SWHelp_List.html?id=a4a58f35c9bf4504aea25542315877d0#Pg0&ProductType=&ProductName=) namespace. In this case the type of the object should match the type specified in the [SelectionBoxAttribute](https://docs.codestack.net/swex/pmpage/html/T_CodeStack_SwEx_PMPage_Attributes_SelectionBoxAttribute.htm)
 
 {% code-snippet { file-name: SelectionBox.Single.* } %}
 

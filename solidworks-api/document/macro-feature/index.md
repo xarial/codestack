@@ -10,9 +10,9 @@ Macro feature is a type of feature which can be configured via SOLIDWORKS API an
 
 Macro feature is inserted into the Feature Manager Tree and can be moved, deleted, suppressed or edited.
 
-Macro feature can be inserted via [IFeatureManager::InsertMacroFeature3](http://help.solidworks.com/2014/English/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.IFeatureManager~InsertMacroFeature3.html) method.
+Macro feature can be inserted via [IFeatureManager::InsertMacroFeature3](https://help.solidworks.com/2014/English/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.IFeatureManager~InsertMacroFeature3.html) method.
 
-Macro feature definition is defined in [IMacroFeatureData](http://help.solidworks.com/2014/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IMacroFeatureData.html) SOLIDWORKS API interface
+Macro feature definition is defined in [IMacroFeatureData](https://help.solidworks.com/2014/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IMacroFeatureData.html) SOLIDWORKS API interface
 
 ## Types Of Macro Feature
 

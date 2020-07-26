@@ -9,7 +9,7 @@ labels: [topology, geometry, sheet, modeler, sphere]
 
 This example demonstrates how to create a sheet body from the spherical surface using SOLIDWORKS API.
 
-Geometry is created using the [IModeler::CreateSphericalSurface2](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeler~createsphericalsurface2.html) SOLIDWORKS API method.
+Geometry is created using the [IModeler::CreateSphericalSurface2](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeler~createsphericalsurface2.html) SOLIDWORKS API method.
 
 Run the macro and temp body is displayed. Body can be rotated and selected but it is not presented in the feature tree. Continue the macro execution to destroy the body.
 

@@ -9,11 +9,11 @@ group: Part
 ---
 ![Precise bounding box in the part document](precise-bounding-box.png){ width=250 }
 
-As per *Remarks* section of [IPartDoc::GetPartBox](http://help.solidworks.com/2016/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ipartdoc~getpartbox.html) method (or other BoundingBox APIs) in SOLIDWORKS API Help Documentation
+As per *Remarks* section of [IPartDoc::GetPartBox](https://help.solidworks.com/2016/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ipartdoc~getpartbox.html) method (or other BoundingBox APIs) in SOLIDWORKS API Help Documentation
 
 > The values returned are approximate and should not be used for comparison or calculation purposes. Furthermore, the bounding box may vary after rebuilding the model
 
-To calculate the precise bounding box it is required to find the extreme points of each body in XYZ directions via [IBody2::GetExtremePoint](http://help.solidworks.com/2016/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ibody2~getextremepoint.html)
+To calculate the precise bounding box it is required to find the extreme points of each body in XYZ directions via [IBody2::GetExtremePoint](https://help.solidworks.com/2016/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.ibody2~getextremepoint.html)
 
 The following macros will calculate the bounding box, width, height and length of the active part document using both approaches of SOLIDWORKS API.
 
@@ -29,7 +29,7 @@ Bounding boxes calculated approximately might be more than 10% inaccurate. For t
 
 ![Right View](bbox-right-view.png){ width=250 }
 
-> The precise bounding box calculated by extreme points is exactly equal to the bounding box created by [bounding box feature](http://help.solidworks.com/2018/English/WhatsNew/t_bounding_box_for_part_assem.htm) added in SOLIDWORKS 2018
+> The precise bounding box calculated by extreme points is exactly equal to the bounding box created by [bounding box feature](https://help.solidworks.com/2018/English/WhatsNew/t_bounding_box_for_part_assem.htm) added in SOLIDWORKS 2018
 
 ### Performance
 

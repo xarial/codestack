@@ -8,4 +8,4 @@ This section contains macros and code examples for utilizing the custom properti
 
 Custom properties is a collection of key value pairs used in SOLIDWORKS to store the metadata. Custom properties can be associated with the model itself, its configurations or cut-list features (such as weldment or sheet metal).
 
-Custom properties are managed via [ICustomPropertyManager](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ICustomPropertyManager.html) SOLIDWORKS API interface.
+Custom properties are managed via [ICustomPropertyManager](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ICustomPropertyManager.html) SOLIDWORKS API interface.

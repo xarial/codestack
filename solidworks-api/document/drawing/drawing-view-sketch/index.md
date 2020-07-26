@@ -7,9 +7,9 @@ labels: [drawing,transform,sketch]
 ---
 ![Point created in the center of the drawing view](point-in-drawing-view-sketch.png){ width=350 }
 
-All drawing views in the drawing document have their own sketches which can be retrieved via [IView::GetSketch](http://help.solidworks.com/2019/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iview~getsketch.html) SOLIDWORKS API method.
+All drawing views in the drawing document have their own sketches which can be retrieved via [IView::GetSketch](https://help.solidworks.com/2019/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iview~getsketch.html) SOLIDWORKS API method.
 
-This is a sketch where sketch entities and points can be drawn using the [ISketchManager](http://help.solidworks.com/2019/english/api/draftsightapi/Interop.dsAutomation~Interop.dsAutomation.ISketchManager.html) interface.
+This is a sketch where sketch entities and points can be drawn using the [ISketchManager](https://help.solidworks.com/2019/english/api/draftsightapi/Interop.dsAutomation~Interop.dsAutomation.ISketchManager.html) interface.
 
 Unlike [creating sketch segment in the sheet space](/solidworks-api/document/drawing/sheet-context-sketch/), segments added to a view sketch will move together with the view and will be scaled and rotated in case of 3D rotation of the view.
 

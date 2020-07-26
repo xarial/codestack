@@ -10,7 +10,7 @@ redirect-from:
 ---
 ## Symptoms
 
-SOLIDWORKS macro doesn't work if it is [run](http://help.solidworks.com/2016/english/solidworks/sldworks/t_run_macro.htm) from the Tools->Macro->Run menu in SOLIDWORKS.
+SOLIDWORKS macro doesn't work if it is [run](https://help.solidworks.com/2016/english/solidworks/sldworks/t_run_macro.htm) from the Tools->Macro->Run menu in SOLIDWORKS.
 
 This may produce error like *Run-time Error '91': Object variable or With block variable not set*.
 

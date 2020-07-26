@@ -14,6 +14,6 @@ This example demonstrates how to find the intersection points between selected s
 * Select sketch segment (line, spline or arc) as second selection object
 * Run the macro. As the result the 3D Sketch is created with points of intersection between selected objects
 
-[ISurface::IntersectCurve2](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isurface~intersectcurve2.html) SOLIDWORKS API method is used to find the intersection points within the specified boundaries of curve and surface.
+[ISurface::IntersectCurve2](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isurface~intersectcurve2.html) SOLIDWORKS API method is used to find the intersection points within the specified boundaries of curve and surface.
 
 {% code-snippet { file-name: Macro.vba } %}

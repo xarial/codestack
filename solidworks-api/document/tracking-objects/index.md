@@ -11,7 +11,7 @@ There multiple different ways described below which provides the functionality t
 
 ## Persistent Reference Ids
 
-Allows to retrieve the persistent id for any selectable object in SOLIDWORKS model. The element can be quickly looked up via [IModelDocExtension::GetObjectByPersistReference3](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~getobjectbypersistreference3.html) SOLIDWORKS API method to get the pointer by the id. The main cons of this method is a size of the id which varies around 250 bytes per entity. So if it is required to track thousands of elements this might not be the ideal approach due to the memory consumption.
+Allows to retrieve the persistent id for any selectable object in SOLIDWORKS model. The element can be quickly looked up via [IModelDocExtension::GetObjectByPersistReference3](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~getobjectbypersistreference3.html) SOLIDWORKS API method to get the pointer by the id. The main cons of this method is a size of the id which varies around 250 bytes per entity. So if it is required to track thousands of elements this might not be the ideal approach due to the memory consumption.
 
 Refer [Persistent Reference Id](solidworks-api/document/tracking-objects/persist-references/) article for more information
 

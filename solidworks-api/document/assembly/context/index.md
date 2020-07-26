@@ -16,11 +16,11 @@ It is important to use the correct contexts when working with elements from SOLI
 
 ## Adding features into part in the context of the assembly
 
-It is required to always use the pointer to active assembly document ([ISldWorks::ActiveDoc](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~activedoc.html)) while editing or adding new features in the feature tree even if component is in editing state.
+It is required to always use the pointer to active assembly document ([ISldWorks::ActiveDoc](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~activedoc.html)) while editing or adding new features in the feature tree even if component is in editing state.
 
 ![Editing the component in the context](in-context-editing.png){ width=250 }
 
-For example to insert the extruded feature into the part document from the image above which is edited in the context the [IFeatureManager::FeatureExtrusion2](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IFeatureManager~FeatureExtrusion2.html) must be called on the [IModelDoc2](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldoc2_methods.html) which is an active assembly but not the model of the component being edited.
+For example to insert the extruded feature into the part document from the image above which is edited in the context the [IFeatureManager::FeatureExtrusion2](https://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IFeatureManager~FeatureExtrusion2.html) must be called on the [IModelDoc2](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldoc2_methods.html) which is an active assembly but not the model of the component being edited.
 
 {% code-snippet { file-name: CreateExtrudeFeatureInAssemblyContext.vba } %}
 
@@ -28,8 +28,8 @@ For example to insert the extruded feature into the part document from the image
 
 SOLIDWORKS API provides the method to convert the pointers between contexts:
 
-* [IModelDocExtension::GetCorresponding](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~getcorresponding.html) converts the pointer from the assembly context into the underlying component's model context
-* [IComponent2::GetCorresponding](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~getcorresponding.html) converts the pointer from the underlying model context to the assembly context for this component.
+* [IModelDocExtension::GetCorresponding](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~getcorresponding.html) converts the pointer from the assembly context into the underlying component's model context
+* [IComponent2::GetCorresponding](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~getcorresponding.html) converts the pointer from the underlying model context to the assembly context for this component.
 
 ## Model operations in the context of the assembly
 
@@ -45,8 +45,8 @@ When assembly is opened pointer to any object retrieved directly from the assemb
 
 For example:
 
-* [ISelectionMgr::GetSelectedObject6](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iselectionmgr~getselectedobject6.html) of the object selected in the component (e.g. face or feature) will be valid in the current assembly
-* [IComponent2::FirstFeature](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~firstfeature.html) returns the pointer for the first feature in the component's model in the context of the assembly.
+* [ISelectionMgr::GetSelectedObject6](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iselectionmgr~getselectedobject6.html) of the object selected in the component (e.g. face or feature) will be valid in the current assembly
+* [IComponent2::FirstFeature](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~firstfeature.html) returns the pointer for the first feature in the component's model in the context of the assembly.
 
 These pointers are safe to work with within the context of this assembly. For example face colour can be changed, feature can be renamed, point coordinate can be modified.
 
@@ -66,7 +66,7 @@ It is not always possible to retrieve the pointer to the required object directl
 
 > Using of out of context object equivalent of invoking the APIs on the invisible model. In some cases this will produce correct behaviour, in some cases it may fail or even cause the crash.
 
-The following example demonstrates the result of using out of context pointers by converting the context from assembly to the underlying document via [IModelDocExtension::GetCorresponding](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~getcorresponding.html)
+The following example demonstrates the result of using out of context pointers by converting the context from assembly to the underlying document via [IModelDocExtension::GetCorresponding](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~getcorresponding.html)
 
 Follow the steps from previous test case and run the following macro
 
@@ -88,7 +88,7 @@ Activate the assembly and rerun the macro. Now slightly different result is disp
 
 ### Test Case 3: Converting the context of objects
 
-In many cases the initial pointer is available in the context of the underlying model. And if modifications required in the context of assembly it is required to convert the pointer via [IComponent2::GetCorresponding](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~getcorresponding.html) method.
+In many cases the initial pointer is available in the context of the underlying model. And if modifications required in the context of assembly it is required to convert the pointer via [IComponent2::GetCorresponding](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~getcorresponding.html) method.
 
 * Close all models and reopen sample assembly
 * Open the part component in its own window.
@@ -108,11 +108,11 @@ Macro will convert the context and change the coordinate so the coordinates can 
 
 ## Summary
 
-* When adding or editing features of the components in the context of the assembly call [IAssemblyDoc::EditPart2](http://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iassemblydoc~editpart2.html)/[IAssemblyDoc::EditAssembly](http://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iassemblydoc~editassembly.html) to start/finish editing the component in the context
+* When adding or editing features of the components in the context of the assembly call [IAssemblyDoc::EditPart2](https://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iassemblydoc~editpart2.html)/[IAssemblyDoc::EditAssembly](https://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iassemblydoc~editassembly.html) to start/finish editing the component in the context
 
 * It is not required to explicitly set the *Edit In Context* state to perform certain operations (for example editing the sketch points location, deleting features etc.). The behaviour matches the user interface behaviour (i.e. if it is required to call *Edit Part* command to perform certain operation it is required to call corresponding API as well)
 
-* Do not use the pointer of the component's underlying model ([IComponent2::GetModelDoc2](http://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~getmodeldoc2.html)) to perform the operation of the current editing target component. Use the pointer to top level document (i.e. active assembly)
+* Do not use the pointer of the component's underlying model ([IComponent2::GetModelDoc2](https://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icomponent2~getmodeldoc2.html)) to perform the operation of the current editing target component. Use the pointer to top level document (i.e. active assembly)
 
 * Avoid using the incorrect context. This may result in unexpected behaviour.
 

@@ -7,11 +7,11 @@ order: 1
 ---
 This section introduces to SOLIDWORKS PDM API. It explains the differences between PDM add-ins and stand-alone application and provides detailed guidelines of creating the ones.
 
-The root object in SOLIDWORKS PDM API is a [IEdmVault5](http://help.solidworks.com/2018/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmvault5.html) which provides an access to various section of the functionality.
+The root object in SOLIDWORKS PDM API is a [IEdmVault5](https://help.solidworks.com/2018/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmvault5.html) which provides an access to various section of the functionality.
 
-This interface can be explicitly cast to another manager interfaces, such as [IEdmAddInMgr9](http://help.solidworks.com/2018/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.IEdmAddInMgr9.html?id=96f8b929514a423d8cb220fbe54bb940#Pg0), [IEdmRevisionMgr3](http://help.solidworks.com/2018/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.IEdmRevisionMgr3.html?id=755088fcb7fc40a99dfb42fb5e5b237e#Pg0), etc.
+This interface can be explicitly cast to another manager interfaces, such as [IEdmAddInMgr9](https://help.solidworks.com/2018/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.IEdmAddInMgr9.html?id=96f8b929514a423d8cb220fbe54bb940#Pg0), [IEdmRevisionMgr3](https://help.solidworks.com/2018/english/api/epdmapi/EPDM.Interop.epdm~EPDM.Interop.epdm.IEdmRevisionMgr3.html?id=755088fcb7fc40a99dfb42fb5e5b237e#Pg0), etc.
 
-The most popular way of extending the system is by implementing the add-in via [IEdmAddIn5](http://help.solidworks.com/2018/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmaddin5.html) SOLIDWORKS PDM API interface.
+The most popular way of extending the system is by implementing the add-in via [IEdmAddIn5](https://help.solidworks.com/2018/english/api/epdmapi/epdm.interop.epdm~epdm.interop.epdm.iedmaddin5.html) SOLIDWORKS PDM API interface.
 
 ## Interops in .NET
 

@@ -12,7 +12,7 @@ redirect-from:
 ---
 This macro counts all unique components selected in the assembly using SOLIDWORKS API. Components can be either selected in the features manager tree or in the graphics area.
 
-Macro will also count component if only entity of the component is selected (e.g. face or edge) using [ISelectionMgr](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISelectionMgr.html) SOLIDWORKS API Interface..
+Macro will also count component if only entity of the component is selected (e.g. face or edge) using [ISelectionMgr](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISelectionMgr.html) SOLIDWORKS API Interface..
 
 ![Quantity of selected components displayed in the status bar](status-bar-selected-comps.png){ width=320 }
 

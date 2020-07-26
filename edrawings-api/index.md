@@ -17,4 +17,4 @@ eDrawings also supports printing from drawing documents.
 
 eDrawings viewer is lightweight and doesn't require to have SOLIDWORKS installed to view files. Download eDrawings from the [eDrawings Viewer](https://www.edrawingsviewer.com) web-site.
 
-[API help](http://help.solidworks.com/2016/english/api/SWHelp_List.html?id=910f478a27674aea9e7869b31a3f9252) is available online.
+[API help](https://help.solidworks.com/2016/english/api/SWHelp_List.html?id=910f478a27674aea9e7869b31a3f9252) is available online.

@@ -95,5 +95,4 @@ Add the path to swdocumentmgr.dll (usually C:\Program Files\Common Files\SOLIDWO
 
 ## References
 
-* Online [Document Manager API Help Documentation](http://help.solidworks.com/2017/English/api/SWHelp_List.html?id=69d4ac3ff991425e980510fe49f75719#Pg0&ProductType=&ProductName=)
-* [SOLIDWORKS Document Manager API Toolkit](http://www.solidapi.com/2016/01/solidworks-document-manager-api-toolkit_26.html) by Michael Spens
+* Online [Document Manager API Help Documentation](https://help.solidworks.com/2017/English/api/SWHelp_List.html?id=69d4ac3ff991425e980510fe49f75719#Pg0&ProductType=&ProductName=)

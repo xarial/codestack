@@ -31,7 +31,7 @@ Alternatively non-SOLIDWORKS declarations can be highlighted (such as Left or Mi
 
 ## Resolution
 
-* Open the macro for [editing](http://help.solidworks.com/2017/english/solidworks/sldworks/t_edit_macro.htm) via Tools->Macro->Edit menu
+* Open the macro for [editing](https://help.solidworks.com/2017/english/solidworks/sldworks/t_edit_macro.htm) via Tools->Macro->Edit menu
 * Navigate to Tools->References menu in the VBA editor
 * Select the SOLIDWORKS type libraries as shown below. If libraries cannot be found in the *Available References* list use *Browse...* button and find the *sldworks.tlb*, *swconst.tlb*, *swcommands.tlb* in the installation folder of SOLIDWORKS.
 

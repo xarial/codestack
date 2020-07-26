@@ -9,8 +9,8 @@ redirect-from:
 ---
 This example Demonstrates 2 different ways to add component into the assembly tree using SOLIDWORKS API.
 
-* Traditional way to add component via [AddComponentX](http://help.solidworks.com/2015/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.IAssemblyDoc~AddComponent5.html) SOLIDWORKS API requires the model to be loaded into the memory. Otherwise the operation fails.
-* More advanced way is to use the [AddComponents ](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IAssemblyDoc~AddComponents3.html) SOLIDWORKS API. This method allows batch insertion of different components without the need to open the model beforehand.
+* Traditional way to add component via [AddComponentX](https://help.solidworks.com/2015/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.IAssemblyDoc~AddComponent5.html) SOLIDWORKS API requires the model to be loaded into the memory. Otherwise the operation fails.
+* More advanced way is to use the [AddComponents ](https://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IAssemblyDoc~AddComponents3.html) SOLIDWORKS API. This method allows batch insertion of different components without the need to open the model beforehand.
 
 [Download Example Files](parts.zip)
 

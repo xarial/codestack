@@ -7,7 +7,7 @@ labels: [sketch,draw]
 ---
 Sketch is a 3D or 3D layout in SOLIDWORKS parts, assemblies and drawing. In most cases sketch is used as a profile for generating 3D elements (extrudes, cuts, lofts etc.).
 
-Sketch is a feature and it is managed via [ISketch](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISketch.html) interface in SOLIDWORKS API.
+Sketch is a feature and it is managed via [ISketch](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISketch.html) interface in SOLIDWORKS API.
 
 Sketch can contain sketch segments and sketch points as well as annotations (dimensions, notes, etc.).
 

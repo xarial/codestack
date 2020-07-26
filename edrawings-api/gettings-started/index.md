@@ -10,9 +10,9 @@ order: 1
 
 eDrawings API can be utilized by hosting the eDrawings ActiveX control and calling its methods. 
 
-Control implements [IEModelViewControl](http://help.solidworks.com/2016/english/api/emodelapi/eDrawings.Interop.EModelViewControl~eDrawings.Interop.EModelViewControl.IEModelViewControl.html) interface and represents the top most object in API objects model.
+Control implements [IEModelViewControl](https://help.solidworks.com/2016/english/api/emodelapi/eDrawings.Interop.EModelViewControl~eDrawings.Interop.EModelViewControl.IEModelViewControl.html) interface and represents the top most object in API objects model.
 
-[IEModelMarkupControl](http://help.solidworks.com/2016/english/api/emodelapi/eDrawings.Interop.EModelMarkupControl~eDrawings.Interop.EModelMarkupControl.IEModelMarkupControl.html) enables API access to markup functionality of eDrawings. Follow [Utilizing markup functionality using SOLIDWORKS eDrawings API](/edrawings-api/markup/) for more information about eDrawings markup API.
+[IEModelMarkupControl](https://help.solidworks.com/2016/english/api/emodelapi/eDrawings.Interop.EModelMarkupControl~eDrawings.Interop.EModelMarkupControl.IEModelMarkupControl.html) enables API access to markup functionality of eDrawings. Follow [Utilizing markup functionality using SOLIDWORKS eDrawings API](/edrawings-api/markup/) for more information about eDrawings markup API.
 
 eDrawings control can be hosted in unmanaged applications as ActiveX control as well as .NET applications on [User Forms](winforms), [WPF application](wpf) and HTML pages.
 

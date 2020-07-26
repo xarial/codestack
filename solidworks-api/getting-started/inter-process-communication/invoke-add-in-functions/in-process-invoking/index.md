@@ -56,7 +56,7 @@ As the result the performance dropped in almost hundred times:
 
 ![Result from calling the add-in API from stand-alone application](stand-alone-result.png){ width=300 }
 
-Using [ISldWorks::CommandInProgress](http://help.solidworks.com/2016/English/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISldWorks~CommandInProgress.html) SOLIDWORKS API property improves things a little bit, but still performance is dropped more than 10 times compared to the baseline results.
+Using [ISldWorks::CommandInProgress](https://help.solidworks.com/2016/English/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISldWorks~CommandInProgress.html) SOLIDWORKS API property improves things a little bit, but still performance is dropped more than 10 times compared to the baseline results.
 
 ~~~ cs
 app.CommandInProgress = true;
@@ -76,7 +76,7 @@ Below is a comparison table of results. Results may vary depending on the size o
 | VBA Macro In-Process Invoking   | 2.20            | 0.84     |
 | Stand-Alone In-Process Invoking | 1.77            | 0.67     |
 
-The best performance is gained when add-in API is invoked as in-process call from stand-alone application. This functionality can be achieved by providing deferred call to index faces. This call would put the request into the queue and return the control immediately. The request then will be processed in add-in. [OnIdle](http://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.dsldworksevents_onidlenotifyeventhandler.html) SOLIDWORKS API notification can be used to process the queue. As this event is handled in-process, the actual API calls will be handled in process as well.
+The best performance is gained when add-in API is invoked as in-process call from stand-alone application. This functionality can be achieved by providing deferred call to index faces. This call would put the request into the queue and return the control immediately. The request then will be processed in add-in. [OnIdle](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.dsldworksevents_onidlenotifyeventhandler.html) SOLIDWORKS API notification can be used to process the queue. As this event is handled in-process, the actual API calls will be handled in process as well.
 
 It is also important to register the callback which can be called by the add-in to notify the stand-alone application that operation is completed.
 

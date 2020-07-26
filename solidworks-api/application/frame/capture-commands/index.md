@@ -7,7 +7,7 @@ image: capturing-hide-command-id.png
 labels: [command, event]
 group: Developers
 ---
-This macro allows capturing of SOLIDWORKS command ids (e.g. toolbar, page button or context menu clicks). Commands are defined in the [swCommands_e](http://help.solidworks.com/2012/english/api/swcommands/solidworks.interop.swcommands~solidworks.interop.swcommands.swcommands_e.html) enumeration and can be called using the [ISldWorks::RunCommand](http://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~runcommand.html) SOLIDWORKS API method.
+This macro allows capturing of SOLIDWORKS command ids (e.g. toolbar, page button or context menu clicks). Commands are defined in the [swCommands_e](https://help.solidworks.com/2012/english/api/swcommands/solidworks.interop.swcommands~solidworks.interop.swcommands.swcommands_e.html) enumeration and can be called using the [ISldWorks::RunCommand](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~runcommand.html) SOLIDWORKS API method.
 
 This could be in particularly useful when certain SOLIDWORKS APIs are not available in the SDK.
 
@@ -23,11 +23,11 @@ This macro helps to capture the id of command directly from SOLIDWORKS by clicki
 
 ![Capturing sketch hide command id](capturing-hide-command-id.png){ width=350 }
 
-The command id can be looked up in the the [commands list]((http://help.solidworks.com/2012/english/api/swcommands/solidworks.interop.swcommands~solidworks.interop.swcommands.swcommands_e.html))
+The command id can be looked up in the the [commands list]((https://help.solidworks.com/2012/english/api/swcommands/solidworks.interop.swcommands~solidworks.interop.swcommands.swcommands_e.html))
 
 ![Hide sketch command id in swCommands_e enumeration](sw-commands-id.png){ width=350 }
 
-> It is not required to explicitly use [swCommands_e](http://help.solidworks.com/2012/english/api/swcommands/solidworks.interop.swcommands~solidworks.interop.swcommands.swcommands_e.html) enumeration as it is defined in another interop (*solidworks.interop.swcommands.dll*). Instead command id can be defined as an integer or custom enumeration.
+> It is not required to explicitly use [swCommands_e](https://help.solidworks.com/2012/english/api/swcommands/solidworks.interop.swcommands~solidworks.interop.swcommands.swcommands_e.html) enumeration as it is defined in another interop (*solidworks.interop.swcommands.dll*). Instead command id can be defined as an integer or custom enumeration.
 
 ## Capturing commands from the custom add-ins
 
@@ -37,7 +37,7 @@ If this command is clicked, the command id would be equal to one of the followin
 
 ![User specific command ids](user-commands.png){ width=450 }
 
-Command would indicate the type of the button (minimized toolbar, menu, macro button etc.), and the User Command Id will be equal to the user id of a custom button. This is a command user id which can be retrieved via [ICommandGroup::CommandId](http://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ICommandGroup~CommandID.html) property while creating the custom commands manager in the SOLIDWORKS add-in.
+Command would indicate the type of the button (minimized toolbar, menu, macro button etc.), and the User Command Id will be equal to the user id of a custom button. This is a command user id which can be retrieved via [ICommandGroup::CommandId](https://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ICommandGroup~CommandID.html) property while creating the custom commands manager in the SOLIDWORKS add-in.
 
 ![Capturing the commands from the custom add-in](capturing-user-command-id.png){ width=250 }
 

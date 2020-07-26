@@ -13,7 +13,7 @@ redirect-from:
 
 This C# VSTA macro exports active part or selected component in assembly to STL format using SOLIDWORKS API. Macro will also work with the components loaded lightweight.
 
-This macro is not using the default exporter and overcomes the limitation when the model needs to be loaded in its own window, i.e. [IModelDocExtension::SaveAs](http://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~saveas.html) SOLIDWORKS API function is not used. Macro will create stl from the tessellation triangles of the model.
+This macro is not using the default exporter and overcomes the limitation when the model needs to be loaded in its own window, i.e. [IModelDocExtension::SaveAs](https://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~saveas.html) SOLIDWORKS API function is not used. Macro will create stl from the tessellation triangles of the model.
 
 Macro can optionally apply the transform to rotate or move the STL file. It is not required to create a coordinate system for this to happen.
 

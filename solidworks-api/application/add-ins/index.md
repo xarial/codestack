@@ -3,7 +3,7 @@ title: Developing C++, C#, VB.NET add-ins for SOLIDWORKS using API
 caption: Add-ins
 description: Examples and articles explaining how to work with add-ins in SOLIDWORKS
 ---
-Add-ins are in-process extension to SOLIDWORKS which provide the best performance benefits across all application types. Add-ins are COM objects and must implement the [ISwAddin](http://help.solidworks.com/2012/english/api/swpublishedapi/solidworks.interop.swpublished~solidworks.interop.swpublished.iswaddin.html) interface in SOLIDWORKS API.
+Add-ins are in-process extension to SOLIDWORKS which provide the best performance benefits across all application types. Add-ins are COM objects and must implement the [ISwAddin](https://help.solidworks.com/2012/english/api/swpublishedapi/solidworks.interop.swpublished~solidworks.interop.swpublished.iswaddin.html) interface in SOLIDWORKS API.
 
 Add-ins can be developed with any COM-compatible language: C++, C#, VB.NET, VB6, Managed C++.
 

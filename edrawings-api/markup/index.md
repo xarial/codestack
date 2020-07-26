@@ -4,11 +4,11 @@ caption: Markup
 description: Guide on using the markup functionality (measurements, stamps, comments) using eDrawings API
 labels: [edrawings,markup,getting started]
 ---
-eDrawings markup API (such as comments, stamps, measurements) can be accessed via [IEModelMarkupControl](http://help.solidworks.com/2016/english/api/emodelapi/eDrawings.Interop.EModelMarkupControl~eDrawings.Interop.EModelMarkupControl.IEModelMarkupControl.html) interface.
+eDrawings markup API (such as comments, stamps, measurements) can be accessed via [IEModelMarkupControl](https://help.solidworks.com/2016/english/api/emodelapi/eDrawings.Interop.EModelMarkupControl~eDrawings.Interop.EModelMarkupControl.IEModelMarkupControl.html) interface.
 
 Interop can be found in the eDrawings installation folder: *%commonprogramfiles%\eDrawings[Version]\eDrawings.Interop.EModelMarkupControl.dll*
 
-Markup interface can be accessed by calling the [IEModelViewControl::CoCreateInstance](http://help.solidworks.com/2018/english/api/emodelapi/eDrawings.Interop.EModelViewControl~eDrawings.Interop.EModelViewControl.IEModelViewControl~CoCreateInstance.html) eDrawings API method.
+Markup interface can be accessed by calling the [IEModelViewControl::CoCreateInstance](https://help.solidworks.com/2018/english/api/emodelapi/eDrawings.Interop.EModelViewControl~eDrawings.Interop.EModelViewControl.IEModelViewControl~CoCreateInstance.html) eDrawings API method.
 
 It is possible to pass both version specific and version independent GUID or ProgId of the markup control.
 

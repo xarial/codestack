@@ -5,7 +5,7 @@ description: Explanation of model to sketch and sketch to model transformations 
 image: sketch-coordinate-systems.png
 labels: [transform,sketch]
 ---
-When working with sketch segments (e.g. line, arc, etc.) or points it is important to consider the fact that the coordinates values returned from SOLIDWORKS API such as [ISketchPoint::X](http://help.solidworks.com/2017/English/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISketchPoint~X.html) property are relative to the local sketch coordinate system.
+When working with sketch segments (e.g. line, arc, etc.) or points it is important to consider the fact that the coordinates values returned from SOLIDWORKS API such as [ISketchPoint::X](https://help.solidworks.com/2017/English/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISketchPoint~X.html) property are relative to the local sketch coordinate system.
 
 Those values will match for 3D Sketches or 2D sketches created on Front plane (if not moved), but will be different in other cases.
 
@@ -38,7 +38,7 @@ The following macro reads the selected sketch point coordinate relative to the l
 
 ## Retrieving the global coordinates from sketch point
 
-In order to find the value of the coordinate relative to the global coordinate system it is required to find the sketch to model [transformation matrix](/solidworks-api/geometry/transformation/) via [ISketch::ModelToSketchTransform](http://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISketch~ModelToSketchTransform.html) SOLIDWORKS API property and apply this to the point coordinate.
+In order to find the value of the coordinate relative to the global coordinate system it is required to find the sketch to model [transformation matrix](/solidworks-api/geometry/transformation/) via [ISketch::ModelToSketchTransform](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISketch~ModelToSketchTransform.html) SOLIDWORKS API property and apply this to the point coordinate.
 
 Below macro can be used to perform the steps from the previous paragraph, but now the extracted coordinates will match the values in the global coordinate system.
 
