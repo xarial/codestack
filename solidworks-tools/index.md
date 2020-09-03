@@ -31,15 +31,19 @@ redirect-from:
 # Macro Library for SOLIDWORKS Automation
 {% social-share %}
 
+[Request macro](https://github.com/xarial/codestack/issues/new?labels=macro-request){ target="_blank" class="download-button" }
+
 ![SOLIDWORKS Macros Library](macros-library.svg){ width=400 }
 
 This page contains a library of useful macros, utilities and scripts for SOLIDWORKS engineers. Macros are grouped by categories: part assembly, drawing, performance etc.
 
 Follow the [Programming VBA and VSTA macros using SOLIDWORKS API](/solidworks-api/getting-started/macros/) section for guidelines of using and creating macros in SOLIDWORKS.
 
+Cannot find the macro for you? Submit the [request macro](https://github.com/xarial/codestack/issues/new?labels=macro-request) form and our team will review your request and will try to add the macro to the library.
+
 ## Best practices for organizing macro library
 
-[MyToolbar](/labs/solidworks/my-toolbar/) is a free and open-source add-in for SOLIDWORKS which allows organize the macro library in custom toolbars integrated to SOLIDWORKS environment. Add-in also allows to manage multi-user environment by storing the configuration in the centralized location.
+[Custom Toolbar](https://cadplus.xarial.com/custom-toolbar/) is a part a free and open-source [CAD+ Toolset](https://cadplus.xarial.com/) add-in for SOLIDWORKS which allows organize the macro library in custom toolbars integrated to SOLIDWORKS environment. Add-in also allows to manage multi-user environment by storing the configuration in the centralized location.
 
 ![Custom macro buttons in the toolbar](macro-library-toolbar.png){ width=450 }
 
