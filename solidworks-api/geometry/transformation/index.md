@@ -31,9 +31,15 @@ Matrix describe the orientation and translation of various elements in SOLIDWORK
 * Relation between sketch coordinate system and model coordinate system
 * Camera orientation and model view rotation
 
+In a very simplistic representation you can consider transforms as a value you need to apply to original location (position, rotation) to get to the destination location.
+
+![transform.svg](transform.svg){ width=250 }
+
+## Identity Matrix
+
 Identity matrix which represents no rotation, scale or transform will be equal to
 
-**Visual Basic**
+### Visual Basic
 
 ~~~ vb
 Dim dMatrix(15) As Double
@@ -43,7 +49,7 @@ dMatrix(8) = 1: dMatrix(9) = 0: dMatrix(10) = 0: dMatrix(11) = 0
 dMatrix(12) = 1: dMatrix(13) = 0: dMatrix(14) = 0: dMatrix(15) = 0
 ~~~
 
-**C#**
+### C#
 
 ~~~ cs
 var matrix = new double[]
@@ -59,7 +65,7 @@ var matrix = new double[]
 
 The following interfaces are usually used while calculation of transformations and translations:
 
-[IMathVector](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathvector.html)
-[IMathPoint](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathpoint.html)
+* [IMathVector](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathvector.html)
+* [IMathPoint](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imathpoint.html)
 
 This example contains articles and tutorials explaining the use of transformation matrices.
