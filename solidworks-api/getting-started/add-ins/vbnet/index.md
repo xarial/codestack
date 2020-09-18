@@ -57,17 +57,17 @@ This would automatically start SOLIDWORKS by pressing green run button or F5 key
 
 * Run SOLIDWORKS and the *Hello World* message box is displayed on start.
 
-The above code can be simplified as shown below with a help of [SwEx.AddIn](/labs/solidworks/swex/add-in/) framework:
+The above code can be simplified as shown below with a help of [xCAD.NET Framework](https://xcad.net/) framework:
 
 ~~~ vb
-<AutoRegister("Sample Add-In", "Sample 'Hello World' SOLIDWORKS add-in", True)>
+<Title("Sample Add-In")>
+<Description("Sample 'Hello World' SOLIDWORKS add-in")>
 <ComVisible(True), Guid("799707B3-1632-469F-B294-EC05A5FBFFC8")>
 Public Class MySampleAddIn
     Inherits SwAddInEx
 
-    Public Overrides Function OnConnect() As Boolean
-        Return True
-    End Function
+    Public Overrides Sub OnConnect()
+    End Sub
 
 End Class
 ~~~

@@ -62,4 +62,4 @@ Add-in is available from the 'Add-Ins...' dialog in SOLIDWORKS Tools menu.
 
 ## Development Framework
 
-Development of the SOLIDWORKS add-ins in .NET (C# or VB.NET) can be significantly simplified with free and open source [SwEx Framework](/labs/solidworks/swex/). Framework encapsulates complexity of COM classes and the API object model to fit .NET environment and benefit from the features of the language (such as strong types). 
+Development of the SOLIDWORKS add-ins in .NET (C# or VB.NET) can be significantly simplified with free and open source [xCAD.NET Framework](https://xcad.net/). Framework encapsulates complexity of COM classes and the API object model to fit .NET environment and benefit from the features of the language (such as strong types). 

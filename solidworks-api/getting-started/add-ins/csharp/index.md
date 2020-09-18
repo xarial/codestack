@@ -64,22 +64,17 @@ This warning can be ignored.
 
 * Run SOLIDWORKS and the *Hello World* message box is displayed on start.
 
-The above code can be simplified as shown below with a help of [SwEx.AddIn](/labs/solidworks/swex/add-in/) framework:
+The above code can be simplified as shown below with a help of [xCAD.NET Framework](https://xcad.net/) framework:
 
 ~~~ cs
-[AutoRegister("Sample Add-In", "Sample 'Hello World' SOLIDWORKS add-in", true)]
+[Title("Sample Add-In")]
+[Description("Sample 'Hello World' SOLIDWORKS add-in")]
 [ComVisible(true), Guid("31B803E0-7A01-4841-A0DE-895B726625C9")]
 public class MySampleAddIn : SwAddInEx
 {
-    public override bool OnConnect()
+    public override void OnConnect()
     {
-        App.SendMsgToUser("Hello World!");
-        return true;
-    }
-
-    public override bool OnDisconnect()
-    {
-        return true;
+        Application.ShowMessageBox("Hello World!");
     }
 }
 ~~~
