@@ -21,7 +21,7 @@ Dim elem As String
 elem = arr(0) 'getting first element
 ~~~
 
-### Initializing arrays in Visual Basic
+## Initializing arrays in Visual Basic
 
 Arrays is a set of the fixed size. Size can be assigned while declaration.
 
@@ -56,7 +56,7 @@ In order to retrieve the upper and lower boundaries of the array **UBound** and 
 
 {% code-snippet { file-name: initialize.vba } %}
 
-### Filling array with data
+## Filling array with data
 
 Array elements can be treated as individual variables and the same rules of reading and editing the data applies to array elements as any other variable. Refer [Variables](visual-basic/variables) article for more information.
 
@@ -68,7 +68,7 @@ Debug.Print arr(<INDEX>) 'reading the value of the variable at <INDEX>
 
 {% code-snippet { file-name: fill.vba } %}
 
-### Resizing array
+## Resizing array
 
 Array size can be changed at run-time. But that can only be done for the array whose size was not explicitly specified on declaration
 
@@ -81,19 +81,27 @@ Attempt of resizing the already dimensioned array will result in the compile err
 
 ![Compile error: Array already dimensioned](array-already-dimensioned.png){ width=350 }
 
-#### Clearing the existing values
+### Clearing the existing values
 
 **ReDim** keyword allows to resize the array. In this case all existing values will be cleared.
 
 {% code-snippet { file-name: resize-clear.vba } %}
 
-#### Preserving existing values
+### Preserving existing values
 
 In order to keep the existing values of the array it is required to use **ReDim Preserve** keyword.
 
 {% code-snippet { file-name: resize-preserve.vba } %}
 
-### Two dimensional array
+### Resizing arrays dynamically
+
+In some cases it might be unknown in advance the size of the array or when the first item (if any) will be added.
+
+In this cases it is beneficial to only init array when needed. It is possible to use the following statement to identify if the array is not initialized `(Not array) = -1` and init with a first item or dynamically resize preserving the existing values.
+
+{% code-snippet { file-name: resize-dynamically.vba } %}
+
+## Two dimensional array
 
 Two-dimensional array allows to store the table data and can be declared in the following format
 
