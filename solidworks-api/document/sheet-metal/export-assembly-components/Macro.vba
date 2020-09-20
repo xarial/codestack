@@ -9,6 +9,8 @@ Enum SheetMetalOptions_e
     ExportBoundingBox = 2048
 End Enum
 
+Const SKIP_EXISTING_FILES As Boolean = False
+
 Const OUT_NAME_TEMPLATE As String = "DXFs\<_FileName_>_<_FeatureName_>_<_ConfName_>_<Description>.dxf"
 
 Const FLAT_PATTERN_OPTIONS As Integer = SheetMetalOptions_e.ExportBendLines + SheetMetalOptions_e.ExportFlatPatternGeometry
@@ -41,6 +43,8 @@ try_:
         ProcessSheetMetalComponent swAssy, swComp
     
     Next
+    
+    swApp.SendMsgToUser2 "Operation completed", swMessageBoxIcon_e.swMbInformation, swMessageBoxBtn_e.swMbOk
     
     GoTo finally_
     
@@ -245,7 +249,11 @@ Function ProcessSheetMetalComponent(assm As SldWorks.AssemblyDoc, comp As SldWor
                 If Not swCutListFeat Is Nothing Then
                     Dim outFileName As String
                     outFileName = ComposeOutFileName(OUT_NAME_TEMPLATE, assm, comp, swFlatPatternFeat, swCutListFeat)
-                    ExportFlatPattern swCompModel, swFlatPatternFeat, outFileName, FLAT_PATTERN_OPTIONS, conf
+                    
+                    If Not SKIP_EXISTING_FILES Or Not FileExists(outFileName) Then
+                        ExportFlatPattern swCompModel, swFlatPatternFeat, outFileName, FLAT_PATTERN_OPTIONS, conf
+                    End If
+                    
                 Else
                     Err.Raise vbError, "", "Failed to find cut-list for flat pattern " & swFlatPatternFeat.Name
                 End If
@@ -260,6 +268,10 @@ Function ProcessSheetMetalComponent(assm As SldWorks.AssemblyDoc, comp As SldWor
         Err.Raise vbError, "", "No cut-list items found"
     End If
     
+End Function
+
+Function FileExists(filePath As String) As Boolean
+    FileExists = Dir(filePath) <> ""
 End Function
 
 Function FindCutListFeature(vCutListFeats As Variant, body As SldWorks.Body2) As SldWorks.Feature
@@ -376,12 +388,21 @@ Sub ExportFlatPattern(part As SldWorks.PartDoc, flatPattern As SldWorks.Feature,
     Dim swModel As SldWorks.ModelDoc2
     Set swModel = part
     
+    Dim error As ErrObject
     Dim hide As Boolean
+
+try_:
     
+    On Error GoTo catch_
+
     If Not swModel.Visible Then
         hide = True
         swModel.Visible = True
     End If
+    
+    swModel.FeatureManager.EnableFeatureTree = False
+    swModel.FeatureManager.EnableFeatureTreeWindow = False
+    swModel.ActiveView.EnableGraphicsUpdate = False
     
     Dim curConf As String
     
@@ -416,8 +437,22 @@ Sub ExportFlatPattern(part As SldWorks.PartDoc, flatPattern As SldWorks.Feature,
     
     swModel.ShowConfiguration2 curConf
     
+    GoTo finally_
+    
+catch_:
+    Set error = Err
+finally_:
+
+    swModel.FeatureManager.EnableFeatureTree = True
+    swModel.FeatureManager.EnableFeatureTreeWindow = True
+    swModel.ActiveView.EnableGraphicsUpdate = True
+    
     If hide Then
-        swModel.Visible = False
+        swApp.CloseDoc swModel.GetTitle
+    End If
+    
+    If Not error Is Nothing Then
+        Err.Raise error.Number, error.Source, error.Description, error.HelpFile, error.HelpContext
     End If
     
 End Sub

@@ -11,6 +11,10 @@ This VBA macro allows to export flat patterns to DXF/DWG from all sheet metal co
 
 Macro enables flexibility in specifying the name of the output file allowing to use placeholders (original file name, feature name, cut-list custom property) combined with the free text and supports specifying sub-folders.
 
+The following message box will be displayed once the exporting is completed.
+
+![Message box displayed when exporting is completed](operation-completed.png)
+
 {%youtube id: FtXkdSlekG8 %}
 
 ## Configuration
@@ -59,6 +63,18 @@ Const FLAT_PATTERN_OPTIONS As Integer = SheetMetalOptions_e.IncludeHiddenEdges +
 ~~~
 
 > Note, geometry option must always be specified as it is required for the flat pattern export
+
+## Skip created files
+
+**SKIP_EXISTING_FILES** options allows to specify if macro should regenerate output file if it already exists.
+
+Set this option to true to skip exporting the file if the output file (.dxf or .dwg) exists on the target location.
+
+~~~ vb
+Const SKIP_EXISTING_FILES As Boolean = True
+~~~
+
+This option can be useful when processing large assemblies and it is required to continue the execution after SOLIDWORKS restart. Exporting flat patterns is a heavy performance operation so SOLIDWORKS may crash or hang when large job is processed. This option can help to continue the exporting after the restart.
 
 ## Notes
 
