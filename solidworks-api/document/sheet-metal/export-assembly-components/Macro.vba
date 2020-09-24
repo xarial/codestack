@@ -261,6 +261,8 @@ Function ProcessSheetMetalComponent(assm As SldWorks.AssemblyDoc, comp As SldWor
         
         If Not IsEmpty(vFlatPatternFeats) Then
             
+            Dim swProcessedCutListsFeats() As SldWorks.Feature
+            
             Dim i As Integer
     
             For i = 0 To UBound(vFlatPatternFeats)
@@ -296,11 +298,33 @@ Function ProcessSheetMetalComponent(assm As SldWorks.AssemblyDoc, comp As SldWor
                 Set swCutListFeat = FindCutListFeature(vCutListFeats, swBody)
                 
                 If Not swCutListFeat Is Nothing Then
-                    Dim outFileName As String
-                    outFileName = ComposeOutFileName(OUT_NAME_TEMPLATE, assm, comp, swFlatPatternFeat, swCutListFeat)
                     
-                    If Not SKIP_EXISTING_FILES Or Not FileExists(outFileName) Then
-                        ExportFlatPattern swCompModel, swFlatPatternFeat, outFileName, FLAT_PATTERN_OPTIONS, conf
+                    Dim isUnique As Boolean
+                                        
+                    If (Not swProcessedCutListsFeats) = -1 Then
+                        isUnique = True
+                    ElseIf Not ContainsSwObject(swProcessedCutListsFeats, swCutListFeat) Then
+                        isUnique = True
+                    Else
+                        isUnique = False
+                    End If
+                    
+                    If isUnique Then
+                        
+                        If (Not swProcessedCutListsFeats) = -1 Then
+                            ReDim swProcessedCutListsFeats(0)
+                        Else
+                            ReDim Preserve swProcessedCutListsFeats(UBound(swProcessedCutListsFeats) + 1)
+                        End If
+                        
+                        Set swProcessedCutListsFeats(UBound(swProcessedCutListsFeats)) = swCutListFeat
+                        
+                        Dim outFileName As String
+                        outFileName = ComposeOutFileName(OUT_NAME_TEMPLATE, assm, comp, swFlatPatternFeat, swCutListFeat)
+                        
+                        If Not SKIP_EXISTING_FILES Or Not FileExists(outFileName) Then
+                            ExportFlatPattern swCompModel, swFlatPatternFeat, outFileName, FLAT_PATTERN_OPTIONS, conf
+                        End If
                     End If
                     
                 Else
@@ -339,7 +363,7 @@ Function FindCutListFeature(vCutListFeats As Variant, body As SldWorks.Body2) As
         
         vBodies = swBodyFolder.GetBodies
         
-        If ContainsBody(vBodies, body) Then
+        If ContainsSwObject(vBodies, body) Then
             Set FindCutListFeature = swCutListFeat
         End If
             
@@ -347,26 +371,26 @@ Function FindCutListFeature(vCutListFeats As Variant, body As SldWorks.Body2) As
     
 End Function
 
-Function ContainsBody(vBodies As Variant, body As SldWorks.Body2) As Boolean
+Function ContainsSwObject(vArr As Variant, obj As Object) As Boolean
     
-    If Not IsEmpty(vBodies) Then
+    If Not IsEmpty(vArr) Then
     
         Dim i As Integer
         
-        For i = 0 To UBound(vBodies)
+        For i = 0 To UBound(vArr)
             
-            Dim swCutListBody As SldWorks.Body2
-            Set swCutListBody = vBodies(i)
+            Dim swObj As Object
+            Set swObj = vArr(i)
             
-            If swApp.IsSame(swCutListBody, body) = swObjectEquality.swObjectSame Then
-                ContainsBody = True
+            If swApp.IsSame(swObj, obj) = swObjectEquality.swObjectSame Then
+                ContainsSwObject = True
                 Exit Function
             End If
         Next
         
     End If
     
-    ContainsBody = False
+    ContainsSwObject = False
     
 End Function
 
@@ -448,6 +472,8 @@ try_:
         hide = True
         swModel.Visible = True
     End If
+    
+    swApp.ActivateDoc3 swModel.GetPathName(), False, swRebuildOnActivation_e.swDontRebuildActiveDoc, 0
     
     swModel.FeatureManager.EnableFeatureTree = False
     swModel.FeatureManager.EnableFeatureTreeWindow = False
