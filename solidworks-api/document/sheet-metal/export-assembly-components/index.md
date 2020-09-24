@@ -76,11 +76,41 @@ Const SKIP_EXISTING_FILES As Boolean = True
 
 This option can be useful when processing large assemblies and it is required to continue the execution after SOLIDWORKS restart. Exporting flat patterns is a heavy performance operation so SOLIDWORKS may crash or hang when large job is processed. This option can help to continue the exporting after the restart.
 
+## Troubleshooting
+
+If macro reports an error, in some cases it might not be immediately evident what is causing an error as the error details are 'swallowed' by exception handler. In order to disable errors handling and reveal the exact line causing the error comment all *On Error GoTo catch_* lines in the code by placing the apostrophe ' symbol at the beginning of the line as shown below.
+
+~~~ vb jagged
+Sub main()
+        
+    Set swApp = Application.SldWorks
+    
+try_:
+    'On Error GoTo catch_
+~~~
+
+~~~ vb jagged
+Sub ExportFlatPattern(part As SldWorks.PartDoc, flatPattern As SldWorks.Feature, outFilePath As String, opts As SheetMetalOptions_e, conf As String)
+    
+    Dim swModel As SldWorks.ModelDoc2
+    Set swModel = part
+    
+    Dim error As ErrObject
+    Dim hide As Boolean
+
+try_:
+    
+    'On Error GoTo catch_
+~~~
+
+Please submit the [bug report](https://github.com/xarial/codestack/issues/new?labels=bug) and attach snapshot of this error and model used to reproduce (if possible)
+
 ## Notes
 
 * Macro will ask to resolve lightweight components if any
 * Each flat pattern from the multi-body sheet metal part will be exported. Make sure to use either <\_FeatureName\_> or <[PropertyName]> to differentiate between result files
 * Macro will process all distinct components (file path + configuration)
 * Macro will automatically create folders if required
+* Macro will replace all path invalid symbols with \_
 
 {% code-snippet { file-name: Macro.vba } %}
