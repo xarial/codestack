@@ -107,7 +107,7 @@ Please submit the [bug report](https://github.com/xarial/codestack/issues/new?la
 
 ## Notes
 
-* Macro will ask to resolve lightweight components if any
+* Macro will ask to resolve lightweight components if any. Macro can generate error if components are not resolved
 * Each flat pattern from the multi-body sheet metal part will be exported. Make sure to use either <\_FeatureName\_> or <[PropertyName]> to differentiate between result files
 * Macro will process all distinct components (file path + configuration)
 * Macro will automatically create folders if required

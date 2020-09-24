@@ -24,9 +24,20 @@ Sub main()
 try_:
     On Error GoTo catch_
     
+    Dim swModel As SldWorks.ModelDoc2
+    Set swModel = swApp.ActiveDoc
+    
+    If swModel Is Nothing Then
+        Err.Raise vbError, "", "Please open assembly document"
+    End If
+    
+    If swModel.GetType() <> swDocumentTypes_e.swDocASSEMBLY Then
+        Err.Raise vbError, "", "Only assembly document is supported"
+    End If
+    
     Dim swAssy As SldWorks.AssemblyDoc
     
-    Set swAssy = swApp.ActiveDoc
+    Set swAssy = swModel
         
     swAssy.ResolveAllLightWeightComponents True
         
@@ -167,7 +178,31 @@ Function ComposeOutFileName(template As String, assm As SldWorks.AssemblyDoc, co
         outFileName = Left(outFileName, regExMatch.FirstIndex) & ResolveToken(tokenName, comp, flatPatternFeat, cutListFeat) & Right(outFileName, Len(outFileName) - (regExMatch.FirstIndex + regExMatch.Length))
     Next
     
-    ComposeOutFileName = GetFullPath(assm, outFileName)
+    ComposeOutFileName = ReplaceInvalidPathSymbols(GetFullPath(assm, outFileName))
+    
+End Function
+
+Function ReplaceInvalidPathSymbols(path As String) As String
+    
+    Const REPLACE_SYMB As String = "_"
+    
+    Dim res As String
+    res = Right(path, Len(path) - Len("X:\"))
+    
+    Dim drive As String
+    drive = Left(path, Len("X:\"))
+    
+    Dim invalidSymbols As Variant
+    invalidSymbols = Array("/", ":", "*", "?", """", "<", ">", "|")
+    
+    Dim i As Integer
+    For i = 0 To UBound(invalidSymbols)
+        Dim invalidSymb As String
+        invalidSymb = CStr(invalidSymbols(i))
+        res = Replace(res, invalidSymb, REPLACE_SYMB)
+    Next
+    
+    ReplaceInvalidPathSymbols = drive + res
     
 End Function
 
@@ -237,11 +272,25 @@ Function ProcessSheetMetalComponent(assm As SldWorks.AssemblyDoc, comp As SldWor
                 
                 Set swFlatPattern = swFlatPatternFeat.GetDefinition
                 
-                Dim swFixedFace As SldWorks.Face2
-                Set swFixedFace = swFlatPattern.FixedFace2
+                Dim swFixedEnt As SldWorks.Entity
+                
+                Set swFixedEnt = swFlatPattern.FixedFace2
                 
                 Dim swBody As SldWorks.Body2
-                Set swBody = swFixedFace.GetBody
+                
+                If TypeOf swFixedEnt Is SldWorks.Face2 Then
+                    Dim swFixedFace As SldWorks.Face2
+                    Set swFixedFace = swFixedEnt
+                    Set swBody = swFixedFace.GetBody
+                ElseIf TypeOf swFixedEnt Is SldWorks.Edge Then
+                    Dim swFixedEdge As SldWorks.Edge
+                    Set swFixedEdge = swFixedEnt
+                    Set swBody = swFixedEdge.GetBody
+                ElseIf TypeOf swFixedEnt Is SldWorks.Vertex Then
+                    Dim swFixedVert As SldWorks.Vertex
+                    Set swFixedVert = swFixedEnt
+                    Set swBody = swFixedVert.GetBody
+                End If
                 
                 Dim swCutListFeat As SldWorks.Feature
                 Set swCutListFeat = FindCutListFeature(vCutListFeats, swBody)
