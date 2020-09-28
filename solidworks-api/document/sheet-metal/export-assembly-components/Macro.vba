@@ -175,7 +175,7 @@ Function ComposeOutFileName(template As String, assm As SldWorks.AssemblyDoc, co
         Dim tokenName As String
         tokenName = Mid(regExMatch.Value, 2, Len(regExMatch.Value) - 2)
         
-        outFileName = Left(outFileName, regExMatch.FirstIndex) & ResolveToken(tokenName, comp, flatPatternFeat, cutListFeat) & Right(outFileName, Len(outFileName) - (regExMatch.FirstIndex + regExMatch.Length))
+        outFileName = Left(outFileName, regExMatch.FirstIndex) & ResolveToken(tokenName, assm, comp, flatPatternFeat, cutListFeat) & Right(outFileName, Len(outFileName) - (regExMatch.FirstIndex + regExMatch.Length))
     Next
     
     ComposeOutFileName = ReplaceInvalidPathSymbols(GetFullPath(assm, outFileName))
@@ -206,9 +206,10 @@ Function ReplaceInvalidPathSymbols(path As String) As String
     
 End Function
 
-Function ResolveToken(token As String, comp As SldWorks.Component2, flatPatternFeat As SldWorks.Feature, cutListFeat As SldWorks.Feature) As String
+Function ResolveToken(token As String, assy As SldWorks.AssemblyDoc, comp As SldWorks.Component2, flatPatternFeat As SldWorks.Feature, cutListFeat As SldWorks.Feature) As String
     
     Const FILE_NAME_TOKEN As String = "_FileName_"
+    Const ASSM_FILE_NAME_TOKEN As String = "_AssmFileName_"
     Const FEAT_NAME_TOKEN As String = "_FeatureName_"
     Const CONF_NAME_TOKEN As String = "_ConfName_"
     
@@ -219,6 +220,11 @@ Function ResolveToken(token As String, comp As SldWorks.Component2, flatPatternF
             ResolveToken = flatPatternFeat.Name
         Case LCase(CONF_NAME_TOKEN)
             ResolveToken = comp.ReferencedConfiguration
+        Case LCase(ASSM_FILE_NAME_TOKEN)
+            If assy.GetPathName() = "" Then
+                Err.Raise vbError, "", "Assembly must be saved to use " & ASSM_FILE_NAME_TOKEN
+            End If
+            ResolveToken = GetFileNameWithoutExtension(assy.GetPathName())
         Case Else
             Dim swCustPrpMgr As SldWorks.CustomPropertyManager
             Set swCustPrpMgr = cutListFeat.CustomPropertyManager
@@ -532,31 +538,26 @@ finally_:
     
 End Sub
 
-Sub CreateDirectories(fileDir As String)
+Sub CreateDirectories(path As String)
+
+    Dim fso As Object
+    Set fso = CreateObject("Scripting.FileSystemObject")
+
+    If fso.FolderExists(path) Then
+        Exit Sub
+    End If
+
+    CreateDirectories fso.GetParentFolderName(path)
     
-    Dim pathParts As Variant
-    pathParts = Split(fileDir, "\")
-    
-    Dim i As Integer
-    Dim curPath As String
-    
-    For i = 0 To UBound(pathParts)
-        curPath = curPath & pathParts(i) & "\"
-        If Len(Dir(curPath, vbDirectory)) = 0 Then
-            MkDir curPath
-        End If
-    Next
+    fso.CreateFolder path
     
 End Sub
 
 Function GetFullPath(model As SldWorks.ModelDoc2, path As String)
     
     GetFullPath = path
-    
-    Dim isRelative As Boolean
-    isRelative = Mid(path, 2, 1) <> ":"
-    
-    If isRelative Then
+        
+    If IsPathRelative(path) Then
         
         If Left(path, 1) <> "\" Then
             path = "\" & path
@@ -573,4 +574,12 @@ Function GetFullPath(model As SldWorks.ModelDoc2, path As String)
         
     End If
     
+End Function
+
+Function IsPathRelative(path As String)
+    IsPathRelative = Mid(path, 2, 1) <> ":" And Not IsPathUnc(path)
+End Function
+
+Function IsPathUnc(path As String)
+    IsPathUnc = Left(path, 2) = "\\"
 End Function

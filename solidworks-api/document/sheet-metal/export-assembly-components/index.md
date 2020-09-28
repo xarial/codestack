@@ -34,6 +34,7 @@ The following placeholders are supported
 * <\_FileName\_> - name of the part file (without extension) where the flat pattern resides in
 * <\_FeatureName\_> - name of the flat pattern feature
 * <\_ConfName\_> - name of the configuration of this flat pattern (i.e. referenced configuration of the component)
+* <\_AssmFileName\_> - name of the main assembly
 * <[PropertyName]> - any name of the cut-list property to read value from, e.g. \<Thickness\> is replaced with the value of cut-list custom property *Thickness*
 
 Placeholders will be resolved for each flat pattern at runtime.
@@ -112,5 +113,6 @@ Please submit the [bug report](https://github.com/xarial/codestack/issues/new?la
 * Macro will process all distinct components (file path + configuration)
 * Macro will automatically create folders if required
 * Macro will replace all path invalid symbols with \_
+* Macro will only export unique bodies grouped under cut-list and skip flat patterns which belong to already exported cut-list
 
 {% code-snippet { file-name: Macro.vba } %}
