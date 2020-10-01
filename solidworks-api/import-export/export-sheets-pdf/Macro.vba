@@ -54,7 +54,7 @@ try_:
         outFile = outFile & IIf(INCLUDE_DRAWING_NAME, drawName & "_", "") & sheetName & ".pdf"
         
         If False = swModel.Extension.SaveAs(outFile, swSaveAsVersion_e.swSaveAsCurrentVersion, swSaveAsOptions_e.swSaveAsOptions_Silent, swExpPdfData, errs, warns) Then
-            Err.Raise vberrror, "", "Failed to export PDF to " & outFile
+            Err.Raise vbError, "", "Failed to export PDF to " & outFile
         End If
         
     Next

@@ -53,5 +53,9 @@ Explore this section to find productivity and automation tools which suit your n
 
 For additional productivity add-ins visit the [SOLIDWORKS Labs](/labs/solidworks/) page.
 
+## Batch Running
+
+in some cases it might be required to batch run macros for multiple files or folders with SOLIDWORKS files. Try [xBatch](https://cadplus.xarial.com/xbatch/) is a free stand-alone application part a free and open-source [CAD+ Toolset](https://cadplus.xarial.com/).
+
 ---
 {% catalogue { type: sw-tool } %}
