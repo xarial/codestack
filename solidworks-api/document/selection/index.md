@@ -14,9 +14,9 @@ Selection is a vital part of SOLIDWORKS API development process. In this article
 Mainly selections are used for
 
 * [Features creation](/solidworks-api/document/features-manager) (e.g. Extrude feature requires selection of the sketch and optional selection of direction)
-* [Mating]({{ "/solidworks-api/document/assembly/mates" | relative_url}})
+* [Mating](/solidworks-api/document/assembly/mates)
 * Evaluation (i.e. surface area or perimeter calculation)
-* [Dimensioning]({{ "/solidworks-api/document/dimensions" | relative_url}})
+* [Dimensioning](/solidworks-api/document/dimensions)
 * Highlighting
 
 ### Selection Marks
