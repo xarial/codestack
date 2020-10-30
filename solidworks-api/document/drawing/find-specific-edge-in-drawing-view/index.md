@@ -20,3 +20,5 @@ This macro will work with the drawing view of the assembly where named edge is c
 Name of the edge needs to be assigned from the corresponding part document.
 
 ![Name of the edge assigned in the part](edge-name.png)
+
+{% code-snippet { file-name: Macro.vba } %}
