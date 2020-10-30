@@ -4,45 +4,112 @@ Sub main()
 
     Set swApp = Application.SldWorks
     
+    Dim swModel As SldWorks.ModelDoc2
     Dim swDraw As SldWorks.DrawingDoc
+    Dim swSelMgr As SldWorks.SelectionMgr
     
-    Set swDraw = swApp.ActiveDoc
+    Set swModel = swApp.ActiveDoc
+        
+    Set swDraw = swModel
+    
+    Set swSelMgr = swModel.SelectionManager
     
     Dim swSheet As SldWorks.Sheet
     
-    Dim swView As SldWorks.View
+    Dim swView As SldWorks.view
     
     Set swSheet = swDraw.GetCurrentSheet()
     
     Set swView = swSheet.GetViews()(0)
-    
+        
     Dim vComps As Variant
-    vComps = swView.GetVisibleComponents
+    vComps = swView.GetVisibleComponents()
     
     Dim i As Integer
     
-    Dim swBomBalloonParams As SldWorks.BalloonOptions
-    Set swBomBalloonParams = swDraw.Extension.CreateBalloonOptions()
-    swBomBalloonParams.UpperTextContent = swBalloonTextItemNumber
-    
     For i = 0 To UBound(vComps)
         
-        Dim swDrawComp As SldWorks.Component2
-        Set swDrawComp = vComps(i)
-        Dim vVisEnts As Variant
+        Dim swComp As SldWorks.Component2
+        Set swComp = vComps(i)
+        Dim vEdges As Variant
+        vEdges = swView.GetVisibleEntities2(swComp, swViewEntityType_e.swViewEntityType_Edge)
         
-        vVisEnts = swView.GetVisibleEntities2(swDrawComp, swSelectType_e.swSelEDGES)
-        
-        Dim swEnt As SldWorks.Entity
-        Set swEnt = vVisEnts(0)
-        
-        If False <> swEnt.Select4(False, Nothing) Then
-            Dim swNote As SldWorks.Note
-            Set swNote = swDraw.Extension.InsertBOMBalloon2(swBomBalloonParams)
-        Else
-            Err.Raise vbError, "", "Failed to select entity for baloon"
-        End If
+        Dim swEdge As SldWorks.edge
+        Set swEdge = vEdges(0)
                 
+        Dim swEnt As SldWorks.Entity
+        Set swEnt = swEdge
+        
+        Dim swSelData As SldWorks.SelectData
+        Set swSelData = swSelMgr.CreateSelectData
+        swSelData.view = swView
+        
+        swEnt.Select4 False, swSelData
+        
+        Dim swBomBalloonParams As SldWorks.BalloonOptions
+
+        Set swBomBalloonParams = swModel.Extension.CreateBalloonOptions()
+            
+        Dim swBalloonNote As SldWorks.Note
+        
+        Set swBalloonNote = swModel.Extension.InsertBOMBalloon2(swBomBalloonParams)
+        
+        Dim swAnn As SldWorks.Annotation
+        Set swAnn = swBalloonNote.GetAnnotation
+        
+        Dim vPos As Variant
+        vPos = CalculateBaloonPosition(swEdge, swView)
+        
+        swAnn.SetLeaderAttachmentPointAtIndex 0, vPos(0), vPos(1), 0
+        
+        swAnn.SetPosition2 vPos(0) + 0.01, vPos(1) + 0.01, 0
+        
     Next
     
 End Sub
+
+Function CalculateBaloonPosition(edge As SldWorks.edge, view As SldWorks.view) As Variant
+    
+    Dim swCurve As SldWorks.Curve
+    Set swCurve = edge.GetCurve
+        
+    Dim swMathUtils As SldWorks.MathUtility
+    Set swMathUtils = swApp.GetMathUtility
+    
+    Dim swVertex As SldWorks.Vertex
+        
+    Dim vStartPt As Variant
+    Dim vEndPt As Variant
+    
+    Set swVertex = edge.GetStartVertex()
+        
+    vStartPt = swVertex.GetPoint
+    
+    Set swVertex = edge.GetEndVertex()
+    
+    vEndPt = swVertex.GetPoint
+    
+    Dim dPt(2) As Double
+    
+    dPt(0) = (vEndPt(0) + vStartPt(0)) / 2
+    dPt(1) = (vEndPt(1) + vStartPt(1)) / 2
+    dPt(2) = (vEndPt(2) + vStartPt(2)) / 2
+    
+    Dim swMathPt As SldWorks.MathPoint
+    Set swMathPt = swMathUtils.CreatePoint(dPt)
+
+    Dim swTransform As SldWorks.MathTransform
+    Set swTransform = view.ModelToViewTransform
+
+    Set swMathPt = swMathPt.MultiplyTransform(swTransform)
+    
+    Dim vPt As Variant
+    vPt = swMathPt.ArrayData
+    
+    vPt(0) = CDbl(vPt(0))
+    vPt(1) = CDbl(vPt(1))
+    vPt(2) = CDbl(vPt(2))
+    
+    CalculateBaloonPosition = vPt
+    
+End Function
