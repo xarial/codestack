@@ -1,8 +1,14 @@
+Declare PtrSafe Function GetKeyState Lib "user32" (ByVal nVirtKey As Long) As Integer
+Const VK_CONTROL As Long = &H11
+
 Public Enum swPlanes_e
     Front = 1
     Top = 2
     Right = 3
 End Enum
+
+Const PLANE As Integer = swPlanes_e.Top
+Const SCROLL As Boolean = False
 
 Dim swApp As SldWorks.SldWorks
     
@@ -19,7 +25,7 @@ Sub main()
         If swModel.GetType() = swDocumentTypes_e.swDocASSEMBLY Or _
             swModel.GetType() = swDocumentTypes_e.swDocPART Then
             
-            SelectPlane swModel, swPlanes_e.Right
+            SelectPlane swModel, PLANE
             
         Else
             MsgBox "Only assemblies and parts are supported"
@@ -45,9 +51,18 @@ Sub SelectPlane(model As SldWorks.ModelDoc2, planeType As swPlanes_e)
             planeIndex = planeIndex + 1
             
             If CInt(planeType) = planeIndex Then
-
-                swFeat.Select2 False, 0
-
+                
+                Dim defScrollState As Boolean
+                defScrollState = swApp.GetUserPreferenceToggle(swUserPreferenceToggle_e.swFeatureManagerEnsureVisible)
+                swApp.SetUserPreferenceToggle swUserPreferenceToggle_e.swFeatureManagerEnsureVisible, SCROLL
+                
+                Dim append As Boolean
+                append = GetKeyState(VK_CONTROL) < 0
+                
+                swFeat.Select2 append, 0
+                
+                swApp.SetUserPreferenceToggle swUserPreferenceToggle_e.swFeatureManagerEnsureVisible, defScrollState
+                
                 Exit Sub
 
             End If

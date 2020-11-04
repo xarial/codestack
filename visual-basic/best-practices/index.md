@@ -94,7 +94,7 @@ try_:
     
     DoWork()
 
-    GoTo finally:
+    GoTo finally_:
 catch_:
     MsgBox Err.Description
 finally_:
