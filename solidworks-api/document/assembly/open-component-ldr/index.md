@@ -21,9 +21,9 @@ This macro can also work from the drawing opened in the Detailing mode. It is re
 
 ![Selected drawing view](selected-drawing-view.png)
 
-To enable drawing support it is required to enable Document Manager API in the macro. Follow [Activating Document Manager](https://www.codestack.net/solidworks-document-manager-api/getting-started/create-connection#activating-document-manager) section for the detailed steps to request Document Manager license key.
+To enable drawing support it is required to enable Document Manager API in the macro. Follow [Activating Document Manager](/solidworks-document-manager-api/getting-started/create-connection#activating-document-manager) section for the detailed steps to request Document Manager license key.
 
-Add the reference to **SwDocumentMgr {Year} Type Library** under the **Tools->References** menu in VBA editor. Follow [Document Manager in VBA](https://www.codestack.net/solidworks-document-manager-api/getting-started/create-connection#vba) for more information.
+Add the reference to **SwDocumentMgr [Year] Type Library** under the **Tools->References** menu in VBA editor. Follow [Document Manager in VBA](/solidworks-document-manager-api/getting-started/create-connection#vba) for more information.
 
 ![Document Manager reference](swdm-reference.png)
 
@@ -32,6 +32,8 @@ Set the license key in the **DM_LIC_KEY** variable. Note that this macro only re
 ~~~ vb
 Const DM_LIC_KEY As String = "[CompanyName]:swdocmgr_general-00000-{31 times}"
 ~~~
+
+This routine is not required if macro will only be used from assemblies.
 
 ## Notes and limitations
 
