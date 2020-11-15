@@ -1,7 +1,15 @@
 Type DocumentInfo
-    FilePath As String
+    filePath As String
     Configuration As String
 End Type
+
+Type DmDrawingViewInfo
+    viewName As String
+    RefDocPath As String
+    RefConfigName As String
+End Type
+
+Const DM_LIC_KEY As String = "YOUR LICENSE KEY"
 
 Dim swApp As SldWorks.SldWorks
 
@@ -18,14 +26,20 @@ try_:
     
     If Not swModel Is Nothing Then
     
-        If swModel.GetType() <> swDocumentTypes_e.swDocASSEMBLY Then
-            Err.Raise vbError, "", "Active document is not an assembly"
+        If swModel.GetType() = swDocumentTypes_e.swDocASSEMBLY Then
+            If False = swModel.IsOpenedViewOnly Then
+                Err.Raise vbError, "", "Active assembly is not opened in Large Design Review mode"
+            End If
+        ElseIf swModel.GetType() = swDocumentTypes_e.swDocDRAWING Then
+            Dim swDraw As SldWorks.DrawingDoc
+            Set swDraw = swModel
+            If False = swDraw.IsDetailingMode Then
+                Err.Raise vbError, "", "Active drawing is not opened in Detailing mode"
+            End If
+        Else
+            Err.Raise vbError, "", "Active document is not an assembly or drawing"
         End If
-        
-        If False = swModel.IsOpenedViewOnly Then
-            Err.Raise vbError, "", "Active assembly is not opened in Large Design Review mode"
-        End If
-        
+                
         Dim swDocsInfo() As DocumentInfo
         
         swDocsInfo = GetReferenceDocuments(swModel)
@@ -35,7 +49,7 @@ try_:
         GoTo finally_
         
     Else
-        Err.Raise vbError, "", "Please open assembly document"
+        Err.Raise vbError, "", "Please open assembly or drawing document"
     End If
 
 catch_:
@@ -56,7 +70,7 @@ Sub OpenDocuments(model As SldWorks.ModelDoc2, docsInfo() As DocumentInfo)
             swDocInfo = docsInfo(i)
         
             Dim compPath As String
-            compPath = ResolveReferencePath(model.GetPathName(), swDocInfo.FilePath)
+            compPath = ResolveReferencePath(model.GetPathName(), swDocInfo.filePath)
             
             Dim swDocSpec As SldWorks.DocumentSpecification
             Set swDocSpec = swApp.GetOpenDocSpec(compPath)
@@ -86,7 +100,7 @@ Sub OpenDocuments(model As SldWorks.ModelDoc2, docsInfo() As DocumentInfo)
                     
                     If LCase(activeConfName) <> LCase(swDocInfo.Configuration) Then
                         swApp.ShowBubbleTooltipAt2 vViewBox(0), vViewBox(1), swArrowPosition.swArrowLeftTop, _
-                            "CodeStach", _
+                            "CodeStack", _
                             "Referenced configuration '" & swDocInfo.Configuration & "' of the assembly does not have a 'Display Data Mark' and was opened in the active configuration '" & activeConfName & "'", _
                             swBitMaps.swBitMapTreeError, "", "", 0, swLinkString.swLinkStringNone, "", ""
                     End If
@@ -116,13 +130,35 @@ Function GetReferenceDocuments(model As SldWorks.ModelDoc2) As DocumentInfo()
     Dim swSelMgr As SldWorks.SelectionMgr
     Set swSelMgr = model.SelectionManager
     
+    Dim viewInfo() As DmDrawingViewInfo
+    
+    If model.GetType() = swDocumentTypes_e.swDocDRAWING Then
+        viewInfo = GetDmDrawingViews(model.GetPathName())
+    End If
+    
     For i = 1 To swSelMgr.GetSelectedObjectCount2(-1)
         
-        Dim swComp As SldWorks.Component2
-                
-        Set swComp = swSelMgr.GetSelectedObject6(i, -1)
+        Dim path As String
+        Dim confName As String
         
-        If Not swComp Is Nothing Then
+        If swSelMgr.GetSelectedObjectType3(i, -1) = swSelectType_e.swSelCOMPONENTS Then
+            
+            Dim swComp As SldWorks.Component2
+            Set swComp = swSelMgr.GetSelectedObject6(i, -1)
+            
+            path = swComp.GetPathName()
+            confName = swComp.ReferencedConfiguration
+        
+        ElseIf swSelMgr.GetSelectedObjectType3(i, -1) = swSelectType_e.swSelDRAWINGVIEWS Then
+            
+            Dim swView As SldWorks.View
+            Set swView = swSelMgr.GetSelectedObject6(i, -1)
+            
+            GetViewReferencedDocumentInfo viewInfo, swView.Name, path, confName
+            
+        End If
+        
+        If path <> "" Then
             
             Dim unique As Boolean
             unique = False
@@ -131,15 +167,15 @@ Function GetReferenceDocuments(model As SldWorks.ModelDoc2) As DocumentInfo()
                 ReDim swDocsInfo(0)
                 unique = True
             Else
-                unique = Not ContainsDocumentInfo(swDocsInfo, swComp.GetPathName())
+                unique = Not ContainsDocumentInfo(swDocsInfo, path)
                 If True = unique Then
                     ReDim Preserve swDocsInfo(UBound(swDocsInfo) + 1)
                 End If
             End If
                 
             If True = unique Then
-                swDocsInfo(UBound(swDocsInfo)).FilePath = swComp.GetPathName
-                swDocsInfo(UBound(swDocsInfo)).Configuration = swComp.ReferencedConfiguration
+                swDocsInfo(UBound(swDocsInfo)).filePath = path
+                swDocsInfo(UBound(swDocsInfo)).Configuration = confName
             End If
             
         End If
@@ -150,8 +186,106 @@ Function GetReferenceDocuments(model As SldWorks.ModelDoc2) As DocumentInfo()
     
 End Function
 
+Function GetDmDrawingViews(drwFilePath As String) As DmDrawingViewInfo()
+    
+    Dim viewInfos() As DmDrawingViewInfo
+    
+    Dim swDmApp As SwDocumentMgr.SwDMApplication4
+
+    Dim swClassFact As SwDocumentMgr.SwDMClassFactory
+    
+    Set swClassFact = New SwDocumentMgr.SwDMClassFactory
+    
+    Set swDmApp = swClassFact.GetApplication(DM_LIC_KEY)
+    
+    If Not swDmApp Is Nothing Then
+
+        Dim swDmDoc As SwDocumentMgr.SwDMDocument10
+
+        Dim res As SwDmDocumentOpenError
+        
+        Set swDmDoc = swDmApp.GetDocument(drwFilePath, swDmDocumentDrawing, True, res)
+        
+        If Not swDmDoc Is Nothing Then
+            
+            Dim searchOpts As SwDocumentMgr.SwDMSearchOption
+            Set searchOpts = swDmApp.GetSearchOptionObject
+            searchOpts.SearchFilters = SwDmSearchFilters.SwDmSearchExternalReference + SwDmSearchFilters.SwDmSearchRootAssemblyFolder + SwDmSearchFilters.SwDmSearchSubfolders + SwDmSearchFilters.SwDmSearchInContextReference
+                
+            Dim vFilePaths As Variant
+            
+            vFilePaths = swDmDoc.GetAllExternalReferences2(searchOpts, Empty)
+        
+            Dim vViews As Variant
+            vViews = swDmDoc.GetViews
+            
+            ReDim viewInfos(UBound(vViews))
+            
+            Dim i As Integer
+            
+            For i = 0 To UBound(vViews)
+                Dim swDmView As SwDocumentMgr.SwDMView2
+                Set swDmView = vViews(i)
+                viewInfos(i).viewName = swDmView.Name
+                viewInfos(i).RefConfigName = swDmView.ReferencedConfiguration
+                viewInfos(i).RefDocPath = FindPathByFileName(vFilePaths, swDmView.ReferencedDocument)
+            Next
+            
+            swDmDoc.CloseDoc
+            
+            GetDmDrawingViews = viewInfos
+            
+        Else
+            Err.Raise vbError, "", "Failed to open the drawing document in Document Manager. Error code: " & res
+        End If
+        
+    Else
+        Err.Raise vbError, "", "Failed to connect to Document Manager application"
+    End If
+    
+End Function
+
+Function GetViewReferencedDocumentInfo(viewInfo() As DmDrawingViewInfo, viewName As String, ByRef path As String, ByRef confName As String)
+
+    Dim i As Integer
+    
+    For i = 0 To UBound(viewInfo)
+        If LCase(viewInfo(i).viewName) = LCase(viewName) Then
+            path = viewInfo(i).RefDocPath
+            confName = viewInfo(i).RefConfigName
+            Exit Function
+        End If
+        
+    Next
+
+    Err.Raise vbError, "", "Failed to find drawing view information"
+    
+End Function
+
 Function IsDocsInfoEmpty(docsInfo() As DocumentInfo)
     IsDocsInfoEmpty = ((Not docsInfo) = -1)
+End Function
+
+Function FindPathByFileName(vFilePaths As Variant, fileName As String) As String
+
+    Dim i As Integer
+    
+    For i = 0 To UBound(vFilePaths)
+        Dim filePath As String
+        filePath = vFilePaths(i)
+        
+        Dim thisFileName As String
+        thisFileName = Right(filePath, InStrRev(filePath, "\") + 1)
+        
+        If LCase(thisFileName) = LCase(fileName) Then
+            FindPathByFileName = filePath
+            Exit Function
+        End If
+        
+    Next
+
+    Err.Raise vbError, "", "Failed to find the path by file name"
+    
 End Function
 
 Function ContainsDocumentInfo(docsInfo() As DocumentInfo, path As String) As Boolean
@@ -159,7 +293,7 @@ Function ContainsDocumentInfo(docsInfo() As DocumentInfo, path As String) As Boo
     Dim i As Integer
     
     For i = 0 To UBound(docsInfo)
-        If LCase(path) = LCase(docsInfo(i).FilePath) Then
+        If LCase(path) = LCase(docsInfo(i).filePath) Then
             ContainsDocumentInfo = True
             Exit Function
         End If

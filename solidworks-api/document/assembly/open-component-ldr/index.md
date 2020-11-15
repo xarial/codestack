@@ -7,13 +7,31 @@ image: ldr-sub-assembly.svg
 labels: [performance, ldr, view only, large design review, open]
 group: Assembly
 ---
-This VBA macro can be run from the assembly opened in the Large Design Review (LDR) mode. Macro will open all selected components in their own windows, but unlike out-of-the-box functionality assemblies will not be resolved and will preserve the LDR mode.
+This VBA macro can be run from the assembly opened in the Large Design Review (LDR) mode or drawing opened in the Detailing mode. Macro will open all selected components in their own windows, but unlike out-of-the-box functionality assemblies will not be resolved and will preserve the LDR mode.
 
 ![Selected sub-assembly components](selected-sub-assemblies.png)
 
 It is then possible to enable the editing in the LDR mode, modify the assembly and update the graphics in the top level assembly.
 
 Preserving the LDR mode on all the steps will significantly improve the performance.
+
+## Drawings
+
+This macro can also work from the drawing opened in the Detailing mode. It is required to select drawing view(s) before running the macro.
+
+![Selected drawing view](selected-drawing-view.png)
+
+To enable drawing support it is required to enable Document Manager API in the macro. Follow [Activating Document Manager](https://www.codestack.net/solidworks-document-manager-api/getting-started/create-connection#activating-document-manager) section for the detailed steps to request Document Manager license key.
+
+Add the reference to **SwDocumentMgr {Year} Type Library** under the **Tools->References** menu in VBA editor. Follow [Document Manager in VBA](https://www.codestack.net/solidworks-document-manager-api/getting-started/create-connection#vba) for more information.
+
+![Document Manager reference](swdm-reference.png)
+
+Set the license key in the **DM_LIC_KEY** variable. Note that this macro only requires **swdocmgr_general** portion of the key. The following format would be sufficient.
+
+~~~ vb
+Const DM_LIC_KEY As String = "[CompanyName]:swdocmgr_general-00000-{31 times}"
+~~~
 
 ## Notes and limitations
 
