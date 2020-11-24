@@ -57,8 +57,8 @@ namespace SampleAddIn
 
                 addInkey.SetValue(null, 0);
 
-                addInkey.SetValue(ADD_IN_TITLE_REG_KEY_NAME, addInDesc);
-                addInkey.SetValue(ADD_IN_DESCRIPTION_REG_KEY_NAME, addInTitle);
+                addInkey.SetValue(ADD_IN_TITLE_REG_KEY_NAME, addInTitle);
+                addInkey.SetValue(ADD_IN_DESCRIPTION_REG_KEY_NAME, addInDesc);
 
                 var addInStartupkey = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(
                     string.Format(ADDIN_STARTUP_KEY_TEMPLATE, t.GUID));
