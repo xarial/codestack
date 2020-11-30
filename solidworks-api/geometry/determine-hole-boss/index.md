@@ -21,4 +21,4 @@ Please see image below:
 
 ![Normals for the hole and boss](inner-face-outer-face.png){ width=400 }
 
-{% code-snippet { file-name: Macro.vba } %}
+{% code-snippet { file-name: Macro.* } %}
