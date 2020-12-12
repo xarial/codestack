@@ -22,9 +22,37 @@ try_:
     End If
         
     Dim vSheetNames As Variant
-    vSheetNames = swDraw.GetSheetNames
     
     Dim i As Integer
+    
+    Dim swSelMgr As SldWorks.SelectionMgr
+    
+    Set swSelMgr = swModel.SelectionManager
+    
+    Dim selSheetNames() As String
+    
+    For i = 1 To swSelMgr.GetSelectedObjectCount2(-1)
+        
+        If swSelMgr.GetSelectedObjectType3(i, -1) = swSelectType_e.swSelSHEETS Then
+            
+            If (Not selSheetNames) = -1 Then
+                ReDim selSheetNames(0)
+            Else
+                ReDim Preserve selSheetNames(UBound(selSheetNames) + 1)
+            End If
+            Dim swSheet As SldWorks.Sheet
+            Set swSheet = swSelMgr.GetSelectedObject6(i, -1)
+            
+            selSheetNames(UBound(selSheetNames)) = swSheet.GetName()
+            
+        End If
+    Next
+    
+    If (Not selSheetNames) = -1 Then
+        vSheetNames = swDraw.GetSheetNames
+    Else
+        vSheetNames = selSheetNames
+    End If
     
     For i = 0 To UBound(vSheetNames)
         
