@@ -11,7 +11,7 @@ End Enum
 
 Const SKIP_EXISTING_FILES As Boolean = False
 
-Const OUT_NAME_TEMPLATE As String = "DXFs\<_FileName_>_<_FeatureName_>_<_ConfName_>_<Description>.dxf"
+Const OUT_NAME_TEMPLATE As String = "DXFs\<_FileName_>_<_FeatureName_>_<_ConfName_>_<$CLPRP:Description>.dxf"
 
 Const FLAT_PATTERN_OPTIONS As Integer = SheetMetalOptions_e.ExportBendLines + SheetMetalOptions_e.ExportFlatPatternGeometry
 
@@ -28,32 +28,41 @@ try_:
     Set swModel = swApp.ActiveDoc
     
     If swModel Is Nothing Then
-        Err.Raise vbError, "", "Please open assembly document"
+        Err.Raise vbError, "", "Please open assembly or part document"
     End If
     
-    If swModel.GetType() <> swDocumentTypes_e.swDocASSEMBLY Then
-        Err.Raise vbError, "", "Only assembly document is supported"
+    If swModel.GetType() = swDocumentTypes_e.swDocASSEMBLY Then
+    
+        Dim swAssy As SldWorks.AssemblyDoc
+        
+        Set swAssy = swModel
+            
+        swAssy.ResolveAllLightWeightComponents True
+            
+        Dim vComps As Variant
+        vComps = GetDistinctSheetMetalComponents(swAssy)
+        
+        Dim i As Integer
+        
+        For i = 0 To UBound(vComps)
+        
+            Dim swComp As SldWorks.Component2
+            Set swComp = vComps(i)
+            
+            ProcessSheetMetalModel swAssy, swComp.GetModelDoc2(), swComp.ReferencedConfiguration
+        
+        Next
+        
+    ElseIf swModel.GetType() = swDocumentTypes_e.swDocPART Then
+        
+        Dim swPart As SldWorks.PartDoc
+        Set swPart = swApp.ActiveDoc
+        
+        ProcessSheetMetalModel swPart, swPart, swPart.ConfigurationManager.ActiveConfiguration.Name
+        
+    Else
+        Err.Raise vbError, "", "Only assembly and part documents are supported"
     End If
-    
-    Dim swAssy As SldWorks.AssemblyDoc
-    
-    Set swAssy = swModel
-        
-    swAssy.ResolveAllLightWeightComponents True
-        
-    Dim vComps As Variant
-    vComps = GetDistinctSheetMetalComponents(swAssy)
-    
-    Dim i As Integer
-    
-    For i = 0 To UBound(vComps)
-    
-        Dim swComp As SldWorks.Component2
-        Set swComp = vComps(i)
-        
-        ProcessSheetMetalComponent swAssy, swComp
-    
-    Next
     
     swApp.SendMsgToUser2 "Operation completed", swMessageBoxIcon_e.swMbInformation, swMessageBoxBtn_e.swMbOk
     
@@ -150,7 +159,7 @@ Function ContainsComponent(comps As Variant, swComp As SldWorks.Component2) As B
 
 End Function
 
-Function ComposeOutFileName(template As String, assm As SldWorks.AssemblyDoc, comp As SldWorks.Component2, flatPatternFeat As SldWorks.Feature, cutListFeat As SldWorks.Feature) As String
+Function ComposeOutFileName(template As String, rootModel As SldWorks.ModelDoc2, sheetMetalModel As SldWorks.ModelDoc2, conf As String, flatPatternFeat As SldWorks.Feature, cutListFeat As SldWorks.Feature) As String
 
     Dim regEx As Object
     Set regEx = CreateObject("VBScript.RegExp")
@@ -175,10 +184,10 @@ Function ComposeOutFileName(template As String, assm As SldWorks.AssemblyDoc, co
         Dim tokenName As String
         tokenName = Mid(regExMatch.Value, 2, Len(regExMatch.Value) - 2)
         
-        outFileName = Left(outFileName, regExMatch.FirstIndex) & ResolveToken(tokenName, assm, comp, flatPatternFeat, cutListFeat) & Right(outFileName, Len(outFileName) - (regExMatch.FirstIndex + regExMatch.Length))
+        outFileName = Left(outFileName, regExMatch.FirstIndex) & ResolveToken(tokenName, rootModel, sheetMetalModel, conf, flatPatternFeat, cutListFeat) & Right(outFileName, Len(outFileName) - (regExMatch.FirstIndex + regExMatch.Length))
     Next
     
-    ComposeOutFileName = ReplaceInvalidPathSymbols(GetFullPath(assm, outFileName))
+    ComposeOutFileName = ReplaceInvalidPathSymbols(GetFullPath(rootModel, outFileName))
     
 End Function
 
@@ -206,39 +215,75 @@ Function ReplaceInvalidPathSymbols(path As String) As String
     
 End Function
 
-Function ResolveToken(token As String, assy As SldWorks.AssemblyDoc, comp As SldWorks.Component2, flatPatternFeat As SldWorks.Feature, cutListFeat As SldWorks.Feature) As String
+Function ResolveToken(token As String, rootModel As SldWorks.ModelDoc2, sheetMetalModel As SldWorks.ModelDoc2, conf As String, flatPatternFeat As SldWorks.Feature, cutListFeat As SldWorks.Feature) As String
     
     Const FILE_NAME_TOKEN As String = "_FileName_"
     Const ASSM_FILE_NAME_TOKEN As String = "_AssmFileName_"
     Const FEAT_NAME_TOKEN As String = "_FeatureName_"
     Const CONF_NAME_TOKEN As String = "_ConfName_"
     
+    Const PRP_TOKEN As String = "$PRP:"
+    Const CUT_LIST_PRP_TOKEN As String = "$CLPRP:"
+    Const ASM_PRP_TOKEN As String = "$ASSMPRP:"
+    
     Select Case LCase(token)
         Case LCase(FILE_NAME_TOKEN)
-            ResolveToken = GetFileNameWithoutExtension(comp.GetPathName)
+            ResolveToken = GetFileNameWithoutExtension(sheetMetalModel.GetPathName)
         Case LCase(FEAT_NAME_TOKEN)
             ResolveToken = flatPatternFeat.Name
         Case LCase(CONF_NAME_TOKEN)
-            ResolveToken = comp.ReferencedConfiguration
+            ResolveToken = conf
         Case LCase(ASSM_FILE_NAME_TOKEN)
             If assy.GetPathName() = "" Then
                 Err.Raise vbError, "", "Assembly must be saved to use " & ASSM_FILE_NAME_TOKEN
             End If
             ResolveToken = GetFileNameWithoutExtension(assy.GetPathName())
         Case Else
-            Dim swCustPrpMgr As SldWorks.CustomPropertyManager
-            Set swCustPrpMgr = cutListFeat.CustomPropertyManager
-            Dim resVal As String
-            swCustPrpMgr.Get2 token, "", resVal
-            ResolveToken = resVal
+            
+            Dim prpName As String
+                        
+            If Left(token, Len(PRP_TOKEN)) = PRP_TOKEN Then
+                prpName = Right(token, Len(token) - Len(PRP_TOKEN))
+                ResolveToken = GetModelPropertyValue(sheetMetalModel, conf, prpName)
+            ElseIf Left(token, Len(ASM_PRP_TOKEN)) = ASM_PRP_TOKEN Then
+                prpName = Right(token, Len(token) - Len(ASM_PRP_TOKEN))
+                ResolveToken = GetModelPropertyValue(rootModel, rootModel.ConfigurationManager.ActiveConfiguration.Name, prpName)
+            ElseIf Left(token, Len(CUT_LIST_PRP_TOKEN)) = CUT_LIST_PRP_TOKEN Then
+                prpName = Right(token, Len(token) - Len(CUT_LIST_PRP_TOKEN))
+                ResolveToken = GetPropertyValue(cutListFeat.CustomPropertyManager, prpName)
+            Else
+                Err.Raise vbError, "", "Unrecognized token: " & token
+            End If
+            
     End Select
     
 End Function
 
+Function GetModelPropertyValue(model As SldWorks.ModelDoc2, confName As String, prpName As String) As String
+    
+    Dim prpVal As String
+    Dim swCustPrpMgr As SldWorks.CustomPropertyManager
+    
+    Set swCustPrpMgr = model.Extension.CustomPropertyManager(confName)
+    prpVal = GetPropertyValue(swCustPrpMgr, prpName)
+    
+    If prpVal = "" Then
+        Set swCustPrpMgr = model.Extension.CustomPropertyManager("")
+        prpVal = GetPropertyValue(swCustPrpMgr, prpName)
+    End If
+    
+    GetModelPropertyValue = prpVal
+    
+End Function
+
+Function GetPropertyValue(custPrpMgr As SldWorks.CustomPropertyManager, prpName As String) As String
+    Dim resVal As String
+    custPrpMgr.Get2 prpName, "", resVal
+    GetPropertyValue = resVal
+End Function
+
 Function GetFileNameWithoutExtension(path As String) As String
-    
     GetFileNameWithoutExtension = Mid(path, InStrRev(path, "\") + 1, InStrRev(path, ".") - InStrRev(path, "\") - 1)
-    
 End Function
 
 Function GetCutListFeatures(model As SldWorks.ModelDoc2) As Variant
@@ -249,21 +294,15 @@ Function GetFlatPatternFeatures(model As SldWorks.ModelDoc2) As Variant
     GetFlatPatternFeatures = GetFeaturesByType(model, "FlatPattern")
 End Function
 
-Function ProcessSheetMetalComponent(assm As SldWorks.AssemblyDoc, comp As SldWorks.Component2)
-    
-    Dim swCompModel As SldWorks.ModelDoc2
-    Set swCompModel = comp.GetModelDoc2
-    
-    Dim conf As String
-    conf = comp.ReferencedConfiguration
-    
+Sub ProcessSheetMetalModel(rootModel As SldWorks.ModelDoc2, sheetMetalModel As SldWorks.ModelDoc2, conf As String)
+        
     Dim vCutListFeats As Variant
-    vCutListFeats = GetCutListFeatures(swCompModel)
+    vCutListFeats = GetCutListFeatures(sheetMetalModel)
     
     If Not IsEmpty(vCutListFeats) Then
         
         Dim vFlatPatternFeats As Variant
-        vFlatPatternFeats = GetFlatPatternFeatures(swCompModel)
+        vFlatPatternFeats = GetFlatPatternFeatures(sheetMetalModel)
         
         If Not IsEmpty(vFlatPatternFeats) Then
             
@@ -326,10 +365,10 @@ Function ProcessSheetMetalComponent(assm As SldWorks.AssemblyDoc, comp As SldWor
                         Set swProcessedCutListsFeats(UBound(swProcessedCutListsFeats)) = swCutListFeat
                         
                         Dim outFileName As String
-                        outFileName = ComposeOutFileName(OUT_NAME_TEMPLATE, assm, comp, swFlatPatternFeat, swCutListFeat)
+                        outFileName = ComposeOutFileName(OUT_NAME_TEMPLATE, rootModel, sheetMetalModel, conf, swFlatPatternFeat, swCutListFeat)
                         
                         If Not SKIP_EXISTING_FILES Or Not FileExists(outFileName) Then
-                            ExportFlatPattern swCompModel, swFlatPatternFeat, outFileName, FLAT_PATTERN_OPTIONS, conf
+                            ExportFlatPattern sheetMetalModel, swFlatPatternFeat, outFileName, FLAT_PATTERN_OPTIONS, conf
                         End If
                     End If
                     
@@ -347,7 +386,7 @@ Function ProcessSheetMetalComponent(assm As SldWorks.AssemblyDoc, comp As SldWor
         Err.Raise vbError, "", "No cut-list items found"
     End If
     
-End Function
+End Sub
 
 Function FileExists(filePath As String) As Boolean
     FileExists = Dir(filePath) <> ""
@@ -474,7 +513,7 @@ try_:
     
     On Error GoTo catch_
 
-    If Not swModel.Visible Then
+    If False = swModel.Visible Then
         hide = True
         swModel.Visible = True
     End If

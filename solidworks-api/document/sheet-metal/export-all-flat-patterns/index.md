@@ -1,15 +1,17 @@
 ---
 layout: sw-tool
-title: Export flat patterns from SOLIDWORKS assembly components
-caption: Export Flat Patterns From Assembly Components
-description: VBA macro to export flat patterns from all components of the active assembly
+title: Export flat patterns from SOLIDWORKS part or assembly components
+caption: Export Flat Patterns From Part Or Assembly Components
+description: VBA macro to export flat patterns from all components of the active assembly or active part
 image: assembly-flat-pattern.svg
 labels: [where used,parent,component]
-group: Assembly
+group: Import/Export
+redirect_from:
+    - /solidworks-api/document/sheet-metal/export-assembly-components/
 ---
-This VBA macro allows to export flat patterns to DXF/DWG from all sheet metal components in the active SOLIDWORKS assembly.
+This VBA macro allows to export all flat patterns to DXF/DWG from all sheet metal components in the active SOLIDWORKS assembly or an active part document.
 
-Macro enables flexibility in specifying the name of the output file allowing to use placeholders (original file name, feature name, cut-list custom property) combined with the free text and supports specifying sub-folders.
+Macro enables flexibility in specifying the name of the output file allowing to use placeholders (original file name, feature name, custom property, cut-list custom property, etc.) combined with the free text and supports specifying sub-folders.
 
 The following message box will be displayed once the exporting is completed.
 
@@ -35,7 +37,9 @@ The following placeholders are supported
 * <\_FeatureName\_> - name of the flat pattern feature
 * <\_ConfName\_> - name of the configuration of this flat pattern (i.e. referenced configuration of the component)
 * <\_AssmFileName\_> - name of the main assembly
-* <[PropertyName]> - any name of the cut-list property to read value from, e.g. \<Thickness\> is replaced with the value of cut-list custom property *Thickness*
+* <$CLPRP:[PropertyName]> - any name of the cut-list property to read value from, e.g. \<Thickness\> is replaced with the value of cut-list custom property *Thickness*
+* <$PRP:[PropertyName]> - any name of the custom property of sheet metal part to read value from, e.g. \<PartNo\> is replaced with the value of cut-list custom property *PartNo*
+* <$ASSMPRP:[PropertyName]> - any name of the custom property of main assembly to read value from, e.g. \<ProductId\> is replaced with the value of cut-list custom property *ProductId*
 
 Placeholders will be resolved for each flat pattern at runtime.
 
@@ -48,7 +52,13 @@ Const OUT_NAME_TEMPLATE As String = "DXFs\<_FileName_>.dxf"
 While the following name will save all of the flat patterns as DWG file into the *Output* folder in *D* drive, where the file name will be extracted from the *PartNo* property for each corresponding flat pattern.
 
 ~~~ vb
-Const OUT_NAME_TEMPLATE As String = "D:\Output\<PartNo>.dwg"
+Const OUT_NAME_TEMPLATE As String = "D:\Output\<$CLPRP:PartNo>.dwg"
+~~~
+
+The following setup will create sub-folder corresponding to value of the **Thickness** custom property in cut-lists and name files using the **ProductName** custom property extracted from the main assembly followed by underscore symbol and value of **PartNo** property from sheet metal part document.
+
+~~~ vb
+Const OUT_NAME_TEMPLATE As String = "D:\Output\<$CLPRP:Thickness>\<$ASSMPRP:ProductName>_<$PRP:PartNo>.dwg"
 ~~~
 
 ### Flat pattern options
@@ -109,7 +119,9 @@ Please submit the [bug report](https://github.com/xarial/codestack/issues/new?la
 ## Notes
 
 * Macro will ask to resolve lightweight components if any. Macro can generate error if components are not resolved
-* Each flat pattern from the multi-body sheet metal part will be exported. Make sure to use either <\_FeatureName\_> or <[PropertyName]> to differentiate between result files
+* Each flat pattern from the multi-body sheet metal part will be exported. Make sure to use either <\_FeatureName\_> or <$CLPRP:[PropertyName]> to differentiate between result files
+* $PRP and $ASSMPRP values will be firstly extracted from the configuration specific properties and if empty from the general file properties
+* If specified property does not exist (for $CLPRP, $PRP and $ASSMPRP) - empty string is used as the placeholder value
 * Macro will process all distinct components (file path + configuration)
 * Macro will automatically create folders if required
 * Macro will replace all path invalid symbols with \_
