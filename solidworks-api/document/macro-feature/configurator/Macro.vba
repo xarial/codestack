@@ -5,10 +5,12 @@ Public Const BASE_NAME As String = "Configurator"
 
 Const EMBED_MACRO_FEATURE As Boolean = False
 
+Public ActiveModel As SldWorks.ModelDoc2
 Public Model As SldWorks.ModelDoc2
 Public FeatureName As String
 Public DimensionNames As Variant
 Public DimensionTitles As Variant
+Public ConfigName As String
 
 Sub main()
 
@@ -21,8 +23,8 @@ Sub main()
     
     If Not swModel Is Nothing Then
         
-        If Not TypeOf swModel Is PartDoc Then
-            Err.Raise vbError, "", "Only part documents are supported"
+        If Not TypeOf swModel Is PartDoc And Not TypeOf swModel Is AssemblyDoc Then
+            Err.Raise vbError, "", "Only part and assembly documents are supported"
         End If
         
         Dim vParamNames As Variant
@@ -84,6 +86,9 @@ Function CollectParameters(Model As SldWorks.ModelDoc2, ByRef vParamNames As Var
             
             Dim swDispDim As SldWorks.DisplayDimension
             Set swDispDim = swSelMgr.GetSelectedObject6(i, -1)
+            
+            Dim swComp As SldWorks.Component2
+            Set swComp = swSelMgr.GetSelectedObjectsComponent3(1, -1)
                         
             If (Not paramNames) = -1 Then
                 ReDim paramNames(0)
@@ -96,10 +101,30 @@ Function CollectParameters(Model As SldWorks.ModelDoc2, ByRef vParamNames As Var
             End If
             
             Dim paramName As String
-            paramName = swDispDim.GetNameForSelection
+            
+            If Not swComp Is Nothing Then
+                
+                paramName = swComp.Name2
+                
+                Dim swAssy As SldWorks.AssemblyDoc
+                Set swAssy = Model
+                
+                Dim swEditTargetComp As SldWorks.Component2
+                Set swEditTargetComp = swAssy.GetEditTargetComponent
+                
+                If Not swEditTargetComp Is Nothing Then
+                    If Left(paramName, Len(swEditTargetComp.Name2)) <> swEditTargetComp.Name2 Then
+                        Err.Raise vbError, "", "Dimension must belong to the current edit target"
+                    End If
+                    paramName = Right(paramName, Len(paramName) - Len(swEditTargetComp.Name2) - 1)
+                End If
+                
+            End If
+            
+            paramName = paramName & IIf(paramName <> "", "/", "") & swDispDim.GetNameForSelection
             
             paramNames(UBound(paramNames)) = paramName
-            paramValues(UBound(paramValues)) = InputBox("Specify the name for " & paramName)
+            paramValues(UBound(paramValues)) = InputBox("Specify the name for " & paramName, "Configurator", paramName)
             paramTypes(UBound(paramTypes)) = swMacroFeatureParamType_e.swMacroFeatureParamTypeString
             
         End If
@@ -148,6 +173,8 @@ Function swmEditDefinition(varApp As Variant, varDoc As Variant, varFeat As Vari
     Dim swMacroFeat As SldWorks.MacroFeatureData
     Set swMacroFeat = swFeat.GetDefinition
     
+    ConfigName = swMacroFeat.CurrentConfiguration.name
+    
     Dim vParamNames As Variant
     Dim vParamValues As Variant
     
@@ -155,9 +182,16 @@ Function swmEditDefinition(varApp As Variant, varDoc As Variant, varFeat As Vari
     
     DimensionNames = vParamNames
     DimensionTitles = vParamValues
-    FeatureName = swFeat.Name
+    FeatureName = swFeat.name
     
+    Set ActiveModel = varDoc
     Set Model = varDoc
+    
+    If Model.GetType() = swDocumentTypes_e.swDocASSEMBLY Then
+        Dim swAssy As SldWorks.AssemblyDoc
+        Set swAssy = Model
+        Set Model = swAssy.GetEditTarget
+    End If
     
     ConfiguratorForm.Show vbModal
     
