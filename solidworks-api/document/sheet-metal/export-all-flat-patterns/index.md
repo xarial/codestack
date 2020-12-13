@@ -6,7 +6,7 @@ description: VBA macro to export flat patterns from all components of the active
 image: assembly-flat-pattern.svg
 labels: [where used,parent,component]
 group: Import/Export
-redirect_from:
+redirect-from:
     - /solidworks-api/document/sheet-metal/export-assembly-components/
 ---
 This VBA macro allows to export all flat patterns to DXF/DWG from all sheet metal components in the active SOLIDWORKS assembly or an active part document.
