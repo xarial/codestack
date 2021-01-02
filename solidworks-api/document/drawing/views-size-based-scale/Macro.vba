@@ -1,3 +1,5 @@
+Const BASE_VIEWS_ONLY As Boolean = True
+
 Dim swApp As SldWorks.SldWorks
 
 Sub main()
@@ -63,7 +65,13 @@ Sub RescaleViews(draw As SldWorks.DrawingDoc, sheet As SldWorks.sheet, scaleMap 
             
             If width >= minWidth And width <= maxWidth And height >= minHeight And height <= maxHeight Then
                 Debug.Print swView.Name & " matches " & CStr(scaleMap(j))
-                swView.ScaleRatio = viewScale
+                If Not BASE_VIEWS_ONLY Or swView.GetBaseView() Is Nothing Then
+                    Debug.Print "Setting scale of " & swView.Name & " to " & viewScale(0) & ":" & viewScale(1)
+                    swView.ScaleRatio = viewScale
+                Else
+                    Debug.Print "Skipping " & swView.Name & " view as it is not a base view"
+                End If
+                
             Else
                 Debug.Print swView.Name & " doesn't match " & CStr(scaleMap(j))
             End If
