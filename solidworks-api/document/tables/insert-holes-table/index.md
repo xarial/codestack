@@ -20,3 +20,5 @@ Macro will clear the selection and reselect entities.
 Table is inserted using default template into 0,0 coordinate.
 
  > Note, in your case you might be using different approach of retrieving the pointers to entities. 
+
+ {% code-snippet { file-name: Macro.vba } %}

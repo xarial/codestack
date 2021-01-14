@@ -42,7 +42,7 @@ Sub CombineIdenticalComponents(model As SldWorks.ModelDoc2, table As SldWorks.Bo
     
 End Sub
 
-Sub RunCombineIdenticalComponentsCommand()
+Sub RunCombineIdenticalComponentsCommand(Optional dummy = Empty)
     
     Const WM_COMMAND As Long = &H111
         
