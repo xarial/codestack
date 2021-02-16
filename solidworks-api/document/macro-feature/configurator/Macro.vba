@@ -88,7 +88,7 @@ Function CollectParameters(Model As SldWorks.ModelDoc2, ByRef vParamNames As Var
             Set swDispDim = swSelMgr.GetSelectedObject6(i, -1)
             
             Dim swComp As SldWorks.Component2
-            Set swComp = swSelMgr.GetSelectedObjectsComponent3(1, -1)
+            Set swComp = swSelMgr.GetSelectedObjectsComponent3(i, -1)
                         
             If (Not paramNames) = -1 Then
                 ReDim paramNames(0)
@@ -101,6 +101,7 @@ Function CollectParameters(Model As SldWorks.ModelDoc2, ByRef vParamNames As Var
             End If
             
             Dim paramName As String
+            paramName = ""
             
             If Not swComp Is Nothing Then
                 
@@ -113,10 +114,16 @@ Function CollectParameters(Model As SldWorks.ModelDoc2, ByRef vParamNames As Var
                 Set swEditTargetComp = swAssy.GetEditTargetComponent
                 
                 If Not swEditTargetComp Is Nothing Then
-                    If Left(paramName, Len(swEditTargetComp.Name2)) <> swEditTargetComp.Name2 Then
-                        Err.Raise vbError, "", "Dimension must belong to the current edit target"
+                    If Not swEditTargetComp.GetModelDoc2() Is swAssy Then
+                        If Left(paramName, Len(swEditTargetComp.Name2)) <> swEditTargetComp.Name2 Then
+                            Err.Raise vbError, "", "Dimension must belong to the current edit target"
+                        End If
+                        If LCase(paramName) = LCase(swEditTargetComp.Name2) Then
+                            paramName = ""
+                        Else
+                            paramName = Right(paramName, Len(paramName) - Len(swEditTargetComp.Name2) - 1)
+                        End If
                     End If
-                    paramName = Right(paramName, Len(paramName) - Len(swEditTargetComp.Name2) - 1)
                 End If
                 
             End If
