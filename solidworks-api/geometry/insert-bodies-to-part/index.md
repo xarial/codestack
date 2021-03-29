@@ -1,14 +1,14 @@
 ---
 layout: sw-tool
 caption: Save Bodies To Parts
-title: Macro to save all bodies into individual SOLIDWORKS part documents
-description: VBA macro to save all bodies in the SOLIDWORKS part document to individual files
+title: Macro to save bodies into individual SOLIDWORKS part documents
+description: VBA macro to save all bodies (or selected bodies) in the SOLIDWORKS part document to individual files
 image: insert-into-new-part-pmpage.png
 group: Import/Export
 ---
 ![Insert Into New Part Property Manager Page](insert-into-new-part-pmpage.png){ width=250 }
 
-This macro saves all bodies from the active part document into individual part documents.
+This macro saves all selected bodies bodies (or all bodies if none selected) from the active part document into individual part documents.
 
 ## Configuration
 

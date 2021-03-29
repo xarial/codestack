@@ -1,4 +1,7 @@
 Const ALL_CONFIGS As Boolean = False
+
+Const OUT_FOLDER As String = ""
+
 Dim OUT_NAME_TEMPLATES As Variant
 
 Dim swApp As SldWorks.SldWorks
@@ -23,9 +26,13 @@ try_:
         Err.Raise vbError, "", "Please save the model"
     End If
     
-    ExportFile swModel, OUT_NAME_TEMPLATES, ALL_CONFIGS
+    Dim outFolder As String
     
-    swApp.SendMsgToUser2 "Operation completed", swMessageBoxIcon_e.swMbInformation, swMessageBoxBtn_e.swMbOk
+    If Not TryGetOutDirFromArguments(outFolder) Then
+        outFolder = OUT_FOLDER
+    End If
+    
+    ExportFile swModel, OUT_NAME_TEMPLATES, ALL_CONFIGS, outFolder
     
     GoTo finally_
     
@@ -35,7 +42,7 @@ finally_:
 
 End Sub
 
-Sub ExportFile(model As SldWorks.ModelDoc2, vOutNameTemplates As Variant, allConfigs As Boolean)
+Sub ExportFile(model As SldWorks.ModelDoc2, vOutNameTemplates As Variant, allConfigs As Boolean, outFolder As String)
     
     Dim i As Integer
     Dim j As Integer
@@ -81,7 +88,7 @@ Sub ExportFile(model As SldWorks.ModelDoc2, vOutNameTemplates As Variant, allCon
             outNameTemplate = vOutNameTemplates(j)
             
             Dim outFilePath As String
-            outFilePath = ComposeOutFileName(outNameTemplate, model)
+            outFilePath = ComposeOutFileName(outNameTemplate, model, outFolder)
 
             Dim outDir As String
             outDir = Left(outFilePath, InStrRev(outFilePath, "\"))
@@ -104,7 +111,7 @@ Sub ExportFile(model As SldWorks.ModelDoc2, vOutNameTemplates As Variant, allCon
     
 End Sub
 
-Function ComposeOutFileName(template As String, model As SldWorks.ModelDoc2) As String
+Function ComposeOutFileName(template As String, model As SldWorks.ModelDoc2, outFolder As String) As String
 
     Dim regEx As Object
     Set regEx = CreateObject("VBScript.RegExp")
@@ -132,7 +139,7 @@ Function ComposeOutFileName(template As String, model As SldWorks.ModelDoc2) As 
         outFileName = Left(outFileName, regExMatch.FirstIndex) & ResolveToken(tokenName, model) & Right(outFileName, Len(outFileName) - (regExMatch.FirstIndex + regExMatch.Length))
     Next
     
-    ComposeOutFileName = ReplaceInvalidPathSymbols(GetFullPath(model, outFileName))
+    ComposeOutFileName = ReplaceInvalidPathSymbols(GetFullPath(model, outFileName, outFolder))
     
 End Function
 
@@ -222,7 +229,7 @@ Sub CreateDirectories(path As String)
     
 End Sub
 
-Function GetFullPath(model As SldWorks.ModelDoc2, path As String)
+Function GetFullPath(model As SldWorks.ModelDoc2, path As String, outFolder As String)
     
     GetFullPath = path
         
@@ -232,14 +239,23 @@ Function GetFullPath(model As SldWorks.ModelDoc2, path As String)
             path = "\" & path
         End If
         
-        Dim modelPath As String
-        Dim modelDir As String
+        If outFolder = "" Then
         
-        modelPath = model.GetPathName
+            Dim modelPath As String
+            Dim modelDir As String
+            
+            modelPath = model.GetPathName
+            
+            modelDir = Left(modelPath, InStrRev(modelPath, "\") - 1)
+            
+            outFolder = modelDir
+        Else
+            If Right(outFolder, 1) = "\" Then
+                outFolder = Left(outFolder, Len(outFolder) - 1)
+            End If
+        End If
         
-        modelDir = Left(modelPath, InStrRev(modelPath, "\") - 1)
-        
-        GetFullPath = modelDir & path
+        GetFullPath = outFolder & path
         
     End If
     
@@ -251,4 +267,29 @@ End Function
 
 Function IsPathUnc(path As String)
     IsPathUnc = Left(path, 2) = "\\"
+End Function
+
+Function TryGetOutDirFromArguments(ByRef outDir As String) As Boolean
+
+try_:
+
+    On Error GoTo catch_
+
+    Dim macroRunner As Object
+    Set macroRunner = CreateObject("CadPlus.MacroRunner.Sw")
+    
+    Dim param As Object
+    Set param = macroRunner.PopParameter(swApp)
+    
+    Dim vArgs As Variant
+    vArgs = param.Get("Args")
+    
+    outDir = CStr(vArgs(0))
+    TryGetOutDirFromArguments = True
+    GoTo finally_
+    
+catch_:
+    TryGetOutDirFromArguments = False
+finally_:
+
 End Function

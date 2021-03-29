@@ -234,10 +234,10 @@ Function ResolveToken(token As String, rootModel As SldWorks.ModelDoc2, sheetMet
         Case LCase(CONF_NAME_TOKEN)
             ResolveToken = conf
         Case LCase(ASSM_FILE_NAME_TOKEN)
-            If assy.GetPathName() = "" Then
+            If rootModel.GetPathName() = "" Then
                 Err.Raise vbError, "", "Assembly must be saved to use " & ASSM_FILE_NAME_TOKEN
             End If
-            ResolveToken = GetFileNameWithoutExtension(assy.GetPathName())
+            ResolveToken = GetFileNameWithoutExtension(rootModel.GetPathName())
         Case Else
             
             Dim prpName As String

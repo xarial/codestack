@@ -15,13 +15,15 @@ Macro will automatically create directories if not exist.
 
 ## Configuration
 
-Macro can be configured by modifying the **OUT_NAME_TEMPLATES** and **ALL_CONFIGS** constants
+Macro can be configured by modifying the **OUT_NAME_TEMPLATES**, **OUT_FOLDER** and **ALL_CONFIGS** constants
 
 ### Output name template
 
 This constant allows to specify template for the output path of the export files. It should contain extension which defines the export format.
 
-This can be either absolute or relative path. If later, result will be saved relative to the file directory.
+This can be either absolute or relative path. If later, result will be saved relative to the file directory or to the directory specified in **OUT_FOLDER** constant if not empty.
+
+> **OUT_FOLDER** can be passed as the [parameter to the macro](https://cadplus.xarial.com/macro-arguments/)
 
 The following placeholders are supported
 

@@ -43,7 +43,7 @@ Cannot find the macro for you? Submit the [request macro](https://github.com/xar
 
 ## Best practices for organizing macro library
 
-[Custom Toolbar](https://cadplus.xarial.com/custom-toolbar/) is a part a free and open-source [CAD+ Toolset](https://cadplus.xarial.com/) add-in for SOLIDWORKS which allows organize the macro library in custom toolbars integrated to SOLIDWORKS environment. Add-in also allows to manage multi-user environment by storing the configuration in the centralized location.
+[Toolbar+](https://cadplus.xarial.com/toolbar/) is a part a free and open-source [CAD+ Toolset](https://cadplus.xarial.com/) add-in for SOLIDWORKS which allows organize the macro library in custom toolbars integrated to SOLIDWORKS environment. Add-in also allows to manage multi-user environment by storing the configuration in the centralized location.
 
 ![Custom macro buttons in the toolbar](macro-library-toolbar.png){ width=450 }
 
@@ -55,7 +55,7 @@ For additional productivity add-ins visit the [SOLIDWORKS Labs](/labs/solidworks
 
 ## Batch Running
 
-in some cases it might be required to batch run macros for multiple files or folders with SOLIDWORKS files. Try [xBatch](https://cadplus.xarial.com/xbatch/) is a free stand-alone application part a free and open-source [CAD+ Toolset](https://cadplus.xarial.com/).
+in some cases it might be required to batch run macros for multiple files or folders with SOLIDWORKS files. Try [Batch+](https://cadplus.xarial.com/batch/) is a free stand-alone application part a free and open-source [CAD+ Toolset](https://cadplus.xarial.com/).
 
 ---
 {% catalogue { type: sw-tool } %}

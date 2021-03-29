@@ -12,7 +12,11 @@ Sub main()
     Set swPart = swApp.ActiveDoc
     
     Dim vBodies As Variant
-    vBodies = swPart.GetBodies2(swBodyType_e.swSolidBody, True)
+    vBodies = GetSelectedBodies(swPart.SelectionManager)
+    
+    If IsEmpty(vBodies) Then
+        vBodies = swPart.GetBodies2(swBodyType_e.swSolidBody, True)
+    End If
     
     Dim i As Integer
     
@@ -41,6 +45,90 @@ Sub main()
     Next
     
 End Sub
+
+Function GetSelectedBodies(selMgr As SldWorks.SelectionMgr) As Variant
+
+    Dim isInit As Boolean
+    isInit = False
+    
+    Dim swBodies() As SldWorks.Body2
+
+    Dim i As Integer
+    
+    For i = 1 To selMgr.GetSelectedObjectCount2(-1)
+                
+        Dim swBody As SldWorks.Body2
+    
+        Set swBody = GetSelectedObjectBody(selMgr, i)
+        
+        If Not swBody Is Nothing Then
+            
+            If Not isInit Then
+                ReDim swBodies(0)
+                Set swBodies(0) = swBody
+                isInit = True
+            Else
+                If Not Contains(swBodies, swBody) Then
+                    ReDim Preserve swBodies(UBound(swBodies) + 1)
+                    Set swBodies(UBound(swBodies)) = swBody
+                End If
+            End If
+                        
+        End If
+    
+    Next
+
+    If isInit Then
+        GetSelectedBodies = swBodies
+    Else
+        GetSelectedBodies = Empty
+    End If
+
+End Function
+
+Function GetSelectedObjectBody(selMgr As SldWorks.SelectionMgr, index As Integer) As SldWorks.Body2
+    
+    Dim swBody As SldWorks.Body2
+    
+    Dim selObj As Object
+    Set selObj = selMgr.GetSelectedObject6(index, -1)
+    
+    If Not selObj Is Nothing Then
+        If TypeOf selObj Is SldWorks.Body2 Then
+            Set swBody = selObj
+        ElseIf TypeOf selObj Is SldWorks.Face2 Then
+            Dim swFace As SldWorks.Face2
+            Set swFace = selObj
+            Set swBody = swFace.GetBody
+        ElseIf TypeOf selObj Is SldWorks.Edge Then
+            Dim swEdge As SldWorks.Edge
+            Set swEdge = selObj
+            Set swBody = swEdge.GetBody
+        ElseIf TypeOf selObj Is SldWorks.Vertex Then
+            Dim swVertex As SldWorks.Vertex
+            Set swVertex = selObj
+            Set swBody = swVertex.GetBody
+        End If
+    End If
+
+    Set GetSelectedObjectBody = swBody
+    
+End Function
+
+Function Contains(vArr As Variant, item As Object) As Boolean
+    
+    Dim i As Integer
+    
+    For i = 0 To UBound(vArr)
+        If vArr(i) Is item Then
+            Contains = True
+            Exit Function
+        End If
+    Next
+    
+    Contains = False
+    
+End Function
 
 Function GetOutFilePath(model As SldWorks.ModelDoc2, body As SldWorks.Body2, outDir As String) As String
     
