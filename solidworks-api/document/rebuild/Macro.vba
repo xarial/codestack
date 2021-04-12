@@ -26,6 +26,7 @@ Sub main()
         End If
         
         If ContainsArguments(vArgs, ARG_VIEWZOOMTOFIT) Then
+            swModel.ShowNamedView2 "", swStandardViews_e.swIsometricView
             swModel.ViewZoomtofit2
         End If
         
