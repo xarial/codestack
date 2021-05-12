@@ -28,8 +28,6 @@ Sub main()
                 
                 swModel.ClearSelection2 True
                 
-                Dim vPt(1) As Variant
-                
                 Dim i As Integer
                 
                 For i = 0 To 1
