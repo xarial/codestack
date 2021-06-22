@@ -57,4 +57,4 @@ Video Demonstration:
 
 Be aware of backward compatibility when using binding redirect, i.e. redirecting from version 1 to 2 requires backward compatibility, otherwise this solution will not work.
 
-If shared assembly is not signed with a strong name it is possible to resolve the conflict at runtime by capturing the [AppDomain::AssemblyResole](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain.assemblyresolve?view=netframework-4.8) event and returning the resolved assembly from the method handler.
+If shared assembly is not signed with a strong name it is possible to resolve the conflict at runtime by capturing the [AppDomain::AssemblyResolve](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain.assemblyresolve?view=netframework-4.8) event and returning the resolved assembly from the method handler.
