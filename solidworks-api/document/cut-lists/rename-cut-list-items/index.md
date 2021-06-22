@@ -9,24 +9,31 @@ group: Cut-List
 ---
 ![Sheet metal cut list features](sheet-metal-cut-list.png){ width=250 }
 
-This VBA macro allows to rename all cut list features for weldment and sheet metal part based on the name template which can include values of custom properties and free text.
+This VBA macro allows to rename all cut list features for weldment and sheet metal part based on the name template which can include values of file and cut-list custom properties, file name, configuration name and free text.
 
 ![Cut list properties](cut-list-properties.png){ width=550 }
 
-To configure the macro modify the values of *NAME_TEMPLATE* and *PROPERTIES* variables
+To configure the macro modify the values of *NAME_TEMPLATE*, *INDEX_FORMAT* and *ALWAYS_ADD_INDEX* constants
 
-* *NAME_TEMPLATE* can contain free text and 0-based placeholders which will be dynamically replaced by corresponding custom properties values
-* Set the names of the properties to extract by assigning the Array of *PROPERTIES* variable in *Init* function
+*NAME_TEMPLATE* can contain free text and placeholders which will be dynamically replaced by corresponding custom properties values
+
+The following placeholders are supported
+
+<_FileName_> - name of the part file (without extension) where the cut-list resides in
+<_ConfName_> - name of the active configuration of the part file
+<$CLPRP:[PropertyName]> - any name of the cut-list property to read value from, e.g. <Thickness> is replaced with the value of cut-list custom property Thickness
+<$PRP:[PropertyName]> - any name of the custom property of part to read value from, e.g. <PartNo> is replaced with the value of cut-list custom property PartNo
+
+Placeholders will be resolved for each cut-list at runtime.
+
+*INDEX_FORMAT* constant allows to specify the padding of the index for feature name if name is used. By default feature names resolved to the same value will have an index for second feature and so on, unless *ALWAYS_ADD_INDEX* constant is set to true. In this case first feature will have index as well.
+
+For example the following setup (in case part PartNo equals to ABC) will resolve cut-list feature to *ABC_001*, *ABC_002*, *ABC_003* etc.
 
 ~~~ vb
-Const NAME_TEMPLATE = "FreeText_{0}_{1}_{2}_{3}" 'Each feature is renamed with FreeText_ followed by the value of the first custom property specified in PROPERTIES, then _ etc.
-Dim PROPERTIES As Variant
-
-Dim swApp As SldWorks.SldWorks
-
-Sub Init(Optional dummy As Variant = Empty)
-    PROPERTIES = Array("Prp1", "Prp2", "Prp3", "Prp4") 'custom properties to extract. Value of Prp1 will replace {0}, Prp2 will replace {1} etc.
-End Sub
+Const NAME_TEMPLATE = "<$PRP:PartNo>_"
+Const INDEX_FORMAT As String = "000"
+Const ALWAYS_ADD_INDEX As Boolean = True
 ~~~
 
 Watch [video demonstration](https://youtu.be/jsjN8zNRTuc?t=200)

@@ -1,19 +1,14 @@
-Const NAME_TEMPLATE = "SM_{0}x{1}x{2}"
-Dim PROPERTIES As Variant
+Const NAME_TEMPLATE = "<_FileName_>_<$CLPRP:Description>_<$PRP:PartNo>"
+Const INDEX_FORMAT As String = "0"
+Const ALWAYS_ADD_INDEX As Boolean = False
 
 Dim swApp As SldWorks.SldWorks
-
-Sub Init(Optional dummy As Variant = Empty)
-    PROPERTIES = Array("Bounding Box Length", "Bounding Box Width", "Sheet Metal Thickness")
-End Sub
 
 Sub main()
 
 try_:
     On Error GoTo catch_
-    
-    Init
-    
+        
     Set swApp = Application.SldWorks
     
     Dim swModel As SldWorks.ModelDoc2
@@ -32,31 +27,20 @@ try_:
             Dim swCutListFeat As SldWorks.Feature
             Set swCutListFeat = vCutLists(i)
             
-            Dim vPrpVals As Variant
-            vPrpVals = ReadProperties(swCutListFeat.CustomPropertyManager, PROPERTIES)
+            Dim featBaseName As String
+            
+            featBaseName = ComposeFeatureName(NAME_TEMPLATE, swModel, swCutListFeat)
             
             Dim featName As String
+            featName = ResolveFeatureName(swModel, featBaseName)
             
-            featName = FormatString(NAME_TEMPLATE, vPrpVals)
-
-            If swCutListFeat.Name <> featName Then
-                                
-                If featName <> "" Then
-                
-                    Dim index As Integer
-                    index = 0
-                    
-                    While swModel.FeatureManager.IsNameUsed(swNameType_e.swFeatureName, featName)
-                        index = index + 1
-                        featName = FormatString(NAME_TEMPLATE, vPrpVals) + CStr(index)
-                    Wend
-                    
+            If featName <> "" Then
+                If swCutListFeat.Name <> featName Then
                     swCutListFeat.Name = featName
-                Else
-                    Debug.Print "Empty name for " & swCutListFeat.Name
                 End If
+            Else
+                Debug.Print "Empty name for " & swCutListFeat.Name
             End If
-            
         Next
         
     Else
@@ -71,21 +55,32 @@ finally_:
 
 End Sub
 
-Function ReadProperties(custPrpMgr As SldWorks.CustomPropertyManager, prpNames As Variant) As Variant
+Function ResolveFeatureName(model As ModelDoc2, baseName As String) As String
     
-    Dim prpValues() As String
+    Dim featName As String
     
-    ReDim prpValues(UBound(prpNames))
+    If baseName <> "" Then
+                
+        Dim index As Integer
+        
+        If ALWAYS_ADD_INDEX Then
+            index = 1
+            featName = baseName + Format$(index, INDEX_FORMAT)
+        Else
+            index = 0
+            featName = baseName
+        End If
+        
+        While model.FeatureManager.IsNameUsed(swNameType_e.swFeatureName, featName)
+            index = index + 1
+            featName = baseName + Format$(index, INDEX_FORMAT)
+        Wend
+        
+    Else
+        featName = ""
+    End If
     
-    Dim i As Integer
-    
-    For i = 0 To UBound(prpNames)
-        Dim resVal As String
-        custPrpMgr.Get2 CStr(prpNames(i)), "", resVal
-        prpValues(i) = resVal
-    Next
-    
-    ReadProperties = prpValues
+    ResolveFeatureName = featName
     
 End Function
 
@@ -151,17 +146,92 @@ Sub ProcessFeature(thisFeat As SldWorks.Feature, featsArr() As SldWorks.Feature,
         
 End Sub
 
-Function FormatString(inputStr As String, params As Variant)
+Function ComposeFeatureName(template As String, model As SldWorks.ModelDoc2, cutListFeat As SldWorks.Feature) As String
+
+    Dim regEx As Object
+    Set regEx = CreateObject("VBScript.RegExp")
     
-    Dim resStr As String
-    resStr = inputStr
+    regEx.Global = True
+    regEx.IgnoreCase = True
+    regEx.Pattern = "<[^>]*>"
+    
+    Dim regExMatches As Object
+    Set regExMatches = regEx.Execute(template)
     
     Dim i As Integer
     
-    For i = 0 To UBound(params)
-        resStr = Replace(resStr, "{" & i & "}", CStr(params(i)))
+    Dim outFeatName As String
+    outFeatName = template
+    
+    For i = regExMatches.Count - 1 To 0 Step -1
+        
+        Dim regExMatch As Object
+        Set regExMatch = regExMatches.Item(i)
+                    
+        Dim tokenName As String
+        tokenName = Mid(regExMatch.Value, 2, Len(regExMatch.Value) - 2)
+        
+        outFeatName = Left(outFeatName, regExMatch.FirstIndex) & ResolveToken(tokenName, model, cutListFeat) & Right(outFeatName, Len(outFeatName) - (regExMatch.FirstIndex + regExMatch.Length))
     Next
     
-    FormatString = resStr
+    ComposeFeatureName = outFeatName
     
+End Function
+
+Function ResolveToken(token As String, model As SldWorks.ModelDoc2, cutListFeat As SldWorks.Feature) As String
+    
+    Const FILE_NAME_TOKEN As String = "_FileName_"
+    Const CONF_NAME_TOKEN As String = "_ConfName_"
+    
+    Const PRP_TOKEN As String = "$PRP:"
+    Const CUT_LIST_PRP_TOKEN As String = "$CLPRP:"
+    
+    Select Case LCase(token)
+        Case LCase(FILE_NAME_TOKEN)
+            ResolveToken = GetFileNameWithoutExtension(model.GetPathName)
+        Case LCase(CONF_NAME_TOKEN)
+            ResolveToken = model.ConfigurationManager.ActiveConfiguration.Name
+        Case Else
+            
+            Dim prpName As String
+                        
+            If Left(token, Len(PRP_TOKEN)) = PRP_TOKEN Then
+                prpName = Right(token, Len(token) - Len(PRP_TOKEN))
+                ResolveToken = GetModelPropertyValue(model, model.ConfigurationManager.ActiveConfiguration.Name, prpName)
+            ElseIf Left(token, Len(CUT_LIST_PRP_TOKEN)) = CUT_LIST_PRP_TOKEN Then
+                prpName = Right(token, Len(token) - Len(CUT_LIST_PRP_TOKEN))
+                ResolveToken = GetPropertyValue(cutListFeat.CustomPropertyManager, prpName)
+            Else
+                Err.Raise vbError, "", "Unrecognized token: " & token
+            End If
+            
+    End Select
+    
+End Function
+
+Function GetModelPropertyValue(model As SldWorks.ModelDoc2, confName As String, prpName As String) As String
+    
+    Dim prpVal As String
+    Dim swCustPrpMgr As SldWorks.CustomPropertyManager
+    
+    Set swCustPrpMgr = model.Extension.CustomPropertyManager(confName)
+    prpVal = GetPropertyValue(swCustPrpMgr, prpName)
+    
+    If prpVal = "" Then
+        Set swCustPrpMgr = model.Extension.CustomPropertyManager("")
+        prpVal = GetPropertyValue(swCustPrpMgr, prpName)
+    End If
+    
+    GetModelPropertyValue = prpVal
+    
+End Function
+
+Function GetPropertyValue(custPrpMgr As SldWorks.CustomPropertyManager, prpName As String) As String
+    Dim resVal As String
+    custPrpMgr.Get2 prpName, "", resVal
+    GetPropertyValue = resVal
+End Function
+
+Function GetFileNameWithoutExtension(path As String) As String
+    GetFileNameWithoutExtension = Mid(path, InStrRev(path, "\") + 1, InStrRev(path, ".") - InStrRev(path, "\") - 1)
 End Function
