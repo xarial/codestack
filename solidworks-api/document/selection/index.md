@@ -35,7 +35,7 @@ Selection data is an object created via [ISelectionMgr::CreateSelectData](https:
 
 Selection data allows to provide additional instruction to the selection:
 
-* [Associate callouts]({{ "/solidworks-api/adornment/callouts" | relative_url  }}) elements with the selection
+* [Associate callouts](/solidworks-api/adornment/callouts) elements with the selection
 * Assign the [selection mark](#selection-marks) attributes
 * Specify the drawing view to select element in
 * Set the selection point. This can be also set via [ISelectionMgr::SetSelectionPoint2](https://help.solidworks.com/2012/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISelectionMgr~SetSelectionPoint2.html) method for already selected object.
