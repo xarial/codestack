@@ -1,3 +1,6 @@
+Const FIX_COMPONENTS As Boolean = True
+Const REMOVE_MATES As Boolean = True
+
 Dim swApp As SldWorks.SldWorks
 
 Sub main()
@@ -17,33 +20,39 @@ Sub main()
         Dim swAssy As SldWorks.AssemblyDoc
         Set swAssy = swModel
         
-        Dim vMates As Variant
-        vMates = GetAllMates(swAssy)
+        If REMOVE_MATES Then
         
-        If Not IsEmpty(vMates) Then
+            Dim vMates As Variant
+            vMates = GetAllMates(swAssy)
             
-            If swModel.Extension.MultiSelect2(vMates, False, Nothing) = UBound(vMates) + 1 Then
+            If Not IsEmpty(vMates) Then
                 
-                If False <> swModel.Extension.DeleteSelection2(swDeleteSelectionOptions_e.swDelete_Absorbed) Then
-                    
-                    Dim vComps As Variant
-                    vComps = swAssy.GetComponents(True)
-                    
-                    If swModel.Extension.MultiSelect2(vComps, False, Nothing) = UBound(vComps) + 1 Then
-                        swAssy.FixComponent
-                    Else
-                        Err.Raise vbError, "", "Faield to select components"
+                If swModel.Extension.MultiSelect2(vMates, False, Nothing) = UBound(vMates) + 1 Then
+                    If False = swModel.Extension.DeleteSelection2(swDeleteSelectionOptions_e.swDelete_Absorbed) Then
+                        Err.Raise vbError, "", "Failed to delete mates"
                     End If
-                    
                 Else
-                    Err.Raise vbError, "", "Failed to delete mates"
+                    Err.Raise vbError, "", "Failed to select mates for deletion"
                 End If
-            Else
-                Err.Raise vbError, "", "Failed to select mates for deletion"
             End If
-        Else
-            Err.Raise vbError, "", "No mates in the assembly"
+        
         End If
+        
+        If FIX_COMPONENTS Then
+            
+            Dim vComps As Variant
+            vComps = GetAllComponents(swAssy)
+            
+            If Not IsEmpty(vComps) Then
+                If swAssy.Extension.MultiSelect2(vComps, False, Nothing) = UBound(vComps) + 1 Then
+                    swAssy.FixComponent
+                Else
+                    Err.Raise vbError, "", "Failed to select components"
+                End If
+            End If
+            
+        End If
+        
     Else
         Err.Raise vbError, "", "Please open assemby document"
     End If
@@ -89,6 +98,46 @@ Function GetAllMates(assm As SldWorks.AssemblyDoc) As Variant
         Set swMateFeat = swMateFeat.GetNextSubFeature
     Wend
     
-    GetAllMates = swMates
+    If isInit Then
+        GetAllMates = swMates
+    Else
+        GetAllMates = Empty
+    End If
+    
+End Function
+
+Function GetAllComponents(assm As SldWorks.AssemblyDoc) As Variant
+    
+    Dim swComps() As SldWorks.Component2
+    Dim isInit As Boolean
+    isInit = False
+        
+    Dim vComps As Variant
+    vComps = assm.GetComponents(True)
+    
+    Dim i As Integer
+    
+    For i = 0 To UBound(vComps)
+        
+        Dim swComp As SldWorks.Component2
+        Set swComp = vComps(i)
+        
+        If False = swComp.IsPatternInstance Then
+            If Not isInit Then
+                isInit = True
+                ReDim swComps(0)
+            Else
+                ReDim Preserve swComps(UBound(swComps) + 1)
+            End If
+            Set swComps(UBound(swComps)) = swComp
+        End If
+
+    Next
+    
+    If isInit Then
+        GetAllComponents = swComps
+    Else
+        GetAllComponents = Empty
+    End If
     
 End Function
