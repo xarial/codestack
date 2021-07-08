@@ -6,6 +6,9 @@ Dim swApp As SldWorks.SldWorks
 Sub main()
 
     Set swApp = Application.SldWorks
+
+try_:
+    On Error GoTo catch_
     
     Dim swModel As SldWorks.ModelDoc2
     
@@ -13,18 +16,34 @@ Sub main()
     
     If Not swModel Is Nothing Then
         
+        If swModel.SelectionManager.GetSelectedObjectType3(1, -1) <> swSelectType_e.swSelANNOTATIONTABLES Then
+            Err.Raise vbError, "", "Table is not selected"
+        End If
+        
         Dim swTableAnn As SldWorks.TableAnnotation
         Set swTableAnn = swModel.SelectionManager.GetSelectedObject6(1, -1)
         
-        Dim vTable As Variant
-        vTable = GetTableData(swTableAnn, INCLUDE_HEADER)
+        If Not swTableAnn Is Nothing Then
             
-        WriteCsvFile GetExportFilePath(swModel), vTable
+            Dim vTable As Variant
+            vTable = GetTableData(swTableAnn, INCLUDE_HEADER)
+                
+            WriteCsvFile GetExportFilePath(swModel), vTable
+            
+            GoTo finally_
+            
+        Else
+            Err.Raise vbError, "", "Table is not selected"
+        End If
         
     Else
-        MsgBox "Please open document"
+        Err.Raise vbError, "", "Document is not open"
     End If
-    
+
+catch_:
+    swApp.SendMsgToUser2 Err.Description, swMessageBoxIcon_e.swMbStop, swMessageBoxBtn_e.swMbOk
+finally_:
+
 End Sub
 
 Function GetExportFilePath(model As SldWorks.ModelDoc2) As String

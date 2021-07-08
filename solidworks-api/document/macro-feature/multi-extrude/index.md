@@ -16,6 +16,10 @@ Create the following macro structure and copy the code snippets to the correspon
 
 ![Macro modules and classes](macro-project-structure.png)
 
+Property Manager pages are defined in the **SolidWorks {{Version}} exposed type library for add-in use** type library. So it needs to be added to the references of the VBA macro.
+
+![VBA macro references](macro-references.png)
+
 ## Macro Module
 
 Entry point of the macro. Use this to insert new macro feature.
