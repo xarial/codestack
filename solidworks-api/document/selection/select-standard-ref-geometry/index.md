@@ -53,9 +53,9 @@ Macro will append the selection if **ctrl** button is pressed unless the **APPEN
 Const APPEND_SEL As Boolean = True
 ~~~
 
-## Toolbar+
+## CAD+
 
-It is recommended to use this macro with [Toolbar+](https://cadplus.xarial.com/toolbar/) add-in so the buttons can be added to toolbar and assigned with shortcut for easier access.
+This macro is compatible with [Toolbar+](https://cadplus.xarial.com/toolbar/) and [Batch+](https://cadplus.xarial.com/batch/) tools so the buttons can be added to toolbar and assigned with shortcut for easier access or run in the batch mode.
 
 ![Buttons in toolbar](toolbar.png)
 
