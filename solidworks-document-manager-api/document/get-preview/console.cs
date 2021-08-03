@@ -36,8 +36,7 @@ namespace CodeStackExample
             }
 
             SwDmDocumentOpenError err;
-            var doc = app.GetDocument(filePath,
-                SwDmDocumentType.swDmDocumentPart, true, out err);
+            var doc = app.GetDocument(filePath, docType, true, out err);
 
             if (doc != null)
             {
