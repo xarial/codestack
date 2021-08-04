@@ -67,15 +67,17 @@ Function FindTables(draw As SldWorks.DrawingDoc, filter As Variant) As Variant
                 Set swTableAnn = vTableAnns(j)
                 
                 If FilterContains(swTableAnn.Type, filter) Then
+
                     If isInit Then
                         ReDim Preserve swTables(UBound(swTables) + 1)
                     Else
                         ReDim swTables(0)
                         isInit = True
                     End If
+
+                    Set swTables(UBound(swTables)) = swTableAnn
+
                 End If
-                
-                Set swTables(UBound(swTables)) = swTableAnn
                 
             Next
             

@@ -19,10 +19,10 @@ To configure the macro modify the values of *NAME_TEMPLATE*, *INDEX_FORMAT* and 
 
 The following placeholders are supported
 
-<_FileName_> - name of the part file (without extension) where the cut-list resides in
-<_ConfName_> - name of the active configuration of the part file
-<$CLPRP:[PropertyName]> - any name of the cut-list property to read value from, e.g. <Thickness> is replaced with the value of cut-list custom property Thickness
-<$PRP:[PropertyName]> - any name of the custom property of part to read value from, e.g. <PartNo> is replaced with the value of cut-list custom property PartNo
+* <\_FileName\_> - name of the part file (without extension) where the cut-list resides in
+* <\_ConfName\_> - name of the active configuration of the part file
+* <$CLPRP:[PropertyName]> - any name of the cut-list property to read value from, e.g. <Thickness> is replaced with the value of cut-list custom property Thickness
+* <$PRP:[PropertyName]> - any name of the custom property of part to read value from, e.g. <PartNo> is replaced with the value of cut-list custom property PartNo
 
 Placeholders will be resolved for each cut-list at runtime.
 
