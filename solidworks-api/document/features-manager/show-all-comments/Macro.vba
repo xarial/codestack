@@ -23,13 +23,18 @@ Sub main()
                 Dim swCommentsFolder As SldWorks.CommentFolder
                 
                 Set swCommentFolder = swFeat.GetSpecificFeature2
+               
+               'get the number of comments
+                Dim nComments As Variant
+                nComments = swCommentFolder.GetCommentCount
                 
                 Dim vComments As Variant
                 vComments = swCommentFolder.GetComments
-                
+ 
                 Dim i As Integer
                 
-                For i = 0 To UBound(vComments)
+                For i = 0 To (nComments - 1)
+                'For i = 0 To UBound(vComments)' if there are no comments vComments is null
                     Dim swComment As SldWorks.Comment
                     Set swComment = vComments(i)
                     msg = IIf(msg = "", "", msg & vbLf) & swComment.Text
