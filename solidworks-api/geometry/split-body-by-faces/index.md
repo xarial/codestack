@@ -3,7 +3,7 @@ layout: sw-tool
 title: SOLIDWORKS Macro to Split Body By Faces using SOLIDWORKS API
 caption: Split Body By Faces
 description: Macro splits the selected surface or solid body by faces creating individual sheet body for each face using SOLIDWORKS API
-image: feature-manager-tree-split-faces.png
+image: split-body-by-faces.svg
 labels: [split,body,faces]
 group: Geometry
 ---
