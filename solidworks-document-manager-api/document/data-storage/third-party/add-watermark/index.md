@@ -19,7 +19,7 @@ This application implemented as the command line program and has the following a
 AddWatermark.exe C:\MyPart.sldprt -w MyCompanyName
 ~~~
 
-Watermark will include company name, current use name and time stamp
+Watermark will include company name, current user name and time stamp
 
 ## Reading watermark
 
