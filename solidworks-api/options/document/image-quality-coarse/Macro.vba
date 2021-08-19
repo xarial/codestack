@@ -42,27 +42,19 @@ End Sub
 
 Private Function SetCoarseQuality() As Boolean
                   
-      'set to use coarse quality
-      Dim boolstatus As Boolean
-      boolstatus = swModel.Extension.SetUserPreferenceInteger(swUserPreferenceIntegerValue_e.swImageQualityShaded, _
+    'set to use coarse quality
+    Dim boolstatus As Boolean
+    boolstatus = swModel.Extension.SetUserPreferenceInteger(swUserPreferenceIntegerValue_e.swImageQualityShaded, _
                                                               swUserPreferenceOption_e.swDetailingNoOptionSpecified, _
                                                               swImageQualityShaded_e.swShadedImageQualityCoarse)
         
-      'option "Apply to all referenced part documents" is set to ON
-      If swModel.GetType = swDocASSEMBLY Then
+    'option "Apply to all referenced part documents" is set to ON
+    If swModel.GetType = swDocASSEMBLY Then
       
-         Dim res As Boolean
-         res = swModel.Extension.SetUserPreferenceToggle(swImageQualityApplyToAllReferencedPartDoc, _
+       Dim res As Boolean
+       res = swModel.Extension.SetUserPreferenceToggle(swImageQualityApplyToAllReferencedPartDoc, _
                                                          swDetailingNoOptionSpecified, True)
         
-      End If
+    End If
            
 End Function
-
-
-
-
-
-
-
-
