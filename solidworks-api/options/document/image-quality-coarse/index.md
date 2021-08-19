@@ -7,7 +7,7 @@ image: coarse-icon.svg
 labels: [document, preferences, options, imagequality, batch+]
 group: Options
 ---
-Author: [Eddy Alleman](https://www.linkedin.com/in/eddyalleman/) ([EDAL Solutions](www.edalsolutions.be))
+Author: [Eddy Alleman](https://www.linkedin.com/in/eddyalleman/) ([EDAL Solutions](https:/www.edalsolutions.be/index.php/en/))
 
 ![Shaded Image Quality Settings set to Coarse](Image-Quality-Coarse.png){ width=650 }
 
