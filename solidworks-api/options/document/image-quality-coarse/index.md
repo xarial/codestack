@@ -25,6 +25,6 @@ This macro sets both options (1) and (2) as shown in the above image. Option (2)
 
 The real power begins if you use this macro with Batch+. You can let it run when you're not working on your assembly.
 
-![Example settings to let Batch+ run in the background and also handle the saving of the files](batch+settings.png){ width=800 }
+![Example settings to let Batch+ run in the background and also handle the saving of the files](batch-plus-settings.png){ width=800 }
 
 {% code-snippet { file-name: Macro.vba } %}

@@ -1,7 +1,14 @@
+Const USE_SYSTEM_UNITS As Boolean = True
+Const FIRST_ROW_HEADER As Boolean = True
+
 Dim swApp As SldWorks.SldWorks
 
 Sub main()
 
+try_:
+    
+    On Error GoTo catch_
+    
     Set swApp = Application.SldWorks
         
     Dim swModel As SldWorks.ModelDoc2
@@ -9,7 +16,7 @@ Sub main()
     
     If Not swModel Is Nothing Then
     
-        Dim swSketch As SldWorks.sketch
+        Dim swSketch As SldWorks.Sketch
         
         Set swSketch = swModel.SketchManager.ActiveSketch
         
@@ -17,24 +24,50 @@ Sub main()
             
             Dim vPoints As Variant
             Dim inputFile As String
-            inputFile = InputBox("Specify the full path to CSV file")
+            
+            inputFile = swApp.GetOpenFileName("Specify the full path to CSV file", "", "CSV Files (*.csv)|*.csv|Text Files (*.txt)|*.txt|All Files (*.*)|*.*|", -1, "", "")
             
             If inputFile <> "" Then
             
-                vPoints = ReadCsvFile(inputFile, True)
+                vPoints = ReadCsvFile(inputFile, FIRST_ROW_HEADER)
+                
+                vPoints = ConvertPointsLocations(vPoints, swModel, USE_SYSTEM_UNITS, GetSelectedCoordinateSystemTransform(swModel))
+                
                 DrawPoints swModel, vPoints
             
             End If
             
         Else
-            MsgBox "Please open 2D or 3D Sketch"
+            Err.Raise vbError, "", "Please open 2D or 3D Sketch"
         End If
         
     Else
-        MsgBox "Please open the model"
+        Err.Raise vbError, "", "Please open the model"
     End If
         
+    GoTo finally_
+    
+catch_:
+    swApp.SendMsgToUser2 Err.Description, swMessageBoxIcon_e.swMbStop, swMessageBoxBtn_e.swMbOk
+finally_:
+        
 End Sub
+
+Function GetSelectedCoordinateSystemTransform(model As SldWorks.ModelDoc2) As SldWorks.mathTransform
+    
+    Dim swSelMgr As SldWorks.SelectionMgr
+    
+    Set swSelMgr = model.SelectionManager
+    
+    If swSelMgr.GetSelectedObjectType3(1, -1) = swSelectType_e.swSelCOORDSYS Then
+        Dim swCoordSysFeat As SldWorks.Feature
+        Set swCoordSysFeat = swSelMgr.GetSelectedObject6(1, -1)
+        Set GetSelectedCoordinateSystemTransform = model.Extension.GetCoordinateSystemTransformByName(swCoordSysFeat.Name)
+    Else
+        Set GetSelectedCoordinateSystemTransform = Nothing
+    End If
+    
+End Function
 
 Sub DrawPoints(model As SldWorks.ModelDoc2, vPoints As Variant)
     
@@ -44,6 +77,7 @@ Sub DrawPoints(model As SldWorks.ModelDoc2, vPoints As Variant)
     
     For i = 0 To UBound(vPoints)
         
+        Dim swSkPt As SldWorks.SketchPoint
         Dim vPt As Variant
         vPt = vPoints(i)
         
@@ -51,19 +85,15 @@ Sub DrawPoints(model As SldWorks.ModelDoc2, vPoints As Variant)
         Dim y As Double
         Dim z As Double
         
-        If UBound(vPt) >= 0 Then
-            x = vPt(0)
-        End If
+        x = CDbl(vPt(0))
+        y = CDbl(vPt(1))
+        z = CDbl(vPt(2))
         
-        If UBound(vPt) >= 1 Then
-            y = vPt(1)
-        End If
+        Set swSkPt = model.SketchManager.CreatePoint(x, y, z)
         
-        If UBound(vPt) >= 2 Then
-            z = vPt(2)
+        If swSkPt Is Nothing Then
+            Err.Raise vbError, "", "Failed to create point at: " & x & "; " & y & "; " & z
         End If
-        
-        model.SketchManager.CreatePoint x, y, z
         
     Next
     
@@ -71,13 +101,74 @@ Sub DrawPoints(model As SldWorks.ModelDoc2, vPoints As Variant)
     
 End Sub
 
+Function ConvertPointsLocations(points As Variant, model As SldWorks.ModelDoc2, useSystemUnits As Boolean, mathTransform As SldWorks.mathTransform) As Variant
+    
+    Dim swMathUtils As SldWorks.MathUtility
+    
+    Set swMathUtils = swApp.GetMathUtility
+    
+    Dim convFact As Double
+    convFact = 1
+    
+    If Not useSystemUnits Then
+        Dim swUserUnit As SldWorks.UserUnit
+        Set swUserUnit = model.GetUserUnit(swUserUnitsType_e.swLengthUnit)
+        convFact = 1 / swUserUnit.GetConversionFactor()
+    End If
+    
+    Dim i As Integer
+    
+    For i = 0 To UBound(points)
+        
+        Dim vPt As Variant
+        vPt = points(i)
+        
+        Dim dPt(2) As Double
+        
+        If UBound(vPt) >= 0 Then
+            dPt(0) = CDbl(vPt(0)) * convFact
+        Else
+            dPt(0) = 0
+        End If
+        
+        If UBound(vPt) >= 1 Then
+            dPt(1) = CDbl(vPt(1)) * convFact
+        Else
+            dPt(1) = 0
+        End If
+        
+        If UBound(vPt) >= 2 Then
+            dPt(2) = CDbl(vPt(2)) * convFact
+        Else
+            dPt(2) = 0
+        End If
+        
+        If Not mathTransform Is Nothing Then
+            
+            Dim swMathPt As SldWorks.MathPoint
+            
+            Set swMathPt = swMathUtils.CreatePoint(dPt)
+            Set swMathPt = swMathPt.MultiplyTransform(mathTransform)
+            
+            vPt = swMathPt.ArrayData
+            
+        Else
+            vPt = dPt
+        End If
+        
+        points(i) = vPt
+        
+    Next
+    
+    ConvertPointsLocations = points
+    
+End Function
+
 Function ReadCsvFile(filePath As String, firstRowHeader As Boolean) As Variant
     
     'rows x columns
     Dim vTable() As Variant
-    
-    On Error GoTo Error
-    
+        
     Dim fileName As String
     Dim tableRow As String
     Dim fileNo As Integer
@@ -134,11 +225,5 @@ Function ReadCsvFile(filePath As String, firstRowHeader As Boolean) As Variant
     Close #fileNo
     
     ReadCsvFile = vTable
-    
-    Exit Function
-    
-Error:
-
-    ReadCsvFile = Empty
     
 End Function
