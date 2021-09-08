@@ -44,9 +44,7 @@ try:
                         Set swSkArc = swSkSeg
                         
                         If Abs(swSkArc.GetRadius() - radius) < EPS Then
-                            Dim swSkArcSeg As SldWorks.SketchSegment
-                            Set swSkArcSeg = swSkArc
-                            swSkArcSeg.Select4 True, Nothing
+                            swSkArc.Select4 True, Nothing
                         End If
                         
                     End If
