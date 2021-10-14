@@ -202,7 +202,7 @@ End Sub
 Function IsReferencingDrawing(drwFilePath As String, destFilePath As String) As Boolean
 
     Dim vDepends As Variant
-    vDepends = swApp.GetDocumentDependencies2(drwFilePath, True, True, False)
+    vDepends = swApp.GetDocumentDependencies2(drwFilePath, False, True, False)
     
     Dim i As Integer
     
