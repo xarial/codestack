@@ -17,7 +17,7 @@ Const SRC_PART As String = "C:\Sample.sldprt"
 Try both options to see the difference by changing the *SUPPRESS_UPDATES* constant
 
 ~~~ vb
-Const SUPPRESS_UPDATES As Boolean = True 'True to suppress updated, False to show the updates (default behavior)
+Const SUPPRESS_UPDATES As Boolean = True 'True to suppress updates, False to show the updates (default behavior)
 ~~~
 
 Macro performs the following steps
