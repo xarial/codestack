@@ -44,7 +44,7 @@ try:
                         Set swSkArc = swSkSeg
                         
                         If Abs(swSkArc.GetRadius() - radius) < EPS Then
-                            swSkArc.Select4 True, Nothing
+                            swSkSeg.Select4 True, Nothing
                         End If
                         
                     End If

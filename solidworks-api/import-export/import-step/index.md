@@ -1,24 +1,25 @@
 ---
 layout: sw-tool
-title: VBA macro to import STEP files and save as SolidWorks files using a subfolder with the same name
-caption: import STEP files
-description: VBA macro to import STEP files and save as SolidWorks files using a subfolder with the same name. 
+title: Macro to import STEP files and save as SOLIDWORKS files using a sub-folder with the same name
+caption: Import STEP files
+description: VBA macro to import STEP files and save as SOLIDWORKS files using a sub-folder with the same name. 
 image: import-step-icon.svg
 labels: [STEP, Import, Batch+]
 group: Import/Export
 ---
 Author: [Eddy Alleman](https://www.linkedin.com/in/eddyalleman/) ([EDAL Solutions](https://www.edalsolutions.be/index.php/en/))
 
-![Options used to import STEP files](step-options.png){ width=650 }
+![Options used to import STEP files](import-step-options.png){ width=400 }
 
-#Context situation: 
+## Context situation: 
+
 Suppose we have hundreds of STEP files, all in the same folder from our supplier. 
 We want to build a library out of them to reuse again and again in our designs.
 To keep the files well separated one from another, we want each STEP file exported in a separate folder per type.
 
-#Solidworks has a tool for this: Task scheduler
+## SOLIDWORKS has a tool for this: Task scheduler
 
-![Task scheduler import](taskscheduler.png){ width=350 }
+![Task scheduler import](task-scheduler-import.png){ width=350 }
 
 But all step files will end up in the same folder, unless we put the STEP files in separate folders first and then the exported Solidworks files to those subfolders.
 This is a lot of manual work.
@@ -28,7 +29,8 @@ We want to be able to choose the best ones after importing and not just overwrit
 
 So how can we automate this and avoid making all those subfolders manually?
 
-#Batch+ with simple macro
+## Batch+ with simple macro
+
 Batch+ is a free tool, that is part of CAD+ and it handles a lot of the peculiarities when batch processing files.
 We will choose this option because of the easy setup and full control over the process.
 
@@ -40,7 +42,8 @@ This helps in separating the files that belong together from other imports.
 If you don't put them in a new folder every time, you could get the same file twice
 and the last save overwrites the previous ones. Be sure that they are the same in that case.
 
-#PREREQUISITES
+## PREREQUISITES
+
 (1) make sure you don't have system option set to:
     Prompt user to select document template
     Use instead : "Always use these default document templates"
@@ -51,7 +54,7 @@ Otherwise SolidWorks keeps asking to select a document template.
     Insert proprietary CAD data directly into a SOLIDWORKS assembly without converting it to a SOLIDWORKS file.
     And converting is exactly what we want. 3D interconnect just makes a link to the STEP file and updates if needed.
 
-![Settings to use in Batch+](batch+settings.png){ width=800 }
+![Settings to use in Batch+](batch-plus-settings.png){ width=800 }
 
 {% code-snippet { file-name: Macro.vba } %}
 
