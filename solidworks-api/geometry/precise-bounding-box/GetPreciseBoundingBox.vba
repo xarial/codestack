@@ -15,9 +15,9 @@ Sub main()
      
         DrawBox swPart, CDbl(vBBox(0)), CDbl(vBBox(1)), CDbl(vBBox(2)), CDbl(vBBox(3)), CDbl(vBBox(4)), CDbl(vBBox(5))
         
-        Debug.Print "Width: " & maxX - minX
-        Debug.Print "Length: " & maxZ - minZ
-        Debug.Print "Height: " & maxY - minY
+        Debug.Print "Width: " & CDbl(vBBox(3)) - CDbl(vBBox(0))
+        Debug.Print "Length: " & CDbl(vBBox(5)) - CDbl(vBBox(2))
+        Debug.Print "Height: " & CDbl(vBBox(4)) - CDbl(vBBox(1))
         
     Else
         
