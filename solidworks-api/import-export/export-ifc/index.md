@@ -1,11 +1,9 @@
 ---
-layout: sw-tool
 title: Export assembly or part to IFC 2x3 or 4 using SOLIDWORKS API
 caption: Export To IFC (2x3 and 4)
 description: Example in VBA to export active part or assembly document to IFC format (2x3 or 4) using SOLIDWORKS API
 image: save-as-dialog-ifc.png
-labels: [ifc,2x3,4,export]
-group: Model
+labels: [ifc,ifc2x3,ifc4,export]
 ---
 This example demonstrates how to export active assembly or part document into IFC format using SOLIDWORKS API.
 

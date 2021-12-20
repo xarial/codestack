@@ -51,6 +51,11 @@ Sub main()
     OUT_NAME_TEMPLATES = Array("D:\Exports\<_FileName_>.x_t")
 ~~~
 
+### Include component quantity into file name
+
+If this macro is run for all components of the assembly, it might be required to include the BOM quantity into the file name. Use the [Write component quantity in the SOLIDWORKS assembly to custom property
+](/solidworks-api/document/assembly/components/write-quantities/) macro. Run this macro for the assembly before exporting to create custom property with the quantity value and then use **\<Qty\>** placeholder in order to include this into the output file name.
+
 ### Process all configuration
 
 If **ALL_CONFIGS** constant is set to **True** macro will activate all configuration (for assembly and part) or all sheets (for drawing) one-by-one and run export command.

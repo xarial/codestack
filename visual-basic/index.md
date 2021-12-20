@@ -36,7 +36,7 @@ The main features of Visual Basic are
 
 ## Versions of Visual Basic
 
-[Visual Basic for Applications (VBA)](visual-basic/vba) - integrated environment for creating and executing macros used in a number of applications such as MS Office, SOLIDWORKS, AutoCAD, etc.
+[Visual Basic for Applications (VBA)](vba) - integrated environment for creating and executing macros used in a number of applications such as MS Office, SOLIDWORKS, AutoCAD, etc.
 
 VBScript - language of Active Server Pages which is used for Windows scripting and client side web page scripting.
 

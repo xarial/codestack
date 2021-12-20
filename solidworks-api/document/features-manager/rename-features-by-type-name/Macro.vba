@@ -7,11 +7,11 @@ Sub main()
 
     Set swApp = Application.SldWorks
     
-    Dim swPart As SldWorks.PartDoc
+    Dim swModel As SldWorks.ModelDoc2
     
-    Set swPart = TryGetActivePart()
+    Set swModel = swApp.ActiveDoc
     
-    If Not swPart Is Nothing Then
+    If Not swModel Is Nothing Then
     
         Dim dicFeatsCount As Object
         Dim collFeatsNonIncr As Collection
@@ -26,52 +26,60 @@ Sub main()
         
         vTable = ReadCsvFile(swApp.GetCurrentMacroPathFolder() & "\" & NO_INCREMENT_FILE, False)
         
-        For i = 0 To UBound(vTable)
-            collFeatsNonIncr.Add vTable(i)(0)
-        Next
+        If Not IsEmpty(vTable) Then
+            For i = 0 To UBound(vTable)
+                collFeatsNonIncr.Add vTable(i)(0)
+            Next
+        End If
         
         vTable = ReadCsvFile(swApp.GetCurrentMacroPathFolder() & "\" & CUSTOM_MAP_FILE, False)
         
-        For i = 0 To UBound(vTable)
-            dicBaseNames.Add vTable(i)(0), vTable(i)(1)
-        Next
+        If Not IsEmpty(vTable) Then
+            For i = 0 To UBound(vTable)
+                dicBaseNames.Add vTable(i)(0), vTable(i)(1)
+            Next
+        End If
         
-        Dim swFeat As SldWorks.Feature
-        Set swFeat = swPart.FirstFeature
-        
+        Dim vFeats As Variant
+        vFeats = GetAllFeatures(swModel)
+                
         Dim curRefPlanePos As Integer
         curRefPlanePos = 0
-        
-        While Not swFeat Is Nothing
-            
+                
+        For i = 0 To UBound(vFeats)
+                
+            Dim swFeat As SldWorks.Feature
+            Set swFeat = vFeats(i)
+                
             Dim newName As String
             
             Dim typeName As String
             typeName = GetTypeName(swFeat, curRefPlanePos)
             
             If dicFeatsCount.exists(typeName) Then
-                dicFeatsCount.Item(typeName) = dicFeatsCount.Item(typeName) + 1
+                dicFeatsCount.item(typeName) = dicFeatsCount.item(typeName) + 1
             Else
                 dicFeatsCount.Add typeName, 1
             End If
             
             If dicBaseNames.exists(typeName) Then
-                newName = dicBaseNames.Item(typeName)
+                newName = dicBaseNames.item(typeName)
             Else
                 newName = typeName
             End If
             
             Dim isIncremented As Boolean
             isIncremented = True
-            For i = 1 To collFeatsNonIncr.Count
-                If collFeatsNonIncr(i) = typeName Then
+            Dim j As Integer
+            For j = 1 To collFeatsNonIncr.Count
+                If collFeatsNonIncr(j) = typeName Then
                     isIncremented = False
                     Exit For
                 End If
             Next
             
             If isIncremented Then
-                newName = newName & dicFeatsCount.Item(typeName)
+                newName = newName & dicFeatsCount.item(typeName)
             End If
             
             If typeName = "MaterialFolder" Then
@@ -79,6 +87,9 @@ Sub main()
                 isRefGeom = True
                 
                 Dim sMatName As String
+                
+                Dim swPart As SldWorks.PartDoc
+                Set swPart = swModel
                 
                 sMatName = swPart.GetMaterialPropertyName2("", "")
                 
@@ -92,13 +103,84 @@ Sub main()
             
             Set swFeat = swFeat.GetNextFeature
             
-        Wend
+        Next
         
     Else
-        MsgBox "Please open the part document"
+        Err.Raise vbError, "", "Open the model"
     End If
     
 End Sub
+
+Function GetAllFeatures(model As SldWorks.ModelDoc2) As Variant
+
+    Dim swFeat As SldWorks.Feature
+    
+    Dim swFeats() As SldWorks.Feature
+    
+    Set swFeat = model.FirstFeature
+    
+    While Not swFeat Is Nothing
+        
+        If swFeat.GetTypeName2() <> "Reference" Then
+        
+            ProcessFeature swFeat, swFeats
+            
+            If swFeat.GetTypeName2 <> "HistoryFolder" Then
+                
+                TraverseSubFeatures swFeat, swFeats
+            
+            End If
+        
+        End If
+        
+        Set swFeat = swFeat.GetNextFeature
+        
+    Wend
+    
+    GetAllFeatures = swFeats
+    
+End Function
+
+Sub TraverseSubFeatures(parentFeat As SldWorks.Feature, feats() As SldWorks.Feature)
+    
+    Dim swChildFeat As SldWorks.Feature
+    Set swChildFeat = parentFeat.GetFirstSubFeature
+    
+    While Not swChildFeat Is Nothing
+        ProcessFeature swChildFeat, feats
+        Set swChildFeat = swChildFeat.GetNextSubFeature()
+    Wend
+    
+End Sub
+
+Sub ProcessFeature(feat As SldWorks.Feature, feats() As SldWorks.Feature)
+    
+    If Not Contains(feats, feat) Then
+        If (Not feats) = -1 Then
+            ReDim feats(0)
+        Else
+            ReDim Preserve feats(UBound(feats) + 1)
+        End If
+        
+        Set feats(UBound(feats)) = feat
+    End If
+    
+End Sub
+
+Function Contains(arr As Variant, item As Object) As Boolean
+    
+    Dim i As Integer
+    
+    For i = 0 To UBound(arr)
+        If arr(i) Is item Then
+            Contains = True
+            Exit Function
+        End If
+    Next
+    
+    Contains = False
+    
+End Function
 
 Function GetTypeName(feat As SldWorks.Feature, ByRef curRefPlanePos As Integer) As String
 
@@ -129,79 +211,66 @@ Function GetTypeName(feat As SldWorks.Feature, ByRef curRefPlanePos As Integer) 
     
 End Function
 
-Function TryGetActivePart() As SldWorks.PartDoc
-    
-    Dim swModel As SldWorks.ModelDoc2
-    
-    Set swModel = swApp.ActiveDoc
-    
-    If Not swModel Is Nothing Then
-        If swModel.GetType() = swDocumentTypes_e.swDocPART Then
-            Set TryGetActivePart = swModel
-        End If
-    End If
-    
-End Function
-
 Function ReadCsvFile(filePath As String, firstRowHeader As Boolean) As Variant
     
     'rows x columns
     Dim vTable() As Variant
-    
-    On Error GoTo Error
-    
+        
     Dim fileName As String
     Dim tableRow As String
-    Dim fileNo As Integer
-
-    fileNo = FreeFile
     
-    Open filePath For Input As #fileNo
+    Set fso = CreateObject("Scripting.FileSystemObject")
     
-    Dim isFirstRow As Boolean
-    Dim isTableInit As Boolean
+    If fso.FileExists(filePath) Then
     
-    isFirstRow = True
-    isTableInit = False
-    
-    Do While Not EOF(fileNo)
+        Set file = fso.OpenTextFile(filePath)
         
-        Line Input #fileNo, tableRow
+        Dim isFirstRow As Boolean
+        Dim isTableInit As Boolean
+        
+        isFirstRow = True
+        isTableInit = False
+        
+        Do Until file.AtEndOfStream
             
-        If Not isFirstRow Or Not firstRowHeader Then
+            tableRow = file.ReadLine
             
-            Dim vCells As Variant
-            vCells = Split(tableRow, ",")
-            
-            Dim lastRowIndex As Integer
-            
-            If Not isTableInit Then
-                lastRowIndex = 0
-                isTableInit = True
-                ReDim Preserve vTable(lastRowIndex)
-            Else
-                lastRowIndex = UBound(vTable, 1) + 1
-                ReDim Preserve vTable(lastRowIndex)
+            If Not isFirstRow Or Not firstRowHeader Then
+                
+                Dim vCells As Variant
+                vCells = Split(tableRow, ",")
+                
+                Dim lastRowIndex As Integer
+                
+                If Not isTableInit Then
+                    lastRowIndex = 0
+                    isTableInit = True
+                    ReDim Preserve vTable(lastRowIndex)
+                Else
+                    lastRowIndex = UBound(vTable, 1) + 1
+                    ReDim Preserve vTable(lastRowIndex)
+                End If
+                
+                vTable(lastRowIndex) = vCells
+                
             End If
             
-            vTable(lastRowIndex) = vCells
+            If isFirstRow Then
+                isFirstRow = False
+            End If
             
+        Loop
+        
+        file.Close
+        
+        If isTableInit Then
+            ReadCsvFile = vTable
+        Else
+            ReadCsvFile = Empty
         End If
         
-        If isFirstRow Then
-            isFirstRow = False
-        End If
-    
-    Loop
-    
-    Close #fileNo
-    
-    ReadCsvFile = vTable
-    
-    Exit Function
-    
-Error:
-
-    ReadCsvFile = Empty
+    Else
+        ReadCsvFile = Empty
+    End If
     
 End Function

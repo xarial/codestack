@@ -61,6 +61,15 @@ The following setup will create sub-folder corresponding to value of the **Thick
 Const OUT_NAME_TEMPLATE As String = "D:\Output\<$CLPRP:Thickness>\<$ASSMPRP:ProductName>_<$PRP:PartNo>.dwg"
 ~~~
 
+### Include quantity into file name
+
+This macro does not have an explicit variable to include quantity of flat patterns into the file name. It is however possible to extract the quantity of the multi body sheet metal part by including the value of automatic **QUANTITY** custom property with **<$CLPRP:QUANTITY>** placeholder.
+
+In order to include the component quantity in the assembly, use the [Write component quantity in the SOLIDWORKS assembly to custom property
+](/solidworks-api/document/assembly/components/write-quantities/) macro. Run this macro before exporting to create custom property with the quantity value and then use **<$CLPRP:Qty>** placeholder in order to include this into the output file name.
+
+> Note, this macro will not multiple the quantity of multi-body sheet metal part and the component quantity
+
 ### Flat pattern options
 
 Options can be configured by specifying the values of **FLAT_PATTERN_OPTIONS**. Use **+** to combine options

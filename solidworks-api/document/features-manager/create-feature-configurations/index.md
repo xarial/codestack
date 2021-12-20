@@ -1,11 +1,9 @@
 ---
-layout: sw-tool
 title: SOLIDWORKS macro to create and suppress features in new configurations
 caption: Suppress Features In New Configurations
 description: Macro create new configurations for all features  selected in the feature tree and suppresses them one by one in the respective configuration using SOLIDWORKS API
 image: sheet-metal-bends-selection.png
 labels: [feature, configuration, suppress]
-group: Model
 ---
 This macro create new configurations for all features selected in the feature tree and suppresses them one by one in the respective configuration using SOLIDWORKS API.
 

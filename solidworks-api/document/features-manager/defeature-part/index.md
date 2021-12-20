@@ -1,11 +1,9 @@
 ---
-layout: sw-tool
 title: Defeature Part (convert to dumb solid) using SOLIDWORKS API
 caption: Defeature Part
 description: Macro to convert all features in part to dumb solids (defeature part) and surfaces using SOLIDWORKS API
 image: part-feature-tree-defeatured.png
 labels: [defeature,parasolid]
-group: Part
 ---
 This macro emulates the functionality of [Defeature for Part](https://help.solidworks.com/2018/english/solidworks/sldworks/c_defeature_for_parts.htm) but not using it directly.
 

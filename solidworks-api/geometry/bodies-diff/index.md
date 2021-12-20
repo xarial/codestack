@@ -1,11 +1,9 @@
 ---
-layout: sw-tool
 title: SOLIDWORKS macro to find the geometrical difference between parts
 caption: Part Geometry Diff
 description: Diff tool to find the geometrical difference between multi-bodies parts using SOLIDWORKS API
 image: part-bodies-diff.png
 labels: [geometry, transform, diff, compare]
-group: Part
 ---
 This macro allows to compare two parts by its geometry.
 
