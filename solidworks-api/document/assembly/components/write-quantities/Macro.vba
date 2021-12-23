@@ -1,3 +1,9 @@
+'**********************
+'Copyright(C) 2020 Xarial Pty Limited
+'Reference: http://localhost:82/solidworks-api/document/assembly/components/write-quantities/
+'License: https://www.codestack.net/license/
+'**********************
+
 Type BomPosition
     model As SldWorks.ModelDoc2
     Configuration As String
@@ -58,7 +64,7 @@ Sub ComposeFlatBom(swParentComp As SldWorks.Component2, bom() As BomPosition)
             Dim swComp As SldWorks.Component2
             Set swComp = vComps(i)
             
-            If swComp.GetSuppression() <> swComponentSuppressionState_e.swComponentSuppressed And (Not swComp.ExcludeFromBOM Or INCLUDE_BOM_EXCLUDED) Then
+            If swComp.GetSuppression() <> swComponentSuppressionState_e.swComponentSuppressed And (False = swComp.ExcludeFromBOM Or INCLUDE_BOM_EXCLUDED) Then
                 
                 Dim swRefModel As SldWorks.ModelDoc2
                 Set swRefModel = swComp.GetModelDoc2()
@@ -146,6 +152,8 @@ End Function
 
 Function GetQuantity(comp As SldWorks.Component2) As Double
 
+On Error GoTo err_
+
     Dim refModel As SldWorks.ModelDoc2
     Set refModel = comp.GetModelDoc2
     
@@ -159,6 +167,12 @@ Function GetQuantity(comp As SldWorks.Component2) As Double
         GetQuantity = 1
     End If
     
+    Exit Function
+
+err_:
+    Debug.Print "Failed to extract quantity of " & comp.Name2 & ": " & Err.Description
+    GetQuantity = 1
+
 End Function
 
 Function GetPropertyValue(model As SldWorks.ModelDoc2, conf As String, prpName As String) As String
