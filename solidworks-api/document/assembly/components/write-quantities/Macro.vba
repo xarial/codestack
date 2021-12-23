@@ -1,9 +1,3 @@
-'**********************
-'Copyright(C) 2020 Xarial Pty Limited
-'Reference: http://localhost:82/solidworks-api/document/assembly/components/write-quantities/
-'License: https://www.codestack.net/license/
-'**********************
-
 Type BomPosition
     model As SldWorks.ModelDoc2
     Configuration As String
