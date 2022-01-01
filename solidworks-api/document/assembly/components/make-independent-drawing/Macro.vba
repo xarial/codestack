@@ -1,3 +1,4 @@
+Private Declare PtrSafe Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As LongPtr)
 Private Declare PtrSafe Function GetSaveFileName Lib "comdlg32.dll" Alias "GetSaveFileNameA" (pOpenfilename As OPENFILENAME) As Boolean
 
 Private Type OPENFILENAME
@@ -115,6 +116,8 @@ Sub MakeDrawingIndependent(srcFilePath As String, destFilePath As String)
         
         fso.CopyFile srcDrwFilePath, destDrwFilePath, False
         
+        WaitFileIsWritable destDrwFilePath
+        
         If False = swApp.ReplaceReferencedDocument(destDrwFilePath, srcFilePath, destFilePath) Then
             Err.Raise vbError, "", "Failed to replace referenced drawing document"
         End If
@@ -220,3 +223,25 @@ Function Contains(vArr As Variant, item As Object) As Boolean
     Contains = False
     
 End Function
+
+Sub WaitFileIsWritable(filePath As String)
+    
+    Const TIMEOUT As Integer = 30000
+    
+    Const PING As Integer = 10
+        
+    Dim procTime As Integer
+        
+    While GetAttr(filePath) And vbReadOnly
+        Sleep PING
+        procTime = procTime + PING
+        If procTime = TIMEOUT Then
+            Err.Raise vbError, "", filePath & " is read-only"
+        End If
+    Wend
+    
+    If procTime > 0 Then
+        Debug.Print filePath & " is unlocked in " & procTime & " ms"
+    End If
+    
+End Sub
