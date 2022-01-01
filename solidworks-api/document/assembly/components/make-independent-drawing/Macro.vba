@@ -1,4 +1,3 @@
-Private Declare PtrSafe Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As LongPtr)
 Private Declare PtrSafe Function GetSaveFileName Lib "comdlg32.dll" Alias "GetSaveFileNameA" (pOpenfilename As OPENFILENAME) As Boolean
 
 Private Type OPENFILENAME
@@ -29,6 +28,9 @@ Dim swApp As SldWorks.SldWorks
 Sub main()
 
     Set swApp = Application.SldWorks
+    
+try_:
+    On Error GoTo catch_
     
     Dim swModel As SldWorks.ModelDoc2
     
@@ -95,6 +97,12 @@ Sub main()
         Err.Raise vbError, "", "No model found"
     End If
     
+    GoTo finally_
+    
+catch_:
+    MsgBox Err.Description, vbCritical
+finally_:
+    
 End Sub
 
 Sub MakeDrawingIndependent(srcFilePath As String, destFilePath As String)
@@ -116,12 +124,18 @@ Sub MakeDrawingIndependent(srcFilePath As String, destFilePath As String)
         
         fso.CopyFile srcDrwFilePath, destDrwFilePath, False
         
-        WaitFileIsWritable destDrwFilePath
+        Dim destDrwFilePathAttr As VbFileAttribute
+        destDrwFilePathAttr = GetAttr(destDrwFilePath)
+        
+        If destDrwFilePathAttr And vbReadOnly Then
+            Debug.Print "Removing the read-only flag from the destination drawing: " & destDrwFilePath
+            SetAttr destDrwFilePath, destDrwFilePathAttr Xor vbReadOnly
+        End If
         
         If False = swApp.ReplaceReferencedDocument(destDrwFilePath, srcFilePath, destFilePath) Then
             Err.Raise vbError, "", "Failed to replace referenced drawing document"
         End If
-        
+                
     End If
     
 End Sub
@@ -223,25 +237,3 @@ Function Contains(vArr As Variant, item As Object) As Boolean
     Contains = False
     
 End Function
-
-Sub WaitFileIsWritable(filePath As String)
-    
-    Const TIMEOUT As Integer = 30000
-    
-    Const PING As Integer = 10
-        
-    Dim procTime As Integer
-        
-    While GetAttr(filePath) And vbReadOnly
-        Sleep PING
-        procTime = procTime + PING
-        If procTime = TIMEOUT Then
-            Err.Raise vbError, "", filePath & " is read-only"
-        End If
-    Wend
-    
-    If procTime > 0 Then
-        Debug.Print filePath & " is unlocked in " & procTime & " ms"
-    End If
-    
-End Sub
