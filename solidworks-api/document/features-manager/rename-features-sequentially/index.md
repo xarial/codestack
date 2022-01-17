@@ -18,6 +18,8 @@ Only indices are renamed and the base name is preserved. For example *Sketch21* 
 * Only features with number at the end will be renamed (e.g. *Front Plane* will not be renamed to *Front Plane1* and *My1Feature* will not be renamed)
 * Case is ignored (case insensitive search)
 * Only modelling features are renamed (the ones created after the Origin feature)
+* In the assembly documents, only assembly feature are renamed (components are ignored)
+* If components are selected in the assembly, features of those components will be renamed
 
 Watch [video demonstration](https://youtu.be/jsjN8zNRTuc?t=139)
 
