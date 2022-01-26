@@ -1,6 +1,6 @@
 ---
 title: Select any SOLIDWORKS objects in a batch using API
-caption: Select Any SOLIDWORKS Objects In A Batch
+caption: Select Any Objects In A Batch
 description: Example demonstrates how to select any SOLIDWORKS objects (entities, features, annotations, etc.) in a batch mode
 image: select-objects.png
 labels: [selection, batch selection, dispatch]

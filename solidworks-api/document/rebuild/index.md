@@ -1,7 +1,7 @@
 ---
 layout: sw-tool
-title: Rebuild Model
-caption: Macro to force rebuild SOLIDWORKS document
+title: Macro to force rebuild SOLIDWORKS document
+caption: Rebuild Model
 description: VBA macro to force rebuild, hide all types and show isometric view of SOLIDWORKS model
 image: force-rebuild.svg
 labels: [api, upgrade, performance, rebuild]
