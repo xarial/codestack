@@ -101,10 +101,10 @@ Function FindDrawings(model As SldWorks.ModelDoc2) As Variant
             Dim path As String
             Dim confName As String
             
-            If swSelMgr.GetSelectedObjectType3(i, -1) = swSelectType_e.swSelCOMPONENTS Then
-                
-                Dim swComp As SldWorks.Component2
-                Set swComp = swSelMgr.GetSelectedObject6(i, -1)
+            Dim swComp As SldWorks.Component2
+            Set swComp = swSelMgr.GetSelectedObjectsComponent4(i, -1)
+            
+            If Not swComp Is Nothing Then
                 
                 path = swComp.GetPathName()
                 
