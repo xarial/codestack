@@ -22,4 +22,6 @@ After the name is specified dimension name is set to new value.
 
 ![Dimension name changed to custom name](renamed-dimension.png)
 
+> It is also possible to assign the full name of the dimension in the format of \<Dimension Name\>@\<Feature Name\> (e.g. MyDimension@MyView). In this case macro will rename the parent view as well. This is beneficial for the views which cannot be renamed (e.g. Section Views)
+
 {% code-snippet { file-name: Macro.vba } %}
