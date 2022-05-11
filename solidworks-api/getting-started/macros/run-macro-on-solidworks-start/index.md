@@ -5,7 +5,7 @@ description: Setting up to run macro automatically once SOLIDWORKS application l
 image: shortcut-with-macro-run.png
 labels: [macro,auto run]
 ---
-In some cases it might be required to automatically run macro when SOLIDWORKS starts. For example some logging needs ot be done or settings applied.
+In some cases it might be required to automatically run macro when SOLIDWORKS starts. For example some logging needs to be done or settings applied.
 
 Fortunately, SOLIDWORKS application accepts command line parameter */m* which will run the specified macro automatically.
 
