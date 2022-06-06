@@ -1,45 +1,85 @@
+#Const ARGS = True 'True to use arguments from Toolbar+ or Batch+ instead of the constant
+
 Const CLEAR_PROPERTIES As Boolean = False
 
 Sub main()
-
+    
     Dim swApp As SldWorks.SldWorks
     Set swApp = Application.SldWorks
     
     Dim swModel As SldWorks.ModelDoc2
     
-    Set swModel = swApp.ActiveDoc
-    
 try_:
     On Error GoTo catch_
+                
+    Dim csvFilePath As String
+    Dim confSpecific As Boolean
     
-    If Not swModel Is Nothing Then
-                
-        Dim csvFilePath As String
-        Dim confSpecific As Boolean
-        
-        If GetParameters(swApp, csvFilePath, confSpecific) Then
-                
+    If GetParameters(swApp, swModel, csvFilePath, confSpecific) Then
+    
+        If Not swModel Is Nothing Then
             WritePropertiesFromFile swModel, csvFilePath, IIf(CBool(confSpecific), swModel.ConfigurationManager.ActiveConfiguration, Nothing)
-            
+        Else
+            Err.Raise vbError, "", "Please open model"
         End If
         
-    Else
-        Err.Raise vbError, "", "Please open model"
     End If
-    
+            
     GoTo finally_
 catch_:
-    MsgBox Err.Description, vbCritical
+    swmRebuild = Err.Description
 finally_:
     
 End Sub
 
-Function GetParameters(app As SldWorks.SldWorks, ByRef csvFilePath As String, ByRef confSpecific As Boolean) As Boolean
+Function GetParameters(app As SldWorks.SldWorks, ByRef model As SldWorks.ModelDoc2, ByRef csvFilePath As String, ByRef confSpecific As Boolean) As Boolean
     
-    csvFilePath = app.GetOpenFileName("Custom Properties Template File", "", "CSV Files (*.csv)|*.csv|Text Files (*.txt)|*.txt|All Files (*.*)|*.*|", 0, "", "")
+Dim confSpecArgsParsed As Boolean
 
+#If ARGS Then
+
+try_:
+    On Error GoTo catch_
+    
+    Dim macroRunner As Object
+    Set macroRunner = CreateObject("CadPlus.MacroRunner.Sw")
+    
+    Dim param As Object
+    Set param = macroRunner.PopParameter(app)
+        
+    Dim vArgs As Variant
+    vArgs = param.Get("Args")
+        
+    Set model = param.Get("Model")
+    
+    If Not IsEmpty(vArgs) Then
+        csvFilePath = CStr(vArgs(0))
+    End If
+    
+    If UBound(vArgs) > 0 Then
+        confSpecific = CBool(vArgs(1))
+        confSpecArgsParsed = True
+    End If
+    
+    GoTo finally_
+    
+catch_:
+finally_:
+
+#End If
+
+    If Trim(csvFilePath) = "" Then
+        csvFilePath = app.GetOpenFileName("Custom Properties Template File", "", "CSV Files (*.csv)|*.csv|Text Files (*.txt)|*.txt|All Files (*.*)|*.*|", 0, "", "")
+    End If
+    
+    If model Is Nothing Then
+        Set model = app.ActiveDoc
+    End If
+    
     If csvFilePath <> "" Then
-        confSpecific = app.SendMsgToUser2("Link to configuration specific properties (Yes) or File Specific (No)?", swMessageBoxIcon_e.swMbQuestion, swMessageBoxBtn_e.swMbYesNo) = swMessageBoxResult_e.swMbHitYes
+        If Not confSpecArgsParsed Then
+            confSpecific = app.SendMsgToUser2("Link to configuration specific properties (Yes) or File Specific (No)?", swMessageBoxIcon_e.swMbQuestion, swMessageBoxBtn_e.swMbYesNo) = swMessageBoxResult_e.swMbHitYes
+        End If
         GetParameters = True
     Else
         GetParameters = False
