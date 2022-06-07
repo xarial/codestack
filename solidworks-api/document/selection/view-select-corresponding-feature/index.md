@@ -14,4 +14,14 @@ This VBA macro demonstrates how to find the pointers for the input feature from 
 * Activate drawing
 * Continue the macro. All corresponding features are selected in each view
 
+## Using the GetCorresponding method
+
+This approach utilizes the [IView::GetCorresponding](https://help.solidworks.com/2018/English/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IView~GetCorresponding.html) API methdo by converting the pointer from the assembly context into the drawing view context. This API is only available in SOLIDWORKS 2018 or newer for an alternative approach use the [Using SelectById2 method](#using-selectbyid2-method)
+
 {% code-snippet { file-name: Macro.vba } %}
+
+## Using SelectById2 method
+
+This approach utilizes the [IModelDocExtension::SelectByID2](https://help.solidworks.com/2017/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.imodeldocextension~selectbyid2.html) by composing the feature name to select.
+
+{% code-snippet { file-name: MacroSelectById.vba } %}
