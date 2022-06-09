@@ -17,7 +17,7 @@ Macro will automatically create directories if not exist.
 
 Macro can be configured by modifying the **OUT_NAME_TEMPLATES**, **OUT_FOLDER** and **ALL_CONFIGS** constants
 
-### Output name template
+### Output Name Template
 
 This constant allows to specify template for the output path of the export files. It should contain extension which defines the export format.
 
@@ -51,12 +51,20 @@ Sub main()
     OUT_NAME_TEMPLATES = Array("D:\Exports\<_FileName_>.x_t")
 ~~~
 
-### Include component quantity into file name
+### Export Options
+
+Export options for STEP format can be configured by changing the value of the **STEP_VERSION** variable. Set it to **214** for **AP214** format or to **203** to **AP203** format.
+
+~~~ vb
+Const STEP_VERSION As Long = 214 '203 or 214
+~~~
+
+### Include Component Quantity Into File Name
 
 If this macro is run for all components of the assembly, it might be required to include the BOM quantity into the file name. Use the [Write component quantity in the SOLIDWORKS assembly to custom property
 ](/solidworks-api/document/assembly/components/write-quantities/) macro. Run this macro for the assembly before exporting to create custom property with the quantity value and then use **\<Qty\>** placeholder in order to include this into the output file name.
 
-### Process all configuration
+### Process All Configuration
 
 If **ALL_CONFIGS** constant is set to **True** macro will activate all configuration (for assembly and part) or all sheets (for drawing) one-by-one and run export command.
 

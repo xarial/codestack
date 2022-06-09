@@ -1,12 +1,14 @@
 Const ALL_CONFIGS As Boolean = False
-
 Const OUT_FOLDER As String = ""
+Const STEP_VERSION As Long = 214 '203 or 214
 
 Dim OUT_NAME_TEMPLATES As Variant
 
 Dim swApp As SldWorks.SldWorks
 
 Sub main()
+        
+    Dim origStepVersion As Long
         
     OUT_NAME_TEMPLATES = Array("PDFs\<_FileName_>_<_ConfName_>_<PartNo>.pdf", "IMGs\<_FileName_>_<_ConfName_>_<PartNo>.jpg")
     
@@ -32,6 +34,9 @@ try_:
         outFolder = OUT_FOLDER
     End If
     
+    ReadOptions origStepVersion
+    SetupOptions STEP_VERSION
+    
     ExportFile swModel, OUT_NAME_TEMPLATES, ALL_CONFIGS, outFolder
     
     GoTo finally_
@@ -40,6 +45,22 @@ catch_:
     swApp.SendMsgToUser2 Err.Description, swMessageBoxIcon_e.swMbStop, swMessageBoxBtn_e.swMbOk
 finally_:
 
+    SetupOptions origStepVersion
+
+End Sub
+
+Sub ReadOptions(ByRef stepVersion As Long)
+
+    stepVersion = swApp.GetUserPreferenceIntegerValue(swUserPreferenceIntegerValue_e.swStepAP)
+    
+End Sub
+
+Sub SetupOptions(stepVersion As Long)
+    
+    If False = swApp.SetUserPreferenceIntegerValue(swUserPreferenceIntegerValue_e.swStepAP, stepVersion) Then
+        Err.Raise vbError, "", "Failed to set Step Export version to " & stepVersion
+    End If
+    
 End Sub
 
 Sub ExportFile(model As SldWorks.ModelDoc2, vOutNameTemplates As Variant, allConfigs As Boolean, outFolder As String)
