@@ -1,6 +1,6 @@
 ---
 layout: sw-tool
-caption: Link Custom Properties To Fie
+caption: Link Custom Properties To File
 title: Link SOLIDWORKS custom properties from text file
 description: VBA macro to link and auto-update multiple SOLIDWORKS custom properties from the external CSV/Text file into configuration or file
 image: link-custom-property-file.svg
