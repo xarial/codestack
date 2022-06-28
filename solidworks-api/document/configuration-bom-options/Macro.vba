@@ -40,6 +40,13 @@ Sub main()
 End Sub
 
 Sub SetConfigurationBomOptions(config As SldWorks.Configuration)
-    config.ChildComponentDisplayInBOM = CHILD_COMPS_DISP
-    config.BOMPartNoSource = PART_NUMBER_SRC
+    
+    If CHILD_COMPS_DISP <> -1 Then
+        config.ChildComponentDisplayInBOM = CHILD_COMPS_DISP
+    End If
+    
+    If PART_NUMBER_SRC <> -1 Then
+        config.BOMPartNoSource = PART_NUMBER_SRC
+    End If
+    
 End Sub
