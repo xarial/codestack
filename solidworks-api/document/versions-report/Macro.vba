@@ -27,12 +27,17 @@ Sub main()
         filePath = vFilePaths(i)
         Dim vVers As Variant
         vVers = swApp.VersionHistory(filePath)
-                
+            
         Dim swCreatedVers As String
-        swCreatedVers = ConvertFileVersionToSwMajorVersion(ExtractSwRevisonFromHistoryRecord(CStr(vVers(0))))
-        
         Dim swLastSavedVers As String
-        swLastSavedVers = ConvertFileVersionToSwMajorVersion(ExtractSwRevisonFromHistoryRecord(CStr(vVers(UBound(vVers)))))
+        
+        If Not IsEmpty(vVers) Then
+            swCreatedVers = ConvertFileVersionToSwMajorVersion(ExtractSwRevisonFromHistoryRecord(CStr(vVers(0))))
+            swLastSavedVers = ConvertFileVersionToSwMajorVersion(ExtractSwRevisonFromHistoryRecord(CStr(vVers(UBound(vVers)))))
+        Else
+            swCreatedVers = "???"
+            swLastSavedVers = "???"
+        End If
         
         Print #fileNo, filePath & "," & swCreatedVers & "," & swLastSavedVers
         
@@ -113,7 +118,7 @@ Function ConvertFileVersionToSwMajorVersion(versNumber As Integer) As String
                 swVersMajor = "97Plus"
             Case 822
                 swVersMajor = 98
-            Case 10008
+            Case 1008
                 swVersMajor = "98Plus"
             Case 1137
                 swVersMajor = 99
@@ -147,3 +152,4 @@ Function ConvertFileVersionToSwMajorVersion(versNumber As Integer) As String
     ConvertFileVersionToSwMajorVersion = "SOLIDWORKS " & swVersMajor
     
 End Function
+

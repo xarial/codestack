@@ -55,7 +55,7 @@ Function ConvertFileVersionToSwMajorVersion(versNumber As Integer) As String
                 swVersMajor = "97Plus"
             Case 822
                 swVersMajor = 98
-            Case 10008
+            Case 1008
                 swVersMajor = "98Plus"
             Case 1137
                 swVersMajor = 99
