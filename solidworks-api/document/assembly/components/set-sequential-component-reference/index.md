@@ -20,3 +20,5 @@ Macro can be configured to either specify the input in the popup box (set the va
 Const INPUT_SEED As Boolean = True 'input the seed (start) number in the input box upon running the macro
 Const SEED As Integer = 1
 ~~~
+
+{% code-snippet { file-name: Macro.vba } %}
