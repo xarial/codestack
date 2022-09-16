@@ -1,23 +1,29 @@
+Enum ScopeType_e
+    Selected
+    topLevel
+    All
+End Enum
+
+Const SCOPE As Integer = ScopeType_e.Selected
 Const INPUT_SEED As Boolean = False
 Const SEED As Integer = 1
 
 Dim swApp As SldWorks.SldWorks
-Dim swModel As SldWorks.ModelDoc2
 
 Sub main()
 
     Set swApp = Application.SldWorks
-    
+        
+    Dim swModel As SldWorks.ModelDoc2
     Set swModel = swApp.ActiveDoc
+    
+    Dim swAssm As SldWorks.AssemblyDoc
+    Set swAssm = swModel
     
     If Not swModel Is Nothing Then
         
-        Dim swSelMgr As SldWorks.SelectionMgr
-        
-        Set swSelMgr = swModel.SelectionManager
-        
         Dim i As Integer
-        
+        Dim swComp As SldWorks.Component2
         Dim nextRef As Integer
         
         If INPUT_SEED Then
@@ -32,20 +38,54 @@ Sub main()
             nextRef = SEED
         End If
         
-        For i = 1 To swSelMgr.GetSelectedObjectCount2(-1)
+        If SCOPE = ScopeType_e.Selected Then
         
-            Dim swComp As SldWorks.Component2
-            Set swComp = swSelMgr.GetSelectedObjectsComponent3(i, -1)
+            Dim swSelMgr As SldWorks.SelectionMgr
+        
+            Set swSelMgr = swModel.SelectionManager
             
-            If swComp Is Nothing Then
-                Err.Raise vbError, "", "Object selected at index " & i & " does not belong to component"
+            For i = 1 To swSelMgr.GetSelectedObjectCount2(-1)
+            
+                Set swComp = swSelMgr.GetSelectedObjectsComponent3(i, -1)
+                
+                If swComp Is Nothing Then
+                    Err.Raise vbError, "", "Object selected at index " & i & " does not belong to component"
+                End If
+                
+                swComp.ComponentReference = nextRef
+                
+                nextRef = nextRef + 1
+                
+            Next
+        Else
+            Dim topLevel As Boolean
+            
+            If SCOPE = ScopeType_e.topLevel Then
+                topLevel = True
+            ElseIf SCOPE = ScopeType_e.All Then
+                topelvel = False
+            Else
+                Err.Raise vbError, "", "Not supported scope"
             End If
             
-            swComp.ComponentReference = nextRef
+            Dim vComps As Variant
+            vComps = swAssm.GetComponents(topLevel)
             
-            nextRef = nextRef + 1
+            If Not IsEmpty(vComps) Then
+                
+                For i = 0 To UBound(vComps)
             
-        Next
+                    Set swComp = vComps(i)
+                    
+                    swComp.ComponentReference = nextRef
+                    
+                    nextRef = nextRef + 1
+                
+                Next
+                
+            End If
+            
+        End If
         
     Else
         Err.Raise vbError, "", "Open assembly"
