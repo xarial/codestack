@@ -3,6 +3,7 @@ Const BOM_TYPE As Integer = swBomType_e.swBomType_PartsOnly
 Const TABLE_TEMPLATE As String = ""
 Const INDENTED_NUMBERING_TYPE As Integer = swNumberingType_e.swNumberingType_Flat
 Const DETAILED_CUT_LIST As Boolean = False
+Const FOLLOW_ASSEMBLY_ORDER As Boolean = True
 
 Const ALL_SHEETS As Boolean = True
 
@@ -56,8 +57,10 @@ Sub InsertBomTable(draw As SldWorks.DrawingDoc, sheet As SldWorks.sheet)
     Dim swBomTableAnn As SldWorks.BomTableAnnotation
     
     Set swBomTableAnn = swView.InsertBomTable4(True, 0, 0, ANCHOR_TYPE, BOM_TYPE, "", TABLE_TEMPLATE, False, INDENTED_NUMBERING_TYPE, DETAILED_CUT_LIST)
-    
-    If swBomTableAnn Is Nothing Then
+        
+    If Not swBomTableAnn Is Nothing Then
+        swBomTableAnn.BomFeature.FollowAssemblyOrder2 = FOLLOW_ASSEMBLY_ORDER
+    Else
         Err.Raise vbError, "", "Failed to insert BOM table into " & swView.Name
     End If
     

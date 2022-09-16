@@ -2,7 +2,9 @@
 
 Const OUT_FILE_PATH_TEMPLATE As String = "<_FileName_>-<_TableName_>.csv" 'ouput file path template
 Const INCLUDE_HEADER As Boolean = True
-Const TABLE_TYPE As Integer = -1  '-1 to use selected table or table type as defined in swTableAnnotationType_e
+Const TABLE_TYPE As Integer = -1 '-1 to use selected table or table type as defined in swTableAnnotationType_e
+
+Const MERGE As Boolean = False
 
 Dim swApp As SldWorks.SldWorks
 
@@ -77,15 +79,34 @@ try_:
             
             Dim i As Integer
             
+            Dim outFilePath As String
+            
             For i = 0 To UBound(vTables)
                     
                 Dim swTableAnn As SldWorks.TableAnnotation
                 Set swTableAnn = vTables(i)
-                    
-                Dim vTableData As Variant
-                vTableData = GetTableData(swTableAnn, INCLUDE_HEADER)
                 
-                WriteCsvFile GetExportFilePath(outFilePathTemplate, swModel, swTableAnn), vTableData
+                If i = 0 Or Not MERGE Then
+                    outFilePath = GetExportFilePath(outFilePathTemplate, swModel, swTableAnn)
+                End If
+                
+                Dim vTableData As Variant
+                
+                Dim includeHeader As Boolean
+                includeHeader = INCLUDE_HEADER And (Not MERGE Or i = 0)
+                
+                vTableData = GetTableData(swTableAnn, includeHeader)
+                
+                Dim append As Boolean
+                append = IIf(MERGE, i > 0, False)
+                
+                If MERGE And i > 0 Then
+                    Dim separatorRow() As String
+                    ReDim separatorRow(0, UBound(vTableData, 2))
+                    WriteCsvFile outFilePath, separatorRow, True
+                End If
+                
+                WriteCsvFile outFilePath, vTableData, append
             
             Next
             
@@ -109,11 +130,27 @@ Function GetExportFilePath(pathTemplate As String, model As SldWorks.ModelDoc2, 
     
     Const FILE_NAME_TOKEN As String = "<_FileName_>"
     Const TABLE_NAME_TOKEN As String = "<_TableName_>"
-    
+    Const SHEET_NAME_TOKEN As String = "<_SheetName_>"
+        
     Dim path As String
-    path = Replace(pathTemplate, FILE_NAME_TOKEN, GetFileNameWithoutExtension(model.GetPathName()))
     
-    path = Replace(path, TABLE_NAME_TOKEN, GetFeatureFromTableAnnotation(tableAnn).Name)
+    path = pathTemplate
+    
+    If InStr(path, FILE_NAME_TOKEN) > 0 Then
+        path = Replace(pathTemplate, FILE_NAME_TOKEN, GetFileNameWithoutExtension(model.GetPathName()))
+    End If
+    
+    If InStr(path, SHEET_NAME_TOKEN) > 0 Then
+        Dim swSheet As SldWorks.Sheet
+        Set swSheet = GetSheetFromTableAnnotation(model, tableAnn)
+        path = Replace(path, SHEET_NAME_TOKEN, swSheet.GetName())
+    End If
+    
+    If InStr(path, TABLE_NAME_TOKEN) > 0 Then
+        Dim swTableFeat As SldWorks.Feature
+        Set swTableFeat = GetFeatureFromTableAnnotation(tableAnn)
+        path = Replace(path, TABLE_NAME_TOKEN, swTableFeat.Name)
+    End If
     
     GetExportFilePath = GetFullPath(model, path)
     
@@ -127,7 +164,7 @@ Function GetTableData(tableAnn As SldWorks.TableAnnotation, includeHeader As Boo
     Dim j As Integer
     
     Dim offset As Integer
-    offset = IIf(INCLUDE_HEADER, 0, 1)
+    offset = IIf(includeHeader, 0, 1)
     
     For i = 0 + offset To tableAnn.RowCount - 1
         
@@ -240,12 +277,16 @@ Function GetSelectedTables(model As SldWorks.ModelDoc2) As Variant
     
 End Function
 
-Sub WriteCsvFile(filePath As String, table As Variant)
+Sub WriteCsvFile(filePath As String, table As Variant, append As Boolean)
     
     Dim fileNmb As Integer
     fileNmb = FreeFile
     
-    Open filePath For Output As #fileNmb
+    If append Then
+        Open filePath For Append As #fileNmb
+    Else
+        Open filePath For Output As #fileNmb
+    End If
     
     Dim i As Integer
     Dim j As Integer
@@ -380,10 +421,55 @@ Function GetFeatureFromTableAnnotation(tableAnn As SldWorks.TableAnnotation) As 
     
 End Function
 
+Function GetSheetFromTableAnnotation(draw As SldWorks.DrawingDoc, tableAnn As SldWorks.TableAnnotation) As SldWorks.Sheet
+
+    Dim vSheets As Variant
+    
+    vSheets = draw.GetViews()
+    
+    Dim i As Integer
+    
+    For i = 0 To UBound(vSheets)
+        
+        Dim vViews As Variant
+        vViews = vSheets(i)
+        
+        Dim swSheetView As SldWorks.View
+        Set swSheetView = vViews(0)
+        
+        Dim vTableAnns As Variant
+        vTableAnns = swSheetView.GetTableAnnotations
+        
+        If Not IsEmpty(vTableAnns) Then
+            
+            Dim j As Integer
+            
+            For j = 0 To UBound(vTableAnns)
+                
+                Dim swTableAnn As SldWorks.TableAnnotation
+                Set swTableAnn = vTableAnns(j)
+                
+                If swTableAnn Is tableAnn Then
+                    
+                    Dim swSheet As SldWorks.Sheet
+                    Set swSheet = draw.Sheet(swSheetView.GetName2())
+                    Set GetSheetFromTableAnnotation = swSheet
+                    Exit Function
+                    
+                End If
+                
+            Next
+            
+        End If
+        
+    Next
+    
+    Err.Raise vbError, "", "Table does not belong to sheet"
+
+End Function
+
 Function HasSpecialSymbols(cell As String) As Boolean
-    
     HasSpecialSymbols = InStr(cell, ",") > 0 Or InStr(cell, vbLf) > 0 Or InStr(cell, vbNewLine) > 0 Or InStr(cell, """") > 0
-    
 End Function
 
 Function ReplaceSpecialSymbols(cell As String) As String

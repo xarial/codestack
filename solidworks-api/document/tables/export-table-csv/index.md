@@ -39,6 +39,8 @@ Macro can be configured by modifying the value of the constants
 Const OUT_FILE_PATH_TEMPLATE As String = "<_FileName_>-<_TableName_>.csv" 'empty string to save in the model's folder
 Const INCLUDE_HEADER As Boolean = True 'True to include the table header, False to only include data
 Const TABLE_TYPE As Integer = swTableAnnotationType_e.swTableAnnotation_BillOfMaterials  '-1 to use selected table or table type as defined in swTableAnnotationType_e (e.g. swTableAnnotationType_e.swTableAnnotation_BillOfMaterials to export all BOM tables)
+
+Const MERGE As Boolean = False 'True to merge all tables into a single file
 ~~~
 
 *OUT_FILE_PATH_TEMPLATE* can be either relative path or an absolute path. If relative path is specified the file will be saved in the same directory as the source file
@@ -47,6 +49,9 @@ The following placeholders are supported:
 
 * <\_FileName\_> - name of the source file
 * <\_TableName\_> - name of the table
+* <\_SheetName\_> - name of the sheet of the table (only applicable in the drawings)
+
+If **MERGE** option is used all table data will be output into a single CSV file and each table will be separated by an empty row. If file name template is using table specific placeholder, first table will be used as the template.
 
 ## CAD+
 

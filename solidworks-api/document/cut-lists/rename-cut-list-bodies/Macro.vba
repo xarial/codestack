@@ -45,14 +45,18 @@ End Sub
 
 Sub RenameBodies(bodies As Variant, bodyName As String)
     
-    Dim i As Integer
+    If Not IsEmpty(bodies) Then
     
-    For i = 0 To UBound(bodies)
-        Dim swBody As SldWorks.Body2
-        Set swBody = bodies(i)
+        Dim i As Integer
         
-        swBody.name = bodyName & IIf(i > 0, "-" & CStr(i), "")
-    Next
+        For i = 0 To UBound(bodies)
+            Dim swBody As SldWorks.Body2
+            Set swBody = bodies(i)
+            
+            swBody.name = bodyName & IIf(i > 0, "-" & CStr(i), "")
+        Next
+    
+    End If
     
 End Sub
 
