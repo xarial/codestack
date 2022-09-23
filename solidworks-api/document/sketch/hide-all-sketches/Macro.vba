@@ -3,7 +3,7 @@
 Dim swApp As SldWorks.SldWorks
 Dim swModel As SldWorks.ModelDoc2
 
-Const HIDE_ALL_SKETCHES As Boolean = True 'True to hide all sketches, False to show all sketches
+Const HIDE_ALL_SKETCHES As Boolean = False 'True to hide all sketches, False to show all sketches
 
 Sub main()
 
@@ -12,6 +12,7 @@ Sub main()
     Dim hideAllSketches As Boolean
     
     #If ARGS Then
+    
         Dim macroRunner As Object
         Set macroRunner = CreateObject("CadPlus.MacroRunner.Sw")
         
@@ -50,10 +51,10 @@ try_:
         Set swFeat = swModel.FirstFeature
         
         Dim swSketches() As SldWorks.Feature
-        CollectAllSketchFeatures swFeat, swSketches
+        CollectAllSketchFeatures swFeat, swSketches, Not hideAllSketches
         
         If swModel.GetType() = swDocumentTypes_e.swDocASSEMBLY Then
-            CollectAllComponentSketchFeatures swModel, swSketches
+            CollectAllComponentSketchFeatures swModel, swSketches, Not hideAllSketches
         End If
         
         If (Not swSketches) = -1 Then
@@ -83,7 +84,7 @@ finally_:
     
 End Sub
 
-Sub CollectAllComponentSketchFeatures(assy As SldWorks.AssemblyDoc, feats() As SldWorks.Feature)
+Sub CollectAllComponentSketchFeatures(assy As SldWorks.AssemblyDoc, feats() As SldWorks.Feature, isBlankFilter As Boolean)
     
     Dim vComps As Variant
     vComps = assy.GetComponents(False)
@@ -110,7 +111,7 @@ Sub CollectAllComponentSketchFeatures(assy As SldWorks.AssemblyDoc, feats() As S
             
             processedComps(UBound(processedComps)) = key
             
-            CollectAllSketchFeatures swComp.FirstFeature, feats
+            CollectAllSketchFeatures swComp.FirstFeature, feats, isBlankFilter
             
         End If
         
@@ -118,7 +119,7 @@ Sub CollectAllComponentSketchFeatures(assy As SldWorks.AssemblyDoc, feats() As S
     
 End Sub
 
-Sub CollectAllSketchFeatures(firstFeat As SldWorks.Feature, feats() As SldWorks.Feature)
+Sub CollectAllSketchFeatures(firstFeat As SldWorks.Feature, feats() As SldWorks.Feature, isBlankFilter As Boolean)
     
     Const SKETCH_FEAT_TYPE_NAME As String = "ProfileFeature"
     Const SKETCH_3D_FEAT_TYPE_NAME As String = "3DProfileFeature"
@@ -131,13 +132,22 @@ Sub CollectAllSketchFeatures(firstFeat As SldWorks.Feature, feats() As SldWorks.
         If swFeat.GetTypeName2 = SKETCH_FEAT_TYPE_NAME Or _
             swFeat.GetTypeName2 = SKETCH_3D_FEAT_TYPE_NAME Then
             
-            If (Not feats) = -1 Then
-                ReDim feats(0)
-            Else
-                ReDim Preserve feats(UBound(feats) + 1)
-            End If
+            Dim featVisible As swVisibilityState_e
+            featVisible = swFeat.visible
             
-            Set feats(UBound(feats)) = swFeat
+            If featVisible = swVisibilityStateUnknown _
+                Or (featVisible = swVisibilityStateHide And isBlankFilter) _
+                Or (featVisible = swVisibilityStateShown And Not isBlankFilter) Then
+            
+                If (Not feats) = -1 Then
+                    ReDim feats(0)
+                Else
+                    ReDim Preserve feats(UBound(feats) + 1)
+                End If
+                
+                Set feats(UBound(feats)) = swFeat
+            
+            End If
             
         End If
         
