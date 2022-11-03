@@ -4,11 +4,15 @@ Dim swApp As SldWorks.SldWorks
 
 Sub main()
 
+    Dim swProgressBar As SldWorks.UserProgressBar
+
 try_:
     
     On Error GoTo catch_
     
     Set swApp = Application.SldWorks
+    
+    swApp.GetUserProgressBar swProgressBar
     
     Dim swModel As SldWorks.ModelDoc2
     
@@ -21,6 +25,8 @@ try_:
             Dim vCutLists As Variant
             vCutLists = GetCutLists(swModel)
             
+            swProgressBar.Start 0, UBound(vCutLists), "Creating configurations for cut-lists"
+            
             Dim i As Integer
             
             For i = 0 To UBound(vCutLists)
@@ -31,17 +37,30 @@ try_:
                 Dim swCutListFolder As SldWorks.BodyFolder
                 Set swCutListFolder = swCutList.GetSpecificFeature2
                 
-                Dim vBodies As Variant
+                Dim vCutListBodies As Variant
+                vCutListBodies = swCutListFolder.GetBodies()
                 
-                If KEEP_ALL_CUT_LIST_BODIES Then
-                    vBodies = swCutListFolder.GetBodies
+                If Not IsEmpty(vCutListBodies) Then
+                
+                    Dim vBodies As Variant
+                    
+                    If KEEP_ALL_CUT_LIST_BODIES Then
+                        vBodies = vCutListBodies
+                    Else
+                        Dim swBody(0) As SldWorks.Body2
+                        Set swBody(0) = vCutListBodies(0)
+                        vBodies = swBody
+                    End If
+                    
+                    Debug.Print "Creating configuration for " & swCutList.Name
+                    
+                    CreateConfigurationForBodies swModel, vBodies, swCutList.Name
+                
                 Else
-                    Dim swBody(0) As SldWorks.Body2
-                    Set swBody(0) = swCutListFolder.GetBodies()(0)
-                    vBodies = swBody
+                    Debug.Print swCutList.Name & " has no bodies"
                 End If
                 
-                CreateConfigurationForBodies swModel, vBodies, swCutList.Name
+                swProgressBar.UpdateProgress i + 1
                 
             Next
             
@@ -57,6 +76,10 @@ try_:
 catch_:
     MsgBox Err.Description, vbCritical
 finally_:
+
+    If Not swProgressBar Is Nothing Then
+        swProgressBar.End
+    End If
     
 End Sub
 

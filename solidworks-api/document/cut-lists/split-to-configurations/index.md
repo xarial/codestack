@@ -16,6 +16,12 @@ Macro will create as many configurations as cut-lists feature in the document an
 
 Macro will name the configuration after the cut-list name.
 
+Macro will display the progress bar in the SOLIDWORKS icon:
+
+![Progress of the operation](progress-bar.png)
+
+## Configuration
+
 **KEEP_ALL_CUT_LIST_BODIES** constant allows to control should the macro isolate all cut-list bodies or only keep a single unique body.
 
 ~~~ vb

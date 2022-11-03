@@ -2,7 +2,8 @@
 
 Const OUT_FILE_PATH_TEMPLATE As String = "<_FileName_>-<_TableName_>.csv" 'ouput file path template
 Const INCLUDE_HEADER As Boolean = True
-Const TABLE_TYPE As Integer = -1 '-1 to use selected table or table type as defined in swTableAnnotationType_e
+Const TABLE_TYPE As Integer = -1  '-1 to use selected table or table type as defined in swTableAnnotationType_e
+Const ALL_SHEETS As Boolean = True 'True to export from all sheets (if TABLE_TYPE is not -1), False to export from active sheet only
 
 Const MERGE As Boolean = False
 
@@ -71,7 +72,18 @@ try_:
                 Err.Raise vbError, "", "Only drawing document is supported"
             End If
             
-            vTables = FindTables(swModel, tableType)
+            Dim swDraw As SldWorks.DrawingDoc
+            Set swDraw = swModel
+            
+            Dim sheetName As String
+            
+            If ALL_SHEETS Then
+                sheetName = ""
+            Else
+                sheetName = swDraw.GetCurrentSheet().GetName
+            End If
+            
+            vTables = FindTables(swDraw, tableType, sheetName)
             
         End If
         
@@ -180,7 +192,7 @@ Function GetTableData(tableAnn As SldWorks.TableAnnotation, includeHeader As Boo
     
 End Function
 
-Function FindTables(draw As SldWorks.DrawingDoc, filter As swTableAnnotationType_e) As Variant
+Function FindTables(draw As SldWorks.DrawingDoc, filter As swTableAnnotationType_e, sheetName As String) As Variant
     
     Dim swTables() As SldWorks.TableAnnotation
     Dim isInit As Boolean
@@ -200,33 +212,37 @@ Function FindTables(draw As SldWorks.DrawingDoc, filter As swTableAnnotationType
         Dim swSheetView As SldWorks.View
         Set swSheetView = vViews(0)
         
-        Dim vTableAnns As Variant
-        vTableAnns = swSheetView.GetTableAnnotations
+        If sheetName = "" Or LCase(sheetName) = LCase(swSheetView.Name) Then
         
-        If Not IsEmpty(vTableAnns) Then
+            Dim vTableAnns As Variant
+            vTableAnns = swSheetView.GetTableAnnotations
             
-            Dim j As Integer
-            
-            For j = 0 To UBound(vTableAnns)
+            If Not IsEmpty(vTableAnns) Then
                 
-                Dim swTableAnn As SldWorks.TableAnnotation
-                Set swTableAnn = vTableAnns(j)
+                Dim j As Integer
                 
-                If swTableAnn.Type = filter Then
+                For j = 0 To UBound(vTableAnns)
                     
-                    If isInit Then
-                        ReDim Preserve swTables(UBound(swTables) + 1)
-                    Else
-                        ReDim swTables(0)
-                        isInit = True
+                    Dim swTableAnn As SldWorks.TableAnnotation
+                    Set swTableAnn = vTableAnns(j)
+                    
+                    If swTableAnn.Type = filter Then
+                        
+                        If isInit Then
+                            ReDim Preserve swTables(UBound(swTables) + 1)
+                        Else
+                            ReDim swTables(0)
+                            isInit = True
+                        End If
+                        
+                        Set swTables(UBound(swTables)) = swTableAnn
+                        
                     End If
                     
-                    Set swTables(UBound(swTables)) = swTableAnn
-                    
-                End If
+                Next
                 
-            Next
-            
+            End If
+        
         End If
         
     Next

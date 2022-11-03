@@ -1,6 +1,7 @@
 Const ALL_CONFIGS As Boolean = False
 Const OUT_FOLDER As String = ""
 Const STEP_VERSION As Long = 214 '203 or 214
+Const PDF_3D As Boolean = False 'True to export 3D PDF
 
 Dim OUT_NAME_TEMPLATES As Variant
 
@@ -115,8 +116,20 @@ Sub ExportFile(model As SldWorks.ModelDoc2, vOutNameTemplates As Variant, allCon
             outDir = Left(outFilePath, InStrRev(outFilePath, "\"))
     
             CreateDirectories outDir
-    
-            If False = model.Extension.SaveAs(outFilePath, swSaveAsVersion_e.swSaveAsCurrentVersion, swSaveAsOptions_e.swSaveAsOptions_Silent, Nothing, errs, warns) Then
+            
+            Dim swExportData As Object
+            
+            If LCase(GetExtension(outFilePath)) = LCase("pdf") Then
+                Dim swExportPdfData As SldWorks.ExportPdfData
+                Set swExportPdfData = swApp.GetExportFileData(swExportDataFileType_e.swExportPdfData)
+                swExportPdfData.ViewPdfAfterSaving = False
+                swExportPdfData.ExportAs3D = PDF_3D
+                Set swExportData = swExportPdfData
+            Else
+                Set swExportData = Nothing
+            End If
+            
+            If False = model.Extension.SaveAs(outFilePath, swSaveAsVersion_e.swSaveAsCurrentVersion, swSaveAsOptions_e.swSaveAsOptions_Silent, swExportData, errs, warns) Then
                 Err.Raise vberrror, "", "Failed to export to " & outFilePath
             End If
             
@@ -226,9 +239,11 @@ Function ResolveToken(token As String, model As SldWorks.ModelDoc2) As String
 End Function
 
 Function GetFileNameWithoutExtension(path As String) As String
-    
     GetFileNameWithoutExtension = Mid(path, InStrRev(path, "\") + 1, InStrRev(path, ".") - InStrRev(path, "\") - 1)
-    
+End Function
+
+Function GetExtension(path As String) As String
+    GetExtension = Right(path, Len(path) - InStrRev(path, "."))
 End Function
 
 Function FileExists(filePath As String) As Boolean

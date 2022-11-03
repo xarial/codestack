@@ -53,10 +53,16 @@ Sub main()
 
 ### Export Options
 
-Export options for STEP format can be configured by changing the value of the **STEP_VERSION** variable. Set it to **214** for **AP214** format or to **203** to **AP203** format.
+Export options for STEP format can be configured by changing the value of the **STEP_VERSION** constant. Set it to **214** for **AP214** format or to **203** to **AP203** format.
 
 ~~~ vb
 Const STEP_VERSION As Long = 214 '203 or 214
+~~~
+
+To export 3D PDF set the **PDF_3D** constant to **True**
+
+~~~ vb
+Const PDF_3D As Boolean = True
 ~~~
 
 ### Include Component Quantity Into File Name
