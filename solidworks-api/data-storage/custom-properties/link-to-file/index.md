@@ -32,4 +32,18 @@ Const CLEAR_PROPERTIES As Boolean = False
 
 In order to dynamically link external text file and update properties on every rebuild, use the following macro.
 
+Set the value of the **UPDATE_ON_CSV_FILE_CHANGE_ONLY** constant to **True** or **False** to configure if properties need to reload only if properties text file is changed or always when macro.
+ 
+~~~ vb
+Const UPDATE_ON_CSV_FILE_CHANGE_ONLY As Boolean = False
+~~~
+
+Macro will ask for the following input parameters upon insertion of the macro feature:
+
+* Should the properties be configuration specific or file specific
+* Should the properties be cleared upon update
+* Should the reference components of the assembly be included into the scope of the properties
+
+Properties will be automatically updated upon rebuild of the macro feature.
+
 {% code-snippet { file-name: MacroFeature.vba } %}

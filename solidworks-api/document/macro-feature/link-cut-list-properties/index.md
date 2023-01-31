@@ -3,7 +3,7 @@ layout: sw-tool
 title: Link Cut-List Custom Properties To File With SOLIDWORKS Macro Feature API
 caption: Link Cut-List Custom Properties To File Custom Properties
 description: Macro feature to link specified custom properties from weldment cut-lists to SOLIDWORKS file custom properties
-image: cut-list-link-macro-feature.png
+image: link-cut-list-properties.svg
 labels: [macro feature,cut-list,link properties]
 group: Custom Properties
 ---
@@ -19,7 +19,10 @@ Macro feature rebuilds automatically when the parent weldment feature (e.g. stru
 
 Macro feature is inserted into the feature tree and can be suppressed or removed.
 
-One of the benefits of this approach comparing to linking the properties directly with the equation is that it is not name dependent, i.e. properties will remain linked even if cut-list renamed (for example when structural member profile is changed).
+There are several benefits of this approach comparing to linking the properties directly with the expression (e.g. `"LENGTH@@@Al I BEAM STD 4x3.28<1>@Part1.SLDPRT"`)
+
+* Link is not name dependent, i.e. properties will remain linked even if cut-list renamed (for example when structural member profile is changed)
+* Macro will work for older sheet metal part architecutre. The linking with an expression will not work for sheet metal parts build in older versions of SOLIDWORKS
 
 ![Macro feature in the feature manager tree](cut-list-link-macro-feature.png){ width=250 }
 

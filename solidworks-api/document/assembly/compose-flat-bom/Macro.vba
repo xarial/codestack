@@ -8,7 +8,7 @@ End Type
 
 Dim swApp As SldWorks.SldWorks
 
-Sub main()
+Sub Main()
 
     Set swApp = Application.SldWorks
     
@@ -39,8 +39,7 @@ End Sub
 Function GetFlatBom(assy As SldWorks.AssemblyDoc) As BomPosition()
     
     Dim bom() As BomPosition
-    Dim isInit As Boolean
-    
+        
     Dim vComps As Variant
     vComps = assy.GetComponents(False)
     
@@ -58,13 +57,12 @@ Function GetFlatBom(assy As SldWorks.AssemblyDoc) As BomPosition()
             
             If bomPos = -1 Then
                 
-                If isInit Then
-                    ReDim Preserve bom(UBound(bom) + 1)
-                Else
-                    isInit = True
+                If (Not bom) = -1 Then
                     ReDim bom(0)
+                Else
+                    ReDim Preserve bom(UBound(bom) + 1)
                 End If
-                
+                                
                 bomPos = UBound(bom)
 
                 bom(bomPos).ModelPath = swComp.GetPathName()
@@ -87,24 +85,22 @@ End Function
 
 Function FindBomPosition(bom() As BomPosition, comp As SldWorks.Component2) As Integer
     
-    On Error GoTo ReturnFunc
-    
     FindBomPosition = -1
     
-    Dim i As Integer
+    If (Not bom) <> -1 Then
+        Dim i As Integer
     
-    For i = 0 To UBound(bom)
-        If LCase(bom(i).ModelPath) = LCase(comp.GetPathName()) And LCase(bom(i).Configuration) = LCase(comp.ReferencedConfiguration) Then
-            FindBomPosition = i
-            Exit Function
-        End If
-    Next
-    
-ReturnFunc:
+        For i = 0 To UBound(bom)
+            If LCase(bom(i).ModelPath) = LCase(comp.GetPathName()) And LCase(bom(i).Configuration) = LCase(comp.ReferencedConfiguration) Then
+                FindBomPosition = i
+                Exit Function
+            End If
+        Next
+    End If
     
 End Function
 
-Function GetProperties(comp As SldWorks.Component2, ByRef desc As String, ByRef prc As Double) As Variant
+Sub GetProperties(comp As SldWorks.Component2, ByRef desc As String, ByRef prc As Double)
     
     Dim swCompModel As SldWorks.ModelDoc2
     Set swCompModel = comp.GetModelDoc2()
@@ -114,12 +110,15 @@ Function GetProperties(comp As SldWorks.Component2, ByRef desc As String, ByRef 
     End If
     
     desc = GetPropertyValue(swCompModel, comp.ReferencedConfiguration, "Description")
+        
+    Dim prcTxt As String
+    prcTxt = GetPropertyValue(swCompModel, comp.ReferencedConfiguration, "Price")
     
-    On Error Resume Next
+    If prcTxt <> "" Then
+        prc = CDbl(prcTxt)
+    End If
     
-    prc = GetPropertyValue(swCompModel, comp.ReferencedConfiguration, "Price")
-    
-End Function
+End Sub
 
 Function GetPropertyValue(model As SldWorks.ModelDoc2, conf As String, prpName As String) As String
     

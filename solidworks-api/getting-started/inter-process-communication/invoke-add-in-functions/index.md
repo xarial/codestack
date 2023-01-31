@@ -11,3 +11,5 @@ Enabling API functions in your add-in might be required when add-in itself needs
 There are several approaches could be used to achieve this functionality. Explore the following options for more information:
 
 * [Via Add-In Object](via-add-in-object)
+* [Via Running Objects Table (ROT)](via-rot)
+* [Via In-Process Invoking From Out-Of-Process Applications](in-process-invoking)

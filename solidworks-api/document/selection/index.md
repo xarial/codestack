@@ -51,7 +51,7 @@ Refer the [ISelectData](https://help.solidworks.com/2012/english/api/sldworksapi
 
 There are multiple ways of selecting entities in SOLIDWORKS. The following list is the most common ways of selecting elements:
 
-* By name or by coordinate. This method is usually used in macro recording and selects the object 'as is' (i.e. as it would be selected from the User Interface). This approach introduces potential issues and usually a reason for macro [instability and inconsistency](solidworks-api/troubleshooting/macros/selection-inconsistency) and should be avoided. Refer the [Selecting Objects By Name And Coordinates](select-by-id) article for pros and cons of this approach.
+* By name or by coordinate. This method is usually used in macro recording and selects the object 'as is' (i.e. as it would be selected from the User Interface). This approach introduces potential issues and usually a reason for macro [instability and inconsistency](/solidworks-api/troubleshooting/macros/selection-inconsistency) and should be avoided. Refer the [Selecting Objects By Name And Coordinates](select-by-id) article for pros and cons of this approach.
 
 * By direct *SelectX* method. Majority of selectable objects in SOLIDWORKS provide direct *SelectX* method which allows to select the element from its pointer:
 
@@ -61,7 +61,7 @@ This is a preferable method of selection as it provides the consistency and it i
 
 * By object dispatches in a batch mode. This is useful way of selecting any selectable object without the need to cast it to the specific interface. Refer the [Select Any SOLIDWORKS Objects In A Batch](select-objects) for an example
 
-* By type (i.e. standard plane or view). Refer the [Select Standard Plane By Type](select-standard-plane) for an example
+* By type (i.e. standard plane or view). Refer the [Select Standard Plane Or Origin By Type](select-standard-ref-geometry) for an example
 
 * By name of named entities (face, edge or vertex). Refer [Select Named Entity](select-named-entity)
 

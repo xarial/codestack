@@ -46,8 +46,10 @@ If the following error is displayed when creating the project:
 
 ![SolidworksToolsWizard.dll](solidworkstoolswizard-dll.png)
 
-* This dll needs to be registered in the Global Assembly Cache (GAC). Navigate to _%windir%\assembly%_ folder in explorer and drag-n-drop the dll file into the folder
+* This dll needs to be registered in the Global Assembly Cache (GAC). Navigate to _%windir%\assembly_ folder in explorer and drag-n-drop the dll file into the folder
 
 ![SolidWorksToolsWizard dll registered in GAC](solidworkstoolswizard-gac.png)
+
+> If **Access Denied** error is displayed while registering the assembly in the GAC, you can use gacutil from Windows SDK and run it from the **Command Prompt** run as administrator **gacutil.exe" /i "{FULL PATH TO solidworkstoolswizard.dll}"**
 
 Alternatively follow the [How to: Install an Assembly into the Global Assembly Cache](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-install-an-assembly-into-the-gac) article on the guide of registering assembly in GAC.
