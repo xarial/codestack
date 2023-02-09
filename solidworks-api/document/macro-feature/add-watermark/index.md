@@ -30,6 +30,8 @@ The solution consists of 2 parts:
 
 {% code-snippet { file-name: InsertWatermark.vba } %}
 
+In order to add custom icons, download the [Icons](Icons.zip) file and unzip into the **Icons** sub-folder next to the macro feature file
+
 ## Setting up watermark macro
 
 * Create another new macro

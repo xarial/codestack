@@ -75,6 +75,22 @@ Sub InsertMacroFeature(vSketches As Variant, vDepths As Variant)
     vMethods(3) = curMacroPath: vMethods(4) = MACRO_FEATURE_MODULE_NAME: vMethods(5) = "swmEditDefinition"
     vMethods(6) = curMacroPath: vMethods(7) = MACRO_FEATURE_MODULE_NAME: vMethods(8) = "swmSecurity"
     
+    Dim iconsDir As String
+    iconsDir = swApp.GetCurrentMacroPathFolder() & "\Icons\"
+    
+    Dim icons(8) As String
+    icons(0) = iconsDir & "extrude_20x20.bmp"
+    icons(1) = iconsDir & "extrude-suppressed_20x20.bmp"
+    icons(2) = iconsDir & "extrude_20x20.bmp"
+    
+    icons(3) = iconsDir & "extrude_32x32.bmp"
+    icons(4) = iconsDir & "extrude-suppressed_32x32.bmp"
+    icons(5) = iconsDir & "extrude_32x32.bmp"
+    
+    icons(6) = iconsDir & "extrude_40x40.bmp"
+    icons(7) = iconsDir & "extrude-suppressed_40x40.bmp"
+    icons(8) = iconsDir & "extrude_40x40.bmp"
+
     Dim vParamNames As Variant
     Dim vParamTypes As Variant
     Dim vParamValues As Variant
@@ -84,7 +100,7 @@ Sub InsertMacroFeature(vSketches As Variant, vDepths As Variant)
     Dim swFeat As SldWorks.Feature
     Set swFeat = swModel.FeatureManager.InsertMacroFeature3(BASE_NAME, "", vMethods, _
         vParamNames, vParamTypes, vParamValues, Empty, Empty, Empty, _
-        Empty, swMacroFeatureOptions_e.swMacroFeatureEmbedMacroFile)
+        icons, swMacroFeatureOptions_e.swMacroFeatureEmbedMacroFile)
     
     If swFeat Is Nothing Then
         MsgBox "Failed to create feature"

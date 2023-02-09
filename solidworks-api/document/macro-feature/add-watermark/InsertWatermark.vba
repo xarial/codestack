@@ -25,11 +25,27 @@ Sub main()
         vMethods(3) = watermarkMacroPath: vMethods(4) = moduleName: vMethods(5) = "swmEditDefinition"
         vMethods(6) = watermarkMacroPath: vMethods(7) = moduleName: vMethods(8) = "swmSecurity"
         
+        Dim iconsDir As String
+        iconsDir = swApp.GetCurrentMacroPathFolder() & "\Icons\"
+        
+        Dim icons(8) As String
+        icons(0) = iconsDir & "watermark_20x20.bmp"
+        icons(1) = iconsDir & "watermark-suppressed_20x20.bmp"
+        icons(2) = iconsDir & "watermark_20x20.bmp"
+        
+        icons(3) = iconsDir & "watermark_32x32.bmp"
+        icons(4) = iconsDir & "watermark-suppressed_32x32.bmp"
+        icons(5) = iconsDir & "watermark_32x32.bmp"
+        
+        icons(6) = iconsDir & "watermark_40x40.bmp"
+        icons(7) = iconsDir & "watermark-suppressed_40x40.bmp"
+        icons(8) = iconsDir & "watermark_40x40.bmp"
+
         Dim swFeat As SldWorks.Feature
         
         Set swFeat = swModel.FeatureManager.InsertMacroFeature3(BASE_NAME, "", vMethods, _
             Empty, Empty, Empty, Empty, Empty, Empty, _
-            Empty, swMacroFeatureOptions_e.swMacroFeatureEmbedMacroFile + swMacroFeatureOptions_e.swMacroFeatureAlwaysAtEnd)
+            icons, swMacroFeatureOptions_e.swMacroFeatureEmbedMacroFile + swMacroFeatureOptions_e.swMacroFeatureAlwaysAtEnd)
         
         If Not swFeat Is Nothing Then
             Dim swSecNote As SldWorks.note

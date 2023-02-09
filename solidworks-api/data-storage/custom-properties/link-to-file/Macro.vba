@@ -1,6 +1,12 @@
+Type RefCompModel
+    RefModel As SldWorks.ModelDoc2
+    RefConf As String
+End Type
+
 #Const ARGS = True 'True to use arguments from Toolbar+ or Batch+ instead of the constant
 
 Const CLEAR_PROPERTIES As Boolean = False
+Const ALL_COMPONENTS As Boolean = False
 
 Sub main()
     
@@ -8,9 +14,6 @@ Sub main()
     Set swApp = Application.SldWorks
     
     Dim swModel As SldWorks.ModelDoc2
-    
-try_:
-    On Error GoTo catch_
                 
     Dim csvFilePath As String
     Dim confSpecific As Boolean
@@ -18,18 +21,39 @@ try_:
     If GetParameters(swApp, swModel, csvFilePath, confSpecific) Then
     
         If Not swModel Is Nothing Then
-            WritePropertiesFromFile swModel, csvFilePath, IIf(CBool(confSpecific), swModel.ConfigurationManager.ActiveConfiguration, Nothing)
+            
+            Dim vTable As Variant
+            vTable = GetArrayFromCsv(csvFilePath)
+            
+            Dim swRefConf As SldWorks.Configuration
+            Set swRefConf = swModel.ConfigurationManager.ActiveConfiguration
+            
+            WritePropertiesFromTable swModel, vTable, IIf(CBool(confSpecific), swRefConf.Name, ""), CLEAR_PROPERTIES
+        
+            If ALL_COMPONENTS Then
+            
+                Dim refCompModels() As RefCompModel
+                refCompModels = CollectUniqueComponents(swRefConf, confSpecific)
+                
+                If (Not refCompModels) <> -1 Then
+                    
+                    Dim i As Integer
+                    
+                    For i = 0 To UBound(refCompModels)
+                        WritePropertiesFromTable refCompModels(i).RefModel, vTable, refCompModels(i).RefConf, CBool(clearPrps)
+                    Next
+                    
+                End If
+            
+            End If
+        
+            'WritePropertiesFromFile swModel, csvFilePath, IIf(CBool(confSpecific), swModel.ConfigurationManager.ActiveConfiguration, Nothing)
         Else
             Err.Raise vbError, "", "Please open model"
         End If
         
     End If
             
-    GoTo finally_
-catch_:
-    swmRebuild = Err.Description
-finally_:
-    
 End Sub
 
 Function GetParameters(app As SldWorks.SldWorks, ByRef model As SldWorks.ModelDoc2, ByRef csvFilePath As String, ByRef confSpecific As Boolean) As Boolean
@@ -144,44 +168,25 @@ Function GetArrayFromCsv(filePath As String) As Variant
     
 End Function
 
-Sub WritePropertiesFromFile(model As SldWorks.ModelDoc2, csvFilePath As String, conf As SldWorks.Configuration)
-    
-    If Dir(csvFilePath) = "" Then
-        Err.Raise "Linked CSV file is missing: " & csvFilePath
-    End If
-    
-    Dim vTable As Variant
-    vTable = GetArrayFromCsv(csvFilePath)
+Sub WritePropertiesFromTable(model As SldWorks.ModelDoc2, table As Variant, confName As String, clearPrps As Boolean)
     
     Dim i As Integer
-    
-    Dim confName As String
-    
-    If conf Is Nothing Then
-        confName = ""
-    Else
-        confName = conf.Name
-    End If
     
     Dim swCustPrpMgr As SldWorks.CustomPropertyManager
     
     Set swCustPrpMgr = model.Extension.CustomPropertyManager(confName)
     
-    If UBound(vTable, 2) <> 1 Then
-        Err.Raise vbError, "", "There must be only 2 columns in the CSV file"
-    End If
-    
-    If CLEAR_PROPERTIES Then
+    If clearPrps Then
         ClearProperties swCustPrpMgr
     End If
     
-    For i = 0 To UBound(vTable, 1)
+    For i = 0 To UBound(table, 1)
                 
         Dim prpName As String
-        prpName = CStr(vTable(i, 0))
+        prpName = CStr(table(i, 0))
         
         Dim prpVal As String
-        prpVal = CStr(vTable(i, 1))
+        prpVal = CStr(table(i, 1))
         
         If swCustPrpMgr.Add3(prpName, swCustomInfoType_e.swCustomInfoText, prpVal, swCustomPropertyAddOption_e.swCustomPropertyReplaceValue) <> swCustomInfoAddResult_e.swCustomInfoAddResult_AddedOrChanged Then
             Err.Raise vbError, "", "Failed to add property '" & prpName & "'"
@@ -207,3 +212,80 @@ Sub ClearProperties(custPrpMgr As SldWorks.CustomPropertyManager)
     End If
     
 End Sub
+
+Function CollectUniqueComponents(assmConf As SldWorks.Configuration, confSpecific As Boolean) As RefCompModel()
+    
+    Dim swRootComp As SldWorks.Component2
+    Set swRootComp = assmConf.GetRootComponent3(False)
+    
+    Dim refCompModels() As RefCompModel
+    
+    ProcessComponents swRootComp.GetChildren(), confSpecific, refCompModels
+    
+    CollectUniqueComponents = refCompModels
+    
+End Function
+
+Sub ProcessComponents(vComps As Variant, confSpecific As Boolean, refCompModels() As RefCompModel)
+    
+    If Not IsEmpty(vComps) Then
+    
+        Dim i As Integer
+        
+        For i = 0 To UBound(vComps)
+            
+            Dim swComp As SldWorks.Component2
+            Set swComp = vComps(i)
+            
+            Dim swRefModel As SldWorks.ModelDoc2
+            Set swRefModel = swComp.GetModelDoc2
+            
+            If Not swRefModel Is Nothing Then
+            
+                Dim refConfName As String
+                
+                refConfName = IIf(confSpecific, swComp.ReferencedConfiguration, "")
+                
+                If Not Contains(refCompModels, swRefModel, refConfName) Then
+                
+                    If (Not refCompModels) = -1 Then
+                        ReDim refCompModels(0)
+                    Else
+                        ReDim Preserve refCompModels(UBound(refCompModels) + 1)
+                    End If
+                    
+                    Set refCompModels(UBound(refCompModels)).RefModel = swRefModel
+                    refCompModels(UBound(refCompModels)).RefConf = refConfName
+                    
+                End If
+                
+                ProcessComponents swComp.GetChildren(), confSpecific, refCompModels
+                
+            End If
+            
+        Next
+    
+    End If
+    
+End Sub
+
+Function Contains(refCompModels() As RefCompModel, model As SldWorks.ModelDoc2, conf As String) As Boolean
+    
+    Contains = False
+    
+    If (Not refCompModels) <> -1 Then
+        
+        Dim i As Integer
+        
+        For i = 0 To UBound(refCompModels)
+                
+            If refCompModels(i).RefModel Is model And LCase(refCompModels(i).RefConf) = LCase(conf) Then
+                Contains = True
+                Exit Function
+            End If
+                
+        Next
+        
+    End If
+    
+End Function

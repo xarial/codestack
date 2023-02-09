@@ -20,6 +20,8 @@ Property Manager pages are defined in the **SolidWorks {{Version}} exposed type 
 
 ![VBA macro references](macro-references.png)
 
+In order to add custom icons, download the [Icons](Icons.zip) file and unzip into the **Icons** sub-folder next to the macro feature file
+
 ## Macro Module
 
 Entry point of the macro. Use this to insert new macro feature.

@@ -24,8 +24,11 @@ Mass,"""SW-Mass"""
 
 Set the value of the **CLEAR_PROPERTIES** constant to **True** or **False** to configure if existing properties need to be deleted before updating.
 
+Set **ALL_COMPONENTS** to **True** to process all components of the assembly
+
 ~~~ vb
 Const CLEAR_PROPERTIES As Boolean = False
+Const ALL_COMPONENTS As Boolean = True
 ~~~
 
 {% code-snippet { file-name: Macro.vba } %}
