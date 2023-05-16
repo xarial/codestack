@@ -48,7 +48,7 @@ Sub main()
                         nextViewIndex = nextViewIndex + 1
                         
                         Dim newViewName As String
-                        newViewName = swSheetView.Name & nextViewIndex
+                        newViewName = swSheetView.Name & "(" & nextViewIndex & ")"
                         
                         If False = swView.SetName2(newViewName) Then
                             Err.Raise vbError, "", "Failed to rename " & swView.Name & " to " & ""

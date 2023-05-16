@@ -1,3 +1,5 @@
+Const CREATE_DERIVED_CONFS As Boolean = True
+
 Const FOLDER_END_TAG As String = "___EndTag___"
 
 Dim swApp As SldWorks.SldWorks
@@ -13,7 +15,18 @@ Sub main()
     If Not swModel Is Nothing Then
         
         Dim vFeatFolders As Variant
-        vFeatFolders = GetAllFeatureFolders(swModel)
+        Dim vAllFeatFolders As Variant
+        
+        Dim swSelMgr As SldWorks.SelectionMgr
+        Set swSelMgr = swModel.SelectionManager
+        
+        vAllFeatFolders = GetAllFeatureFolders(swModel)
+        
+        If swSelMgr.GetSelectedObjectCount2(-1) = 0 Then
+            vFeatFolders = vAllFeatFolders
+        Else
+            vFeatFolders = GetSelectedFeatureFolders(swModel)
+        End If
         
         If Not IsEmpty(vFeatFolders) Then
             
@@ -25,7 +38,7 @@ Sub main()
             For i = 0 To UBound(vFeatFolders)
                 Dim swFeatFolder As SldWorks.Feature
                 Set swFeatFolder = vFeatFolders(i)
-                CreateConfigurationForFolder swModel, swFeatFolder, vFeatFolders, activeConfName
+                CreateConfigurationForFolder swModel, swFeatFolder, vAllFeatFolders, IIf(CREATE_DERIVED_CONFS, activeConfName, "")
             Next
             
         End If
@@ -45,7 +58,7 @@ Function GetAllFeatureFolders(model As SldWorks.ModelDoc2) As Variant
     
     While Not swFeat Is Nothing
         
-        If swFeat.GetTypeName2() = "FtrFolder" And LCase(Right(swFeat.Name, Len(FOLDER_END_TAG))) <> LCase(FOLDER_END_TAG) Then
+        If swFeat.GetTypeName2() = "FtrFolder" And InStr(LCase(swFeat.Name), LCase(FOLDER_END_TAG)) = 0 Then
 
             If (Not swFeatFolders) = -1 Then
                 ReDim swFeatFolders(0)
@@ -68,6 +81,41 @@ Function GetAllFeatureFolders(model As SldWorks.ModelDoc2) As Variant
         GetAllFeatureFolders = swFeatFolders
     End If
         
+End Function
+
+Function GetSelectedFeatureFolders(model As SldWorks.ModelDoc2) As Variant
+    
+    Dim swSelMgr As SldWorks.SelectionMgr
+    Set swSelMgr = model.SelectionManager
+
+    Dim swFeatFolders() As SldWorks.Feature
+    
+    Dim i As Integer
+    
+    For i = 1 To swSelMgr.GetSelectedObjectCount2(-1)
+        
+        If swSelMgr.GetSelectedObjectType3(i, -1) = swSelectType_e.swSelFTRFOLDER Then
+        
+            Dim swFeat As SldWorks.Feature
+            Set swFeat = swSelMgr.GetSelectedObject6(i, -1)
+            
+            If (Not swFeatFolders) = -1 Then
+                ReDim swFeatFolders(0)
+            Else
+                ReDim Preserve swFeatFolders(UBound(swFeatFolders) + 1)
+            End If
+            
+            Set swFeatFolders(UBound(swFeatFolders)) = swFeat
+        End If
+    
+    Next
+        
+    If (Not swFeatFolders) = -1 Then
+        GetSelectedFeatureFolders = Empty
+    Else
+        GetSelectedFeatureFolders = swFeatFolders
+    End If
+    
 End Function
 
 Sub CreateConfigurationForFolder(model As SldWorks.ModelDoc2, folderFeat As SldWorks.Feature, allFeatFolders As Variant, parentConfName As String)
