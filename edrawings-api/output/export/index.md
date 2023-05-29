@@ -37,7 +37,7 @@ Please see below example of parameters
 * Export all SOLIDWORKS files (matching the filter *.sld*, i.e. extension starts with .sld) from the *SW Drawings* and *SW Models* folders in drive C (including sub folders) to the *C:\EDRW* folder in eDrawings format (.eprt for parts, .easm for assemblies, .edrw for drawing) and html format.
 
 ~~~
-> export.exe -input "C:\SW Drawings" "C:\SW Models" -output C:\EDRW -filter *.sld* -format .e .html
+> export.exe -input "C:\SW Drawings" "C:\SW Models" -outdir C:\EDRW -filter *.sld* -format .e .html
 ~~~
 
 * Export *C:\Models\Part.sldprt* into *C:\Models\Part.eprt*
