@@ -12,7 +12,7 @@ The below snippet will overwrite the data in the destination binary file
 Dim arr(5237) As Byte
 arr(0) = 12: arr(1) = 1: arr(2) = 0
 ...
-WriteByteArrToFile("C:\MyFolder\MyFile.dat")
+WriteByteArrToFile "C:\MyFolder\MyFile.dat", arr()
 ~~~
 
 Code will automatically create new file if it doesn't exist.
