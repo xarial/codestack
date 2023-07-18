@@ -131,9 +131,9 @@ Function GetPropertyValue(model As SldWorks.ModelDoc2, conf As String, prpName A
     Dim prpVal As String
     Dim prpResVal As String
     
-    confSpecPrpMgr.Get3 prpName, False, "", prpVal
+    confSpecPrpMgr.Get3 prpName, False, prpVal, prpResVal
     
-    If prpVal = "" Then
+    If prpResVal = "" Then
         genPrpMgr.Get3 prpName, False, prpVal, prpResVal
     End If
     
