@@ -7,7 +7,7 @@ image: purged-components-result1.png
 labels: [component, replace, purge]
 group: Assembly
 ---
-In some cases it might be required to remove (purge) all unused configurations from the components in the assembly. It is in particular useful for the fastener or toolbox components as file can contains thousands of configurations but only few are used in the assembly.
+In some cases it might be required to remove (purge) all unused configurations from the components in the assembly. It is in particular useful for the fastener or toolbox components as file can contain thousands of configurations but only few are used in the assembly.
 
 This macro allows to create a copy of all selected components, purge their configurations and replace them in the assembly.
 
