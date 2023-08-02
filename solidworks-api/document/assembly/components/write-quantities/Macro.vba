@@ -198,23 +198,56 @@ Sub WriteBomQuantities(bom() As BomPosition)
         For i = 0 To UBound(bom)
             
             Dim refConfName As String
-        
-            If MERGE_CONFIGURATIONS Then
-                refConfName = ""
-            Else
-                refConfName = bom(i).Configuration
-            End If
             
             Dim swRefModel As SldWorks.ModelDoc2
             Set swRefModel = bom(i).model
             
-            Dim swCustPrpsMgr As SldWorks.CustomPropertyManager
-            Set swCustPrpsMgr = swRefModel.Extension.CustomPropertyManager(refConfName)
+            If MERGE_CONFIGURATIONS Then
+                refConfName = ""
+            Else
+                refConfName = bom(i).Configuration
+                
+                If swRefModel.GetBendState() <> swSMBendState_e.swSMBendStateNone Then
+                
+                    Dim swConf As SldWorks.Configuration
+                    Set swConf = swRefModel.GetConfigurationByName(refConfName)
+                    
+                    Dim vChildConfs As Variant
+                    vChildConfs = swConf.GetChildren()
+                    
+                    If Not IsEmpty(vChildConfs) Then
+                        Dim j As Integer
+                        
+                        For j = 0 To UBound(vChildConfs)
+                            
+                            Dim swChildConf As SldWorks.Configuration
+                            Set swChildConf = vChildConfs(j)
+                            
+                            If swChildConf.Type = swConfigurationType_e.swConfiguration_SheetMetal Then
+                                SetQuantity swRefModel, swChildConf.Name, bom(i).Quantity
+                            End If
+                            
+                        Next
+                        
+                    End If
+                    
+                End If
+                
+            End If
             
-            swCustPrpsMgr.Add3 PRP_NAME, swCustomInfoType_e.swCustomInfoText, bom(i).Quantity, swCustomPropertyAddOption_e.swCustomPropertyReplaceValue
-            swCustPrpsMgr.Set2 PRP_NAME, bom(i).Quantity
+            SetQuantity swRefModel, refConfName, bom(i).Quantity
             
         Next
     End If
+    
+End Sub
+
+Sub SetQuantity(model As SldWorks.ModelDoc2, confName As String, qty As Double)
+    
+    Dim swCustPrpsMgr As SldWorks.CustomPropertyManager
+    Set swCustPrpsMgr = model.Extension.CustomPropertyManager(confName)
+    
+    swCustPrpsMgr.Add3 PRP_NAME, swCustomInfoType_e.swCustomInfoText, qty, swCustomPropertyAddOption_e.swCustomPropertyReplaceValue
+    swCustPrpsMgr.Set2 PRP_NAME, qty
     
 End Sub
