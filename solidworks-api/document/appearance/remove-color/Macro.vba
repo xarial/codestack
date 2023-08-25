@@ -6,23 +6,38 @@ Sub main()
 
     Set swApp = Application.SldWorks
     
-    Dim swPart As SldWorks.PartDoc
+    Dim swModel As SldWorks.ModelDoc2
     
-    Set swPart = GetActivePart(swApp)
+    Set swModel = swApp.ActiveDoc
     
-    If Not swPart Is Nothing Then
+    If Not swModel Is Nothing Then
+        
+        If swModel.GetType() = swDocumentTypes_e.swDocDRAWING Then
+            Err.Raise vbError, "", "Drawings are not supported"
+        End If
         
         Dim configOpts As swInConfigurationOpts_e
         configOpts = GetConfigurationOptions(REMOVE_FROM_ALL_CONFIGS)
         
-        Dim vBodies As Variant
-        vBodies = swPart.GetBodies2(swBodyType_e.swAllBodies, False)
+        If swModel.GetType() = swDocumentTypes_e.swDocPART Then
+                    
+            Dim swPart As SldWorks.PartDoc
+            Set swPart = swModel
+                    
+            Dim vBodies As Variant
+            vBodies = swPart.GetBodies2(swBodyType_e.swAllBodies, False)
+            
+            RemoveMaterialPropertiesFromBodies vBodies, True, configOpts
+            RemoveMaterialPropertiesFromFeatures swPart.FeatureManager.GetFeatures(False), configOpts
         
-        RemoveMaterialPropertiesFromBodies vBodies, True, configOpts
-        RemoveMaterialPropertiesFromFeatures swPart.FeatureManager.GetFeatures(False), configOpts
+        End If
+        
+        swModel.Extension.RemoveMaterialProperty configOpts, Empty
+        
+        swModel.GraphicsRedraw2
         
     Else
-        MsgBox "Please open part document"
+        Err.Raise "Please open part or assembly document"
     End If
     
 End Sub
@@ -82,6 +97,7 @@ Sub RemoveMaterialPropertiesFromFeatures(features As Variant, configOpts As swIn
             Dim swFeat As SldWorks.Feature
             Set swFeat = features(i)
             
+            Debug.Print swFeat.Name
             swFeat.RemoveMaterialProperty2 configOpts, Empty
                 
         Next
@@ -89,20 +105,12 @@ Sub RemoveMaterialPropertiesFromFeatures(features As Variant, configOpts As swIn
     End If
 End Sub
 
-Function GetActivePart(app As SldWorks.SldWorks) As SldWorks.PartDoc
-    
-    On Error Resume Next
-    
-    Set GetActivePart = app.ActiveDoc
-    
-End Function
-
 Function GetConfigurationOptions(allConfigs As Boolean) As swInConfigurationOpts_e
     
     If REMOVE_FROM_ALL_CONFIGS Then
-        GetConfigurationOptions = swAllConfiguration
+        GetConfigurationOptions = swInConfigurationOpts_e.swAllConfiguration
     Else
-        GetConfigurationOptions = swThisConfiguration
+        GetConfigurationOptions = swInConfigurationOpts_e.swThisConfiguration
     End If
     
 End Function
