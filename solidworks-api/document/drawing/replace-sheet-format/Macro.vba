@@ -123,7 +123,11 @@ Sub ReplaceSheetFormat(draw As SldWorks.DrawingDoc, sheet As SldWorks.sheet, tar
     height = CDbl(vProps(6))
     custPrpView = sheet.CustomPropertyView
     
-    If False = draw.SetupSheet5(sheet.GetName(), paperSize, templateType, scale1, scale2, firstAngle, targetSheetFormatFile, width, height, custPrpView, REMOVE_MODIFIED_NOTES) Then
+    If False <> draw.SetupSheet5(sheet.GetName(), paperSize, templateType, scale1, scale2, firstAngle, targetSheetFormatFile, width, height, custPrpView, REMOVE_MODIFIED_NOTES) Then
+        If sheet.ReloadTemplate(Not REMOVE_MODIFIED_NOTES) <> swReloadTemplateResult_e.swReloadTemplate_Success Then
+            Err.Raise vbError, "", "Failed to reload sheet format"
+        End If
+    Else
         Err.Raise vbError, "", "Failed to set the sheet format"
     End If
     

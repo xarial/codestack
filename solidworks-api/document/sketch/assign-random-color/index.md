@@ -13,4 +13,14 @@ Const SKIP_ASSIGNED As Boolean = False 'Processes all sketches (including the sk
 Const UNABSORBED_ONLY As Boolean = False 'Process all sketches (absorbed and unabsorbed)
 ~~~
 
+Color will be assigned on the feature appearance level.
+
 {% code-snippet { file-name: Macro.vba } %}
+
+## Line Colors
+
+This is an alternative version of the macro which assigns the color as a line color instead of the feature appearance.
+
+This macro will assign the random color for all selected sketches or all sketches if no sketches are selected. **UNABSORBED_ONLY** option is only considered when no sketches are selected.
+
+{% code-snippet { file-name: SetLineColorMacro.vba } %}
