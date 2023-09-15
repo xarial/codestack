@@ -15,6 +15,7 @@ Let’s start by creating your first basic Angular application.
 Select and install one of the existing Angular code editors:
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Atom](https://atom.io/)
+* [Codelobster](https://www.codelobster.com/)
 * You also can use Visual Studio or any other Angular code editor(Sublime Text, Webstorm, Angular IDE, etc). 
 
 *You can skip this step and come back to it later to progress with development Angular application.*
