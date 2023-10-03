@@ -141,6 +141,7 @@ Sub ColorizeComponents(vComps As Variant)
                         Dim sConfs(0)  As String
                         sConfs(0) = swComp.ReferencedConfiguration
                         swRefModel.Extension.SetMaterialPropertyValues dMatPrps, IIf(ALL_CONFIGS, swInConfigurationOpts_e.swAllConfiguration, swInConfigurationOpts_e.swSpecifyConfiguration), IIf(ALL_CONFIGS, Empty, sConfs)
+                        swRefModel.SetSaveFlag
                     End If
                 
                 End If
