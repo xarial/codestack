@@ -5,9 +5,9 @@ description: Macro to convert all features in part to dumb solids (defeature par
 image: part-feature-tree-defeatured.png
 labels: [defeature,parasolid]
 ---
-This macro emulates the functionality of [Defeature for Part](https://help.solidworks.com/2018/english/solidworks/sldworks/c_defeature_for_parts.htm) but not using it directly.
+This VBA macro defeatures the active SOLIDWORKS part. Unlike the [Defeature for Part](https://help.solidworks.com/2018/english/solidworks/sldworks/c_defeature_for_parts.htm) functionality, this macro preserves the original geometry and does not simplify it.
 
-Macro copies all visible solid and surface bodies, deletes all user features and imports the copied bodies using SOLIDWORKS API.
+Macro copies all solid and surface bodies, deletes all user features and imports the copied bodies using SOLIDWORKS API. Macro will preserve the hidden flag from the original bodies.
 
 **Before:**
 
