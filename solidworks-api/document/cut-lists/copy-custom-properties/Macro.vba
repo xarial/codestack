@@ -59,13 +59,13 @@ Function GetCutListPropertyManager(model As SldWorks.ModelDoc2) As SldWorks.Cust
         
         If swFeat.GetTypeName2() = "CutListFolder" Then
  
-            Dim BodyFolder As SldWorks.BodyFolder
-            Set BodyFolder = swFeat.GetSpecificFeature2
+            Dim swBodyFolder As SldWorks.BodyFolder
+            Set swBodyFolder = swFeat.GetSpecificFeature2
  
-            Dim BodyCount As Long
-            BodyCount = BodyFolder.GetBodyCount
+            Dim bodyCount As Long
+            bodyCount = swBodyFolder.GetBodyCount
  
-            If BodyCount <> 0 Then
+            If bodyCount <> 0 Then
                 Set GetCutListPropertyManager = swFeat.CustomPropertyManager
                 Exit Function
             End If

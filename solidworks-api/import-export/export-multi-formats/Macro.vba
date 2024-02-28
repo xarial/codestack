@@ -129,7 +129,7 @@ Sub ExportFile(model As SldWorks.ModelDoc2, vOutNameTemplates As Variant, allCon
                 Set swExportData = Nothing
             End If
             
-            If False = model.Extension.SaveAs(outFilePath, swSaveAsVersion_e.swSaveAsCurrentVersion, swSaveAsOptions_e.swSaveAsOptions_Silent, swExportData, errs, warns) Then
+            If False = model.Extension.SaveAs(outFilePath, swSaveAsVersion_e.swSaveAsCurrentVersion, swSaveAsOptions_e.swSaveAsOptions_Silent + swSaveAsOptions_e.swSaveAsOptions_Copy, swExportData, errs, warns) Then
                 Err.Raise vberrror, "", "Failed to export to " & outFilePath
             End If
             
