@@ -5,7 +5,7 @@ description: VBA macro which hides features and makes them invisible in the SOLI
 image: hidden-features.png
 labels: [feature,hide,invisible]
 ---
-This VBA macro allows to make invisible selected features in the tree. The features still continue to be fully operational and visible in the graphics area (e.g. planes), but not visible in the feature manager tree.
+This VBA macro allows to make selected features invisible in the tree. The features still continue to be fully operational and visible in the graphics area (e.g. planes), but not visible in the feature manager tree.
 
 Even default features (such as planes) can be made invisible.
 
