@@ -11,7 +11,7 @@ labels: [dxf,dwg,cleanup,flat pattern,export]
 
 The code below provides a workaround for this issue.
 
-> Not this code doesn't allow to set the settings of the export (default options are used). It is required to use Windows API to modify the options and check boxes.
+> Note this code doesn't allow to set the settings of the export (default options are used). It is required to use Windows API to modify the options and check boxes.
 
 ## Configuration
 
