@@ -2,7 +2,7 @@
 caption: Propagate Configurations To Sheets
 title: Macro propagates configurations of the referenced document to sheets in the SOLIDWORKS drawings
 description: VBA macro copies the input sheet and sets the referenced configuration sof the referenced document
-image: sheets.png
+image: confs-to-sheets.svg
 ---
 
 ![Drawings with multiple sheets](sheets.png){ width=800 }
@@ -18,9 +18,13 @@ As the result drawing will contain sheets for all the configurations of the mult
 Macro can be configured by changing the constant values of the macro
 
 ~~~ vb
-Const TOP_LEVEL_CONFIGS_ONLY As Boolean = False 'True to only process top level configurations, False to process children configurations
-Const USE_CORRESPONDING_FLAT_PATTERN_CONF As Boolean = True 'True to find the corresponding SM-FLAT-PATTERN configuration for the flat pattern view, False to use configuration As Is
+Const PROCESS_TOP_LEVEL_CONFIGS As Boolean = True 'True to process top level configurations
+Const PROCESS_CHILDREN_CONFIGS As Boolean = False 'True to process children configurations
+
+Const USE_CORRESPONDING_FLAT_PATTERN_CONF As Boolean = True'True to find the corresponding SM-FLAT-PATTERN configuration for the flat pattern view, False to use configuration As Is
 Const GENERATE_MISSING_FLAT_PATTERN_CONF As Boolean = True 'True to automatically create new SM-FLAT-PATTERN configuration if not exist, False to use configuration As Is
+
+Const FORCE_SINGLE_BODY As Boolean = False 'True to select single body for multi-body configurations (can be useful for the cut-list configurations)
 ~~~
 
 ## Notes
