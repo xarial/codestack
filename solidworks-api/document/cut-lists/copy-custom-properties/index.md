@@ -11,8 +11,6 @@ This VBA macro copies the specified or all SOLIDWORKS custom properties from the
 
 Properties from the first found cut-list will be copied.
 
-{% code-snippet { file-name: Macro.vba } %}
-
 ## Configuration
 
 Macro can be configured by changing the constants
@@ -68,3 +66,5 @@ Sub Init(Optional dummy As Variant = Empty)
     TARG_PROPERTIES = Empty
 End Sub
 ~~~
+
+{% code-snippet { file-name: Macro.vba } %}
