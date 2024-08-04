@@ -61,6 +61,8 @@ SOLIDWORKS 2019|27
 SOLIDWORKS 2020|28
 SOLIDWORKS 2021|29
 SOLIDWORKS 2022|30
+SOLIDWORKS 2023|31
+SOLIDWORKS 2024|32
 
 It is possible to get the revision number of SOLIDWORKS session via [ISldWorks::RevisionNumber](https://help.solidworks.com/2012/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.isldworks~revisionnumber.html) method.
 The returned value is a string in the format: **25.1.0** where first number is a revision number.  
