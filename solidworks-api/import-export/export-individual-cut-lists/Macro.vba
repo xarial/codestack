@@ -4,8 +4,6 @@ Dim swApp As SldWorks.SldWorks
 
 Sub main()
     
-    Debug.Assert False
-    
     Set swApp = Application.SldWorks
        
     Dim macroOper As IMacroOperation
