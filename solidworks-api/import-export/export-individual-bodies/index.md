@@ -2,7 +2,7 @@
 caption: Export Individual Bodies
 title: Export individual bodies and flat-patterns from SOLIDWORKS part file via Macro+ framework
 description: VBA macro demonstrates how to use Macro+ and CAD+ API to export individual bodies to foreign format and flat pattern (for sheet metal) from the active SOLIDWORKS part
-image:
+image: export-body.svg
 macro-plus: vba
 ---
 

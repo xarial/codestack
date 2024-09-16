@@ -311,16 +311,18 @@ try_:
 
     On Error GoTo catch_
 
-    Dim macroRunner As Object
-    Set macroRunner = CreateObject("CadPlus.MacroRunner.Sw")
-    
-    Dim param As Object
-    Set param = macroRunner.PopParameter(swApp)
+    Dim macroOprMgr As Object
+    Set macroOprMgr = CreateObject("CadPlus.MacroOperationManager")
+        
+    Set macroOper = macroOprMgr.PopOperation(swApp)
     
     Dim vArgs As Variant
-    vArgs = param.Get("Args")
+    vArgs = macroOper.Arguments
+   
+    Dim macroArg As Object
+    Set macroArg = vArgs(0)
     
-    outDir = CStr(vArgs(0))
+    outDir = CStr(macroArg.GetValue())
     TryGetOutDirFromArguments = True
     GoTo finally_
     

@@ -6,6 +6,7 @@ description: VBA macro to export file (or optionally all configuration or drawin
 image: batch-export.svg
 labels: [export]
 group: Import/Export
+macro-plus: vba
 ---
 ![Save File dialog with the list of supported formats](file-save-dialog.png){ width=500 }
 

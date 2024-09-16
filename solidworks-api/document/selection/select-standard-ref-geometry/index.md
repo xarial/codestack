@@ -6,6 +6,7 @@ description: Example demonstrates how to select standard plane (Top, Front or Ri
 image: plane.svg
 labels: [selection, plane, origin]
 group: Model
+macro-plus: vba
 redirect-from:
   - /solidworks-api/document/selection/select-standard-plane/
 ---
