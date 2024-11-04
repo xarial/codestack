@@ -30,9 +30,9 @@ Sub main()
             If Not IsEmpty(vConfNames) Then
                 
                 Dim i As Integer
+                Dim swConfCustPrpMgr As SldWorks.CustomPropertyManager
                 
                 For i = 0 To UBound(vConfNames)
-                    Dim swConfCustPrpMgr As SldWorks.CustomPropertyManager
                     Set swConfCustPrpMgr = swModel.Extension.CustomPropertyManager(vConfNames(i))
                     ReorderProperties swConfCustPrpMgr, ASCENDING
                 Next
