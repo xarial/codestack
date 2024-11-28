@@ -33,7 +33,7 @@ public partial class MyComVisibleControlHost : UserControl
 }
 ~~~
 
-It is recommended to use COM-visible controls when hosting Windows Presentation Foundation (WCF) control in [System.Windows.Forms.Integration.ElementHost](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.integration.elementhost?view=netframework-4.8) as keypresses might not be handled properly in com-invisible controls.
+It is recommended to use COM-visible controls when hosting Windows Presentation Foundation (WPF) control in [System.Windows.Forms.Integration.ElementHost](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.integration.elementhost?view=netframework-4.8) as keypresses might not be handled properly in com-invisible controls.
 
 ## Defining Commands
 

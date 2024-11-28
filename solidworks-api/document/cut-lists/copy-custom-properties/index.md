@@ -11,11 +11,15 @@ This VBA macro copies the specified or all SOLIDWORKS custom properties from the
 
 Properties from the first found cut-list will be copied.
 
-{% code-snippet { file-name: Macro.vba } %}
-
 ## Configuration
 
 Macro can be configured by changing the constants
+
+~~~ vb
+Const ALL_CONFS As Boolean = False 'True to process all configurations
+Const PROCESS_TOP_LEVEL_CONFIGS As Boolean = False 'True to process top level configurations
+Const PROCESS_CHILDREN_CONFIGS As Boolean = True 'True to process children configurations
+~~~
 
 ### Properties Scope
 
@@ -38,13 +42,19 @@ Macro can be configured by changing the constants
 
 ### Properties List
 
-*PROPERTIES* array contains list of properties to copy
+~~~ vb
+Dim SRC_PROPERTIES As Variant
+Dim TARG_PROPERTIES As Variant
+~~~
+
+*SRC_PROPERTIES* array contains list of property names to copy, *TARG_PROPERTIES* array contains list of properties to copy to
     
 Copy specified properties
 
 ~~~ vb
 Sub Init(Optional dummy As Variant = Empty)
-    PROPERTIES = Array("Prp1", "Prp2", "Prp3") 'Copy Prp1, Prp2, Prp3
+    SRC_PROPERTIES = Array("Prp1", "Prp2", "Prp3") 'Copy Prp1, Prp2, Prp3
+    TARG_PROPERTIES = Array("TargPrp1", "Prp2", "TargPrp3") 'Copy to TargPrp1, Prp2, TargPrp3
 End Sub
 ~~~
 
@@ -52,6 +62,9 @@ Copy all properties
 
 ~~~ vb
 Sub Init(Optional dummy As Variant = Empty)
-    PROPERTIES = Empty
+    SRC_PROPERTIES = Empty
+    TARG_PROPERTIES = Empty
 End Sub
 ~~~
+
+{% code-snippet { file-name: Macro.vba } %}

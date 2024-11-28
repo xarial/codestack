@@ -11,7 +11,7 @@ group: Import/Export
 
 This console application developed in VB.NET allows to export SOLIDWORKS, DXF, DWG files to PDF using free version of SOLIDWORKS eDrawings via its API. It is not required to have SOLIDWORKS installed or use its license to use this tool. This tool is supported on Windows 8.1 onwards.
 
-This functionality has been integrated into the [xPort](https://cadplus.xarial.com/xport/) utility.
+This functionality has been integrated into the [eXport+](https://cadplus.xarial.com/export/) utility.
 
 ## Running the tool
 

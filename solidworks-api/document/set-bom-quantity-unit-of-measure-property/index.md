@@ -17,4 +17,10 @@ This option allows overwriting the quantity value of the component in the BOM ta
 
 In order to change this property it is required to set the hidden *UNIT_OF_MEASURE* custom property via [ICustomPropertyManager](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.icustompropertymanager.html) SOLIDWORKS API interface.
 
+In order to set BOM quantity for all configurations set the **SET_CONFIGURATIONS** constant to **True**
+
+~~~ vb
+Const SET_CONFIGURATIONS As Boolean = True
+~~~
+
 {% code-snippet { file-name: Macro.vba } %}

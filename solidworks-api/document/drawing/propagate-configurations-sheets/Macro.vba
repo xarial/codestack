@@ -1,13 +1,17 @@
-Const TOP_LEVEL_CONFIGS_ONLY As Boolean = False
+Const PROCESS_TOP_LEVEL_CONFIGS As Boolean = True
+Const PROCESS_CHILDREN_CONFIGS As Boolean = False
+
 Const USE_CORRESPONDING_FLAT_PATTERN_CONF As Boolean = True
 Const GENERATE_MISSING_FLAT_PATTERN_CONF As Boolean = True
+
+Const FORCE_SINGLE_BODY As Boolean = False
 
 Dim swApp As SldWorks.SldWorks
 
 Sub main()
 
     Set swApp = Application.SldWorks
-    
+        
     Dim swDraw As SldWorks.DrawingDoc
     
     Set swDraw = swApp.ActiveDoc
@@ -30,7 +34,7 @@ Sub main()
                 ValidateSheet swSheet, swRefDoc
                 
                 Dim vConfNames As Variant
-                vConfNames = GetConfigurations(swRefDoc)
+                vConfNames = GetConfigurations(swRefDoc, GetActualReferencedConfiguration(swDefView))
                 
                 Dim i As Integer
                 
@@ -59,7 +63,7 @@ Sub main()
     
 End Sub
 
-Function GetConfigurations(refDoc As SldWorks.ModelDoc2) As Variant
+Function GetConfigurations(refDoc As SldWorks.ModelDoc2, confToExclude As String) As Variant
     
     Dim confNames() As String
     
@@ -73,18 +77,25 @@ Function GetConfigurations(refDoc As SldWorks.ModelDoc2) As Variant
         Dim confName As String
         confName = CStr(vConfNames(i))
         
-        Dim swConf As SldWorks.Configuration
-        Set swConf = refDoc.GetConfigurationByName(confName)
+        If LCase(confName) <> LCase(confToExclude) Then
         
-        If (Not TOP_LEVEL_CONFIGS_ONLY Or swConf.GetParent() Is Nothing) And swConf.Type = swConfigurationType_e.swConfiguration_Standard Then
-                
-            If (Not confNames) = -1 Then
-                ReDim confNames(0)
-            Else
-                ReDim Preserve confNames(UBound(confNames) + 1)
-            End If
+            Dim swConf As SldWorks.Configuration
+            Set swConf = refDoc.GetConfigurationByName(confName)
             
-            confNames(UBound(confNames)) = confName
+            If swConf.Type = swConfigurationType_e.swConfiguration_Standard Then
+                    
+                If (PROCESS_TOP_LEVEL_CONFIGS And swConf.GetParent() Is Nothing) Or (PROCESS_CHILDREN_CONFIGS And Not swConf.GetParent() Is Nothing) Then
+                    If (Not confNames) = -1 Then
+                        ReDim confNames(0)
+                    Else
+                        ReDim Preserve confNames(UBound(confNames) + 1)
+                    End If
+                
+                    confNames(UBound(confNames)) = confName
+                
+                End If
+            
+            End If
             
         End If
         
@@ -186,12 +197,16 @@ Sub CopySheetWithConfiguration(draw As SldWorks.DrawingDoc, sheet As SldWorks.sh
                 Dim confName As String
                 
                 If False <> swView.IsFlatPatternView() And USE_CORRESPONDING_FLAT_PATTERN_CONF Then
-                    confName = GetFlatPatternConfiguration(draw, swView.ReferencedDocument, baseConfName, GENERATE_MISSING_FLAT_PATTERN_CONF)
+                    confName = GetFlatPatternConfiguration(draw, swView, baseConfName, GENERATE_MISSING_FLAT_PATTERN_CONF)
                 Else
                     confName = baseConfName
                 End If
                 
                 swView.ReferencedConfiguration = confName
+                
+                If FORCE_SINGLE_BODY Then
+                    SetSingleBody swView
+                End If
                 
                 RefreshView draw, swView
                 
@@ -246,10 +261,14 @@ Sub RefreshView(draw As SldWorks.DrawingDoc, swView As SldWorks.view)
     
 End Sub
 
-Function GetFlatPatternConfiguration(draw As SldWorks.DrawingDoc, refDoc As SldWorks.ModelDoc2, baseConfName As String, allowCreateIfNotExist As Boolean) As String
+Function GetFlatPatternConfiguration(draw As SldWorks.DrawingDoc, view As SldWorks.view, baseConfName As String, allowCreateIfNotExist As Boolean) As String
     
+    Dim swRefDoc As SldWorks.ModelDoc2
+        
+    Set swRefDoc = view.ReferencedDocument
+        
     Dim swConf As SldWorks.Configuration
-    Set swConf = refDoc.GetConfigurationByName(baseConfName)
+    Set swConf = swRefDoc.GetConfigurationByName(baseConfName)
     
     If swConf.Type <> swConfigurationType_e.swConfiguration_SheetMetal Then
         
@@ -278,7 +297,7 @@ Function GetFlatPatternConfiguration(draw As SldWorks.DrawingDoc, refDoc As SldW
         
         If allowCreateIfNotExist Then
             Debug.Print "Creating flat pattern configuration for " & baseConfName
-            GetFlatPatternConfiguration = CreateFlatPatternConfiguration(draw, refDoc, baseConfName)
+            GetFlatPatternConfiguration = CreateFlatPatternConfiguration(draw, view, baseConfName)
         Else
             Debug.Print "Flat pattern configuration is not found for " & baseConfName
             GetFlatPatternConfiguration = baseConfName
@@ -289,27 +308,36 @@ Function GetFlatPatternConfiguration(draw As SldWorks.DrawingDoc, refDoc As SldW
     
 End Function
 
-Function CreateFlatPatternConfiguration(draw As SldWorks.DrawingDoc, refDoc As SldWorks.ModelDoc2, baseConfName As String) As String
+Function CreateFlatPatternConfiguration(draw As SldWorks.DrawingDoc, view As SldWorks.view, baseConfName As String) As String
     
-    Dim swFlatPatternView As SldWorks.view
-    Set swFlatPatternView = draw.CreateFlatPatternViewFromModelView3(refDoc.GetPathName(), baseConfName, 0, 0, 0, True, False)
+    view.ReferencedConfiguration = baseConfName
     
-    If Not swFlatPatternView Is Nothing Then
-        CreateFlatPatternConfiguration = swFlatPatternView.ReferencedConfiguration
-        
-        If SelectDrawingView(draw, swFlatPatternView) Then
-            If False = draw.Extension.DeleteSelection2(swDeleteSelectionOptions_e.swDelete_Absorbed) Then
-                Err.Raise vbError, "", "Failed to delete temp view"
-            End If
+    SetSingleBody view
+    
+    If SelectDrawingView(draw, view) Then
+        If False <> draw.ChangeRefConfigurationOfFlatPatternView(view.ReferencedDocument.GetPathName(), view.ReferencedConfiguration) Then
+            CreateFlatPatternConfiguration = view.ReferencedConfiguration
         Else
-            Err.Raise vbError, "", "Failed to select temp view for deletion"
+            Err.Raise vbError, "", "Failed to create flat pattern view for " & view.ReferencedDocument.GetPathName() & " (" & baseConfName & ")"
         End If
-        
     Else
-        Err.Raise vbError, "", "Failed to create temp flat pattern view for " & refDoc.GetPathName() & " (" & baseConfName & ")"
+        Err.Raise vbError, "", "Failed to select temp view for deletion"
+    End If
+        
+End Function
+
+Sub SetSingleBody(view As SldWorks.view)
+
+    Dim vViewBodies As Variant
+    vViewBodies = view.Bodies
+    
+    If Not IsEmpty(vViewBodies) Then
+        Dim swBody(0) As SldWorks.Body2
+        Set swBody(0) = vViewBodies(0)
+        view.Bodies = swBody
     End If
     
-End Function
+End Sub
 
 Function SelectDrawingView(draw As SldWorks.ModelDoc2, view As SldWorks.view) As Boolean
     SelectDrawingView = False <> draw.Extension.SelectByID2(view.Name, "DRAWINGVIEW", 0, 0, 0, False, -1, Nothing, swSelectOption_e.swSelectOptionDefault)

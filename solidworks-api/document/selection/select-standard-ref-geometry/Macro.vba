@@ -1,4 +1,5 @@
-#Const ARGS = False
+#Const ARGS = True
+#Const TEST = FALSE
 
 Declare PtrSafe Function GetKeyState Lib "user32" (ByVal nVirtKey As Long) As Integer
 Const VK_CONTROL As Long = &H11
@@ -25,17 +26,18 @@ Sub main()
     Set swModel = swApp.ActiveDoc
 
 #If ARGS Then
-    Dim macroRunner As Object
-    Set macroRunner = CreateObject("CadPlus.MacroRunner.Sw")
     
-    Dim param As Object
-    Set param = macroRunner.PopParameter(swApp)
+    Dim macroOper As Object
+    Set macroOper = GetMacroOperation()
     
     Dim vArgs As Variant
-    vArgs = param.Get("Args")
+    vArgs = macroOper.Arguments
+    
+    Dim arg As Object
+    Set arg = vArgs(0)
     
     Dim planeName As String
-    planeName = CStr(vArgs(0))
+    planeName = arg.GetValue()
     
     Select Case UCase(planeName)
         Case "ORIGIN"
@@ -46,6 +48,8 @@ Sub main()
             REF_GEOM = swRefGeom_e.Front
         Case "RIGHT"
             REF_GEOM = swRefGeom_e.Right
+        Case Else
+            Err.Raise vbError, "", "Not supported argument"
     End Select
 #Else
     REF_GEOM = swRefGeom_e.Top
@@ -69,10 +73,10 @@ Sub main()
             End If
             
         Else
-            MsgBox "Only assemblies and parts are supported"
+            Err.Raise vbError, "", "Only assemblies and parts are supported"
         End If
     Else
-        MsgBox "Please open part or assembly"
+        Err.Raise vbError, "", "Please open part or assembly"
     End If
     
 End Sub
@@ -136,3 +140,27 @@ Sub SelectOrigin(origFeat As SldWorks.Feature, append As Boolean)
     swSkPoint.Select4 append, Nothing
     
 End Sub
+
+Function GetMacroOperation(Optional dummy As Variant = Empty) As Object
+    
+    Dim macroOper As Object
+    
+    #If TEST Then
+        Dim swCadPlusFact As Object
+        Set swCadPlusFact = CreateObject("CadPlusFactory.Sw")
+        
+        Set swCadPlus = swCadPlusFact.Create(swApp, False)
+        
+        Dim ARGS(0) As String
+        ARGS(0) = "FRONT"
+        Set macroOper = swCadPlus.CreateMacroOperation(swApp.ActiveDoc, "", ARGS)
+    #Else
+        Dim macroOprMgr As Object
+        Set macroOprMgr = CreateObject("CadPlus.MacroOperationManager")
+        
+        Set macroOper = macroOprMgr.PopOperation(swApp)
+    #End If
+    
+    Set GetMacroOperation = macroOper
+    
+End Function

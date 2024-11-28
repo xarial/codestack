@@ -3,55 +3,70 @@ Dim swModel As SldWorks.ModelDoc2
 
 Sub main()
 
+try_:
+    On Error GoTo catch_
+
     Set swApp = Application.SldWorks
     
     Set swModel = swApp.ActiveDoc
+    
+    Dim path As String
     
     If Not swModel Is Nothing Then
         
         Dim swSelMgr As SldWorks.SelectionMgr
         Set swSelMgr = swModel.SelectionManager
         
-        Dim swComp As SldWorks.Component2
+        Dim i As Integer
         
-        If TypeOf swModel Is SldWorks.AssemblyDoc Then
+        For i = 1 To swSelMgr.GetSelectedObjectCount2(-1)
+        
+            Dim swComp As SldWorks.Component2
+            Set swComp = Nothing
             
-            Set swComp = swSelMgr.GetSelectedObjectsComponent4(1, -1)
-            
-        ElseIf TypeOf swModel Is SldWorks.DrawingDoc Then
-            
-            Dim swDrawComp As SldWorks.DrawingComponent
-            Set swDrawComp = swSelMgr.GetSelectedObjectsComponent4(1, -1)
-            
-            If swDrawComp Is Nothing Then
-                'for entities selected in graphics view - first seleciton is a view itself
-                Set swDrawComp = swSelMgr.GetSelectedObjectsComponent4(2, -1)
+            If TypeOf swModel Is SldWorks.AssemblyDoc Then
+                
+                Set swComp = swSelMgr.GetSelectedObjectsComponent4(i, -1)
+                
+            ElseIf TypeOf swModel Is SldWorks.DrawingDoc Then
+                
+                Dim swDrawComp As SldWorks.DrawingComponent
+                Set swDrawComp = swSelMgr.GetSelectedObjectsComponent4(i, -1)
+                
+                If Not swDrawComp Is Nothing Then
+                    Set swComp = swDrawComp.Component
+                End If
+                
+            Else
+                Err.Raise vbError, "", "Only parts and drawings are supported"
             End If
             
-            If Not swDrawComp Is Nothing Then
-                Set swComp = swDrawComp.Component
+            If Not swComp Is Nothing Then
+                If path <> "" Then
+                    path = path & vbLf
+                End If
+                path = path & swComp.GetPathName
             End If
             
-        Else
-            MsgBox "Only parts and drawings are supported"
-            End
-        End If
+        Next
         
-        If Not swComp Is Nothing Then
-            
-            Dim path As String
-            path = swComp.GetPathName
+        If path <> "" Then
             Debug.Print path
             SetTextToClipboard path
-            
         Else
-            MsgBox "Please select component"
+            Err.Raise vbError, "", "Please select components"
         End If
         
     Else
-        MsgBox "Please open document"
+        Err.Raise vbError, "", "Please open document"
     End If
     
+    GoTo finally_
+    
+catch_:
+    swApp.SendMsgToUser2 Err.Description, swMessageBoxIcon_e.swMbStop, swMessageBoxBtn_e.swMbOk
+finally_:
+
 End Sub
 
 Sub SetTextToClipboard(text As String)

@@ -26,7 +26,7 @@ Sub main()
         End If
         
         If path <> "" Then
-            Shell "explorer.exe /select, " & """" & path & """"
+            Shell "explorer.exe /select, " & """" & path & """", vbMaximizedFocus
         Else
             MsgBox "Model is not saved"
         End If

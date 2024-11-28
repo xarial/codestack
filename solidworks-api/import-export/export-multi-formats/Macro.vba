@@ -129,7 +129,7 @@ Sub ExportFile(model As SldWorks.ModelDoc2, vOutNameTemplates As Variant, allCon
                 Set swExportData = Nothing
             End If
             
-            If False = model.Extension.SaveAs(outFilePath, swSaveAsVersion_e.swSaveAsCurrentVersion, swSaveAsOptions_e.swSaveAsOptions_Silent, swExportData, errs, warns) Then
+            If False = model.Extension.SaveAs(outFilePath, swSaveAsVersion_e.swSaveAsCurrentVersion, swSaveAsOptions_e.swSaveAsOptions_Silent + swSaveAsOptions_e.swSaveAsOptions_Copy, swExportData, errs, warns) Then
                 Err.Raise vberrror, "", "Failed to export to " & outFilePath
             End If
             
@@ -311,16 +311,18 @@ try_:
 
     On Error GoTo catch_
 
-    Dim macroRunner As Object
-    Set macroRunner = CreateObject("CadPlus.MacroRunner.Sw")
-    
-    Dim param As Object
-    Set param = macroRunner.PopParameter(swApp)
+    Dim macroOprMgr As Object
+    Set macroOprMgr = CreateObject("CadPlus.MacroOperationManager")
+        
+    Set macroOper = macroOprMgr.PopOperation(swApp)
     
     Dim vArgs As Variant
-    vArgs = param.Get("Args")
+    vArgs = macroOper.Arguments
+   
+    Dim macroArg As Object
+    Set macroArg = vArgs(0)
     
-    outDir = CStr(vArgs(0))
+    outDir = CStr(macroArg.GetValue())
     TryGetOutDirFromArguments = True
     GoTo finally_
     
