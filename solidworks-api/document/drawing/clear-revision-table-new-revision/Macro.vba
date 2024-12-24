@@ -60,13 +60,18 @@ Sub AddRevision(swRevTable As SldWorks.RevisionTableAnnotation, revName As Strin
     
     Set swTableAnn = swRevTable
     
-    swRevTable.AddRevision revName
+    Dim revId As Long
+    revId = swRevTable.AddRevision(revName)
+    
+    Dim rowIndex As Integer
+    
+    rowIndex = swRevTable.GetRowNumberForId(revId)
             
     For i = 0 To UBound(rowData)
                 
         If rowData(i) <> "" Then
             
-            swTableAnn.Text(swTableAnn.RowCount - 1, i) = rowData(i)
+            swTableAnn.Text(rowIndex, i) = rowData(i)
         
         End If
                 
