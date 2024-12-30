@@ -11,6 +11,8 @@ End Enum
 
 Const SKIP_EXISTING_FILES As Boolean = False
 
+Const OPEN_APP_PATH As String = "" 'Path to the application to open the file (e.g. eDrawings), empty string to not open the file, * to open with default application
+
 Const OUT_NAME_TEMPLATE As String = "DXFs\<_FileName_>_<_FeatureName_>_<_ConfName_>_<$CLPRP:Description>.dxf"
 
 Const FLAT_PATTERN_OPTIONS As Integer = SheetMetalOptions_e.ExportBendLines + SheetMetalOptions_e.ExportFlatPatternGeometry
@@ -369,6 +371,9 @@ Sub ProcessSheetMetalModel(rootModel As SldWorks.ModelDoc2, sheetMetalModel As S
                         
                         If Not SKIP_EXISTING_FILES Or Not FileExists(outFileName) Then
                             ExportFlatPattern sheetMetalModel, swFlatPatternFeat, outFileName, FLAT_PATTERN_OPTIONS, conf
+                            If OPEN_APP_PATH <> "" Then
+                                OpenFile outFileName
+                            End If
                         End If
                     End If
                     
@@ -573,6 +578,16 @@ finally_:
     
     If Not error Is Nothing Then
         Err.Raise error.Number, error.Source, error.Description, error.HelpFile, error.HelpContext
+    End If
+    
+End Sub
+
+Sub OpenFile(filePath As String)
+                    
+    If OPEN_APP_PATH = "*" Then
+        Shell """" & filePath & """"
+    Else
+        Shell """" & OPEN_APP_PATH & """" & " " & """" & filePath & """"
     End If
     
 End Sub

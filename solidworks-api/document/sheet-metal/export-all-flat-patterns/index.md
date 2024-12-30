@@ -84,7 +84,7 @@ Const FLAT_PATTERN_OPTIONS As Integer = SheetMetalOptions_e.IncludeHiddenEdges +
 
 > Note, geometry option must always be specified as it is required for the flat pattern export
 
-## Skip created files
+### Skip created files
 
 **SKIP_EXISTING_FILES** options allows to specify if macro should regenerate output file if it already exists.
 
@@ -95,6 +95,14 @@ Const SKIP_EXISTING_FILES As Boolean = True
 ~~~
 
 This option can be useful when processing large assemblies and it is required to continue the execution after SOLIDWORKS restart. Exporting flat patterns is a heavy performance operation so SOLIDWORKS may crash or hang when large job is processed. This option can help to continue the exporting after the restart.
+
+### Open output files
+
+Macro can be configured to automatically open the generated flat pattern files by modifying the value of the **OPEN_APP_PATH** constant
+
+~~~ vb
+Const OPEN_APP_PATH As String = "C:\Program Files\SOLIDWORKS Corp\eDrawings\eDrawings.exe" 'opens exported file in the eDrawings application
+~~~
 
 ## Troubleshooting
 
