@@ -75,3 +75,9 @@ For example, the below parameter will export BOM table into the CSV format into 
 ~~~
 
 {% code-snippet { file-name: Macro.vba } %}
+
+## UTF-8 Encoding
+
+In order to enable the CSV output in UTF-8 encoding repplace the **WriteCsvFile** function with the code below
+
+{% code-snippet { file-name: WriteCsvFileUtf8.vba } %}
