@@ -1,31 +1,47 @@
 Dim lblParamName() As Label
 Dim txtParamValue() As TextBox
 
+Dim WithEvents chkCreateConf As CheckBox
+Dim txtConfName As TextBox
 Dim WithEvents btnApply As CommandButton
 
-Private Sub UserForm_Initialize()
+Dim FeatDimsInfos() As DimensionInfo
+Dim swActiveModel As SldWorks.ModelDoc2
+Dim FeatConfName As String
 
-    Me.Caption = "Edit " & FeatureName
+Public Sub EditDimensions(dimsInfos() As DimensionInfo, activeModel As SldWorks.ModelDoc2, confName As String)
     
-    If UBound(DimensionNames) <> UBound(DimensionTitles) Then
-        Err.Raise vbError, "", "Parameter names and dimensions must be of the same size"
-    End If
+    LoadLayout dimsInfos, activeModel, confName
+    
+    Me.Show vbModeless
+    
+End Sub
 
+Private Sub LoadLayout(dimsInfos() As DimensionInfo, activeModel As SldWorks.ModelDoc2, confName As String)
+    
+    FeatDimsInfos = dimsInfos
+    FeatConfName = confName
+    
+    Set swActiveModel = activeModel
+    
     Dim i As Integer
     
     Dim maxWidth As Integer
     
-    ReDim lblParamName(UBound(DimensionTitles))
-    ReDim txtParamValue(UBound(DimensionTitles))
+    ReDim lblParamName(UBound(FeatDimsInfos))
+    ReDim txtParamValue(UBound(FeatDimsInfos))
     
     Dim nextPosY As Integer
     nextPosY = MARGIN
     
-    For i = 0 To UBound(DimensionTitles)
-    
+    For i = 0 To UBound(FeatDimsInfos)
+        
+        Dim dimInfo As DimensionInfo
+        dimInfo = FeatDimsInfos(i)
+        
         Set lblParamName(i) = Me.Controls.Add("Forms.Label.1")
-        lblParamName(i).Caption = CStr(DimensionTitles(i)) & ":"
-        lblParamName(i).name = "lblLabel" & (i + 1)
+        lblParamName(i).Caption = dimInfo.title & ":"
+        lblParamName(i).Name = "lblLabel" & (i + 1)
         lblParamName(i).AutoSize = True
         
         lblParamName(i).Left = MARGIN
@@ -37,9 +53,10 @@ Private Sub UserForm_Initialize()
         
         Set txtParamValue(i) = Me.Controls.Add("Forms.TextBox.1")
         txtParamValue(i).Width = TEXT_BOX_WIDTH
-        txtParamValue(i).name = "txtVal" & (i + 1)
+        txtParamValue(i).Name = "txtVal" & (i + 1)
         txtParamValue(i).Top = nextPosY
-                
+        txtParamValue(i).Text = dimInfo.Value
+        
         nextPosY = nextPosY + MARGIN + lblParamName(i).height
         
     Next
@@ -48,10 +65,23 @@ Private Sub UserForm_Initialize()
         txtParamValue(i).Left = maxWidth + MARGIN * 2
     Next
     
+    Set chkCreateConf = Me.Controls.Add("Forms.CheckBox.1")
+    chkCreateConf.Caption = "Create Configuration"
+    chkCreateConf.Name = "chkCreateConf"
+    chkCreateConf.Top = nextPosY + MARGIN
+    chkCreateConf.Left = MARGIN
+    
+    Set txtConfName = Me.Controls.Add("Forms.TextBox.1")
+    txtConfName.Name = "txtConfName"
+    txtConfName.Top = chkCreateConf.Top + chkCreateConf.height + MARGIN
+    txtConfName.Left = MARGIN
+    txtConfName.Text = FeatConfName
+    txtConfName.Enabled = chkCreateConf.Value
+    
     Set btnApply = Me.Controls.Add("Forms.CommandButton.1")
     btnApply.Caption = "Apply"
-    btnApply.name = "btnApply"
-    btnApply.Top = nextPosY + MARGIN
+    btnApply.Name = "btnApply"
+    btnApply.Top = txtConfName.Top + txtConfName.height + MARGIN
     btnApply.Left = (maxWidth + MARGIN + TEXT_BOX_WIDTH) / 2 - btnApply.Width / 2 + MARGIN
     
     Dim height As Integer
@@ -62,89 +92,35 @@ Private Sub UserForm_Initialize()
     Me.ScrollHeight = height
     Me.Width = (maxWidth + MARGIN + TEXT_BOX_WIDTH) + MARGIN * 2 + 20
     Me.height = IIf(height > MAX_FORM_HEIGHT, MAX_FORM_HEIGHT + 25, height + 25) 'including header height
-    
-    LoadDimensionValues
-    
+       
 End Sub
 
-Private Sub LoadDimensionValues()
-    
-    Dim i As Integer
-        
-    For i = 0 To UBound(DimensionNames)
-        
-        Dim swDim As SldWorks.Dimension
-        
-        Dim dimName As String
-        dimName = CStr(DimensionNames(i))
-        
-        Set swDim = GetDimension(dimName)
-        
-        If Not swDim Is Nothing Then
-            Dim dimVal As Double
-            Dim confNames(0) As String
-            confNames(0) = ConfigName
-            dimVal = swDim.GetValue3(swInConfigurationOpts_e.swSpecifyConfiguration, confNames)(0)
-            txtParamValue(i).Text = dimVal
-        Else
-            Err.Raise vbError, "", dimName & " does not exist"
-        End If
-    Next
-    
+Private Sub chkCreateConf_Change()
+    txtConfName.Enabled = chkCreateConf.Value
 End Sub
 
 Private Sub btnApply_Click()
     
+    Dim targConfName As String
+    
+    If chkCreateConf.Value Then
+        targConfName = txtConfName.Text
+    Else
+        targConfName = FeatConfName
+    End If
+    
     Dim i As Integer
-        
-    For i = 0 To UBound(DimensionNames)
-        
-        Dim swDim As SldWorks.Dimension
-        
-        Dim dimName As String
-        dimName = CStr(DimensionNames(i))
-        
-        Set swDim = GetDimension(dimName)
-        
-        If Not swDim Is Nothing Then
-            Dim dimVal As Double
-            
-            If IsNumeric(txtParamValue(i).Text) Then
-                dimVal = CDbl(txtParamValue(i).Text)
-            Else
-                Err.Raise vbError, "", "Specified value for " & DimensionTitles(i) & " is not numeric"
-            End If
-            Dim confNames(0) As String
-            confNames(0) = ConfigName
-            swDim.SetValue3 dimVal, swInConfigurationOpts_e.swSpecifyConfiguration, confNames
+    
+    For i = 0 To UBound(FeatDimsInfos)
+        Dim dimValTxt As String
+        dimValTxt = txtParamValue(i).Text
+        If IsNumeric(dimValTxt) Then
+            FeatDimsInfos(i).Value = CDbl(dimValTxt)
         Else
-            Err.Raise vbError, "", dimName & " does not exist"
+            Err.Raise vbError, "", "Specified value for " & FeatDimsInfos(i).title & " is not numeric"
         End If
     Next
     
-    ActiveModel.ForceRebuild3 False
+    TrySetDimensions FeatDimsInfos, swActiveModel, targConfName, chkCreateConf.Value
     
 End Sub
-
-Function GetDimension(name As String) As SldWorks.Dimension
-    
-    Dim dimParts As Variant
-    dimParts = Split(name, "/")
-    
-    Dim i As Integer
-    
-    Dim swTargetModel As SldWorks.ModelDoc2
-    Set swTargetModel = Model
-    
-    Dim swCurComp As SldWorks.Component2
-    
-    For i = 0 To UBound(dimParts) - 1
-        Dim swAssy As SldWorks.AssemblyDoc
-        Set swAssy = swTargetModel
-        Set swCurComp = swAssy.GetComponentByName(dimParts(i))
-        Set swTargetModel = swCurComp.GetModelDoc2()
-    Next
-    
-    Set GetDimension = swTargetModel.Parameter(dimParts(UBound(dimParts)))
-    
-End Function

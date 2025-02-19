@@ -18,6 +18,7 @@ Macro will copy the associated drawing and place it next to the target file with
 ## Notes
 
 * Macro will only copy drawing which matches the name of the source file and placed in the same folder
+    * To specify the subfolder of the drawings set the sub folder name in **DRAWINGS_FOLDER** constant. It is also possible to use an absolute path to specify the external drawings folder
 * Macro will not overwrite the destination drawing file if already exists
 
 {% code-snippet { file-name: Macro.vba } %}

@@ -11,6 +11,8 @@ group: Drawing
 
 This VBA macro exports all flat pattern views from the active sheet in the drawing to the specified format (e.g. DXF or DWG) using SOLIDWORKS API. Macro exports the file to the same folder as original drawing and names files after the drawing view name.
 
+Set **ALL_SHEETS** constant to **True** to export all sheets.
+
 This macro can be used in conjunction with [Rename flat pattern views with cut-list names](/solidworks-api/document/drawing/rename-sheet-metal-views/) macro  if it is required to name exported files after the cut list name.
 
 Specify the output file extension at the beginning of the macro:
@@ -18,6 +20,8 @@ Specify the output file extension at the beginning of the macro:
 ~~~ vb
 Const OUT_EXT As String = ".dxf"
 ~~~
+
+Output name can be specified to source view name, referenced configuration name of file name via **OUT_NAME** constant.
 
 ## Algorithm
 
@@ -29,6 +33,5 @@ Const OUT_EXT As String = ".dxf"
 * Set view and sheet scale to 1:1
 * Fit sheet size to view
 * Export to the specified file
-
 
 {% code-snippet { file-name: Macro.vba } %}

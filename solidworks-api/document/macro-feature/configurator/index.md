@@ -13,7 +13,7 @@ This VBA macro leverages functionality of macro feature to create custom model c
 
 Macro will build dynamic User Interface for the specified dimension and insert the **Configurator** feature directly in the Feature Manager tree.
 
-![Configuring dimensions of the model](configuring-model.png)
+![Configuring dimensions of the model](configuring-model.png){ width=500 }
 
 Design can be modified at any time by clicking **Edit Feature** command
 
@@ -36,6 +36,10 @@ Configurator feature can be inserted into the part or assembly (including insert
 Dimensions will be modified in the active configuration or in the referenced configuration of the component (if edited in context)
 
 When adding configurator feature to the assembly it is possible to modify the dimensions of any sub-component.
+
+Macro has an option to create a configuration for specified parameters. Once **Create Configuration** option is checked, specify the name of the configuration in the text box below.
+
+> When configuration is created for the component edited in the context of the assembly, referenced configuration of the component is automatically changed to a new configuration
 
 ## Configuration
 

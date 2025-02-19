@@ -1,3 +1,9 @@
+Type DimensionInfo
+    Name As String
+    title As String
+    Value As Double
+End Type
+
 Public Const MARGIN As Integer = 10
 Public Const MAX_FORM_HEIGHT = 200
 Public Const TEXT_BOX_WIDTH As Integer = 50
@@ -5,17 +11,14 @@ Public Const BASE_NAME As String = "Configurator"
 
 Const EMBED_MACRO_FEATURE As Boolean = False
 
-Public ActiveModel As SldWorks.ModelDoc2
-Public Model As SldWorks.ModelDoc2
-Public FeatureName As String
-Public DimensionNames As Variant
-Public DimensionTitles As Variant
-Public ConfigName As String
-
 Sub main()
 
     Dim swApp As SldWorks.SldWorks
     Set swApp = Application.SldWorks
+
+try_:
+
+    On Error GoTo catch_
     
     Dim swModel As SldWorks.ModelDoc2
     
@@ -65,19 +68,25 @@ Sub main()
         End If
         
     Else
-        MsgBox "Please open model"
+        Err.Raise "Please open model"
     End If
+    
+    GoTo finally_
+    
+catch_:
+    MsgBox Err.Description, vbCritical, "Configurator"
+finally_:
     
 End Sub
 
-Function CollectParameters(Model As SldWorks.ModelDoc2, ByRef vParamNames As Variant, ByRef vParamTypes As Variant, ByRef vParamValues As Variant) As Boolean
+Function CollectParameters(model As SldWorks.ModelDoc2, ByRef vParamNames As Variant, ByRef vParamTypes As Variant, ByRef vParamValues As Variant) As Boolean
 
     Dim paramNames() As String
     Dim paramTypes() As Long
     Dim paramValues() As String
 
     Dim swSelMgr As SldWorks.SelectionMgr
-    Set swSelMgr = Model.SelectionManager
+    Set swSelMgr = model.SelectionManager
 
     Dim i As Integer
     
@@ -108,7 +117,7 @@ Function CollectParameters(Model As SldWorks.ModelDoc2, ByRef vParamNames As Var
                 paramName = swComp.Name2
                 
                 Dim swAssy As SldWorks.AssemblyDoc
-                Set swAssy = Model
+                Set swAssy = model
                 
                 Dim swEditTargetComp As SldWorks.Component2
                 Set swEditTargetComp = swAssy.GetEditTargetComponent
@@ -172,40 +181,189 @@ Function swmRebuild(varApp As Variant, varDoc As Variant, varFeat As Variant) As
     swmRebuild = True
 End Function
 
+Function swmSecurity(varApp As Variant, varDoc As Variant, varFeat As Variant) As Variant
+    swmSecurity = SwConst.swMacroFeatureSecurityOptions_e.swMacroFeatureSecurityByDefault
+End Function
+
 Function swmEditDefinition(varApp As Variant, varDoc As Variant, varFeat As Variant) As Variant
     
+try_:
+
+    On Error GoTo catch_
+
     Dim swFeat As SldWorks.Feature
     Set swFeat = varFeat
     
+    Dim title As String
+    title = "Edit " & swFeat.Name
+    
     Dim swMacroFeat As SldWorks.MacroFeatureData
     Set swMacroFeat = swFeat.GetDefinition
-    
-    ConfigName = swMacroFeat.CurrentConfiguration.name
-    
+        
     Dim vParamNames As Variant
     Dim vParamValues As Variant
     
     swMacroFeat.GetParameters vParamNames, Empty, vParamValues
+        
+    Dim swActiveModel As SldWorks.ModelDoc2
     
-    DimensionNames = vParamNames
-    DimensionTitles = vParamValues
-    FeatureName = swFeat.name
+    Set swActiveModel = varDoc
     
-    Set ActiveModel = varDoc
-    Set Model = varDoc
+    Dim confName As String
+    confName = swMacroFeat.CurrentConfiguration.Name
     
-    If Model.GetType() = swDocumentTypes_e.swDocASSEMBLY Then
+    Dim dimsInfo() As DimensionInfo
+    dimsInfo = LoadDimensionValues(swActiveModel, confName, vParamNames, vParamValues)
+    
+    ConfiguratorForm.Caption = title
+    
+    ConfiguratorForm.EditDimensions dimsInfo, swActiveModel, confName
+        
+    swmEditDefinition = True
+        
+    GoTo finally_
+    
+catch_:
+    swmEditDefinition = False
+    MsgBox Err.Description, vbCritical, title
+finally_:
+
+End Function
+
+Public Sub TrySetDimensions(dimsInfo() As DimensionInfo, model As SldWorks.ModelDoc2, targConfName As String, createConf As Boolean)
+    
+try_:
+
+    On Error GoTo catch_
+    
+    Dim swTargModel As SldWorks.ModelDoc2
+    Dim swTargComp As SldWorks.Component2
+        
+    If model.GetType() = swDocumentTypes_e.swDocASSEMBLY Then
         Dim swAssy As SldWorks.AssemblyDoc
-        Set swAssy = Model
-        Set Model = swAssy.GetEditTarget
+        Set swAssy = model
+        Set swTargModel = swAssy.GetEditTarget
+        Set swTargComp = swAssy.GetEditTargetComponent
+    Else
+        Set swTargModel = model
     End If
     
-    ConfiguratorForm.Show vbModal
+    If createConf Then
+        Dim swConf As SldWorks.Configuration
+                
+        If targConfName = "" Then
+            Err.Raise vbError, "", "Specify configuration name"
+        End If
+        
+        Set swConf = swTargModel.ConfigurationManager.AddConfiguration2(targConfName, "", "", swConfigurationOptions2_e.swConfigOption_DontActivate, "", "", False)
+        If swConf Is Nothing Then
+            Err.Raise vbError, "", "Failed to add new configuration"
+        End If
+    End If
     
-    swmEditDefinition = True
+    Dim i As Integer
+        
+    For i = 0 To UBound(dimsInfo)
+        
+        Dim dimInfo As DimensionInfo
+        dimInfo = dimsInfo(i)
+        
+        Dim swDim As SldWorks.Dimension
+        
+        Dim dimName As String
+        dimName = dimInfo.Name
+        
+        Set swDim = GetDimension(swTargModel, dimName)
+        
+        If Not swDim Is Nothing Then
+            Dim dimVal As Double
+            dimVal = dimInfo.Value
+            
+            Dim confNames(0) As String
+            confNames(0) = targConfName
+            swDim.SetValue3 dimVal, swInConfigurationOpts_e.swSpecifyConfiguration, confNames
+        Else
+            Err.Raise vbError, "", dimName & " does not exist"
+        End If
+    Next
+    
+    If createConf And Not swTargComp Is Nothing Then
+        
+        swTargComp.ReferencedConfiguration = targConfName
+        
+    End If
+    
+    GoTo finally_
+    
+catch_:
+    MsgBox Err.Description, vbCritical, "Configurator"
+finally_:
+    
+End Sub
+
+Function GetDimension(model As SldWorks.ModelDoc2, dimName As String) As SldWorks.Dimension
+    
+    Dim dimParts As Variant
+    dimParts = Split(dimName, "/")
+    
+    Dim i As Integer
+    
+    Dim swTargetModel As SldWorks.ModelDoc2
+    Set swTargetModel = model
+    
+    Dim swCurComp As SldWorks.Component2
+    
+    For i = 0 To UBound(dimParts) - 1
+        Dim swAssy As SldWorks.AssemblyDoc
+        Set swAssy = swTargetModel
+        Set swCurComp = swAssy.GetComponentByName(dimParts(i))
+        Set swTargetModel = swCurComp.GetModelDoc2()
+    Next
+    
+    Set GetDimension = swTargetModel.Parameter(dimParts(UBound(dimParts)))
     
 End Function
 
-Function swmSecurity(varApp As Variant, varDoc As Variant, varFeat As Variant) As Variant
-    swmSecurity = SwConst.swMacroFeatureSecurityOptions_e.swMacroFeatureSecurityByDefault
+Private Function LoadDimensionValues(model As SldWorks.ModelDoc2, confName As String, vParamNames As Variant, vParamValues As Variant) As DimensionInfo()
+
+    Dim swTargModel As SldWorks.ModelDoc2
+
+    If model.GetType() = swDocumentTypes_e.swDocASSEMBLY Then
+        Dim swAssy As SldWorks.AssemblyDoc
+        Set swAssy = model
+        Set swTargModel = swAssy.GetEditTarget
+    Else
+        Set swTargModel = model
+    End If
+
+    Dim dimsInfo() As DimensionInfo
+    ReDim dimsInfo(UBound(vParamNames))
+
+    Dim i As Integer
+
+    For i = 0 To UBound(vParamNames)
+
+        Dim swDim As SldWorks.Dimension
+
+        Dim dimName As String
+        dimName = CStr(vParamNames(i))
+        
+        dimsInfo(i).Name = dimName
+        dimsInfo(i).title = vParamValues(i)
+
+        Set swDim = GetDimension(swTargModel, dimName)
+
+        If Not swDim Is Nothing Then
+            Dim dimVal As Double
+            Dim confNames(0) As String
+            confNames(0) = confName
+            dimVal = swDim.GetValue3(swInConfigurationOpts_e.swSpecifyConfiguration, confNames)(0)
+            dimsInfo(i).Value = dimVal
+        Else
+            Err.Raise vbError, "", dimName & " does not exist"
+        End If
+    Next
+    
+    LoadDimensionValues = dimsInfo
+
 End Function

@@ -1,4 +1,12 @@
+Enum OutFileName_e
+    ViewName
+    ConfigurationName
+    FileName
+End Enum
+
+Const ALL_SHEETS As Boolean = False
 Const OUT_EXT As String = ".dxf"
+Const OUT_NAME As Integer = OutFileName_e.ViewName
 
 Dim swApp As SldWorks.SldWorks
 
@@ -15,7 +23,19 @@ try:
     Set swDraw = swApp.ActiveDoc
     
     If Not swDraw Is Nothing Then
-        ExportFlatPatternViews swDraw, swDraw.GetCurrentSheet
+        If ALL_SHEETS Then
+            Dim vSheetNames As Variant
+            vSheetNames = swDraw.GetSheetNames
+            
+            Dim i As Integer
+            
+            For i = 0 To UBound(vSheetNames)
+                ExportFlatPatternViews swDraw, swDraw.sheet(CStr(vSheetNames(i)))
+            Next
+            
+        Else
+            ExportFlatPatternViews swDraw, swDraw.GetCurrentSheet
+        End If
     Else
         Err.Raise vbError, "", "Please open drawing document"
     End If
@@ -32,7 +52,7 @@ Sub ExportFlatPatternViews(draw As SldWorks.DrawingDoc, sheet As SldWorks.sheet)
     
     Dim vViews As Variant
     
-    vViews = sheet.GetViews()
+    vViews = GetFlatPatternViews(draw, sheet)
     
     If Not IsEmpty(vViews) Then
         
@@ -54,7 +74,17 @@ End Sub
 Sub ExportFlatPatternView(model As SldWorks.ModelDoc2, view As SldWorks.view)
     
     Dim fileName As String
-    fileName = view.Name & OUT_EXT
+    
+    Select Case OUT_NAME
+        Case OutFileName_e.ViewName
+            fileName = view.Name
+        Case OutFileName_e.ConfigurationName
+            fileName = view.ReferencedConfiguration
+        Case OutFileName_e.fileName
+            fileName = GetFileNameWithoutExtension(view.GetReferencedModelName)
+    End Select
+    
+    fileName = ReplaceIllegalFileNameCharacters(fileName, "_") & OUT_EXT
     
     Dim saveDir As String
     saveDir = model.GetPathName()
@@ -218,3 +248,79 @@ Sub FitSheetToView(sheet As SldWorks.sheet, view As SldWorks.view)
     view.Position = vPos
     
 End Sub
+
+Function GetFlatPatternViews(draw As SldWorks.DrawingDoc, sheet As SldWorks.sheet) As Variant
+    
+    'ISheet::GetViews also returns views from the view palette
+    
+    Dim vSheets As Variant
+    
+    vSheets = draw.GetViews
+    
+    Dim i As Integer
+    
+    For i = 0 To UBound(vSheets)
+        
+        Dim vViews As Variant
+        vViews = vSheets(i)
+        
+        Dim swSheetView As SldWorks.view
+        Set swSheetView = vViews(0)
+        
+        If swSheetView.GetName2() = sheet.GetName() Then
+            
+            Dim swViews() As SldWorks.view
+                                
+            Dim j As Integer
+            
+            For j = 1 To UBound(vViews)
+                
+                Dim swView As SldWorks.view
+                Set swView = vViews(j)
+                
+                If swView.IsFlatPatternView() Then
+                    If (Not swViews) = -1 Then
+                        ReDim swViews(0)
+                    Else
+                        ReDim Preserve swViews(UBound(swViews) + 1)
+                    End If
+                    
+                    Set swViews(UBound(swViews)) = swView
+                End If
+                
+            Next
+
+            If (Not swViews) = -1 Then
+                GetFlatPatternViews = Empty
+            Else
+                GetFlatPatternViews = swViews
+            End If
+            
+            Exit Function
+            
+        End If
+            
+    Next
+    
+    Err.Raise vbError, "", "Failed to get drawing views from " & sheet.GetName
+    
+End Function
+
+Function ReplaceIllegalFileNameCharacters(text As String, replacement As String) As String
+    
+    Dim i As Integer
+    Const SPECIAL_CHARS As String = "\/:*?""<>|"
+
+    For i = 1 To Len(SPECIAL_CHARS)
+        Dim specChar As String
+        specChar = Mid(SPECIAL_CHARS, i, 1)
+        text = Replace(text, specChar, replacement)
+    Next
+
+    ReplaceIllegalFileNameCharacters = text
+End Function
+
+
+Function GetFileNameWithoutExtension(filePath As String) As String
+    GetFileNameWithoutExtension = Mid(filePath, InStrRev(filePath, "\") + 1, InStrRev(filePath, ".") - InStrRev(filePath, "\") - 1)
+End Function

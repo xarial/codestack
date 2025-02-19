@@ -1,9 +1,18 @@
+HistoryFolder,History
+SensorFolder,Sensors
+DetailCabinet,Annotations
+NotesAreaFtrFolder,Notes
+EqnFolder,Equations
 MaterialFolder,Material <not specified>
-OriginProfileFeature,Origin
-ProfileFeature,Sketch
-Extrusion,Extrude
-Boss,Extrude
-RefPlane,Plane
 _FrontPlane,Front Plane
 _TopPlane,Top Plane
 _RightPlane,Right Plane
+OriginProfileFeature,Origin
+ProfileFeature,Sketch
+ProfileFeature3D,3DSketch
+Extrusion,Extrude
+Boss,Extrude
+RefPlane,Plane
+Extrude,Boss-Extrude
+Cut,Cut-Extrude
+CombineBodies,Combine

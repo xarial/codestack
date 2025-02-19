@@ -1,3 +1,9 @@
+#If VBA7 Then
+     Private Declare PtrSafe Function PathIsRelative Lib "shlwapi" Alias "PathIsRelativeA" (ByVal path As String) As Boolean
+#Else
+     Private Declare Function PathIsRelative Lib "shlwapi" Alias "PathIsRelativeA" (ByVal Path As String) As boolean
+#End If
+
 Private Declare PtrSafe Function GetSaveFileName Lib "comdlg32.dll" Alias "GetSaveFileNameA" (pOpenfilename As OPENFILENAME) As Boolean
 
 Private Type OPENFILENAME
@@ -22,6 +28,8 @@ Private Type OPENFILENAME
   lpfnHook As Long
   lpTemplateName As String
 End Type
+
+Const DRAWINGS_FOLDER As String = ""
 
 Dim swApp As SldWorks.SldWorks
 
@@ -106,18 +114,18 @@ finally_:
 End Sub
 
 Sub MakeDrawingIndependent(srcFilePath As String, destFilePath As String)
-        
-    Dim srcDrwFilePath As String
-    srcDrwFilePath = Left(srcFilePath, InStrRev(srcFilePath, ".") - 1) & ".slddrw"
     
-    Dim destDrwFilePath As String
-    destDrwFilePath = Left(destFilePath, InStrRev(destFilePath, ".") - 1) & ".slddrw"
-
+    Dim srcDrwFilePath As String
+    srcDrwFilePath = ResolveDrawingPath(srcFilePath)
+    
     Dim fso As Object
     Set fso = CreateObject("Scripting.FileSystemObject")
 
     If fso.FileExists(srcDrwFilePath) Then
-        
+            
+        Dim destDrwFilePath As String
+        destDrwFilePath = ResolveDrawingPath(destFilePath)
+            
         If fso.FileExists(destDrwFilePath) Then
             Err.Raise vbError, "", "Destination drawing already exists"
         End If
@@ -139,6 +147,24 @@ Sub MakeDrawingIndependent(srcFilePath As String, destFilePath As String)
     End If
     
 End Sub
+
+Function ResolveDrawingPath(origFilePath As String) As String
+    
+    Dim targFolder As String
+    
+    If DRAWINGS_FOLDER = "" Then
+        targFolder = GetFolderName(origFilePath)
+    Else
+        If PathIsRelative(DRAWINGS_FOLDER) Then
+            targFolder = GetFolderName(origFilePath) & "\" & DRAWINGS_FOLDER
+        Else
+            targFolder = DRAWINGS_FOLDER
+        End If
+    End If
+    
+    ResolveDrawingPath = targFolder & "\" & GetFileNameWithoutExtension(origFilePath) & ".slddrw"
+
+End Function
 
 Function GetSelectedComponents(selMgr As SldWorks.SelectionMgr) As Variant
 
@@ -236,4 +262,12 @@ Function Contains(vArr As Variant, item As Object) As Boolean
     
     Contains = False
     
+End Function
+
+Function GetFolderName(filePath As String) As String
+    GetFolderName = Left(filePath, InStrRev(filePath, "\") - 1)
+End Function
+
+Function GetFileNameWithoutExtension(filePath As String) As String
+    GetFileNameWithoutExtension = Mid(filePath, InStrRev(filePath, "\") + 1, InStrRev(filePath, ".") - InStrRev(filePath, "\") - 1)
 End Function

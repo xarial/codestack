@@ -297,6 +297,22 @@ Function GetFlatPatternFeatures(model As SldWorks.ModelDoc2) As Variant
 End Function
 
 Sub ProcessSheetMetalModel(rootModel As SldWorks.ModelDoc2, sheetMetalModel As SldWorks.ModelDoc2, conf As String)
+
+    Dim activeConfName As String
+
+    Dim error As ErrObject
+
+try_:
+    
+    On Error GoTo catch_
+    
+    activeConfName = sheetMetalModel.ConfigurationManager.ActiveConfiguration.Name
+    
+    If LCase(activeConfName) <> LCase(conf) Then
+        If False = sheetMetalModel.ShowConfiguration2(conf) Then
+            Err.Raise vbError, "", "Failed to activate configuration"
+        End If
+    End If
         
     Dim vCutListFeats As Variant
     vCutListFeats = GetCutListFeatures(sheetMetalModel)
@@ -370,7 +386,7 @@ Sub ProcessSheetMetalModel(rootModel As SldWorks.ModelDoc2, sheetMetalModel As S
                         outFileName = ComposeOutFileName(OUT_NAME_TEMPLATE, rootModel, sheetMetalModel, conf, swFlatPatternFeat, swCutListFeat)
                         
                         If Not SKIP_EXISTING_FILES Or Not FileExists(outFileName) Then
-                            ExportFlatPattern sheetMetalModel, swFlatPatternFeat, outFileName, FLAT_PATTERN_OPTIONS, conf
+                            ExportFlatPattern sheetMetalModel, swFlatPatternFeat, outFileName, FLAT_PATTERN_OPTIONS
                             If OPEN_APP_PATH <> "" Then
                                 OpenFile outFileName
                             End If
@@ -389,6 +405,17 @@ Sub ProcessSheetMetalModel(rootModel As SldWorks.ModelDoc2, sheetMetalModel As S
         
     Else
         Err.Raise vbError, "", "No cut-list items found"
+    End If
+    
+    GoTo finally_
+catch_:
+    Set error = Err
+finally_:
+
+    sheetMetalModel.ShowConfiguration2 activeConfName
+    
+    If Not error Is Nothing Then
+        Err.Raise error.Number, error.Source, error.Description, error.HelpFile, error.HelpContext
     End If
     
 End Sub
@@ -506,7 +533,7 @@ Sub ProcessFeature(thisFeat As SldWorks.Feature, featsArr() As SldWorks.Feature,
         
 End Sub
 
-Sub ExportFlatPattern(part As SldWorks.PartDoc, flatPattern As SldWorks.Feature, outFilePath As String, opts As SheetMetalOptions_e, conf As String)
+Sub ExportFlatPattern(part As SldWorks.PartDoc, flatPattern As SldWorks.Feature, outFilePath As String, opts As SheetMetalOptions_e)
     
     Dim swModel As SldWorks.ModelDoc2
     Set swModel = part
@@ -529,16 +556,6 @@ try_:
     swModel.FeatureManager.EnableFeatureTreeWindow = False
     swModel.ActiveView.EnableGraphicsUpdate = False
     
-    Dim curConf As String
-    
-    curConf = swModel.ConfigurationManager.ActiveConfiguration.Name
-    
-    If curConf <> conf Then
-        If False = swModel.ShowConfiguration2(conf) Then
-            Err.Raise vbError, "", "Failed to activate configuration"
-        End If
-    End If
-    
     Dim outDir As String
     outDir = Left(outFilePath, InStrRev(outFilePath, "\"))
     
@@ -559,8 +576,6 @@ try_:
     Else
         Err.Raise vbError, "", "Failed to select flat-pattern"
     End If
-    
-    swModel.ShowConfiguration2 curConf
     
     GoTo finally_
     

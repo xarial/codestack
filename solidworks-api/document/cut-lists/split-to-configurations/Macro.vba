@@ -1,3 +1,5 @@
+Const CONFIGURATION_COMMENT As String = ""
+
 Const KEEP_ALL_CUT_LIST_BODIES As Boolean = True
 
 Dim swApp As SldWorks.SldWorks
@@ -21,6 +23,12 @@ try_:
     If Not swModel Is Nothing Then
         
         If swModel.GetType() = swDocumentTypes_e.swDocPART Then
+            
+            Dim confComment As String
+        
+            If Not TryGetCommentFromArguments(confComment) Then
+                confComment = CONFIGURATION_COMMENT
+            End If
             
             Dim vCutLists As Variant
             vCutLists = GetCutLists(swModel)
@@ -54,7 +62,7 @@ try_:
                     
                     Debug.Print "Creating configuration for " & swCutList.Name
                     
-                    CreateConfigurationForBodies swModel, vBodies, swCutList.Name
+                    CreateConfigurationForBodies swModel, vBodies, swCutList.Name, confComment
                 
                 Else
                     Debug.Print swCutList.Name & " has no bodies"
@@ -83,7 +91,7 @@ finally_:
     
 End Sub
 
-Sub CreateConfigurationForBodies(model As SldWorks.ModelDoc2, vBodies As Variant, confName As String)
+Sub CreateConfigurationForBodies(model As SldWorks.ModelDoc2, vBodies As Variant, confName As String, confComment As String)
 
     If IsEmpty(vBodies) Then
         Err.Raise vbError, "", "Bodies are nost specified"
@@ -93,7 +101,7 @@ Sub CreateConfigurationForBodies(model As SldWorks.ModelDoc2, vBodies As Variant
     activeConfName = model.ConfigurationManager.ActiveConfiguration.Name
 
     Dim swBodyConf As SldWorks.Configuration
-    Set swBodyConf = model.ConfigurationManager.AddConfiguration2(confName, "", "", swConfigurationOptions2_e.swConfigOption_DontActivate Or swConfigurationOptions2_e.swConfigOption_SuppressByDefault, activeConfName, "", False)
+    Set swBodyConf = model.ConfigurationManager.AddConfiguration2(confName, confComment, "", swConfigurationOptions2_e.swConfigOption_DontActivate Or swConfigurationOptions2_e.swConfigOption_SuppressByDefault, activeConfName, "", False)
     
     If swBodyConf Is Nothing Then
         Err.Raise vbError, "", "Failed to create configuration for " & confName
@@ -130,25 +138,44 @@ End Sub
 
 Function GetCutLists(model As SldWorks.ModelDoc2) As Variant
 
-    Dim swFeat As SldWorks.Feature
-    
     Dim swCutLists() As SldWorks.Feature
+
+    Dim swFeat As SldWorks.Feature
+
+    Dim swSelMgr As SldWorks.SelectionMgr
     
-    Set swFeat = model.FirstFeature
+    Set swSelMgr = model.SelectionManager
     
-    While Not swFeat Is Nothing
+    If swSelMgr.GetSelectedObjectCount2(-1) > 0 Then
         
-        If swFeat.GetTypeName2 <> "HistoryFolder" Then
+        Dim i As Integer
         
-            ProcessFeature swFeat, swCutLists
+        For i = 1 To swSelMgr.GetSelectedObjectType3(1, -1)
+            If swSelMgr.GetSelectedObjectType3(i, -1) = swSelectType_e.swSelSUBWELDFOLDER Then
+                Set swFeat = swSelMgr.GetSelectedObject6(i, -1)
+                ProcessFeature swFeat, swCutLists
+            End If
+        Next
+        
+    Else
+        
+        Set swFeat = model.FirstFeature
+        
+        While Not swFeat Is Nothing
             
-            TraverseSubFeatures swFeat, swCutLists
-        
-        End If
-        
-        Set swFeat = swFeat.GetNextFeature
-        
-    Wend
+            If swFeat.GetTypeName2 <> "HistoryFolder" Then
+            
+                ProcessFeature swFeat, swCutLists
+                
+                TraverseSubFeatures swFeat, swCutLists
+            
+            End If
+            
+            Set swFeat = swFeat.GetNextFeature
+            
+        Wend
+    
+    End If
     
     GetCutLists = swCutLists
     
@@ -201,4 +228,31 @@ Function Contains(arr As Variant, item As Object) As Boolean
     
     Contains = False
     
+End Function
+
+Function TryGetCommentFromArguments(ByRef comment As String) As Boolean
+
+try_:
+
+    On Error GoTo catch_
+
+    Dim macroOprMgr As Object
+    Set macroOprMgr = CreateObject("CadPlus.MacroOperationManager")
+        
+    Set macroOper = macroOprMgr.PopOperation(swApp)
+    
+    Dim vArgs As Variant
+    vArgs = macroOper.Arguments
+   
+    Dim macroArg As Object
+    Set macroArg = vArgs(0)
+    
+    comment = CStr(macroArg.GetValue())
+    TryGetCommentFromArguments = True
+    GoTo finally_
+    
+catch_:
+    TryGetCommentFromArguments = False
+finally_:
+
 End Function

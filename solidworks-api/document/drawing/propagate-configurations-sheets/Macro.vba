@@ -1,3 +1,5 @@
+Const CONFIGURATION_COMMENT_FILTER As String = ""
+
 Const PROCESS_TOP_LEVEL_CONFIGS As Boolean = True
 Const PROCESS_CHILDREN_CONFIGS As Boolean = False
 
@@ -18,6 +20,12 @@ Sub main()
     
     If Not swDraw Is Nothing Then
         
+        Dim confCommentFilter As String
+        
+        If Not TryGetCommentFromArguments(confCommentFilter) Then
+            confCommentFilter = CONFIGURATION_COMMENT_FILTER
+        End If
+        
         Dim swSheet As SldWorks.sheet
         Set swSheet = swDraw.GetCurrentSheet
         
@@ -34,7 +42,7 @@ Sub main()
                 ValidateSheet swSheet, swRefDoc
                 
                 Dim vConfNames As Variant
-                vConfNames = GetConfigurations(swRefDoc, GetActualReferencedConfiguration(swDefView))
+                vConfNames = GetConfigurations(swRefDoc, GetActualReferencedConfiguration(swDefView), confCommentFilter)
                 
                 Dim i As Integer
                 
@@ -63,7 +71,7 @@ Sub main()
     
 End Sub
 
-Function GetConfigurations(refDoc As SldWorks.ModelDoc2, confToExclude As String) As Variant
+Function GetConfigurations(refDoc As SldWorks.ModelDoc2, confToExclude As String, confCommentFilter As String) As Variant
     
     Dim confNames() As String
     
@@ -85,14 +93,16 @@ Function GetConfigurations(refDoc As SldWorks.ModelDoc2, confToExclude As String
             If swConf.Type = swConfigurationType_e.swConfiguration_Standard Then
                     
                 If (PROCESS_TOP_LEVEL_CONFIGS And swConf.GetParent() Is Nothing) Or (PROCESS_CHILDREN_CONFIGS And Not swConf.GetParent() Is Nothing) Then
-                    If (Not confNames) = -1 Then
-                        ReDim confNames(0)
-                    Else
-                        ReDim Preserve confNames(UBound(confNames) + 1)
+                
+                    If CONFIGURATION_COMMENT_FILTER = "" Or LCase(confCommentFilter) = LCase(swConf.comment) Then
+                        If (Not confNames) = -1 Then
+                            ReDim confNames(0)
+                        Else
+                            ReDim Preserve confNames(UBound(confNames) + 1)
+                        End If
+                    
+                        confNames(UBound(confNames)) = confName
                     End If
-                
-                    confNames(UBound(confNames)) = confName
-                
                 End If
             
             End If
@@ -194,6 +204,13 @@ Sub CopySheetWithConfiguration(draw As SldWorks.DrawingDoc, sheet As SldWorks.sh
                 Dim swView As SldWorks.view
                 Set swView = vViews(i)
                 
+                Dim srcViewMidPos(1) As Double
+                
+                Dim vOutline As Variant
+                vOutline = swView.GetOutline
+                srcViewMidPos(0) = (vOutline(0) + vOutline(2)) / 2
+                srcViewMidPos(1) = (vOutline(1) + vOutline(3)) / 2
+                
                 Dim confName As String
                 
                 If False <> swView.IsFlatPatternView() And USE_CORRESPONDING_FLAT_PATTERN_CONF Then
@@ -209,6 +226,16 @@ Sub CopySheetWithConfiguration(draw As SldWorks.DrawingDoc, sheet As SldWorks.sh
                 End If
                 
                 RefreshView draw, swView
+                
+                vOutline = swView.GetOutline
+                Dim vTargPos As Variant
+                vTargPos = swView.Position
+                
+                vOutline = swView.GetOutline
+                vTargPos(0) = vTargPos(0) + srcViewMidPos(0) - (vOutline(0) + vOutline(2)) / 2
+                vTargPos(1) = vTargPos(1) + srcViewMidPos(1) - (vOutline(1) + vOutline(3)) / 2
+                
+                swView.Position = vTargPos
                 
             Next
             
@@ -387,4 +414,31 @@ Function GetSheetViews(draw As SldWorks.DrawingDoc, sheet As SldWorks.sheet) As 
     
     Err.Raise vbError, "", "Failed to get drawing views from " & sheet.GetName
     
+End Function
+
+Function TryGetCommentFromArguments(ByRef comment As String) As Boolean
+
+try_:
+
+    On Error GoTo catch_
+
+    Dim macroOprMgr As Object
+    Set macroOprMgr = CreateObject("CadPlus.MacroOperationManager")
+        
+    Set macroOper = macroOprMgr.PopOperation(swApp)
+    
+    Dim vArgs As Variant
+    vArgs = macroOper.Arguments
+   
+    Dim macroArg As Object
+    Set macroArg = vArgs(0)
+    
+    comment = CStr(macroArg.GetValue())
+    TryGetCommentFromArguments = True
+    GoTo finally_
+    
+catch_:
+    TryGetCommentFromArguments = False
+finally_:
+
 End Function

@@ -94,7 +94,7 @@ Function GetReplaceSheetFormat(sheet As SldWorks.sheet) As String
         
     Next
     
-    Err.Raise vbError, "", "Failed find the sheet format mathing current sheet"
+    Err.Raise vbError, "", "Failed find the sheet format matching current sheet"
     
 End Function
 

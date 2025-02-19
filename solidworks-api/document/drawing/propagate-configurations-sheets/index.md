@@ -25,12 +25,14 @@ Const USE_CORRESPONDING_FLAT_PATTERN_CONF As Boolean = True'True to find the cor
 Const GENERATE_MISSING_FLAT_PATTERN_CONF As Boolean = True 'True to automatically create new SM-FLAT-PATTERN configuration if not exist, False to use configuration As Is
 
 Const FORCE_SINGLE_BODY As Boolean = False 'True to select single body for multi-body configurations (can be useful for the cut-list configurations)
+Const CONFIGURATION_COMMENT_FILTER As String = "Sheet Metal"' Only process configurations which have a comment 'Sheet Metal'
 ~~~
 
 ## Notes
 
 * Macro will skip processing system configurations (e.g. weldment As Welded and As Machined, Sheet Metal flat pattern configurations and speedpak configurations)
 * Macro will not create another sheet for the same configuration which is used in the default (first) view of the sheet (template sheet)
+* Configuration comment filter can be passed as an argument via [Macro+](https://cadplus.xarial.com/macro-plus/)
 
 ### Sheet Metal Flat Patterns
 
