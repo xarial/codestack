@@ -1,7 +1,11 @@
 Dim swApp As SldWorks.SldWorks
 Dim swModel As SldWorks.ModelDoc2
 
+Dim FEATS_FILTER As Variant
+
 Sub main()
+
+    'FEATS_FILTER = Array("Mate*")
 
     Set swApp = Application.SldWorks
     
@@ -118,7 +122,7 @@ End Sub
 
 Sub RenameFeature(feat As SldWorks.Feature, featNamesTable As Object, owner As Object)
 
-    If feat.GetTypeName2() <> "Reference" Then
+    If MatchesFilter(feat) Then
     
         Dim baseFeatName As String
         
@@ -140,7 +144,9 @@ Sub RenameFeature(feat As SldWorks.Feature, featNamesTable As Object, owner As O
             If LCase(feat.name) <> LCase(newName) Then
             
                 ResolveFeatureNameConflict owner, newName
-            
+                
+                Debug.Print "Renaming '" & feat.name & "' to '" & newName & "'"
+                
                 feat.name = newName
             
             End If
@@ -150,6 +156,32 @@ Sub RenameFeature(feat As SldWorks.Feature, featNamesTable As Object, owner As O
     End If
 
 End Sub
+
+Function MatchesFilter(feat As SldWorks.Feature) As Boolean
+
+    Dim typeName As String
+    typeName = feat.GetTypeName2()
+    
+    If typeName <> "Reference" And typeName <> "ReferencePattern" Then
+        If Not IsEmpty(FEATS_FILTER) Then
+            Dim i As Integer
+            For i = 0 To UBound(FEATS_FILTER)
+                If typeName Like CStr(FEATS_FILTER(i)) Then
+                    MatchesFilter = True
+                    Exit Function
+                End If
+            Next
+            
+            MatchesFilter = False
+            
+        Else
+            MatchesFilter = True
+        End If
+    Else
+        MatchesFilter = False
+    End If
+    
+End Function
 
 Function TryGetBaseName(name As String, ByRef baseName As String)
     
@@ -255,9 +287,6 @@ End Function
 
 Function GetSelectedComponents(selMgr As SldWorks.SelectionMgr) As Variant
 
-    Dim isInit As Boolean
-    isInit = False
-    
     Dim swComps() As SldWorks.Component2
 
     Dim i As Integer
@@ -270,10 +299,9 @@ Function GetSelectedComponents(selMgr As SldWorks.SelectionMgr) As Variant
         
         If Not swComp Is Nothing Then
             
-            If Not isInit Then
+            If (Not swComps) = -1 Then
                 ReDim swComps(0)
                 Set swComps(0) = swComp
-                isInit = True
             Else
                 If Not Contains(swComps, swComp) Then
                     ReDim Preserve swComps(UBound(swComps) + 1)
@@ -285,10 +313,10 @@ Function GetSelectedComponents(selMgr As SldWorks.SelectionMgr) As Variant
     
     Next
 
-    If isInit Then
-        GetSelectedComponents = swComps
-    Else
+    If (Not swComps) = -1 Then
         GetSelectedComponents = Empty
+    Else
+        GetSelectedComponents = swComps
     End If
 
 End Function

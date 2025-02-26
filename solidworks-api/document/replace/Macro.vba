@@ -28,7 +28,7 @@ Sub main()
         
         replFilePath = GetReplacementFilePath(srcFilePath)
     
-        If Dir(replFilePath) <> "" Then
+        If Dir(replFilePath, vbNormal + vbReadOnly + vbHidden) <> "" Then
             
             If TypeOf swModel Is SldWorks.DrawingDoc Then
                 Err.Raise vbError, "", "Not supported"

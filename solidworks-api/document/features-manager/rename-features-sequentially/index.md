@@ -13,6 +13,22 @@ This macro renames all the features in active model in the sequential order usin
 
 Only indices are renamed and the base name is preserved. For example *Sketch21* will be renamed to *Sketch1* for the first appearance of the sketch feature.
 
+## Filter
+
+Macro can be configured to only process features that match the specific type pattern. Use [Get Feature Type Name](/solidworks-api/document/features-manager/get-feature-type-name/) macro to identify feature type.
+
+Fill the **FEATS_FILTER** with the type names. Wildcard is supported
+
+~~~ vb jagged
+Dim FEATS_FILTER As Variant
+
+Sub main()
+
+    FEATS_FILTER = Array("Mate*", "MirrorCompFeat") 'only process mates and Mirror Component features 
+
+    Set swApp = Application.SldWorks
+~~~
+
 ## Notes
 
 * Only features with number at the end will be renamed (e.g. *Front Plane* will not be renamed to *Front Plane1* and *My1Feature* will not be renamed)
