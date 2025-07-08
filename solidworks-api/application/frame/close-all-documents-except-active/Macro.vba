@@ -33,7 +33,7 @@ Sub main()
             Dim swRefDoc As SldWorks.ModelDoc2
             Set swRefDoc = swDocWin.ModelDoc
             
-            If Not swRefDoc Is swModel Then
+            If swRefDoc Is swModel Then
                 If swRefDoc.GetSaveFlag() Then
                     'display the close confirmation dialog for unsaved files
                     swApp.ActivateDoc3 swRefDoc.GetTitle, False, swRebuildOnActivation_e.swDontRebuildActiveDoc, 0
