@@ -59,7 +59,16 @@ Sub OpenDrawings(vPaths As Variant)
             Dim swDraw As SldWorks.ModelDoc2
             Set swDraw = swApp.OpenDoc7(swDocSpec)
             
-            If swDraw Is Nothing Then
+            If Not swDraw Is Nothing Then
+                
+                Dim errs As Long
+                Set swDraw = swApp.ActivateDoc3(drwFilePath, True, swRebuildOnActivation_e.swUserDecision, errs)
+                
+                If swDraw Is Nothing Then
+                    Err.Raise vbError, "", "Failed to activate drawing. Error code: " & errs
+                End If
+                
+            Else
                 Err.Raise vbError, "", "Failed to open drawing. Error code: " & swDocSpec.Error
             End If
             

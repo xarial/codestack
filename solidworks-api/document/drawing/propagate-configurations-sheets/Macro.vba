@@ -211,15 +211,13 @@ Sub CopySheetWithConfiguration(draw As SldWorks.DrawingDoc, sheet As SldWorks.sh
                 srcViewMidPos(0) = (vOutline(0) + vOutline(2)) / 2
                 srcViewMidPos(1) = (vOutline(1) + vOutline(3)) / 2
                 
-                Dim confName As String
-                
                 If False <> swView.IsFlatPatternView() And USE_CORRESPONDING_FLAT_PATTERN_CONF Then
-                    confName = GetFlatPatternConfiguration(draw, swView, baseConfName, GENERATE_MISSING_FLAT_PATTERN_CONF)
+                    Dim flatPatternConfName As String
+                    flatPatternConfName = GetFlatPatternConfiguration(draw, swView, baseConfName, GENERATE_MISSING_FLAT_PATTERN_CONF)
+                    draw.ChangeRefConfigurationOfFlatPatternView swView.ReferencedDocument.GetPathName(), flatPatternConfName
                 Else
-                    confName = baseConfName
+                    swView.ReferencedConfiguration = baseConfName
                 End If
-                
-                swView.ReferencedConfiguration = confName
                 
                 If FORCE_SINGLE_BODY Then
                     SetSingleBody swView
@@ -299,27 +297,12 @@ Function GetFlatPatternConfiguration(draw As SldWorks.DrawingDoc, view As SldWor
     
     If swConf.Type <> swConfigurationType_e.swConfiguration_SheetMetal Then
         
-        Dim vChildrenConfs As Variant
+        Dim flatPatternConfName As String
         
-        vChildrenConfs = swConf.GetChildren()
-        
-        Dim i As Integer
-        
-        If Not IsEmpty(vChildrenConfs) Then
-        
-            For i = 0 To UBound(vChildrenConfs)
-                
-                Dim swChildConf As SldWorks.Configuration
-                Set swChildConf = vChildrenConfs(i)
-                
-                If swChildConf.Type = swConfigurationType_e.swConfiguration_SheetMetal Then
-                    Debug.Print "Using flat pattern configuration " & swChildConf.Name & " for the " & baseConfName
-                    GetFlatPatternConfiguration = swChildConf.Name
-                    Exit Function
-                End If
-                
-            Next
-        
+        If TryFindFlatPatternConfiguration(swConf, flatPatternConfName) Then
+            Debug.Print "Using flat pattern configuration " & flatPatternConfName & " for the " & baseConfName
+            GetFlatPatternConfiguration = flatPatternConfName
+            Exit Function
         End If
         
         If allowCreateIfNotExist Then
@@ -343,7 +326,20 @@ Function CreateFlatPatternConfiguration(draw As SldWorks.DrawingDoc, view As Sld
     
     If SelectDrawingView(draw, view) Then
         If False <> draw.ChangeRefConfigurationOfFlatPatternView(view.ReferencedDocument.GetPathName(), view.ReferencedConfiguration) Then
-            CreateFlatPatternConfiguration = view.ReferencedConfiguration
+            Dim swConf As SldWorks.Configuration
+            Set swConf = view.ReferencedDocument.GetConfigurationByName(view.ReferencedConfiguration)
+    
+            If swConf.Type = swConfigurationType_e.swConfiguration_SheetMetal Then
+                CreateFlatPatternConfiguration = swConf.Name
+            Else
+                Dim flatPatternConfName As String
+                If TryFindFlatPatternConfiguration(swConf, flatPatternConfName) Then
+                    CreateFlatPatternConfiguration = flatPatternConfName
+                Else
+                    Err.Raise vbError, "", "Failed to create flat pattern configuration"
+                End If
+            End If
+
         Else
             Err.Raise vbError, "", "Failed to create flat pattern view for " & view.ReferencedDocument.GetPathName() & " (" & baseConfName & ")"
         End If
@@ -351,6 +347,36 @@ Function CreateFlatPatternConfiguration(draw As SldWorks.DrawingDoc, view As Sld
         Err.Raise vbError, "", "Failed to select temp view for deletion"
     End If
         
+End Function
+
+Function TryFindFlatPatternConfiguration(conf As SldWorks.Configuration, ByRef flatPatternConfName As String) As Boolean
+    
+    Dim vChildrenConfs As Variant
+    
+    vChildrenConfs = conf.GetChildren()
+    
+    Dim i As Integer
+    
+    If Not IsEmpty(vChildrenConfs) Then
+    
+        For i = 0 To UBound(vChildrenConfs)
+            
+            Dim swChildConf As SldWorks.Configuration
+            Set swChildConf = vChildrenConfs(i)
+            
+            If swChildConf.Type = swConfigurationType_e.swConfiguration_SheetMetal Then
+                flatPatternConfName = swChildConf.Name
+                TryFindFlatPatternConfiguration = True
+                Exit Function
+            End If
+            
+        Next
+    
+    End If
+    
+    flatPatternConfName = ""
+    TryFindFlatPatternConfiguration = False
+    
 End Function
 
 Sub SetSingleBody(view As SldWorks.view)
