@@ -8,7 +8,13 @@ macro-plus: vba
 
 This VBA macro is [Macro+](https://cadplus.xarial.com/macro-plus/) enabled macro that allows exporting unique bodies from all cut-lists in the active part file as individual files to foreign format (e.g. STEP, IGES, Parasolid etc.).
 
-This macro supports the custom variable **cutListPrp** with argument for the property name and it will be resolved to the corresponding cut-list custom proeprty value.
+This macro supports several custom variables:
+
+* **cutListPrp** with argument for the property name will be resolved to the corresponding cut-list custom property value
+* **cutListName** will be resolved to the name of the cut-list item
+* **cutListIndex** will be resolved to the cut-list item position in the tree (item number)
+
+> Macro will replace all illegal characters in the file name with underscore
 
 {% code-snippet { file-name: Macro.vba } %}
 

@@ -48,7 +48,9 @@ Sub main()
                     Set macroArg = vArgs(j)
                     
                     Dim fileName As String
-                    fileName = macroArg.GetValue(customVarValProv, swCutList)
+                    fileName = macroArg.GetValue(customVarValProv, Array(swCutList, i))
+                    
+                    fileName = NormalizeFilePath(fileName)
                     
                     Dim filePath As String
                     filePath = GetDirectory(swModel.GetPathName) & fileName
@@ -191,7 +193,8 @@ Function GetMacroOperation(Optional dummy As Variant = Empty) As IMacroOperation
         Set swCadPlus = swCadPlusFact.Create(swApp, False)
         
         Dim args(1) As String
-        args(0) = "MFGs\STEP\{ path [FileNameWithoutExtension] }-{ cutListPrp [Description] }.step"
+        args(0) = "MFGs\STEP\{ path [FileNameWithoutExtension] }-{ cutListName } ({ cutListPrp [Description] }).step"
+        args(1) = "#{ cutListIndex }.igs"
         Set macroOper = swCadPlus.CreateMacroOperation(swApp.ActiveDoc, "", args)
     #Else
         Dim macroOprMgr As IMacroOperationManager
@@ -268,19 +271,28 @@ End Sub
 Sub ProcessFeature(feat As SldWorks.Feature, cutLists() As SldWorks.Feature)
     
     If feat.GetTypeName2() = "SolidBodyFolder" Then
+        
         Dim swBodyFolder As SldWorks.BodyFolder
         Set swBodyFolder = feat.GetSpecificFeature2
         swBodyFolder.UpdateCutList
+        
     ElseIf feat.GetTypeName2() = "CutListFolder" Then
         
-        If Not Contains(cutLists, feat) Then
-            If (Not cutLists) = -1 Then
-                ReDim cutLists(0)
-            Else
-                ReDim Preserve cutLists(UBound(cutLists) + 1)
+        Dim swCutListBodyFolder As SldWorks.BodyFolder
+        Set swCutListBodyFolder = feat.GetSpecificFeature2
+        
+        If swCutListBodyFolder.GetBodyCount() > 0 Then
+        
+            If Not Contains(cutLists, feat) Then
+                If (Not cutLists) = -1 Then
+                    ReDim cutLists(0)
+                Else
+                    ReDim Preserve cutLists(UBound(cutLists) + 1)
+                End If
+                
+                Set cutLists(UBound(cutLists)) = feat
             End If
-            
-            Set cutLists(UBound(cutLists)) = feat
+        
         End If
         
     End If
@@ -299,5 +311,39 @@ Function Contains(arr As Variant, item As Object) As Boolean
     Next
     
     Contains = False
+    
+End Function
+
+Function NormalizeFilePath(path As String, Optional replacement As String = "_") As String
+    
+    Dim fileName As String
+    fileName = GetFileName(path)
+    
+    Dim filePath As String
+    filePath = Left(path, Len(path) - Len(fileName))
+    
+    Const ILLEGAL_CHARS As String = "\/:*?""<>|"
+    
+    Dim i As Integer
+    
+    For i = 1 To Len(fileName)
+        Dim char As String
+        char = Mid(fileName, i, 1)
+        If InStr(ILLEGAL_CHARS, char) > 0 Then
+            Mid(fileName, i, 1) = replacement
+        End If
+    Next i
+    
+    NormalizeFilePath = filePath + fileName
+    
+End Function
+
+Function GetFileName(path As String) As String
+    
+    Dim fileName As String
+    
+    fileName = Right(path, Len(path) - InStrRev(path, "\"))
+    
+    GetFileName = fileName
     
 End Function
