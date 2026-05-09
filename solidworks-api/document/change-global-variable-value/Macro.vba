@@ -34,7 +34,7 @@ Function SetEquationValue(eqMgr As SldWorks.EquationMgr, name As String, value A
     index = GetEquationIndexByName(eqMgr, name)
     
     If index <> -1 Then
-        eqMgr.Equation(index) = """" & name & """=" & NEW_VALUE
+        eqMgr.Equation(index) = """" & name & """=" & value
         SetEquationValue = True
     Else
         SetEquationValue = False
@@ -54,7 +54,7 @@ Function GetEquationIndexByName(eqMgr As SldWorks.EquationMgr, name As String) A
         eqName = Trim(Split(eqMgr.Equation(i), "=")(0))
         eqName = Mid(eqName, 2, Len(eqName) - 2) 'removing the "" symbols from the name
         
-        If UCase(eqName) = UCase(VAR_NAME) Then
+        If UCase(eqName) = UCase(name) Then
             GetEquationIndexByName = i
             Exit Function
         End If
